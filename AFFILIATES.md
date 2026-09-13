@@ -1,6 +1,8 @@
 # Affiliate applications kit — Make Money Optimizer
 
-Use this when applying to programs. Update the **Status** table as you go.
+Use this when applying to programs.
+
+**Full Canada-eligible catalogue:** see [`docs/AFFILIATE-PROGRAMS.md`](docs/AFFILIATE-PROGRAMS.md) for networks, priorities, and content-cluster mapping. Update the **Status** table as you go.
 
 Site: https://makemoneyoptimizer.com  
 Repo: https://github.com/drewbotcarrothers/makemoneyoptimizer  
