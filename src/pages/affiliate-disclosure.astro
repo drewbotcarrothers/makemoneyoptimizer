@@ -10,29 +10,77 @@ import { SITE } from '../lib/site';
     <div class="container-narrow">
       <p class="eyebrow">Trust</p>
       <h1>Affiliate Disclosure</h1>
-      <p class="lead">We believe trust requires clear money talk — including how this site may earn later.</p>
+      <p class="lead">
+        Clear money talk builds trust — including how this site may earn when you use certain links.
+      </p>
     </div>
   </header>
   <section class="section">
     <div class="container-narrow legal">
       <p>
-        {SITE.name} ({SITE.domain}) may earn commissions if you click certain links and purchase products or
-        services. This comes at no additional cost to you when it occurs.
+        {SITE.name} (<a href={`https://${SITE.domain}`}>{SITE.domain}</a>) participates in affiliate
+        marketing programs. That means we may earn a commission if you click a link on this site and
+        later buy a product or sign up for a service. <strong>This does not cost you extra</strong> when
+        it happens.
       </p>
-      <h2>What we commit to</h2>
+
+      <h2>Federal Trade Commission / advertising honesty</h2>
+      <p>
+        We aim to follow common advertising disclosure practices used in Canada and elsewhere: if a link
+        or mention is compensated, we say so. Material connections between this site and recommended
+        products or services will be disclosed.
+      </p>
+
+      <h2>How we use affiliate links</h2>
       <ul>
-        <li>Labeling affiliate relationships in relevant articles and pages.</li>
-        <li>Not fabricating earnings results to sell a product.</li>
-        <li>Keeping educational framing separate from paid placements as clearly as possible.</li>
+        <li>We may label links or sections as affiliate / partner / sponsored where relevant.</li>
+        <li>A short disclosure also appears in the site footer on every page.</li>
+        <li>We do not invent earnings, screenshots of “results,” or guaranteed income claims to promote an offer.</li>
+        <li>Editorial sections (who a hustle fits, costs, risks) stay educational; product mentions are secondary.</li>
       </ul>
+
+      <h2>Types of partners we may work with</h2>
+      <p>
+        Partner lists change as applications are approved. Categories we may work with include:
+      </p>
+      <ul>
+        <li><strong>Ecommerce platforms</strong> — e.g. Shopify and related tools for online stores</li>
+        <li><strong>Marketplaces</strong> — e.g. Amazon.ca Associates for gear, books, and tools</li>
+        <li><strong>Canadian fintech / banking</strong> — e.g. KOHO and similar products for freelancers and side hustlers</li>
+        <li><strong>Creator &amp; productivity software</strong> — design, writing, scheduling, hosting, email tools</li>
+        <li><strong>Education &amp; business tools</strong> — courses or software only when they fit our trust bar</li>
+      </ul>
+      <p>
+        Individual program names will be added here as accounts are approved. If a specific article uses
+        affiliate links, that article will also note it.
+      </p>
+
+      <h2>Amazon Associates</h2>
+      <p>
+        {SITE.name} is a participant in the Amazon Associates Program (Canada and/or other Amazon locales
+        as approved). As an Amazon Associate, we may earn from qualifying purchases. Amazon and the
+        Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.
+      </p>
+
       <h2>What this is not</h2>
       <p>
-        Affiliate relationships are not endorsements of “get rich quick” schemes. We do not guarantee income,
-        rankings, or business outcomes. Your results depend on skills, market, effort, and luck.
+        Affiliate relationships are not endorsements of get-rich-quick schemes. We do not guarantee income,
+        rankings, client results, or business outcomes. Your results depend on skills, local market, effort,
+        timing, and factors outside anyone’s control. Content is for information only — not financial, tax,
+        or legal advice.
       </p>
+
+      <h2>Sponsorships &amp; paid posts</h2>
+      <p>
+        If we ever publish paid or gifted content, it will be clearly labelled (for example “Sponsored” or
+        “Paid partnership”). We reserve the right to decline offers that conflict with our audience’s trust.
+      </p>
+
       <h2>Questions</h2>
-      <p>Contact us via the <a href="/contact">Contact</a> page if something looks unclear.</p>
-      <p class="muted">Last updated: September 2026 (stub for v1).</p>
+      <p>
+        Something unclear? Reach us via the <a href="/contact">Contact</a> page.
+      </p>
+      <p class="muted">Last updated: 13 September 2026</p>
     </div>
   </section>
 </BaseLayout>
