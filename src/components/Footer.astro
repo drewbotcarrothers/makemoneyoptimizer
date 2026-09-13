@@ -1,0 +1,45 @@
+---
+import { SITE } from '../lib/site';
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">{SITE.name}</div>
+      <p>
+        Practical side hustle and extra-income guidance for Canadians.
+        Clear, ethical, and realistic — so you can decide what fits your life.
+      </p>
+      <p class="muted" style="color:#94a3b8;font-size:0.875rem;">
+        {SITE.tagline} · {SITE.domain}
+      </p>
+    </div>
+    <div>
+      <h2>Explore</h2>
+      <ul class="footer-links">
+        <li><a href="/side-hustles">Side Hustles</a></li>
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/rss.xml">RSS feed</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Legal & trust</h2>
+      <ul class="footer-links">
+        <li><a href="/affiliate-disclosure">Affiliate Disclosure</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p class="disclosure-note">
+      <strong>Affiliate disclosure:</strong> Some links may be affiliate links.
+      If you buy through them, we may earn a commission at no extra cost to you.
+      See our <a href="/affiliate-disclosure">Affiliate Disclosure</a> for details.
+      We do not promise income results.
+    </p>
+    <p>© {year} {SITE.name}. Built for Canadian readers. Content for information only — not financial, tax, or legal advice.</p>
+  </div>
+</footer>

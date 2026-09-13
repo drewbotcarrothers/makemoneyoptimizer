@@ -1,0 +1,17 @@
+# Make Money Optimizer — Hostinger/Apache helpers
+Options -Indexes
+
+# Serve extensionless URLs when using file format fallbacks
+RewriteEngine On
+
+# Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# If request has no extension and isn't a directory, try .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Prefer apex canonical is configured in Hostinger DNS/panel

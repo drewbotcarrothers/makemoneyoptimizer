@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://makemoneyoptimizer.com/sitemap-index.xml
+# AI / agent discovery
+# https://makemoneyoptimizer.com/llms.txt
+# https://makemoneyoptimizer.com/posts.json
+# https://makemoneyoptimizer.com/rss.xml

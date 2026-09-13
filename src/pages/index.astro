@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { SITE } from '../lib/site';
+import { getPublishedArticles } from '../lib/articles';
+
+const articles = await getPublishedArticles();
+const featured = articles.filter((a) => a.data.featured).slice(0, 3);
+const latest = articles.slice(0, 3);
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: `${SITE.name} — ${SITE.tagline}`,
+  description: SITE.description,
+  url: SITE.url,
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url },
+};
+---
+<BaseLayout
+  title={`${SITE.name} — Practical Side Hustles for Canadians`}
+  description={SITE.description}
+  jsonLd={pageJsonLd}
+>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Canadian-focused · Ethical · Practical</p>
+        <h1>Side income guidance you can actually use</h1>
+        <p class="lead">
+          Make Money Optimizer helps Canadians evaluate online and offline side hustles with clear trade-offs,
+          realistic expectations, and trust-first advice — no fake earnings screenshots, no “guaranteed income.”
+        </p>
+        <div class="btn-group" style="margin-top:1.5rem;">
+          <a class="btn btn-primary" href="/side-hustles">Browse side hustles</a>
+          <a class="btn btn-secondary" href="/guides">Read practical guides</a>
+        </div>
+        <div class="trust-row">
+          <span><strong>Built for CA readers</strong> — local angles & admin notes</span>
+          <span><strong>Sample content live</strong> — expand as we publish</span>
+          <span><strong>Transparent</strong> — <a href="/affiliate-disclosure">affiliate disclosure</a></span>
+        </div>
+      </div>
+      <aside class="hero-card" aria-labelledby="how-heading">
+        <h2 id="how-heading">How we help you decide</h2>
+        <ol>
+          <li>Skim hustles that match your time, skills, and risk comfort.</li>
+          <li>Read guides that cover costs, boundaries, and Canadian admin basics.</li>
+          <li>Test small, measure honestly, and keep what fits your life.</li>
+        </ol>
+        <p style="margin:1.25rem 0 0;font-size:0.875rem;color:var(--color-ink-subtle);">
+          New here? Start with the <a href="/about">About</a> page or jump into
+          <a href="/side-hustles/freelance-writing-canada">freelance writing</a>.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <AdSlot class="container ad-slot-inline" label="Ad slot · home below hero" />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Featured side hustles & guides</h2>
+          <p>Hand-picked starters with Canadian context. Marked samples are illustrative v1 content.</p>
+        </div>
+        <a class="btn btn-secondary" href="/side-hustles">View all</a>
+      </div>
+      <div class="card-grid cols-3">
+        {featured.map((a) => (
+          <ArticleCard
+            href={`/side-hustles/${a.slug}`}
+            title={a.data.title}
+            description={a.data.description}
+            category={a.data.category}
+            tags={a.data.tags}
+            sample={a.data.sample}
+            date={a.data.pubDate}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Explore by path</h2>
+          <p>Category hubs make it easy to browse more than one idea without bouncing.</p>
+        </div>
+      </div>
+      <div class="card-grid cols-3">
+        <a class="card" href="/side-hustles">
+          <span class="badge">Hub</span>
+          <h3>Side Hustles</h3>
+          <p>Online and offline ways to earn extra — freelancing, reselling, gigs, tutoring, and more.</p>
+          <span class="card-link">Open hub →</span>
+        </a>
+        <a class="card" href="/guides">
+          <span class="badge">Hub</span>
+          <h3>Guides</h3>
+          <p>How-to frameworks, checklists, and decision help so you can test ideas responsibly.</p>
+          <span class="card-link">Open guides →</span>
+        </a>
+        <a class="card" href="/contact">
+          <span class="badge">Trust</span>
+          <h3>Questions or feedback?</h3>
+          <p>Tell us what Canadian side-income topics you want covered next.</p>
+          <span class="card-link">Contact us →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Latest on the site</h2>
+          <p>Fresh reads and internal links to keep exploring.</p>
+        </div>
+      </div>
+      <div class="card-grid cols-3">
+        {latest.map((a) => (
+          <ArticleCard
+            href={`/side-hustles/${a.slug}`}
+            title={a.data.title}
+            description={a.data.description}
+            category={a.data.category}
+            tags={a.data.tags}
+            sample={a.data.sample}
+            date={a.data.pubDate}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <Newsletter />
+    </div>
+  </section>
+</BaseLayout>

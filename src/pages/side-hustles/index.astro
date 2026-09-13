@@ -1,0 +1,116 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { getPublishedArticles } from '../../lib/articles';
+
+const articles = await getPublishedArticles();
+const allTags = [...new Set(articles.flatMap((a) => a.data.tags || []))].sort();
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Side Hustles for Canadians',
+  description:
+    'Browse practical Canadian side hustle ideas — freelancing, reselling, gig work, tutoring, and more.',
+  url: 'https://makemoneyoptimizer.com/side-hustles',
+};
+---
+<BaseLayout
+  title="Side Hustles for Canadians"
+  description="Browse ethical, practical side hustle ideas for Canadians — freelancing, reselling, delivery gigs, tutoring, and related guides. No fake income claims."
+  jsonLd={pageJsonLd}
+>
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Side Hustles hub</p>
+      <h1>Find a side hustle that fits your life</h1>
+      <p class="lead">
+        Explore online and offline options with clear trade-offs. Start with one article, then use tags and
+        related reads to keep browsing — retention without pressure.
+      </p>
+      <div class="btn-group" style="margin-top:1rem;">
+        <a class="btn btn-primary" href="/guides">Prefer how-to guides?</a>
+        <a class="btn btn-secondary" href="/about">Why we write this way</a>
+      </div>
+    </div>
+  </header>
+
+  <AdSlot class="container ad-slot-inline" label="Ad slot · side hustles hub" />
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar" role="navigation" aria-label="Filter by tag" data-tag-filters>
+        <button type="button" class="chip is-active" data-tag="all" aria-pressed="true">All</button>
+        {allTags.map((tag) => (
+          <button type="button" class="chip" data-tag={tag} aria-pressed="false">#{tag}</button>
+        ))}
+      </div>
+
+      <div class="card-grid cols-3" data-article-grid>
+        {articles.map((a) => (
+          <div data-tags={(a.data.tags || []).join(',')}>
+            <ArticleCard
+              href={`/side-hustles/${a.slug}`}
+              title={a.data.title}
+              description={a.data.description}
+              category={a.data.category}
+              tags={a.data.tags}
+              sample={a.data.sample}
+              date={a.data.pubDate}
+            />
+          </div>
+        ))}
+      </div>
+      <p class="muted" data-empty-filter hidden>No articles match that tag. Choose All to reset.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <Newsletter heading="New hustle breakdowns in your inbox (soon)" />
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const bar = document.querySelector('[data-tag-filters]');
+  const grid = document.querySelector('[data-article-grid]');
+  const empty = document.querySelector('[data-empty-filter]');
+  if (bar && grid) {
+    const chips = Array.from(bar.querySelectorAll('[data-tag]'));
+    const cards = Array.from(grid.children) as HTMLElement[];
+
+    const apply = (tag: string) => {
+      let visible = 0;
+      cards.forEach((card) => {
+        const tags = (card.getAttribute('data-tags') || '').split(',').filter(Boolean);
+        const show = tag === 'all' || tags.includes(tag);
+        card.toggleAttribute('hidden', !show);
+        if (show) visible += 1;
+      });
+      chips.forEach((chip) => {
+        const active = chip.getAttribute('data-tag') === tag;
+        chip.classList.toggle('is-active', active);
+        chip.setAttribute('aria-pressed', String(active));
+      });
+      if (empty) empty.toggleAttribute('hidden', visible !== 0);
+
+      const url = new URL(window.location.href);
+      if (tag === 'all') url.searchParams.delete('tag');
+      else url.searchParams.set('tag', tag);
+      window.history.replaceState({}, '', url);
+    };
+
+    bar.addEventListener('click', (event) => {
+      const target = event.target as HTMLElement | null;
+      const chip = target?.closest('[data-tag]') as HTMLElement | null;
+      if (!chip) return;
+      apply(chip.getAttribute('data-tag') || 'all');
+    });
+
+    const initial = new URL(window.location.href).searchParams.get('tag') || 'all';
+    apply(initial);
+  }
+</script>

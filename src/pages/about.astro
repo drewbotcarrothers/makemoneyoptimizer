@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+<BaseLayout
+  title="About Make Money Optimizer"
+  description="Learn why Make Money Optimizer exists: practical, ethical side-income guidance for Canadians — without fake earnings or guaranteed-income hype."
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">About</p>
+      <h1>Calm, competent guidance for extra income</h1>
+      <p class="lead">
+        {SITE.name} is being built for Canadians who want clearer information about side hustles —
+        online and offline — without the gold-rush noise.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow legal stack-lg">
+      <div>
+        <h2>Our promise</h2>
+        <p>
+          We publish practical explainers that help you evaluate fit, costs, and trade-offs.
+          We avoid fabricated income claims and “guaranteed” outcomes. When we recommend tools or
+          products in the future, we’ll disclose affiliate relationships.
+        </p>
+      </div>
+      <div>
+        <h2>Who it’s for</h2>
+        <ul>
+          <li>Workers exploring evenings/weekends income in Canada</li>
+          <li>Parents and students testing flexible remote options</li>
+          <li>Anyone who wants ethical, realistic framing before investing time or money</li>
+        </ul>
+      </div>
+      <div>
+        <h2>How we make decisions about content</h2>
+        <p>
+          Topics should be actionable, legally discussable at a high level, and respectful of readers’ time.
+          Canadian angles — taxes, platforms, marketplaces, and local realities — stay in scope.
+          See our <a href="/side-hustles">Side Hustles</a> and <a href="/guides">Guides</a> hubs to browse.
+        </p>
+      </div>
+      <div>
+        <h2>Monetization (later)</h2>
+        <p>
+          v1 is free educational content. Over time we may add tasteful ads, affiliate links, and digital ebooks.
+          Trust comes first: disclosures stay visible, and editorial honesty isn’t for sale.
+          Read the <a href="/affiliate-disclosure">Affiliate Disclosure</a>.
+        </p>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="/side-hustles">Browse side hustles</a>
+        <a class="btn btn-secondary" href="/contact">Contact</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

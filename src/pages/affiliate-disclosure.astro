@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+<BaseLayout
+  title="Affiliate Disclosure"
+  description="How Make Money Optimizer handles affiliate links and sponsorships. We disclose partnerships and do not guarantee income results."
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">Trust</p>
+      <h1>Affiliate Disclosure</h1>
+      <p class="lead">We believe trust requires clear money talk — including how this site may earn later.</p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container-narrow legal">
+      <p>
+        {SITE.name} ({SITE.domain}) may earn commissions if you click certain links and purchase products or
+        services. This comes at no additional cost to you when it occurs.
+      </p>
+      <h2>What we commit to</h2>
+      <ul>
+        <li>Labeling affiliate relationships in relevant articles and pages.</li>
+        <li>Not fabricating earnings results to sell a product.</li>
+        <li>Keeping educational framing separate from paid placements as clearly as possible.</li>
+      </ul>
+      <h2>What this is not</h2>
+      <p>
+        Affiliate relationships are not endorsements of “get rich quick” schemes. We do not guarantee income,
+        rankings, or business outcomes. Your results depend on skills, market, effort, and luck.
+      </p>
+      <h2>Questions</h2>
+      <p>Contact us via the <a href="/contact">Contact</a> page if something looks unclear.</p>
+      <p class="muted">Last updated: September 2026 (stub for v1).</p>
+    </div>
+  </section>
+</BaseLayout>

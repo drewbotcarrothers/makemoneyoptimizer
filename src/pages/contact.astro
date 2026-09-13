@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+<BaseLayout
+  title="Contact"
+  description="Contact Make Money Optimizer with topic ideas, corrections, or partnership questions. Simple mailto form for Canadian readers."
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">Contact</p>
+      <h1>Say hello</h1>
+      <p class="lead">
+        Topic ideas, corrections, or partnership notes are welcome. For the fastest path, email us directly.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow">
+      <p>
+        Email: <a href={`mailto:${SITE.email}?subject=Make%20Money%20Optimizer%20inquiry`}>{SITE.email}</a>
+      </p>
+
+      <!-- Placeholder form: posts via mailto until a backend/form service is connected -->
+      <form
+        class="form-stack"
+        style="margin-top:2rem;"
+        method="get"
+        action={`mailto:${SITE.email}`}
+        enctype="text/plain"
+      >
+        <input type="hidden" name="subject" value="Make Money Optimizer inquiry" />
+        <label>
+          Your name
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          Your email
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="body" rows="6" required placeholder="What should we cover next for Canadian side hustlers?"></textarea>
+        </label>
+        <p class="form-hint">
+          This placeholder opens your email client (mailto). We’ll replace it with a hosted form provider later.
+        </p>
+        <button class="btn btn-primary" type="submit">Open email draft</button>
+      </form>
+
+      <p style="margin-top:2rem;">
+        Looking for policies? See <a href="/privacy">Privacy</a>, <a href="/terms">Terms</a>, and
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,31 @@
+---
+interface Props {
+  heading?: string;
+}
+const { heading = 'Get practical Canadian side-income tips' } = Astro.props;
+---
+<!-- NEWSLETTER STUB: wire to email provider (Buttondown, ConvertKit, Mailchimp) later -->
+<section class="newsletter" aria-labelledby="newsletter-heading">
+  <h2 id="newsletter-heading">{heading}</h2>
+  <p>
+    Occasional notes on ethical side hustles, tools worth testing, and Canadian tax/admin basics.
+    No spam, no “get rich” pitches. Signup coming soon — leave your email to join the waitlist UI.
+  </p>
+  <form class="newsletter-form" action="#" method="post" onsubmit="return false;">
+    <label class="sr-only" for="newsletter-email">Email address</label>
+    <input
+      id="newsletter-email"
+      type="email"
+      name="email"
+      placeholder="you@example.ca"
+      autocomplete="email"
+      required
+      disabled
+      aria-describedby="newsletter-note"
+    />
+    <button type="submit" disabled>Notify me (soon)</button>
+  </form>
+  <p id="newsletter-note" class="newsletter-note">
+    Placeholder form — not collecting emails yet. We’ll enable this when a provider is connected.
+  </p>
+</section>

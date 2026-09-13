@@ -1,0 +1,48 @@
+---
+import ArticleCard from './ArticleCard.astro';
+
+interface ArticleItem {
+  id: string;
+  slug: string;
+  data: {
+    title: string;
+    description: string;
+    category: string;
+    tags?: string[];
+    sample?: boolean;
+    pubDate: Date;
+  };
+}
+
+interface Props {
+  articles: ArticleItem[];
+  heading?: string;
+}
+const { articles, heading = 'Next reads' } = Astro.props;
+---
+{articles.length > 0 && (
+  <section class="section" aria-labelledby="related-heading" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 id="related-heading">{heading}</h2>
+          <p>Keep exploring related side hustles and guides for Canadian readers.</p>
+        </div>
+        <a class="btn btn-secondary" href="/side-hustles">Browse all</a>
+      </div>
+      <div class="related-grid">
+        {articles.map((a) => (
+          <ArticleCard
+            href={`/side-hustles/${a.slug}`}
+            title={a.data.title}
+            description={a.data.description}
+            category={a.data.category}
+            tags={a.data.tags}
+            sample={a.data.sample}
+            date={a.data.pubDate}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+)}

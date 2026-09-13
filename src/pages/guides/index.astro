@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import Newsletter from '../../components/Newsletter.astro';
+import { getPublishedArticles } from '../../lib/articles';
+
+const articles = await getPublishedArticles();
+const guides = articles.filter((a) => a.data.category === 'guide');
+const relatedHustles = articles.filter((a) => a.data.category === 'side-hustle').slice(0, 3);
+
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Side Income Guides for Canadians',
+  description: 'Practical guides to evaluate and test side income ideas in Canada.',
+  url: 'https://makemoneyoptimizer.com/guides',
+};
+---
+<BaseLayout
+  title="Guides for Canadian Side Income"
+  description="Practical guides for Canadians testing side income — frameworks, checklists, and ethical how-tos that pair with our side hustle articles."
+  jsonLd={pageJsonLd}
+>
+  <header class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Guides</p>
+      <h1>How-to guidance without the hype</h1>
+      <p class="lead">
+        Guides focus on process: evaluating fit, setting boundaries, and testing ideas responsibly.
+        Pair them with the <a href="/side-hustles">Side Hustles hub</a> for specific paths.
+      </p>
+    </div>
+  </header>
+
+  <AdSlot class="container ad-slot-inline" label="Ad slot · guides hub" />
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Guide library</h2>
+          <p>Sample guides ship with v1; more Canadian playbooks coming.</p>
+        </div>
+      </div>
+      {guides.length === 0 ? (
+        <p>Guides are on the way. Meanwhile explore <a href="/side-hustles">side hustles</a>.</p>
+      ) : (
+        <div class="card-grid cols-3">
+          {guides.map((a) => (
+            <ArticleCard
+              href={`/side-hustles/${a.slug}`}
+              title={a.data.title}
+              description={a.data.description}
+              category={a.data.category}
+              tags={a.data.tags}
+              sample={a.data.sample}
+              date={a.data.pubDate}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Keep browsing related hustles</h2>
+          <p>Internal links to reduce bounce and help you compare options.</p>
+        </div>
+        <a class="btn btn-secondary" href="/side-hustles">All side hustles</a>
+      </div>
+      <div class="card-grid cols-3">
+        {relatedHustles.map((a) => (
+          <ArticleCard
+            href={`/side-hustles/${a.slug}`}
+            title={a.data.title}
+            description={a.data.description}
+            category={a.data.category}
+            tags={a.data.tags}
+            sample={a.data.sample}
+            date={a.data.pubDate}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <Newsletter />
+    </div>
+  </section>
+</BaseLayout>

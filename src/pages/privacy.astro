@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+<BaseLayout
+  title="Privacy Policy"
+  description="Privacy policy stub for Make Money Optimizer — what we may collect later via analytics, ads, and forms."
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="lead">Stub policy for v1. Update before collecting personal data at scale.</p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container-narrow legal">
+      <p>
+        {SITE.name} (“we”) operates {SITE.domain}. This stub explains categories of data we may process as the
+        site grows. It is not a substitute for counsel-reviewed privacy compliance (PIPEDA and applicable provincial laws).
+      </p>
+      <h2>Information we may collect</h2>
+      <ul>
+        <li>Basic server or CDN logs (IP, user agent) from hosting.</li>
+        <li>Analytics events if/when an analytics tool is enabled.</li>
+        <li>Email addresses if you join a future newsletter or contact us.</li>
+        <li>Ad-related cookies if advertising networks are added.</li>
+      </ul>
+      <h2>How we may use information</h2>
+      <ul>
+        <li>Operate and secure the website.</li>
+        <li>Understand which guides are useful (aggregate analytics).</li>
+        <li>Respond to messages you send.</li>
+        <li>Deliver email updates you request.</li>
+      </ul>
+      <h2>Third parties</h2>
+      <p>
+        Hosting, analytics, email, and ad partners may process data under their own policies. We will list
+        providers here when enabled.
+      </p>
+      <h2>Contact</h2>
+      <p>Privacy questions: <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or <a href="/contact">Contact</a>.</p>
+      <p class="muted">Last updated: September 2026 (stub).</p>
+    </div>
+  </section>
+</BaseLayout>

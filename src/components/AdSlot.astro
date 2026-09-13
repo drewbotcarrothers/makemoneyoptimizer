@@ -1,0 +1,11 @@
+---
+interface Props {
+  label?: string;
+  class?: string;
+}
+const { label = 'Advertisement', class: className = '' } = Astro.props;
+---
+<!-- FUTURE AD SLOT: replace this placeholder with ad network markup (e.g. AdSense) when ready -->
+<aside class:list={['ad-slot', className]} aria-label={label} data-ad-slot>
+  <span>{label} · reserved placement</span>
+</aside>

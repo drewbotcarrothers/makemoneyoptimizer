@@ -1,0 +1,113 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import AdSlot from '../components/AdSlot.astro';
+import Newsletter from '../components/Newsletter.astro';
+import RelatedArticles from '../components/RelatedArticles.astro';
+import { SITE } from '../lib/site';
+import { getPublishedArticles, relatedArticles } from '../lib/articles';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  category: string;
+  tags?: string[];
+  sample?: boolean;
+  entryId: string;
+  slug: string;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  category,
+  tags = [],
+  sample = false,
+  entryId,
+  slug,
+} = Astro.props;
+
+const all = await getPublishedArticles();
+const related = relatedArticles(all, entryId, 2);
+const url = `${SITE.url}/side-hustles/${slug}`;
+const categoryLabel = category === 'guide' ? 'Guide' : 'Side Hustle';
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  datePublished: pubDate.toISOString(),
+  dateModified: (updatedDate || pubDate).toISOString(),
+  author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  publisher: {
+    '@type': 'Organization',
+    name: SITE.name,
+    url: SITE.url,
+  },
+  mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+  inLanguage: 'en-CA',
+  keywords: tags.join(', '),
+  about: categoryLabel,
+  isAccessibleForFree: true,
+};
+---
+<BaseLayout
+  title={title}
+  description={description}
+  ogType="article"
+  publishedTime={pubDate.toISOString()}
+  modifiedTime={(updatedDate || pubDate).toISOString()}
+  jsonLd={articleJsonLd}
+>
+  <header class="article-hero">
+    <div class="container-narrow">
+      <div class="article-meta">
+        <a href={category === 'guide' ? '/guides' : '/side-hustles'}>{categoryLabel}</a>
+        <span aria-hidden="true">·</span>
+        <time datetime={pubDate.toISOString()}>
+          {pubDate.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </time>
+        {sample && <span class="badge badge-sample">Sample article</span>}
+      </div>
+      <h1>{title}</h1>
+      <p class="lead">{description}</p>
+      {tags.length > 0 && (
+        <div class="card-meta" style="margin-top:1rem;">
+          {tags.map((tag) => (
+            <a class="chip" href={`/side-hustles?tag=${encodeURIComponent(tag)}`}>#{tag}</a>
+          ))}
+        </div>
+      )}
+    </div>
+  </header>
+
+  <AdSlot class="container ad-slot-inline" label="Ad slot · article top" />
+
+  <article class="section" style="padding-top:var(--space-8);">
+    <div class="container-narrow prose">
+      <slot />
+    </div>
+  </article>
+
+  <AdSlot class="container ad-slot-inline" label="Ad slot · article mid" />
+
+  <div class="container" style="margin-bottom:var(--space-12);">
+    <Newsletter heading="Want more like this?" />
+  </div>
+
+  <RelatedArticles articles={related} heading="Related for Canadian readers" />
+
+  <div class="container" style="margin-bottom:var(--space-12);">
+    <div class="callout">
+      <p>
+        <strong>Trust note:</strong> This is educational content for Canadians exploring extra income.
+        Earnings vary widely. We don’t guarantee results. Check CRA rules for your situation, and read our
+        <a href="/affiliate-disclosure">Affiliate Disclosure</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

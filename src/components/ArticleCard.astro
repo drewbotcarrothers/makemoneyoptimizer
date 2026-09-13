@@ -1,0 +1,32 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  description: string;
+  category: string;
+  tags?: string[];
+  sample?: boolean;
+  date?: Date;
+}
+const { href, title, description, category, tags = [], sample = false, date } = Astro.props;
+const categoryLabel = category === 'guide' ? 'Guide' : 'Side Hustle';
+---
+<a class="card" href={href}>
+  <div class="card-meta">
+    <span class="badge">{categoryLabel}</span>
+    {sample && <span class="badge badge-sample">Sample</span>}
+    {date && (
+      <time datetime={date.toISOString()}>
+        {date.toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric' })}
+      </time>
+    )}
+  </div>
+  <h3>{title}</h3>
+  <p>{description}</p>
+  {tags.length > 0 && (
+    <div class="card-meta">
+      {tags.slice(0, 3).map((tag) => <span>#{tag}</span>)}
+    </div>
+  )}
+  <span class="card-link">Read more →</span>
+</a>

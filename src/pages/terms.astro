@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../lib/site';
+---
+<BaseLayout
+  title="Terms of Use"
+  description="Terms of use stub for Make Money Optimizer. Educational content only — not financial, tax, or legal advice."
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">Legal</p>
+      <h1>Terms of Use</h1>
+      <p class="lead">By using {SITE.domain}, you agree to these stub terms for v1.</p>
+    </div>
+  </header>
+  <section class="section">
+    <div class="container-narrow legal">
+      <h2>Educational content only</h2>
+      <p>
+        Articles and guides on {SITE.name} are for general information. They are not financial, investment, tax,
+        accounting, or legal advice. Verify details with qualified professionals and official sources such as CRA.
+      </p>
+      <h2>No earnings guarantees</h2>
+      <p>
+        We do not promise income, clients, or business success. Side hustles involve risk, unpaid time, and variable outcomes.
+      </p>
+      <h2>Acceptable use</h2>
+      <p>
+        Do not misuse the site (scraping that harms service, injecting malware, or attempting unauthorized access).
+        Content remains owned by {SITE.name} unless otherwise noted.
+      </p>
+      <h2>Affiliate links</h2>
+      <p>See our <a href="/affiliate-disclosure">Affiliate Disclosure</a>.</p>
+      <h2>Contact</h2>
+      <p><a href="/contact">Contact page</a> · <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+      <p class="muted">Last updated: September 2026 (stub). Have a lawyer review before heavy monetization.</p>
+    </div>
+  </section>
+</BaseLayout>

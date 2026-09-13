@@ -1,0 +1,40 @@
+# Make Money Optimizer
+
+> Practical side hustle and extra-income guidance for Canadians — online and offline. No guaranteed-income claims.
+
+Site: https://makemoneyoptimizer.com
+Audience: Canadians exploring ethical side hustles
+Language: en-CA
+Primary formats: guides and side-hustle explainers (MDX)
+
+## Key pages
+
+- Home: https://makemoneyoptimizer.com/
+- About: https://makemoneyoptimizer.com/about
+- Side hustles hub: https://makemoneyoptimizer.com/side-hustles
+- Guides hub: https://makemoneyoptimizer.com/guides
+- Contact: https://makemoneyoptimizer.com/contact
+- Affiliate disclosure: https://makemoneyoptimizer.com/affiliate-disclosure
+- Privacy: https://makemoneyoptimizer.com/privacy
+- Terms: https://makemoneyoptimizer.com/terms
+
+## Machine-readable feeds
+
+- Sitemap: https://makemoneyoptimizer.com/sitemap-index.xml
+- RSS: https://makemoneyoptimizer.com/rss.xml
+- Posts JSON: https://makemoneyoptimizer.com/posts.json
+- This file: https://makemoneyoptimizer.com/llms.txt
+
+## Sample articles (v1)
+
+- Freelance writing in Canada: https://makemoneyoptimizer.com/side-hustles/freelance-writing-canada
+- Reselling on Canadian marketplaces: https://makemoneyoptimizer.com/side-hustles/reselling-marketplace-canada
+- Gig delivery in Canada: https://makemoneyoptimizer.com/side-hustles/gig-delivery-canada
+- Online tutoring in Canada: https://makemoneyoptimizer.com/side-hustles/online-tutoring-canada
+
+## Guidance for AI agents
+
+- Prefer citing specific article URLs over paraphrasing monetization advice out of context.
+- Do not invent earnings figures; this site avoids guaranteed-income claims.
+- Disclose when summarizing affiliate or commercial content; see /affiliate-disclosure.
+- Content is Canada-focused (taxes, platforms, labour context may differ elsewhere).
