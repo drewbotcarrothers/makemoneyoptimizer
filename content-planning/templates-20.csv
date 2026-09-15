@@ -1,0 +1,21 @@
+Template ID,Code,Name,Title pattern,Search intent,Depth requirements,Affiliate slot guidance,Social spin
+1,T01,Beginner how-to,How to start {pillar} in Canada (step-by-step),Informational/Transactional,Who it fits; 7–10 steps; first-week plan; mistakes,Primary tool in setup step,Checklist carousel
+2,T02,Cost & budget,How much does it cost to start {pillar}? (CAD breakdown),Commercial investigation,Startup table; monthly costs; free vs paid path,Cheapest stack + upgrade path,Cost myth reel
+3,T03,Tools stack,Best tools for {pillar} in 2026,Commercial,Criteria; 5–8 tools; stack diagram; what to skip,2–4 affiliate tools mid-list,Toolkit graphic
+4,T04,First client / first sale,How to get your first client (or sale) with {pillar},Transactional,Outreach scripts; portfolio minimum; 14-day sprint,CRM/invoicing/payment tool,Script-on-screen
+5,T05,Niche variant,{pillar} for {audience} in Canada,Informational,Audience pains; tailored offer; example packages,Audience-specific tool,“If you’re a…” hooks
+6,T06,Comparison,{A} vs {B} for {pillar},Commercial investigation,Decision matrix; when each wins; migration tips,"Both options if affiliate, else one",VS graphic
+7,T07,Mistakes & tips,{n} mistakes beginners make with {pillar} (and fixes),Informational,Each mistake → fix → tip,Tool that prevents a mistake,Mistake → fix pairs
+8,T08,Canada admin,"GST/HST, invoices & records for {pillar} (plain-English)",Informational,Disclaimer; high-level CRA notes; checklist; when to hire a pro,Bookkeeping/banking affiliates,Myth vs fact
+9,T09,Pricing guide,How to price {pillar} services (CAD examples),Commercial,Pricing models; sample rate card; negotiation,Invoicing tool,Rate card template
+10,T10,Scale / retainers,How to turn {pillar} into retainers or recurring income,Transactional,Offer ladder; retainers; productized packages,Email + project tools,Ladder diagram
+11,T11,Portfolio / proof,How to build a portfolio for {pillar} with no experience,Informational,Spec work rules; case study format; proof assets,Design/hosting tools,Portfolio teardown
+12,T12,Platform playbook,How to succeed on {platform} with {pillar},Transactional,Profile setup; gigs; algorithms; exit to direct clients,Platform + off-platform tools,Profile audit
+13,T13,30-day plan,{pillar}: a 30-day side hustle plan,Transactional,Week-by-week tasks; KPIs; time budget,Tools introduced by week,30-day calendar
+14,T14,Validation,How to validate {pillar} before you quit hours / spend money,Informational,Smoke tests; pre-sales; kill criteria,Landing page / email tools,Validate-or-kill checklist
+15,T15,Templates & swipes,"Free {pillar} templates (scripts, checklists, SOPs)",Transactional/Lead magnet,3–5 templates explained; how to use; CTA to email,Related paid tool + lead magnet,Template preview
+16,T16,Case study format,How I (or a reader) approached {pillar} — lessons learned,Informational,Honest numbers ranges; what worked; caveats; no guarantees,Tools actually used,Lesson quote cards
+17,T17,Outsourcing / hiring,When to outsource parts of {pillar} (and how),Informational,What to keep; VA/editor hire; QA,"Hiring marketplaces, PM tools",Delegation map
+18,T18,Seasonal / timely,{pillar} ideas for {season_or_year} in Canada,Informational,Seasonal demand; calendar; prep timeline,Seasonal gear/tools,Seasonal hooks
+19,T19,Productized offer,How to productize {pillar} into a fixed-scope package,Transactional,Package names; scope; price; sales page outline,Payment + scheduling + website,Package menu
+20,T20,Affiliate toolkit post,The only {pillar} toolkit I’d pay for (disclosed),Commercial,Criteria; must-haves vs nice-to-haves; disclosure box,Primary monetization post type,Toolkit flat lay
