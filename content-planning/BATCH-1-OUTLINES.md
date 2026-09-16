@@ -4,322 +4,322 @@ Top 10 **High** pillars × templates **T01, T02, T03, T04, T20**.
 
 CSV: `batch-1-outlines-50.csv`
 
-## Pillar 1: Freelance writing
+## Pillar 1: Food delivery driving
 
-### P01-T01 — How to start Freelance writing in Canada (step-by-step)
+### P01-T01 — How to start Food delivery driving in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `freelance writing`
-- Affiliates: FreshBooks, Grammarly
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance writing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Canadian SMEs, CAD rates. 6) Affiliate slots: place FreshBooks, Grammarly inside decision steps; secondary: Amazon books/tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `food delivery side hustle Canada`
+- Affiliates: Insulated bags, phone mounts (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Food delivery driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Skip / Uber Eats / DoorDash CAD payouts & vehicle costs. 6) Affiliate slots: place Insulated bags, phone mounts (Amazon) inside decision steps; secondary: KOHO, gas rewards. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P01-T02 — How much does it cost to start Freelance writing? (CAD breakdown)
+### P01-T02 — How much does it cost to start Food delivery driving? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `freelance writing`
-- Affiliates: FreshBooks, Grammarly
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance writing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Canadian SMEs, CAD rates. 6) Affiliate slots: place FreshBooks, Grammarly inside decision steps; secondary: Amazon books/tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `food delivery side hustle Canada`
+- Affiliates: Insulated bags, phone mounts (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Food delivery driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Skip / Uber Eats / DoorDash CAD payouts & vehicle costs. 6) Affiliate slots: place Insulated bags, phone mounts (Amazon) inside decision steps; secondary: KOHO, gas rewards. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P01-T03 — Best tools for Freelance writing in 2026
+### P01-T03 — Best tools for Food delivery driving in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `freelance writing`
-- Affiliates: FreshBooks, Grammarly
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance writing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Canadian SMEs, CAD rates. 6) Affiliate slots: place FreshBooks, Grammarly inside decision steps; secondary: Amazon books/tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `food delivery side hustle Canada`
+- Affiliates: Insulated bags, phone mounts (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Food delivery driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Skip / Uber Eats / DoorDash CAD payouts & vehicle costs. 6) Affiliate slots: place Insulated bags, phone mounts (Amazon) inside decision steps; secondary: KOHO, gas rewards. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P01-T04 — How to get your first client with Freelance writing in Canada
+### P01-T04 — How to get your first client with Food delivery driving in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `freelance writing`
-- Affiliates: FreshBooks, Grammarly
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance writing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Canadian SMEs, CAD rates. 6) Affiliate slots: place FreshBooks, Grammarly inside decision steps; secondary: Amazon books/tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `food delivery side hustle Canada`
+- Affiliates: Insulated bags, phone mounts (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Food delivery driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Skip / Uber Eats / DoorDash CAD payouts & vehicle costs. 6) Affiliate slots: place Insulated bags, phone mounts (Amazon) inside decision steps; secondary: KOHO, gas rewards. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P01-T20 — The only Freelance writing toolkit I'd pay for (disclosed)
+### P01-T20 — The only Food delivery driving toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `freelance writing`
-- Affiliates: FreshBooks, Grammarly
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance writing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Canadian SMEs, CAD rates. 6) Affiliate slots: place FreshBooks, Grammarly inside decision steps; secondary: Amazon books/tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `food delivery side hustle Canada`
+- Affiliates: Insulated bags, phone mounts (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Food delivery driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Skip / Uber Eats / DoorDash CAD payouts & vehicle costs. 6) Affiliate slots: place Insulated bags, phone mounts (Amazon) inside decision steps; secondary: KOHO, gas rewards. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 2: Virtual assistant
+## Pillar 2: Rideshare driving
 
-### P02-T01 — How to start Virtual assistant in Canada (step-by-step)
+### P02-T01 — How to start Rideshare driving in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `virtual assistant`
-- Affiliates: Notion, scheduling tools
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Virtual assistant. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Solopreneurs & ecommerce sellers. 6) Affiliate slots: place Notion, scheduling tools inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Uber driver side hustle Canada`
+- Affiliates: Phone mounts, dash cams (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Rideshare driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Provincial insurance rules & winter driving. 6) Affiliate slots: place Phone mounts, dash cams (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P02-T02 — How much does it cost to start Virtual assistant? (CAD breakdown)
+### P02-T02 — How much does it cost to start Rideshare driving? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `virtual assistant`
-- Affiliates: Notion, scheduling tools
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Virtual assistant. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Solopreneurs & ecommerce sellers. 6) Affiliate slots: place Notion, scheduling tools inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Uber driver side hustle Canada`
+- Affiliates: Phone mounts, dash cams (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Rideshare driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Provincial insurance rules & winter driving. 6) Affiliate slots: place Phone mounts, dash cams (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P02-T03 — Best tools for Virtual assistant in 2026
+### P02-T03 — Best tools for Rideshare driving in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `virtual assistant`
-- Affiliates: Notion, scheduling tools
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Virtual assistant. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Solopreneurs & ecommerce sellers. 6) Affiliate slots: place Notion, scheduling tools inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Uber driver side hustle Canada`
+- Affiliates: Phone mounts, dash cams (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Rideshare driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Provincial insurance rules & winter driving. 6) Affiliate slots: place Phone mounts, dash cams (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P02-T04 — How to get your first client with Virtual assistant in Canada
+### P02-T04 — How to get your first client with Rideshare driving in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `virtual assistant`
-- Affiliates: Notion, scheduling tools
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Virtual assistant. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Solopreneurs & ecommerce sellers. 6) Affiliate slots: place Notion, scheduling tools inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Uber driver side hustle Canada`
+- Affiliates: Phone mounts, dash cams (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Rideshare driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Provincial insurance rules & winter driving. 6) Affiliate slots: place Phone mounts, dash cams (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P02-T20 — The only Virtual assistant toolkit I'd pay for (disclosed)
+### P02-T20 — The only Rideshare driving toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `virtual assistant`
-- Affiliates: Notion, scheduling tools
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Virtual assistant. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Solopreneurs & ecommerce sellers. 6) Affiliate slots: place Notion, scheduling tools inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Uber driver side hustle Canada`
+- Affiliates: Phone mounts, dash cams (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Rideshare driving. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Provincial insurance rules & winter driving. 6) Affiliate slots: place Phone mounts, dash cams (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 3: Social media management
+## Pillar 3: Grocery shopping apps
 
-### P03-T01 — How to start Social media management in Canada (step-by-step)
+### P03-T01 — How to start Grocery shopping apps in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `social media manager freelance`
-- Affiliates: Canva, schedulers
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Social media management. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Main Street + DTC brands. 6) Affiliate slots: place Canva, schedulers inside decision steps; secondary: Meta/ads tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Instacart shopper Canada`
+- Affiliates: Insulated bags, sturdy totes (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Grocery shopping apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Peak hours & tip culture in Canadian cities. 6) Affiliate slots: place Insulated bags, sturdy totes (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P03-T02 — How much does it cost to start Social media management? (CAD breakdown)
+### P03-T02 — How much does it cost to start Grocery shopping apps? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `social media manager freelance`
-- Affiliates: Canva, schedulers
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Social media management. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Main Street + DTC brands. 6) Affiliate slots: place Canva, schedulers inside decision steps; secondary: Meta/ads tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Instacart shopper Canada`
+- Affiliates: Insulated bags, sturdy totes (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Grocery shopping apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Peak hours & tip culture in Canadian cities. 6) Affiliate slots: place Insulated bags, sturdy totes (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P03-T03 — Best tools for Social media management in 2026
+### P03-T03 — Best tools for Grocery shopping apps in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `social media manager freelance`
-- Affiliates: Canva, schedulers
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Social media management. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Main Street + DTC brands. 6) Affiliate slots: place Canva, schedulers inside decision steps; secondary: Meta/ads tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Instacart shopper Canada`
+- Affiliates: Insulated bags, sturdy totes (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Grocery shopping apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Peak hours & tip culture in Canadian cities. 6) Affiliate slots: place Insulated bags, sturdy totes (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P03-T04 — How to get your first client with Social media management in Canada
+### P03-T04 — How to get your first client with Grocery shopping apps in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `social media manager freelance`
-- Affiliates: Canva, schedulers
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Social media management. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Main Street + DTC brands. 6) Affiliate slots: place Canva, schedulers inside decision steps; secondary: Meta/ads tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Instacart shopper Canada`
+- Affiliates: Insulated bags, sturdy totes (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Grocery shopping apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Peak hours & tip culture in Canadian cities. 6) Affiliate slots: place Insulated bags, sturdy totes (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P03-T20 — The only Social media management toolkit I'd pay for (disclosed)
+### P03-T20 — The only Grocery shopping apps toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `social media manager freelance`
-- Affiliates: Canva, schedulers
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Social media management. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Main Street + DTC brands. 6) Affiliate slots: place Canva, schedulers inside decision steps; secondary: Meta/ads tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Instacart shopper Canada`
+- Affiliates: Insulated bags, sturdy totes (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Grocery shopping apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Peak hours & tip culture in Canadian cities. 6) Affiliate slots: place Insulated bags, sturdy totes (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 4: Canva / graphic design freelancing
+## Pillar 4: Package courier / Spark-class delivery
 
-### P04-T01 — How to start Canva / graphic design freelancing in Canada (step-by-step)
+### P04-T01 — How to start Package courier / Spark-class delivery in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `Canva freelancing`
-- Affiliates: Canva (when open)
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Canva / graphic design freelancing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Coaches, realtors, creators. 6) Affiliate slots: place Canva (when open) inside decision steps; secondary: Amazon tablet/gear. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Spark Driver Canada`
+- Affiliates: Cargo boxes, dollies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Package courier / Spark-class delivery. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Same-day warehouse pickup realities. 6) Affiliate slots: place Cargo boxes, dollies (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P04-T02 — How much does it cost to start Canva / graphic design freelancing? (CAD breakdown)
+### P04-T02 — How much does it cost to start Package courier / Spark-class delivery? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `Canva freelancing`
-- Affiliates: Canva (when open)
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Canva / graphic design freelancing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Coaches, realtors, creators. 6) Affiliate slots: place Canva (when open) inside decision steps; secondary: Amazon tablet/gear. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Spark Driver Canada`
+- Affiliates: Cargo boxes, dollies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Package courier / Spark-class delivery. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Same-day warehouse pickup realities. 6) Affiliate slots: place Cargo boxes, dollies (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P04-T03 — Best tools for Canva / graphic design freelancing in 2026
+### P04-T03 — Best tools for Package courier / Spark-class delivery in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `Canva freelancing`
-- Affiliates: Canva (when open)
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Canva / graphic design freelancing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Coaches, realtors, creators. 6) Affiliate slots: place Canva (when open) inside decision steps; secondary: Amazon tablet/gear. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Spark Driver Canada`
+- Affiliates: Cargo boxes, dollies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Package courier / Spark-class delivery. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Same-day warehouse pickup realities. 6) Affiliate slots: place Cargo boxes, dollies (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P04-T04 — How to get your first client with Canva / graphic design freelancing in Canada
+### P04-T04 — How to get your first client with Package courier / Spark-class delivery in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `Canva freelancing`
-- Affiliates: Canva (when open)
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Canva / graphic design freelancing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Coaches, realtors, creators. 6) Affiliate slots: place Canva (when open) inside decision steps; secondary: Amazon tablet/gear. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Spark Driver Canada`
+- Affiliates: Cargo boxes, dollies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Package courier / Spark-class delivery. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Same-day warehouse pickup realities. 6) Affiliate slots: place Cargo boxes, dollies (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P04-T20 — The only Canva / graphic design freelancing toolkit I'd pay for (disclosed)
+### P04-T20 — The only Package courier / Spark-class delivery toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `Canva freelancing`
-- Affiliates: Canva (when open)
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Canva / graphic design freelancing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Coaches, realtors, creators. 6) Affiliate slots: place Canva (when open) inside decision steps; secondary: Amazon tablet/gear. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `Spark Driver Canada`
+- Affiliates: Cargo boxes, dollies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Package courier / Spark-class delivery. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Same-day warehouse pickup realities. 6) Affiliate slots: place Cargo boxes, dollies (Amazon) inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 6: No-code web design
+## Pillar 5: TaskRabbit-class odd jobs apps
 
-### P06-T01 — How to start No-code web design in Canada (step-by-step)
+### P05-T01 — How to start TaskRabbit-class odd jobs apps in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `no code website freelancer`
-- Affiliates: Hostinger, domains
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for No-code web design. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Local services going online. 6) Affiliate slots: place Hostinger, domains inside decision steps; secondary: Shopify. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `TaskRabbit side hustle Canada`
+- Affiliates: Basic tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for TaskRabbit-class odd jobs apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Assembly & handyman gigs in CA metros. 6) Affiliate slots: place Basic tool kits (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P06-T02 — How much does it cost to start No-code web design? (CAD breakdown)
+### P05-T02 — How much does it cost to start TaskRabbit-class odd jobs apps? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `no code website freelancer`
-- Affiliates: Hostinger, domains
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for No-code web design. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Local services going online. 6) Affiliate slots: place Hostinger, domains inside decision steps; secondary: Shopify. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `TaskRabbit side hustle Canada`
+- Affiliates: Basic tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for TaskRabbit-class odd jobs apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Assembly & handyman gigs in CA metros. 6) Affiliate slots: place Basic tool kits (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P06-T03 — Best tools for No-code web design in 2026
+### P05-T03 — Best tools for TaskRabbit-class odd jobs apps in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `no code website freelancer`
-- Affiliates: Hostinger, domains
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for No-code web design. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Local services going online. 6) Affiliate slots: place Hostinger, domains inside decision steps; secondary: Shopify. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `TaskRabbit side hustle Canada`
+- Affiliates: Basic tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for TaskRabbit-class odd jobs apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Assembly & handyman gigs in CA metros. 6) Affiliate slots: place Basic tool kits (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P06-T04 — How to get your first client with No-code web design in Canada
+### P05-T04 — How to get your first client with TaskRabbit-class odd jobs apps in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `no code website freelancer`
-- Affiliates: Hostinger, domains
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for No-code web design. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Local services going online. 6) Affiliate slots: place Hostinger, domains inside decision steps; secondary: Shopify. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `TaskRabbit side hustle Canada`
+- Affiliates: Basic tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for TaskRabbit-class odd jobs apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Assembly & handyman gigs in CA metros. 6) Affiliate slots: place Basic tool kits (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P06-T20 — The only No-code web design toolkit I'd pay for (disclosed)
+### P05-T20 — The only TaskRabbit-class odd jobs apps toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `no code website freelancer`
-- Affiliates: Hostinger, domains
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for No-code web design. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Local services going online. 6) Affiliate slots: place Hostinger, domains inside decision steps; secondary: Shopify. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `TaskRabbit side hustle Canada`
+- Affiliates: Basic tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for TaskRabbit-class odd jobs apps. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Assembly & handyman gigs in CA metros. 6) Affiliate slots: place Basic tool kits (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 7: Freelance bookkeeping
+## Pillar 13: Dog walking / pet sitting
 
-### P07-T01 — How to start Freelance bookkeeping in Canada (step-by-step)
+### P13-T01 — How to start Dog walking / pet sitting in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `freelance bookkeeping`
-- Affiliates: FreshBooks
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance bookkeeping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: GST/HST & freelancer admin. 6) Affiliate slots: place FreshBooks inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `dog walking side hustle Canada`
+- Affiliates: Leashes, waste bags (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Dog walking / pet sitting. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Neighbourhood routes; winter gear; liability. 6) Affiliate slots: place Leashes, waste bags (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P07-T02 — How much does it cost to start Freelance bookkeeping? (CAD breakdown)
+### P13-T02 — How much does it cost to start Dog walking / pet sitting? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `freelance bookkeeping`
-- Affiliates: FreshBooks
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance bookkeeping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: GST/HST & freelancer admin. 6) Affiliate slots: place FreshBooks inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `dog walking side hustle Canada`
+- Affiliates: Leashes, waste bags (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Dog walking / pet sitting. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Neighbourhood routes; winter gear; liability. 6) Affiliate slots: place Leashes, waste bags (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P07-T03 — Best tools for Freelance bookkeeping in 2026
+### P13-T03 — Best tools for Dog walking / pet sitting in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `freelance bookkeeping`
-- Affiliates: FreshBooks
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance bookkeeping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: GST/HST & freelancer admin. 6) Affiliate slots: place FreshBooks inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `dog walking side hustle Canada`
+- Affiliates: Leashes, waste bags (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Dog walking / pet sitting. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Neighbourhood routes; winter gear; liability. 6) Affiliate slots: place Leashes, waste bags (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P07-T04 — How to get your first client with Freelance bookkeeping in Canada
+### P13-T04 — How to get your first client with Dog walking / pet sitting in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `freelance bookkeeping`
-- Affiliates: FreshBooks
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance bookkeeping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: GST/HST & freelancer admin. 6) Affiliate slots: place FreshBooks inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `dog walking side hustle Canada`
+- Affiliates: Leashes, waste bags (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Dog walking / pet sitting. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Neighbourhood routes; winter gear; liability. 6) Affiliate slots: place Leashes, waste bags (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P07-T20 — The only Freelance bookkeeping toolkit I'd pay for (disclosed)
+### P13-T20 — The only Dog walking / pet sitting toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `freelance bookkeeping`
-- Affiliates: FreshBooks
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Freelance bookkeeping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: GST/HST & freelancer admin. 6) Affiliate slots: place FreshBooks inside decision steps; secondary: KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `dog walking side hustle Canada`
+- Affiliates: Leashes, waste bags (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Dog walking / pet sitting. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Neighbourhood routes; winter gear; liability. 6) Affiliate slots: place Leashes, waste bags (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 8: Online tutoring
+## Pillar 14: House cleaning
 
-### P08-T01 — How to start Online tutoring in Canada (step-by-step)
+### P14-T01 — How to start House cleaning in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `online tutoring`
-- Affiliates: Zoom, scheduling
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Online tutoring. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Provincial curriculum / bilingual. 6) Affiliate slots: place Zoom, scheduling inside decision steps; secondary: Stripe/Gumroad later. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `house cleaning side hustle Canada`
+- Affiliates: Cleaning supplies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for House cleaning. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Supply costs in CAD; recurring clients. 6) Affiliate slots: place Cleaning supplies (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P08-T02 — How much does it cost to start Online tutoring? (CAD breakdown)
+### P14-T02 — How much does it cost to start House cleaning? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `online tutoring`
-- Affiliates: Zoom, scheduling
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Online tutoring. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Provincial curriculum / bilingual. 6) Affiliate slots: place Zoom, scheduling inside decision steps; secondary: Stripe/Gumroad later. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `house cleaning side hustle Canada`
+- Affiliates: Cleaning supplies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for House cleaning. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Supply costs in CAD; recurring clients. 6) Affiliate slots: place Cleaning supplies (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P08-T03 — Best tools for Online tutoring in 2026
+### P14-T03 — Best tools for House cleaning in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `online tutoring`
-- Affiliates: Zoom, scheduling
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Online tutoring. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Provincial curriculum / bilingual. 6) Affiliate slots: place Zoom, scheduling inside decision steps; secondary: Stripe/Gumroad later. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `house cleaning side hustle Canada`
+- Affiliates: Cleaning supplies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for House cleaning. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Supply costs in CAD; recurring clients. 6) Affiliate slots: place Cleaning supplies (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P08-T04 — How to get your first client with Online tutoring in Canada
+### P14-T04 — How to get your first client with House cleaning in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `online tutoring`
-- Affiliates: Zoom, scheduling
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Online tutoring. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Provincial curriculum / bilingual. 6) Affiliate slots: place Zoom, scheduling inside decision steps; secondary: Stripe/Gumroad later. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `house cleaning side hustle Canada`
+- Affiliates: Cleaning supplies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for House cleaning. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Supply costs in CAD; recurring clients. 6) Affiliate slots: place Cleaning supplies (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P08-T20 — The only Online tutoring toolkit I'd pay for (disclosed)
+### P14-T20 — The only House cleaning toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `online tutoring`
-- Affiliates: Zoom, scheduling
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Online tutoring. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Provincial curriculum / bilingual. 6) Affiliate slots: place Zoom, scheduling inside decision steps; secondary: Stripe/Gumroad later. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `house cleaning side hustle Canada`
+- Affiliates: Cleaning supplies (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for House cleaning. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Supply costs in CAD; recurring clients. 6) Affiliate slots: place Cleaning supplies (Amazon) inside decision steps; secondary: FreshBooks, KOHO. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 11: Notion & spreadsheet templates
+## Pillar 15: Lawn care / landscaping
 
-### P11-T01 — How to start Notion & spreadsheet templates in Canada (step-by-step)
+### P15-T01 — How to start Lawn care / landscaping in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `sell Notion templates`
-- Affiliates: Gumroad, Notion
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Notion & spreadsheet templates. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: CAD budget / CA planners. 6) Affiliate slots: place Gumroad, Notion inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `lawn care side hustle Canada`
+- Affiliates: Equipment (Amazon/Home Depot)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Lawn care / landscaping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Seasonal demand; municipal bylaws. 6) Affiliate slots: place Equipment (Amazon/Home Depot) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P11-T02 — How much does it cost to start Notion & spreadsheet templates? (CAD breakdown)
+### P15-T02 — How much does it cost to start Lawn care / landscaping? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `sell Notion templates`
-- Affiliates: Gumroad, Notion
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Notion & spreadsheet templates. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: CAD budget / CA planners. 6) Affiliate slots: place Gumroad, Notion inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `lawn care side hustle Canada`
+- Affiliates: Equipment (Amazon/Home Depot)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Lawn care / landscaping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Seasonal demand; municipal bylaws. 6) Affiliate slots: place Equipment (Amazon/Home Depot) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P11-T03 — Best tools for Notion & spreadsheet templates in 2026
+### P15-T03 — Best tools for Lawn care / landscaping in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `sell Notion templates`
-- Affiliates: Gumroad, Notion
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Notion & spreadsheet templates. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: CAD budget / CA planners. 6) Affiliate slots: place Gumroad, Notion inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `lawn care side hustle Canada`
+- Affiliates: Equipment (Amazon/Home Depot)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Lawn care / landscaping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Seasonal demand; municipal bylaws. 6) Affiliate slots: place Equipment (Amazon/Home Depot) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P11-T04 — How to get your first sale with Notion & spreadsheet templates in Canada
+### P15-T04 — How to get your first client with Lawn care / landscaping in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `sell Notion templates`
-- Affiliates: Gumroad, Notion
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Notion & spreadsheet templates. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: CAD budget / CA planners. 6) Affiliate slots: place Gumroad, Notion inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `lawn care side hustle Canada`
+- Affiliates: Equipment (Amazon/Home Depot)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Lawn care / landscaping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Seasonal demand; municipal bylaws. 6) Affiliate slots: place Equipment (Amazon/Home Depot) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P11-T20 — The only Notion & spreadsheet templates toolkit I'd pay for (disclosed)
+### P15-T20 — The only Lawn care / landscaping toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `sell Notion templates`
-- Affiliates: Gumroad, Notion
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Notion & spreadsheet templates. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: CAD budget / CA planners. 6) Affiliate slots: place Gumroad, Notion inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `lawn care side hustle Canada`
+- Affiliates: Equipment (Amazon/Home Depot)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Lawn care / landscaping. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Seasonal demand; municipal bylaws. 6) Affiliate slots: place Equipment (Amazon/Home Depot) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 12: Printables & PDF planners
+## Pillar 16: Snow removal
 
-### P12-T01 — How to start Printables & PDF planners in Canada (step-by-step)
+### P16-T01 — How to start Snow removal in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `sell printables online`
-- Affiliates: Etsy, Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Printables & PDF planners. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Canada school year dates. 6) Affiliate slots: place Etsy, Gumroad inside decision steps; secondary: Canva. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `snow removal side hustle Canada`
+- Affiliates: Shovels, salt, blowers
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Snow removal. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Contract season & early-morning routes. 6) Affiliate slots: place Shovels, salt, blowers inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P12-T02 — How much does it cost to start Printables & PDF planners? (CAD breakdown)
+### P16-T02 — How much does it cost to start Snow removal? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `sell printables online`
-- Affiliates: Etsy, Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Printables & PDF planners. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Canada school year dates. 6) Affiliate slots: place Etsy, Gumroad inside decision steps; secondary: Canva. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `snow removal side hustle Canada`
+- Affiliates: Shovels, salt, blowers
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Snow removal. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Contract season & early-morning routes. 6) Affiliate slots: place Shovels, salt, blowers inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P12-T03 — Best tools for Printables & PDF planners in 2026
+### P16-T03 — Best tools for Snow removal in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `sell printables online`
-- Affiliates: Etsy, Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Printables & PDF planners. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Canada school year dates. 6) Affiliate slots: place Etsy, Gumroad inside decision steps; secondary: Canva. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `snow removal side hustle Canada`
+- Affiliates: Shovels, salt, blowers
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Snow removal. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Contract season & early-morning routes. 6) Affiliate slots: place Shovels, salt, blowers inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P12-T04 — How to get your first sale with Printables & PDF planners in Canada
+### P16-T04 — How to get your first client with Snow removal in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `sell printables online`
-- Affiliates: Etsy, Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Printables & PDF planners. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Canada school year dates. 6) Affiliate slots: place Etsy, Gumroad inside decision steps; secondary: Canva. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `snow removal side hustle Canada`
+- Affiliates: Shovels, salt, blowers
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Snow removal. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Contract season & early-morning routes. 6) Affiliate slots: place Shovels, salt, blowers inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P12-T20 — The only Printables & PDF planners toolkit I'd pay for (disclosed)
+### P16-T20 — The only Snow removal toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `sell printables online`
-- Affiliates: Etsy, Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Printables & PDF planners. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Canada school year dates. 6) Affiliate slots: place Etsy, Gumroad inside decision steps; secondary: Canva. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `snow removal side hustle Canada`
+- Affiliates: Shovels, salt, blowers
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Snow removal. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Contract season & early-morning routes. 6) Affiliate slots: place Shovels, salt, blowers inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-## Pillar 15: Ebook & playbook publishing
+## Pillar 17: Handyman / odd jobs
 
-### P15-T01 — How to start Ebook & playbook publishing in Canada (step-by-step)
+### P17-T01 — How to start Handyman / odd jobs in Canada (step-by-step)
 - Template: T01 (Beginner how-to)
-- Keyword seed: `self publish ebook`
-- Affiliates: Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Ebook & playbook publishing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Core MMO product path. 6) Affiliate slots: place Gumroad inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `handyman side hustle Canada`
+- Affiliates: Tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Handyman / odd jobs. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Beginner how-to': Who it fits; 7–10 steps; first-week plan; mistakes. 5) Canada note: Small repairs without overstepping trades rules. 6) Affiliate slots: place Tool kits (Amazon) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P15-T02 — How much does it cost to start Ebook & playbook publishing? (CAD breakdown)
+### P17-T02 — How much does it cost to start Handyman / odd jobs? (CAD breakdown)
 - Template: T02 (Cost & budget)
-- Keyword seed: `self publish ebook`
-- Affiliates: Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Ebook & playbook publishing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Core MMO product path. 6) Affiliate slots: place Gumroad inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `handyman side hustle Canada`
+- Affiliates: Tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Handyman / odd jobs. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Cost & budget': Startup table; monthly costs; free vs paid path. 5) Canada note: Small repairs without overstepping trades rules. 6) Affiliate slots: place Tool kits (Amazon) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P15-T03 — Best tools for Ebook & playbook publishing in 2026
+### P17-T03 — Best tools for Handyman / odd jobs in 2026
 - Template: T03 (Tools stack)
-- Keyword seed: `self publish ebook`
-- Affiliates: Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Ebook & playbook publishing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Core MMO product path. 6) Affiliate slots: place Gumroad inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `handyman side hustle Canada`
+- Affiliates: Tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Handyman / odd jobs. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Tools stack': Criteria; 5–8 tools; stack diagram; what to skip. 5) Canada note: Small repairs without overstepping trades rules. 6) Affiliate slots: place Tool kits (Amazon) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P15-T04 — How to get your first sale with Ebook & playbook publishing in Canada
+### P17-T04 — How to get your first client with Handyman / odd jobs in Canada
 - Template: T04 (First client / first sale)
-- Keyword seed: `self publish ebook`
-- Affiliates: Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Ebook & playbook publishing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Core MMO product path. 6) Affiliate slots: place Gumroad inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `handyman side hustle Canada`
+- Affiliates: Tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Handyman / odd jobs. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'First client / first sale': Outreach scripts; portfolio minimum; 14-day sprint. 5) Canada note: Small repairs without overstepping trades rules. 6) Affiliate slots: place Tool kits (Amazon) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
 
-### P15-T20 — The only Ebook & playbook publishing toolkit I'd pay for (disclosed)
+### P17-T20 — The only Handyman / odd jobs toolkit I’d pay for (disclosed)
 - Template: T20 (Affiliate toolkit post)
-- Keyword seed: `self publish ebook`
-- Affiliates: Gumroad
-- Outline: 1) Reader job: after this post, reader can take the next concrete step for Ebook & playbook publishing. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Core MMO product path. 6) Affiliate slots: place Gumroad inside decision steps; secondary: Email tools. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
+- Keyword seed: `handyman side hustle Canada`
+- Affiliates: Tool kits (Amazon)
+- Outline: 1) Reader job: after this post, reader can take the next concrete step for Handyman / odd jobs. 2) Hook: Canada-specific pain (CAD, tools, or trust). 3) Who it fits / who it doesn't. 4) Core sections per template 'Affiliate toolkit post': Criteria; must-haves vs nice-to-haves; disclosure box. 5) Canada note: Small repairs without overstepping trades rules. 6) Affiliate slots: place Tool kits (Amazon) inside decision steps; secondary: FreshBooks. 7) CTA: related pillar posts + email/newsletter stub. 8) Disclosure near first affiliate mention.
