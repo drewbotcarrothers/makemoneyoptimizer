@@ -707,6 +707,12 @@ a.card:hover {
   }
 }
 
+@media (min-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+  }
+}
+
 .site-footer a {
   color: #e2e8f0;
   text-decoration: none;
