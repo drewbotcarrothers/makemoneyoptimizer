@@ -1,0 +1,23 @@
+---
+import { affiliateHref, type AffiliateProgram } from '../lib/affiliate-placeholders';
+
+interface Props {
+  program: AffiliateProgram;
+  label: string;
+  /** Amazon.ca search keywords. Ignored for KOHO and FreshBooks. */
+  search?: string;
+}
+
+const { program, label, search } = Astro.props;
+const href = affiliateHref(program, search);
+---
+
+<a
+  href={href}
+  data-affiliate="TODO-AFFILIATE"
+  data-program={program}
+  rel="sponsored nofollow noopener"
+  target="_blank"
+>
+  {label}<span class="affiliate-pending"> TODO-AFFILIATE</span>
+</a>

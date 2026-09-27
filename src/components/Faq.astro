@@ -1,0 +1,42 @@
+---
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  items: FaqItem[];
+}
+
+const { items } = Astro.props;
+
+if (items.length < 4 || items.length > 6) {
+  throw new Error(`FAQ block must contain 4–6 questions (got ${items.length}).`);
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+};
+---
+
+<h2>Common questions</h2>
+<div class="faq-list">
+  {
+    items.map((item) => (
+      <details>
+        <summary>{item.question}</summary>
+        <p>{item.answer}</p>
+      </details>
+    ))
+  }
+</div>
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
