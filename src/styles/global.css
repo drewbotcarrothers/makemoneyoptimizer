@@ -662,6 +662,56 @@ a.card:hover {
   border-radius: 4px;
 }
 
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-6) 0;
+  font-size: 0.95rem;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid var(--color-border);
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  background: var(--color-surface-muted);
+  color: var(--color-ink);
+}
+
+.prose details {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.85rem 0;
+}
+
+.prose summary {
+  cursor: pointer;
+  font-weight: 650;
+  color: var(--color-ink);
+}
+
+.prose details p {
+  margin: 0.65rem 0 0.25rem;
+}
+
+.affiliate-pending {
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--color-ink-subtle);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .prose table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 .article-hero {
   padding: var(--space-10) 0 var(--space-6);
   border-bottom: 1px solid var(--color-border);
