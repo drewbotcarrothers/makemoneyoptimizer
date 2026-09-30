@@ -1,0 +1,36 @@
+---
+interface Source {
+  title: string;
+  url: string;
+  publisher: string;
+}
+
+interface Props {
+  sources?: Source[];
+}
+
+const { sources = [] } = Astro.props;
+---
+
+{
+  sources.length > 0 && (
+    <section class="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Which sources support this guide?</h2>
+      <p>
+        The rules, rates, and platform requirements in this guide are checked against these primary
+        sources. Retail price ranges are labelled as ranges to verify locally, and they are not
+        quotes.
+      </p>
+      <ul>
+        {sources.map((source) => (
+          <li>
+            <a href={source.url} rel="noopener noreferrer">
+              {source.title}
+            </a>
+            <span> — {source.publisher}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}

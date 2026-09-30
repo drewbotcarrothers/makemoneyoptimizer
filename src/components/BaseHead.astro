@@ -11,6 +11,7 @@ interface Props {
   modifiedTime?: string;
   noindex?: boolean;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  author?: string;
 }
 
 const {
@@ -23,6 +24,7 @@ const {
   modifiedTime,
   noindex = false,
   jsonLd,
+  author = SITE.name,
 } = Astro.props;
 
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
@@ -35,7 +37,7 @@ const canonical = canonicalURL.endsWith('/') && canonicalURL !== `${SITE.url}/`
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
-<meta name="author" content={SITE.name} />
+<meta name="author" content={author} />
 <meta name="generator" content={Astro.generator} />
 <link rel="canonical" href={canonical} />
 {noindex ? (

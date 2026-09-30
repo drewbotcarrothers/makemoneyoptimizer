@@ -11,6 +11,8 @@ Primary formats: guides and side-hustle explainers (MDX)
 
 - Home: https://makemoneyoptimizer.com/
 - About: https://makemoneyoptimizer.com/about
+- Author, Andrew Carrothers: https://makemoneyoptimizer.com/about/andrew-carrothers
+- How we create content: https://makemoneyoptimizer.com/how-we-create-content
 - Side hustles hub: https://makemoneyoptimizer.com/side-hustles
 - Guides hub: https://makemoneyoptimizer.com/guides
 - Contact: https://makemoneyoptimizer.com/contact
