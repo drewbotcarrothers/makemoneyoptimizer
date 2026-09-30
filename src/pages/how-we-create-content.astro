@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { AUTHOR, SITE } from '../lib/site';
+---
+
+<BaseLayout
+  title="How we create content"
+  description="How Make Money Optimizer researches Canadian side-hustle guides: AI-assisted drafts, primary-source checks, labelled examples, and affiliate independence."
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">Trust</p>
+      <h1>How we create content</h1>
+      <p class="lead">
+        {SITE.name} explains side hustles for people in Canada. This page says how those guides are
+        made, and what we will not invent.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow legal stack-lg">
+      <div>
+        <h2>Research and drafting</h2>
+        <p>
+          We research and draft with AI assistance. A person does not hand-write every sentence, and
+          we do not pretend otherwise. {AUTHOR.name} publishes the site. He does not personally
+          review every article before it goes up, and articles do not say they were reviewed by him.
+        </p>
+      </div>
+      <div>
+        <h2>What we check</h2>
+        <p>
+          We check facts, figures, and rules against primary sources. For tax and business rules that
+          usually means the Canada Revenue Agency. For provincial rules it means the provincial
+          government. For a platform’s requirements it means that platform’s official Canadian pages.
+          When a guide relies on one of those sources, the guide links it beside the claim and lists
+          it again at the end.
+        </p>
+      </div>
+      <div>
+        <h2>Examples, statistics, and stories</h2>
+        <p>
+          Illustrative examples are labelled as illustrative. A worked week or a break-even sketch
+          uses assumed numbers so you can see the arithmetic. It is not a survey, a typical result,
+          or a promise of what you will earn.
+        </p>
+        <p>
+          We do not invent statistics, quotes, testimonials, or personal anecdotes. If a number is
+          not in a primary source, the guide either leaves it out or says it is a range to verify
+          locally, such as a shelf price for a shovel.
+        </p>
+      </div>
+      <div>
+        <h2>Corrections</h2>
+        <p>
+          Rules, rates, and app requirements change. When we learn that a guide is wrong, we correct
+          it. If you spot an error, use the <a href="/contact">contact page</a> and tell us the
+          sentence and a better source.
+        </p>
+      </div>
+      <div>
+        <h2>Affiliates</h2>
+        <p>
+          Some links may be affiliate links. If you buy through them, we may earn a commission at no
+          extra cost to you. Affiliate relationships never change our recommendations. A product is
+          mentioned because it fits the step, not because a program asked for the mention. Details
+          are on the <a href="/affiliate-disclosure">Affiliate Disclosure</a>.
+        </p>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="/side-hustles">Browse side hustles</a>
+        <a class="btn btn-secondary" href={AUTHOR.path}>About Andrew</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

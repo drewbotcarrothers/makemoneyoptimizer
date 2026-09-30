@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { AUTHOR, SITE, authorSameAs, authorUrl } from '../../lib/site';
+
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: AUTHOR.name,
+  url: authorUrl,
+  jobTitle: AUTHOR.jobTitle,
+  description: AUTHOR.bio,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Toronto',
+    addressRegion: 'ON',
+    addressCountry: 'CA',
+  },
+  worksFor: {
+    '@type': 'Organization',
+    name: SITE.name,
+    url: SITE.url,
+  },
+  sameAs: authorSameAs,
+};
+
+const pageDescription =
+  'Andrew is a personal finance expert, DIY investor, and life optimizer in Toronto who writes Make Money Optimizer’s Canadian side-hustle guides.';
+---
+
+<BaseLayout
+  title="Andrew"
+  description={pageDescription}
+  jsonLd={personJsonLd}
+  author={AUTHOR.name}
+>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <p class="eyebrow">Author</p>
+      <h1>Andrew</h1>
+      <p class="lead">{AUTHOR.bio}</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow legal stack-lg">
+      <div>
+        <h2>What Andrew writes here</h2>
+        <p>
+          On {SITE.name}, Andrew explains Canadian side hustles in plain language: who a hustle suits,
+          what it costs, and which official rules to read before you spend money. The guides are
+          researched and drafted with AI assistance, then checked against primary sources.
+          Read <a href="/how-we-create-content">how we create content</a>.
+        </p>
+      </div>
+      <div>
+        <h2>Andrew also runs these sister sites</h2>
+        <ul>
+          {
+            AUTHOR.sisterSites.map((site) => (
+              <li>
+                <a href={site.href} rel="noopener noreferrer">
+                  {site.name}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+        <p>
+          YouTube:{' '}
+          <a href={AUTHOR.youtube.href} rel="noopener noreferrer">{AUTHOR.youtube.name}</a>
+        </p>
+      </div>
+      <div class="btn-group">
+        <a class="btn btn-primary" href="/side-hustles">Browse side hustles</a>
+        <a class="btn btn-secondary" href="/about">About the site</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

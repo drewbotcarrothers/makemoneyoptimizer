@@ -2,6 +2,8 @@
 
 Top 10 **High** pillars × templates **T01, T02, T03, T04, T20**.
 
+New drafts follow the question-title template and AI guardrails in [`docs/CONTENT-GENERATOR.md`](../docs/CONTENT-GENERATOR.md): answer in the first two sentences, question H2s, a primary source for every rule or rate, a labelled illustrative example, disclosure before the first affiliate link, and no invented statistics or personal stories.
+
 CSV: `batch-1-outlines-50.csv`
 
 ## Pillar 1: Food delivery driving

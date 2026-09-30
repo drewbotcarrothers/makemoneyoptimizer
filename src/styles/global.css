@@ -727,6 +727,41 @@ a.card:hover {
   margin-bottom: var(--space-4);
 }
 
+.byline {
+  margin: var(--space-4) 0 var(--space-2);
+  font-weight: 650;
+  color: var(--color-ink);
+}
+
+.article-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin: 0;
+  color: var(--color-ink-subtle);
+  font-size: var(--text-sm);
+}
+
+.ai-note {
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+}
+
+.prose h2 + p {
+  color: var(--color-ink);
+}
+
+.sources ul,
+.author-box {
+  margin-top: var(--space-4);
+}
+
+.author-box {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-6);
+}
+
 .related-grid {
   display: grid;
   gap: var(--space-4);

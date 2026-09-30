@@ -74,6 +74,19 @@ Static files are emitted to `dist/`.
 | `dev` | `astro dev` |
 | `build` | `astro build` |
 | `preview` | `astro preview` |
+| `indexnow` | `node scripts/indexnow.mjs` |
+
+## IndexNow (after you deploy)
+
+IndexNow tells participating search engines which URLs changed. The build does **not** submit anything.
+
+1. Run `npm run build`.
+2. Upload the contents of `dist/` to Hostinger, including the key file
+   `4f67fb08e1e97facded63108c0e87d08.txt` (it is copied from `public/` during the build).
+3. Confirm `https://makemoneyoptimizer.com/4f67fb08e1e97facded63108c0e87d08.txt` loads and shows the key.
+4. From the project directory, run `npm run indexnow`.
+
+The script reads `dist/sitemap-index.xml` (and the sitemap files it lists), collects the page URLs, and POSTs them to `https://api.indexnow.org/indexnow`. Run it again after later deploys when you want those URLs recrawled.
 
 ## Brand tone
 

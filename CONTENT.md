@@ -96,13 +96,17 @@ All marked `sample: true` in frontmatter:
 
 ## Editorial checklist (per article)
 
-1. Canadian angle or CA admin note  
-2. Who it fits / doesn’t fit  
-3. Costs & trade-offs  
-4. Ethical boundaries  
-5. Internal links to 1–2 related pieces  
-6. No guaranteed income language  
-7. Frontmatter: title, description, category, tags, dates, `sample`/`featured` as needed  
+1. The title and the first two sentences answer the question and name Canada.
+2. Every H2 is a reader question, followed immediately by a 1–3 sentence answer. Steps use H3s.
+3. Every rule, rate, or platform requirement links a primary source. Unsourced figures are labelled as ranges to verify, or they are removed.
+4. An illustrative example or a comparison table is present, and examples are labelled illustrative.
+5. Affiliate disclosure sits before the first affiliate link.
+6. The byline, AI-assistance note, and sources list are present (the layout adds the byline, note, sources, and author box).
+7. `updatedDate` and `updateNote` are set when the content materially changes. BlogPosting dates match those fields.
+8. The slug is readable and the meta description matches the article.
+9. The guide is linked from its hub and from 2–3 related guides.
+10. If the post covers limits, rates, or tax rules, note when it should be refreshed.
+11. No invented statistics, quotes, anecdotes, or testimonials, and no “reviewed by Andrew” line.  
 
 ## Ad slot inventory (placeholders)
 

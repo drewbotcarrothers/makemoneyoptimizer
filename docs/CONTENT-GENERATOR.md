@@ -26,6 +26,45 @@ Related: [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md), [MONETIZATION.md](../
 
 ---
 
+## Post template (use this shape)
+
+Question title that matches how someone in Canada searches. The layout adds the byline (“By Andrew”), Published date, Updated date when `updatedDate` is set, and `updateNote` as “Updated [date]: [note]”.
+
+1. **Disclosure before the first affiliate link** (`AffiliateDisclosure`, then `AffiliateLink` placeholders marked TODO-AFFILIATE).
+2. **Direct answer** in the first one or two sentences: name Canada, define the hustle, and say who it suits. Do not open with “After this guide you can…”.
+3. **Quick-facts table** with the figures a reader needs, and a source link on every rule or official number. Shelf prices stay labelled as ranges to verify locally.
+4. **Question H2s**, each followed immediately by a 1–3 sentence answer that still makes sense if it is quoted alone. Name the hustle, Canada, and the province where the rule is provincial. Use **H3s for steps**.
+5. **Illustrative example** (beginner guides) or the existing labelled break-even sketch (cost posts). Mark it “Illustrative example.” Worked Canadian numbers are assumptions, not a survey.
+6. **Comparison table** where two real options differ (per visit vs seasonal, lean kit vs equipped kit).
+7. **Common mistakes**.
+8. **FAQs** through the `Faq` component (4–6 real questions). The component heading is already a question.
+9. **Sources**, **author box**, and **related guides** are rendered by the article layout from frontmatter. Fill `sources: [{title, url, publisher}]`. Link the same sources beside the claims.
+
+```yaml
+title: "How much does it cost to start snow removal in Canada?"
+description: "CAD ranges for a shovel route versus a blower, plus insurance, salt, and a labelled break-even sketch."
+pubDate: 2026-09-29
+updatedDate: 2026-09-30
+updateNote: "Restructured for clarity and added sources"
+category: guide
+tags: [local-services, seasonal]
+sources:
+  - title: "When to register for and start charging the GST/HST"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
+    publisher: "Canada Revenue Agency"
+```
+
+### AI guardrails
+
+- Do not invent statistics, quotes, anecdotes, or testimonials.
+- Do not write “reviewed by Andrew” or a personal story. Andrew does not review each post.
+- List a primary source for every claim about a tax rule, a fee, a legal limit, or a platform requirement (CRA, the provincial government, or the platform’s official Canadian page).
+- If a figure is uncertain, say so and point at the page that publishes the current number. Prefer “confirm the live rate” over a stale screenshot.
+- Label illustrative arithmetic as illustrative. Do not present it as average earnings.
+- Affiliate relationships never change the recommendation. Disclosure stays before the first affiliate link.
+
+---
+
 ## How to use (workflow)
 
 1. **Pick a High-priority pillar** (or seasonal demand).
@@ -37,6 +76,7 @@ Related: [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md), [MONETIZATION.md](../
 
 ### Depth checklist (every post)
 
+- [ ] **Answer in the title and the first two sentences**, with Canada named
 - [ ] Clear **reader job** (what they can do after reading)
 - [ ] **5+ actionable steps** (or equivalent structured sections)
 - [ ] **3+ tips** that are non-obvious
