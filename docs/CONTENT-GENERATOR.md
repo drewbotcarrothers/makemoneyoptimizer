@@ -28,7 +28,7 @@ Related: [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md), [MONETIZATION.md](../
 
 ## Post template (use this shape)
 
-Question title that matches how someone in Canada searches. The layout adds the byline (“By Andrew Carrothers”), Published date, Updated date when `updatedDate` is set, and `updateNote` as “Updated [date]: [note]”.
+Question title that matches how someone in Canada searches. The layout adds the byline (“By Andrew”), Published date, Updated date when `updatedDate` is set, and `updateNote` as “Updated [date]: [note]”.
 
 1. **Disclosure before the first affiliate link** (`AffiliateDisclosure`, then `AffiliateLink` placeholders marked TODO-AFFILIATE).
 2. **Direct answer** in the first one or two sentences: name Canada, define the hustle, and say who it suits. Do not open with “After this guide you can…”.
