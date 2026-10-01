@@ -66,6 +66,8 @@ Living shortlist of programs that are **usable for Canadian audiences / Canadian
 | Program | Priority | CA notes | Network / apply | MMO content fit |
 |---------|----------|----------|-----------------|-----------------|
 | **FreshBooks** | **A** | Strong freelancer invoicing; PartnerStack; CPA varies — verify dashboard | https://www.freshbooks.com/affiliate-program | Freelance writing, VA, tutoring invoices |
+| **Wealthsimple Tax** | **B** | CA tax software; follow Wealthsimple affiliate guidelines; placeholder merchant URL until approved | https://www.wealthsimple.com/en-ca/tax | Side-hustle tax filing mentions |
+| **TurboTax Canada** | **B** | CA tax software; placeholder merchant URL until approved | https://turbotax.intuit.ca/ | Side-hustle tax filing mentions |
 | **Fiverr Affiliates** | **A** | Global; buyers + marketplace | https://pro.fiverr.com/partnerships/affiliates | “Sell services online,” gig skill articles |
 | **Canva (Canvassador → affiliate)** | **Watch** | Affiliate often gated via Canvassador; apps may be closed | https://www.canva.com/help/canva-affiliate-marketing-program/ | Design for stores, social, printables |
 | **Semrush / Ahrefs / similar SEO tools** | **B** | Global SaaS; Impact/PartnerStack common | Brand partner pages | Content/SEO hustles, agency paths |
