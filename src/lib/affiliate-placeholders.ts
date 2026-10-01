@@ -23,6 +23,16 @@ export const AFFILIATE_PROGRAMS = {
     /** TODO-AFFILIATE: replace with the approved FreshBooks affiliate URL. */
     href: 'https://www.freshbooks.com/',
   },
+  'wealthsimple-tax': {
+    name: 'Wealthsimple Tax',
+    /** TODO-AFFILIATE: replace with the approved Wealthsimple Tax affiliate URL. */
+    href: 'https://www.wealthsimple.com/en-ca/tax',
+  },
+  'turbotax-canada': {
+    name: 'TurboTax Canada',
+    /** TODO-AFFILIATE: replace with the approved TurboTax Canada affiliate URL. */
+    href: 'https://turbotax.intuit.ca/',
+  },
   shopify: {
     name: 'Shopify',
     /** TODO-AFFILIATE: replace with the approved Shopify affiliate URL. */
