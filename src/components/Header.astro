@@ -10,7 +10,21 @@ function isCurrent(href: string) {
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/" aria-label={`${SITE.name} home`}>
-      <span class="brand-mark" aria-hidden="true">MO</span>
+      <picture>
+        <source
+          type="image/webp"
+          srcset="/beaver-header.webp 1x, /beaver-header@2x.webp 2x"
+        />
+        <img
+          class="brand-logo"
+          src="/beaver-header.png"
+          srcset="/beaver-header.png 1x, /beaver-header@2x.png 2x"
+          alt={`${SITE.name} logo: a friendly beaver waving and holding Canadian bills`}
+          width="48"
+          height="48"
+          decoding="async"
+        />
+      </picture>
       <span class="brand-text">{SITE.name}</span>
     </a>
 
