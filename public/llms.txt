@@ -27,15 +27,6 @@ Primary formats: guides and side-hustle explainers (MDX)
 - Posts JSON: https://makemoneyoptimizer.com/posts.json
 - This file: https://makemoneyoptimizer.com/llms.txt
 
-## Sample articles (v1)
-
-The short v1 notes at the old tutoring, writing, and reselling slugs redirect to the full guides below. The gig-delivery note redirects to the side-hustles hub; use the food-delivery and rideshare guides for that work.
-
-- Freelance writing in Canada: https://makemoneyoptimizer.com/side-hustles/freelance-writing-side-hustle-canada
-- Reselling on Canadian marketplaces: https://makemoneyoptimizer.com/side-hustles/reselling-side-hustle-canada
-- Online tutoring in Canada: https://makemoneyoptimizer.com/side-hustles/online-tutoring-side-hustle-canada
-- Gig delivery (hub): https://makemoneyoptimizer.com/side-hustles
-
 ## Beginner how-to guides (online)
 
 - Online tutoring: https://makemoneyoptimizer.com/side-hustles/online-tutoring-side-hustle-canada

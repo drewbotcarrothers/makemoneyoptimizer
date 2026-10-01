@@ -45,10 +45,6 @@ All marked `sample: true` in frontmatter:
 
 | Slug | Category | Angle |
 |------|----------|-------|
-| `freelance-writing-canada` | side-hustle | Niches, clients, admin basics |
-| `reselling-marketplace-canada` | side-hustle | Sourcing, fees, ethics |
-| `gig-delivery-canada` | side-hustle | Real costs, safety, pilot plan |
-| `online-tutoring-canada` | guide | Setup, boundaries, pilot |
 
 ## Future monetization hooks
 
