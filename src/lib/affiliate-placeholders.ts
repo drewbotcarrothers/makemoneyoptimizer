@@ -28,6 +28,26 @@ export const AFFILIATE_PROGRAMS = {
     /** TODO-AFFILIATE: replace with the approved Shopify affiliate URL. */
     href: 'https://www.shopify.com/ca',
   },
+  canva: {
+    name: 'Canva',
+    /** TODO-AFFILIATE: replace with the approved Canva affiliate URL. */
+    href: 'https://www.canva.com/',
+  },
+  hostinger: {
+    name: 'Hostinger',
+    /** TODO-AFFILIATE: replace with the approved Hostinger affiliate URL. */
+    href: 'https://www.hostinger.com/ca',
+  },
+  gumroad: {
+    name: 'Gumroad',
+    /** TODO-AFFILIATE: replace with the approved Gumroad affiliate URL. */
+    href: 'https://gumroad.com/',
+  },
+  etsy: {
+    name: 'Etsy',
+    /** TODO-AFFILIATE: replace with the approved Etsy affiliate URL. */
+    href: 'https://www.etsy.com/',
+  },
 } as const;
 
 export type AffiliateProgram = keyof typeof AFFILIATE_PROGRAMS;
