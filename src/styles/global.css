@@ -224,16 +224,20 @@ li + li {
   color: var(--color-primary-700);
 }
 
+.brand picture {
+  display: block;
+  flex-shrink: 0;
+}
+
 .brand-logo {
   display: block;
-  height: 2.25rem;
+  height: 2.75rem;
   width: auto;
-  flex-shrink: 0;
 }
 
 @media (min-width: 768px) {
   .brand-logo {
-    height: 2.5rem;
+    height: 3rem;
   }
 }
 
