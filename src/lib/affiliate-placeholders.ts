@@ -58,6 +58,11 @@ export const AFFILIATE_PROGRAMS = {
     /** TODO-AFFILIATE: replace with the approved Etsy affiliate URL. */
     href: 'https://www.etsy.com/',
   },
+  printful: {
+    name: 'Printful',
+    /** TODO-AFFILIATE: replace with the approved Printful affiliate URL. */
+    href: 'https://www.printful.com/ca',
+  },
 } as const;
 
 export type AffiliateProgram = keyof typeof AFFILIATE_PROGRAMS;
