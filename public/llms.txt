@@ -27,8 +27,18 @@ Primary formats: guides and side-hustle explainers (MDX)
 - Posts JSON: https://makemoneyoptimizer.com/posts.json
 - This file: https://makemoneyoptimizer.com/llms.txt
 
-## Sample articles (v1)
+## Beginner how-to guides (online)
 
+- Online tutoring: https://makemoneyoptimizer.com/side-hustles/online-tutoring-side-hustle-canada
+- Freelance writing: https://makemoneyoptimizer.com/side-hustles/freelance-writing-side-hustle-canada
+- Reselling on Canadian marketplaces: https://makemoneyoptimizer.com/side-hustles/reselling-side-hustle-canada
+- Virtual assistant work: https://makemoneyoptimizer.com/side-hustles/virtual-assistant-side-hustle-canada
+- Social media management: https://makemoneyoptimizer.com/side-hustles/social-media-manager-side-hustle-canada
+- Notion templates: https://makemoneyoptimizer.com/side-hustles/notion-templates-side-hustle-canada
+- YouTube: https://makemoneyoptimizer.com/side-hustles/youtube-side-hustle-canada
+- Shopify store: https://makemoneyoptimizer.com/side-hustles/shopify-store-side-hustle-canada
+- Local SEO freelancing: https://makemoneyoptimizer.com/side-hustles/local-seo-side-hustle-canada
+- Zapier automation freelancing: https://makemoneyoptimizer.com/side-hustles/zapier-automation-side-hustle-canada
 
 ## Beginner how-to guides (batch 1)
 

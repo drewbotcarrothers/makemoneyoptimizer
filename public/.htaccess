@@ -4,9 +4,11 @@ Options -Indexes
 # Serve extensionless URLs when using file format fallbacks
 RewriteEngine On
 
-# Retired v1 sample posts (2026-10-01) -> permanent redirects
+# Retired v1 sample posts -> permanent redirects
 RewriteRule ^side-hustles/gig-delivery-canada/?$ /side-hustles/food-delivery-side-hustle-canada/ [R=301,L]
-RewriteRule ^side-hustles/(online-tutoring-canada|freelance-writing-canada|reselling-marketplace-canada)/?$ /side-hustles/ [R=301,L]
+RewriteRule ^side-hustles/online-tutoring-canada/?$ /side-hustles/online-tutoring-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/freelance-writing-canada/?$ /side-hustles/freelance-writing-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/reselling-marketplace-canada/?$ /side-hustles/reselling-side-hustle-canada/ [R=301,L]
 
 # Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
 # RewriteCond %{HTTPS} !=on
