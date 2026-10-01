@@ -10,8 +10,6 @@ RewriteRule ^side-hustles/online-tutoring-canada/?$ /side-hustles/online-tutorin
 RewriteRule ^side-hustles/freelance-writing-canada/?$ /side-hustles/freelance-writing-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/reselling-marketplace-canada/?$ /side-hustles/reselling-side-hustle-canada/ [R=301,L]
 
-# Retired v1 sample posts (2026-10-01) -> permanent redirects
-
 # Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
 # RewriteCond %{HTTPS} !=on
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
@@ -21,8 +19,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
-
-# Retired sample slugs. Tutoring, writing, and reselling have full guides.
-# Gig delivery stays pointed at the side-hustles hub.
 
 # Prefer apex canonical is configured in Hostinger DNS/panel
