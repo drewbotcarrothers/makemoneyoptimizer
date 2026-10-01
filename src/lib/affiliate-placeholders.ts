@@ -23,6 +23,11 @@ export const AFFILIATE_PROGRAMS = {
     /** TODO-AFFILIATE: replace with the approved FreshBooks affiliate URL. */
     href: 'https://www.freshbooks.com/',
   },
+  shopify: {
+    name: 'Shopify',
+    /** TODO-AFFILIATE: replace with the approved Shopify affiliate URL. */
+    href: 'https://www.shopify.com/ca',
+  },
 } as const;
 
 export type AffiliateProgram = keyof typeof AFFILIATE_PROGRAMS;
