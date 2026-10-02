@@ -30,7 +30,7 @@ Related: [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md), [MONETIZATION.md](../
 
 Question title that matches how someone in Canada searches. The layout adds the byline (“By Andrew”), Published date, Updated date when `updatedDate` is set, and `updateNote` as “Updated [date]: [note]”.
 
-1. **Disclosure before the first affiliate link** (`AffiliateDisclosure`, then `AffiliateLink` placeholders marked TODO-AFFILIATE).
+1. **No in-body disclosure.** The article layout adds a small one-line affiliate note under the byline (linking to `#affiliate-disclosure`) and renders the full `AffiliateDisclosure` block once at the end of the article. Do not import or place `AffiliateDisclosure` in MDX. Use `AffiliateLink` placeholders marked TODO-AFFILIATE.
 2. **Direct answer** in the first one or two sentences: name Canada, define the hustle, and say who it suits. Do not open with “After this guide you can…”.
 3. **Quick-facts table** with the figures a reader needs, and a source link on every rule or official number. Shelf prices stay labelled as ranges to verify locally.
 4. **Question H2s**, each followed immediately by a 1–3 sentence answer that still makes sense if it is quoted alone. Name the hustle, Canada, and the province where the rule is provincial. Use **H3s for steps**.
@@ -61,7 +61,7 @@ sources:
 - List a primary source for every claim about a tax rule, a fee, a legal limit, or a platform requirement (CRA, the provincial government, or the platform’s official Canadian page).
 - If a figure is uncertain, say so and point at the page that publishes the current number. Prefer “confirm the live rate” over a stale screenshot.
 - Label illustrative arithmetic as illustrative. Do not present it as average earnings.
-- Affiliate relationships never change the recommendation. Disclosure stays before the first affiliate link.
+- Affiliate relationships never change the recommendation. The layout handles disclosure: a short note at the top and the full block at the bottom of every post.
 
 ---
 
@@ -271,7 +271,7 @@ Canonical CSV: [`content-planning/pillars-100.csv`](../content-planning/pillars-
 | Automations | Zapier / Make |
 | Gig gear (bags, mounts, tools) | Amazon.ca |
 
-Always: disclosure near first affiliate mention + site-wide Affiliate Disclosure page.
+Always: the layout's top affiliate note + full disclosure block at the end of the post + site-wide Affiliate Disclosure page.
 
 ---
 
