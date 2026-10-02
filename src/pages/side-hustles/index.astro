@@ -4,9 +4,14 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Newsletter from '../../components/Newsletter.astro';
 import { getPublishedArticles } from '../../lib/articles';
+import { CATEGORIES_INDEX, categoryCounts, categoryHref } from '../../lib/categories';
 
 const articles = await getPublishedArticles();
 const allTags = [...new Set(articles.flatMap((a) => a.data.tags || []))].sort();
+const cats = categoryCounts(articles);
+const groups = cats
+  .map((c) => ({ ...c, posts: articles.filter((a) => a.data.category === c.slug) }))
+  .filter((g) => g.posts.length > 0);
 
 const pageJsonLd = {
   '@context': 'https://schema.org',
@@ -27,8 +32,8 @@ const pageJsonLd = {
       <p class="eyebrow">Side Hustles hub</p>
       <h1>Find a side hustle that fits your life</h1>
       <p class="lead">
-        Explore online and offline options with clear trade-offs. Start with one article, then use tags and
-        related reads to keep browsing — retention without pressure.
+        Explore online and offline options with clear trade-offs. Jump to a category below, or filter by tag,
+        then use related reads to keep browsing.
       </p>
       <div class="btn-group" style="margin-top:1rem;">
         <a class="btn btn-primary" href="/guides">Prefer how-to guides?</a>
@@ -41,26 +46,54 @@ const pageJsonLd = {
 
   <section class="section">
     <div class="container">
-      <div class="filter-bar" role="navigation" aria-label="Filter by tag" data-tag-filters>
-        <button type="button" class="chip is-active" data-tag="all" aria-pressed="true">All</button>
-        {allTags.map((tag) => (
-          <button type="button" class="chip" data-tag={tag} aria-pressed="false">#{tag}</button>
+      <p class="filter-label" id="category-chips-label">Browse by category</p>
+      <nav class="filter-bar category-chips" aria-labelledby="category-chips-label">
+        {cats.map((c) => (
+          <a class="chip" href={categoryHref(c.slug)}>
+            <span aria-hidden="true">{c.emoji}&nbsp;</span>{c.name}<span class="chip-count">{c.count}</span>
+          </a>
         ))}
-      </div>
+        <a class="chip" href={CATEGORIES_INDEX}>All categories →</a>
+      </nav>
 
-      <div class="card-grid cols-3" data-article-grid>
-        {articles.map((a) => (
-          <div data-tags={(a.data.tags || []).join(',')}>
-            <ArticleCard
-              href={`/side-hustles/${a.slug}`}
-              title={a.data.title}
-              description={a.data.description}
-              category={a.data.category}
-              tags={a.data.tags}
-              sample={a.data.sample}
-              date={a.data.pubDate}
-            />
-          </div>
+      <details class="tag-filter-details">
+        <summary class="filter-label">Filter by tag</summary>
+        <div class="filter-bar" role="navigation" aria-label="Filter by tag" data-tag-filters>
+          <button type="button" class="chip is-active" data-tag="all" aria-pressed="true">All</button>
+          {allTags.map((tag) => (
+            <button type="button" class="chip" data-tag={tag} aria-pressed="false">#{tag}</button>
+          ))}
+        </div>
+      </details>
+
+      <div data-article-groups>
+        {groups.map((g) => (
+          <section class="category-group" id={g.slug} aria-labelledby={`group-${g.slug}`} data-category-group>
+            <div class="category-group-header">
+              <div>
+                <h2 id={`group-${g.slug}`}><span aria-hidden="true">{g.emoji}</span> {g.name}</h2>
+                <p>{g.description}</p>
+              </div>
+              <a class="card-link" href={categoryHref(g.slug)}>
+                View all {g.posts.length} in {g.name} →
+              </a>
+            </div>
+            <div class="card-grid cols-3">
+              {g.posts.map((a) => (
+                <div data-tags={(a.data.tags || []).join(',')} data-article-item>
+                  <ArticleCard
+                    href={`/side-hustles/${a.slug}`}
+                    title={a.data.title}
+                    description={a.data.description}
+                    category={a.data.category}
+                    tags={a.data.tags}
+                    sample={a.data.sample}
+                    date={a.data.pubDate}
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
       <p class="muted" data-empty-filter hidden>No articles match that tag. Choose All to reset.</p>
@@ -76,19 +109,24 @@ const pageJsonLd = {
 
 <script>
   const bar = document.querySelector('[data-tag-filters]');
-  const grid = document.querySelector('[data-article-grid]');
+  const root = document.querySelector('[data-article-groups]');
   const empty = document.querySelector('[data-empty-filter]');
-  if (bar && grid) {
+  if (bar && root) {
     const chips = Array.from(bar.querySelectorAll('[data-tag]'));
-    const cards = Array.from(grid.children) as HTMLElement[];
+    const groups = Array.from(root.querySelectorAll('[data-category-group]')) as HTMLElement[];
 
     const apply = (tag: string) => {
       let visible = 0;
-      cards.forEach((card) => {
-        const tags = (card.getAttribute('data-tags') || '').split(',').filter(Boolean);
-        const show = tag === 'all' || tags.includes(tag);
-        card.toggleAttribute('hidden', !show);
-        if (show) visible += 1;
+      groups.forEach((group) => {
+        let inGroup = 0;
+        group.querySelectorAll<HTMLElement>('[data-article-item]').forEach((card) => {
+          const tags = (card.getAttribute('data-tags') || '').split(',').filter(Boolean);
+          const show = tag === 'all' || tags.includes(tag);
+          card.toggleAttribute('hidden', !show);
+          if (show) inGroup += 1;
+        });
+        group.toggleAttribute('hidden', inGroup === 0);
+        visible += inGroup;
       });
       chips.forEach((chip) => {
         const active = chip.getAttribute('data-tag') === tag;
@@ -111,6 +149,10 @@ const pageJsonLd = {
     });
 
     const initial = new URL(window.location.href).searchParams.get('tag') || 'all';
+    if (initial !== 'all') {
+      const details = bar.closest('details');
+      if (details) details.open = true;
+    }
     apply(initial);
   }
 </script>

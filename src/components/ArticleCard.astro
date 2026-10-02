@@ -1,4 +1,6 @@
 ---
+import { getCategory } from '../lib/categories';
+
 interface Props {
   href: string;
   title: string;
@@ -9,7 +11,7 @@ interface Props {
   date?: Date;
 }
 const { href, title, description, category, tags = [], sample = false, date } = Astro.props;
-const categoryLabel = category === 'guide' ? 'Guide' : 'Side Hustle';
+const categoryLabel = getCategory(category).name;
 ---
 <a class="card" href={href}>
   <div class="card-meta">

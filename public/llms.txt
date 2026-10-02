@@ -15,10 +15,26 @@ Primary formats: guides and side-hustle explainers (MDX)
 - How we create content: https://makemoneyoptimizer.com/how-we-create-content
 - Side hustles hub: https://makemoneyoptimizer.com/side-hustles
 - Guides hub: https://makemoneyoptimizer.com/guides
+- Categories index: https://makemoneyoptimizer.com/side-hustles/categories
 - Contact: https://makemoneyoptimizer.com/contact
 - Affiliate disclosure: https://makemoneyoptimizer.com/affiliate-disclosure
 - Privacy: https://makemoneyoptimizer.com/privacy
 - Terms: https://makemoneyoptimizer.com/terms
+
+## Categories
+
+Every article belongs to exactly one category. Category hubs list all posts in that category.
+
+- All categories: https://makemoneyoptimizer.com/side-hustles/categories
+- Gig Apps: https://makemoneyoptimizer.com/side-hustles/category/gig-apps
+- Local Services: https://makemoneyoptimizer.com/side-hustles/category/local-services
+- Online Freelancing: https://makemoneyoptimizer.com/side-hustles/category/online-freelancing
+- Digital Products: https://makemoneyoptimizer.com/side-hustles/category/digital-products
+- Content Creation: https://makemoneyoptimizer.com/side-hustles/category/content-creation
+- Reselling & Ecommerce: https://makemoneyoptimizer.com/side-hustles/category/reselling-ecommerce
+- Marketing for Hire: https://makemoneyoptimizer.com/side-hustles/category/marketing-for-hire
+- Tech & AI: https://makemoneyoptimizer.com/side-hustles/category/tech-ai
+- Taxes & Money: https://makemoneyoptimizer.com/side-hustles/category/taxes-money
 
 ## Machine-readable feeds
 

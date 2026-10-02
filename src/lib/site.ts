@@ -41,6 +41,7 @@ export const authorSameAs = [
 export const NAV = [
   { href: '/', label: 'Home' },
   { href: '/side-hustles', label: 'Side Hustles' },
+  { href: '/side-hustles/categories', label: 'Categories' },
   { href: '/guides', label: 'Guides' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },

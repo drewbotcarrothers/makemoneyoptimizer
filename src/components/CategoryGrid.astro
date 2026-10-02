@@ -1,0 +1,21 @@
+---
+import { categoryHref } from '../lib/categories';
+import type { Category } from '../lib/categories';
+
+interface Props {
+  categories: (Category & { count: number })[];
+  headingLevel?: 'h2' | 'h3';
+}
+const { categories, headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+---
+<div class="card-grid cols-3 category-grid">
+  {categories.map((c) => (
+    <a class="card category-card" href={categoryHref(c.slug)}>
+      <span class="category-emoji" aria-hidden="true">{c.emoji}</span>
+      <Heading>{c.name}</Heading>
+      <p>{c.description}</p>
+      <span class="card-link">{c.count} {c.count === 1 ? 'guide' : 'guides'} →</span>
+    </a>
+  ))}
+</div>

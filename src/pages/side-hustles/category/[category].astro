@@ -1,0 +1,132 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import Newsletter from '../../../components/Newsletter.astro';
+import { getPublishedArticles } from '../../../lib/articles';
+import {
+  CATEGORIES,
+  CATEGORIES_INDEX,
+  breadcrumbJsonLd,
+  categoryCounts,
+  categoryHref,
+} from '../../../lib/categories';
+import type { Category } from '../../../lib/categories';
+import { SITE } from '../../../lib/site';
+
+export async function getStaticPaths() {
+  return CATEGORIES.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
+interface Props {
+  category: Category;
+}
+
+const { category } = Astro.props;
+const all = await getPublishedArticles();
+const posts = all.filter((a) => a.data.category === category.slug);
+const others = categoryCounts(all).filter((c) => c.slug !== category.slug);
+const path = categoryHref(category.slug);
+const pageUrl = `${SITE.url}${path}`;
+const countLabel = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Side Hustles', href: '/side-hustles' },
+  { name: category.name, href: path },
+];
+
+const title = `${category.name} Side Hustles in Canada`;
+const description = `${category.description} Canadian guides with costs in CAD, CRA basics, and sources.`;
+
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: title,
+  description,
+  url: pageUrl,
+  inLanguage: 'en-CA',
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: posts.length,
+    itemListElement: posts.map((a, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `${SITE.url}/side-hustles/${a.slug}`,
+      name: a.data.title,
+    })),
+  },
+};
+---
+<BaseLayout
+  title={title}
+  description={description}
+  jsonLd={[collectionJsonLd, breadcrumbJsonLd(crumbs, SITE.url)]}
+>
+  <header class="page-hero">
+    <div class="container">
+      <Breadcrumbs crumbs={crumbs} />
+      <p class="eyebrow"><span aria-hidden="true">{category.emoji}</span> Category</p>
+      <h1>{category.name}</h1>
+      <p class="lead">{category.intro}</p>
+      <p class="post-count">{countLabel} in this category</p>
+    </div>
+  </header>
+
+  <AdSlot class="container ad-slot-inline" label="Ad slot · category hub" />
+
+  <section class="section">
+    <div class="container">
+      {posts.length === 0 ? (
+        <p>
+          Guides for this category are on the way. Meanwhile, browse
+          <a href={CATEGORIES_INDEX}>all categories</a>.
+        </p>
+      ) : (
+        <div class="card-grid cols-3">
+          {posts.map((a) => (
+            <ArticleCard
+              href={`/side-hustles/${a.slug}`}
+              title={a.data.title}
+              description={a.data.description}
+              category={a.data.category}
+              tags={a.data.tags}
+              sample={a.data.sample}
+              date={a.data.pubDate}
+            />
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+
+  <section class="section section-muted">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Explore other categories</h2>
+          <p>Compare a neighbouring path before you commit to one.</p>
+        </div>
+        <a class="btn btn-secondary" href={CATEGORIES_INDEX}>All categories</a>
+      </div>
+      <nav class="filter-bar" aria-label="Other categories">
+        {others.map((c) => (
+          <a class="chip" href={categoryHref(c.slug)}>
+            <span aria-hidden="true">{c.emoji}&nbsp;</span>{c.name}<span class="chip-count">{c.count}</span>
+          </a>
+        ))}
+      </nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <Newsletter />
+    </div>
+  </section>
+</BaseLayout>

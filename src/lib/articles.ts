@@ -24,8 +24,9 @@ export function relatedArticles(
       const sharedTags = (a.data.tags || []).filter((t) =>
         (current.data.tags || []).includes(t)
       ).length;
+      // Prefer posts from the same category, then shared tags.
       const sameCategory = a.data.category === current.data.category ? 1 : 0;
-      return { a, score: sharedTags * 2 + sameCategory };
+      return { a, score: sameCategory * 5 + sharedTags * 2 };
     })
     .sort((x, y) => y.score - x.score || y.a.data.pubDate.valueOf() - x.a.data.pubDate.valueOf());
 

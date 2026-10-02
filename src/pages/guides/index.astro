@@ -4,10 +4,14 @@ import ArticleCard from '../../components/ArticleCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import Newsletter from '../../components/Newsletter.astro';
 import { getPublishedArticles } from '../../lib/articles';
+import CategoryGrid from '../../components/CategoryGrid.astro';
+import { CATEGORIES_INDEX, categoryCounts, categoryHref } from '../../lib/categories';
 
 const articles = await getPublishedArticles();
-const guides = articles.filter((a) => a.data.category === 'guide');
-const relatedHustles = articles.filter((a) => a.data.category === 'side-hustle').slice(0, 3);
+// Every article is a how-to guide; show the newest here and route readers to category hubs.
+const guides = articles.slice(0, 9);
+const cats = categoryCounts(articles);
+const taxGuides = articles.filter((a) => a.data.category === 'taxes-money').slice(0, 3);
 
 const pageJsonLd = {
   '@context': 'https://schema.org',
@@ -39,9 +43,23 @@ const pageJsonLd = {
     <div class="container">
       <div class="section-header">
         <div>
-          <h2>Guide library</h2>
+          <h2>Browse guides by category</h2>
+          <p>Every guide lives in one category. Start with the kind of work that fits you.</p>
+        </div>
+        <a class="btn btn-secondary" href={CATEGORIES_INDEX}>All categories</a>
+      </div>
+      <CategoryGrid categories={cats} />
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2>Latest guides</h2>
           <p>Step-by-step playbooks for Canadian side income. Start with one, then compare a neighbouring hustle.</p>
         </div>
+        <a class="btn btn-secondary" href="/side-hustles">All guides</a>
       </div>
       {guides.length === 0 ? (
         <p>Guides are on the way. Meanwhile explore <a href="/side-hustles">side hustles</a>.</p>
@@ -67,13 +85,13 @@ const pageJsonLd = {
     <div class="container">
       <div class="section-header">
         <div>
-          <h2>Keep browsing related hustles</h2>
-          <p>Internal links to reduce bounce and help you compare options.</p>
+          <h2>Taxes &amp; money basics</h2>
+          <p>CRA reporting, GST/HST, and deductions every Canadian side hustler should understand.</p>
         </div>
-        <a class="btn btn-secondary" href="/side-hustles">All side hustles</a>
+        <a class="btn btn-secondary" href={categoryHref('taxes-money')}>All tax guides</a>
       </div>
       <div class="card-grid cols-3">
-        {relatedHustles.map((a) => (
+        {taxGuides.map((a) => (
           <ArticleCard
             href={`/side-hustles/${a.slug}`}
             title={a.data.title}
