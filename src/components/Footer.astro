@@ -1,5 +1,6 @@
 ---
 import { SITE } from '../lib/site';
+import { CATEGORIES, CATEGORIES_INDEX, categoryHref } from '../lib/categories';
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
@@ -18,10 +19,19 @@ const year = new Date().getFullYear();
       <h2>Explore</h2>
       <ul class="footer-links">
         <li><a href="/side-hustles">Side Hustles</a></li>
+        <li><a href={CATEGORIES_INDEX}>All categories</a></li>
         <li><a href="/guides">Guides</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/rss.xml">RSS feed</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Categories</h2>
+      <ul class="footer-links">
+        {CATEGORIES.map((c) => (
+          <li><a href={categoryHref(c.slug)}>{c.name}</a></li>
+        ))}
       </ul>
     </div>
     <div>

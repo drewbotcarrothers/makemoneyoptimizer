@@ -1,0 +1,23 @@
+---
+import type { Crumb } from '../lib/categories';
+
+interface Props {
+  crumbs: Crumb[];
+  /** When false, every crumb is a link (use when the current page is not in the visible trail). */
+  lastIsCurrent?: boolean;
+}
+const { crumbs, lastIsCurrent = true } = Astro.props;
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    {crumbs.map((c, i) => (
+      <li>
+        {lastIsCurrent && i === crumbs.length - 1 ? (
+          <span aria-current="page">{c.name}</span>
+        ) : (
+          <a href={c.href}>{c.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>

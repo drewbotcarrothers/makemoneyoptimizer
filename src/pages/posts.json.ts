@@ -1,5 +1,6 @@
 import { getCollection } from 'astro:content';
 import type { APIRoute } from 'astro';
+import { categoryHref, getCategory } from '../lib/categories';
 
 export const GET: APIRoute = async () => {
   const articles = await getCollection('articles');
@@ -11,6 +12,8 @@ export const GET: APIRoute = async () => {
       url: `https://makemoneyoptimizer.com/side-hustles/${a.id}`,
       pubDate: a.data.pubDate,
       category: a.data.category,
+      categoryName: getCategory(a.data.category).name,
+      categoryUrl: `https://makemoneyoptimizer.com${categoryHref(a.data.category)}`,
       tags: a.data.tags ?? [],
       featured: a.data.featured ?? false,
       sample: a.data.sample ?? false,

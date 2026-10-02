@@ -17,8 +17,15 @@ interface ArticleItem {
 interface Props {
   articles: ArticleItem[];
   heading?: string;
+  browseHref?: string;
+  browseLabel?: string;
 }
-const { articles, heading = 'Next reads' } = Astro.props;
+const {
+  articles,
+  heading = 'Next reads',
+  browseHref = '/side-hustles',
+  browseLabel = 'Browse all',
+} = Astro.props;
 ---
 {articles.length > 0 && (
   <section class="section" aria-labelledby="related-heading" style="padding-top:0;">
@@ -28,7 +35,7 @@ const { articles, heading = 'Next reads' } = Astro.props;
           <h2 id="related-heading">{heading}</h2>
           <p>Keep exploring related side hustles and guides for Canadian readers.</p>
         </div>
-        <a class="btn btn-secondary" href="/side-hustles">Browse all</a>
+        <a class="btn btn-secondary" href={browseHref}>{browseLabel}</a>
       </div>
       <div class="related-grid">
         {articles.map((a) => (

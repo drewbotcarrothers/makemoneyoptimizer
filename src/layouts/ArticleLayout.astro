@@ -5,8 +5,10 @@ import Newsletter from '../components/Newsletter.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import Sources from '../components/Sources.astro';
 import AuthorBox from '../components/AuthorBox.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { AUTHOR, SITE, authorSameAs, authorUrl } from '../lib/site';
 import { getPublishedArticles, relatedArticles } from '../lib/articles';
+import { breadcrumbJsonLd, categoryHref, getCategory } from '../lib/categories';
 
 interface SourceItem {
   title: string;
@@ -45,7 +47,15 @@ const {
 const all = await getPublishedArticles();
 const related = relatedArticles(all, entryId, 3);
 const url = `${SITE.url}/side-hustles/${slug}`;
-const categoryLabel = category === 'guide' ? 'Guide' : 'Side Hustle';
+const cat = getCategory(category);
+const categoryLabel = cat.name;
+const catHref = categoryHref(cat.slug);
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Side Hustles', href: '/side-hustles' },
+  { name: cat.name, href: catHref },
+  { name: title, href: `/side-hustles/${slug}` },
+];
 const image = new URL('/og-default.svg', SITE.url).toString();
 const dateModified = updatedDate || pubDate;
 
@@ -76,6 +86,7 @@ const articleJsonLd = {
   inLanguage: 'en-CA',
   keywords: tags.join(', '),
   about: categoryLabel,
+  articleSection: categoryLabel,
   isAccessibleForFree: true,
 };
 ---
@@ -86,17 +97,22 @@ const articleJsonLd = {
   author={AUTHOR.name}
   publishedTime={pubDate.toISOString()}
   modifiedTime={dateModified.toISOString()}
-  jsonLd={articleJsonLd}
+  jsonLd={[articleJsonLd, breadcrumbJsonLd(crumbs, SITE.url)]}
 >
   <header class="article-hero">
     <div class="container-narrow">
-      <div class="article-meta">
-        <a href={category === 'guide' ? '/guides' : '/side-hustles'}>{categoryLabel}</a>
-        {sample && <span class="badge badge-sample">Sample article</span>}
-      </div>
+      {/* Visible trail stops at the category; the H1 below is the current page. JSON-LD includes the post. */}
+      <Breadcrumbs crumbs={crumbs.slice(0, -1)} lastIsCurrent={false} />
+      {sample && (
+        <div class="article-meta">
+          <span class="badge badge-sample">Sample article</span>
+        </div>
+      )}
       <h1>{title}</h1>
       <p class="byline">
         By <a href={AUTHOR.path}>{AUTHOR.name}</a>
+        <span class="byline-sep" aria-hidden="true">·</span>
+        <span>In <a class="byline-category" href={catHref}>{categoryLabel}</a></span>
       </p>
       <p class="article-dates">
         <span>
@@ -141,7 +157,12 @@ const articleJsonLd = {
     <Newsletter heading="Want more like this?" />
   </div>
 
-  <RelatedArticles articles={related} heading="Related for Canadian readers" />
+  <RelatedArticles
+    articles={related}
+    heading="Related for Canadian readers"
+    browseHref={catHref}
+    browseLabel={`More in ${categoryLabel}`}
+  />
 
   <div class="container" style="margin-bottom:var(--space-12);">
     <div class="callout">

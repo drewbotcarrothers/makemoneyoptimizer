@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getPublishedArticles } from '../lib/articles';
 import { SITE } from '../lib/site';
+import { categoryHref, getCategory } from '../lib/categories';
 
 export const GET: APIRoute = async () => {
   const articles = await getPublishedArticles();
@@ -14,7 +15,7 @@ export const GET: APIRoute = async () => {
       <guid>${link}</guid>
       <pubDate>${a.data.pubDate.toUTCString()}</pubDate>
       <description><![CDATA[${a.data.description}]]></description>
-      <category>${a.data.category}</category>
+      <category domain="${SITE.url}${categoryHref(a.data.category)}"><![CDATA[${getCategory(a.data.category).name}]]></category>
     </item>`;
     })
     .join('');

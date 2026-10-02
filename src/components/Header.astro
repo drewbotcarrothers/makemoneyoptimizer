@@ -1,9 +1,14 @@
 ---
 import { SITE, NAV } from '../lib/site';
+import { CATEGORIES, CATEGORIES_INDEX, categoryHref } from '../lib/categories';
 const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+
+const inCategories = pathname === CATEGORIES_INDEX || pathname.startsWith('/side-hustles/category/');
 
 function isCurrent(href: string) {
   if (href === '/') return pathname === '/';
+  if (href === CATEGORIES_INDEX) return inCategories;
+  if (href === '/side-hustles' && inCategories) return false;
   return pathname === href || pathname.startsWith(`${href}/`);
 }
 ---
@@ -29,11 +34,30 @@ function isCurrent(href: string) {
     </a>
 
     <nav class="nav" aria-label="Primary">
-      {NAV.map((item) => (
-        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
-          {item.label}
-        </a>
-      ))}
+      {NAV.map((item) =>
+        item.href === CATEGORIES_INDEX ? (
+          <div class="nav-dropdown">
+            <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined} aria-haspopup="true">
+              {item.label} <span class="nav-caret" aria-hidden="true">▾</span>
+            </a>
+            <div class="nav-dropdown-menu">
+              {CATEGORIES.map((c) => (
+                <a
+                  href={categoryHref(c.slug)}
+                  aria-current={pathname === categoryHref(c.slug) ? 'page' : undefined}
+                >
+                  <span aria-hidden="true">{c.emoji}</span> {c.name}
+                </a>
+              ))}
+              <a class="nav-dropdown-all" href={CATEGORIES_INDEX}>All categories →</a>
+            </div>
+          </div>
+        ) : (
+          <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+            {item.label}
+          </a>
+        )
+      )}
     </nav>
 
     <button

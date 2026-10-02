@@ -46,7 +46,7 @@ description: "CAD ranges for a shovel route versus a blower, plus insurance, sal
 pubDate: 2026-09-29
 updatedDate: 2026-09-30
 updateNote: "Restructured for clarity and added sources"
-category: guide
+category: local-services # one of the 9 slugs in src/lib/categories.ts
 tags: [local-services, seasonal]
 sources:
   - title: "When to register for and start charging the GST/HST"
@@ -309,7 +309,7 @@ Formula for Idea ID: `P{pillar:02d}-{template}` (use `P{pillar:03d}` once IDs ex
 ## Internal linking (SEO)
 
 - Each **pillar** gets a hub page or category landing (when ready).
-- Each **cluster** can get a hub that links the ~12–15 pillars.
+- Each **cluster** has a category hub at `/side-hustles/category/<slug>` (defined in `src/lib/categories.ts`). Set frontmatter `category` to the cluster slug: `gig-apps`, `local-services`, `online-freelancing`, `digital-products`, `content-creation`, `reselling-ecommerce`, `marketing-for-hire`, `tech-ai`, or `taxes-money` (tax and CRA posts).
 - Every post links **up** to its pillar hub and **across** to 2–3 sibling templates (e.g. T01 ↔ T02 ↔ T03).
 - Affiliate toolkit posts (T20) link back to the beginner how-to (T01).
 

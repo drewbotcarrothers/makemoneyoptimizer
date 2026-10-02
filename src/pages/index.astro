@@ -5,10 +5,13 @@ import AdSlot from '../components/AdSlot.astro';
 import Newsletter from '../components/Newsletter.astro';
 import { SITE } from '../lib/site';
 import { getPublishedArticles } from '../lib/articles';
+import CategoryGrid from '../components/CategoryGrid.astro';
+import { CATEGORIES_INDEX, categoryCounts } from '../lib/categories';
 
 const articles = await getPublishedArticles();
 const featured = articles.filter((a) => a.data.featured).slice(0, 3);
 const latest = articles.slice(0, 3);
+const cats = categoryCounts(articles);
 
 const pageJsonLd = {
   '@context': 'https://schema.org',
@@ -86,7 +89,20 @@ const pageJsonLd = {
     </div>
   </section>
 
-  <section class="section section-muted">
+  <section class="section section-muted" aria-labelledby="browse-categories-heading">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 id="browse-categories-heading">Browse by category</h2>
+          <p>Pick the kind of work that fits your time, skills, and budget, from gig apps to taxes.</p>
+        </div>
+        <a class="btn btn-secondary" href={CATEGORIES_INDEX}>All categories</a>
+      </div>
+      <CategoryGrid categories={cats} />
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container">
       <div class="section-header">
         <div>
