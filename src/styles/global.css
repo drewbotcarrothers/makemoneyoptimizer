@@ -586,7 +586,7 @@ a.card:hover {
 }
 
 .ad-slot-inline {
-  margin: var(--space-8) 0;
+  margin-block: var(--space-8);
 }
 
 /* Newsletter stub */
