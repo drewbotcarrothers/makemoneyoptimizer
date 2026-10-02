@@ -22,7 +22,9 @@ Sheet-ready CSVs live in `/content-planning/`:
 - `generator-sample-ideas.csv` (60 example titles from the first 3 High pillars × all 20 templates)
 - `batch-1-outlines-50.csv` (top 10 High × T01/T02/T03/T04/T20)
 
-Related: [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md), [MONETIZATION.md](../MONETIZATION.md), ideas sheet seed `online-side-hustle-ideas.csv`.
+**Writing the post itself?** Follow [WRITING-A-POST.md](./WRITING-A-POST.md), the authoritative reference for front matter, structure, sources, affiliate and trust rules, and the pre-publish checklist. This file decides *what* to write; that file says *how*.
+
+Related: [WRITING-A-POST.md](./WRITING-A-POST.md), [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md), [MONETIZATION.md](../MONETIZATION.md), ideas sheet seed `online-side-hustle-ideas.csv`.
 
 ---
 

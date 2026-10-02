@@ -45,6 +45,11 @@ Static files are emitted to `dist/`.
 | `src/styles/global.css` | Design tokens + responsive styles |
 | `public/` | `robots.txt`, favicon, OG image |
 | `CONTENT.md` | Categories, monetization, SEO & retention notes |
+| `docs/WRITING-A-POST.md` | **How to write a blog post**: file/slug, front matter, structure, affiliates, trust rules, checklist |
+
+## Writing a post
+
+Start with **[docs/WRITING-A-POST.md](docs/WRITING-A-POST.md)**, the authoritative reference for adding or editing an article (front-matter fields, the 9 categories, post structure, sources, affiliate and trust rules, pre-publish checklist, and IndexNow after deploy).
 
 ## Hostinger static deploy (makemoneyoptimizer.com)
 
