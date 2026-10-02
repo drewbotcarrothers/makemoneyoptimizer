@@ -309,7 +309,7 @@ Formula for Idea ID: `P{pillar:02d}-{template}` (use `P{pillar:03d}` once IDs ex
 ## Internal linking (SEO)
 
 - Each **pillar** gets a hub page or category landing (when ready).
-- Each **cluster** has a category hub at `/side-hustles/category/<slug>` (defined in `src/lib/categories.ts`). Set frontmatter `category` to the cluster slug: `gig-apps`, `local-services`, `online-freelancing`, `digital-products`, `content-creation`, `reselling-ecommerce`, `marketing-for-hire`, `tech-ai`, or `taxes-money` (tax and CRA posts).
+- Each **cluster** has a category hub at `/side-hustles/category/<slug>/` (defined in `src/lib/categories.ts`). Set frontmatter `category` to the cluster slug: `gig-apps`, `local-services`, `online-freelancing`, `digital-products`, `content-creation`, `reselling-ecommerce`, `marketing-for-hire`, `tech-ai`, or `taxes-money` (tax and CRA posts).
 - Every post links **up** to its pillar hub and **across** to 2–3 sibling templates (e.g. T01 ↔ T02 ↔ T03).
 - Affiliate toolkit posts (T20) link back to the beginner how-to (T01).
 

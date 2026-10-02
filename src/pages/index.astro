@@ -18,8 +18,8 @@ const pageJsonLd = {
   '@type': 'WebPage',
   name: `${SITE.name} — ${SITE.tagline}`,
   description: SITE.description,
-  url: SITE.url,
-  isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url },
+  url: `${SITE.url}/`,
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
 };
 ---
 <BaseLayout
@@ -37,13 +37,13 @@ const pageJsonLd = {
           realistic expectations, and trust-first advice — no fake earnings screenshots, no “guaranteed income.”
         </p>
         <div class="btn-group" style="margin-top:1.5rem;">
-          <a class="btn btn-primary" href="/side-hustles">Browse side hustles</a>
-          <a class="btn btn-secondary" href="/guides">Read practical guides</a>
+          <a class="btn btn-primary" href="/side-hustles/">Browse side hustles</a>
+          <a class="btn btn-secondary" href="/guides/">Read practical guides</a>
         </div>
         <div class="trust-row">
           <span><strong>Built for CA readers</strong> — local angles & admin notes</span>
           <span><strong>Sample content live</strong> — expand as we publish</span>
-          <span><strong>Transparent</strong> — <a href="/affiliate-disclosure">affiliate disclosure</a></span>
+          <span><strong>Transparent</strong> — <a href="/affiliate-disclosure/">affiliate disclosure</a></span>
         </div>
       </div>
       <aside class="hero-card" aria-labelledby="how-heading">
@@ -54,9 +54,9 @@ const pageJsonLd = {
           <li>Test small, measure honestly, and keep what fits your life.</li>
         </ol>
         <p style="margin:1.25rem 0 0;font-size:0.875rem;color:var(--color-ink-subtle);">
-          New here? Start with the <a href="/about">About</a> page, the
-          <a href="/side-hustles/snow-removal-side-hustle-canada">snow removal guide</a>,
-          or the <a href="/side-hustles/best-winter-side-hustles-canada">winter side hustles roundup</a>.
+          New here? Start with the <a href="/about/">About</a> page, the
+          <a href="/side-hustles/snow-removal-side-hustle-canada/">snow removal guide</a>,
+          or the <a href="/side-hustles/best-winter-side-hustles-canada/">winter side hustles roundup</a>.
         </p>
       </aside>
     </div>
@@ -71,12 +71,12 @@ const pageJsonLd = {
           <h2>Featured side hustles & guides</h2>
           <p>Hand-picked, in-depth guides with Canadian costs, rules, and sources.</p>
         </div>
-        <a class="btn btn-secondary" href="/side-hustles">View all</a>
+        <a class="btn btn-secondary" href="/side-hustles/">View all</a>
       </div>
       <div class="card-grid cols-3">
         {featured.map((a) => (
           <ArticleCard
-            href={`/side-hustles/${a.slug}`}
+            href={`/side-hustles/${a.slug}/`}
             title={a.data.title}
             description={a.data.description}
             category={a.data.category}
@@ -111,19 +111,19 @@ const pageJsonLd = {
         </div>
       </div>
       <div class="card-grid cols-3">
-        <a class="card" href="/side-hustles">
+        <a class="card" href="/side-hustles/">
           <span class="badge">Hub</span>
           <h3>Side Hustles</h3>
           <p>Online and offline ways to earn extra — freelancing, reselling, gigs, tutoring, and more.</p>
           <span class="card-link">Open hub →</span>
         </a>
-        <a class="card" href="/guides">
+        <a class="card" href="/guides/">
           <span class="badge">Hub</span>
           <h3>Guides</h3>
           <p>How-to frameworks, checklists, and decision help so you can test ideas responsibly.</p>
           <span class="card-link">Open guides →</span>
         </a>
-        <a class="card" href="/contact">
+        <a class="card" href="/contact/">
           <span class="badge">Trust</span>
           <h3>Questions or feedback?</h3>
           <p>Tell us what Canadian side-income topics you want covered next.</p>
@@ -144,7 +144,7 @@ const pageJsonLd = {
       <div class="card-grid cols-3">
         {latest.map((a) => (
           <ArticleCard
-            href={`/side-hustles/${a.slug}`}
+            href={`/side-hustles/${a.slug}/`}
             title={a.data.title}
             description={a.data.description}
             category={a.data.category}

@@ -13,7 +13,7 @@ export const SITE = {
 
 export const AUTHOR = {
   name: 'Andrew',
-  path: '/about/andrew',
+  path: '/about/andrew/',
   jobTitle: 'Personal finance expert',
   bio: 'Andrew is a personal finance expert, DIY investor and life optimizer based in Toronto, Canada. With over 19 years of corporate experience at a leading Canadian company, Andrew combines deep industry knowledge with a passion for technology to help others navigate personal finance, including side hustles, and streamline their daily lives.',
   shortBio:
@@ -40,9 +40,9 @@ export const authorSameAs = [
 
 export const NAV = [
   { href: '/', label: 'Home' },
-  { href: '/side-hustles', label: 'Side Hustles' },
-  { href: '/side-hustles/categories', label: 'Categories' },
-  { href: '/guides', label: 'Guides' },
-  { href: '/about', label: 'About' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/side-hustles/', label: 'Side Hustles' },
+  { href: '/side-hustles/categories/', label: 'Categories' },
+  { href: '/guides/', label: 'Guides' },
+  { href: '/about/', label: 'About' },
+  { href: '/contact/', label: 'Contact' },
 ] as const;

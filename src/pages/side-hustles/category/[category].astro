@@ -36,7 +36,7 @@ const countLabel = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
 
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Side Hustles', href: '/side-hustles' },
+  { name: 'Side Hustles', href: '/side-hustles/' },
   { name: category.name, href: path },
 ];
 
@@ -50,14 +50,14 @@ const collectionJsonLd = {
   description,
   url: pageUrl,
   inLanguage: 'en-CA',
-  isPartOf: { '@type': 'WebSite', name: SITE.name, url: SITE.url },
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
   mainEntity: {
     '@type': 'ItemList',
     numberOfItems: posts.length,
     itemListElement: posts.map((a, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${SITE.url}/side-hustles/${a.slug}`,
+      url: `${SITE.url}/side-hustles/${a.slug}/`,
       name: a.data.title,
     })),
   },
@@ -91,7 +91,7 @@ const collectionJsonLd = {
         <div class="card-grid cols-3">
           {posts.map((a) => (
             <ArticleCard
-              href={`/side-hustles/${a.slug}`}
+              href={`/side-hustles/${a.slug}/`}
               title={a.data.title}
               description={a.data.description}
               category={a.data.category}

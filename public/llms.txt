@@ -2,7 +2,7 @@
 
 > Practical side hustle and extra-income guidance for Canadians — online and offline. No guaranteed-income claims.
 
-Site: https://makemoneyoptimizer.com
+Site: https://makemoneyoptimizer.com/
 Audience: Canadians exploring ethical side hustles
 Language: en-CA
 Primary formats: guides and side-hustle explainers (MDX)
@@ -10,31 +10,31 @@ Primary formats: guides and side-hustle explainers (MDX)
 ## Key pages
 
 - Home: https://makemoneyoptimizer.com/
-- About: https://makemoneyoptimizer.com/about
-- Author, Andrew: https://makemoneyoptimizer.com/about/andrew
-- How we create content: https://makemoneyoptimizer.com/how-we-create-content
-- Side hustles hub: https://makemoneyoptimizer.com/side-hustles
-- Guides hub: https://makemoneyoptimizer.com/guides
-- Categories index: https://makemoneyoptimizer.com/side-hustles/categories
-- Contact: https://makemoneyoptimizer.com/contact
-- Affiliate disclosure: https://makemoneyoptimizer.com/affiliate-disclosure
-- Privacy: https://makemoneyoptimizer.com/privacy
-- Terms: https://makemoneyoptimizer.com/terms
+- About: https://makemoneyoptimizer.com/about/
+- Author, Andrew: https://makemoneyoptimizer.com/about/andrew/
+- How we create content: https://makemoneyoptimizer.com/how-we-create-content/
+- Side hustles hub: https://makemoneyoptimizer.com/side-hustles/
+- Guides hub: https://makemoneyoptimizer.com/guides/
+- Categories index: https://makemoneyoptimizer.com/side-hustles/categories/
+- Contact: https://makemoneyoptimizer.com/contact/
+- Affiliate disclosure: https://makemoneyoptimizer.com/affiliate-disclosure/
+- Privacy: https://makemoneyoptimizer.com/privacy/
+- Terms: https://makemoneyoptimizer.com/terms/
 
 ## Categories
 
 Every article belongs to exactly one category. Category hubs list all posts in that category.
 
-- All categories: https://makemoneyoptimizer.com/side-hustles/categories
-- Gig Apps: https://makemoneyoptimizer.com/side-hustles/category/gig-apps
-- Local Services: https://makemoneyoptimizer.com/side-hustles/category/local-services
-- Online Freelancing: https://makemoneyoptimizer.com/side-hustles/category/online-freelancing
-- Digital Products: https://makemoneyoptimizer.com/side-hustles/category/digital-products
-- Content Creation: https://makemoneyoptimizer.com/side-hustles/category/content-creation
-- Reselling & Ecommerce: https://makemoneyoptimizer.com/side-hustles/category/reselling-ecommerce
-- Marketing for Hire: https://makemoneyoptimizer.com/side-hustles/category/marketing-for-hire
-- Tech & AI: https://makemoneyoptimizer.com/side-hustles/category/tech-ai
-- Taxes & Money: https://makemoneyoptimizer.com/side-hustles/category/taxes-money
+- All categories: https://makemoneyoptimizer.com/side-hustles/categories/
+- Gig Apps: https://makemoneyoptimizer.com/side-hustles/category/gig-apps/
+- Local Services: https://makemoneyoptimizer.com/side-hustles/category/local-services/
+- Online Freelancing: https://makemoneyoptimizer.com/side-hustles/category/online-freelancing/
+- Digital Products: https://makemoneyoptimizer.com/side-hustles/category/digital-products/
+- Content Creation: https://makemoneyoptimizer.com/side-hustles/category/content-creation/
+- Reselling & Ecommerce: https://makemoneyoptimizer.com/side-hustles/category/reselling-ecommerce/
+- Marketing for Hire: https://makemoneyoptimizer.com/side-hustles/category/marketing-for-hire/
+- Tech & AI: https://makemoneyoptimizer.com/side-hustles/category/tech-ai/
+- Taxes & Money: https://makemoneyoptimizer.com/side-hustles/category/taxes-money/
 
 ## Machine-readable feeds
 
@@ -45,147 +45,147 @@ Every article belongs to exactly one category. Category hubs list all posts in t
 
 ## Beginner how-to guides (batch 4)
 
-- Newsletter: https://makemoneyoptimizer.com/side-hustles/newsletter-side-hustle-canada
-- TikTok and Reels: https://makemoneyoptimizer.com/side-hustles/tiktok-reels-side-hustle-canada
-- SEO blogging: https://makemoneyoptimizer.com/side-hustles/seo-blogging-side-hustle-canada
-- UGC for brands: https://makemoneyoptimizer.com/side-hustles/ugc-side-hustle-canada
-- Print-on-demand: https://makemoneyoptimizer.com/side-hustles/print-on-demand-side-hustle-canada
-- Etsy shop: https://makemoneyoptimizer.com/side-hustles/etsy-shop-side-hustle-canada
-- Furniture flipping: https://makemoneyoptimizer.com/side-hustles/furniture-flipping-side-hustle-canada
-- Affiliate marketing: https://makemoneyoptimizer.com/side-hustles/affiliate-marketing-side-hustle-canada
-- AI consulting for small businesses: https://makemoneyoptimizer.com/side-hustles/ai-consulting-side-hustle-canada
-- Website maintenance: https://makemoneyoptimizer.com/side-hustles/website-maintenance-side-hustle-canada
+- Newsletter: https://makemoneyoptimizer.com/side-hustles/newsletter-side-hustle-canada/
+- TikTok and Reels: https://makemoneyoptimizer.com/side-hustles/tiktok-reels-side-hustle-canada/
+- SEO blogging: https://makemoneyoptimizer.com/side-hustles/seo-blogging-side-hustle-canada/
+- UGC for brands: https://makemoneyoptimizer.com/side-hustles/ugc-side-hustle-canada/
+- Print-on-demand: https://makemoneyoptimizer.com/side-hustles/print-on-demand-side-hustle-canada/
+- Etsy shop: https://makemoneyoptimizer.com/side-hustles/etsy-shop-side-hustle-canada/
+- Furniture flipping: https://makemoneyoptimizer.com/side-hustles/furniture-flipping-side-hustle-canada/
+- Affiliate marketing: https://makemoneyoptimizer.com/side-hustles/affiliate-marketing-side-hustle-canada/
+- AI consulting for small businesses: https://makemoneyoptimizer.com/side-hustles/ai-consulting-side-hustle-canada/
+- Website maintenance: https://makemoneyoptimizer.com/side-hustles/website-maintenance-side-hustle-canada/
 
 ## Beginner how-to guides (local and online, next wave)
 
-- Car detailing: https://makemoneyoptimizer.com/side-hustles/car-detailing-side-hustle-canada
-- Pressure washing: https://makemoneyoptimizer.com/side-hustles/pressure-washing-side-hustle-canada
-- Moving help: https://makemoneyoptimizer.com/side-hustles/moving-help-side-hustle-canada
-- Junk removal: https://makemoneyoptimizer.com/side-hustles/junk-removal-side-hustle-canada
-- Graphic design freelancing: https://makemoneyoptimizer.com/side-hustles/graphic-design-side-hustle-canada
-- No-code web design: https://makemoneyoptimizer.com/side-hustles/no-code-web-design-side-hustle-canada
-- Freelance bookkeeping: https://makemoneyoptimizer.com/side-hustles/freelance-bookkeeping-side-hustle-canada
-- Teaching English online: https://makemoneyoptimizer.com/side-hustles/teach-english-online-side-hustle-canada
-- Printables and PDF planners: https://makemoneyoptimizer.com/side-hustles/printables-side-hustle-canada
-- Ebook publishing: https://makemoneyoptimizer.com/side-hustles/ebook-publishing-side-hustle-canada
+- Car detailing: https://makemoneyoptimizer.com/side-hustles/car-detailing-side-hustle-canada/
+- Pressure washing: https://makemoneyoptimizer.com/side-hustles/pressure-washing-side-hustle-canada/
+- Moving help: https://makemoneyoptimizer.com/side-hustles/moving-help-side-hustle-canada/
+- Junk removal: https://makemoneyoptimizer.com/side-hustles/junk-removal-side-hustle-canada/
+- Graphic design freelancing: https://makemoneyoptimizer.com/side-hustles/graphic-design-side-hustle-canada/
+- No-code web design: https://makemoneyoptimizer.com/side-hustles/no-code-web-design-side-hustle-canada/
+- Freelance bookkeeping: https://makemoneyoptimizer.com/side-hustles/freelance-bookkeeping-side-hustle-canada/
+- Teaching English online: https://makemoneyoptimizer.com/side-hustles/teach-english-online-side-hustle-canada/
+- Printables and PDF planners: https://makemoneyoptimizer.com/side-hustles/printables-side-hustle-canada/
+- Ebook publishing: https://makemoneyoptimizer.com/side-hustles/ebook-publishing-side-hustle-canada/
 
 ## Startup cost guides (next wave)
 
-- Car detailing startup costs: https://makemoneyoptimizer.com/side-hustles/car-detailing-startup-costs-canada
-- Pressure washing startup costs: https://makemoneyoptimizer.com/side-hustles/pressure-washing-startup-costs-canada
-- Moving help startup costs: https://makemoneyoptimizer.com/side-hustles/moving-help-startup-costs-canada
-- Junk removal startup costs: https://makemoneyoptimizer.com/side-hustles/junk-removal-startup-costs-canada
-- Graphic design startup costs: https://makemoneyoptimizer.com/side-hustles/graphic-design-startup-costs-canada
-- No-code web design startup costs: https://makemoneyoptimizer.com/side-hustles/no-code-web-design-startup-costs-canada
-- Freelance bookkeeping startup costs: https://makemoneyoptimizer.com/side-hustles/freelance-bookkeeping-startup-costs-canada
-- Teaching English online startup costs: https://makemoneyoptimizer.com/side-hustles/teach-english-online-startup-costs-canada
-- Printables startup costs: https://makemoneyoptimizer.com/side-hustles/printables-startup-costs-canada
-- Ebook publishing startup costs: https://makemoneyoptimizer.com/side-hustles/ebook-publishing-startup-costs-canada
+- Car detailing startup costs: https://makemoneyoptimizer.com/side-hustles/car-detailing-startup-costs-canada/
+- Pressure washing startup costs: https://makemoneyoptimizer.com/side-hustles/pressure-washing-startup-costs-canada/
+- Moving help startup costs: https://makemoneyoptimizer.com/side-hustles/moving-help-startup-costs-canada/
+- Junk removal startup costs: https://makemoneyoptimizer.com/side-hustles/junk-removal-startup-costs-canada/
+- Graphic design startup costs: https://makemoneyoptimizer.com/side-hustles/graphic-design-startup-costs-canada/
+- No-code web design startup costs: https://makemoneyoptimizer.com/side-hustles/no-code-web-design-startup-costs-canada/
+- Freelance bookkeeping startup costs: https://makemoneyoptimizer.com/side-hustles/freelance-bookkeeping-startup-costs-canada/
+- Teaching English online startup costs: https://makemoneyoptimizer.com/side-hustles/teach-english-online-startup-costs-canada/
+- Printables startup costs: https://makemoneyoptimizer.com/side-hustles/printables-startup-costs-canada/
+- Ebook publishing startup costs: https://makemoneyoptimizer.com/side-hustles/ebook-publishing-startup-costs-canada/
 
 ## First client and first sale guides (next wave)
 
-- First car detailing client: https://makemoneyoptimizer.com/side-hustles/car-detailing-first-client-canada
-- First pressure washing client: https://makemoneyoptimizer.com/side-hustles/pressure-washing-first-client-canada
-- First moving help client: https://makemoneyoptimizer.com/side-hustles/moving-help-first-client-canada
-- First junk removal client: https://makemoneyoptimizer.com/side-hustles/junk-removal-first-client-canada
-- First graphic design client: https://makemoneyoptimizer.com/side-hustles/graphic-design-first-client-canada
-- First no-code web design client: https://makemoneyoptimizer.com/side-hustles/no-code-web-design-first-client-canada
-- First freelance bookkeeping client: https://makemoneyoptimizer.com/side-hustles/freelance-bookkeeping-first-client-canada
-- First English-teaching client: https://makemoneyoptimizer.com/side-hustles/teach-english-online-first-client-canada
-- First printable sale: https://makemoneyoptimizer.com/side-hustles/printables-first-sale-canada
-- First ebook sale: https://makemoneyoptimizer.com/side-hustles/ebook-publishing-first-sale-canada
+- First car detailing client: https://makemoneyoptimizer.com/side-hustles/car-detailing-first-client-canada/
+- First pressure washing client: https://makemoneyoptimizer.com/side-hustles/pressure-washing-first-client-canada/
+- First moving help client: https://makemoneyoptimizer.com/side-hustles/moving-help-first-client-canada/
+- First junk removal client: https://makemoneyoptimizer.com/side-hustles/junk-removal-first-client-canada/
+- First graphic design client: https://makemoneyoptimizer.com/side-hustles/graphic-design-first-client-canada/
+- First no-code web design client: https://makemoneyoptimizer.com/side-hustles/no-code-web-design-first-client-canada/
+- First freelance bookkeeping client: https://makemoneyoptimizer.com/side-hustles/freelance-bookkeeping-first-client-canada/
+- First English-teaching client: https://makemoneyoptimizer.com/side-hustles/teach-english-online-first-client-canada/
+- First printable sale: https://makemoneyoptimizer.com/side-hustles/printables-first-sale-canada/
+- First ebook sale: https://makemoneyoptimizer.com/side-hustles/ebook-publishing-first-sale-canada/
 
 ## First client and first sale guides (online)
 
-- First online tutoring client: https://makemoneyoptimizer.com/side-hustles/online-tutoring-first-client-canada
-- First freelance writing client: https://makemoneyoptimizer.com/side-hustles/freelance-writing-first-client-canada
-- First reselling sale: https://makemoneyoptimizer.com/side-hustles/reselling-first-sale-canada
-- First virtual assistant client: https://makemoneyoptimizer.com/side-hustles/virtual-assistant-first-client-canada
-- First social media management client: https://makemoneyoptimizer.com/side-hustles/social-media-manager-first-client-canada
-- First Notion template sale: https://makemoneyoptimizer.com/side-hustles/notion-templates-first-sale-canada
-- First 1,000 YouTube subscribers: https://makemoneyoptimizer.com/side-hustles/youtube-first-1000-subscribers-canada
-- First Shopify store sale: https://makemoneyoptimizer.com/side-hustles/shopify-store-first-sale-canada
-- First local SEO client: https://makemoneyoptimizer.com/side-hustles/local-seo-first-client-canada
-- First Zapier automation client: https://makemoneyoptimizer.com/side-hustles/zapier-automation-first-client-canada
+- First online tutoring client: https://makemoneyoptimizer.com/side-hustles/online-tutoring-first-client-canada/
+- First freelance writing client: https://makemoneyoptimizer.com/side-hustles/freelance-writing-first-client-canada/
+- First reselling sale: https://makemoneyoptimizer.com/side-hustles/reselling-first-sale-canada/
+- First virtual assistant client: https://makemoneyoptimizer.com/side-hustles/virtual-assistant-first-client-canada/
+- First social media management client: https://makemoneyoptimizer.com/side-hustles/social-media-manager-first-client-canada/
+- First Notion template sale: https://makemoneyoptimizer.com/side-hustles/notion-templates-first-sale-canada/
+- First 1,000 YouTube subscribers: https://makemoneyoptimizer.com/side-hustles/youtube-first-1000-subscribers-canada/
+- First Shopify store sale: https://makemoneyoptimizer.com/side-hustles/shopify-store-first-sale-canada/
+- First local SEO client: https://makemoneyoptimizer.com/side-hustles/local-seo-first-client-canada/
+- First Zapier automation client: https://makemoneyoptimizer.com/side-hustles/zapier-automation-first-client-canada/
 
 ## Beginner how-to guides (online)
 
-- Online tutoring: https://makemoneyoptimizer.com/side-hustles/online-tutoring-side-hustle-canada
-- Freelance writing: https://makemoneyoptimizer.com/side-hustles/freelance-writing-side-hustle-canada
-- Reselling on Canadian marketplaces: https://makemoneyoptimizer.com/side-hustles/reselling-side-hustle-canada
-- Virtual assistant work: https://makemoneyoptimizer.com/side-hustles/virtual-assistant-side-hustle-canada
-- Social media management: https://makemoneyoptimizer.com/side-hustles/social-media-manager-side-hustle-canada
-- Notion templates: https://makemoneyoptimizer.com/side-hustles/notion-templates-side-hustle-canada
-- YouTube: https://makemoneyoptimizer.com/side-hustles/youtube-side-hustle-canada
-- Shopify store: https://makemoneyoptimizer.com/side-hustles/shopify-store-side-hustle-canada
-- Local SEO freelancing: https://makemoneyoptimizer.com/side-hustles/local-seo-side-hustle-canada
-- Zapier automation freelancing: https://makemoneyoptimizer.com/side-hustles/zapier-automation-side-hustle-canada
+- Online tutoring: https://makemoneyoptimizer.com/side-hustles/online-tutoring-side-hustle-canada/
+- Freelance writing: https://makemoneyoptimizer.com/side-hustles/freelance-writing-side-hustle-canada/
+- Reselling on Canadian marketplaces: https://makemoneyoptimizer.com/side-hustles/reselling-side-hustle-canada/
+- Virtual assistant work: https://makemoneyoptimizer.com/side-hustles/virtual-assistant-side-hustle-canada/
+- Social media management: https://makemoneyoptimizer.com/side-hustles/social-media-manager-side-hustle-canada/
+- Notion templates: https://makemoneyoptimizer.com/side-hustles/notion-templates-side-hustle-canada/
+- YouTube: https://makemoneyoptimizer.com/side-hustles/youtube-side-hustle-canada/
+- Shopify store: https://makemoneyoptimizer.com/side-hustles/shopify-store-side-hustle-canada/
+- Local SEO freelancing: https://makemoneyoptimizer.com/side-hustles/local-seo-side-hustle-canada/
+- Zapier automation freelancing: https://makemoneyoptimizer.com/side-hustles/zapier-automation-side-hustle-canada/
 
 ## Beginner how-to guides (batch 1)
 
-- Food delivery (Skip, Uber Eats, DoorDash): https://makemoneyoptimizer.com/side-hustles/food-delivery-side-hustle-canada
-- Rideshare driving: https://makemoneyoptimizer.com/side-hustles/rideshare-driving-side-hustle-canada
-- Grocery shopping apps: https://makemoneyoptimizer.com/side-hustles/grocery-shopping-side-hustle-canada
-- Package courier delivery: https://makemoneyoptimizer.com/side-hustles/package-courier-side-hustle-canada
-- Odd-job apps (TaskRabbit-class): https://makemoneyoptimizer.com/side-hustles/odd-jobs-apps-side-hustle-canada
-- Dog walking and pet sitting: https://makemoneyoptimizer.com/side-hustles/dog-walking-side-hustle-canada
-- House cleaning: https://makemoneyoptimizer.com/side-hustles/house-cleaning-side-hustle-canada
-- Lawn care: https://makemoneyoptimizer.com/side-hustles/lawn-care-side-hustle-canada
-- Snow removal: https://makemoneyoptimizer.com/side-hustles/snow-removal-side-hustle-canada
-- Handyman and odd jobs: https://makemoneyoptimizer.com/side-hustles/handyman-side-hustle-canada
+- Food delivery (Skip, Uber Eats, DoorDash): https://makemoneyoptimizer.com/side-hustles/food-delivery-side-hustle-canada/
+- Rideshare driving: https://makemoneyoptimizer.com/side-hustles/rideshare-driving-side-hustle-canada/
+- Grocery shopping apps: https://makemoneyoptimizer.com/side-hustles/grocery-shopping-side-hustle-canada/
+- Package courier delivery: https://makemoneyoptimizer.com/side-hustles/package-courier-side-hustle-canada/
+- Odd-job apps (TaskRabbit-class): https://makemoneyoptimizer.com/side-hustles/odd-jobs-apps-side-hustle-canada/
+- Dog walking and pet sitting: https://makemoneyoptimizer.com/side-hustles/dog-walking-side-hustle-canada/
+- House cleaning: https://makemoneyoptimizer.com/side-hustles/house-cleaning-side-hustle-canada/
+- Lawn care: https://makemoneyoptimizer.com/side-hustles/lawn-care-side-hustle-canada/
+- Snow removal: https://makemoneyoptimizer.com/side-hustles/snow-removal-side-hustle-canada/
+- Handyman and odd jobs: https://makemoneyoptimizer.com/side-hustles/handyman-side-hustle-canada/
 
 ## Startup cost guides (batch 1)
 
-- Food delivery startup costs: https://makemoneyoptimizer.com/side-hustles/food-delivery-startup-costs-canada
-- Rideshare driving startup costs: https://makemoneyoptimizer.com/side-hustles/rideshare-startup-costs-canada
-- Grocery shopping startup costs: https://makemoneyoptimizer.com/side-hustles/grocery-shopping-startup-costs-canada
-- Package courier startup costs: https://makemoneyoptimizer.com/side-hustles/package-courier-startup-costs-canada
-- Odd-job apps startup costs: https://makemoneyoptimizer.com/side-hustles/odd-jobs-apps-startup-costs-canada
-- Dog walking startup costs: https://makemoneyoptimizer.com/side-hustles/dog-walking-startup-costs-canada
-- House cleaning startup costs: https://makemoneyoptimizer.com/side-hustles/house-cleaning-startup-costs-canada
-- Lawn care startup costs: https://makemoneyoptimizer.com/side-hustles/lawn-care-startup-costs-canada
-- Snow removal startup costs: https://makemoneyoptimizer.com/side-hustles/snow-removal-startup-costs-canada
-- Handyman startup costs: https://makemoneyoptimizer.com/side-hustles/handyman-startup-costs-canada
+- Food delivery startup costs: https://makemoneyoptimizer.com/side-hustles/food-delivery-startup-costs-canada/
+- Rideshare driving startup costs: https://makemoneyoptimizer.com/side-hustles/rideshare-startup-costs-canada/
+- Grocery shopping startup costs: https://makemoneyoptimizer.com/side-hustles/grocery-shopping-startup-costs-canada/
+- Package courier startup costs: https://makemoneyoptimizer.com/side-hustles/package-courier-startup-costs-canada/
+- Odd-job apps startup costs: https://makemoneyoptimizer.com/side-hustles/odd-jobs-apps-startup-costs-canada/
+- Dog walking startup costs: https://makemoneyoptimizer.com/side-hustles/dog-walking-startup-costs-canada/
+- House cleaning startup costs: https://makemoneyoptimizer.com/side-hustles/house-cleaning-startup-costs-canada/
+- Lawn care startup costs: https://makemoneyoptimizer.com/side-hustles/lawn-care-startup-costs-canada/
+- Snow removal startup costs: https://makemoneyoptimizer.com/side-hustles/snow-removal-startup-costs-canada/
+- Handyman startup costs: https://makemoneyoptimizer.com/side-hustles/handyman-startup-costs-canada/
 
 ## First week and first client follow-ups (batch 1)
 
-- First week of food delivery: https://makemoneyoptimizer.com/side-hustles/food-delivery-first-week-canada
-- First week of rideshare driving: https://makemoneyoptimizer.com/side-hustles/rideshare-driving-first-week-canada
-- First week of grocery shopping: https://makemoneyoptimizer.com/side-hustles/grocery-shopping-first-week-canada
-- First week of package courier work: https://makemoneyoptimizer.com/side-hustles/package-courier-first-week-canada
-- First week on odd-job apps: https://makemoneyoptimizer.com/side-hustles/odd-jobs-apps-first-week-canada
-- First dog walking clients: https://makemoneyoptimizer.com/side-hustles/dog-walking-first-clients-canada
-- First house cleaning clients: https://makemoneyoptimizer.com/side-hustles/house-cleaning-first-clients-canada
-- First lawn care clients: https://makemoneyoptimizer.com/side-hustles/lawn-care-first-clients-canada
-- First handyman clients: https://makemoneyoptimizer.com/side-hustles/handyman-first-clients-canada
+- First week of food delivery: https://makemoneyoptimizer.com/side-hustles/food-delivery-first-week-canada/
+- First week of rideshare driving: https://makemoneyoptimizer.com/side-hustles/rideshare-driving-first-week-canada/
+- First week of grocery shopping: https://makemoneyoptimizer.com/side-hustles/grocery-shopping-first-week-canada/
+- First week of package courier work: https://makemoneyoptimizer.com/side-hustles/package-courier-first-week-canada/
+- First week on odd-job apps: https://makemoneyoptimizer.com/side-hustles/odd-jobs-apps-first-week-canada/
+- First dog walking clients: https://makemoneyoptimizer.com/side-hustles/dog-walking-first-clients-canada/
+- First house cleaning clients: https://makemoneyoptimizer.com/side-hustles/house-cleaning-first-clients-canada/
+- First lawn care clients: https://makemoneyoptimizer.com/side-hustles/lawn-care-first-clients-canada/
+- First handyman clients: https://makemoneyoptimizer.com/side-hustles/handyman-first-clients-canada/
 
 ## Snow removal follow-up guides
 
-- How to price snow removal: https://makemoneyoptimizer.com/side-hustles/snow-removal-pricing-canada
-- Snow removal tools (shovel to plough): https://makemoneyoptimizer.com/side-hustles/snow-removal-tools-canada
-- First snow removal clients: https://makemoneyoptimizer.com/side-hustles/snow-removal-first-clients-canada
-- Snow removal gear toolkit: https://makemoneyoptimizer.com/side-hustles/snow-removal-gear-toolkit-canada
-- Snow removal contract checklist: https://makemoneyoptimizer.com/side-hustles/snow-removal-contract-checklist-canada
+- How to price snow removal: https://makemoneyoptimizer.com/side-hustles/snow-removal-pricing-canada/
+- Snow removal tools (shovel to plough): https://makemoneyoptimizer.com/side-hustles/snow-removal-tools-canada/
+- First snow removal clients: https://makemoneyoptimizer.com/side-hustles/snow-removal-first-clients-canada/
+- Snow removal gear toolkit: https://makemoneyoptimizer.com/side-hustles/snow-removal-gear-toolkit-canada/
+- Snow removal contract checklist: https://makemoneyoptimizer.com/side-hustles/snow-removal-contract-checklist-canada/
 
 ## Holiday and winter side hustles (October 2026)
 
-- Best winter side hustles (roundup): https://makemoneyoptimizer.com/side-hustles/best-winter-side-hustles-canada
-- Christmas light installation: https://makemoneyoptimizer.com/side-hustles/christmas-light-installation-side-hustle-canada
-- Holiday gift wrapping: https://makemoneyoptimizer.com/side-hustles/holiday-gift-wrapping-side-hustle-canada
-- Seasonal holiday jobs (retail, warehouse, delivery): https://makemoneyoptimizer.com/side-hustles/seasonal-holiday-jobs-canada
-- Holiday Etsy or craft-market shop: https://makemoneyoptimizer.com/side-hustles/holiday-etsy-craft-market-shop-canada
-- Winter pet sitting and house sitting: https://makemoneyoptimizer.com/side-hustles/winter-pet-sitting-house-sitting-canada
+- Best winter side hustles (roundup): https://makemoneyoptimizer.com/side-hustles/best-winter-side-hustles-canada/
+- Christmas light installation: https://makemoneyoptimizer.com/side-hustles/christmas-light-installation-side-hustle-canada/
+- Holiday gift wrapping: https://makemoneyoptimizer.com/side-hustles/holiday-gift-wrapping-side-hustle-canada/
+- Seasonal holiday jobs (retail, warehouse, delivery): https://makemoneyoptimizer.com/side-hustles/seasonal-holiday-jobs-canada/
+- Holiday Etsy or craft-market shop: https://makemoneyoptimizer.com/side-hustles/holiday-etsy-craft-market-shop-canada/
+- Winter pet sitting and house sitting: https://makemoneyoptimizer.com/side-hustles/winter-pet-sitting-house-sitting-canada/
 
 ## Side hustle tax basics (Canada)
 
-- Report side hustle income to the CRA: https://makemoneyoptimizer.com/side-hustles/report-side-hustle-income-cra-canada
-- GST/HST registration for side hustlers: https://makemoneyoptimizer.com/side-hustles/gst-hst-registration-side-hustle-canada
-- Side hustle expenses you can deduct: https://makemoneyoptimizer.com/side-hustles/side-hustle-expense-deductions-canada
-- How much tax to set aside: https://makemoneyoptimizer.com/side-hustles/how-much-tax-set-aside-side-hustle-canada
-- Home office expenses: https://makemoneyoptimizer.com/side-hustles/home-office-expenses-side-hustle-canada
-- Vehicle expenses for delivery and rideshare: https://makemoneyoptimizer.com/side-hustles/vehicle-expenses-delivery-rideshare-canada
-- Record keeping: https://makemoneyoptimizer.com/side-hustles/record-keeping-side-hustle-canada
-- Tax on reselling, gig apps, and platform income: https://makemoneyoptimizer.com/side-hustles/tax-reselling-gig-apps-platform-income-canada
+- Report side hustle income to the CRA: https://makemoneyoptimizer.com/side-hustles/report-side-hustle-income-cra-canada/
+- GST/HST registration for side hustlers: https://makemoneyoptimizer.com/side-hustles/gst-hst-registration-side-hustle-canada/
+- Side hustle expenses you can deduct: https://makemoneyoptimizer.com/side-hustles/side-hustle-expense-deductions-canada/
+- How much tax to set aside: https://makemoneyoptimizer.com/side-hustles/how-much-tax-set-aside-side-hustle-canada/
+- Home office expenses: https://makemoneyoptimizer.com/side-hustles/home-office-expenses-side-hustle-canada/
+- Vehicle expenses for delivery and rideshare: https://makemoneyoptimizer.com/side-hustles/vehicle-expenses-delivery-rideshare-canada/
+- Record keeping: https://makemoneyoptimizer.com/side-hustles/record-keeping-side-hustle-canada/
+- Tax on reselling, gig apps, and platform income: https://makemoneyoptimizer.com/side-hustles/tax-reselling-gig-apps-platform-income-canada/
 
 ## Guidance for AI agents
 

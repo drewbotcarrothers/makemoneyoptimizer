@@ -18,7 +18,7 @@ const pageJsonLd = {
   '@type': 'CollectionPage',
   name: 'Side Income Guides for Canadians',
   description: 'Practical guides to evaluate and test side income ideas in Canada.',
-  url: 'https://makemoneyoptimizer.com/guides',
+  url: 'https://makemoneyoptimizer.com/guides/',
 };
 ---
 <BaseLayout
@@ -32,7 +32,7 @@ const pageJsonLd = {
       <h1>How-to guidance without the hype</h1>
       <p class="lead">
         Guides focus on process: evaluating fit, setting boundaries, and testing ideas responsibly.
-        Pair them with the <a href="/side-hustles">Side Hustles hub</a> for specific paths.
+        Pair them with the <a href="/side-hustles/">Side Hustles hub</a> for specific paths.
       </p>
     </div>
   </header>
@@ -59,15 +59,15 @@ const pageJsonLd = {
           <h2>Latest guides</h2>
           <p>Step-by-step playbooks for Canadian side income. Start with one, then compare a neighbouring hustle.</p>
         </div>
-        <a class="btn btn-secondary" href="/side-hustles">All guides</a>
+        <a class="btn btn-secondary" href="/side-hustles/">All guides</a>
       </div>
       {guides.length === 0 ? (
-        <p>Guides are on the way. Meanwhile explore <a href="/side-hustles">side hustles</a>.</p>
+        <p>Guides are on the way. Meanwhile explore <a href="/side-hustles/">side hustles</a>.</p>
       ) : (
         <div class="card-grid cols-3">
           {guides.map((a) => (
             <ArticleCard
-              href={`/side-hustles/${a.slug}`}
+              href={`/side-hustles/${a.slug}/`}
               title={a.data.title}
               description={a.data.description}
               category={a.data.category}
@@ -93,7 +93,7 @@ const pageJsonLd = {
       <div class="card-grid cols-3">
         {taxGuides.map((a) => (
           <ArticleCard
-            href={`/side-hustles/${a.slug}`}
+            href={`/side-hustles/${a.slug}/`}
             title={a.data.title}
             description={a.data.description}
             category={a.data.category}

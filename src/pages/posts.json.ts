@@ -9,7 +9,7 @@ export const GET: APIRoute = async () => {
       title: a.data.title,
       description: a.data.description,
       slug: a.id,
-      url: `https://makemoneyoptimizer.com/side-hustles/${a.id}`,
+      url: `https://makemoneyoptimizer.com/side-hustles/${a.id}/`,
       pubDate: a.data.pubDate,
       category: a.data.category,
       categoryName: getCategory(a.data.category).name,
@@ -20,7 +20,7 @@ export const GET: APIRoute = async () => {
     }))
     .sort((a, b) => +new Date(b.pubDate) - +new Date(a.pubDate));
 
-  return new Response(JSON.stringify({ site: 'https://makemoneyoptimizer.com', posts }, null, 2), {
+  return new Response(JSON.stringify({ site: 'https://makemoneyoptimizer.com/', posts }, null, 2), {
     headers: {
       'Content-Type': 'application/json; charset=utf-8',
       'Cache-Control': 'public, max-age=3600',

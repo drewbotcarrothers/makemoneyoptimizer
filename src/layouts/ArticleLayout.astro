@@ -46,15 +46,15 @@ const {
 
 const all = await getPublishedArticles();
 const related = relatedArticles(all, entryId, 3);
-const url = `${SITE.url}/side-hustles/${slug}`;
+const url = `${SITE.url}/side-hustles/${slug}/`;
 const cat = getCategory(category);
 const categoryLabel = cat.name;
 const catHref = categoryHref(cat.slug);
 const crumbs = [
   { name: 'Home', href: '/' },
-  { name: 'Side Hustles', href: '/side-hustles' },
+  { name: 'Side Hustles', href: '/side-hustles/' },
   { name: cat.name, href: catHref },
-  { name: title, href: `/side-hustles/${slug}` },
+  { name: title, href: `/side-hustles/${slug}/` },
 ];
 const image = new URL('/og-default.svg', SITE.url).toString();
 const dateModified = updatedDate || pubDate;
@@ -79,7 +79,7 @@ const articleJsonLd = {
   publisher: {
     '@type': 'Organization',
     name: SITE.name,
-    url: SITE.url,
+    url: `${SITE.url}/`,
     logo: { '@type': 'ImageObject', url: `${SITE.url}/icon-512.png`, width: 512, height: 512 },
   },
   mainEntityOfPage: { '@type': 'WebPage', '@id': url },
@@ -129,12 +129,12 @@ const articleJsonLd = {
       </p>
       <p class="ai-note">
         Researched and drafted with AI assistance and checked against the official sources listed below.
-        <a href="/how-we-create-content">How we create content</a>
+        <a href="/how-we-create-content/">How we create content</a>
       </p>
       {tags.length > 0 && (
         <div class="card-meta" style="margin-top:1rem;">
           {tags.map((tag) => (
-            <a class="chip" href={`/side-hustles?tag=${encodeURIComponent(tag)}`}>#{tag}</a>
+            <a class="chip" href={`/side-hustles/?tag=${encodeURIComponent(tag)}`}>#{tag}</a>
           ))}
         </div>
       )}
@@ -169,8 +169,8 @@ const articleJsonLd = {
       <p>
         <strong>Trust note:</strong> This is educational content for Canadians exploring extra income.
         Earnings vary widely. We don’t guarantee results. Check CRA rules for your situation, and read our
-        <a href="/affiliate-disclosure">Affiliate Disclosure</a> and
-        <a href="/how-we-create-content">how we create content</a>.
+        <a href="/affiliate-disclosure/">Affiliate Disclosure</a> and
+        <a href="/how-we-create-content/">how we create content</a>.
       </p>
     </div>
   </div>
