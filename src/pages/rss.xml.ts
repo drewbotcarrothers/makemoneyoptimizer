@@ -7,7 +7,7 @@ export const GET: APIRoute = async () => {
   const articles = await getPublishedArticles();
   const items = articles
     .map((a) => {
-      const link = `${SITE.url}/side-hustles/${a.slug}`;
+      const link = `${SITE.url}/side-hustles/${a.slug}/`;
       return `
     <item>
       <title><![CDATA[${a.data.title}]]></title>
@@ -24,7 +24,7 @@ export const GET: APIRoute = async () => {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>${SITE.name}</title>
-    <link>${SITE.url}</link>
+    <link>${SITE.url}/</link>
     <description>${SITE.description}</description>
     <language>en-ca</language>
     <atom:link href="${SITE.url}/rss.xml" rel="self" type="application/rss+xml" />

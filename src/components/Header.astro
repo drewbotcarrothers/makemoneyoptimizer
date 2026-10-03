@@ -1,15 +1,15 @@
 ---
 import { SITE, NAV } from '../lib/site';
 import { CATEGORIES, CATEGORIES_INDEX, categoryHref } from '../lib/categories';
-const pathname = Astro.url.pathname.replace(/\/$/, '') || '/';
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 
 const inCategories = pathname === CATEGORIES_INDEX || pathname.startsWith('/side-hustles/category/');
 
 function isCurrent(href: string) {
   if (href === '/') return pathname === '/';
   if (href === CATEGORIES_INDEX) return inCategories;
-  if (href === '/side-hustles' && inCategories) return false;
-  return pathname === href || pathname.startsWith(`${href}/`);
+  if (href === '/side-hustles/' && inCategories) return false;
+  return pathname.startsWith(href);
 }
 ---
 <header class="site-header">

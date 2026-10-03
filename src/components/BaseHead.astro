@@ -17,7 +17,7 @@ interface Props {
 const {
   title,
   description,
-  canonicalURL = new URL(Astro.url.pathname, Astro.site).toString().replace(/\/$/, '') || SITE.url,
+  canonicalURL = new URL(Astro.url.pathname, Astro.site).toString(),
   ogType = 'website',
   ogImage = '/og-default.svg',
   publishedTime,
@@ -29,9 +29,9 @@ const {
 
 const fullTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 const absoluteOg = new URL(ogImage, Astro.site).toString();
-const canonical = canonicalURL.endsWith('/') && canonicalURL !== `${SITE.url}/`
-  ? canonicalURL.slice(0, -1)
-  : canonicalURL;
+// trailingSlash: 'always' — canonical/og:url always end in '/' so they match the
+// URL Apache serves for directory-format pages (no 301 to the slash version).
+const canonical = canonicalURL.endsWith('/') ? canonicalURL : `${canonicalURL}/`;
 ---
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -6,10 +6,11 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://makemoneyoptimizer.com',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
   integrations: [mdx(), sitemap()],
   build: {
-    // directory → /about/index.html so Hostinger serves clean /about URLs
+    // directory → /about/index.html; Apache serves it at /about/ (trailingSlash: 'always'
+    // keeps canonical URLs identical to the served URL, so no 301 to the slash version)
     format: 'directory',
   },
 });

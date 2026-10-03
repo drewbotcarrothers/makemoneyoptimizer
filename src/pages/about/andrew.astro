@@ -18,7 +18,7 @@ const personJsonLd = {
   worksFor: {
     '@type': 'Organization',
     name: SITE.name,
-    url: SITE.url,
+    url: `${SITE.url}/`,
     logo: { '@type': 'ImageObject', url: `${SITE.url}/icon-512.png`, width: 512, height: 512 },
   },
   sameAs: authorSameAs,
@@ -50,7 +50,7 @@ const pageDescription =
           On {SITE.name}, Andrew explains Canadian side hustles in plain language: who a hustle suits,
           what it costs, and which official rules to read before you spend money. The guides are
           researched and drafted with AI assistance, then checked against primary sources.
-          Read <a href="/how-we-create-content">how we create content</a>.
+          Read <a href="/how-we-create-content/">how we create content</a>.
         </p>
       </div>
       <div>
@@ -72,8 +72,8 @@ const pageDescription =
         </p>
       </div>
       <div class="btn-group">
-        <a class="btn btn-primary" href="/side-hustles">Browse side hustles</a>
-        <a class="btn btn-secondary" href="/about">About the site</a>
+        <a class="btn btn-primary" href="/side-hustles/">Browse side hustles</a>
+        <a class="btn btn-secondary" href="/about/">About the site</a>
       </div>
     </div>
   </section>

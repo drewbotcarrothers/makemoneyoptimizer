@@ -23,7 +23,7 @@ interface Props {
 const {
   articles,
   heading = 'Next reads',
-  browseHref = '/side-hustles',
+  browseHref = '/side-hustles/',
   browseLabel = 'Browse all',
 } = Astro.props;
 ---
@@ -40,7 +40,7 @@ const {
       <div class="related-grid">
         {articles.map((a) => (
           <ArticleCard
-            href={`/side-hustles/${a.slug}`}
+            href={`/side-hustles/${a.slug}/`}
             title={a.data.title}
             description={a.data.description}
             category={a.data.category}

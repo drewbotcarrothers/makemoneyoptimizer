@@ -107,7 +107,7 @@ export const CATEGORIES: readonly Category[] = [
 ];
 
 export const CATEGORY_BASE = '/side-hustles/category';
-export const CATEGORIES_INDEX = '/side-hustles/categories';
+export const CATEGORIES_INDEX = '/side-hustles/categories/';
 
 const bySlug = new Map(CATEGORIES.map((c) => [c.slug, c]));
 
@@ -118,7 +118,7 @@ export function getCategory(slug: string): Category {
 }
 
 export function categoryHref(slug: string): string {
-  return `${CATEGORY_BASE}/${slug}`;
+  return `${CATEGORY_BASE}/${slug}/`;
 }
 
 /** Count posts per category (all categories present, zero if empty). */
@@ -143,7 +143,7 @@ export function breadcrumbJsonLd(crumbs: Crumb[], siteUrl: string) {
       '@type': 'ListItem',
       position: i + 1,
       name: c.name,
-      item: c.href === '/' ? siteUrl : `${siteUrl}${c.href}`,
+      item: `${siteUrl}${c.href}`,
     })),
   };
 }
