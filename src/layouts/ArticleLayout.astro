@@ -5,6 +5,7 @@ import Newsletter from '../components/Newsletter.astro';
 import RelatedArticles from '../components/RelatedArticles.astro';
 import Sources from '../components/Sources.astro';
 import AuthorBox from '../components/AuthorBox.astro';
+import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import { AUTHOR, SITE, authorSameAs, authorUrl } from '../lib/site';
 import { getPublishedArticles, relatedArticles } from '../lib/articles';
@@ -131,6 +132,9 @@ const articleJsonLd = {
         Researched and drafted with AI assistance and checked against the official sources listed below.
         <a href="/how-we-create-content/">How we create content</a>
       </p>
+      <p class="affiliate-note" data-affiliate-note>
+        This post may contain affiliate links. <a href="#affiliate-disclosure">See our disclosure below.</a>
+      </p>
       {tags.length > 0 && (
         <div class="card-meta" style="margin-top:1rem;">
           {tags.map((tag) => (
@@ -147,6 +151,7 @@ const articleJsonLd = {
     <div class="container-narrow prose">
       <slot />
       <Sources sources={sources} />
+      <AffiliateDisclosure />
       <AuthorBox />
     </div>
   </article>
