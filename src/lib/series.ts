@@ -259,6 +259,21 @@ Object.assign(EXTRA_MEMBERS, {
   'side-hustles-for-introverts-canada': [{ series: 'by-situation', role: 'start' }],
 });
 
+// Side hustles by skill (Oct 2026): hub roundups. Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'by-skill': 'Side hustles by skill' });
+Object.assign(EXTRA_MEMBERS, {
+  'side-hustles-for-teachers-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-nurses-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-accountants-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-tradespeople-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-graphic-designers-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-software-developers-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-writers-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-retired-professionals-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-parents-with-admin-experience-canada': [{ series: 'by-skill', role: 'start' }],
+  'side-hustles-for-bilingual-french-english-speakers-canada': [{ series: 'by-skill', role: 'start' }],
+});
+
 export interface SeriesItem {
   slug: string;
   title: string;
