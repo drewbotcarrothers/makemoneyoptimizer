@@ -146,11 +146,23 @@ Only import `AffiliateLink` if you use it. (MDX allows unused imports, and all e
 4. AI-assistance note linking `/how-we-create-content/`.
 5. **Short affiliate note**: "This post may contain affiliate links. See our disclosure below." (links `#affiliate-disclosure`).
 6. Tag chips.
-7. Ad slot (article top) → **your MDX body** → **Sources** section (from `sources`) → **full `AffiliateDisclosure` block** (`id="affiliate-disclosure"`) → **Author box** → ad slot (article mid) → newsletter → **3 related posts** (same category scored first, then shared tags) with a "More in <Category>" link to the hub → trust note callout.
+7. Ad slot (article top) → **your MDX body** → **Guide series box(es)** (see below) → **Sources** section (from `sources`) → **full `AffiliateDisclosure` block** (`id="affiliate-disclosure"`) → **Author box** → ad slot (article mid) → newsletter → **3 related posts** (same category scored first, then shared tags) with a "More in <Category>" link to the hub → trust note callout.
 8. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD.
 
-So **do not** add in the body: an H1, a byline, dates, a "Sources" heading/list, an author bio, a "Related posts" block, an
-affiliate disclosure, ad slots, or JSON-LD.
+So **do not** add in the body: an H1, a byline, dates, a "Sources" heading/list, an author bio, a "Related posts" block, a
+guide-series list, an affiliate disclosure, ad slots, or JSON-LD.
+
+### Guide series box (automatic)
+
+`src/lib/series.ts` groups every post about one hustle into a series, and `GuideSeries.astro` renders a "Guide series"
+box listing all siblings (Start here → Startup costs → First steps → Pricing & pay → deep dives → comparisons →
+seasonal spin-offs) on each of them. Membership is derived from the slug pattern in section 1, so a new
+`<hustle>-side-hustle-canada` / `-startup-costs-canada` / `-first-client(s)|first-sale|first-week-canada` /
+`-pricing-canada` post joins its series with no extra work, **as long as `<hustle>` has a name in `SERIES_NAMES`**
+(add one line there for a brand-new hustle). Off-pattern slugs (comparisons, seasonal posts, extra guides) go in
+`EXTRA_MEMBERS`, which also lets a post sit in two series (e.g. `etsy-vs-shopify-canada`). Every `taxes-money`
+post is automatically in the "Side hustle taxes in Canada" series. The series box is navigation, not a substitute
+for contextual links: still link siblings in the body (section 4).
 
 ---
 
@@ -160,6 +172,10 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
 `zapier-automation-startup-costs-canada.mdx`, `zapier-automation-first-client-canada.mdx`,
 `side-hustle-expense-deductions-canada.mdx`):
 
+0. **Quick answer box (optional, used on the top posts).** Directly after the imports, a 3–4 bullet
+   `<QuickAnswer>` summary (import `QuickAnswer from '../../components/QuickAnswer.astro'`). Leave blank lines
+   inside the tags so the bullets render as Markdown. Every fact in it must already be in the body with its source;
+   no new numbers. It can link 1–2 sibling posts.
 1. **Answer first.** The first one or two sentences answer the title's question, name Canada, define the hustle,
    give the CAD range where relevant, and say who it suits. No "In this guide you'll learn…" openers.
 2. **Sibling links right away.** A short paragraph pointing to the related beginner / cost / first-client post.
@@ -198,6 +214,9 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
 - Each post in a hustle cluster links its siblings: beginner guide (`-side-hustle-canada`) ↔ startup costs
   (`-startup-costs-canada`) ↔ first client/sale/week. Link 2–3 related hustles in nearby categories, and the
   relevant `taxes-money` guide where tax comes up.
+- Every post should have **at least 3 contextual inbound links** from other posts' bodies (not counting the
+  series box, related posts, or hubs). When you publish, add a sentence linking the new post from 2–3 existing
+  siblings, usually in their "Which guides sit next to …?" section.
 - The layout already links the category hub (byline and "More in <Category>"). Linking it in the body is optional;
   if you do, use `/side-hustles/category/<slug>/`.
 - When you publish a new sibling, add a link to it from the existing posts in that cluster (CONTENT.md checklist item 9).
