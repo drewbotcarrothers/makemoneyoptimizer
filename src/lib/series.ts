@@ -142,6 +142,30 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
   'snow-removal-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
 };
 
+// Set C comparisons (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'amazon-flex-vs-uber-eats-canada': [
+    { series: 'package-courier', role: 'compare' },
+    { series: 'food-delivery', role: 'compare' },
+  ],
+  'canva-vs-adobe-express-canada': [{ series: 'graphic-design', role: 'compare' }],
+  'upwork-vs-linkedin-finding-clients-canada': [
+    { series: 'freelance-writing', role: 'compare' },
+    { series: 'virtual-assistant', role: 'compare' },
+  ],
+  'taskrabbit-vs-kijiji-facebook-handyman-canada': [
+    { series: 'handyman', role: 'compare' },
+    { series: 'odd-jobs-apps', role: 'compare' },
+  ],
+  'shopify-vs-squarespace-vs-wix-canada': [
+    { series: 'shopify-store', role: 'compare' },
+    { series: 'no-code-web-design', role: 'compare' },
+  ],
+  'substack-vs-beehiiv-vs-kit-canada': [{ series: 'newsletter', role: 'compare' }],
+  'printful-vs-printify-canada': [{ series: 'print-on-demand', role: 'compare' }],
+  // wealthsimple-vs-bank-business-account-side-hustle-canada joins 'taxes' via its taxes-money category.
+});
+
 /** Slugs that a pattern would match but that belong to a different series (handled in EXTRA_MEMBERS). */
 const PATTERN_EXCLUDE = new Set([
   'best-winter-side-hustles-canada',
