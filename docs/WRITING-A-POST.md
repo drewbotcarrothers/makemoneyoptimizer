@@ -164,7 +164,9 @@ seasonal spin-offs) on each of them. Membership is derived from the slug pattern
 `-pricing-canada` / `-mistakes-canada` post joins its series with no extra work, **as long as `<hustle>` has a name in `SERIES_NAMES`**
 (add one line there for a brand-new hustle). Off-pattern slugs (comparisons, seasonal posts, extra guides) go in
 `EXTRA_MEMBERS`, which also lets a post sit in two series (e.g. `etsy-vs-shopify-canada`). Every `taxes-money`
-post is automatically in the "Side hustle taxes in Canada" series. The series box is navigation, not a substitute
+post is automatically in the "Side hustle taxes in Canada" series, except pure admin how-tos listed in `NOT_TAX_SERIES`
+(registering, banking, invoicing, contracts, insurance, bookkeeping tools), which sit only in the "Side hustle admin &
+paperwork" (`business-admin`) series. The series box is navigation, not a substitute
 for contextual links: still link siblings in the body (section 4).
 
 ---

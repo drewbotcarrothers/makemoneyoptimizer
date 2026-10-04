@@ -164,6 +164,16 @@ const taxGuides = [
   'side-hustle-tax-prep-before-january-canada',
 ].map(post);
 
+const adminGuides = [
+  'register-sole-proprietorship-canada',
+  'how-to-get-cra-business-number-canada',
+  'business-bank-account-side-hustle-canada',
+  'how-to-invoice-clients-canada',
+  'freelance-contract-canada',
+  'side-hustle-insurance-canada',
+  'bookkeeping-tools-side-hustle-canada',
+].map(post);
+
 const crumbs = [
   { name: 'Home', href: '/' },
   { name: 'Start here', href: '/start-here/' },
@@ -296,6 +306,16 @@ const pageJsonLd = {
         ))}
       </ul>
       <TaxChecklistCta />
+      <h3 id="admin">What paperwork does a new side hustle need?</h3>
+      <p>
+        Most side hustles start without any registration at all. When you add a business name, a GST/HST account,
+        or regular clients, these admin guides cover the next steps in order:
+      </p>
+      <ul>
+        {adminGuides.map((a) => (
+          <li><a href={a.href}>{a.title}</a></li>
+        ))}
+      </ul>
       <p>This is not tax, legal, or insurance advice.</p>
     </div>
   </section>
