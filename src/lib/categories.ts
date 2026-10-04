@@ -24,6 +24,12 @@ export interface Category {
   description: string;
   /** SEO intro paragraph shown at the top of the category page. */
   intro: string;
+  /**
+   * Slugs for the "Most popular in this category" list on the hub, in display order. Curated by
+   * search demand (High-priority pillars in content-planning/pillars-100.csv), not by site analytics;
+   * swap in real top pages once Search Console has data. Every slug must exist and be in this category.
+   */
+  popular: string[];
 }
 
 export const CATEGORIES: readonly Category[] = [
@@ -35,6 +41,13 @@ export const CATEGORIES: readonly Category[] = [
       'Delivery, rideshare, courier, grocery shopping, and odd-job apps you can start on your own schedule in Canada.',
     intro:
       'Gig apps are the fastest way for most Canadians to start earning on a flexible schedule, because the platform brings the customers and you supply the time, vehicle, or tools. These guides cover food delivery, rideshare, grocery shopping, package courier, and odd-job apps, with Canadian costs, insurance questions, and CRA basics to check before your first shift.',
+    popular: [
+      'food-delivery-side-hustle-canada',
+      'rideshare-driving-side-hustle-canada',
+      'uber-eats-vs-doordash-vs-skip-canada',
+      'food-delivery-pricing-canada',
+      'grocery-shopping-side-hustle-canada',
+    ],
   },
   {
     slug: 'local-services',
@@ -44,6 +57,14 @@ export const CATEGORIES: readonly Category[] = [
       'Snow removal, lawn care, dog walking, pet sitting, cleaning, handyman, detailing, moving help, junk removal, and seasonal work.',
     intro:
       'Local services are side hustles you sell to neighbours in person, such as snow removal, lawn care, dog walking, house cleaning, handyman work, and car detailing. They usually need little more than basic equipment and reliable scheduling, and Canadian seasons shape when demand peaks. Each guide walks through startup costs, finding first clients, pricing, and the bylaws, insurance, and tax questions to confirm locally.',
+    popular: [
+      'snow-removal-side-hustle-canada',
+      'best-winter-side-hustles-canada',
+      'dog-walking-side-hustle-canada',
+      'house-cleaning-side-hustle-canada',
+      'christmas-light-installation-side-hustle-canada',
+      'lawn-care-side-hustle-canada',
+    ],
   },
   {
     slug: 'online-freelancing',
@@ -53,6 +74,13 @@ export const CATEGORIES: readonly Category[] = [
       'Freelance writing, graphic design, bookkeeping, tutoring, teaching English, and virtual assistant work from home.',
     intro:
       'Online freelancing lets you sell a skill you already have, such as writing, design, bookkeeping, tutoring, or admin support, to clients anywhere while working from home in Canada. These guides explain how to package a starter offer, land a first client, and budget for tools in CAD, plus when GST/HST registration and CRA reporting come into play.',
+    popular: [
+      'freelance-writing-side-hustle-canada',
+      'virtual-assistant-side-hustle-canada',
+      'online-tutoring-side-hustle-canada',
+      'fiverr-vs-upwork-canada',
+      'graphic-design-side-hustle-canada',
+    ],
   },
   {
     slug: 'digital-products',
@@ -61,6 +89,12 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Printables, ebooks, and Notion templates you create once and sell online.',
     intro:
       'Digital products are files you make once and sell many times, such as printables, ebooks, and Notion templates. They trade upfront creation time for low ongoing costs, but sales depend on finding buyers rather than on hours worked. These guides cover what to build first, Canadian startup costs, marketplace and storefront options, and how to approach a first sale honestly.',
+    popular: [
+      'printables-side-hustle-canada',
+      'notion-templates-side-hustle-canada',
+      'ebook-publishing-side-hustle-canada',
+      'teachable-vs-gumroad-vs-payhip-canada',
+    ],
   },
   {
     slug: 'content-creation',
@@ -69,6 +103,13 @@ export const CATEGORIES: readonly Category[] = [
     description: 'YouTube, TikTok and Reels, newsletters, SEO blogging, and UGC for brands.',
     intro:
       'Content creation side hustles, including YouTube, TikTok and Reels, newsletters, SEO blogging, and UGC for brands, build income from an audience or from content you make for companies. Most take months before they pay, so these guides focus on realistic first milestones, gear budgets in CAD, and Canadian disclosure and tax rules rather than promised earnings.',
+    popular: [
+      'youtube-side-hustle-canada',
+      'tiktok-reels-side-hustle-canada',
+      'ugc-side-hustle-canada',
+      'newsletter-side-hustle-canada',
+      'seo-blogging-side-hustle-canada',
+    ],
   },
   {
     slug: 'reselling-ecommerce',
@@ -78,6 +119,14 @@ export const CATEGORIES: readonly Category[] = [
       'Reselling, furniture flipping, Etsy, Shopify, print-on-demand, and holiday craft markets.',
     intro:
       'Reselling and ecommerce side hustles earn the margin between what you pay for, or make, a product and what a buyer pays, whether you flip items on Canadian marketplaces, refinish furniture, or run an Etsy, Shopify, or print-on-demand shop. These guides cover sourcing, fees, shipping within Canada, and how the CRA treats sales income so you can test small before scaling.',
+    popular: [
+      'reselling-side-hustle-canada',
+      'etsy-shop-side-hustle-canada',
+      'etsy-vs-shopify-canada',
+      'depop-vs-poshmark-vs-vinted-vs-facebook-marketplace-canada',
+      'black-friday-boxing-day-reselling-canada',
+      'facebook-marketplace-flipping-side-hustle-canada',
+    ],
   },
   {
     slug: 'marketing-for-hire',
@@ -86,6 +135,12 @@ export const CATEGORIES: readonly Category[] = [
     description: 'Social media management, local SEO, and affiliate marketing for Canadian businesses and audiences.',
     intro:
       'Marketing for hire means helping businesses get found and chosen, through social media management, local SEO, or affiliate marketing on your own channels. These guides explain what to offer first, how to find a first client, and the Competition Bureau disclosure and CRA rules to keep in mind.',
+    popular: [
+      'social-media-manager-side-hustle-canada',
+      'affiliate-marketing-side-hustle-canada',
+      'local-seo-side-hustle-canada',
+      'google-business-profile-side-hustle-canada',
+    ],
   },
   {
     slug: 'tech-ai',
@@ -94,6 +149,12 @@ export const CATEGORIES: readonly Category[] = [
     description: 'No-code web design, website maintenance, Zapier automation, and AI consulting for small businesses.',
     intro:
       'Tech and AI side hustles help small businesses with websites, automation, and practical AI tools, often without needing a computer science degree. These guides cover no-code web design, website maintenance plans, Zapier automation, and AI consulting for Canadian clients, including starter offers, tool costs in CAD, and privacy considerations to discuss with clients.',
+    popular: [
+      'no-code-web-design-side-hustle-canada',
+      'ai-consulting-side-hustle-canada',
+      'zapier-automation-side-hustle-canada',
+      'website-maintenance-side-hustle-canada',
+    ],
   },
   {
     slug: 'taxes-money',
@@ -103,6 +164,13 @@ export const CATEGORIES: readonly Category[] = [
       'CRA reporting, GST/HST, deductions, record keeping, home office and vehicle expenses, and how much tax to set aside.',
     intro:
       'Side hustle income in Canada is generally taxable and is reported to the CRA, so the money side matters as much as the hustle itself. These guides explain how to report self-employment and platform income, when GST/HST registration applies, which expenses you may deduct, and how to keep records and set money aside, with links to official CRA sources for your situation.',
+    popular: [
+      'report-side-hustle-income-cra-canada',
+      'how-much-tax-set-aside-side-hustle-canada',
+      'gst-hst-registration-side-hustle-canada',
+      'side-hustle-expense-deductions-canada',
+      'side-hustle-tax-prep-before-january-canada',
+    ],
   },
 ];
 

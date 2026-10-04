@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "check:links": "node scripts/check-links.mjs"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.1",
@@ -21,5 +22,5 @@
   "allowScripts": {
     "esbuild": true
   },
-  "description": "Make Money Optimizer — practical side hustle guides for Canadians"
+  "description": "Make Money Optimizer \u2014 practical side hustle guides for Canadians"
 }

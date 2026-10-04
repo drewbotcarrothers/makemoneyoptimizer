@@ -32,6 +32,12 @@ const posts = all.filter((a) => a.data.category === category.slug);
 const others = categoryCounts(all).filter((c) => c.slug !== category.slug);
 const path = categoryHref(category.slug);
 const pageUrl = `${SITE.url}${path}`;
+const bySlug = new Map(posts.map((a) => [a.slug, a]));
+const popular = category.popular.map((slug) => {
+  const a = bySlug.get(slug);
+  if (!a) throw new Error(`categories.ts popular slug "${slug}" is not a published ${category.slug} post`);
+  return a;
+});
 const countLabel = `${posts.length} ${posts.length === 1 ? 'guide' : 'guides'}`;
 
 const crumbs = [
@@ -77,6 +83,24 @@ const collectionJsonLd = {
       <p class="post-count">{countLabel} in this category</p>
     </div>
   </header>
+
+  {popular.length > 0 && (
+    <section class="section" style="padding-bottom:0;" aria-labelledby="popular-heading">
+      <div class="container">
+        <h2 id="popular-heading">Most popular in this category</h2>
+        <p class="muted">
+          New to side hustles? Read <a href="/start-here/">Start here</a> first, then open one of these guides.
+        </p>
+        <ol class="popular-list">
+          {popular.map((a) => (
+            <li>
+              <a href={`/side-hustles/${a.slug}/`}>{a.data.title}</a>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  )}
 
   <AdSlot class="container ad-slot-inline" label="Ad slot · category hub" />
 

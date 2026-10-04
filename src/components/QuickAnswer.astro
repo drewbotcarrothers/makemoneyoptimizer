@@ -1,0 +1,14 @@
+---
+/**
+ * Short answer box shown at the top of an article body. Children are Markdown (usually 3–5 bullets).
+ * Keep every fact consistent with, and sourced in, the body below it.
+ */
+interface Props {
+  label?: string;
+}
+const { label = 'Quick answer' } = Astro.props;
+---
+<aside class="quick-answer" aria-label={label}>
+  <p class="quick-answer-label">{label}</p>
+  <slot />
+</aside>

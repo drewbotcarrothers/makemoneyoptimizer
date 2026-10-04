@@ -1,0 +1,245 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { SITE } from '../lib/site';
+import { getPublishedArticles } from '../lib/articles';
+import { CATEGORIES, breadcrumbJsonLd, categoryHref } from '../lib/categories';
+
+const articles = await getPublishedArticles();
+const bySlug = new Map(articles.map((a) => [a.slug, a]));
+
+/** Look up a post so a renamed or deleted slug fails the build instead of shipping a 404. */
+function post(slug: string) {
+  const a = bySlug.get(slug);
+  if (!a) throw new Error(`start-here: unknown article slug "${slug}"`);
+  return { href: `/side-hustles/${slug}/`, title: a.data.title };
+}
+
+interface Pick {
+  slug: string;
+  why: string;
+}
+interface Situation {
+  id: string;
+  short: string;
+  heading: string;
+  intro: string;
+  picks: Pick[];
+}
+
+const situations: Situation[] = [
+  {
+    id: 'no-car',
+    short: 'No car',
+    heading: 'Best first side hustles in Canada if you don’t have a car',
+    intro: 'These start on foot, on transit, or at a desk. Delivery by bike only works where the app offers a bike zone.',
+    picks: [
+      { slug: 'dog-walking-side-hustle-canada', why: 'Clients are the neighbours you can walk to.' },
+      { slug: 'house-cleaning-side-hustle-canada', why: 'Build a route near transit; many homes already have a vacuum.' },
+      { slug: 'online-tutoring-side-hustle-canada', why: 'A subject you know, a headset, and a quiet room.' },
+      { slug: 'virtual-assistant-side-hustle-canada', why: 'Remote admin for one-person businesses.' },
+      { slug: 'food-delivery-side-hustle-canada', why: 'Only if your city has a real bike zone on the app.' },
+    ],
+  },
+  {
+    id: 'no-money',
+    short: 'Little or no money',
+    heading: 'Best first side hustles in Canada with little or no money',
+    intro: 'These can start with what you already own. Spend only after the first paid work shows what you need.',
+    picks: [
+      { slug: 'freelance-writing-side-hustle-canada', why: '$0 in week one if you already have a computer.' },
+      { slug: 'virtual-assistant-side-hustle-canada', why: '$0 in week one; a headset can wait for client calls.' },
+      { slug: 'reselling-side-hustle-canada', why: 'List items you already own before buying inventory.' },
+      { slug: 'online-tutoring-side-hustle-canada', why: 'A headset is usually the first purchase.' },
+      { slug: 'dog-walking-side-hustle-canada', why: 'A leash, waste bags, and boots with grip.' },
+    ],
+  },
+  {
+    id: 'online',
+    short: 'Online only',
+    heading: 'Best online-only side hustles in Canada',
+    intro: 'Work from home for clients or buyers anywhere. Most of these take longer to find the first customer than a local service does.',
+    picks: [
+      { slug: 'freelance-writing-side-hustle-canada', why: 'Sell drafts to businesses in a niche you know.' },
+      { slug: 'virtual-assistant-side-hustle-canada', why: 'Inbox, scheduling, and simple spreadsheets.' },
+      { slug: 'teach-english-online-side-hustle-canada', why: 'Live lessons over video.' },
+      { slug: 'graphic-design-side-hustle-canada', why: 'Design for small businesses and creators.' },
+      { slug: 'printables-side-hustle-canada', why: 'Make a file once and sell it many times.' },
+      { slug: 'fiverr-vs-upwork-canada', why: 'If you want a marketplace to find clients, compare the fees first.' },
+    ],
+  },
+  {
+    id: 'winter',
+    short: 'Winter',
+    heading: 'Best winter side hustles in Canada',
+    intro: 'Canadian winters create short, real demand. Book early and price the take-down or the storm, not just the first visit.',
+    picks: [
+      { slug: 'best-winter-side-hustles-canada', why: 'The overview: six winter options compared.' },
+      { slug: 'snow-removal-side-hustle-canada', why: 'Driveways and walks for nearby clients.' },
+      { slug: 'christmas-light-installation-side-hustle-canada', why: 'November installs with a January take-down.' },
+      { slug: 'winter-pet-sitting-house-sitting-canada', why: 'Holiday travel creates pet and house sitting demand.' },
+      { slug: 'seasonal-holiday-jobs-canada', why: 'Prefer a paycheque? Temporary retail, warehouse, and delivery roles.' },
+      { slug: 'black-friday-boxing-day-reselling-canada', why: 'Resell sale deals only if the math works after fees.' },
+    ],
+  },
+  {
+    id: 'students',
+    short: 'Students',
+    heading: 'Best side hustles for students in Canada',
+    intro: 'Flexible hours that fit around classes. Check minimum ages: some apps need you to be 18, 21, or the age of majority in your province.',
+    picks: [
+      { slug: 'online-tutoring-side-hustle-canada', why: 'Teach a subject you just aced, after class.' },
+      { slug: 'dog-walking-side-hustle-canada', why: 'Short walks between lectures in your neighbourhood.' },
+      { slug: 'house-cleaning-side-hustle-canada', why: 'Set-day visits you can schedule around a timetable.' },
+      { slug: 'seasonal-holiday-jobs-canada', why: 'Winter-break shifts as an employee.' },
+      { slug: 'reselling-side-hustle-canada', why: 'Start by selling what is already in your closet.' },
+    ],
+  },
+];
+
+const taxGuides = [
+  'report-side-hustle-income-cra-canada',
+  'how-much-tax-set-aside-side-hustle-canada',
+  'gst-hst-registration-side-hustle-canada',
+  'side-hustle-expense-deductions-canada',
+  'record-keeping-side-hustle-canada',
+  'side-hustle-tax-prep-before-january-canada',
+].map(post);
+
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Start here', href: '/start-here/' },
+];
+const title = 'Start Here: How to Pick a Side Hustle in Canada';
+const description =
+  'New to side hustles in Canada? Pick one by time, money, vehicle, and season, see the best first picks for your situation, and learn the CRA tax basics.';
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: `${SITE.url}/start-here/`,
+  inLanguage: 'en-CA',
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
+};
+---
+<BaseLayout title={title} description={description} jsonLd={[pageJsonLd, breadcrumbJsonLd(crumbs, SITE.url)]}>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <Breadcrumbs crumbs={crumbs} />
+      <p class="eyebrow">Start here</p>
+      <h1>How to pick your first side hustle in Canada</h1>
+      <p class="lead">
+        The best first side hustle is the one that fits the hours you actually have, the money you can afford to
+        lose, the tools you already own, and the season. This page walks you through that choice, points you to a
+        short list of first picks for common situations, and covers the tax basics every Canadian side hustle shares.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow prose">
+      <aside class="quick-answer" aria-label="Quick answer">
+        <p class="quick-answer-label">Quick answer</p>
+        <ul>
+          <li>Answer five questions: hours, budget, vehicle, skills, and whether you want clients or an employer.</li>
+          <li>Pick one hustle from the lists below, and read its beginner guide and startup-costs guide before spending.</li>
+          <li>Test small for two to four weeks and keep a simple log of hours, costs, and income.</li>
+          <li>Side hustle income is generally taxable in Canada. Keep records from day one and set money aside.</li>
+        </ul>
+      </aside>
+
+      <nav class="filter-bar" aria-label="On this page">
+        <a class="chip" href="#how-to-pick">How to pick</a>
+        {situations.map((s) => (
+          <a class="chip" href={`#${s.id}`}>{s.short}</a>
+        ))}
+        <a class="chip" href="#categories">Categories</a>
+        <a class="chip" href="#taxes">Tax basics</a>
+      </nav>
+
+      <h2 id="how-to-pick">How do you pick a side hustle in Canada?</h2>
+      <p>
+        Pick a side hustle in Canada by matching it to your constraints first and your interests second. Five
+        questions narrow 40-plus options to two or three:
+      </p>
+      <ol>
+        <li>
+          <strong>When are you free?</strong> Meal rushes and weekends suit gig apps, early mornings suit snow
+          removal, and evenings suit tutoring and online client work.
+        </li>
+        <li>
+          <strong>How much can you afford to lose?</strong> Most hustles on this site have a startup-costs guide
+          with CAD ranges. If the answer is close to $0, start with a service that uses what you already own.
+        </li>
+        <li>
+          <strong>Do you have a reliable vehicle, and will your insurer cover the work?</strong> Delivery and
+          rideshare depend on it. Get the insurer’s answer in writing before the first shift.
+        </li>
+        <li>
+          <strong>What can you already do well?</strong> Writing, explaining a subject, design, organising, or
+          physical work each point to a different category below.
+        </li>
+        <li>
+          <strong>Do you want clients or an employer?</strong> A seasonal job pays a wage and handles payroll
+          deductions. A side hustle means finding customers, setting prices, and handling your own tax.
+        </li>
+      </ol>
+      <p>
+        Then test small. Give one hustle two to four weeks, log the hours, costs, and money in, and decide with your
+        own numbers rather than an income screenshot. This site does not publish earnings promises, because results
+        vary widely.
+      </p>
+
+      {situations.map((s) => (
+        <section>
+          <h2 id={s.id}>{s.heading}</h2>
+          <p>{s.intro}</p>
+          <ul>
+            {s.picks.map((p) => {
+              const a = post(p.slug);
+              return (
+                <li>
+                  <a href={a.href}>{a.title}</a>: {p.why}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      ))}
+
+      <h2 id="categories">Which side hustle categories can you browse?</h2>
+      <p>Each category hub lists every guide in that group, starting with the most popular beginner guides.</p>
+      <ul>
+        {CATEGORIES.map((c) => (
+          <li>
+            <a href={categoryHref(c.slug)}>{c.name}</a>: {c.description}
+          </li>
+        ))}
+      </ul>
+
+      <h2 id="taxes">What tax basics apply to every side hustle in Canada?</h2>
+      <p>
+        Side hustle income in Canada is generally taxable. Self-employment income is usually reported on
+        <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html">Form T2125</a>
+        with your return, and the
+        <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html">GST/HST small supplier test</a>
+        decides when you must register (rideshare drivers register from the first fare). These guides explain the
+        rest:
+      </p>
+      <ul>
+        {taxGuides.map((a) => (
+          <li><a href={a.href}>{a.title}</a></li>
+        ))}
+      </ul>
+      <p>This is not tax, legal, or insurance advice.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <Newsletter />
+    </div>
+  </section>
+</BaseLayout>

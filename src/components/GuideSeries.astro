@@ -1,0 +1,30 @@
+---
+import type { SeriesGroup } from '../lib/series';
+import { ROLE_LABELS } from '../lib/series';
+
+interface Props {
+  groups: SeriesGroup[];
+  currentSlug: string;
+}
+const { groups, currentSlug } = Astro.props;
+---
+{groups.map((g) => (
+  <nav class="guide-series" aria-label={`${g.name} guide series`}>
+    <p class="guide-series-title">
+      <span class="guide-series-eyebrow">Guide series</span>
+      {g.name}{g.key === 'taxes' || g.key === 'fall-winter' ? '' : ' in Canada'}
+    </p>
+    <ol>
+      {g.items.map((item) => (
+        <li class={item.slug === currentSlug ? 'is-current' : undefined}>
+          <span class="guide-series-role">{ROLE_LABELS[item.role]}</span>
+          {item.slug === currentSlug ? (
+            <span aria-current="page">{item.title} <em>(you are here)</em></span>
+          ) : (
+            <a href={`/side-hustles/${item.slug}/`}>{item.title}</a>
+          )}
+        </li>
+      ))}
+    </ol>
+  </nav>
+))}

@@ -7,9 +7,11 @@ import Sources from '../components/Sources.astro';
 import AuthorBox from '../components/AuthorBox.astro';
 import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import GuideSeries from '../components/GuideSeries.astro';
 import { AUTHOR, SITE, authorSameAs, authorUrl } from '../lib/site';
 import { getPublishedArticles, relatedArticles } from '../lib/articles';
 import { breadcrumbJsonLd, categoryHref, getCategory } from '../lib/categories';
+import { seriesGroupsFor } from '../lib/series';
 
 interface SourceItem {
   title: string;
@@ -47,6 +49,7 @@ const {
 
 const all = await getPublishedArticles();
 const related = relatedArticles(all, entryId, 3);
+const seriesGroups = seriesGroupsFor(all, slug, category);
 const url = `${SITE.url}/side-hustles/${slug}/`;
 const cat = getCategory(category);
 const categoryLabel = cat.name;
@@ -150,6 +153,7 @@ const articleJsonLd = {
   <article class="section" style="padding-top:var(--space-8);">
     <div class="container-narrow prose">
       <slot />
+      <GuideSeries groups={seriesGroups} currentSlug={slug} />
       <Sources sources={sources} />
       <AffiliateDisclosure />
       <AuthorBox />
