@@ -9,12 +9,13 @@
  * `<hustle>-pricing-canada`, `<hustle>-mistakes-canada`) needs no change here, as long as `<hustle>` already has a name in SERIES_NAMES.
  */
 
-export type SeriesRole = 'start' | 'costs' | 'first' | 'pricing' | 'mistakes' | 'guide' | 'compare' | 'seasonal' | 'tax';
+export type SeriesRole = 'start' | 'costs' | 'first' | 'plan' | 'pricing' | 'mistakes' | 'guide' | 'compare' | 'seasonal' | 'tax';
 
 export const ROLE_LABELS: Record<SeriesRole, string> = {
   start: 'Start here',
   costs: 'Startup costs',
   first: 'First steps',
+  plan: '30-day plan',
   pricing: 'Pricing & pay',
   mistakes: 'Mistakes to avoid',
   guide: 'Deep dive',
@@ -23,7 +24,7 @@ export const ROLE_LABELS: Record<SeriesRole, string> = {
   tax: 'Tax guide',
 };
 
-const ROLE_ORDER: SeriesRole[] = ['start', 'costs', 'first', 'pricing', 'mistakes', 'guide', 'compare', 'seasonal', 'tax'];
+const ROLE_ORDER: SeriesRole[] = ['start', 'costs', 'first', 'plan', 'pricing', 'mistakes', 'guide', 'compare', 'seasonal', 'tax'];
 
 /** Display name for each series key. A key without a name here gets no series box. */
 export const SERIES_NAMES: Record<string, string> = {
@@ -156,6 +157,20 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
   ],
   'snow-removal-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
 };
+
+// T13 30-day launch plans (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'dog-walking-30-day-plan-canada': [{ series: 'dog-walking', role: 'plan' }],
+  'house-cleaning-30-day-plan-canada': [{ series: 'house-cleaning', role: 'plan' }],
+  'snow-removal-30-day-plan-canada': [{ series: 'snow-removal', role: 'plan' }],
+  'lawn-care-30-day-plan-canada': [{ series: 'lawn-care', role: 'plan' }],
+  'freelance-writing-30-day-plan-canada': [{ series: 'freelance-writing', role: 'plan' }],
+  'virtual-assistant-30-day-plan-canada': [{ series: 'virtual-assistant', role: 'plan' }],
+  'reselling-30-day-plan-canada': [{ series: 'reselling', role: 'plan' }],
+  'etsy-shop-30-day-plan-canada': [{ series: 'etsy-shop', role: 'plan' }],
+  'online-tutoring-30-day-plan-canada': [{ series: 'online-tutoring', role: 'plan' }],
+  'social-media-manager-30-day-plan-canada': [{ series: 'social-media-manager', role: 'plan' }],
+});
 
 // Set C comparisons (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
 Object.assign(EXTRA_MEMBERS, {
