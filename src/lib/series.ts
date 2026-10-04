@@ -196,6 +196,55 @@ Object.assign(EXTRA_MEMBERS, {
   // wealthsimple-vs-bank-business-account-side-hustle-canada joins 'taxes' via its taxes-money category.
 });
 
+// Set 2 platform reviews (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'platform-reviews': 'Platform reviews' });
+Object.assign(EXTRA_MEMBERS, {
+  'upwork-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'freelance-writing', role: 'guide' },
+    { series: 'virtual-assistant', role: 'guide' },
+  ],
+  'fiverr-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'graphic-design', role: 'guide' },
+    { series: 'freelance-writing', role: 'guide' },
+  ],
+  'taskrabbit-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'odd-jobs-apps', role: 'guide' },
+    { series: 'handyman', role: 'guide' },
+  ],
+  'rover-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'dog-walking', role: 'guide' },
+  ],
+  'etsy-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'etsy-shop', role: 'guide' },
+  ],
+  'poshmark-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'clothing-resale', role: 'guide' },
+    { series: 'reselling', role: 'guide' },
+  ],
+  'instacart-shopper-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'grocery-shopping', role: 'guide' },
+  ],
+  'uber-eats-courier-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'food-delivery', role: 'guide' },
+  ],
+  'amazon-kdp-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'ebook-publishing', role: 'guide' },
+  ],
+  'amazon-flex-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'package-courier', role: 'guide' },
+  ],
+});
+
 // T03 tools and gear posts (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
 Object.assign(EXTRA_MEMBERS, {
   'pressure-washing-tools-canada': [{ series: 'pressure-washing', role: 'guide' }],
