@@ -1,28 +1,29 @@
 /**
  * Guide series: groups every post about one hustle (beginner guide, startup costs, first client/sale/week,
- * pricing, plus comparisons and seasonal spin-offs) so ArticleLayout can render a consistent
+ * pricing, mistakes to avoid, plus comparisons and seasonal spin-offs) so ArticleLayout can render a consistent
  * "guide series" box on each of them. Membership is automatic for slugs that follow the naming
  * patterns in docs/WRITING-A-POST.md; only off-pattern slugs need an entry in EXTRA_MEMBERS.
  *
  * Adding a new post that follows the slug pattern (`<hustle>-side-hustle-canada`,
  * `<hustle>-startup-costs-canada`, `<hustle>-first-client(s)|first-sale|first-week-canada`,
- * `<hustle>-pricing-canada`) needs no change here, as long as `<hustle>` already has a name in SERIES_NAMES.
+ * `<hustle>-pricing-canada`, `<hustle>-mistakes-canada`) needs no change here, as long as `<hustle>` already has a name in SERIES_NAMES.
  */
 
-export type SeriesRole = 'start' | 'costs' | 'first' | 'pricing' | 'guide' | 'compare' | 'seasonal' | 'tax';
+export type SeriesRole = 'start' | 'costs' | 'first' | 'pricing' | 'mistakes' | 'guide' | 'compare' | 'seasonal' | 'tax';
 
 export const ROLE_LABELS: Record<SeriesRole, string> = {
   start: 'Start here',
   costs: 'Startup costs',
   first: 'First steps',
   pricing: 'Pricing & pay',
+  mistakes: 'Mistakes to avoid',
   guide: 'Deep dive',
   compare: 'Comparison',
   seasonal: 'Seasonal',
   tax: 'Tax guide',
 };
 
-const ROLE_ORDER: SeriesRole[] = ['start', 'costs', 'first', 'pricing', 'guide', 'compare', 'seasonal', 'tax'];
+const ROLE_ORDER: SeriesRole[] = ['start', 'costs', 'first', 'pricing', 'mistakes', 'guide', 'compare', 'seasonal', 'tax'];
 
 /** Display name for each series key. A key without a name here gets no series box. */
 export const SERIES_NAMES: Record<string, string> = {
@@ -95,6 +96,7 @@ const PATTERNS: [RegExp, SeriesRole][] = [
   [/^(.+)-first-sale-canada$/, 'first'],
   [/^(.+)-first-week-canada$/, 'first'],
   [/^(.+)-pricing-canada$/, 'pricing'],
+  [/^(.+)-mistakes-canada$/, 'mistakes'],
 ];
 
 /** Off-pattern posts, and posts that also belong to another series (comparisons, seasonal spin-offs). */
@@ -154,6 +156,30 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
   ],
   'snow-removal-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
 };
+
+// Set C comparisons (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'amazon-flex-vs-uber-eats-canada': [
+    { series: 'package-courier', role: 'compare' },
+    { series: 'food-delivery', role: 'compare' },
+  ],
+  'canva-vs-adobe-express-canada': [{ series: 'graphic-design', role: 'compare' }],
+  'upwork-vs-linkedin-finding-clients-canada': [
+    { series: 'freelance-writing', role: 'compare' },
+    { series: 'virtual-assistant', role: 'compare' },
+  ],
+  'taskrabbit-vs-kijiji-facebook-handyman-canada': [
+    { series: 'handyman', role: 'compare' },
+    { series: 'odd-jobs-apps', role: 'compare' },
+  ],
+  'shopify-vs-squarespace-vs-wix-canada': [
+    { series: 'shopify-store', role: 'compare' },
+    { series: 'no-code-web-design', role: 'compare' },
+  ],
+  'substack-vs-beehiiv-vs-kit-canada': [{ series: 'newsletter', role: 'compare' }],
+  'printful-vs-printify-canada': [{ series: 'print-on-demand', role: 'compare' }],
+  // wealthsimple-vs-bank-business-account-side-hustle-canada joins 'taxes' via its taxes-money category.
+});
 
 /** Slugs that a pattern would match but that belong to a different series (handled in EXTRA_MEMBERS). */
 const PATTERN_EXCLUDE = new Set([
@@ -226,3 +252,27 @@ export function seriesGroupsFor<T extends { slug: string; data: { title: string;
     })
     .filter((g) => g.items.length >= 2);
 }
+
+// Set D seasonal posts (Nov 2026–Jan 2027), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'holiday-market-vendor-guide-canada': [
+    { series: 'etsy-shop', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+  'christmas-tree-wreath-selling-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'christmas-week-pet-sitting-house-sitting-pricing-canada': [
+    { series: 'dog-walking', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+  'new-year-side-hustles-2027-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'tax-season-bookkeeping-tax-prep-gigs-canada': [
+    { series: 'freelance-bookkeeping', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+  'rrsp-season-side-hustle-money-tips-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'valentines-day-side-hustles-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'exam-season-winter-tutoring-canada': [
+    { series: 'online-tutoring', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+});
