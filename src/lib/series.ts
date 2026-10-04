@@ -219,6 +219,17 @@ export function seriesFor(slug: string, category?: string): SeriesMembership[] {
   return out;
 }
 
+// Side hustles by situation (Oct 2026): hub roundups. Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'by-situation': 'Side hustles by situation' });
+Object.assign(EXTRA_MEMBERS, {
+  'side-hustles-for-students-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-retirees-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-stay-at-home-parents-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-newcomers-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-without-a-car-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-introverts-canada': [{ series: 'by-situation', role: 'start' }],
+});
+
 export interface SeriesItem {
   slug: string;
   title: string;
