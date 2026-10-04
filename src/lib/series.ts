@@ -181,17 +181,6 @@ Object.assign(EXTRA_MEMBERS, {
   // wealthsimple-vs-bank-business-account-side-hustle-canada joins 'taxes' via its taxes-money category.
 });
 
-// Side hustles by situation (Oct 2026): hub roundups. Kept as a separate block to limit merge conflicts.
-Object.assign(SERIES_NAMES, { 'by-situation': 'Side hustles by situation' });
-Object.assign(EXTRA_MEMBERS, {
-  'side-hustles-for-students-canada': [{ series: 'by-situation', role: 'start' }],
-  'side-hustles-for-retirees-canada': [{ series: 'by-situation', role: 'start' }],
-  'side-hustles-for-stay-at-home-parents-canada': [{ series: 'by-situation', role: 'start' }],
-  'side-hustles-for-newcomers-canada': [{ series: 'by-situation', role: 'start' }],
-  'side-hustles-without-a-car-canada': [{ series: 'by-situation', role: 'start' }],
-  'side-hustles-for-introverts-canada': [{ series: 'by-situation', role: 'start' }],
-});
-
 /** Slugs that a pattern would match but that belong to a different series (handled in EXTRA_MEMBERS). */
 const PATTERN_EXCLUDE = new Set([
   'best-winter-side-hustles-canada',
@@ -229,6 +218,17 @@ export function seriesFor(slug: string, category?: string): SeriesMembership[] {
   if (category === 'taxes-money') out.push({ series: 'taxes', role: 'tax' });
   return out;
 }
+
+// Side hustles by situation (Oct 2026): hub roundups. Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'by-situation': 'Side hustles by situation' });
+Object.assign(EXTRA_MEMBERS, {
+  'side-hustles-for-students-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-retirees-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-stay-at-home-parents-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-newcomers-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-without-a-car-canada': [{ series: 'by-situation', role: 'start' }],
+  'side-hustles-for-introverts-canada': [{ series: 'by-situation', role: 'start' }],
+});
 
 export interface SeriesItem {
   slug: string;
