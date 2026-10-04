@@ -181,6 +181,20 @@ Object.assign(EXTRA_MEMBERS, {
   // wealthsimple-vs-bank-business-account-side-hustle-canada joins 'taxes' via its taxes-money category.
 });
 
+// T03 tools and gear posts (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'pressure-washing-tools-canada': [{ series: 'pressure-washing', role: 'guide' }],
+  'dog-walking-gear-canada': [{ series: 'dog-walking', role: 'guide' }],
+  'house-cleaning-tools-canada': [{ series: 'house-cleaning', role: 'guide' }],
+  'lawn-care-tools-canada': [{ series: 'lawn-care', role: 'guide' }],
+  'car-detailing-tools-canada': [{ series: 'car-detailing', role: 'guide' }],
+  'handyman-tools-canada': [{ series: 'handyman', role: 'guide' }],
+  'food-delivery-gear-canada': [{ series: 'food-delivery', role: 'guide' }],
+  'reselling-tools-canada': [{ series: 'reselling', role: 'guide' }],
+  'youtube-gear-canada': [{ series: 'youtube', role: 'guide' }],
+  'freelance-writing-tools-canada': [{ series: 'freelance-writing', role: 'guide' }],
+});
+
 /** Slugs that a pattern would match but that belong to a different series (handled in EXTRA_MEMBERS). */
 const PATTERN_EXCLUDE = new Set([
   'best-winter-side-hustles-canada',
