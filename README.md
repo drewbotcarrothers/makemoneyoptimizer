@@ -72,6 +72,24 @@ Start with **[docs/WRITING-A-POST.md](docs/WRITING-A-POST.md)**, the authoritati
 - Before enabling ads/affiliates/newsletter collection, update Privacy/Terms and wire real providers.
 - After upload, smoke-test `/sitemap-index.xml`, `/robots.txt`, and `/rss.xml`.
 
+## Free tax checklist (lead magnet)
+
+The checklist content lives in `src/lib/tax-checklist.ts` (items + canada.ca sources) and renders at
+`/free-side-hustle-tax-checklist/`. The PDF in `public/downloads/canadian-side-hustle-tax-checklist.pdf` is a print of
+that page (print CSS hides the site chrome). After editing the checklist, regenerate the PDF:
+
+```bash
+npm run build && npx astro preview --port 4321 &
+google-chrome --headless=new --no-pdf-header-footer \
+  --print-to-pdf=public/downloads/canadian-side-hustle-tax-checklist.pdf \
+  http://localhost:4321/free-side-hustle-tax-checklist/
+npm run build   # so dist/ picks up the new PDF
+```
+
+Re-check the CPP figures, tax brackets, and filing dates against the cited canada.ca pages every January and update
+`CHECKED_ON`. There is no email capture yet; the CTA (`src/components/TaxChecklistCta.astro`) links straight to the
+page and the PDF.
+
 ## Scripts
 
 | Script | Command |

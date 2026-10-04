@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import Newsletter from '../components/Newsletter.astro';
+import TaxChecklistCta from '../components/TaxChecklistCta.astro';
 import { SITE } from '../lib/site';
 import { getPublishedArticles } from '../lib/articles';
 import { CATEGORIES, breadcrumbJsonLd, categoryHref } from '../lib/categories';
@@ -233,6 +234,7 @@ const pageJsonLd = {
           <li><a href={a.href}>{a.title}</a></li>
         ))}
       </ul>
+      <TaxChecklistCta />
       <p>This is not tax, legal, or insurance advice.</p>
     </div>
   </section>

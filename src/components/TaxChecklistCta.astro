@@ -1,0 +1,45 @@
+---
+import { PDF_PATH } from '../lib/tax-checklist';
+
+interface Props {
+  heading?: string;
+}
+const { heading = 'Free printable: Canadian side hustle tax checklist' } = Astro.props;
+---
+<aside class="tax-cta" aria-label="Free tax checklist">
+  <p class="tax-cta-heading">{heading}</p>
+  <p>
+    Records, Form T2125, deduction categories, the $30,000 GST/HST threshold, CPP, instalments, and key dates in
+    one printable checklist, each rule linked to canada.ca.
+  </p>
+  <p class="tax-cta-actions">
+    <a class="btn btn-primary" href="/free-side-hustle-tax-checklist/">Open the checklist</a>
+    <a class="btn btn-secondary" href={PDF_PATH} download>Download PDF</a>
+  </p>
+</aside>
+
+<style>
+  .tax-cta {
+    border: 1px solid var(--color-primary-200);
+    background: var(--color-primary-50);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    margin: var(--space-6) 0;
+  }
+  .tax-cta-heading {
+    font-weight: 700;
+    margin: 0 0 var(--space-2);
+  }
+  .tax-cta p {
+    margin-bottom: var(--space-3);
+  }
+  .tax-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin: 0 !important;
+  }
+  .tax-cta-actions a {
+    text-decoration: none;
+  }
+</style>
