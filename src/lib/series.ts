@@ -210,6 +210,33 @@ Object.assign(EXTRA_MEMBERS, {
   'freelance-writing-tools-canada': [{ series: 'freelance-writing', role: 'guide' }],
 });
 
+// Set 1 money and admin how-tos (Oct 2026, batch oct4b). Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'business-admin': 'Side hustle admin & paperwork' });
+Object.assign(EXTRA_MEMBERS, {
+  'register-sole-proprietorship-canada': [{ series: 'business-admin', role: 'start' }],
+  'how-to-get-cra-business-number-canada': [{ series: 'business-admin', role: 'guide' }],
+  'business-bank-account-side-hustle-canada': [{ series: 'business-admin', role: 'guide' }],
+  'separate-business-personal-money-canada': [{ series: 'business-admin', role: 'guide' }],
+  'how-to-invoice-clients-canada': [{ series: 'business-admin', role: 'guide' }],
+  'freelance-contract-canada': [{ series: 'business-admin', role: 'guide' }],
+  'side-hustle-insurance-canada': [{ series: 'business-admin', role: 'guide' }],
+  'bookkeeping-tools-side-hustle-canada': [{ series: 'business-admin', role: 'guide' }],
+  'mileage-log-cra-side-hustle-canada': [{ series: 'business-admin', role: 'guide' }],
+  'cra-tax-instalments-side-hustle-canada': [{ series: 'business-admin', role: 'guide' }],
+  'record-keeping-side-hustle-canada': [{ series: 'business-admin', role: 'guide' }],
+  'wealthsimple-vs-bank-business-account-side-hustle-canada': [{ series: 'business-admin', role: 'compare' }],
+});
+/** taxes-money posts that are pure admin (no tax content of their own), so they stay out of the 'taxes' series. */
+const NOT_TAX_SERIES = new Set([
+  'register-sole-proprietorship-canada',
+  'business-bank-account-side-hustle-canada',
+  'separate-business-personal-money-canada',
+  'how-to-invoice-clients-canada',
+  'freelance-contract-canada',
+  'side-hustle-insurance-canada',
+  'bookkeeping-tools-side-hustle-canada',
+]);
+
 /** Slugs that a pattern would match but that belong to a different series (handled in EXTRA_MEMBERS). */
 const PATTERN_EXCLUDE = new Set([
   'best-winter-side-hustles-canada',
@@ -244,7 +271,7 @@ export function seriesFor(slug: string, category?: string): SeriesMembership[] {
   for (const extra of EXTRA_MEMBERS[slug] ?? []) {
     if (!out.some((o) => o.series === extra.series)) out.push(extra);
   }
-  if (category === 'taxes-money') out.push({ series: 'taxes', role: 'tax' });
+  if (category === 'taxes-money' && !NOT_TAX_SERIES.has(slug)) out.push({ series: 'taxes', role: 'tax' });
   return out;
 }
 
