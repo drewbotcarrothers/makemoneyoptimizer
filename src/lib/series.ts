@@ -239,3 +239,27 @@ export function seriesGroupsFor<T extends { slug: string; data: { title: string;
     })
     .filter((g) => g.items.length >= 2);
 }
+
+// Set D seasonal posts (Nov 2026–Jan 2027), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'holiday-market-vendor-guide-canada': [
+    { series: 'etsy-shop', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+  'christmas-tree-wreath-selling-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'christmas-week-pet-sitting-house-sitting-pricing-canada': [
+    { series: 'dog-walking', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+  'new-year-side-hustles-2027-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'tax-season-bookkeeping-tax-prep-gigs-canada': [
+    { series: 'freelance-bookkeeping', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+  'rrsp-season-side-hustle-money-tips-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'valentines-day-side-hustles-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'exam-season-winter-tutoring-canada': [
+    { series: 'online-tutoring', role: 'seasonal' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+});
