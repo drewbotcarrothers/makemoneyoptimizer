@@ -35,6 +35,8 @@ patterns already in use so sibling posts are predictable:
 | T01 Beginner how-to | `<hustle>-side-hustle-canada` | `zapier-automation-side-hustle-canada` |
 | T02 Cost & budget | `<hustle>-startup-costs-canada` | `zapier-automation-startup-costs-canada` |
 | T04 First client / sale | `<hustle>-first-client-canada` (services), `<hustle>-first-sale-canada` (products/reselling/digital), `<hustle>-first-week-canada` (gig apps) | `ebook-publishing-first-sale-canada` |
+| T07 Mistakes to avoid | `<hustle>-mistakes-canada` | `dog-walking-mistakes-canada` |
+| T09 Pricing | `<hustle>-pricing-canada` | `house-cleaning-pricing-canada` |
 | Tax / money topic | descriptive | `side-hustle-expense-deductions-canada` |
 
 Do not rename a published file: the slug is the URL, and there is no redirect map.
@@ -155,10 +157,10 @@ guide-series list, an affiliate disclosure, ad slots, or JSON-LD.
 ### Guide series box (automatic)
 
 `src/lib/series.ts` groups every post about one hustle into a series, and `GuideSeries.astro` renders a "Guide series"
-box listing all siblings (Start here → Startup costs → First steps → Pricing & pay → deep dives → comparisons →
+box listing all siblings (Start here → Startup costs → First steps → Pricing & pay → Mistakes to avoid → deep dives → comparisons →
 seasonal spin-offs) on each of them. Membership is derived from the slug pattern in section 1, so a new
 `<hustle>-side-hustle-canada` / `-startup-costs-canada` / `-first-client(s)|first-sale|first-week-canada` /
-`-pricing-canada` post joins its series with no extra work, **as long as `<hustle>` has a name in `SERIES_NAMES`**
+`-pricing-canada` / `-mistakes-canada` post joins its series with no extra work, **as long as `<hustle>` has a name in `SERIES_NAMES`**
 (add one line there for a brand-new hustle). Off-pattern slugs (comparisons, seasonal posts, extra guides) go in
 `EXTRA_MEMBERS`, which also lets a post sit in two series (e.g. `etsy-vs-shopify-canada`). Every `taxes-money`
 post is automatically in the "Side hustle taxes in Canada" series. The series box is navigation, not a substitute
