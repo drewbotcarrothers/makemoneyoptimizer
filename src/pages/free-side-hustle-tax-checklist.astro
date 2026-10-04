@@ -1,0 +1,234 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE } from '../lib/site';
+import { breadcrumbJsonLd } from '../lib/categories';
+import { CHECKLIST, CHECKED_ON, PDF_PATH, SOURCES } from '../lib/tax-checklist';
+import type { SourceKey } from '../lib/tax-checklist';
+
+// Number sources in order of first citation so the printed page can use [n] markers.
+const order: SourceKey[] = [];
+for (const section of CHECKLIST)
+  for (const item of section.items)
+    for (const key of item.cite) if (!order.includes(key)) order.push(key);
+const num = (key: SourceKey) => order.indexOf(key) + 1;
+
+const title = 'Free Canadian Side Hustle Tax Checklist (Printable PDF)';
+const description =
+  'Free printable side hustle tax checklist for Canada: records, T2125, deductions, the $30,000 GST/HST threshold, CPP, instalments, and key CRA dates.';
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Guides', href: '/guides/' },
+  { name: 'Free tax checklist', href: '/free-side-hustle-tax-checklist/' },
+];
+const pageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: `${SITE.url}/free-side-hustle-tax-checklist/`,
+  inLanguage: 'en-CA',
+  isPartOf: { '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
+  citation: order.map((k) => SOURCES[k].url),
+};
+---
+<BaseLayout title={title} description={description} jsonLd={[pageJsonLd, breadcrumbJsonLd(crumbs, SITE.url)]}>
+  <header class="page-hero">
+    <div class="container-narrow">
+      <div class="no-print"><Breadcrumbs crumbs={crumbs} /></div>
+      <p class="print-only print-brand">{SITE.name} · makemoneyoptimizer.com</p>
+      <p class="eyebrow">Free download</p>
+      <h1>Canadian side hustle tax checklist</h1>
+      <p class="lead">
+        A one-stop, printable checklist of the CRA rules most side hustlers in Canada run into: record keeping,
+        Form T2125, deduction categories, the $30,000 GST/HST small supplier threshold, setting money aside, CPP on
+        self-employment income, instalments, and key dates. Every rule links to its canada.ca source.
+      </p>
+      <p class="no-print checklist-actions">
+        <a class="btn btn-primary" href={PDF_PATH} download>Download the PDF (free)</a>
+        <button class="btn btn-secondary" type="button" onclick="window.print()">Print this page</button>
+      </p>
+      <p class="checklist-meta">
+        Checked against canada.ca on {CHECKED_ON}. Rates and dates change every year; confirm on the linked page
+        before you rely on a number. This is not tax, legal, or accounting advice.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow prose checklist">
+      {CHECKLIST.map((section) => (
+        <section class="checklist-section" aria-labelledby={`cl-${section.id}`}>
+          <h2 id={`cl-${section.id}`}>{section.title}</h2>
+          <ul class="checklist-items">
+            {section.items.map((item) => (
+              <li>
+                <span class="box" aria-hidden="true"></span>
+                <span>
+                  {item.text}{' '}
+                  {item.cite.map((k) => (
+                    <a class="cite" href={SOURCES[k].url} title={SOURCES[k].title}>[{num(k)}]</a>
+                  ))}
+                </span>
+              </li>
+            ))}
+          </ul>
+          {section.guide && (
+            <p class="checklist-guide no-print">
+              Go deeper: <a href={section.guide.href}>{section.guide.label}</a>
+            </p>
+          )}
+        </section>
+      ))}
+
+      <section class="checklist-sources" aria-labelledby="cl-sources">
+        <h2 id="cl-sources">Sources (canada.ca)</h2>
+        <ol>
+          {order.map((k) => (
+            <li>
+              <a href={SOURCES[k].url}>{SOURCES[k].title}</a>
+              <span class="src-url">{SOURCES[k].url}</span>
+            </li>
+          ))}
+        </ol>
+        <p class="checklist-meta">
+          {SITE.name} · makemoneyoptimizer.com/free-side-hustle-tax-checklist/ · Checked {CHECKED_ON}. Not tax,
+          legal, or accounting advice.
+        </p>
+      </section>
+
+      <div class="callout no-print">
+        <p>
+          <strong>Want the full explanations?</strong> Start with
+          <a href="/side-hustles/report-side-hustle-income-cra-canada/">how to report side hustle income to the CRA</a>,
+          then browse all <a href="/side-hustles/category/taxes-money/">Taxes &amp; Money guides</a>. New to side
+          hustles? Read <a href="/start-here/">Start here</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .checklist-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+  .checklist-meta {
+    font-size: var(--text-sm);
+    color: var(--color-ink-subtle);
+  }
+  .checklist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .checklist-items li {
+    display: flex;
+    gap: var(--space-3);
+    align-items: flex-start;
+    padding: var(--space-2) 0;
+    border-bottom: 1px solid var(--color-border);
+    margin: 0;
+  }
+  .box {
+    flex: 0 0 1rem;
+    height: 1rem;
+    margin-top: 0.3rem;
+    border: 2px solid var(--color-primary-600);
+    border-radius: 3px;
+  }
+  .cite {
+    font-size: 0.8em;
+    text-decoration: none;
+  }
+  .checklist-guide {
+    font-size: var(--text-sm);
+    margin-top: var(--space-2);
+  }
+  .src-url,
+  .print-only {
+    display: none;
+  }
+  .checklist-sources li {
+    margin: var(--space-1, 0.25rem) 0;
+  }
+
+  @media print {
+    :global(.site-header),
+    :global(.site-footer),
+    :global(.skip-link),
+    :global(.ad-slot),
+    :global(.newsletter),
+    .no-print {
+      display: none !important;
+    }
+    :global(body),
+    :global(.prose),
+    :global(.lead) {
+      font-size: 9.5pt;
+      line-height: 1.4;
+      background: #fff;
+    }
+    .print-only {
+      display: block;
+    }
+    .print-brand {
+      font-weight: 700;
+      color: var(--color-primary-700);
+      margin: 0 0 0.25rem;
+    }
+    :global(.page-hero) {
+      padding: 0 0 0.5rem;
+      background: #fff;
+      border: 0;
+    }
+    :global(.section) {
+      padding: 0;
+    }
+    :global(.container-narrow) {
+      width: 100%;
+      max-width: none;
+    }
+    h1 {
+      font-size: 20pt;
+      margin: 0 0 0.25rem;
+    }
+    .checklist-section h2 {
+      break-after: avoid;
+    }
+    .checklist-items li {
+      break-inside: avoid;
+    }
+    .checklist-section h2 {
+      font-size: 13pt;
+      margin: 0.8rem 0 0.2rem;
+    }
+    .checklist-items li {
+      padding: 0.15rem 0;
+    }
+    .box {
+      margin-top: 0.15rem;
+      flex-basis: 0.8rem;
+      height: 0.8rem;
+    }
+    .cite {
+      color: #000;
+    }
+    .checklist-sources {
+      margin-top: 1rem;
+      font-size: 8pt;
+    }
+    .src-url {
+      display: block;
+      word-break: break-all;
+      color: #333;
+    }
+  }
+  @page {
+    size: Letter;
+    margin: 14mm 14mm 16mm;
+  }
+</style>
