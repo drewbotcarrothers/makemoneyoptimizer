@@ -26,6 +26,8 @@ interface Situation {
   short: string;
   heading: string;
   intro: string;
+  /** Optional full roundup for this situation, linked under the picks. */
+  guide?: string;
   picks: Pick[];
 }
 
@@ -35,6 +37,7 @@ const situations: Situation[] = [
     short: 'No car',
     heading: 'Best first side hustles in Canada if you don’t have a car',
     intro: 'These start on foot, on transit, or at a desk. Delivery by bike only works where the app offers a bike zone.',
+    guide: 'side-hustles-without-a-car-canada',
     picks: [
       { slug: 'dog-walking-side-hustle-canada', why: 'Clients are the neighbours you can walk to.' },
       { slug: 'house-cleaning-side-hustle-canada', why: 'Build a route near transit; many homes already have a vacuum.' },
@@ -88,13 +91,66 @@ const situations: Situation[] = [
     id: 'students',
     short: 'Students',
     heading: 'Best side hustles for students in Canada',
-    intro: 'Flexible hours that fit around classes. Check minimum ages: some apps need you to be 18, 21, or the age of majority in your province.',
+    intro: 'Flexible hours that fit around classes. Check minimum ages: some apps need you to be 18, 21, or the age of majority in your province. International students must also stay within their study permit’s work conditions.',
+    guide: 'side-hustles-for-students-canada',
     picks: [
       { slug: 'online-tutoring-side-hustle-canada', why: 'Teach a subject you just aced, after class.' },
       { slug: 'dog-walking-side-hustle-canada', why: 'Short walks between lectures in your neighbourhood.' },
       { slug: 'house-cleaning-side-hustle-canada', why: 'Set-day visits you can schedule around a timetable.' },
       { slug: 'seasonal-holiday-jobs-canada', why: 'Winter-break shifts as an employee.' },
       { slug: 'reselling-side-hustle-canada', why: 'Start by selling what is already in your closet.' },
+    ],
+  },
+  {
+    id: 'retirees',
+    short: 'Retirees',
+    heading: 'Best side hustles for retirees in Canada',
+    intro: 'Use the skills you already have at your own pace. Extra income counts toward the OAS recovery threshold, and working while on CPP changes your contributions.',
+    guide: 'side-hustles-for-retirees-canada',
+    picks: [
+      { slug: 'freelance-bookkeeping-side-hustle-canada', why: 'A finance or admin background, paid by the client.' },
+      { slug: 'online-tutoring-side-hustle-canada', why: 'Teach what you know, as many sessions as you like.' },
+      { slug: 'winter-pet-sitting-house-sitting-canada', why: 'Flexible pet and house sitting near home.' },
+      { slug: 'handyman-side-hustle-canada', why: 'Small repairs for neighbours if you own the tools.' },
+    ],
+  },
+  {
+    id: 'parents',
+    short: 'Stay-at-home parents',
+    heading: 'Best side hustles for stay-at-home parents in Canada',
+    intro: 'Pick work that fits short, interruptible blocks. Side hustle income counts toward the family net income used for the Canada child benefit.',
+    guide: 'side-hustles-for-stay-at-home-parents-canada',
+    picks: [
+      { slug: 'virtual-assistant-side-hustle-canada', why: 'Async admin tasks on deadlines, not fixed hours.' },
+      { slug: 'printables-side-hustle-canada', why: 'Make a file once during nap time and sell it many times.' },
+      { slug: 'reselling-side-hustle-canada', why: 'Start with gear the kids have outgrown.' },
+      { slug: 'babysitting-side-hustle-canada', why: 'Paid care for other kids; check provincial home child care limits.' },
+    ],
+  },
+  {
+    id: 'newcomers',
+    short: 'Newcomers',
+    heading: 'Best side hustles for newcomers to Canada',
+    intro: 'First confirm that your status and permit allow the work and that you have a SIN. Never pay anyone for a job offer or work permit.',
+    guide: 'side-hustles-for-newcomers-canada',
+    picks: [
+      { slug: 'odd-jobs-apps-side-hustle-canada', why: 'Short practical tasks that start quickly.' },
+      { slug: 'house-cleaning-side-hustle-canada', why: 'Local work that builds Canadian references.' },
+      { slug: 'freelance-translation-side-hustle-canada', why: 'Turn a second language into remote work.' },
+      { slug: 'event-staffing-side-hustle-canada', why: 'Short shifts, often as an employee.' },
+    ],
+  },
+  {
+    id: 'introverts',
+    short: 'Introverts',
+    heading: 'Best side hustles for introverts in Canada',
+    intro: 'Solo, low-contact work where most communication happens in writing.',
+    guide: 'side-hustles-for-introverts-canada',
+    picks: [
+      { slug: 'freelance-writing-side-hustle-canada', why: 'Briefs and feedback by email.' },
+      { slug: 'freelance-bookkeeping-side-hustle-canada', why: 'Quiet, focused work with recurring clients.' },
+      { slug: 'notion-templates-side-hustle-canada', why: 'Sell through a platform with no live customers.' },
+      { slug: 'dog-walking-side-hustle-canada', why: 'A short chat at booking, then time outside alone.' },
     ],
   },
 ];
@@ -207,6 +263,11 @@ const pageJsonLd = {
               );
             })}
           </ul>
+          {s.guide && (
+            <p>
+              Full guide: <a href={post(s.guide).href}>{post(s.guide).title}</a>
+            </p>
+          )}
         </section>
       ))}
 
