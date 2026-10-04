@@ -276,3 +276,17 @@ Object.assign(EXTRA_MEMBERS, {
     { series: 'fall-winter', role: 'seasonal' },
   ],
 });
+
+// T01 beginner guides (Oct 2026, batch sn). Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, {
+  'mystery-shopping': 'Mystery shopping',
+  voiceover: 'Voiceover',
+  'lightroom-presets': 'Lightroom presets & LUTs',
+  'pinterest-affiliate': 'Pinterest affiliate marketing',
+  'online-course': 'Online courses',
+  'stock-photography': 'Stock photo & video licensing',
+  'flash-staffing-apps': 'Flash staffing apps',
+  'personal-training': 'Personal training',
+  'faceless-instagram': 'Faceless Instagram pages',
+  'email-marketing': 'Email marketing freelancing',
+});
