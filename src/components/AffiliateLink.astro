@@ -20,12 +20,18 @@ const href = affiliateHref(program, search);
 const approved = isAffiliateApproved(program);
 ---
 
-<a
-  href={href}
-  data-affiliate={approved ? program : 'TODO-AFFILIATE'}
-  data-program={program}
-  rel="sponsored nofollow noopener"
-  target="_blank"
->
-  {label}{!approved && <span class="affiliate-pending"> TODO-AFFILIATE</span>}
-</a>
+{approved ? (
+  <a
+    href={href}
+    data-affiliate={program}
+    data-program={program}
+    rel="sponsored nofollow noopener"
+    target="_blank"
+  >
+    {label}
+  </a>
+) : (
+  <a href={href} rel="noopener noreferrer" target="_blank">
+    {label}
+  </a>
+)}

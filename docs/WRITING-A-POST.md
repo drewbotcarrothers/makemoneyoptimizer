@@ -244,10 +244,11 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
   `program` must be a key in `src/lib/affiliate-placeholders.ts`: `amazon-ca`, `koho`, `freshbooks`,
   `wealthsimple-tax`, `turbotax-canada`, `shopify`, `canva`, `hostinger`, `gumroad`, `etsy`, `printful`.
   `search` is optional editorial context for Amazon.ca mentions; the live Amazon Associates entry link does not
-  use it. The component sets `rel="sponsored nofollow noopener"` and `target="_blank"`. Approved programs
-  (currently `amazon-ca`) use the tracking href and do not show a TODO marker. Unapproved programs still show
-  `TODO-AFFILIATE` and ordinary merchant pages. When a program is approved, change the href and `approved` flag
-  in `affiliate-placeholders.ts` only. Adding a new program means adding it there first.
+  use it. Approved programs (currently `amazon-ca`) use the tracking href with
+  `rel="sponsored nofollow noopener"` and `target="_blank"`. Unapproved programs render as ordinary merchant
+  links (same label, no visible TODO marker, no sponsored attribute) — do not invent tracking URLs. When a
+  program is approved, change the href and `approved` flag in `affiliate-placeholders.ts` only. Adding a new
+  program means adding it there first.
 - **Placement:** 1–3 affiliate links per post, inside the step or cost row where the reader is choosing that tool,
   never in the opening answer or as a footer dump. Affiliate status never changes the recommendation; mention free
   options and "you may not need this" honestly.

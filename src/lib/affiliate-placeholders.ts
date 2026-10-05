@@ -2,7 +2,10 @@
  * Affiliate destinations for in-article tool mentions.
  *
  * When a program is approved, set `approved: true` and the live tracking href.
- * Unapproved programs keep ordinary merchant pages and show a TODO-AFFILIATE marker.
+ * Unapproved programs keep ordinary merchant pages. AffiliateLink renders them
+ * as normal non-affiliate outbound links (no visible TODO marker, no sponsored
+ * rel). Source comments may still say TODO-AFFILIATE for editors — never invent
+ * tracking URLs.
  *
  * Amazon.ca Associates uses a single entry-point link (not per-ASIN URLs).
  * The optional `search` prop on AffiliateLink is kept for copy context but is
