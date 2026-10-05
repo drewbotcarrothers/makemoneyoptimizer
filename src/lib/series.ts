@@ -286,6 +286,22 @@ const NOT_TAX_SERIES = new Set([
   'bookkeeping-tools-side-hustle-canada',
 ]);
 
+// Set 4 income and growth posts (Oct 2026, batch oct5). Placed after NOT_TAX_SERIES so the .add calls run after it exists.
+Object.assign(SERIES_NAMES, { growth: 'Grow your side hustle' });
+Object.assign(EXTRA_MEMBERS, {
+  'side-hustle-casual-vs-sole-proprietorship-canada': [{ series: 'growth', role: 'start' }],
+  'how-to-raise-side-hustle-rates-canada': [{ series: 'growth', role: 'pricing' }],
+  'first-year-side-hustle-price-review-canada': [{ series: 'growth', role: 'pricing' }],
+  'track-which-side-hustles-pay-canada': [{ series: 'growth', role: 'guide' }],
+  'when-to-quit-a-gig-app-canada': [{ series: 'growth', role: 'guide' }],
+  'side-hustle-waitlist-canada': [{ series: 'growth', role: 'guide' }],
+  'add-second-service-side-hustle-canada': [{ series: 'growth', role: 'guide' }],
+  'hiring-help-side-hustle-canada': [{ series: 'growth', role: 'guide' }],
+});
+// Growth posts in taxes-money that are mostly about pricing, not tax, stay out of the 'taxes' series.
+NOT_TAX_SERIES.add('how-to-raise-side-hustle-rates-canada');
+NOT_TAX_SERIES.add('first-year-side-hustle-price-review-canada');
+
 /** Slugs that a pattern would match but that belong to a different series (handled in EXTRA_MEMBERS). */
 const PATTERN_EXCLUDE = new Set([
   'best-winter-side-hustles-canada',
