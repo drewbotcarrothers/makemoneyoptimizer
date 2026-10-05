@@ -324,6 +324,33 @@ export function seriesFor(slug: string, category?: string): SeriesMembership[] {
   return out;
 }
 
+// Niche how-tos (Oct 2026, batch oct5 set 3), mapped by hand. Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'get-clients-on-kijiji-canada': [
+    { series: 'handyman', role: 'guide' },
+    { series: 'house-cleaning', role: 'guide' },
+    { series: 'odd-jobs-apps', role: 'guide' },
+  ],
+  'snow-removal-price-sheet-driveway-size-canada': [{ series: 'snow-removal', role: 'guide' }],
+  'house-cleaning-quote-walkthrough-canada': [{ series: 'house-cleaning', role: 'guide' }],
+  'lawn-care-estimate-canada': [{ series: 'lawn-care', role: 'guide' }],
+  'dog-walking-routes-canada': [{ series: 'dog-walking', role: 'guide' }],
+  'facebook-marketplace-listing-tips-canada': [
+    { series: 'facebook-marketplace-flipping', role: 'guide' },
+    { series: 'reselling', role: 'guide' },
+  ],
+  'upwork-proposal-template-canada': [
+    { series: 'freelance-writing', role: 'guide' },
+    { series: 'virtual-assistant', role: 'guide' },
+  ],
+  'taskrabbit-first-jobs-canada': [
+    { series: 'odd-jobs-apps', role: 'guide' },
+    { series: 'handyman', role: 'guide' },
+  ],
+  'rover-profile-tips-canada': [{ series: 'dog-walking', role: 'guide' }],
+  'etsy-listing-seo-canada': [{ series: 'etsy-shop', role: 'guide' }],
+});
+
 // Side hustles by situation (Oct 2026): hub roundups. Kept as a separate block to limit merge conflicts.
 Object.assign(SERIES_NAMES, { 'by-situation': 'Side hustles by situation' });
 Object.assign(EXTRA_MEMBERS, {
