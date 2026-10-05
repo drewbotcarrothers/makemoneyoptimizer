@@ -32,7 +32,7 @@ Related: [WRITING-A-POST.md](./WRITING-A-POST.md), [AFFILIATE-PROGRAMS.md](./AFF
 
 Question title that matches how someone in Canada searches. The layout adds the byline (“By Andrew”), Published date, Updated date when `updatedDate` is set, and `updateNote` as “Updated [date]: [note]”.
 
-1. **No in-body disclosure.** The article layout renders the full `AffiliateDisclosure` block once at the **bottom of the article** (after Sources, before the author box). Do not add a top-of-post affiliate note, and do not import or place `AffiliateDisclosure` in MDX. Use `AffiliateLink`; unapproved programs still show TODO-AFFILIATE.
+1. **No in-body disclosure.** The article layout renders the full `AffiliateDisclosure` block once at the **bottom of the article** (after Sources, before the author box). Do not add a top-of-post affiliate note, and do not import or place `AffiliateDisclosure` in MDX. Use `AffiliateLink`; unapproved programs render as ordinary merchant links (no visible TODO marker).
 2. **Direct answer** in the first one or two sentences: name Canada, define the hustle, and say who it suits. Do not open with “After this guide you can…”.
 3. **Quick-facts table** with the figures a reader needs, and a source link on every rule or official number. Shelf prices stay labelled as ranges to verify locally.
 4. **Question H2s**, each followed immediately by a 1–3 sentence answer that still makes sense if it is quoted alone. Name the hustle, Canada, and the province where the rule is provincial. Use **H3s for steps**.
