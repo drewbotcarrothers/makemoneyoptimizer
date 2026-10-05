@@ -17,7 +17,7 @@ Disclosure: https://makemoneyoptimizer.com/affiliate-disclosure
 | Program | Apply URL | Status | Date | Notes |
 |---------|-----------|--------|------|-------|
 | Shopify Affiliates | https://www.shopify.com/ca/affiliates | Not started | | Impact-based |
-| Amazon Associates (CA) | https://affiliate-program.amazon.ca/ | Not started | | Needs Amazon.ca customer account |
+| Amazon Associates (CA) | https://affiliate-program.amazon.ca/ | Approved | 2026-10-05 | Entry link `https://link.amazon/B04lZw4kk` wired in `affiliate-placeholders.ts` |
 | KOHO | https://www.koho.ca/affiliate/ | Not started | | Fintech / spend & save |
 | Qtrade / Fintel | https://www.fintelconnect.com/ | Optional later | | Investing audience |
 | Ratehub | https://www.ratehub.ca/affiliate-program | Optional later | | Widgets / finance |
@@ -99,3 +99,4 @@ After approval: enable **Canada** store, add the standard Associates disclosure 
 | Date | Event |
 |------|--------|
 | 2026-09-13 | Disclosure page expanded; application kit created |
+| 2026-10-05 | Amazon.ca Associates entry link wired (`https://link.amazon/B04lZw4kk`); article disclosure bottom-only |

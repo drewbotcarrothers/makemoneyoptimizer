@@ -100,7 +100,7 @@ Full pre-publish checklist: [docs/WRITING-A-POST.md](docs/WRITING-A-POST.md#9-pr
 2. Every H2 is a reader question, followed immediately by a 1–3 sentence answer. Steps use H3s.
 3. Every rule, rate, or platform requirement links a primary source. Unsourced figures are labelled as ranges to verify, or they are removed.
 4. An illustrative example or a comparison table is present, and examples are labelled illustrative.
-5. Affiliate links use `AffiliateLink`. The layout adds the short top affiliate note and the full disclosure block at the end of the post; do not place `AffiliateDisclosure` in the MDX.
+5. Affiliate links use `AffiliateLink`. The layout adds the full disclosure block at the bottom of the post only (no top-of-post affiliate note); do not place `AffiliateDisclosure` in the MDX.
 6. The byline, AI-assistance note, and sources list are present (the layout adds the byline, note, sources, and author box).
 7. `updatedDate` and `updateNote` are set when the content materially changes. BlogPosting dates match those fields.
 8. The slug is readable and the meta description matches the article.
