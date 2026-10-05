@@ -53,7 +53,7 @@ Living shortlist of programs that are **usable for Canadian audiences / Canadian
 
 | Program | Priority | CA notes | Network / apply | MMO content fit |
 |---------|----------|----------|-----------------|-----------------|
-| **Amazon Associates (Canada)** | **A** | Native CA store; category % commissions | https://affiliate-program.amazon.ca/ | Tools, books, shipping supplies, gear lists |
+| **Amazon Associates (Canada)** | **A** | Approved — entry link in `affiliate-placeholders.ts` (`https://link.amazon/B04lZw4kk`) | https://affiliate-program.amazon.ca/ | Tools, books, shipping supplies, gear lists |
 | **Best Buy Canada** | **B** | CA traffic preferred | Impact · https://www.bestbuy.ca/en-ca/about/affiliate-program/ | Tech for hustles (laptops, cameras, mics) |
 | **Canadian Tire** | **B** | impact.com | Search “Canadian Tire” in Impact | Seasonal/offline hustles, vehicle/gig gear |
 | **Decathlon Canada** | **C** | Sports-focused; Impact | https://www.decathlon.ca/en/content/affiliate | Fitness / outdoor side gigs |

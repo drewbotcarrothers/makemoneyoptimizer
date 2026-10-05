@@ -147,10 +147,9 @@ Only import `AffiliateLink` if you use it. (MDX allows unused imports, and all e
 2. Byline **"By Andrew"** (from `AUTHOR` in `src/lib/site.ts`, linking `/about/andrew/`) and the category link.
 3. Published / Updated dates (+ `updateNote`).
 4. AI-assistance note linking `/how-we-create-content/`.
-5. **Short affiliate note**: "This post may contain affiliate links. See our disclosure below." (links `#affiliate-disclosure`).
-6. Tag chips.
-7. Ad slot (article top) → **your MDX body** → **Guide series box(es)** (see below) → **Sources** section (from `sources`) → **full `AffiliateDisclosure` block** (`id="affiliate-disclosure"`) → **Author box** → ad slot (article mid) → newsletter → **3 related posts** (same category scored first, then shared tags) with a "More in <Category>" link to the hub → trust note callout.
-8. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD.
+5. Tag chips.
+6. Ad slot (article top) → **your MDX body** → **Guide series box(es)** (see below) → **Sources** section (from `sources`) → **full `AffiliateDisclosure` block** (`id="affiliate-disclosure"`) at the **bottom of the article** (before the author box) → **Author box** → ad slot (article mid) → newsletter → **3 related posts** (same category scored first, then shared tags) with a "More in <Category>" link to the hub → trust note callout.
+7. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD.
 
 So **do not** add in the body: an H1, a byline, dates, a "Sources" heading/list, an author bio, a "Related posts" block, a
 guide-series list, an affiliate disclosure, ad slots, or JSON-LD.
@@ -231,22 +230,24 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
 
 ## 5. Affiliate rules
 
-- **Disclosure is handled by the layout.** Every post gets the short top note and the full `AffiliateDisclosure`
-  block at the end of the article. **Do not import or place `<AffiliateDisclosure />` in MDX** (it would render
-  twice and duplicate `id="affiliate-disclosure"`).
+- **Disclosure is handled by the layout.** Every post gets the full `AffiliateDisclosure` block at the
+  **bottom of the article** only (after Sources, before the author box). There is **no** top-of-post affiliate
+  note. **Do not import or place `<AffiliateDisclosure />` in MDX** (it would render twice and duplicate
+  `id="affiliate-disclosure"`). The site footer and `/affiliate-disclosure/` page also disclose affiliates.
 - **Affiliate links use `<AffiliateLink>`** only, never a raw merchant/tracking URL in Markdown:
 
   ```mdx
   <AffiliateLink program="freshbooks" label="FreshBooks" />
-  <AffiliateLink program="amazon-ca" label="headset" search="USB headset microphone" />
+  <AffiliateLink program="amazon-ca" label="Shop tools on Amazon.ca" search="USB headset microphone" />
   ```
 
   `program` must be a key in `src/lib/affiliate-placeholders.ts`: `amazon-ca`, `koho`, `freshbooks`,
   `wealthsimple-tax`, `turbotax-canada`, `shopify`, `canva`, `hostinger`, `gumroad`, `etsy`, `printful`.
-  `search` is only used by `amazon-ca` (Amazon.ca search keywords). The component sets
-  `rel="sponsored nofollow noopener"`, `target="_blank"`, `data-affiliate="TODO-AFFILIATE"` and shows a
-  "TODO-AFFILIATE" marker, because **no program is approved yet**; hrefs are ordinary merchant pages. When a program is
-  approved, change the href in `affiliate-placeholders.ts` only. Adding a new program means adding it there first.
+  `search` is optional editorial context for Amazon.ca mentions; the live Amazon Associates entry link does not
+  use it. The component sets `rel="sponsored nofollow noopener"` and `target="_blank"`. Approved programs
+  (currently `amazon-ca`) use the tracking href and do not show a TODO marker. Unapproved programs still show
+  `TODO-AFFILIATE` and ordinary merchant pages. When a program is approved, change the href and `approved` flag
+  in `affiliate-placeholders.ts` only. Adding a new program means adding it there first.
 - **Placement:** 1–3 affiliate links per post, inside the step or cost row where the reader is choosing that tool,
   never in the opening answer or as a footer dump. Affiliate status never changes the recommendation; mention free
   options and "you may not need this" honestly.

@@ -1,23 +1,31 @@
 ---
-import { affiliateHref, type AffiliateProgram } from '../lib/affiliate-placeholders';
+import {
+  affiliateHref,
+  isAffiliateApproved,
+  type AffiliateProgram,
+} from '../lib/affiliate-placeholders';
 
 interface Props {
   program: AffiliateProgram;
   label: string;
-  /** Amazon.ca search keywords. Ignored for programs that use a fixed merchant page. */
+  /**
+   * Optional product keywords for Amazon.ca mentions. Kept for editorial
+   * context; the approved Amazon Associates entry link does not use them.
+   */
   search?: string;
 }
 
 const { program, label, search } = Astro.props;
 const href = affiliateHref(program, search);
+const approved = isAffiliateApproved(program);
 ---
 
 <a
   href={href}
-  data-affiliate="TODO-AFFILIATE"
+  data-affiliate={approved ? program : 'TODO-AFFILIATE'}
   data-program={program}
   rel="sponsored nofollow noopener"
   target="_blank"
 >
-  {label}<span class="affiliate-pending"> TODO-AFFILIATE</span>
+  {label}{!approved && <span class="affiliate-pending"> TODO-AFFILIATE</span>}
 </a>

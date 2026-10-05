@@ -751,12 +751,6 @@ a.card:hover {
   color: var(--color-ink-muted);
 }
 
-.affiliate-note {
-  margin: var(--space-2) 0 0;
-  font-size: var(--text-xs, 0.8125rem);
-  color: var(--color-ink-subtle);
-}
-
 .affiliate-disclosure {
   scroll-margin-top: var(--space-16, 4rem);
 }
