@@ -378,6 +378,21 @@ Object.assign(EXTRA_MEMBERS, {
   'side-hustles-for-introverts-canada': [{ series: 'by-situation', role: 'start' }],
 });
 
+// Set 5 starter-kit posts (Oct 2026, batch oct5). Placed after NOT_TAX_SERIES so the .add calls run after it exists.
+Object.assign(SERIES_NAMES, { 'starter-kit': 'Side hustle starter kit' });
+Object.assign(EXTRA_MEMBERS, {
+  'side-hustle-business-plan-canada': [{ series: 'starter-kit', role: 'start' }],
+  'side-hustle-client-acquisition-system-canada': [{ series: 'starter-kit', role: 'first' }],
+  'side-hustle-pricing-worksheet-canada': [{ series: 'starter-kit', role: 'pricing' }],
+  'first-year-side-hustle-money-mistakes-canada': [{ series: 'starter-kit', role: 'mistakes' }],
+  'side-hustle-admin-tools-checklist-canada': [{ series: 'starter-kit', role: 'guide' }],
+  'quarterly-side-hustle-money-check-in-canada': [{ series: 'starter-kit', role: 'tax' }],
+});
+// Starter-kit posts in taxes-money that are planning or tools, not tax, stay out of the 'taxes' series.
+NOT_TAX_SERIES.add('side-hustle-business-plan-canada');
+NOT_TAX_SERIES.add('side-hustle-pricing-worksheet-canada');
+NOT_TAX_SERIES.add('side-hustle-admin-tools-checklist-canada');
+
 // Side hustles by skill (Oct 2026): hub roundups. Kept as a separate block to limit merge conflicts.
 Object.assign(SERIES_NAMES, { 'by-skill': 'Side hustles by skill' });
 Object.assign(EXTRA_MEMBERS, {
