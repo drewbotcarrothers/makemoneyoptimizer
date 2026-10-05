@@ -384,6 +384,21 @@ export function seriesGroupsFor<T extends { slug: string; data: { title: string;
     .filter((g) => g.items.length >= 2);
 }
 
+// Side hustles by city (Oct 2026, batch oct5 set 2). Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'by-city': 'Side hustles by city' });
+Object.assign(EXTRA_MEMBERS, {
+  'best-side-hustles-toronto-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-vancouver-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-calgary-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-montreal-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-ottawa-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-edmonton-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-winnipeg-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-halifax-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-victoria-canada': [{ series: 'by-city', role: 'guide' }],
+  'best-side-hustles-hamilton-canada': [{ series: 'by-city', role: 'guide' }],
+});
+
 // Set D seasonal posts (Nov 2026–Jan 2027), mapped by hand. Kept as a separate block to limit merge conflicts.
 Object.assign(EXTRA_MEMBERS, {
   'holiday-market-vendor-guide-canada': [
