@@ -421,3 +421,24 @@ Object.assign(SERIES_NAMES, {
   'faceless-instagram': 'Faceless Instagram pages',
   'email-marketing': 'Email marketing freelancing',
 });
+
+// Side hustle rules by province (Oct 2026, batch oct5 set 1). Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, { 'by-province': 'Side hustle rules by province' });
+Object.assign(EXTRA_MEMBERS, {
+  'side-hustle-rules-by-province-canada': [{ series: 'by-province', role: 'start' }],
+  'side-hustle-rules-ontario-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-british-columbia-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-alberta-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-quebec-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-saskatchewan-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-manitoba-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-nova-scotia-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-new-brunswick-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-prince-edward-island-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-newfoundland-labrador-canada': [{ series: 'by-province', role: 'guide' }],
+  'side-hustle-rules-yukon-nwt-nunavut-canada': [{ series: 'by-province', role: 'guide' }],
+});
+// Province guides are rules references, not tax guides: keep them out of the 'taxes' series box.
+for (const slug of Object.keys(EXTRA_MEMBERS)) {
+  if (slug.startsWith('side-hustle-rules-')) NOT_TAX_SERIES.add(slug);
+}
