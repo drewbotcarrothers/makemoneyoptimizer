@@ -516,6 +516,32 @@ for (const slug of Object.keys(EXTRA_MEMBERS)) {
   if (slug.startsWith('side-hustle-rules-')) NOT_TAX_SERIES.add(slug);
 }
 
+// Wave 1C (Oct 2026): Christmas lights depth, seasonal gigs, national hub.
+// Kept as its own block so parallel batches can append without rewriting earlier maps.
+Object.assign(SERIES_NAMES, {
+  'christmas-light-installation': 'Christmas light installation',
+  'bartending-serving': 'Bartending and serving',
+  'sports-referee': 'Sports officiating',
+});
+
+EXTRA_MEMBERS['christmas-light-installation-side-hustle-canada'].push({
+  series: 'christmas-light-installation',
+  role: 'start',
+});
+
+Object.assign(EXTRA_MEMBERS, {
+  'christmas-light-installation-pricing-canada': [{ series: 'fall-winter', role: 'pricing' }],
+  'christmas-light-installation-startup-costs-canada': [{ series: 'fall-winter', role: 'costs' }],
+  'christmas-light-installation-first-clients-canada': [{ series: 'fall-winter', role: 'first' }],
+  'bartending-serving-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'sports-referee-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'best-side-hustles-canada': [{ series: 'by-city', role: 'start' }],
+  'passive-income-reality-canada': [
+    { series: 'printables', role: 'guide' },
+    { series: 'youtube', role: 'guide' },
+  ],
+});
+
 // Wave 1A Canada beermoney + AI training (Oct 2026). Kept as a separate block to limit merge conflicts.
 Object.assign(SERIES_NAMES, {
   beermoney: 'Beermoney and paid research',
