@@ -1,0 +1,119 @@
+---
+/**
+ * Privacy-preserving YouTube facade. The thumbnail loads from i.ytimg.com;
+ * the youtube-nocookie.com player is injected only after a click.
+ * Pair with `youtubeId` (plus upload date and duration) in article front matter
+ * so ArticleLayout can emit VideoObject JSON-LD. This component does not.
+ */
+interface Props {
+  id: string;
+  title: string;
+  caption?: string;
+}
+
+const {
+  id,
+  title,
+  caption = "Prefer to watch? Here's the video version of this guide.",
+} = Astro.props;
+
+if (!/^[A-Za-z0-9_-]{11}$/.test(id)) {
+  throw new Error(`YouTubeEmbed: expected an 11-character video id, got "${id}".`);
+}
+
+const maxres = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+const hq = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+const watchUrl = `https://www.youtube.com/watch?v=${id}`;
+---
+
+<figure class="youtube-embed">
+  <div class="youtube-embed-frame">
+    <button
+      type="button"
+      class="youtube-embed-button"
+      data-youtube-id={id}
+      data-youtube-title={title}
+      aria-label={`Play video: ${title}`}
+    >
+      <img
+        class="youtube-embed-thumb"
+        src={maxres}
+        alt=""
+        width="1280"
+        height="720"
+        loading="lazy"
+        decoding="async"
+        data-fallback={hq}
+      />
+      <span class="youtube-embed-play" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M8 5.14v13.72L19.5 12 8 5.14z"></path>
+        </svg>
+      </span>
+    </button>
+  </div>
+  {caption && <figcaption class="youtube-embed-caption">{caption}</figcaption>}
+  <noscript>
+    <p class="youtube-embed-fallback">
+      <a href={watchUrl} rel="noopener noreferrer">Watch on YouTube</a>
+    </p>
+  </noscript>
+</figure>
+
+<script>
+  /** @param {HTMLImageElement} img */
+  function bindYouTubeThumb(img) {
+    const fallback = img.dataset.fallback;
+    if (!fallback) return;
+
+    const useFallback = () => {
+      if (img.dataset.fellback === 'true') return;
+      img.dataset.fellback = 'true';
+      img.removeAttribute('srcset');
+      img.src = fallback;
+    };
+
+    if (img.complete) {
+      if (img.naturalWidth === 0 || img.naturalWidth <= 120) useFallback();
+      return;
+    }
+
+    img.addEventListener('error', useFallback);
+    img.addEventListener('load', () => {
+      if (img.naturalWidth > 0 && img.naturalWidth <= 120) useFallback();
+    });
+  }
+
+  /** @param {HTMLButtonElement} button */
+  function playYouTube(button) {
+    const id = button.dataset.youtubeId;
+    const title = button.dataset.youtubeTitle || 'YouTube video';
+    if (!id) return;
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?autoplay=1&rel=0`;
+    iframe.title = title;
+    iframe.allow =
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    iframe.loading = 'lazy';
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.setAttribute('width', '1280');
+    iframe.setAttribute('height', '720');
+
+    const frame = button.closest('.youtube-embed-frame');
+    if (!frame) return;
+    frame.replaceChildren(iframe);
+  }
+
+  document.querySelectorAll('.youtube-embed-thumb').forEach((img) => {
+    if (img instanceof HTMLImageElement) bindYouTubeThumb(img);
+  });
+
+  document.querySelectorAll('.youtube-embed-button').forEach((button) => {
+    if (!(button instanceof HTMLButtonElement)) return;
+    if (button.dataset.bound === 'true') return;
+    button.dataset.bound = 'true';
+    button.addEventListener('click', () => playYouTube(button));
+  });
+</script>
