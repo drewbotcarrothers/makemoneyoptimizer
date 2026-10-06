@@ -650,3 +650,81 @@ Object.assign(EXTRA_MEMBERS, {
   'what-to-do-with-side-hustle-profits-canada': [{ series: 'growth', role: 'guide' }],
 });
 EXTRA_MEMBERS['passive-income-reality-canada'].push({ series: 'reality-checks', role: 'guide' });
+
+// Wave 3 (Oct 2026): reselling niches, making, local and spring, digital and tech, caution.
+// Pattern slugs join once the series name exists:
+// amazon-fba-startup-costs-canada (amazon-fba / costs),
+// bin-cleaning-pricing-canada (bin-cleaning / pricing),
+// 3d-printing-side-hustle-canada and 3d-printing-startup-costs-canada.
+// Off-pattern slugs are listed here. A spring series mirrors fall-winter for the seasonal roundup.
+Object.assign(SERIES_NAMES, {
+  '3d-printing': '3D printing',
+  spring: 'Spring side hustles',
+});
+Object.assign(EXTRA_MEMBERS, {
+  'sports-card-flipping-canada': [{ series: 'reselling', role: 'guide' }],
+  'book-flipping-canada': [{ series: 'reselling', role: 'guide' }],
+  'lawn-mower-flipping-canada': [
+    { series: 'reselling', role: 'guide' },
+    { series: 'lawn-care', role: 'seasonal' },
+    { series: 'spring', role: 'seasonal' },
+  ],
+  'liquidation-pallets-canada': [
+    { series: 'reselling', role: 'guide' },
+    { series: 'reality-checks', role: 'guide' },
+  ],
+  'laser-engraving-side-hustle-canada': [
+    { series: '3d-printing', role: 'guide' },
+    { series: 'etsy-shop', role: 'guide' },
+  ],
+  'furniture-assembly-side-hustle-canada': [
+    { series: 'handyman', role: 'guide' },
+    { series: 'odd-jobs-apps', role: 'guide' },
+  ],
+  'in-person-tutoring-side-hustle-canada': [{ series: 'online-tutoring', role: 'guide' }],
+  'french-tutoring-side-hustle-canada': [
+    { series: 'online-tutoring', role: 'guide' },
+    { series: 'by-skill', role: 'guide' },
+  ],
+  'group-fitness-instructor-side-hustle-canada': [{ series: 'personal-training', role: 'guide' }],
+  'paid-house-sitting-canada': [{ series: 'dog-walking', role: 'guide' }],
+  'party-rental-side-hustle-canada': [{ series: 'event-staffing', role: 'guide' }],
+  'pet-waste-spring-cleanup-canada': [
+    { series: 'pet-waste-removal', role: 'seasonal' },
+    { series: 'spring', role: 'seasonal' },
+  ],
+  'best-spring-side-hustles-canada': [{ series: 'spring', role: 'start' }],
+  'micro-saas-side-hustle-canada': [{ series: 'by-skill', role: 'guide' }],
+  'apps-script-automation-side-hustle-canada': [{ series: 'zapier-automation', role: 'guide' }],
+  'cold-email-lead-generation-casl-canada': [{ series: 'email-marketing', role: 'guide' }],
+  'canva-creator-side-hustle-canada': [
+    { series: 'graphic-design', role: 'guide' },
+    { series: 'printables', role: 'guide' },
+  ],
+  'gumroad-side-hustle-canada': [
+    { series: 'ebook-publishing', role: 'guide' },
+    { series: 'notion-templates', role: 'guide' },
+  ],
+  'ghostwriting-local-side-hustle-canada': [{ series: 'freelance-writing', role: 'guide' }],
+  'audiobook-narration-side-hustle-canada': [{ series: 'voiceover', role: 'guide' }],
+  'ai-side-hustles-hype-vs-real-canada': [
+    { series: 'ai-training', role: 'compare' },
+    { series: 'reality-checks', role: 'guide' },
+  ],
+  'airbnb-arbitrage-red-flags-canada': [
+    { series: 'rentals', role: 'guide' },
+    { series: 'reality-checks', role: 'guide' },
+  ],
+  'course-funnel-red-flags-canada': [
+    { series: 'online-course', role: 'guide' },
+    { series: 'reality-checks', role: 'guide' },
+  ],
+  'report-side-hustle-scam-canada': [{ series: 'reality-checks', role: 'guide' }],
+  'notary-commissioner-side-hustle-canada': [{ series: 'by-province', role: 'guide' }],
+  'dividend-income-reality-canada': [{ series: 'reality-checks', role: 'guide' }],
+  'skipthedishes-courier-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'food-delivery', role: 'guide' },
+  ],
+  'side-hustle-reality-check-2027-canada': [{ series: 'reality-checks', role: 'guide' }],
+});
