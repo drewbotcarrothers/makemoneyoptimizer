@@ -571,3 +571,82 @@ Object.assign(EXTRA_MEMBERS, {
     { series: 'ai-training', role: 'tax' },
   ],
 });
+
+// Wave 2 (Oct 2026): local services, rentals, beermoney depth, reality checks.
+// Pattern slugs join once the series name exists. Off-pattern slugs are listed here.
+Object.assign(SERIES_NAMES, {
+  'pet-waste-removal': 'Pet waste removal',
+  'bin-cleaning': 'Bin cleaning',
+  'vending-machine': 'Vending machines',
+  turo: 'Turo hosting',
+  rentals: 'Renting out space',
+  'reality-checks': 'Side hustle reality checks',
+});
+Object.assign(EXTRA_MEMBERS, {
+  'tech-help-for-seniors-side-hustle-canada': [{ series: 'by-situation', role: 'guide' }],
+  'door-to-door-marketing-side-hustle-canada': [
+    { series: 'pet-waste-removal', role: 'guide' },
+    { series: 'bin-cleaning', role: 'guide' },
+    { series: 'window-cleaning', role: 'guide' },
+    { series: 'house-cleaning', role: 'guide' },
+  ],
+  'turo-host-canada': [{ series: 'turo', role: 'start' }],
+  'turo-host-costs-canada': [{ series: 'turo', role: 'costs' }],
+  'rent-out-parking-space-canada': [{ series: 'rentals', role: 'start' }],
+  'rent-out-storage-space-canada': [{ series: 'rentals', role: 'guide' }],
+  'rent-out-room-basement-suite-canada': [{ series: 'rentals', role: 'guide' }],
+  'basement-suite-rental-income-tax-canada': [{ series: 'rentals', role: 'tax' }],
+  'atm-machine-side-hustle-canada': [{ series: 'vending-machine', role: 'guide' }],
+  'mistplay-vs-freecash-canada': [{ series: 'beermoney', role: 'compare' }],
+  'microsoft-rewards-canada': [
+    { series: 'beermoney', role: 'guide' },
+    { series: 'platform-reviews', role: 'guide' },
+  ],
+  'usertesting-review-canada': [
+    { series: 'beermoney', role: 'guide' },
+    { series: 'platform-reviews', role: 'guide' },
+  ],
+  'paid-focus-groups-canada': [{ series: 'beermoney', role: 'guide' }],
+  'ai-training-assessment-tips-canada': [{ series: 'ai-training', role: 'mistakes' }],
+  'ai-training-vs-studies-vs-freelancing-canada': [
+    { series: 'ai-training', role: 'compare' },
+    { series: 'freelance-writing', role: 'compare' },
+  ],
+  'tiktok-creator-rewards-canada': [{ series: 'tiktok-reels', role: 'guide' }],
+  'mystery-shopping-companies-canada': [{ series: 'mystery-shopping', role: 'guide' }],
+  'phone-side-hustles-canada': [
+    { series: 'beermoney', role: 'guide' },
+    { series: 'by-situation', role: 'guide' },
+  ],
+  'referral-bonuses-money-apps-canada': [{ series: 'business-admin', role: 'guide' }],
+  'overhyped-side-hustles-canada': [{ series: 'reality-checks', role: 'start' }],
+  'digital-products-reality-canada': [
+    { series: 'reality-checks', role: 'guide' },
+    { series: 'printables', role: 'guide' },
+  ],
+  'dropshipping-side-hustle-canada': [
+    { series: 'reality-checks', role: 'guide' },
+    { series: 'shopify-store', role: 'guide' },
+  ],
+  'faceless-youtube-channel-canada': [
+    { series: 'youtube', role: 'guide' },
+    { series: 'reality-checks', role: 'guide' },
+  ],
+  'side-hustles-1000-a-month-canada': [
+    { series: 'reality-checks', role: 'pricing' },
+    { series: 'by-situation', role: 'guide' },
+  ],
+  'gig-app-real-hourly-rate-canada': [
+    { series: 'food-delivery', role: 'pricing' },
+    { series: 'rideshare-driving', role: 'pricing' },
+    { series: 'growth', role: 'pricing' },
+  ],
+  'local-client-channels-canada': [
+    { series: 'house-cleaning', role: 'guide' },
+    { series: 'handyman', role: 'guide' },
+    { series: 'window-cleaning', role: 'guide' },
+  ],
+  'first-google-reviews-side-hustle-canada': [{ series: 'google-business-profile', role: 'guide' }],
+  'what-to-do-with-side-hustle-profits-canada': [{ series: 'growth', role: 'guide' }],
+});
+EXTRA_MEMBERS['passive-income-reality-canada'].push({ series: 'reality-checks', role: 'guide' });
