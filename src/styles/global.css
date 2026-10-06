@@ -1173,6 +1173,103 @@ button.chip {
   }
 }
 
+/* YouTube facade: thumbnail until click, then a 16:9 nocookie player */
+.youtube-embed {
+  margin: var(--space-8) 0 0;
+  background: var(--color-surface);
+}
+
+.youtube-embed-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: var(--color-surface);
+  border: 1px solid var(--color-primary-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.youtube-embed-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: var(--color-surface);
+}
+
+.youtube-embed-button {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--color-surface);
+  cursor: pointer;
+}
+
+.youtube-embed-button:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -3px;
+}
+
+.youtube-embed-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.youtube-embed-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--color-primary-700);
+  box-shadow: 0 0 0 4px #fff, var(--shadow-md);
+  transition: background var(--transition), transform var(--transition);
+}
+
+.youtube-embed-play svg {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: 0.15rem;
+}
+
+.youtube-embed-button:hover .youtube-embed-play,
+.youtube-embed-button:focus-visible .youtube-embed-play {
+  background: var(--color-primary-800);
+  transform: translate(-50%, -50%) scale(1.04);
+}
+
+.youtube-embed-caption,
+.youtube-embed-fallback {
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  color: var(--color-ink-subtle);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .youtube-embed-play {
+    transition: none;
+  }
+
+  .youtube-embed-button:hover .youtube-embed-play,
+  .youtube-embed-button:focus-visible .youtube-embed-play {
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* Category hub: most popular list */
 .popular-list {
   margin: var(--space-4) 0 0;
