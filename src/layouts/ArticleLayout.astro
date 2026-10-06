@@ -31,6 +31,9 @@ interface Props {
   sample?: boolean;
   entryId: string;
   slug: string;
+  youtubeId?: string;
+  youtubeUploadDate?: string;
+  youtubeDuration?: string;
 }
 
 const {
@@ -45,7 +48,24 @@ const {
   sample = false,
   entryId,
   slug,
+  youtubeId,
+  youtubeUploadDate,
+  youtubeDuration,
 } = Astro.props;
+
+if (youtubeId) {
+  if (!/^[A-Za-z0-9_-]{11}$/.test(youtubeId)) {
+    throw new Error(`Invalid youtubeId "${youtubeId}" on ${slug}.`);
+  }
+  if (!youtubeUploadDate || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})$/.test(youtubeUploadDate)) {
+    throw new Error(
+      `youtubeUploadDate must be an ISO 8601 datetime with a numeric offset when youtubeId is set (${slug}).`,
+    );
+  }
+  if (!youtubeDuration || !/^PT(?:\d+H)?(?:\d+M)?(?:\d+S)?$/.test(youtubeDuration) || youtubeDuration === 'PT') {
+    throw new Error(`youtubeDuration must be an ISO 8601 duration such as PT8M16S when youtubeId is set (${slug}).`);
+  }
+}
 
 const all = await getPublishedArticles();
 const related = relatedArticles(all, entryId, 3);
@@ -93,6 +113,26 @@ const articleJsonLd = {
   articleSection: categoryLabel,
   isAccessibleForFree: true,
 };
+
+const videoJsonLd = youtubeId
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'VideoObject',
+      name: title,
+      description,
+      thumbnailUrl: [
+        `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`,
+        `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+      ],
+      uploadDate: youtubeUploadDate,
+      duration: youtubeDuration,
+      embedUrl: `https://www.youtube-nocookie.com/embed/${youtubeId}`,
+      contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
+    }
+  : null;
+
+const pageJsonLd = [articleJsonLd, breadcrumbJsonLd(crumbs, SITE.url)];
+if (videoJsonLd) pageJsonLd.push(videoJsonLd);
 ---
 <BaseLayout
   title={title}
@@ -101,7 +141,7 @@ const articleJsonLd = {
   author={AUTHOR.name}
   publishedTime={pubDate.toISOString()}
   modifiedTime={dateModified.toISOString()}
-  jsonLd={[articleJsonLd, breadcrumbJsonLd(crumbs, SITE.url)]}
+  jsonLd={pageJsonLd}
 >
   <header class="article-hero">
     <div class="container-narrow">

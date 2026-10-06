@@ -25,6 +25,15 @@ const articles = defineCollection({
     featured: z.boolean().default(false),
     sample: z.boolean().default(true),
     draft: z.boolean().default(false),
+    /** Opt in to VideoObject JSON-LD. Requires youtubeUploadDate and youtubeDuration. */
+    youtubeId: z
+      .string()
+      .regex(/^[A-Za-z0-9_-]{11}$/)
+      .optional(),
+    /** ISO 8601 datetime with offset, kept as a string so the offset is not rewritten. */
+    youtubeUploadDate: z.string().optional(),
+    /** ISO 8601 duration, e.g. PT8M16S. */
+    youtubeDuration: z.string().optional(),
   }),
 });
 

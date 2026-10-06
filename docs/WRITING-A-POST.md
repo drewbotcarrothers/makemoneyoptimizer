@@ -48,7 +48,8 @@ Do not rename a published file: the slug is the URL, and there is no redirect ma
 
 Schema: `src/content.config.ts`. The build fails if a required field is missing or a value is the wrong type.
 **These are the only fields.** Do not add others (no `author`, `image`, `slug`, `faq`, `reviewedBy` …); Zod
-strips unknown keys silently, so they would do nothing.
+strips unknown keys silently, so they would do nothing. The optional YouTube fields below are the opt-in for a
+video on that post.
 
 | Field | Type | Required? | Default | Notes |
 |---|---|---|---|---|
@@ -63,6 +64,9 @@ strips unknown keys silently, so they would do nothing.
 | `featured` | boolean | Optional | `false` | The homepage shows the 3 newest `featured: true` posts. Leave `false` unless asked. |
 | `sample` | boolean | Optional | **`true`** | ⚠️ The schema default is `true`, which shows a "Sample article" badge. **Always write `sample: false`** for real posts (all current posts do). |
 | `draft` | boolean | Optional | `false` | `true` hides the post from its page, hubs, related posts and RSS (`getPublishedArticles`). Note: `/posts.json` uses `getCollection` unfiltered, so drafts still appear there. Don't merge drafts to `main`. |
+| `youtubeId` | string | Optional | — | 11-character YouTube id (`A-Za-z0-9_-`). Opt in to `VideoObject` JSON-LD. Place `<YouTubeEmbed id="…">` in the body with the same id. |
+| `youtubeUploadDate` | string | Required if `youtubeId` is set | — | ISO 8601 datetime **with a numeric offset**, quoted so YAML does not coerce it. Example: `"2026-10-06T05:10:00-04:00"`. |
+| `youtubeDuration` | string | Required if `youtubeId` is set | — | ISO 8601 duration, e.g. `PT8M16S`. |
 
 ### The 9 categories
 
@@ -149,7 +153,7 @@ Only import `AffiliateLink` if you use it. (MDX allows unused imports, and all e
 4. AI-assistance note linking `/how-we-create-content/`.
 5. Tag chips.
 6. Ad slot (article top) → **your MDX body** → **Guide series box(es)** (see below) → **Sources** section (from `sources`) → **full `AffiliateDisclosure` block** (`id="affiliate-disclosure"`) at the **bottom of the article** (before the author box) → **Author box** → ad slot (article mid) → newsletter → **3 related posts** (same category scored first, then shared tags) with a "More in <Category>" link to the hub → trust note callout.
-7. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD.
+7. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD. When `youtubeId` is set, the layout also adds a `VideoObject` (name and description from the post, `thumbnailUrl`, `uploadDate`, `duration`, `embedUrl`, `contentUrl`). `<YouTubeEmbed>` does not emit schema.
 
 So **do not** add in the body: an H1, a byline, dates, a "Sources" heading/list, an author bio, a "Related posts" block, a
 guide-series list, an affiliate disclosure, ad slots, or JSON-LD.
@@ -285,17 +289,23 @@ article mid, after the author box). **Do not import or place `AdSlot` in MDX**; 
 
 ## 8. Images
 
-There is **no in-article image convention**: no post uses images, and there is no `image` front-matter field. Every
+There is **no in-article image convention**: no post uses content images, and there is no `image` front-matter field. Every
 article uses the site-wide OG image `/og-default.svg` in JSON-LD and social tags. Use tables and lists instead of
 images. If a post ever genuinely needs one, put it in `public/` with explicit `width`/`height` and descriptive alt
 text, and treat it as a code change to discuss in the PR.
+
+A post may embed one of our own YouTube videos with `<YouTubeEmbed>` (`src/components/YouTubeEmbed.astro`). Import it
+next to the other components, place it after the opening answer (not above it, and not as a top-of-post affiliate
+note), and set `youtubeId`, `youtubeUploadDate`, and `youtubeDuration`. The component shows an i.ytimg.com thumbnail
+and a play button, then swaps in a `youtube-nocookie.com` iframe on click. Give it a one-line caption, for example
+`Prefer to watch? Here's the video version of this guide.`
 
 ---
 
 ## 9. Pre-publish checklist
 
 - [ ] File is `src/content/articles/<slug>.mdx`; slug is lowercase, hyphenated, ends in `-canada`, follows the sibling pattern.
-- [ ] Front matter: `title`, `description` (~150–160 chars), `pubDate`, `category` (one of the 9), `tags`, `sources`, **`sample: false`**, `featured: false` unless asked. No invented fields.
+- [ ] Front matter: `title`, `description` (~150–160 chars), `pubDate`, `category` (one of the 9), `tags`, `sources`, **`sample: false`**, `featured: false` unless asked. No invented fields. A video uses only `youtubeId`, `youtubeUploadDate`, and `youtubeDuration`, and the embed id matches `youtubeId`.
 - [ ] Opening sentences answer the title and name Canada. H2s are questions with a short standalone answer; steps are H3s.
 - [ ] CAD figures are ranges or sourced; USD conversions cite the Bank of Canada rate and date; worked examples say **Illustrative**.
 - [ ] Every rule/rate/fee links a primary source inline and is listed in `sources`. Every URL opened and checked.
