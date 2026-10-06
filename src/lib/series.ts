@@ -515,3 +515,33 @@ Object.assign(EXTRA_MEMBERS, {
 for (const slug of Object.keys(EXTRA_MEMBERS)) {
   if (slug.startsWith('side-hustle-rules-')) NOT_TAX_SERIES.add(slug);
 }
+
+// Wave 1A Canada beermoney + AI training (Oct 2026). Kept as a separate block to limit merge conflicts.
+Object.assign(SERIES_NAMES, {
+  beermoney: 'Beermoney and paid research',
+  'ai-training': 'AI training work',
+});
+Object.assign(EXTRA_MEMBERS, {
+  'best-beermoney-apps-canada': [{ series: 'beermoney', role: 'start' }],
+  'survey-sites-canada': [{ series: 'beermoney', role: 'compare' }],
+  'prolific-review-canada': [
+    { series: 'beermoney', role: 'guide' },
+    { series: 'platform-reviews', role: 'guide' },
+  ],
+  'user-testing-sites-canada': [{ series: 'beermoney', role: 'compare' }],
+  'cashback-apps-canada': [{ series: 'beermoney', role: 'guide' }],
+  'us-only-side-hustle-apps-canada': [{ series: 'beermoney', role: 'guide' }],
+  'ai-data-annotation-side-hustle-canada': [{ series: 'ai-training', role: 'start' }],
+  'dataannotation-review-canada': [
+    { series: 'ai-training', role: 'guide' },
+    { series: 'platform-reviews', role: 'guide' },
+  ],
+  'outlier-ai-review-canada': [
+    { series: 'ai-training', role: 'guide' },
+    { series: 'platform-reviews', role: 'guide' },
+  ],
+  'usd-platform-income-tax-canada': [
+    { series: 'beermoney', role: 'tax' },
+    { series: 'ai-training', role: 'tax' },
+  ],
+});
