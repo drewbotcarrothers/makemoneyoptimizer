@@ -269,6 +269,18 @@ export const AFFILIATE_PROGRAMS = {
     href: 'https://www.vistaprint.ca/',
     approved: false,
   },
+  apollo: {
+    name: 'APOLLO Insurance',
+    /** TODO-AFFILIATE: no public small-business referral program found (see AFFILIATES.md); plain link. */
+    href: 'https://apollocover.com/business-insurance',
+    approved: false,
+  },
+  zensurance: {
+    name: 'Zensurance',
+    /** TODO-AFFILIATE: no public affiliate page found; ask partnerships team (see AFFILIATES.md). */
+    href: 'https://www.zensurance.com/side-hustle-insurance',
+    approved: false,
+  },
   grammarly: {
     name: 'Grammarly',
     /** TODO-AFFILIATE: replace with the approved Grammarly affiliate URL (see AFFILIATES.md). */

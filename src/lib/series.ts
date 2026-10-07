@@ -728,3 +728,73 @@ Object.assign(EXTRA_MEMBERS, {
   ],
   'side-hustle-reality-check-2027-canada': [{ series: 'reality-checks', role: 'guide' }],
 });
+
+// Product and service comparisons (Oct 2026, batch comparisons). Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'freshbooks-vs-wave-vs-quickbooks-canada': [
+    { series: 'business-admin', role: 'compare' },
+    { series: 'freelance-bookkeeping', role: 'compare' },
+  ],
+  'koho-vs-wealthsimple-vs-eq-bank-side-hustle-canada': [{ series: 'business-admin', role: 'compare' }],
+  'wealthsimple-tax-vs-turbotax-vs-hr-block-canada': [{ series: 'business-admin', role: 'compare' }],
+  'apollo-vs-zensurance-side-hustle-insurance-canada': [{ series: 'business-admin', role: 'compare' }],
+  'square-vs-sumup-vs-shopify-pos-card-readers-canada': [
+    { series: 'etsy-shop', role: 'compare' },
+    { series: 'home-baking', role: 'compare' },
+  ],
+  'hostinger-vs-namecheap-vs-wordpress-com-canada': [
+    { series: 'seo-blogging', role: 'compare' },
+    { series: 'no-code-web-design', role: 'compare' },
+  ],
+  'jobber-vs-housecall-pro-vs-square-appointments-canada': [
+    { series: 'house-cleaning', role: 'compare' },
+    { series: 'lawn-care', role: 'compare' },
+    { series: 'handyman', role: 'compare' },
+  ],
+  'calendly-vs-square-appointments-vs-acuity-canada': [
+    { series: 'online-tutoring', role: 'compare' },
+    { series: 'personal-training', role: 'compare' },
+  ],
+  'thinkific-vs-kajabi-vs-podia-canada': [{ series: 'online-course', role: 'compare' }],
+  'stallion-express-vs-chit-chats-vs-canada-post-canada': [
+    { series: 'reselling', role: 'compare' },
+    { series: 'etsy-shop', role: 'compare' },
+  ],
+  'zapier-vs-make-canada': [
+    { series: 'zapier-automation', role: 'compare' },
+    { series: 'virtual-assistant', role: 'compare' },
+  ],
+  'descript-vs-riverside-canada': [
+    { series: 'podcast-editing', role: 'compare' },
+    { series: 'youtube', role: 'compare' },
+  ],
+});
+// Money and insurance comparisons are tools/admin, not tax guides; the tax-software comparison stays in 'taxes'.
+NOT_TAX_SERIES.add('freshbooks-vs-wave-vs-quickbooks-canada');
+NOT_TAX_SERIES.add('koho-vs-wealthsimple-vs-eq-bank-side-hustle-canada');
+NOT_TAX_SERIES.add('apollo-vs-zensurance-side-hustle-insurance-canada');
+
+// Amazon.ca gear buying guides (Oct 2026, batch roundups). Kept as a separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'pressure-washer-buying-guide-canada': [{ series: 'pressure-washing', role: 'guide' }],
+  'snow-blower-buying-guide-canada': [{ series: 'snow-removal', role: 'guide' }],
+  'label-printer-resellers-canada': [
+    { series: 'reselling', role: 'guide' },
+    { series: 'etsy-shop', role: 'guide' },
+  ],
+  'ugc-lighting-microphone-kit-canada': [
+    { series: 'ugc', role: 'guide' },
+    { series: 'tiktok-reels', role: 'guide' },
+  ],
+  '3d-printer-laser-engraver-buying-guide-canada': [{ series: '3d-printing', role: 'guide' }],
+  'christmas-light-installation-gear-canada': [
+    { series: 'christmas-light-installation', role: 'guide' },
+    { series: 'fall-winter', role: 'guide' },
+  ],
+  'stock-photography-camera-gear-canada': [{ series: 'stock-photography', role: 'guide' }],
+  'online-tutoring-gear-canada': [{ series: 'online-tutoring', role: 'guide' }],
+  'craft-market-booth-gear-canada': [
+    { series: 'etsy-shop', role: 'guide' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+});
