@@ -7,7 +7,7 @@ export const SITE = {
   description:
     'Practical side hustle and extra-income guides for Canadians. Clear, ethical advice for online and offline ways to earn more — no fake earnings, no guarantees.',
   tagline: 'Smarter side income for Canadians',
-  email: 'hello@makemoneyoptimizer.com',
+  email: 'contact@makemoneyoptimizer.com',
   twitter: '@makemoneyopt',
 } as const;
 
