@@ -80,8 +80,8 @@ apply once the related comparison/roundup posts are live · **C** optional/niche
 | Printify | `printify` | https://printify.com/affiliate/ | PartnerStack | B | Not started | Yes |  |
 | Ownr | `ownr` | https://www.ownr.co/affiliates | PartnerStack | B | Not started | Partly | Canadian (RBC Ventures). Commission and discount levels per third-party listings = verify. |
 | Vistaprint Canada | `vistaprint` | — | FlexOffers (third-party listing only) | C | Not started | verify | No official Canadian affiliate page found. |
-| APOLLO Insurance | — | — | Partner API (tenant insurance only) | C | Not started | verify | Public affiliate API currently covers tenant insurance only; no public small-business referral program found. |
-| Zensurance | — | — | none found | C | Not started | verify | No public affiliate page found; ask partnerships team. |
+| APOLLO Insurance | `apollo` | https://apollocover.com/business-insurance | Partner API (tenant insurance only) | C | Not started | verify | Public affiliate API currently covers tenant insurance only; no public small-business referral program found. |
+| Zensurance | `zensurance` | https://www.zensurance.com/partnerships (verify) | none found | C | Not started | verify | No public affiliate page found; ask partnerships team. |
 | Home Depot Canada | — | — | Reported closed (2022) | Drop | Skip | verify | No active official program found. |
 | Canadian Tire | — | Search 'Canadian Tire' in Impact marketplace | Impact (per third-party listings) | B | Not started | verify | Official affiliate page blocked our fetch. |
 | Princess Auto | — | — | none found | Drop | Skip | verify | No affiliate program found. |
