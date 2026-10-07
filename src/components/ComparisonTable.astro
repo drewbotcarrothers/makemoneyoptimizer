@@ -1,0 +1,203 @@
+---
+/**
+ * Product / service comparison table for "X vs Y vs Z" and roundup posts.
+ *
+ * - One row per option. Columns: Option, Best for, Pricing, In Canada, Pros, Cons.
+ * - `program` links the option name through <AffiliateLink> (keys live in
+ *   src/lib/affiliate-placeholders.ts). Unapproved programs render as plain,
+ *   non-sponsored merchant links, exactly like AffiliateLink everywhere else.
+ * - `href` is a plain (non-affiliate) fallback link when there is no program key.
+ * - `pricing` must come from a page you actually opened (add `pricingUrl` and list
+ *   it in the post's `sources`), otherwise write "See current price" / "See site".
+ * - Desktop: a normal table. Mobile (≤720px): each row stacks into a labelled card.
+ * - Do not put an affiliate disclosure here; the layout adds it at the bottom.
+ */
+import AffiliateLink from './AffiliateLink.astro';
+import type { AffiliateProgram } from '../lib/affiliate-placeholders';
+
+export interface ComparisonItem {
+  name: string;
+  program?: AffiliateProgram;
+  /** Link text; defaults to `name`. */
+  linkLabel?: string;
+  /** Plain external link used only when `program` is not set. */
+  href?: string;
+  bestFor: string;
+  pricing: string;
+  /** Official page the price came from (shown as a small "source" link). */
+  pricingUrl?: string;
+  /** Canadian availability / CAD billing / Canada-specific notes. */
+  canada: string;
+  pros: string[];
+  cons: string[];
+}
+
+interface Props {
+  items: ComparisonItem[];
+  /** Short visible caption, e.g. "FreshBooks vs Wave vs QuickBooks at a glance". */
+  caption?: string;
+  /** Date prices were checked, e.g. "October 7, 2026". */
+  checked?: string;
+}
+
+const { items, caption, checked } = Astro.props;
+if (!items || items.length < 2) {
+  throw new Error('ComparisonTable needs at least 2 items.');
+}
+---
+<div class="comparison-table" role="region" aria-label={caption ?? 'Comparison table'} tabindex="0">
+  <table>
+    {caption && <caption>{caption}</caption>}
+    <thead>
+      <tr>
+        <th scope="col">Option</th>
+        <th scope="col">Best for</th>
+        <th scope="col">Pricing</th>
+        <th scope="col">In Canada</th>
+        <th scope="col">Pros</th>
+        <th scope="col">Cons</th>
+      </tr>
+    </thead>
+    <tbody>
+      {items.map((item) => (
+        <tr>
+          <th scope="row" data-label="Option" class="ct-name">
+            {item.program ? (
+              <AffiliateLink program={item.program} label={item.linkLabel ?? item.name} />
+            ) : item.href ? (
+              <a href={item.href} rel="noopener noreferrer" target="_blank">{item.linkLabel ?? item.name}</a>
+            ) : (
+              item.name
+            )}
+          </th>
+          <td data-label="Best for">{item.bestFor}</td>
+          <td data-label="Pricing">
+            {item.pricing}
+            {item.pricingUrl && (
+              <>
+                {' '}
+                <a class="ct-source" href={item.pricingUrl} rel="noopener noreferrer" target="_blank">(source)</a>
+              </>
+            )}
+          </td>
+          <td data-label="In Canada">{item.canada}</td>
+          <td data-label="Pros">
+            <ul>{item.pros.map((p) => <li>{p}</li>)}</ul>
+          </td>
+          <td data-label="Cons">
+            <ul>{item.cons.map((c) => <li>{c}</li>)}</ul>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  {checked && (
+    <p class="ct-note">
+      Prices and features from each company's own pages, checked {checked}. They change often; confirm on the
+      official site before you buy.
+    </p>
+  )}
+</div>
+
+<style>
+  .comparison-table {
+    margin: var(--space-6) 0;
+    overflow-x: auto;
+  }
+  .comparison-table:focus-visible {
+    outline: 2px solid var(--color-primary-500);
+    outline-offset: 2px;
+  }
+  .comparison-table table {
+    display: table;
+    width: 100%;
+    min-width: 720px;
+    margin: 0;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+  }
+  .comparison-table caption {
+    text-align: left;
+    font-weight: 700;
+    padding: 0 0 var(--space-2);
+    color: var(--color-ink);
+  }
+  .comparison-table th,
+  .comparison-table td {
+    border: 1px solid var(--color-border);
+    padding: 0.55rem 0.7rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .comparison-table thead th {
+    background: var(--color-surface-muted);
+  }
+  .comparison-table .ct-name {
+    font-weight: 700;
+    background: var(--color-surface-tint, transparent);
+  }
+  .comparison-table ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+  .comparison-table li {
+    margin: 0 0 0.2rem;
+  }
+  .comparison-table .ct-source {
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+  .comparison-table .ct-note {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-ink-subtle);
+    margin: var(--space-2) 0 0;
+  }
+  @media (max-width: 720px) {
+    .comparison-table {
+      overflow-x: visible;
+    }
+    .comparison-table table,
+    .comparison-table tbody,
+    .comparison-table tr,
+    .comparison-table th,
+    .comparison-table td {
+      display: block;
+      width: 100%;
+      min-width: 0;
+    }
+    .comparison-table thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .comparison-table tr {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      margin: 0 0 var(--space-4);
+      overflow: hidden;
+    }
+    .comparison-table th,
+    .comparison-table td {
+      border: 0;
+      border-top: 1px solid var(--color-border);
+    }
+    .comparison-table .ct-name {
+      border-top: 0;
+      background: var(--color-surface-muted);
+      font-size: 1.02rem;
+    }
+    .comparison-table td::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--color-ink-subtle);
+      margin-bottom: 0.15rem;
+    }
+  }
+</style>

@@ -1,0 +1,169 @@
+---
+/**
+ * "Starter kit" / "What you'll need" box for side-hustle guides and roundups.
+ *
+ * - One row per tool or item: name, what it's for, approximate cost, link.
+ * - `program` links through <AffiliateLink> (keys in src/lib/affiliate-placeholders.ts).
+ *   Unapproved programs render as plain merchant links. Amazon.ca is a single
+ *   entry-point link, so `search` is editorial context only.
+ * - `href` is a plain (non-affiliate) link used only when there is no `program`.
+ * - `cost` must be sourced (add `costUrl` and list it in `sources`) or say
+ *   "See current price" / "Free plan available" — never a guessed number.
+ * - Place it near the bottom of the post (before the "Which guides…" section/FAQ),
+ *   under a question H2. It renders no heading of its own and no disclosure
+ *   (the layout adds the affiliate disclosure at the bottom of every post).
+ */
+import AffiliateLink from './AffiliateLink.astro';
+import type { AffiliateProgram } from '../lib/affiliate-placeholders';
+
+export interface StarterKitItem {
+  name: string;
+  use: string;
+  cost?: string;
+  costUrl?: string;
+  program?: AffiliateProgram;
+  /** Link text; defaults to "See options". */
+  linkLabel?: string;
+  /** Amazon.ca keyword context (not appended to the link). */
+  search?: string;
+  href?: string;
+  /** Mark nice-to-have items. */
+  optional?: boolean;
+}
+
+interface Props {
+  items: StarterKitItem[];
+  label?: string;
+  /** Optional one-line note shown under the list. */
+  note?: string;
+}
+
+const { items, label = "Starter kit: what you'll need", note } = Astro.props;
+if (!items || items.length < 2) {
+  throw new Error('StarterKit needs at least 2 items.');
+}
+---
+<aside class="starter-kit" aria-label={label} data-starter-kit>
+  <p class="starter-kit-label">{label}</p>
+  <ul class="starter-kit-list">
+    {items.map((item) => (
+      <li class="starter-kit-item">
+        <div class="sk-main">
+          <span class="sk-name">{item.name}</span>
+          {item.optional && <span class="sk-tag">Optional</span>}
+          <span class="sk-use">{item.use}</span>
+        </div>
+        <div class="sk-meta">
+          <span class="sk-cost">
+            {item.cost ?? 'See current price'}
+            {item.costUrl && (
+              <>
+                {' '}
+                <a href={item.costUrl} rel="noopener noreferrer" target="_blank">(source)</a>
+              </>
+            )}
+          </span>
+          {item.program ? (
+            <span class="sk-link">
+              <AffiliateLink program={item.program} label={item.linkLabel ?? 'See options'} search={item.search} />
+            </span>
+          ) : item.href ? (
+            <span class="sk-link">
+              <a href={item.href} rel="noopener noreferrer" target="_blank">{item.linkLabel ?? 'See options'}</a>
+            </span>
+          ) : null}
+        </div>
+      </li>
+    ))}
+  </ul>
+  <p class="starter-kit-note">
+    {note ?? 'Start with what you already own and buy the rest as paying work comes in. Prices change, so check the seller’s page before you buy.'}
+  </p>
+</aside>
+
+<style>
+  .starter-kit {
+    border: 1px solid var(--color-primary-200);
+    background: var(--color-primary-50);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    margin: var(--space-6) 0;
+  }
+  .starter-kit-label {
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--color-primary-700);
+    margin: 0 0 var(--space-3);
+  }
+  .starter-kit-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .starter-kit-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: var(--space-2) var(--space-4);
+    padding: var(--space-3) 0;
+    border-top: 1px solid var(--color-primary-200);
+    margin: 0;
+  }
+  .starter-kit-item:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .sk-main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+  .sk-name {
+    font-weight: 700;
+    color: var(--color-ink);
+  }
+  .sk-tag {
+    align-self: flex-start;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--color-ink-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0 0.45rem;
+  }
+  .sk-use {
+    font-size: 0.95rem;
+  }
+  .sk-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.15rem;
+    text-align: right;
+    font-size: 0.9rem;
+    min-width: 9rem;
+  }
+  .sk-link a {
+    font-weight: 650;
+  }
+  .starter-kit-note {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-ink-subtle);
+    margin: var(--space-3) 0 0 !important;
+  }
+  @media (max-width: 560px) {
+    .starter-kit-item {
+      grid-template-columns: 1fr;
+    }
+    .sk-meta {
+      align-items: flex-start;
+      text-align: left;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+  }
+</style>

@@ -245,8 +245,13 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
   <AffiliateLink program="amazon-ca" label="Shop tools on Amazon.ca" search="USB headset microphone" />
   ```
 
-  `program` must be a key in `src/lib/affiliate-placeholders.ts`: `amazon-ca`, `koho`, `freshbooks`,
-  `wealthsimple-tax`, `turbotax-canada`, `shopify`, `canva`, `hostinger`, `gumroad`, `etsy`, `printful`.
+  `program` must be a key in `src/lib/affiliate-placeholders.ts` (the build type-checks it). Original keys:
+  `amazon-ca`, `koho`, `freshbooks`, `wealthsimple-tax`, `turbotax-canada`, `shopify`, `canva`, `hostinger`,
+  `gumroad`, `etsy`, `printful`. Added 2026-10-07 for comparisons and starter kits: `fiverr`, `wealthsimple`,
+  `wave`, `quickbooks`, `hr-block`, `eq-bank`, `neo-financial`, `square`, `sumup`, `jobber`, `housecall-pro`,
+  `calendly` (no affiliate program — plain link forever), `acuity`, `kit`, `beehiiv`, `wix`, `squarespace`,
+  `namecheap`, `thinkific`, `teachable`, `podia`, `kajabi`, `payhip`, `zapier`, `make`, `descript`, `riverside`,
+  `chit-chats`, `stallion-express`, `printify`, `ownr`, `vistaprint`, `grammarly`. Open the file for the current list.
   `search` is optional editorial context for Amazon.ca mentions; the live Amazon Associates entry link does not
   use it. Approved programs (currently `amazon-ca`) use the tracking href with
   `rel="sponsored nofollow noopener"` and `target="_blank"`. Unapproved programs render as ordinary merchant
@@ -260,6 +265,120 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
   `rel="noopener noreferrer"` from the component.
 - Program status and fit: [AFFILIATES.md](../AFFILIATES.md), [docs/AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md);
   content-moment → affiliate mapping in [CONTENT-GENERATOR.md](./CONTENT-GENERATOR.md#affiliate-mapping-quick-rules).
+
+---
+
+## 5a. Comparisons, starter kits & affiliate monetization
+
+Comparison posts and "what you'll need" boxes are where readers choose a paid tool, so that is where affiliate
+links belong. The rules in sections 5 and 6 still apply; this section adds the two components and how to use them.
+
+### The two components
+
+| Component | File | Use it for | Where it goes |
+|---|---|---|---|
+| `<ComparisonTable>` | `src/components/ComparisonTable.astro` | 2–5 paid tools/services that solve the same job (accounting apps, card readers, tax software, booking tools, hosts) | In a comparison or roundup post, right after the section that explains how you compared them. One or two per post. |
+| `<StarterKit>` | `src/components/StarterKit.astro` | The handful of tools or gear a reader needs to start a hustle (software + physical kit) | Near the bottom of a how-to/pillar guide or a gear roundup, under its own question H2 (e.g. "What tools do you need to start … in Canada?"), before "Which guides sit next to…?" and the FAQ. Never at the top. |
+
+```mdx
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import StarterKit from '../../components/StarterKit.astro';
+
+<ComparisonTable
+  caption="FreshBooks vs Wave vs QuickBooks at a glance"
+  checked="October 7, 2026"
+  items={[
+    {
+      name: "Wave",
+      program: "wave",
+      bestFor: "Brand-new freelancers who want free invoicing",
+      pricing: "Starter plan $0; Pro $X CAD/month",       // only if you opened the pricing page
+      pricingUrl: "https://www.waveapps.com/pricing",    // and list it in `sources`
+      canada: "Toronto-based; bills in CAD; GST/HST on invoices",
+      pros: ["Free tier", "Unlimited invoices"],
+      cons: ["Bank connections on paid plan only"],
+    },
+    // … 1–4 more rows
+  ]}
+/>
+
+<StarterKit
+  items={[
+    { name: "Invoicing app", use: "Quotes, invoices with GST/HST, payment reminders", cost: "Free plan available", program: "wave", linkLabel: "Wave" },
+    { name: "Label printer", use: "4×6 shipping labels", program: "amazon-ca", linkLabel: "Shop on Amazon.ca", search: "4x6 thermal label printer" },
+    { name: "Business cards", use: "Leave-behinds at markets", optional: true, program: "vistaprint", linkLabel: "Vistaprint" },
+  ]}
+/>
+```
+
+- Both components link through `AffiliateLink`, so approved programs get `rel="sponsored nofollow noopener"` and
+  unapproved ones render as plain merchant links. Neither renders a disclosure: the layout's bottom-of-post
+  `AffiliateDisclosure` covers them. **No top-of-post affiliate note**, and don't import `AffiliateDisclosure`.
+- `ComparisonTable` stacks into labelled cards on phones (≤720px); keep cells short (a phrase, 2–3 pros/cons).
+- `StarterKit` renders no heading, so put it under a question H2 with a one- or two-sentence answer first.
+
+### When to use which
+
+- **Write a comparison post** when readers choose between 2–5 paid tools for a job our guides already send them to,
+  and at least one has (or may get) an affiliate program. Slug: `<a>-vs-<b>[-vs-<c>]-canada` or
+  `best-<tool-type>-<audience>-canada`. Check `ls src/content/articles | grep -- -vs-` and `rg -il "<tool>"
+  src/content/articles` first so you extend an existing comparison instead of duplicating it.
+- **Write an Amazon.ca gear roundup** for physical gear (pressure washers, label printers, ring lights). Our Amazon
+  link is a single entry point (`https://link.amazon/B04lZw4kk`), not per-product, so write "what to look for +
+  model types/specs + one or two `amazon-ca` links". No star ratings, no "best overall" claims based on testing.
+- **Add a StarterKit** to a hustle guide only when the reader genuinely needs to buy or sign up for something
+  to start. Skip it for gig apps where the app is free and the gear is a phone, and for pure tax/admin posts.
+  3–6 items; mark nice-to-haves `optional: true`; include free options ("Free plan available", "Use what you own").
+
+### Picking program keys
+
+1. Use the key for the exact product the row describes (`wealthsimple-tax` for tax filing, `wealthsimple` for
+   accounts/investing; `square` for Square POS, Appointments or Invoices; `shopify` for Shopify POS).
+2. If the tool has no key, add one to `affiliate-placeholders.ts` first: `approved: false`, the plain official
+   merchant homepage (no tracking parameters), and a `TODO-AFFILIATE` comment. Add it to the status tracker in
+   [AFFILIATES.md](../AFFILIATES.md). Never invent or guess a tracking URL.
+3. A tool with no program (e.g. `calendly`) still gets a key so the table can link it; leave it `approved: false`.
+4. Physical gear uses `amazon-ca` with a descriptive `search` (editorial context only).
+
+### Pricing and fee sourcing
+
+- Every price, fee, rate, plan limit, or processing percentage comes from a page you **opened while writing**:
+  the vendor's Canadian pricing page first, then its help centre. Put the URL in `pricingUrl`/`costUrl` **and**
+  in the post's `sources`, and set `checked="<date>"` on the table.
+- Say whether a price is CAD or USD. Convert USD only with the Bank of Canada daily rate and its date.
+- If a page is geo-blocked, behind a login, or shows only "contact sales", write **"See current price"** or
+  **"See site"** — never a remembered or estimated figure. Amazon.ca shelf prices change daily: use "See current
+  price" in roundups.
+- Promotional/intro prices must be labelled as such ("intro price, renews higher — check the renewal rate").
+- Worked examples that combine prices (e.g. fees on a $100 sale) are labelled **Illustrative example**.
+
+### Honesty rules for comparisons
+
+- No "we tested", "hands-on", "in our experience", star ratings, or personal anecdotes. Compare published features,
+  prices, Canadian availability, and fit for the reader's situation.
+- Every comparison includes a free or cheaper option when one exists (spreadsheets, Canada Post, the free plan),
+  and says when the reader doesn't need a paid tool yet.
+- Affiliate status never changes the order, verdict, or pros/cons. Unapproved programs are written about exactly
+  like approved ones.
+- Cons must be real (pricing jumps, missing Canadian features, USD billing, lock-in). Don't write a con-free row.
+- Name the decision rule ("pick X if…, Y if…") instead of a single winner.
+
+### Disclosure placement
+
+- The layout renders the full `AffiliateDisclosure` at the bottom of every article. That is the only disclosure.
+  No banner, note, or "this post contains affiliate links" line at the top of the post or above a table.
+- Programs with extra rules (e.g. Wealthsimple's affiliate guidelines) are handled when they are approved; check
+  AFFILIATES.md before flipping `approved: true`.
+
+### Internal linking between guides and comparison/roundup posts
+
+- Every comparison/roundup links **2–4 hustle guides** that send readers to it (e.g. the card-reader comparison
+  links the craft-market, farmers'-market and holiday-market guides) in the opening paragraphs and in "Which guides
+  sit next to…?".
+- Every guide with a StarterKit links the matching comparison or roundup in the sentence right before or after the
+  box ("Compare the options in [Square vs SumUp vs Shopify POS](/side-hustles/…/)").
+- Add new comparison slugs to `EXTRA_MEMBERS` in `src/lib/series.ts` when they clearly belong to one hustle series.
+- `npm run check:links` must pass (every article needs inbound links from at least 2 other pages).
 
 ---
 
@@ -311,6 +430,7 @@ and a play button, then swaps in a `youtube-nocookie.com` iframe on click. Give 
 - [ ] Every rule/rate/fee links a primary source inline and is listed in `sources`. Every URL opened and checked.
 - [ ] Internal links end in `/` and point to slugs that exist; siblings are linked both ways; the cluster's existing posts link the new one.
 - [ ] Affiliate links only via `<AffiliateLink program="…">` with a valid program key; 1–3, placed at the decision point; no `<AffiliateDisclosure />` or `<AdSlot />` in the body.
+- [ ] Comparison/roundup: `<ComparisonTable>`/`<StarterKit>` prices are sourced (`pricingUrl`/`costUrl` + `sources`) or say "See current price"; no "we tested"; a free option is mentioned; 2–4 guides link to it and it links back.
 - [ ] `<Faq>` has 4–6 items consistent with the body.
 - [ ] Trust: no "Carrothers", no "reviewed by Andrew", no anecdotes, no invented stats or earnings.
 - [ ] `updatedDate` + `updateNote` set if materially editing an existing post.
@@ -319,7 +439,9 @@ and a play button, then swaps in a `youtube-nocookie.com` iframe on click. Give 
   rg -n "Carrothers|reviewed by" src/content/articles/
   rg -n "\]\(/[^)]*[^/)]\)" src/content/articles/<slug>.mdx   # internal links missing a trailing slash
   rg -n "AffiliateDisclosure|AdSlot" src/content/articles/
+  rg -in "reddit|subreddit|we tested|hands-on|casino|sportsbook" src/content/articles/<slug>.mdx
   ```
+- [ ] **`npm run check:links`** passes after the build (no broken internal links; every article has 2+ inbound links).
 - [ ] **`npx astro build` passes** (it validates the schema, the category enum, source URLs, and FAQ item counts), then spot-check `dist/side-hustles/<slug>/index.html` or `npm run preview`.
 
 ## 10. After deploy
