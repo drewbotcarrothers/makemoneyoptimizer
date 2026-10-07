@@ -14,97 +14,117 @@ Disclosure: https://makemoneyoptimizer.com/affiliate-disclosure
 
 ## Status tracker
 
-Researched and re-verified **2026-10-07** (official program pages opened where the site allowed it; "Partly"
-means the official page exists but a detail such as the network came from a search result or third-party
-listing; **verify** means confirm before relying on it). Programs marked **Drop** have no usable public
-program for a Canadian publisher right now. **Never paste a tracking URL into an article**: when a program
-approves you, change only `href` + `approved: true` in `src/lib/affiliate-placeholders.ts`.
+Synced **2026-10-07** from the master list Google Sheet (https://docs.google.com/spreadsheets/d/14HoPPU2JNXL1Z8_5vfh2DnwyJeA90dE0AKPXMb-Sf_A/edit), 85 programs. The Sheet is the source of
+truth for networks, apply URLs and commissions; full detail is in [`docs/AFFILIATE-PROGRAMS.md`](docs/AFFILIATE-PROGRAMS.md).
+**Status:** every program is **Not applied** except Amazon.ca Associates (**Approved**). Change a row's status here (and in the
+Sheet) when you apply or hear back. **Never paste a tracking URL into an article**: when a program approves you, change only
+`href` + `approved: true` in `src/lib/affiliate-placeholders.ts`.
 
-Priority: **A** apply now (already linked across many posts or core to the new comparison posts) · **B**
-apply once the related comparison/roundup posts are live · **C** optional/niche · **Watch** closed/gated ·
-**Drop** none available.
+Priority: **A** apply now · **B** after the related comparison/roundup posts are live · **C** optional/niche · **Watch** closed or not a publisher program (plain links).
 
-| Program | Key in `affiliate-placeholders.ts` | Apply URL | Network | Priority | Status | Verified (2026-10-07) | Notes |
-|---|---|---|---|---|---|---|---|
-| Amazon Associates (CA) | `amazon-ca` | https://affiliate-program.amazon.ca/ | In-house | A | **Approved** 2026-10-05 | Yes | Entry link `https://link.amazon/B04lZw4kk` wired |
-| FreshBooks | `freshbooks` | https://www.freshbooks.com/affiliate-program (apply: https://freshbooksusa.partnerstack.com/?group=affiliatesstandard) | PartnerStack | A | Not started | Yes | Page says 'earn up to $200 per sale'; accepts affiliates from many countries subject to regional restrictions (auto-decline if restricted); no trademark bidding. ~211 placeholder links already on site. |
-| KOHO | `koho` | https://www.koho.ca/affiliate/ (apply via Impact: KOHO-Financial brand signup linked on that page) | Impact | A | Not started | Yes | Canada-only product; page invites influencers, comparison sites and publishers; no minimum cash-out. Fintech copy: no 'income' claims. ~162 placeholder links. |
-| Wealthsimple (Tax, Invest, Cash) | `wealthsimple-tax` / `wealthsimple` | Guidelines: https://www.wealthsimple.com/en-ca/legal/affiliate-guidelines (application: search 'Wealthsimple' in Impact marketplace) | Impact (per third-party listings; confirm in dashboard) | A | Not started | Partly (guidelines page verified; network = verify) | Canada-only. Guidelines require clear upfront disclosure on every piece plus Wealthsimple's own disclosure sentence at the start or end, and note CIRO/OSC/Ad Standards oversight. Our bottom-of-post disclosure may need the extra Wealthsimple sentence on posts that link it. |
-| Shopify (incl. POS) | `shopify` | https://www.shopify.com/ca/affiliates | Impact | A | Not started | Yes | Page: up to $150 USD per qualified referral, varies by referral location; wants an active website, established audience, original commerce/entrepreneurship content, platform experience. |
-| Hostinger | `hostinger` | https://www.hostinger.com/affiliates (dashboard: https://affiliates.hostinger.com) | In-house | B | Not started | Yes | Page: commission 'starts at 40%' and grows with volume; instant sign-up then verification. Site is hosted on Hostinger (genuine fit). |
-| Canva | `canva` | https://www.canva.com/help/canva-affiliate-marketing-program/ (Canvassador program) | Impact (via Canvassador) | Watch | Closed (re-check) | Yes (closed) | Help page: Canvassador is now the only path to affiliate benefits and is currently CLOSED for applications. Re-check periodically. |
-| TurboTax Canada | `turbotax-canada` | https://turbotax.intuit.ca/affiliates/ (CJ publisher signup linked there) | CJ (Commission Junction) | B | Not started | Yes | Affiliates page links CJ signup (cid 2278967). Seasonal (Jan–Apr). |
-| Gumroad | `gumroad` | https://gumroad.com/help/article/333-affiliates-on-gumroad | Creator-level only | C | Not started | Partly | Gumroad affiliates are set per creator/product, not a platform-wide publisher program. Leave as plain link. |
-| Etsy | `etsy` | https://www.etsy.com/ca/affiliates | Awin (per Etsy affiliate terms; confirm) | B | Not started | Partly (page verified; network = verify) | Etsy Affiliates (publishers) and Creator Collective (social). Pays on shopper purchases, not seller sign-ups; fit is limited for seller guides. |
-| Printful | `printful` | https://www.printful.com/ca/affiliates | In-house | B | Not started | Yes | 10% of referred sales for 12 months; applications reviewed in 2–5 business days. |
-| Fiverr | `fiverr` | https://www.fiverr.com/partnerships/affiliates | In-house (also listed on Awin) | A | Not started | Yes (via search of official page; site blocks curl) | Marketplace: 25% of first order + 10% revshare for 12 months (per Fiverr partnerships page). Fits 'hire help' angles; for sellers it's a platform, not a purchase. |
-| Wave | `wave` | https://www.waveapps.com/affiliate | Impact | A | Not started | Yes | Page: for individuals/sites with a US- or Canada-based audience; Toronto-founded, Canada-relevant. |
-| QuickBooks Canada | `quickbooks` | https://quickbooks.intuit.com/partners/qbbusinessaffiliates/ (Canada Business Affiliate Program via PartnerStack); US-style CJ program also exists | PartnerStack (Canada program) | B | Not started | Partly | Canada program is aimed at Canadian organisations supporting small businesses (associations, business services, insurers, banks); open to legal residents of Canada; up to $250 per paid subscription per Intuit help article. Content-site acceptance = verify. |
-| H&R Block Canada | `hr-block` | https://www.hrblock.ca/affiliate/ | verify | B | Not started | Partly | Page exists with affiliate discount codes (new/prior client). How publishers join is not stated; ask H&R Block Canada partnerships. |
-| UFile | — | — | none found | Drop | Skip | verify | No public affiliate program found (ufile.ca/affiliate 404). |
-| Square Canada (POS, Appointments, Invoices) | `square` | https://squareup.com/ca/en/affiliate | Impact | A | Not started | Yes | Commission on activations/revenue events across Payments, Hardware, Appointments, Invoices, Online etc.; some products not in all markets. |
-| SumUp | `sumup` | https://www.sumup.com/en-gb/affiliate-program/ (Impact) | Impact | B | Not started | Partly | SumUp sells in Canada (sumup.com/en-ca), but the affiliate page found is UK; confirm Canada campaign in Impact. |
-| EQ Bank | `eq-bank` | https://www.eqbank.ca/affiliates (join Rakuten Advertising, then search EQ Bank) | Rakuten Advertising (per third-party listings) | B | Not started | Partly | Canada-only bank; affiliates page exists. Finance copy rules apply (no rate promises; link live rates). |
-| Neo Financial | `neo-financial` | https://www.fintelconnect.com/brands/directory/neo-financial-affiliate-program/ | Fintel Connect / Impact (verify) | C | Not started | verify | Canadian fintech; mainly credit-card offers (compliance-heavy). |
-| Jobber | `jobber` | https://www.getjobber.com/partners/ (affiliate: https://jobber.partnerstack.com/?group=baseaffiliate) | PartnerStack | A | Not started | Yes | Home-service software (Edmonton-founded). Also Ambassador and Brand Partner tracks. |
-| Housecall Pro | `housecall-pro` | https://www.housecallpro.com/paid-affiliates/ (PartnerStack application) | PartnerStack | B | Not started | Yes | Only available in US and Canada; referrals must be US/Canada-based; lead-quality rules apply. |
-| Calendly | `calendly` | — | No program | Drop | No program | Yes (no program) | calendly.com/partners/contact: 'we do not currently have an affiliate, referral, or reseller partner program.' Plain link only. |
-| Acuity Scheduling | `acuity` | Squarespace affiliate program (Impact) — confirm Acuity is included | Impact (via Squarespace) — verify | C | Not started | verify | Acuity is a Squarespace product; inclusion in the Squarespace affiliate payout = verify. |
-| Kit (ConvertKit) | `kit` | https://kit.com/affiliate | PartnerStack | B | Not started | Yes | 50% commission for 12 months, plus 10–20% recurring after 12 months at Bronze+ tiers (per page). |
-| beehiiv | `beehiiv` | https://www.beehiiv.com/partners | In-house (beehiiv partner dashboard) | B | Not started | Yes | Up to 60% commission monthly for a year (per page). |
-| Wix | `wix` | https://www.wix.com/about/affiliates | Impact | B | Not started | Yes | Apply via Impact link on page. |
-| Squarespace | `squarespace` | https://www.squarespace.com/affiliates | Impact | B | Not started | Yes | Payout per website/commerce subscription from first-time customers. |
-| Namecheap | `namecheap` | https://www.namecheap.com/affiliates/ | Impact | C | Not started | Partly (site blocks curl; search-verified) | Needs an active relevant site on its own domain (per Namecheap acceptance criteria). |
-| Thinkific | `thinkific` | https://www.thinkific.com/affiliates/ | PartnerStack | B | Not started | Partly (site blocks curl) | Vancouver company; 30% recurring on standard plans (per search of official page); wants an education/creator audience. |
-| Teachable | `teachable` | https://www.teachable.com/partners | PartnerStack | B | Not started | Yes | 30% recurring for 12 months, 30-day cookie (per page). |
-| Podia | `podia` | https://affiliates.podia.com/ | In-house (Rewardful) | C | Not started | Partly |  |
-| Kajabi | `kajabi` | https://help.kajabi.com/en/articles/17175735-become-a-kajabi-partner | In-house | C | Not started | Partly | Partner program requires an active paid Kajabi account. |
-| Payhip | `payhip` | https://payhip.com/partner-program | In-house | C | Not started | Partly (site blocks curl) | 50% recurring, PayPal payouts at $50 minimum (per search of official help pages). |
-| Zapier | `zapier` | https://zapier.com/legal/ambassador-affiliate-terms | PartnerStack (invite/approval) | C | Not started | verify | Ambassador/affiliate access appears invitation-based. |
-| Make | `make` | https://www.make.com/en/affiliate | In-house | B | Not started | Partly (site blocks curl) | Open to Make account holders; 35% for 12 months; payouts via Wise after $100 and 3 paying users (per search of official page). |
-| Descript | `descript` | https://www.descript.com/affiliate | PartnerStack | B | Not started | Yes |  |
-| Riverside | `riverside` | https://support.riverside.com/hc/en-us/articles/5446133751453-Affiliate-program-Overview | Impact / PartnerStack (verify) | C | Not started | verify |  |
-| Epidemic Sound | — | https://www.epidemicsound.com/community-program/ | Community program (CJ also reported) | C | Not started | verify | Referrer track requires a subscription. |
-| Envato | — | https://www.envato.com/affiliates/ | Impact | C | Not started | Yes |  |
-| Grammarly | `grammarly` | https://www.grammarly.com/affiliates | Impact | B | Not started | Yes |  |
-| Semrush | — | https://www.semrush.com/lp/affiliate-program/en/ | Impact | C | Not started | Yes | $100–$300 per sale, 120-day cookie (per page). |
-| ElevenLabs | — | https://elevenlabs.io/affiliates | PartnerStack | C | Not started | Yes |  |
-| Google Workspace | — | https://workspace.google.com/intl/en_ca/landing/partners/referral/ (referral); separate Affiliate Program for larger audiences | Google in-house | C | Not started | Partly | Referral page shows CAD reward per user in Canada (up to 200 users/yr). Referral links are personal; publisher Affiliate Program = verify. |
-| Udemy | — | https://www.udemy.com/affiliate/ | Impact | C | Not started | Partly | Accepts non-US affiliates incl. Canada; ~500 visitors/followers minimum (per Udemy partner support). |
-| Coursera | — | https://www.coursera.org/about/affiliates | Impact | C | Not started | Yes | 15–45% on eligible purchases within 30 days (per page). |
-| Skillshare | — | https://www.skillshare.com/en/affiliates | Impact | C | Not started | Yes | 20% up to $34 per new customer, 30-day cookie (per page). |
-| Chit Chats | `chit-chats` | https://chitchats.com/referral | Personal referral program | C | Not started | Partly | Per-shipment referral credit (account-holder referral, not a publisher network). Check referral terms before publishing a code. |
-| Stallion Express | `stallion-express` | https://stallion.ca/referral-program/ | Personal referral program | C | Not started | Partly | Per-shipment referral reward for 3 months (per search of official page). |
-| Shippo | — | https://goshippo.com/affiliates | PartnerStack | C | Not started | Yes | Flat reward per new Pro plan user (per page). US-centric. |
-| ShipStation | — | https://www.shipstation.com/en-ca/affiliate-program/ | Impact | C | Not started | Yes | Has a Canadian affiliate page. |
-| Printify | `printify` | https://printify.com/affiliate/ | PartnerStack | B | Not started | Yes |  |
-| Ownr | `ownr` | https://www.ownr.co/affiliates | PartnerStack | B | Not started | Partly | Canadian (RBC Ventures). Commission and discount levels per third-party listings = verify. |
-| Vistaprint Canada | `vistaprint` | — | FlexOffers (third-party listing only) | C | Not started | verify | No official Canadian affiliate page found. |
-| APOLLO Insurance | `apollo` | https://apollocover.com/business-insurance | Partner API (tenant insurance only) | C | Not started | verify | Public affiliate API currently covers tenant insurance only; no public small-business referral program found. |
-| Zensurance | `zensurance` | https://www.zensurance.com/partnerships (verify) | none found | C | Not started | verify | No public affiliate page found; ask partnerships team. |
-| Home Depot Canada | — | — | Reported closed (2022) | Drop | Skip | verify | No active official program found. |
-| Canadian Tire | — | Search 'Canadian Tire' in Impact marketplace | Impact (per third-party listings) | B | Not started | verify | Official affiliate page blocked our fetch. |
-| Princess Auto | — | — | none found | Drop | Skip | verify | No affiliate program found. |
-| Rakuten.ca (cash back) | — | Member referral inside Rakuten.ca account | Personal referral | C | Not started | verify | Shopper cash-back site; referral bonuses are personal-account referrals, not a publisher program. Check terms before publishing a code. |
-| Swagbucks | — | Search 'Swagbucks' in Impact marketplace | Impact (per third-party listings) | C | Not started | verify | Program reportedly supports Canada. |
-| Survey Junkie | — | — | verify | C | Not started | verify | Third-party sources say it accepts US/Canada/Australia traffic; no official affiliate page found. |
-| Freecash | — | https://freecash.com/academy/en/discover/partner/affiliates | Personal referral (in-house) | C | Not started | Yes | 'Affiliate program' is a per-friend referral reward with its own affiliate policy; read it before publishing a link. |
-| Mistplay | — | In-app referral code | Personal referral | C | Not started | verify | No publisher program found. |
-| Qtrade (via Fintel) | — | https://www.fintelconnect.com/ | Fintel Connect | C | Optional later | verify | Investing audience |
-| Ratehub | — | https://www.ratehub.ca/affiliate-program | In-house | C | Optional later | verify | Widgets / finance |
+| Program | Key in `affiliate-placeholders.ts` | Apply URL | Network | Priority | Status | Notes |
+|---|---|---|---|---|---|---|
+| Amazon.ca Associates | `amazon-ca` | https://affiliate-program.amazon.ca/ | In-house (Amazon Associates) | A | **Approved** 2026-10-05 | Only approved program. Use one entry link per Amazon policy setup in affiliate-placeholders.ts. Biggest lever: add gear roundups for local-services (127 posts). |
+| Fiverr Affiliates | `fiverr` | https://www.fiverr.com/partnerships/affiliates | In-house (Fiverr Partnerships) | A | Not applied | Pays on buyers, not on sellers joining — frame as 'outsource' content. |
+| FreshBooks | `freshbooks` | https://www.freshbooks.com/affiliate-program | PartnerStack | A | Not applied | Fastest payback: most-linked placeholder on the site. Trial bounty means earnings even before paid conversion. |
+| H&R Block Canada | `hr-block` | https://www.hrblock.ca/partner-with-us (→ Affiliate Program on impact.com); codes: https://www.hrblock.ca/affiliate/ | Impact (per hrblock.ca 'Partner with us' page) | A | Not applied | Official partner page confirms an Impact affiliate program (previously unclear). |
+| Hostinger | `hostinger` | https://www.hostinger.com/affiliates | In-house | A | Not applied | Genuine fit: MMO is hosted on Hostinger. |
+| Jobber | `jobber` | https://www.getjobber.com/affiliates/ | In-house page; network reported as CJ since Mar 2025 (was PartnerStack) — verify | A | Not applied | Best fit for MMO's largest category (127 posts). Repo note says PartnerStack link — re-check which platform the Apply button uses. |
+| KOHO | `koho` | https://www.koho.ca/affiliate/ | Impact | A | Not applied | Second most-linked placeholder. Funded-account conversion only (sign-up alone may not pay) — verify. |
+| Shopify (incl. Shopify POS) | `shopify` | https://www.shopify.com/ca/affiliates | Shopify Affiliate Program (in-house dashboard; repo notes Impact — confirm) | A | Not applied | Flagship ecommerce offer. Payouts in 80+ currencies. |
+| Square Canada | `square` | https://squareup.com/ca/en/affiliate | Impact | A | Not applied | — |
+| TurboTax Canada | `turbotax-canada` | https://turbotax.intuit.ca/affiliates/ (links to CJ publisher sign-up) | CJ (Commission Junction) | A | Not applied | Seasonal earner. Pair with tax calculator pages. |
+| Wave | `wave` | https://www.waveapps.com/affiliate | Impact | A | Not applied | Strong Canada fit; free product means paid-service conversion only — expect lower EPC than FreshBooks. |
+| Wealthsimple (Tax, Cash/Chequing, Invest) | `wealthsimple-tax` / `wealthsimple` | https://www.wealthsimple.com/en-ca/legal/affiliate-guidelines (guidelines) — apply via Impact marketplace | Impact (per third-party listings; confirm on application) | A | Not applied | Guidelines require specific Wealthsimple disclosure wording; add it to the bottom AffiliateDisclosure only once approved (see docs, section 5). |
+| Adobe (Express, Creative Cloud, Stock) | — | https://www.adobe.com/ca/affiliates.html | Partnerize | B | Not applied | Best available design-tool program while Canva's is closed. |
+| beehiiv | `beehiiv` | https://www.beehiiv.com/partners | In-house (beehiiv partner dashboard) | B | Not applied | — |
+| Canadian Tire | — | Create Impact account → search 'Canadian Tire' in marketplace (no direct link published) | Impact | B | Not applied | Official page blocked automated fetch; low % but high trust for Canadian shoppers. |
+| Descript | `descript` | https://www.descript.com/affiliate | PartnerStack | B | Not applied | — |
+| EQ Bank | `eq-bank` | Join Rakuten Advertising (https://rakutenadvertising.com/en-ca/affiliate/) then search EQ Bank | Rakuten Advertising | B | Not applied | — |
+| Etsy | `etsy` | https://www.etsy.com/ca/affiliates | Awin (Affiliates) / Creator Collective (social) | B | Not applied | Pays on buyer purchases, so fit is limited for seller guides; best on printable/digital-product 'examples' posts. |
+| Grammarly | `grammarly` | https://www.grammarly.com/affiliates | Impact | B | Not applied | — |
+| Helcim | — | https://www.helcim.com/partnerships/ (apply: https://www.helcim.com/partner-application/) | In-house | B | Not applied | Canadian alternative to Square for comparison posts. |
+| Housecall Pro | `housecall-pro` | https://www.housecallpro.com/paid-affiliates/ | PartnerStack | B | Not applied | Lead bounty pays even before conversion, but low-quality leads risk termination — use only in 'compare software' context. |
+| Kit (ConvertKit) | `kit` | https://kit.com/affiliate | PartnerStack | B | Not applied | — |
+| Make (Make.com) | `make` | https://www.make.com/en/affiliate | In-house | B | Not applied | — |
+| Mark's | — | Impact marketplace → search 'Mark's' | Impact | B | Not applied | — |
+| Ownr | `ownr` | https://www.ownr.co/affiliates (apply: https://market.partnerstack.com/page/ownr) | PartnerStack | B | Not applied | Natural fit for province/city guides and 'do I need to register?' content. |
+| Payhip | `payhip` | https://payhip.com/partner-program | In-house | B | Not applied | Good Gumroad substitute in comparison posts since Gumroad has no platform affiliate program. |
+| Printful | `printful` | https://www.printful.com/ca/affiliates | In-house | B | Not applied | — |
+| Printify | `printify` | https://printify.com/affiliate/ | PartnerStack (in-house page) | B | Not applied | — |
+| Publisher Rocket | — | https://publisherrocket.com/affiliate-program/ | In-house | B | Not applied | Also useful for Andrew's own ebook work. |
+| QuickBooks Canada | `quickbooks` | https://quickbooks.intuit.com/partners/qbbusinessaffiliates/ | PartnerStack (Canada program); US program on CJ | B | Not applied | Official page blocked automated fetch today; details carried from repo research. |
+| Rakuten.ca (Influencer program) | — | https://www.rakuten.ca/influencers | In-house (Rakuten Canada influencer program — distinct from personal Refer-a-Friend) | B | Not applied | A real publisher route (not just a personal referral code). |
+| Squarespace | `squarespace` | https://www.squarespace.com/affiliates | Impact | B | Not applied | Check whether Acuity Scheduling ('acuity' key) is commissionable under this program. |
+| Teachable | `teachable` | https://www.teachable.com/partners | PartnerStack | B | Not applied | — |
+| Thinkific | `thinkific` | https://www.thinkific.com/affiliates/ | PartnerStack | B | Not applied | — |
+| Wise | — | https://wise.com/help/articles/2978038/whats-the-wise-partnership-program | Partnerize | B | Not applied | Useful for freelancers paid in USD. |
+| Wix | `wix` | https://www.wix.com/about/affiliates | Impact | B | Not applied | — |
+| Zensurance | `zensurance` | https://www.fintelconnect.com/brands/directory/zensurance-affiliate-program/ | Fintel Connect | B | Not applied | Excellent fit for the 127 local-services posts (liability insurance is a real need). Exclude QC traffic in copy. |
+| Best Buy Canada | — | https://www.bestbuy.ca/en-ca/about/affiliate-program/blt82df225e80ec75e9 | Impact | C | Not applied | Program state: Watch rates. Join only if rates have recovered; otherwise use Amazon.ca for tech. |
+| Bonsai | — | https://www.hellobonsai.com/affiliates | In-house | C | Not applied | — |
+| Caddle (referral) | — | https://getcaddle.com/terms-of-use/ | Personal ambassador referral | C | Not applied | Personal referral only. |
+| Chit Chats (referral) | `chit-chats` | https://chitchats.com/referral | Personal referral program (not a publisher network) | C | Not applied | Credit only — only worth it if Andrew ships. Prefer plain link. |
+| Coursera | — | https://www.coursera.org/about/affiliates | Impact | C | Not applied | — |
+| Decathlon Canada | — | https://www.decathlon.ca/en/lp/i/affiliate | Impact | C | Not applied | Official page blocked automated fetch; figures from search snippet of the official page. |
+| eBay Partner Network | — | https://partnernetwork.ebay.com/ | In-house (EPN) | C | Not applied | Low priority — MMO readers are sellers, not buyers. |
+| ElevenLabs | — | https://elevenlabs.io/affiliates | PartnerStack | C | Not applied | — |
+| Envato | — | https://www.envato.com/affiliates/ | Impact | C | Not applied | — |
+| Epidemic Sound | — | https://www.epidemicsound.com/community-program/ | In-house Community Program (CJ listing also reported) | C | Not applied | — |
+| Freecash (referral) | — | https://freecash.com/academy/en/discover/partner/affiliates | Personal referral ('affiliate program' = per-friend referral) + separate business affiliate program | C | Not applied | Do not promote: offer walls can include casino-style game offers. |
+| GoDaddy | — | https://www.godaddy.com/en-ca/affiliate-programs | CJ | C | Not applied | Prefer Hostinger/Namecheap. |
+| Google Workspace | — | https://workspace.google.com/intl/en_ca/landing/partners/referral/ | Google in-house (Referral Program; separate Affiliate Program for larger audiences) | C | Not applied | — |
+| HubSpot | — | https://www.hubspot.com/partners/affiliates | In-house (HubSpot Affiliate) | C | Not applied | — |
+| Kajabi | `kajabi` | https://help.kajabi.com/en/articles/17175735-become-a-kajabi-partner | In-house (Kajabi Partner Program) | C | Not applied | Skip unless Andrew uses Kajabi. |
+| Later | — | https://later.com/affiliate-program/ | In-house | C | Not applied | — |
+| Lenovo Canada | — | https://www.lenovo.com/ca/en/landingpage/promotions/affiliate/affiliate-program/ | Impact | C | Not applied | — |
+| LinkedIn Learning | — | Impact marketplace → LinkedIn Learning | Impact | C | Not applied | Official page not found (404); low confidence. |
+| Mistplay (referral) | — | In-app referral link (https://support.mistplay.com/hc/en-us/articles/24885443610011) | Personal referral link only (no publisher program found) | C | Not applied | Units, not cash. Personal referral — not a monetization program. |
+| Namecheap | `namecheap` | https://www.namecheap.com/affiliates/ | Impact | C | Not applied | — |
+| Neo Financial | `neo-financial` | https://www.fintelconnect.com/brands/directory/neo-financial-affiliate-program/ | Impact + Fintel Connect | C | Not applied | Route card content to Canadian Credit Card Finder. |
+| Payoneer | — | https://www.payoneer.com/become-a-partner/ | In-house Partner Program | C | Not applied | — |
+| Podia | `podia` | https://affiliates.podia.com/ | In-house (Rewardful) | C | Not applied | — |
+| Qtrade Direct Investing | — | https://www.qtrade.ca/en/investor/about/why-qtrade/affiliateprogram.html | Fintel Connect | C | Not applied | Better fit for Canadian Optimizer. |
+| Questrade | — | https://www.questrade.com/affiliates/overview | In-house | C | Not applied | Better placed on Canadian Optimizer; cross-link from MMO instead. |
+| Ratehub.ca Partner Portal | — | https://www.ratehub.ca/affiliate-program | In-house (Ratehub Partner Portal) | C | Not applied | Competes with sister sites (Latest Mortgage Rates, Canadian Credit Card Finder) — prefer internal links. |
+| Riverside | `riverside` | https://riverside.com/affiliate-program | In-house page (platform: verify) | C | Not applied | — |
+| Semrush | — | https://www.semrush.com/lp/affiliate-program/en/ | Impact | C | Not applied | High payout; audience is beginners so conversion will be low. |
+| Shippo | — | https://goshippo.com/affiliates | PartnerStack | C | Not applied | Flag: limited Canada relevance. |
+| ShipStation | — | https://www.shipstation.com/en-ca/affiliate-program/ | Impact | C | Not applied | Better for scaled sellers than casual flippers. |
+| Shutterstock | — | Impact marketplace → Shutterstock | Impact | C | Not applied | Official page blocked automated fetch. Contributor referral program is separate. |
+| Simplii Financial | — | https://www.fintelconnect.com/brands/directory/simplii-financial-affiliate-program/ | Fintel Connect (publisher CPA); separate personal Refer-a-Friend/affiliate referral ($50 to friend) | C | Not applied | — |
+| Skillshare | — | https://www.skillshare.com/en/affiliates | Impact | C | Not applied | — |
+| Stallion Express (referral) | `stallion-express` | https://stallion.ca/referral-program/ | Personal referral program | C | Not applied | Tiny payout; plain link is fine. |
+| Staples Canada | — | Impact marketplace → search 'Staples Canada' | Impact | C | Not applied | Low rates; useful mainly for print & copy services mention. |
+| SumUp | `sumup` | https://www.sumup.com/en-gb/affiliate-program/ | Impact | C | Not applied | Flag: Canada payout eligibility unconfirmed. |
+| Survey Junkie | — | https://www.surveyjunkie.com/partnerships | In-house affiliate page + CPA networks | C | Not applied | — |
+| Swagbucks | — | Impact marketplace → Swagbucks (Prodege) | Impact | C | Not applied | — |
+| Systeme.io | — | https://systeme.io/affiliate-program | In-house | C | Not applied | — |
+| Tangerine | — | https://www.fintelconnect.com/brands/directory/tangerine-bank-affiliate-program/ | Fintel Connect | C | Not applied | Weak MMO fit; better for sister sites. |
+| Udemy | — | https://www.udemy.com/affiliate/ | Impact | C | Not applied | Traffic minimum applies. |
+| Vendoo | — | https://www.vendoo.co/referral-program | In-house Refer-a-Friend program | C | Not applied | — |
+| Vistaprint Canada | `vistaprint` | Verify (no official page; vistaprint.ca/affiliate-program returns 404) | Third-party networks only (FlexOffers etc.) — verify | C | Not applied | Low confidence; keep plain links until an official route is confirmed. |
+| Walmart Canada | — | Verify via Rakuten Advertising marketplace | Rakuten Advertising / FlexOffers (per listings) | C | Not applied | Low value; only if already on Rakuten Advertising for EQ Bank. |
+| Canva | `canva` | https://www.canva.com/help/canva-affiliate-marketing-program/ | Canvassador program (then affiliate) | Watch | Not applied | Program state: Closed — re-check quarterly. Keep plain links; re-check each quarter. |
+| Gig platform worker referrals (Uber, Lyft, DoorDash, SkipTheDishes, Instacart, Amazon Flex, TaskRabbit, Rover) | — | — | Personal referral codes (no publisher affiliate programs found for these) | Watch | Not applied | Program state: Not a program. Monetize gig-apps content via Amazon.ca gear, KOHO/Wealthsimple, tax software and Zensurance/insurance instead. |
+| Notion | — | https://www.notion.com/affiliates | In-house | Watch | Not applied | Program state: Closed — re-check. |
+| Zapier | `zapier` | https://zapier.com/l/solution-partner | Solution Partner Program only | Watch | Not applied | Program state: Not eligible (plain link). Keep plain links; push Make in comparisons. |
+
+**Dropped / no publisher program** (not tracked; see docs section 6): Costco Canada, Home Depot Canada, Princess Auto, Home Hardware / RONA / Lowe's Canada, BigCommerce, Calendly, UFile, Gumroad (site-wide), Checkout 51, Moneris, APOLLO Insurance.
 
 ### Suggested order to apply (fastest payback first)
 
 1. **FreshBooks** (PartnerStack) — ~211 links already on the site.
 2. **KOHO** (Impact) — ~162 links.
-3. **Wealthsimple** (Impact; covers Tax, Invest, Cash) — ~38 Wealthsimple Tax links + the new money/tax comparisons. Read the guidelines first.
-4. **Shopify** (Impact), **Square** (Impact), **Wave** (Impact) — one Impact account covers all three plus Wix/Squarespace/Grammarly/Udemy.
-5. **Jobber** + **Housecall Pro** (PartnerStack) — local-services is our biggest category.
+3. **Wealthsimple** (Impact; covers Tax, Invest, Cash) — ~38 Wealthsimple Tax links + the money/tax comparisons. Read the guidelines first.
+4. **H&R Block**, **Shopify**, **Square**, **Wave** (all Impact) — one Impact account covers them plus Wix/Squarespace/Grammarly/Udemy.
+5. **Jobber** (apply at getjobber.com/affiliates; network reportedly CJ — verify) + **Housecall Pro** (PartnerStack) — local services is our biggest category.
 6. **Hostinger** (in-house), **TurboTax Canada** (CJ, before tax season), **Fiverr** (in-house).
-7. **Kit**, **beehiiv**, **Teachable/Thinkific**, **Printify**, **Ownr**, **Descript** as their comparison posts gain traffic.
-8. Re-check **Canva** (Canvassador closed) each quarter.
+7. **Zensurance** (Fintel Connect), **Helcim** (in-house), **Adobe** and **Wise** (Partnerize).
+8. **Kit**, **beehiiv**, **Teachable/Thinkific**, **Printify**, **Ownr**, **Descript**, **Make** as their comparison posts gain traffic.
+9. Re-check **Canva** and **Notion** (both closed) each quarter. Do not promote **Freecash**.
 
-Tip: create one **PartnerStack** account and one **Impact** account first; most of the A/B list lives there.
+Tip: create one **PartnerStack** account and one **Impact** account first; most of the A/B list lives there. Fintel Connect (Zensurance) and Partnerize (Adobe, Wise) come next.
 
 ---
 
@@ -203,7 +223,7 @@ disclosure sentence at the beginning or end; CIRO/securities rules).
 with side income, and links Wealthsimple Tax at the filing step in [~38] guides. New comparisons (*Wealthsimple Tax
 vs TurboTax vs H&R Block for side hustlers*, *KOHO vs Wealthsimple vs EQ Bank for side-hustle income*) compare
 features and published prices only. No return promises, no investment advice, clear disclosure on every page.  
-**Before going live:** add Wealthsimple's required disclosure sentence to posts that link it (ask in the PR).
+**Once approved (not before):** add Wealthsimple's required disclosure wording to the bottom-of-post `AffiliateDisclosure` only, on posts that link the `wealthsimple`/`wealthsimple-tax` keys. Never at the top of posts or next to links, tables or starter kits. See `docs/AFFILIATE-PROGRAMS.md` section 5.
 
 ### Wave (Impact)
 
@@ -220,10 +240,10 @@ organisations that support Canadian small businesses — say so explicitly).
 GST/HST, bookkeeping, and filing T2125 for side businesses. QuickBooks is covered in our accounting comparison with
 its Canadian plans and pricing.
 
-### H&R Block Canada (verify how to join)
+### H&R Block Canada (Impact)
 
-**Page:** https://www.hrblock.ca/affiliate/ (shows affiliate discount codes; the publisher sign-up route is not
-listed). Email H&R Block Canada partnerships and ask about a content-publisher affiliate program.  
+**Apply:** https://www.hrblock.ca/partner-with-us → Affiliate Program on impact.com (affiliate discount codes:
+https://www.hrblock.ca/affiliate/). Commission is not published; check it in Impact.  
 **Blurb:** Same as Wealthsimple Tax: Canadian side-hustle tax guides, comparison of tax software for
 self-employment income, seasonal (January–April) traffic.
 
@@ -251,9 +271,10 @@ whether the Impact campaign pays on Canadian sign-ups.
 
 Add: "We now publish *Square vs SumUp vs Shopify POS* for in-person sellers and an Etsy vs Shopify fee comparison."
 
-### Jobber (PartnerStack)
+### Jobber (in-house page; network reportedly CJ — verify)
 
-**Apply:** https://jobber.partnerstack.com/?group=baseaffiliate (from https://www.getjobber.com/partners/).  
+**Apply:** https://www.getjobber.com/affiliates/ (the network reportedly moved from PartnerStack to CJ in March 2025;
+use whatever the Apply button opens). Published terms: 20% of subscription fees for 12 months, 90-day cookie.  
 **Why we're a fit:** Local services is our largest category ([127+] guides: snow removal, lawn care, cleaning,
 handyman, pressure washing, window cleaning). Readers who move from casual gigs to recurring clients need quoting,
 scheduling, invoicing and payments; our comparison *Jobber vs Housecall Pro vs Square Appointments* targets exactly
@@ -292,7 +313,8 @@ businesses hiring help (logos, editing, bookkeeping set-up) in our admin and eco
 ### Canva (Canvassador — closed)
 
 https://www.canva.com/help/canva-affiliate-marketing-program/ says Canvassador is the only path and is closed.
-When it reopens: [~47] guides mention Canva for flyers, social posts, printables and thumbnails.
+When it reopens: [~47] guides mention Canva for flyers, social posts, printables and thumbnails. Until then,
+the design-tool program to apply to is **Adobe** via Partnerize (https://www.adobe.com/ca/affiliates.html).
 
 ### EQ Bank (Rakuten Advertising)
 
@@ -333,3 +355,4 @@ See **Suggested order to apply** under the status tracker (updated 2026-10-07).
 | 2026-09-13 | Disclosure page expanded; application kit created |
 | 2026-10-05 | Amazon.ca Associates entry link wired (`https://link.amazon/B04lZw4kk`); article disclosure bottom-only |
 | 2026-10-07 | Status tracker expanded to ~60 programs (apply URL, network, priority, verified flag); per-program blurbs; new placeholder keys added for comparison posts and starter kits |
+| 2026-10-07 | Tracker re-synced from the master list Google Sheet (85 programs); all statuses Not applied except Amazon (Approved); H&R Block (Impact), Jobber (CJ, verify), Zensurance (Fintel) updated; Wealthsimple disclosure goes in the bottom AffiliateDisclosure only after approval; Freecash not promoted |
