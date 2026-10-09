@@ -1,9 +1,9 @@
 ---
 title: "How to Start AI Consulting for Small Businesses in Canada (Step-by-Step)"
-description: "How to start AI consulting in Canada: one written task for a small business, privacy limits, a labelled CAD sketch, and GST/HST. No day-rate promise."
+description: "How to start AI consulting for small businesses in Canada: StatCan adoption data, Canadian consultancy prices, wage benchmarks, worked audit and build math, tools, privacy rules, a 30-day plan, templates and tax."
 pubDate: 2026-10-01
-updatedDate: 2026-10-07
-updateNote: "Added a starter kit and links to the new automation and bookkeeping comparisons and buying guides"
+updatedDate: 2026-10-09
+updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
 category: tech-ai
 tags: [online, ai, consulting, small-business]
 featured: false
@@ -39,198 +39,405 @@ sources:
   - title: "False or misleading representations"
     url: "https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/false-or-misleading-representations"
     publisher: "Competition Bureau Canada"
+  - title: "Analysis on artificial intelligence use by businesses in Canada, second quarter of 2025"
+    url: "https://www150.statcan.gc.ca/n1/pub/11-621-m/11-621-m2025008-eng.htm"
+    publisher: "Statistics Canada"
+  - title: "Artificial intelligence (AI) consultant wages in Canada"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/24508/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "Business management consultant wages in Canada"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/297/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "Administrative assistant wages in Canada"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/24789/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "Principles for responsible, trustworthy and privacy-protective generative AI technologies"
+    url: "https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/gd_principles_ai"
+    publisher: "Office of the Privacy Commissioner of Canada"
+  - title: "B.C. Employer Training Grant"
+    url: "https://www.workbc.ca/employers-industry/funding-programs/bc-employer-training-grant"
+    publisher: "WorkBC"
+  - title: "Zapier pricing"
+    url: "https://zapier.com/pricing"
+    publisher: "Zapier"
+  - title: "Google Workspace pricing (Canada)"
+    url: "https://workspace.google.com/intl/en_ca/pricing.html"
+    publisher: "Google"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
+  - title: "AI consulting: assessments, strategy and automation"
+    url: "https://signalandform.ca/ai-consulting"
+    publisher: "Signal & Form"
+  - title: "AI implementation for construction and trades"
+    url: "https://jarvisstrategies.com/"
+    publisher: "Jarvis Strategies"
+  - title: "The young founder helping companies automate work in the age of AI"
+    url: "https://bcbusiness.ca/business/tech-science/overdrive-ai-automation-georgiy-sekretaryuk/"
+    publisher: "BCBusiness"
+  - title: "Amazon.ca search: USB headset with microphone"
+    url: "https://www.amazon.ca/s?k=usb+headset+with+microphone"
+    publisher: "Amazon.ca"
+  - title: "Amazon.ca search: 1080p webcam"
+    url: "https://www.amazon.ca/s?k=1080p+webcam"
+    publisher: "Amazon.ca"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
 import StarterKit from '../../components/StarterKit.astro';
 
-AI consulting for a small business in Canada is helping that business do one named task with a tool it is allowed to use, written down so the owner can repeat it without you. It suits people who already use a tool on their own work and who will say what the tool gets wrong. It is a poor fit if the offer is "we will replace your staff," or if you need the client's customer list in a chat window on day one.
+AI consulting for small businesses in Canada means helping an owner use AI tools on real, repeated work: drafting replies, summarizing documents, sorting email, writing proposals, building simple automations, and training staff to use them safely. Most small businesses haven't started yet: Statistics Canada found 12.2% of businesses used AI to produce goods or deliver services in the year to spring 2025, so a consultant who can find one useful task and set it up properly has plenty of room to work.
 
-This guide does not publish a day rate. There is no official Canadian price for an afternoon of setup. A number from a conference slide is not your invoice. Privacy law still applies when the task touches personal information. The tool's monthly price is on the vendor's page. This guide does not state it.
+<QuickAnswer>
+- **Demand:** 12.2% of Canadian businesses used AI in the 12 months before Statistics Canada's Q2 2025 survey, up from 6.1% a year earlier; 18.2% of those users worked with vendors or consultants to install or integrate it, up from 11.3%.
+- **Published Canadian prices:** Vancouver's Signal & Form lists a $1,500 workflow audit, $2,500 readiness assessment and $5,000 to $25,000 automation builds; Vernon, B.C.'s Jarvis Strategies starts at a $300 opportunity scan (both checked October 9, 2026).
+- **Wage benchmarks:** Job Bank's median for business management consultants is $44.10 an hour and for AI consultants (NOC 21211) $46.15 an hour (2023–2024, employees).
+- **Startup cost:** $0 to about $30 a month: a laptop you own, a paid AI chat plan if you want one, and free tiers of Zapier (100 tasks a month) or Make.
+- **Rules and tax:** follow the Privacy Commissioner's generative AI principles and don't overstate results; income goes on T2125 with both CPP shares, and GST/HST applies past $30,000.
+</QuickAnswer>
 
-| Fact | Detail for AI consulting in Canada |
-| --- | --- |
-| Useful first offer | One task, one written procedure, a limit on what data you will see |
-| Who it suits | People who can demonstrate a tool and refuse a use that needs private data |
-| Privacy | PIPEDA sets rules for personal information in commercial activity. [OPC brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) |
-| Provinces | Alberta, British Columbia, and Quebec have their own private-sector laws for activity inside the province. The OPC brief explains the outline |
-| Claims | Do not promise accuracy the tool does not have. [Competition Bureau](https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/false-or-misleading-representations) |
-| GST/HST | Small-supplier threshold of $30,000. [When to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+Your first paying owner is [how to get your first AI consulting client in Canada](/side-hustles/ai-consulting-first-client-canada/), audit and retainer pricing is in the [AI consulting pricing guide](/side-hustles/ai-consulting-pricing-canada/), and the CAD budget is in [AI consulting startup costs](/side-hustles/ai-consulting-startup-costs-canada/).
 
-A repeated click between two apps, without a model in the middle, is [Zapier automation](/side-hustles/zapier-automation-side-hustle-canada/). Ongoing inbox help is [virtual assistant work](/side-hustles/virtual-assistant-side-hustle-canada/). The books are [freelance bookkeeping](/side-hustles/freelance-bookkeeping-side-hustle-canada/). Do not offer to "AI the bookkeeping" as a substitute for those records.
+| Quick facts | |
+|---|---|
+| Startup cost | $0 with a laptop you own; paid AI and automation plans as clients need them |
+| Typical first offer | A fixed-price workflow audit, then one automation build |
+| Canadian price points seen | $300 scan to $2,500 assessment; $2,500 to $25,000 builds; retainers from $2,000/month (agency sites, October 2026) |
+| Employee wage benchmark | $44.10 to $46.15 median hourly (Job Bank, 2023–2024) |
+| Biggest risk | Client data in the wrong tool, and promising savings you can't prove |
+| Tax | T2125, CPP on net income, GST/HST past $30,000 |
 
-A first paying business, with a fixed offer and a data rule, is in [how to get your first AI consulting client in Canada](/side-hustles/ai-consulting-first-client-canada/).
+## Who does AI consulting suit?
 
-## Who does AI consulting in Canada suit?
+It suits people who already understand how a particular kind of business runs and can use AI tools well enough to show an owner a working result in their own documents. Industry knowledge sells better than technical depth: an owner wants someone who knows what a change order, a dental recall list or a property showing request is.
 
-AI consulting in Canada suits people who can sit with an owner and finish one task: a first draft of a routine email the owner will edit, a checklist turned into a prompt the staff can reuse, a spreadsheet column explained in plain language. A computer you have is enough. The work is a poor fit if you will paste a client's customer export into a consumer chat tool, if you cannot show your own example, or if the sales line is a guarantee of time saved.
+Good fits:
 
-The owner stays responsible for what they send to customers. You are responsible for not overstating what you set up. The Competition Bureau's page on [false or misleading representations](https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/false-or-misleading-representations) is the advertising standard. "This will cut your payroll in half" is a claim. Do not make it.
+- **Office managers, bookkeepers and executive assistants**, who know where admin hours go.
+- **Tradespeople and project managers**, who can speak to estimating, scheduling and site paperwork.
+- **Marketers and writers**, who can build content and email workflows.
+- **Developers and analysts**, who can wire up automations and reporting.
+- **Retired managers**, who bring credibility with owners their own age.
 
-## What does AI consulting cost to start in Canada?
+It's a poor fit if you'd paste a client's customer list into a free consumer chat tool, can't explain what a tool does with the data, or want to sell guaranteed time savings.
 
-AI consulting in Canada can start with a tool account you already pay for, used on fake sample data you invented. Vendor prices change. Confirm the live page before you tell a client what the subscription costs. The ranges below are typical Canadian retail prices to verify locally where they are gear.
+## How much demand is there in Canada?
 
-| Item | Typical CAD range or rule | How to think about it |
-| --- | --- | --- |
-| Computer and internet you have | $0 | The procedure is the product. |
-| Tool subscription | Confirm on the vendor's page | Use your own sample text until a client agrees in writing. |
-| Headset for the walkthrough | $25–$80 | Optional until the call is real. |
-| One-page site or a PDF of the offer | Your time, plus hosting if you want a page | The offer is one task, not a platform. |
-| Written limits | Your time | What data you will not accept. Where the output must be checked. |
-| Separate account | $0 to open | A deposit is not spending money. |
+Real, but early. Statistics Canada's Canadian Survey on Business Conditions (collected April 1 to May 5, 2025; 9,103 responding businesses out of a sample of 21,357; released June 16, 2025) found:
 
-Build the sample on data you made up. A <AffiliateLink program="amazon-ca" label="headset" search="USB headset microphone" /> is for the walkthrough call, not for the prompt. Do not buy a second monitor to look like a consultancy.
+| Measure (Q2 2025) | Share of businesses |
+|---|---|
+| Used AI to produce goods or deliver services in the past 12 months | 12.2% (6.1% in Q2 2024) |
+| Plan to adopt AI software in the next 12 months | 17.9% (11.5% in Q2 2024) |
+| Consider AI investment "not relevant" | 41.2% |
+| Highest use: information and cultural industries | 35.6% |
+| Professional, scientific and technical services | 31.7% |
+| Lowest use: accommodation and food services | 1.5% |
 
-A one-page description of the offer can live on a simple host. <AffiliateLink program="hostinger" label="Hostinger" /> is one option if you want a page with your name on it. A PDF you email is enough for the first conversation. Read the host's live price. This guide does not state it.
+Among businesses already using AI, the most common applications were text analytics (35.7%), data analytics (26.4%), virtual agents or chatbots (24.8%) and marketing automation (23.1%). After adopting AI, 40.1% developed new workflows, 38.9% trained current staff, and 18.2% worked with vendors or consulting services to install or integrate it. Those last three are exactly what an AI consultant sells: workflow design, training and setup.
 
-When a client pays, invoice the task, not "AI." <AffiliateLink program="freshbooks" label="FreshBooks" /> can hold that invoice once you have more than a single e-transfer. A document can hold the first scope.
+Two practical takeaways: professional-service firms (accountants, lawyers, engineers, agencies) are the most receptive buyers, and restaurants and trades are the least adopted, which means more untouched work but more persuading.
 
-| | Sample on fake data | Client data in a chat tool |
-| --- | --- | --- |
-| Privacy | You invented the names | You may be collecting personal information |
-| What you can promise | The steps you actually ran | Not accuracy, and not secrecy you did not check |
-| First sale | A written procedure | A problem if you skipped consent |
+## How much can AI consulting pay?
 
-## How much can AI consulting earn in Canada?
+No public survey reports what Canadian freelance AI consultants earn, so start from two published anchors: employee wages for similar work, and prices Canadian consultancies publish.
 
-AI consulting earnings in Canada cannot be promised as an hourly rate. What you keep depends on the list below. This guide does not publish a national consulting fee.
+**Employee wage benchmarks (Job Bank, updated November 19, 2025, reference period 2023–2024):**
 
-- The task in the note, and how many revisions it includes
-- Whether you are expected to be on call after the handoff
-- Tool fees you pay and whether the client reimburses them
-- Time spent checking the output, which is part of the job
-- A mistake that has to be redone because private data was used
-- Other side-hustle revenue in the same GST/HST pot
+| Occupation on Job Bank | Low | Median | High |
+|---|---|---|---|
+| Business management consultant (NOC 11201) | $27.00 | $44.10 | $69.71 |
+| Artificial intelligence (AI) consultant (NOC 21211) | $30.00 | $46.15 | $69.74 |
+| Administrative assistant (NOC 13110), the time you're often saving | $19.23 | $26.44 | $36.88 |
 
-Price the written task. "Ongoing AI support" with no boundary becomes unpaid evenings. If the owner wants that, it is a second product with its own price.
+Freelancers usually price well above the employee median because they pay their own CPP, have no benefits and can't bill every hour.
 
-## What would an assumed AI setup look like in Canada?
+**Published prices from Canadian AI consultancies (checked October 9, 2026):**
 
-An assumed setup in Canada, in the sketch below, uses a made-up fee and the low end of the headset range. It assumes you use sample data and a tool you already pay for, so no new subscription is inside the sketch. The sketch is not a quote, a forecast, or a typical result.
+| Offer | Signal & Form (Vancouver) | Jarvis Strategies (Vernon, B.C.) |
+|---|---|---|
+| Entry diagnostic | Workflow audit $1,500 | Quick AI opportunity scan $300 |
+| Assessment | AI readiness assessment $2,500 | Information architecture review $750; readiness assessment $3,500 |
+| Training | Foundations workshop $2,500; 1:1 founder coaching $350 a session | Not listed |
+| Builds | Custom GPT or Claude project $2,500 to $5,000; automation builds $5,000 to $25,000 | Custom-scoped paid pilot |
+| Ongoing | Retainers $2,000 to $10,000 a month | Not listed |
 
-**Illustrative example.** Suppose a shop pays $250 for a written procedure that drafts replies to three common customer questions, which the owner will edit before sending. That fee is an assumption, not a market rate. Suppose you already pay for the tool, and you buy a headset at $25 only if you need the call, charged to this job. The sketch is $250 − $25 = $225 before your time and before any tax set-aside. Suppose the work takes 6 hours including the checks. Inside these assumptions, $225 ÷ 6 = $37.50 an hour before tax. If the owner instead asks you to upload the real inbox, stop. That request is outside the sketch and outside the offer. These totals are assumptions, not a quote, a forecast, or a typical result.
+These are established firms. A side-hustle consultant starting out will usually price below them until there are results to point to; the gap between $300 and $2,500 for a first diagnostic shows how much room there is.
 
-## How do you start AI consulting in Canada?
+## What does the math look like?
 
-Starting AI consulting in Canada means picking one task, proving it on fake data, and writing what you will not touch. The steps below are that sequence.
+**Worked example 1, a side-hustle price list (illustrative).** The prices and hours are assumptions for a new consultant, set below the agency examples above.
 
-### Step 1: Name one task a shop already does every week
+| Offer | Price | Your hours | Effective hourly |
+|---|---|---|---|
+| Workflow audit: 2-hour interview, written plan, 1-hour walkthrough | $750 | 6 | $125.00 |
+| One automation build (e.g. inbox triage with AI-drafted replies) | $1,800 | 14 | $128.57 |
+| Monthly support retainer, up to 3 hours | $400 | 3 | $133.33 |
 
-Reply to a repeated question. Turn a price list into a tidy first draft. Summarize a meeting the owner already wrote down. One task. Not "digital transformation."
+**Worked example 2, what the build is worth to the owner (illustrative).** Assume the inbox automation saves an administrative assistant 4 hours a week, valued at Job Bank's $26.44 median, for 48 working weeks, and the client pays for Zapier Professional at US$19.99 a month (Zapier's pricing page, October 9, 2026), about $28.47 CAD at the Bank of Canada rate of 1.4240 on October 8, 2026.
 
-### Step 2: Run it on data you invented
+- Time saved: 4 × $26.44 = $105.76 a week; × 48 weeks = $5,076.48 a year
+- Tool cost: $28.47 × 12 = $341.64 a year
+- Payback on an $1,800 build: about 18 weeks
 
-Fake names, fake prices. Save the prompt and the output. Mark what you had to fix by hand. That fix list is the honest part of the sale.
+Put this math in your proposal with the owner's own numbers. If you can't estimate hours saved before you start, sell the audit first.
 
-### Step 3: Write the limits
+**Worked example 3, a year on the side (illustrative).**
 
-No customer lists, no health information, no employee files, no passwords, unless a later agreement says otherwise and you understand the privacy duty. The default is no.
+| Scenario | Work sold in a year | Revenue |
+|---|---|---|
+| Low | 4 audits | $3,000 |
+| Middle | 8 audits and 4 builds | $13,200 |
+| High | 10 audits, 6 builds and 3 retainers for 10 months | $30,300 |
 
-### Step 4: Read the privacy outline
+The high scenario crosses $30,000, which means GST/HST registration (see the tax section).
 
-The OPC's [PIPEDA brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) says the Act applies to personal information collected in commercial activity, and that Alberta, British Columbia, and Quebec have substantially similar provincial laws for collection inside those provinces. Cross-border handling can bring PIPEDA back into play. The [fair information principles](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/) include consent, limited collection, and safeguards. The OPC's [guide for businesses](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/guide_org/) is the longer version. This is not legal advice. If the task needs real personal information, the client needs a reason and a safeguard, and you may be the wrong person to design that.
+## What can you offer? 18 ideas by client type
 
-### Step 5: Write a one-page offer
+Pick one client type and three offers. Owners buy "AI for dental offices" faster than "AI for everyone."
 
-The task, the hours or the fixed fee, what you deliver (a procedure and a short call), what you will not do, and that the owner checks every customer-facing sentence. No ranking promise. No payroll promise.
+1. **Accounting and bookkeeping firms:** summarizing client emails and drafting document-request reminders.
+2. **Law offices:** first drafts of routine letters from templates, with lawyer review built in.
+3. **Real estate agents:** listing descriptions, showing follow-ups and market-update emails.
+4. **Construction and trades:** proposal and estimate drafting from past jobs, the bottleneck Jarvis Strategies targets.
+5. **Engineering and architecture firms:** progress-report and meeting-minute drafting.
+6. **Dental and physio clinics:** appointment-reminder and FAQ replies that never touch health records.
+7. **E-commerce shops:** product descriptions and AI-drafted customer-service replies.
+8. **Restaurants and cafés:** menu descriptions, review replies and staff schedules (the least-adopted sector in the StatCan survey).
+9. **Property managers:** maintenance-request triage and tenant notice drafts.
+10. **Non-profits:** grant-application first drafts and donor thank-you letters.
+11. **Marketing agencies:** content calendars and campaign briefs.
+12. **Insurance brokers:** renewal-reminder emails and policy-summary drafts, with privacy limits written down.
+13. **Recruiters and HR:** job-description drafts and interview-question banks (never automated screening decisions).
+14. **Tutoring and coaching businesses:** lesson-plan templates and session recaps.
+15. **Local retailers:** social posts and weekly promotion emails.
+16. **Any small office:** a staff AI-use policy and a half-day training workshop.
+17. **Any owner with spreadsheets:** AI-summarized weekly reports from existing tools.
+18. **Any team using Google Workspace or Microsoft 365:** turning on and training the AI already included in their plan.
 
-### Step 6: Show the sample to five owners you already know
+## Which tools should you know?
 
-A shop, a clinic's front desk only if you stay on fake data, a trades business. Ask which weekly sentence they retype. Do not ask them to export their contacts "so you can see."
+Learn one AI chat tool deeply, one automation platform, and the AI built into whichever office suite your clients already pay for.
 
-### Step 7: Do the first job inside the note
+<ComparisonTable
+  caption="Tools AI consultants set up for small businesses"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Google Workspace with Gemini",
+      href: "https://workspace.google.com/intl/en_ca/pricing.html",
+      bestFor: "Clients already on Gmail and Google Drive",
+      pricing: "Business Starter $9.20, Standard $18.40, Plus $28.70 per user/month (CAD, before tax)",
+      pricingUrl: "https://workspace.google.com/intl/en_ca/pricing.html",
+      canada: "Canadian-dollar pricing page; Gemini in Gmail listed on Business Standard",
+      pros: ["AI inside tools staff already use", "Admin controls for a whole team"],
+      cons: ["Per-user cost adds up", "Introductory discounts end"],
+    },
+    {
+      name: "Zapier",
+      program: "zapier",
+      bestFor: "Connecting apps and adding AI steps without code",
+      pricing: "Free (100 tasks/month); Professional from $19.99/month; Team from $69/month",
+      pricingUrl: "https://zapier.com/pricing",
+      canada: "Prices shown in USD by default; currency selector on the pricing page",
+      pros: ["Thousands of app integrations", "Easy for clients to maintain"],
+      cons: ["Task-based pricing grows with volume", "Complex flows get expensive"],
+    },
+    {
+      name: "Make",
+      program: "make",
+      bestFor: "Multi-step automations on a tighter budget",
+      pricing: "Free plan (1,000 credits/month, 2 active scenarios); paid plans: see current price",
+      canada: "Available in Canada; billed in USD",
+      pros: ["Visual scenario builder", "Generous free tier for testing"],
+      cons: ["Steeper learning curve for clients", "Credit math takes practice"],
+    },
+  ]}
+/>
 
-Use their wording only if they paste a single public sentence, not a database. Deliver the procedure as a document they own. Delete extras.
+Also worth knowing:
 
-### Step 8: Invoice the task the same day
+- **AI chat assistants** (ChatGPT, Claude, Gemini, Microsoft Copilot): business plans with admin controls and data-use terms suit client work better than free consumer accounts. Check each plan's current price and data terms before recommending one.
+- **Scheduling:** <AffiliateLink program="calendly">Calendly</AffiliateLink> for discovery calls.
+- **Invoicing:** <AffiliateLink program="freshbooks">FreshBooks</AffiliateLink> or Wave; compared in [FreshBooks vs Wave vs QuickBooks](/side-hustles/freshbooks-vs-wave-vs-quickbooks-canada/).
+- **Automation platforms compared:** [Zapier vs Make in Canada](/side-hustles/zapier-vs-make-canada/).
 
-Name the task. If you are registered for GST/HST, show it. If you are not, do not invent a tax line.
+You don't need special hardware. If you run workshops by video, a USB headset (Logitech H390, $24.99) and a 1080p webcam (EMEET C960, $34.99) were on [Amazon.ca](https://www.amazon.ca/s?k=1080p+webcam) on October 9, 2026.
 
-### Step 9: After two jobs, keep the task or narrow it
+## What privacy and advertising rules apply?
 
-If every owner asked for bookkeeping, send them to a bookkeeper. If they asked for a zap between two apps, that may be the automation guide instead. Stay with the task you can check.
+Two federal sources set the guardrails for most private-sector clients.
 
-## What should the first week of AI consulting in Canada include?
+**Privacy.** The Office of the Privacy Commissioner of Canada and provincial and territorial regulators published [principles for responsible, trustworthy and privacy-protective generative AI](https://www.priv.gc.ca/en/privacy-topics/technology/artificial-intelligence/gd_principles_ai) on December 7, 2023. They cover legal authority and consent, appropriate purposes, necessity and proportionality, openness, accountability, individual access, limiting collection, use and disclosure, accuracy and safeguards. In practice for a small-business setup:
 
-The first week should produce one sample on fake data, a limit list, and five conversations. A paid job is a bonus.
+- Don't put customer personal information into a tool unless the client has a lawful basis and the tool's business terms fit.
+- Prefer business or enterprise plans with admin controls over personal free accounts.
+- Keep a human review step before anything AI-drafted reaches a customer.
+- Write down what data each automation touches. The [PIPEDA fair information principles](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/p_principle/) and the OPC's [privacy guide for businesses](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda-compliance-help/guide_org/) are the baseline.
 
-- **Day 1:** Name the task. Invent ten lines of sample text.
-- **Day 2:** Run the tool. Write down every error you corrected.
-- **Day 3:** Read the PIPEDA brief. Write the data you will refuse.
-- **Day 4:** Draft the one-page offer with a fee you can explain. The fee is yours. This guide does not set it.
-- **Day 5:** Talk to five owners. Listen for the repeated sentence.
-- **Day 6:** If someone wants the job, confirm the limits in writing before you start.
-- **Day 7:** If nobody books, improve the sample. Do not add a second tool.
+Health, legal and financial clients may have extra professional or provincial obligations; leave regulated records out of scope unless the client's compliance lead signs off.
 
-## What AI consulting mistakes are common in Canada?
+**Advertising.** The Competition Bureau's page on [false or misleading representations](https://competition-bureau.canada.ca/en/deceptive-marketing-practices/types-deceptive-marketing-practices/false-or-misleading-representations) applies to your own marketing. "Saves 10 hours a week" is a claim; only make it if you measured it, and say for whom.
 
-Common mistakes in Canada are pasting a client export into a consumer tool, promising accuracy, and selling a subscription you have not priced. Privacy principles include limiting collection to what the purpose needs. A whole inbox is rarely what a three-reply template needs.
+## How do you start? A 30-day plan
 
-Another mistake is calling the output professional advice. A draft reply is not legal advice, tax advice, or medical advice. Label it as a draft the owner must edit. If you are not a regulated professional, do not borrow the title.
+### Week 1: Pick a niche and build two demos
 
-Do not train a public demo on a client's real customers to "show the room." Use the fake sample. The impressive version that leaks data is the one you should not have built.
+- Choose one client type you understand.
+- Build two demos on made-up data: for example, a proposal drafted from three sample past proposals, and an inbox rule that drafts replies to the five most common questions.
+- Record a 3-minute screen video of each.
 
-A quieter mistake is subscribing the client to three tools in the first week. One tool, on one task, is enough to learn whether the owner will actually edit the draft. A second subscription is a cost you should name only after the first procedure is in use. If the owner will not review the output, stop. The tool does not become careful because you were hired.
+### Week 2: Write your offer and policies
+
+- Write a one-page offer: the audit, one build, the price, what's out of scope.
+- Write your data rules (what you will and won't put into which tool) and a short AI-use policy template for clients.
+- Set up scheduling and invoicing.
+
+### Week 3: Talk to ten owners
+
+- Message ten owners in your niche you already know or can be introduced to (template below).
+- Offer a 30-minute free call; ask where the repeated hours go.
+- Sell the audit, not the build.
+
+### Week 4: Deliver and document
+
+- Deliver your first audit with a measured baseline (hours per week on the task).
+- Propose one build with the payback math.
+- Ask for permission to describe the result anonymously.
+
+### Days 31–90: Builds and a retainer
+
+- Deliver builds with a training session and a written runbook.
+- Offer a small monthly retainer for tweaks and new prompts.
+- In B.C., employers can apply to the [B.C. Employer Training Grant](https://www.workbc.ca/employers-industry/funding-programs/bc-employer-training-grant), which reimburses 80% of eligible training costs up to $10,000 per participant per fiscal year; the employer applies and eligibility is decided by the program.
+
+## Templates you can copy
+
+### Outreach message
+
+```
+Hi [name], I help [client type] in [city] use AI tools on the repetitive
+parts of the week: [example 1, e.g. proposal first drafts] and
+[example 2, e.g. replies to common emails]. I start with a fixed-price
+audit ($[price]) that maps where the hours go and recommends one change.
+Would a 30-minute call next week be useful?
+```
+
+### Audit deliverable outline
+
+```
+1. The task list: each repeated task, who does it, hours per week (measured)
+2. Top 3 opportunities, ranked by hours saved and risk
+3. What data each would touch, and the tool/plan recommended
+4. What NOT to automate, and why
+5. One recommended first build: scope, price, payback estimate
+6. Staff training and AI-use policy recommendations
+```
+
+### Scope and data checklist for every build
+
+- The exact task, inputs and outputs.
+- Which tool and plan, on whose account (the client's, never yours).
+- What personal information is involved; if any, the client's sign-off.
+- The human review step before anything reaches a customer.
+- Baseline hours and how you'll measure after 30 days.
+- Handover: login ownership, runbook, training session.
+
+### Client AI-use policy starter
+
+```
+- Use only the company-approved AI tools and accounts.
+- Don't paste customer personal information, passwords or financial
+  account numbers into AI tools unless the tool is approved for it.
+- A person reviews every AI draft before it is sent or published.
+- Tell the manager if an AI output is wrong or inappropriate.
+```
+
+## Real Canadian AI consultants on the record
+
+These are public examples; they show how these firms describe and price their work, not what you'll earn.
+
+**Signal & Form, Vancouver.** Its AI consulting page (checked October 9, 2026) lists a $1,500 workflow audit, $2,500 readiness assessment, $2,500 to $5,000 custom GPT or Claude projects, $5,000 to $25,000 automation builds and retainers of $2,000 to $10,000 a month. It says most engagements ship something usable in two weeks, and it labels its before-and-after scenarios as illustrative rather than client reports. It notes team training may qualify for the B.C. Employer Training Grant.
+
+**Scott Jarvis, Jarvis Strategies, Vernon, B.C.** Jarvis spent 18 years running construction and trades operations before founding the firm. His site lists a $300 quick AI opportunity scan (about a 45-minute discovery with a findings report within five business days), a $750 information architecture review and a $3,500 readiness assessment. It reports, with client identities anonymized, that an excavation company's proposal turnaround fell from days to about 90 minutes, and an engineering client cut documentation time by 30% to 40%.
+
+**Georgiy Sekretaryuk, Overdrive, British Columbia.** BCBusiness reported on March 30, 2026 that Sekretaryuk was doing AI consulting on the side while finishing a master's in data science at UC Berkeley when ChatGPT launched, and turned the overflow of requests into Overdrive, an AI automation studio. In just over a year it had served more than 35 clients across five continents, built thousands of automations and grown revenue 61% quarter over quarter.
+
+What they share: each started with a narrow, priced first step and industry-specific examples, then moved clients to builds.
+
+## What mistakes do new AI consultants make?
+
+- **Selling "AI" instead of an outcome.** Owners buy fewer hours on proposals, not a chatbot.
+- **Skipping the baseline.** Without before-hours you can't prove the after.
+- **Building on your own accounts.** The client must own every login and subscription.
+- **Ignoring data rules.** One customer list in the wrong tool can end the relationship.
+- **Automating judgment.** Hiring, pricing, legal and medical decisions stay with people.
+- **Overpromising.** Claims about savings fall under the Competition Bureau's misleading-representation rules.
+- **No handover.** Leave a runbook and train a staff member, or the build dies when you leave.
 
 ## Which tax rules apply to AI consulting in Canada?
 
-AI consulting income in Canada is self-employment income, reported on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and self-employed people pay the whole [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contribution on the net. GST/HST on your taxable supplies follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html), not the [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) rule. Nova Scotia's HST is 14% as of 1 April 2025 on the CRA [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) table, and Quebec charges GST and QST.
+Consulting income is self-employment income. Report it on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) and pay both the employee and employer shares of [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contributions on net income. Deductible costs include software subscriptions you pay for the business, a share of internet and phone, a portion of your computer through capital cost allowance, and professional development.
 
-This is not tax, legal, or insurance advice.
+GST/HST follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html): worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Count other side-hustle revenue too. Consulting isn't ride-sharing, so the first-dollar rule on the CRA's [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) page doesn't apply. Once registered, charge the rate for the province where the supply is made; see the CRA's [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) table and [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html). For a set-aside habit, see [how much tax to set aside for a side hustle in Canada](/side-hustles/how-much-tax-set-aside-side-hustle-canada/).
 
-Keep the scope notes and the e-transfers. Report the work on Form T2125 with the T1. The small-supplier test is worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Add other side-hustle revenue to the same pot. Under that test, registration is usually optional. Over it, you register on the timetable on the CRA's when-to-register page. Consulting is not ride-sharing, so the first-dollar rule does not apply unless you also carry passengers for a platform.
+This is not tax, legal or insurance advice.
 
-Once registered, charge the rate for the province where the supply is made. Confirm the rate on the charge-and-collect table and with the [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html), and set the tax aside. A tool subscription you pay in US dollars is a receipt to convert for your records. It is not a tax ruling.
+### Provincial notes
 
-Search your city for a business licence and use that city's fee if there is one. This guide does not state a licence fee from another city.
+- **British Columbia:** client employers may use the B.C. Employer Training Grant for eligible training; PST rules for software and services are separate from GST, so check with the province.
+- **Ontario:** HST is 13% once registered.
+- **Nova Scotia:** HST is 14% as of April 1, 2025 on the CRA table.
+- **Quebec:** QPP replaces CPP, and QST applies alongside GST once registered; Quebec's private-sector privacy law also applies to clients there, so check with Revenu Québec and the Commission d'accès à l'information.
+- **Alberta:** 5% GST only once registered; Alberta and B.C. have their own private-sector privacy laws.
 
 ## What should an AI consulting starter kit include?
 
-Start with what you already own and add the rest as paid work comes in. These are the tools and services worth comparing first.
+A good AI chat plan, one automation platform, scheduling and invoicing. Add hardware only if you train teams by video.
 
 <StarterKit
   label="Starter kit: AI consulting"
   items={[
-    { name: "Zapier", use: "Automate repetitive admin between apps", cost: "Free plan available", program: "zapier", linkLabel: "See Zapier" },
+    { name: "Zapier", use: "Connect apps and add AI steps for clients", cost: "Free (100 tasks/month); Professional from $19.99/month, October 9, 2026", costUrl: "https://zapier.com/pricing", program: "zapier", linkLabel: "See Zapier" },
     { name: "Make", use: "Multi-step automations on a budget", cost: "Free plan available", program: "make", linkLabel: "See Make" },
-    { name: "Calendly", use: "Clients pick a time without email back-and-forth", cost: "Free plan available", program: "calendly", linkLabel: "See Calendly" },
+    { name: "Calendly", use: "Owners book discovery calls without email back-and-forth", cost: "Free plan available", program: "calendly", linkLabel: "See Calendly" },
     { name: "FreshBooks", use: "Invoicing, expenses and time tracking", program: "freshbooks", linkLabel: "See FreshBooks" },
+    { name: "USB headset and webcam", use: "Clear audio and video for workshops and calls", cost: "$24.99 (Logitech H390) and $34.99 (EMEET C960) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=usb+headset+with+microphone", program: "amazon-ca", links: [{ label: "Logitech H390", search: "logitech h390 usb headset" }, { label: "EMEET C960 webcam", search: "emeet c960 1080p webcam" }], optional: true },
   ]}
 />
 
-For side-by-side detail, see [Zapier vs Make](/side-hustles/zapier-vs-make-canada/) and [FreshBooks vs Wave vs QuickBooks](/side-hustles/freshbooks-vs-wave-vs-quickbooks-canada/).
+## What should you keep in mind about these numbers?
 
-## Which side hustles sit near AI consulting in Canada?
+The Statistics Canada figures describe businesses with employees in spring 2025 and are as published on June 16, 2025. Job Bank wages are for employees in 2023–2024, not freelancers. Consultancy prices are as listed on the firms' sites on October 9, 2026; Jarvis Strategies' client results are its own anonymized reports, and BCBusiness's Overdrive figures are as reported on March 30, 2026. None are typical results. Software prices change and Zapier lists USD by default; the conversion uses the Bank of Canada rate of 1.4240 on October 8, 2026. Prices, hours, time saved and the yearly scenarios in the worked examples are assumptions. Privacy obligations depend on the client's sector and province.
 
-AI consulting in Canada sits next to other help for the same owner. Contractor work rating model outputs, which is a dashboard rather than a client, is [AI training and data annotation](/side-hustles/ai-data-annotation-side-hustle-canada/), with the [DataAnnotation review](/side-hustles/dataannotation-review-canada/) and the [Outlier review](/side-hustles/outlier-ai-review-canada/). [Zapier automation](/side-hustles/zapier-automation-side-hustle-canada/) connects apps when the job is a repeated click. The same shape inside a Google sheet is [Apps Script freelancing](/side-hustles/apps-script-automation-side-hustle-canada/). Which of these is paid work, and which is a course pitch, is [AI side hustles, hype versus real work](/side-hustles/ai-side-hustles-hype-vs-real-canada/). [Virtual assistant work](/side-hustles/virtual-assistant-side-hustle-canada/) is the hour of admin. [Freelance bookkeeping](/side-hustles/freelance-bookkeeping-side-hustle-canada/) is the ledger. A page on the client's site is [no-code web design](/side-hustles/no-code-web-design-side-hustle-canada/). Keeping that page updated after launch is [website maintenance](/side-hustles/website-maintenance-side-hustle-canada/). Retired managers can find more ideas in [side hustles for retired professionals](/side-hustles/side-hustles-for-retired-professionals-canada/), and developers in [side hustles for software developers](/side-hustles/side-hustles-for-software-developers-canada/).
+## Which side hustles sit near AI consulting?
 
-For how to price audits, workshops, and retainers, see the [AI consulting pricing guide](/side-hustles/ai-consulting-pricing-canada/).
-
-The CAD budget for AI consulting in Canada, one-time and monthly, is in [AI consulting startup costs](/side-hustles/ai-consulting-startup-costs-canada/).
+AI consulting sits next to other help for the same owner. Contractor work rating model outputs, which is a dashboard rather than a client, is [AI training and data annotation](/side-hustles/ai-data-annotation-side-hustle-canada/), with the [DataAnnotation review](/side-hustles/dataannotation-review-canada/) and the [Outlier review](/side-hustles/outlier-ai-review-canada/). [Zapier automation](/side-hustles/zapier-automation-side-hustle-canada/) connects apps when the job is a repeated click. The same shape inside a Google sheet is [Apps Script freelancing](/side-hustles/apps-script-automation-side-hustle-canada/). Which of these is paid work, and which is a course pitch, is [AI side hustles, hype versus real work](/side-hustles/ai-side-hustles-hype-vs-real-canada/). [Virtual assistant work](/side-hustles/virtual-assistant-side-hustle-canada/) is the hour of admin. [Freelance bookkeeping](/side-hustles/freelance-bookkeeping-side-hustle-canada/) is the ledger. A page on the client's site is [no-code web design](/side-hustles/no-code-web-design-side-hustle-canada/), and keeping it updated after launch is [website maintenance](/side-hustles/website-maintenance-side-hustle-canada/). Retired managers can find more ideas in [side hustles for retired professionals](/side-hustles/side-hustles-for-retired-professionals-canada/), and developers in [side hustles for software developers](/side-hustles/side-hustles-for-software-developers-canada/).
 
 <Faq
   items={[
     {
-      question: "Do I need a certificate to offer AI help in Canada?",
-      answer: "This guide does not cite a national AI-consultant licence. You still cannot make false claims, and you still have privacy duties if you handle personal information. Do not use a regulated title you do not hold.",
+      question: "How much do AI consultants charge in Canada?",
+      answer: "Published Canadian examples on October 9, 2026: Vancouver's Signal & Form lists a $1,500 workflow audit, a $2,500 readiness assessment, $5,000 to $25,000 automation builds and retainers from $2,000 a month; Jarvis Strategies in Vernon, B.C. starts at a $300 opportunity scan and a $3,500 assessment. New side-hustle consultants usually price below established firms until they have results.",
     },
     {
-      question: "Can I paste a client's customer list into a chatbot?",
-      answer: "Do not, as a default. PIPEDA and, in some provinces, a provincial privacy law apply to personal information in commercial activity. Use fake sample data until a written agreement and a real safeguard exist. This is not legal advice.",
+      question: "Do I need a certificate to offer AI consulting in Canada?",
+      answer: "No licence is required for general AI consulting. What sells is industry knowledge and working demos. Regulated clients (health, legal, financial) may have their own privacy and professional rules, so keep regulated records out of scope unless their compliance lead approves.",
     },
     {
-      question: "What should the first AI offer be?",
-      answer: "One repeated task, a written procedure the owner keeps, and a sentence that they check anything a customer will see. Not a promise to replace a role.",
+      question: "How many Canadian businesses use AI?",
+      answer: "Statistics Canada found 12.2% of businesses used AI to produce goods or deliver services in the 12 months before its Q2 2025 survey, up from 6.1% a year earlier. Use was highest in information and cultural industries (35.6%) and lowest in accommodation and food services (1.5%).",
     },
     {
-      question: "How much should I charge?",
-      answer: "This guide does not set a rate. Price the written task and the hours you measured on your sample. A figure from a social post is not your invoice.",
+      question: "Can I put a client's customer data into ChatGPT or another AI tool?",
+      answer: "Only if the client has a lawful basis and the tool's business terms and settings fit. The Privacy Commissioner's December 2023 generative AI principles stress consent, limiting collection and use, and safeguards. Use business plans on the client's own account and keep a human review step.",
     },
     {
-      question: "When do consulting fees in Canada trigger GST/HST?",
-      answer: "They follow the CRA small-supplier test of $30,000 in worldwide taxable supplies, including other side hustles. This is not tax advice.",
+      question: "When do I charge GST/HST on AI consulting?",
+      answer: "Once your worldwide taxable supplies, including other side hustles, pass $30,000 in a calendar quarter or over four consecutive quarters, you must register and charge the rate for the province where the supply is made. Income goes on Form T2125 with both CPP shares. This is not tax advice.",
     },
   ]}
 />
