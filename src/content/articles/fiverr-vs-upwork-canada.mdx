@@ -2,6 +2,8 @@
 title: "Fiverr vs Upwork in Canada: 2026 Fees & What You Keep"
 description: "Fiverr vs Upwork for Canadian freelancers: Fiverr's 20% fee vs Upwork's 0-15% contract fee and Connects, USD-to-CAD payouts, and who should pick which."
 pubDate: 2026-10-03
+updatedDate: 2026-10-09
+updateNote: "Upgraded with current fees and a side-by-side comparison"
 category: online-freelancing
 tags: [online, freelancing, remote]
 featured: false
@@ -25,9 +27,16 @@ sources:
   - title: "Form T2125, Statement of Business or Professional Activities"
     url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
     publisher: "Canada Revenue Agency"
+  - title: "What are the fees, limits, and timing of Direct to Local Bank payments?"
+    url: "https://support.upwork.com/hc/en-us/articles/211060578-What-are-the-fees-limits-and-timing-of-Direct-to-Local-Bank-payments"
+    publisher: "Upwork"
+  - title: "How to get paid on Upwork"
+    url: "https://support.upwork.com/hc/en-us/articles/211060918-How-to-get-paid-on-Upwork"
+    publisher: "Upwork"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 
@@ -46,17 +55,45 @@ The craft side of freelancing is in [freelance writing in Canada](/side-hustles/
 
 ## How do Fiverr and Upwork fees compare for Canadian freelancers?
 
-Fiverr takes 20% of every order, while Upwork's fee varies from 0% to 15% by contract and adds the cost of Connects. Amounts are in USD from each company's pages on October 3, 2026, converted at the Bank of Canada [daily rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) of 1.4246 CAD per USD for October 2, 2026; conversions are approximate.
+Fiverr takes 20% of every order, while Upwork's fee varies from 0% to 15% by contract and adds the cost of Connects. Amounts are in USD from each company's help and pricing pages, rechecked October 9, 2026, and converted at the Bank of Canada [daily rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) of 1.4240 CAD per USD for October 8, 2026.
 
 | Factor | Fiverr | Upwork |
 | --- | --- | --- |
 | Fee on earnings | 20%; you earn 80% of the purchase amount, including extras and tips ([earnings page](https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-earnings-page)) | 0% to 15% per contract, shown before you propose and locked ([service fee](https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee)) |
 | Cost to apply for work | None; buyers order your gig | Connects at 0.15 USD (about $0.21 CAD) each; the free Basic plan may include 10 a month ([Is Upwork free?](https://www.upwork.com/resources/is-upwork-free)) |
-| Paid plan | Not required | Freelancer Plus at 19.99 USD (about $28.48 CAD) a month with 100 Connects |
+| Paid plan | Not required | Freelancer Plus at 19.99 USD (about $28.47 CAD) a month with 100 Connects |
 | Direct contracts | Not applicable | 5% on Basic; 0% on Freelancer Plus |
-| Faster payout | Early Payout fee of 1% | Check withdrawal options in your account |
-| Withdrawal fees | PayPal 0 USD (1 USD minimum); bank transfer via Payoneer 1 USD (about $1.42 CAD, 20 USD minimum); Payoneer account 3 USD (about $4.27 CAD, 10 USD minimum); up to 5,000 USD per withdrawal ([withdrawals](https://help.fiverr.com/hc/en-us/articles/360010530058-Withdrawing-your-earnings-managing-payout-methods)) | Varies by method; confirm in your account |
-| Canadian paperwork | Tax compliance forms required for Canadian freelancers | Confirm in your account |
+| Faster payout | Early Payout fee of 1% | Instant Pay is for U.S. freelancers only (2.00 USD) |
+| Withdrawal fees | PayPal 0 USD (1 USD minimum); bank transfer via Payoneer 1 USD (about $1.42 CAD, 20 USD minimum); Payoneer account 3 USD (about $4.27 CAD, 10 USD minimum); up to 5,000 USD per withdrawal ([withdrawals](https://help.fiverr.com/hc/en-us/articles/360010530058-Withdrawing-your-earnings-managing-payout-methods)) | Direct to Local Bank in CAD: 0.99 USD (about $1.41 CAD) per withdrawal, arriving within four business days ([fees and timing](https://support.upwork.com/hc/en-us/articles/211060578-What-are-the-fees-limits-and-timing-of-Direct-to-Local-Bank-payments)); U.S. dollar wire 50 USD; PayPal and Payoneer also offered ([payout methods](https://support.upwork.com/hc/en-us/articles/211060918-How-to-get-paid-on-Upwork)) |
+| Canadian specifics | Tax compliance forms required for Canadian freelancers | Canada (CAD) is a supported Direct to Local Bank currency |
+
+<ComparisonTable
+  caption="Fiverr vs Upwork for a freelancer in Canada"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Fiverr",
+      program: "fiverr",
+      linkLabel: "See Fiverr",
+      bestFor: "Packaged, repeatable services (logos, edits, short videos) where buyers order without a pitch",
+      pricing: "Free to join. 20% of every order, including extras and tips. Withdrawals: PayPal 0 USD, bank transfer via Payoneer 1 USD, Payoneer account 3 USD; Early Payout 1%",
+      pricingUrl: "https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-earnings-page",
+      canada: "Open to Canadian sellers; tax compliance forms required; payouts through PayPal or Payoneer",
+      pros: ["No cost to be found; buyers order your gig", "Fixed packages are easy to price", "No proposal writing"],
+      cons: ["20% fee on every order, highest of the two", "Reviews take time to build", "Hourly work is not the main model"],
+    },
+    {
+      name: "Upwork",
+      bestFor: "Custom, hourly or multi-week projects, and bringing your own clients through direct contracts",
+      pricing: "Free Basic plan (may include 10 Connects a month); Freelancer Plus 19.99 USD/month with 100 Connects. Service fee 0% to 15% per contract, shown before you propose. Connects 0.15 USD each, minimum 10",
+      pricingUrl: "https://www.upwork.com/resources/is-upwork-free",
+      href: "https://www.upwork.com/",
+      canada: "Direct to Local Bank pays out in CAD for 0.99 USD per withdrawal",
+      pros: ["Fee can be well under 20%", "Hourly contracts with payment protection", "Cheap CAD payouts"],
+      cons: ["Each proposal costs Connects", "Proposal writing takes unpaid time", "Fee varies by contract"],
+    },
+  ]}
+/>
 
 ## How do Fiverr and Upwork differ in how you find work?
 
@@ -77,12 +114,33 @@ On a single project, you keep 80% on Fiverr and 85% to 100% on Upwork before Con
 
 Assume a 500 USD project. The price and the Upwork fee rate are assumptions; Upwork shows your actual rate before you propose.
 
-- **Fiverr:** 20% × 500 USD = 100 USD fee, so you keep 400 USD (about $569.84 CAD).
-- **Upwork at a 10% contract fee:** you keep 450 USD (about $641.07 CAD).
-- **Upwork at a 15% contract fee:** you keep 425 USD (about $605.46 CAD).
+- **Fiverr:** 20% × 500 USD = 100 USD fee, so you keep 400 USD (about $569.60 CAD).
+- **Upwork at a 10% contract fee:** you keep 450 USD (about $640.80 CAD).
+- **Upwork at a 15% contract fee:** you keep 425 USD (about $605.20 CAD).
 - **Upwork Connects:** if you buy 60 Connects to send proposals before landing the project, 60 × 0.15 USD = 9 USD (about $12.82 CAD).
 
 At a 15% fee with 9 USD of Connects, Upwork leaves 416 USD, still a little more than Fiverr's 400 USD, but proposals that do not win cost Connects and time. Your bank or payout provider may also apply its own USD-to-CAD conversion rate.
+
+### Illustrative example: is Freelancer Plus worth 19.99 USD a month?
+
+**Assumed inputs:** you would otherwise buy 100 Connects a month and bill some clients you found yourself through direct contracts. **Sourced inputs:** Connects at 0.15 USD, Plus at 19.99 USD with 100 Connects, and direct-contract fees of 5% on Basic and 0% on Plus.
+
+- 100 Connects bought on Basic: 100 × 0.15 = **15.00 USD**
+- The remaining 4.99 USD of the Plus fee is covered once direct-contract billing saves that much: 4.99 ÷ 5% = **99.80 USD** of direct-contract earnings a month
+- If you send few proposals and have no direct contracts, Basic plus occasional Connects is cheaper
+
+### What does a month of 2,000 USD in billings look like?
+
+**Assumed inputs:** 2,000 USD billed in a month, one withdrawal, 60 Connects bought on Upwork Basic.
+
+| | Fiverr | Upwork at 10% | Upwork at 15% |
+| --- | --- | --- | --- |
+| Platform fee | 400.00 USD | 200.00 USD | 300.00 USD |
+| Connects | 0 | 9.00 USD | 9.00 USD |
+| Withdrawal | 1.00 USD (bank via Payoneer) | 0.99 USD (Direct to Local Bank) | 0.99 USD |
+| **You keep** | **1,599.00 USD (about $2,276.98 CAD)** | **1,790.01 USD (about $2,548.97 CAD)** | **1,690.01 USD (about $2,406.57 CAD)** |
+
+The gap is the fee rate, not the extras: on 2,000 USD, Fiverr's 20% costs 100 to 200 USD more than Upwork's 10% to 15%. Your bank or payout provider may apply its own USD-to-CAD conversion rate, which is why the CAD figures use the Bank of Canada rate.
 
 ## Who should pick Fiverr or Upwork in Canada?
 
@@ -106,11 +164,13 @@ Canadian freelancers most often price in CAD by accident, ignore the cost of Con
 - **Skipping the tax forms.** Fiverr requires tax compliance forms for Canadian freelancers.
 - **Losing track of USD income.** Record the CAD value of each payout for your tax return.
 
+## What could change these Fiverr and Upwork numbers?
+
+Your Upwork fee is set per contract between 0% and 15%, so the same job can cost 0 USD or 75 USD on a 500 USD project; check the rate shown on each proposal. Both platforms pay in USD unless you withdraw to a CAD bank account, so the exchange rate on the day you withdraw moves your Canadian income. Fees were read from the companies' pages on October 9, 2026, except Fiverr's withdrawal fees, which were read on October 3, 2026. This is not tax or legal advice.
+
 ## Which tax rules apply to Fiverr and Upwork freelancers in Canada?
 
 Freelance income from Fiverr or Upwork is generally business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), converted to Canadian dollars, and the platforms' fees and Connects are generally deductible business expenses. Platforms can report seller and freelancer earnings to the CRA, as covered in [tax on reselling and gig apps](/side-hustles/tax-reselling-gig-apps-platform-income-canada/). Invoicing and expense tracking software such as <AffiliateLink program="freshbooks" label="FreshBooks" /> can help, and [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/) covers saving for the bill. Services to clients outside Canada may be treated differently for GST/HST; see [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/).
-
-This is not tax or legal advice.
 
 ## Which guides sit next to Fiverr vs Upwork?
 
