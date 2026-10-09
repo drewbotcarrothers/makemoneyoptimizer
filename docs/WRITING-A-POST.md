@@ -191,11 +191,12 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
 4. **Question H2s.** Every `##` is a reader question that names the hustle and Canada (e.g. "Who does automation
    freelancing in Canada suit?"), followed immediately by a 1–3 sentence standalone answer. Use `### Step 1: …`
    H3s for steps (5+ steps for how-to posts), or `### Days 1 and 2: …` for plans. Don't skip heading levels.
-5. **CAD budgets.** Money is in Canadian dollars. Shelf prices are "about $X–$Y", labelled as retail ranges to
-   verify locally, not quotes. USD prices are stated as USD with an approximate CAD conversion, citing the Bank of
-   Canada daily exchange rate and the date used.
-6. **Worked examples are labelled.** Use a `### Illustrative example` heading (or "Illustrative example" in bold)
-   and say it is a teaching sketch with assumed numbers, not a quote, forecast, average, or survey. Show the arithmetic.
+5. **CAD budgets.** Money is in Canadian dollars. Named products get a dated price from a page you fetched
+   ("Amazon.ca listed $59.99 on October 9, 2026"); generic categories can use a sourced range. USD prices are
+   stated as USD with a CAD conversion citing the Bank of Canada daily exchange rate and the date used. See the
+   depth standard (section 4a): date the number instead of repeating "verify locally".
+6. **Worked examples are labelled.** Use a `### Illustrative example` heading (or "Illustrative example" in bold),
+   say which inputs are assumed and which are sourced, and show the formula and the arithmetic (section 4a).
 7. **Comparison table** where two real options differ (lean vs equipped kit, per visit vs seasonal).
 8. **Common mistakes** section.
 9. **Canada tax section** for income-producing hustles (T2125, CPP, GST/HST small supplier, ITCs, provincial rates),
@@ -229,6 +230,78 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
   if you do, use `/side-hustles/category/<slug>/`.
 - When you publish a new sibling, add a link to it from the existing posts in that cluster (CONTENT.md checklist item 9).
 - Related posts at the bottom are automatic (category + shared `tags`), so pick tags deliberately.
+
+---
+
+## 4a. Depth standard (how-to and pillar guides)
+
+Added 2026-10-09. Applies to every T01 beginner how-to (`<hustle>-side-hustle-canada`) and any pillar guide that a
+cluster links to. Reference implementation: `youtube-side-hustle-canada.mdx`.
+
+**Why this exists.** The "never invent numbers" rule (section 6) is right, but it drifted into hedging: posts refused
+to give earnings figures, named no products, and repeated "verify locally / not a quote" in every paragraph. The fix
+is **better sourcing, not more disclaimers**. A reader should finish a pillar guide with numbers, names, a plan and
+templates they can act on today, every one of them traceable to a page we opened.
+
+### The eight requirements
+
+1. **Real numbers with sources instead of refusals.**
+   - Give the published ranges that exist: platform docs (revenue shares, thresholds, fees), industry studies with a
+     stated method and sample (e.g. RPM by niche from a dataset of real dashboards), creator income reports verified
+     by a publication, and official Canadian sources (CRA, Statistics Canada, provinces).
+   - Name the metric precisely (RPM vs CPM, gross vs net, per view vs per 1,000 views) and the **currency** (USD vs
+     CAD). Convert USD with the Bank of Canada rate and its date, and say when Canadian-audience rates differ.
+   - Prices for named products come from a retailer or official page **fetched while writing**, stated with the date:
+     "Amazon.ca listed it at $59.99 on October 9, 2026." Dated shelf prices are allowed in tables and StarterKits as
+     long as the date is visible (table caption, `checked`, or a dated sentence) and the URL is in `sources`.
+   - Every source goes in `sources` front matter. Studies need publisher, date and sample size in the text.
+   - If a number genuinely isn't published, say so **once**, in one sentence, and point to where the reader can see
+     their own figure (e.g. YouTube Studio → Analytics → Revenue). Don't repeat the refusal elsewhere.
+2. **Specifics.**
+   - For each thing the reader needs to buy or choose, name **2–3 concrete products or tools**, each with who it suits
+     ("budget / phone-only", "wireless / walk-and-talk", "desk setup").
+   - Concrete idea lists: 15–20 niches, services, product ideas or client types that suit Canadians, each with a
+     one-line "why".
+   - Example titles, scripts, pitch emails, price sheets or listing templates the reader can copy.
+3. **A plan and workflows.** A week-by-week first 30 or 90 days (table or `### Weeks 1–2` H3s), the repeatable
+   workflow (e.g. script → film → edit → upload), and copyable checklists/templates in lists or fenced blocks.
+4. **Real examples.** 2–4 publicly documented operators who share income or growth numbers, Canadian first (say the
+   city/province when the source does). Non-Canadian examples are clearly labelled as such. Cite the article, give
+   its date, and report only what it says (including whose currency). **Never** fabricate anecdotes, composite
+   people, quotes or "a reader told us".
+5. **Worked math.** Show the formula and plug in sourced inputs ("20,000 views ÷ 1,000 × US$2.30 RPM = US$46").
+   Where any input is an assumption, label the block **Illustrative** and say which inputs are assumed. Prefer a small
+   scenario table (low / median / high input) over a single number.
+6. **Visual aids.** Comparison tables, `<ComparisonTable>` and `<StarterKit>` components, quick-facts and plan tables,
+   simple Markdown "charts" (ranked tables). No fake screenshots, mock dashboards or invented charts.
+7. **Hedging budget.** One concise caveat section near the end (e.g. "What should you keep in mind about these
+   numbers?") covering variability, dates and "not tax advice" context. Elsewhere, state facts plainly with their
+   source and date. Avoid repeating "verify locally", "not a quote", "confirm the live page" or "this is not a
+   forecast" in body paragraphs; a date on the number does that job. ("This is not tax, legal, or insurance
+   advice." still appears once in the tax section.)
+8. **Canadian angle.** CAD first (with USD where the source is USD), GST/HST and the $30,000 small-supplier test,
+   CRA forms (T2125, CPP), Canadian availability of each product or program (say plainly when a program isn't open
+   to Canadians), provincial notes (HST vs GST+PST, Quebec QST) where they change the answer.
+
+### Length and structure targets
+
+- **Length:** pillar guides usually land at **3,500–6,000 words** of body. Length follows substance; don't pad, but a
+  pillar under ~2,500 words almost always fails requirements 2–5.
+- **Top of post:** answer-first opening (2–3 sentences), then a `<QuickAnswer>` box with 4–5 bullets of the most
+  useful sourced facts (numbers, thresholds, costs), then sibling links and a quick-facts table.
+- **Body:** scannable question H2s (section 4), each opening with a 1–3 sentence standalone answer, followed by the
+  table / list / steps. Suggested order for a how-to pillar: how it pays → requirements → earnings data → worked
+  math → ideas list → gear/tools with prices → 30/90-day plan → workflow & templates → other income streams → real
+  examples → tax → starter kit → caveats → related guides → FAQ.
+- **FAQ:** 4–6 items (the component enforces this), answers consistent with the body and carrying the key numbers.
+
+### Depth self-check (run before opening the PR)
+
+- Could a reader act on this today without opening another site? If not, what's missing?
+- Is there any paragraph that refuses to give a number that a published source does give?
+- Does every product row name a real product with a dated price and who it suits?
+- Is every caveat in the one caveat section, rather than sprinkled through the body?
+- Does every number trace to a `sources` entry, and is every assumption labelled **Illustrative**?
 
 ---
 
@@ -347,8 +420,9 @@ import StarterKit from '../../components/StarterKit.astro';
   in the post's `sources`, and set `checked="<date>"` on the table.
 - Say whether a price is CAD or USD. Convert USD only with the Bank of Canada daily rate and its date.
 - If a page is geo-blocked, behind a login, or shows only "contact sales", write **"See current price"** or
-  **"See site"** — never a remembered or estimated figure. Amazon.ca shelf prices change daily: use "See current
-  price" in roundups.
+  **"See site"** — never a remembered or estimated figure. Amazon.ca and Best Buy shelf prices change often: either
+  use "See current price" or give the price you fetched **with its date** (in the table caption, `checked`, or the
+  sentence) and list the product page in `sources`. Pillar guides should prefer dated prices (section 4a).
 - Promotional/intro prices must be labelled as such ("intro price, renews higher — check the renewal rate").
 - Worked examples that combine prices (e.g. fees on a $100 sale) are labelled **Illustrative example**.
 
@@ -426,7 +500,8 @@ and a play button, then swaps in a `youtube-nocookie.com` iframe on click. Give 
 - [ ] File is `src/content/articles/<slug>.mdx`; slug is lowercase, hyphenated, ends in `-canada`, follows the sibling pattern.
 - [ ] Front matter: `title`, `description` (~150–160 chars), `pubDate`, `category` (one of the 9), `tags`, `sources`, **`sample: false`**, `featured: false` unless asked. No invented fields. A video uses only `youtubeId`, `youtubeUploadDate`, and `youtubeDuration`, and the embed id matches `youtubeId`.
 - [ ] Opening sentences answer the title and name Canada. H2s are questions with a short standalone answer; steps are H3s.
-- [ ] CAD figures are ranges or sourced; USD conversions cite the Bank of Canada rate and date; worked examples say **Illustrative**.
+- [ ] CAD figures are sourced and dated; USD conversions cite the Bank of Canada rate and date; worked examples show the formula and say **Illustrative** where inputs are assumed.
+- [ ] **Depth standard (how-to/pillar guides, section 4a):** sourced numbers instead of refusals (ranges by niche/segment, platform figures, dated product prices); 2–3 named products per need with who each suits; a 15–20 item ideas list; a week-by-week 30/90-day plan plus a workflow and copyable checklist/templates; 2–4 real, cited operator examples (Canadian first, non-Canadian labelled); worked math with formulas; tables/ComparisonTable/StarterKit; one caveat section near the end (no repeated "verify locally / not a quote"); Canadian angle (CAD, GST/HST, CRA, availability, provinces); QuickAnswer at the top; ~3,500–6,000 words.
 - [ ] Every rule/rate/fee links a primary source inline and is listed in `sources`. Every URL opened and checked.
 - [ ] Internal links end in `/` and point to slugs that exist; siblings are linked both ways; the cluster's existing posts link the new one.
 - [ ] Affiliate links only via `<AffiliateLink program="…">` with a valid program key; 1–3, placed at the decision point; no `<AffiliateDisclosure />` or `<AdSlot />` in the body.
