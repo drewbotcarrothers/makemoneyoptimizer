@@ -2,6 +2,8 @@
 title: "How to Plan Dog Walking Routes in Canada: Clusters, Group Sizes and Rules"
 description: "How to plan dog walking routes in Canada: clustering clients, time windows, solo vs group walks, leash and off-leash rules, dog walker permit limits, and a weekly log."
 pubDate: 2026-10-05
+updatedDate: 2026-10-09
+updateNote: "Upgraded with specific tools, sourced facts and templates"
 category: local-services
 tags: [local, local-services, pets, clients]
 featured: false
@@ -25,6 +27,12 @@ sources:
   - title: "Measure distance between points"
     url: "https://support.google.com/maps/answer/1628031?hl=en"
     publisher: "Google Maps Help"
+  - title: "How much does dog walking cost in Toronto?"
+    url: "https://www.rover.com/ca/blog/toronto-ca-dog-walking-price/"
+    publisher: "Rover"
+  - title: "Wages for pet groomers and animal care workers (NOC 65220)"
+    url: "https://www.jobbank.gc.ca/wagereport/occupation/14257"
+    publisher: "Job Bank, Government of Canada"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
@@ -51,6 +59,8 @@ It builds on the [dog walking side hustle guide](/side-hustles/dog-walking-side-
 | Group size | Toronto permit for 4 to 6 dogs | [Commercial dog walker permit](https://www.toronto.ca/services-payments/permits-licences-bylaws/commercial-dog-walker-permit/) |
 | Group size | Calgary permit for more than six off-leash dogs | [Calgary permits](https://www.calgary.ca/pets/permits.html) |
 | Regional parks | Metro Vancouver commercial permit | [Metro Vancouver](https://metrovancouver.org/services/regional-parks/commercial-use-dog-walking-permit) |
+| Going rate | Rover: Toronto average 30-minute walk $20.73, 60-minute $33.06 (September 2025 data) | [Rover Toronto prices](https://www.rover.com/ca/blog/toronto-ca-dog-walking-price/) |
+| Wage benchmark | Job Bank median $18.00/hour nationally, $20.00 in the Toronto region (NOC 65220) | [Job Bank](https://www.jobbank.gc.ca/wagereport/occupation/14257) |
 | Route length | Map measure tool | [Google Maps](https://support.google.com/maps/answer/1628031?hl=en) |
 
 ## How do you build a dog walking route in Canada?
@@ -77,7 +87,48 @@ Toronto's [responsible dog ownership page](https://www.toronto.ca/community-peop
 
 ### Illustrative example
 
-This is a teaching sketch, not a real route. Suppose you have six clients: four within a few blocks of each other and two across town. You'd build a midday route from the four, with two calm dogs walked together and two walked solo. The two far clients would move to a fixed day with a travel surcharge or be referred out. In Toronto, you'd stay at three dogs or fewer at once unless you held the commercial permit and its insurance.
+Suppose you have six clients: four within a few blocks of each other and two across town. You'd build a midday route from the four, with two calm dogs walked together and two walked solo. The two far clients would move to a fixed day with a travel surcharge or be referred out. In Toronto, you'd stay at three dogs or fewer at once unless you held the commercial permit and its insurance.
+
+### What clustering does to your hourly rate
+
+Using Rover's Toronto average of $20.73 for a 30-minute walk as the price, and assumed travel times (labelled **Illustrative**):
+
+| Route shape | Walks | Walking time | Travel between homes (assumed) | Revenue | Revenue per hour on the road |
+| --- | --- | --- | --- | --- | --- |
+| Clustered (4 homes within a few blocks) | 4 solo walks | 2.0 h | 0.4 h | 4 × $20.73 = $82.92 | $82.92 ÷ 2.4 h ≈ $34.55 |
+| Spread (4 homes across town) | 4 solo walks | 2.0 h | 1.6 h | $82.92 | $82.92 ÷ 3.6 h ≈ $23.03 |
+| Clustered pair walk (2 compatible dogs together) | 2 dogs, 1 walk + 2 solo | 1.5 h | 0.4 h | $82.92 | $82.92 ÷ 1.9 h ≈ $43.64 |
+
+The spread route is close to Job Bank's $20.00 Toronto-region median for animal care workers before any car costs; the clustered route is well above it. That gap is why the first rule of routing is to say no to far-off addresses or charge for the travel.
+
+## What templates can you copy for dog walking routes?
+
+**Route sheet (one per weekday)**
+
+```text
+Route: [Mon] midday window 11:00–14:00   Zone: [streets/postal codes]
+#  Client / dog      Address (no key label)  Key method    Walk   Group?  Notes
+1  [name]/[dog]      [street]                lockbox [code ref] 30 min  solo   reactive to bikes
+2  [name]/[dog]      [street]                owner home    30 min  pair w/3  no treats (allergy)
+3  ...
+Vet / emergency contacts in phone under "[Client] VET"
+End-of-route: text each owner "Walked [time], pee/poo, water topped up, door locked."
+```
+
+**Message to a client outside your zone**
+
+```text
+Thanks for reaching out! My regular route covers [area] on weekdays between
+11 and 2. [Your street] is outside it, so I can either add a $[x] travel
+fee per visit on [day], or refer you to [walker/app] who covers your area.
+```
+
+**Window clause for your service agreement**
+
+```text
+Walks happen within the agreed window ([11:00–14:00]), not at a fixed time.
+I'll text if I expect to be more than 30 minutes outside the window.
+```
 
 ## What mistakes do dog walkers make with routes in Canada?
 
@@ -89,6 +140,10 @@ This is a teaching sketch, not a real route. Suppose you have six clients: four 
 ## How do routes affect dog walking taxes in Canada?
 
 Dog walking income goes on Form T2125. Driving between clients can be a business expense if you keep a log; see the [mileage log guide](/side-hustles/mileage-log-cra-side-hustle-canada/). Permits and insurance are deductible business costs too; see [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/) and the free [side hustle tax checklist](/free-side-hustle-tax-checklist/). A <AffiliateLink program="amazon-ca" label="hands-free leash" search="hands free dog leash waist belt" /> makes multi-dog walks easier to manage. This is not tax, legal, or insurance advice.
+
+## What should you keep in mind about these numbers?
+
+Rover's averages are Toronto figures from September 2025 and include all walkers on the platform; your own rate depends on your area and experience. Travel times in the routing table are assumptions. City permit fees and fines are as published on the City of Toronto, Calgary and Metro Vancouver pages linked above on October 9, 2026, and other cities set their own rules.
 
 ## Which guides sit next to dog walking routes?
 
