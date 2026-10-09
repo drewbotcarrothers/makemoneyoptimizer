@@ -2,13 +2,43 @@
 title: "How to Start Freelance Writing in Canada (2026, $0 Setup)"
 description: "How to start freelance writing in Canada with the computer you already own: who it suits, a $0 first week, landing a first client, revision caps, and tax."
 pubDate: 2026-10-01
-updatedDate: 2026-10-07
-updateNote: "Added a starter kit and links to the new bookkeeping and bank account comparisons and buying guides"
+updatedDate: 2026-10-09
+updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
 category: online-freelancing
 tags: [online, writing, freelancing, remote]
 featured: false
 sample: false
 sources:
+  - title: "Wages: Writer (NOC 51111) in Canada"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/20925/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "What to Pay a Writer (rate guidelines, originally published by PWAC)"
+    url: "https://canadianfreelanceguild.ca/en/page/page-content/what-to-pay-a-writer"
+    publisher: "Canadian Freelance Guild"
+  - title: "What it's like to earn a living freelance writing in Canada"
+    url: "https://j-source.ca/what-its-like-to-earn-a-living-freelance-writing-in-canada/"
+    publisher: "J-Source (Lisa Coxon, October 11, 2018)"
+  - title: "Interview #23: How Kern Carter Makes Money Writing"
+    url: "https://howimakemoneywriting.substack.com/p/interview-22-how-kern-carter-makes"
+    publisher: "How I Make Money Writing (Hao Nguyen, June 19, 2025)"
+  - title: "Learn about the Freelancer Service Fee"
+    url: "https://support.upwork.com/hc/en-us/articles/211062538-Learn-about-the-Freelancer-Service-Fee"
+    publisher: "Upwork Help Center"
+  - title: "Your earnings page"
+    url: "https://help.fiverr.com/hc/en-us/articles/9234443621137-Your-Earnings-page"
+    publisher: "Fiverr Help Center"
+  - title: "The Short-Term Effects of Generative Artificial Intelligence on Employment: Evidence from an Online Labor Market (CESifo Working Paper 10601)"
+    url: "https://www.ifo.de/DocDL/cesifo1_wp10601.pdf"
+    publisher: "Hui, Reshef and Zhou, CESifo"
+  - title: "The Short-Term Effects of Generative Artificial Intelligence on Employment (Organization Science 35(6), 2024)"
+    url: "https://pubsonline.informs.org/doi/10.1287/orsc.2023.18441"
+    publisher: "INFORMS"
+  - title: "Grammarly plans"
+    url: "https://www.grammarly.com/plans"
+    publisher: "Grammarly"
+  - title: "Wave pricing"
+    url: "https://www.waveapps.com/pricing"
+    publisher: "Wave Financial"
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
     publisher: "Canada Revenue Agency"
@@ -24,9 +54,6 @@ sources:
   - title: "Contributions to the Canada Pension Plan"
     url: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html"
     publisher: "Government of Canada"
-  - title: "GST/HST for taxi and ride-sharing drivers"
-    url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html"
-    publisher: "Canada Revenue Agency"
   - title: "Copyright"
     url: "https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright"
     publisher: "Canadian Intellectual Property Office"
@@ -36,213 +63,384 @@ sources:
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 import StarterKit from '../../components/StarterKit.astro';
 
+Freelance writing in Canada means getting paid per word, per piece or per hour to write things businesses and publications need: blog posts, website pages, email newsletters, case studies, reports and articles. You can start with the computer you already own, a free word processor and two or three writing samples. Rates published by the Canadian Freelance Guild run from $0.10 a word at small community newspapers to $1 to $3 a word for business web writing, so what you earn depends far more on who you write for than on how fast you type.
+
 <QuickAnswer>
 
-- **What it is:** turning a client's brief into a draft they can edit, such as service pages or help text, ideally in a niche you already know.
-- **Cost to start:** $0 in week one if you already have a computer and internet; a headset (about $25–$80) can wait until client calls exist.
-- **Avoid the big mistake:** write the revision cap, date, price, and who owns the piece before the draft, not after the third round of edits.
-- **Next steps:** [your first freelance writing client](/side-hustles/freelance-writing-first-client-canada/), [freelance writing rates](/side-hustles/freelance-writing-pricing-canada/), and [Fiverr vs Upwork](/side-hustles/fiverr-vs-upwork-canada/) if you want a platform.
+- **Pay benchmark:** employed writers in Canada (NOC 51111) earn a median of $36.81 an hour, with a range of $25.48 to $53.00 (Job Bank, updated November 2025). Freelancers have no benefits, so they need to charge more than that for the same take-home pay.
+- **Published freelance rates (Canadian Freelance Guild guidelines):** business and website writing $1 to $3 a word or $60 to $100 an hour; newsletters $0.30 to $1.50 a word; trade magazines $0.30 to $2 a word; small community newspapers $0.10 to $0.50 a word.
+- **Platform cuts:** Upwork takes a 0% to 15% fee per contract. Fiverr pays sellers 80% of each order, including extras and tips.
+- **AI pressure is real:** a peer-reviewed study of an online labour market found freelancers in the most affected jobs lost 2% of monthly jobs and 5.2% of monthly earnings after ChatGPT's release. Generic blog filler is the work that is shrinking.
+- **Tax:** report income on Form T2125, pay 11.9% CPP on net self-employment earnings above $3,500, and register for GST/HST after $30,000 in taxable supplies.
 
 </QuickAnswer>
 
-Freelance writing in Canada is paid writing for a client who needs a defined piece: a service page, a help article, an email, or a short guide, delivered on a date you both wrote down. Freelance writing suits people who can explain a subject they already understand, revise without taking it personally, and finish when the calendar says so.
+This is the main freelance writing guide on the site. Itemized budgets are in [freelance writing startup costs](/side-hustles/freelance-writing-startup-costs-canada/), rate formulas are in [how to price freelance writing](/side-hustles/freelance-writing-pricing-canada/), the outreach scripts are in [how to land your first freelance writing client](/side-hustles/freelance-writing-first-client-canada/), and the full daily plan is in the [30-day freelance writing plan](/side-hustles/freelance-writing-30-day-plan-canada/). Before you start, skim [freelance writing mistakes](/side-hustles/freelance-writing-mistakes-canada/) and the [freelance writing tools guide](/side-hustles/freelance-writing-tools-canada/).
 
-The money, when writing pays, comes from a piece a business can publish, not from a mood and a blank page. People who do this well sell one kind of document to clients they can name. People who stall sell "I can write anything" and then wait for a stranger to invent the assignment.
+| Fact | Freelance writing in Canada (October 2026) |
+|---|---|
+| Startup cost | $0 if you already own a computer; free Google Docs and a free Wave invoicing plan cover the basics |
+| Employed writer median wage | $36.81/hour (Job Bank, NOC 51111) |
+| Business web writing rate guideline | $1 to $3 per word, or $60 to $100/hour (Canadian Freelance Guild) |
+| Upwork freelancer fee | 0% to 15% per contract, shown before you accept |
+| Fiverr payout | 80% of each order |
+| Time to first paid piece | Usually several weeks of outreach; there is no published average |
+| Tax forms | T2125, CPP on Schedule 8, GST/HST after $30,000 |
 
-| Fact | Detail for freelance writing in Canada |
-| --- | --- |
-| Useful scope | One document type for one kind of Canadian client |
-| Who it suits | People who can revise, hit a date, and explain a subject they know |
-| Starter stack | A computer you have, a sample, and an invoice tool once a client exists |
-| GST/HST | Small-supplier threshold of $30,000. [When to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
-| Copyright | Ownership should be in the contract. [CIPO copyright](https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright) |
-| Income record | [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) with the T1 |
+## Who freelance writing suits
 
-Live teaching of the same subject is [online tutoring](/side-hustles/online-tutoring-side-hustle-canada/). Ongoing inbox and scheduling work is [virtual assistant work](/side-hustles/virtual-assistant-side-hustle-canada/). Posting the client's social accounts on a schedule is [social media management](/side-hustles/social-media-manager-side-hustle-canada/).
+Freelance writing rewards people who already explain things well in writing and who can handle a slow, uneven start. It is a good fit if:
 
-## Who does freelance writing in Canada suit?
+- You can write clean, organized prose without a heavy edit, and you are comfortable being edited by someone else.
+- You know an industry well. Nurses, accountants, tradespeople, software workers and teachers can charge more because clients pay for accuracy, not just sentences.
+- You can tolerate waiting to get paid. In a J-Source survey of Canadian publications, most outlets paid freelancers 30 to 90 days after sign-off, and one writer reported waiting 18 months on a single invoice.
+- You are fine with sales. Most of the job at the start is pitching, following up and chasing invoices.
 
-Freelance writing in Canada suits people who can take a messy brief and return a draft a client can edit, in English or in French if that is the market. A niche you already know, such as local home services, clinic explainers, or software help text, makes the first pitch specific. Freelance writing is a poor fit if you need a paycheque on Friday, if feedback feels like an insult, or if you will not send the draft until it feels perfect.
+It is a poor fit if you need predictable weekly cash, or if you want to write only what interests you. Editorial journalism pays least. In the same J-Source piece, Toronto freelancer Renee Sylvestre-Williams explained that her better-paying ghostwriting, marketing and branded copy is what lets her take on editorial pieces that pay less.
 
-Generalists compete with everyone who owns a keyboard. A narrower offer is easier for a Canadian small business to buy: "service pages for house-cleaning companies" is a purchase. "Content" is a mood.
+If you prefer to stay off camera and off the phone, freelance writing is on our list of [side hustles for introverts](/side-hustles/side-hustles-for-introverts-canada/), and it needs no car, so it's also one of the [side hustles without a car](/side-hustles/side-hustles-without-a-car-canada/).
 
-Agencies and marketplaces exist. Their fees and rules change, and this guide does not state a marketplace percentage. Read the platform's own seller page before you rely on a cut you heard second-hand. Direct clients, people you can email because you understand their work, are the cleaner first path.
+## What freelance writers actually get paid in Canada
 
-## What does freelance writing cost to start in Canada?
+There is no current national survey of freelance writer income in Canada. The most recent large survey by the Professional Writers Association of Canada dates from 2006, so treat any "average freelancer income" figure you see online with caution. These are the best sources available as of October 2026.
 
-Freelance writing in Canada can start with a computer you already use and a sample you write on purpose. The ranges below are typical Canadian retail prices to verify locally. They are not quotes. Software subscriptions that you have not priced on the vendor's own page are not in the table. The itemized lean, typical, and fuller budget is in [freelance writing startup costs](/side-hustles/freelance-writing-startup-costs-canada/).
+### The employee benchmark
 
-| Item | Typical CAD range | How to think about it |
-| --- | --- | --- |
-| Computer and internet you already have | $0 in week one | Do not finance a laptop to "feel" like a writer. Replace a machine when it fails. |
-| Headset for client calls | $25–$80 | Useful once calls exist. Skip it if the first work is email only. |
-| A sample of 600–900 words | Your time | One finished sample beats a promise that samples are coming. |
-| Style reference | A public style guide, $0 | Pick one and follow it. Clients notice inconsistent commas more than they notice adjectives. |
-| Contract template you understand | $0 if you write a one-page note | Scope, rounds of edits, date, price, and who owns the piece. |
-| Invoice tool, once you have a client | Confirm the live price | A shared note holds one client. It will not hold a quarter. |
-| Separate account for deposits | $0 to open many accounts | A deposit is not spending money on the day it lands. |
+Job Bank's wage report for writers (NOC 51111), updated November 19, 2025 from 2023–24 Labour Force Survey data, shows:
 
-Write the sample before you subscribe to a stack of apps. When calls start, a <AffiliateLink program="amazon-ca" label="headset for client calls" search="USB headset microphone" /> is the gear purchase that changes the call, not a new desk.
+| Region | Low | Median | High |
+|---|---|---|---|
+| Canada | $25.48 | $36.81 | $53.00 |
+| Ontario | n/a | $40.38 | n/a |
+| Alberta | n/a | $38.56 | n/a |
+| British Columbia | n/a | $36.44 | n/a |
+| Quebec | n/a | $36.00 | n/a |
+| Nova Scotia | n/a | $33.00 | n/a |
 
-A client who pays needs an invoice with a date, a description, and a total. <AffiliateLink program="freshbooks" label="FreshBooks" /> is built for that kind of freelance admin. Use it when the second invoice would otherwise live in a screenshot.
+The same report says 91.8% of employed writers get benefits. As a freelancer, you pay your own CPP at double the employee rate, buy your own software and take no paid vacation, so a freelance rate equal to the employee median leaves you worse off.
 
-Put the deposit in an account you will not mix with groceries. <AffiliateLink program="koho" label="KOHO" /> is one Canadian option for keeping writing income visible until the tax set-aside and the next slow month are real.
+### Published freelance rate guidelines
 
-## How much can freelance writing earn in Canada?
+The Canadian Freelance Guild republishes rate guidelines first published by the Professional Writers Association of Canada, built from fee information from members. They are guidelines, not a survey of what beginners actually get, but they show the spread across markets:
 
-Freelance writing earnings in Canada cannot be promised as a per-word rate, because a 400-word local service page and a technical article with interviews are different jobs. What you keep depends on the list below, and this guide does not publish a national writing rate.
+| Type of work | Per word | Per piece or project | Per hour |
+|---|---|---|---|
+| Online / website writing ("business" sites pay higher) | $1 to $3 | n/a | $60 to $100 |
+| Corporate writing, reports, marketing plans, technical writing | $1 to $2 | $300 to $12,000 | $50 to $125 |
+| Advertorials | $0.40 to $2 | $100 to $3,000 | $40 to $100 |
+| Newsletters (writing only) | $0.30 to $1.50 | $400 to $6,000 per issue | $50 to $80 |
+| Advertising copy, scripts, news releases | n/a | $350 to $500 per page; $750 to $1,000 per brochure | $75 to $150 |
+| General interest / consumer magazines | $1 to $2 | $500 to $10,000 | n/a |
+| Trade / special interest magazines | $0.30 to $2 | $500 to $4,000 | n/a |
+| Large daily newspapers | $0.30 to $1 | $250 to $2,500 | n/a |
+| Small community newspapers | $0.10 to $0.50 | $75 to $1,000 | n/a |
+| Editing | n/a | $500 to $20,000 | $30 to $60 |
+| Speech writing | n/a | $500 to $8,000 per speech | $60 to $130 |
+| Ghostwriting books | n/a | $10,000 to $50,000 flat fee | n/a |
 
-- How specific the offer is, and whether the client already has a budget
-- Rounds of edits you included, and the round you did for free
-- Research time you forgot to price
-- Late payment and the follow-up you postponed
-- Marketplace fees, if you used a marketplace, on that marketplace's page
-- The week you said yes to three deadlines and missed two
-- Scope that grew in a chat message and never hit the invoice
+Two lessons jump out. Business clients pay several times what publications pay, and ghostwritten articles are usually priced at two to three times the normal rate, according to the same guidelines.
 
-Price a piece, not a feeling. A number you copy from a foreign job board ignores Canadian small-business budgets. Ask what the client last paid, or offer a small paid test with a word cap. Unpaid "exposure" is a gift. Call it a gift if you choose it, and cap the length.
+### What Canadian publications reported paying
 
-## What would an assumed freelance writing project earn in Canada?
+When J-Source surveyed Canadian outlets, only six gave hard numbers. Rates ranged from 10 cents a word (Maisonneuve) to 50 cents a word (Up Here). Reader's Digest's online rate was 40 cents a word. The Deep paid 40 cents a word for the first 4,000 words and 25 cents after. Today's Parent paid $100 to $2,500 per story. That survey is from 2018, so use it as a sense of the market's shape, not current rates.
 
-An assumed freelance writing project in Canada, in the sketch below, uses a fee this guide does not claim is typical. The sketch is not a quote, a forecast, or a survey of Canadian rates.
+### Platform fees
 
-**Illustrative example.** Suppose a local business asks for one service page and you assume a project fee of $200, which is an assumption for the arithmetic, not a market rate. Suppose the work takes four hours including one revision. The sketch is $200 ÷ 4 = $50 an hour before tax set-aside. Suppose week-one gear is $0 because you already have a computer, so the $200 is not reduced by a laptop. A headset at the low end of the $25–$80 line would make the first-project sketch $175 if you bought it in the same week. A platform fee is not in these figures. If you are registered for GST/HST, the $200 may need tax on top, which is the client's tax, not extra profit. These totals are assumptions, not a quote, a forecast, or a typical result.
+- **Upwork:** a Freelancer Service Fee of 0% to 15% per contract. The fee is shown in the offer or your proposal and stays fixed once the contract starts. Upwork's own example is billing $22.22 an hour at a 10% fee to net $20. Direct Contracts carry a reduced fee.
+- **Fiverr:** you earn 80% of the purchase amount on every completed order, including Gig Extras and tips. Fiverr also asks Canadian sellers to complete a tax compliance form. Early Payout costs 1% if you're eligible.
 
-## How do you start freelance writing in Canada?
+For a side-by-side of both marketplaces, see [Fiverr vs Upwork for Canadians](/side-hustles/fiverr-vs-upwork-canada/) and our [Upwork review](/side-hustles/upwork-review-canada/). If you're deciding between platforms and direct outreach, see [Upwork vs LinkedIn for finding clients](/side-hustles/upwork-vs-linkedin-finding-clients-canada/).
 
-Starting freelance writing in Canada means picking one document, writing a sample, and sending it to people who already have that problem. The steps below are that sequence.
+## Real Canadian freelance writers
 
-### Step 1: Pick the document and the client
+These are people who have described their work publicly. Their results are not typical or guaranteed, but they show how the work actually builds.
 
-Choose one pair: service pages for trades, onboarding emails for a software tool you use, or explainers for a clinic topic you understand. Write it down in one sentence. If you cannot name ten businesses that need that sentence, the niche is still a costume.
+- **Kern Carter (Toronto), author and ghostwriter.** In a June 2025 interview with *How I Make Money Writing*, Carter said his first paid gig was $50 to write a bio for a local Toronto rapper. Eleven years in, he reported earnings of $80,000 to $140,000 a year, mostly from ghostwriting, and said he earns up to $25,000 per ghostwriting project. He expected book advances and royalties from deals with Penguin and Scholastic to overtake ghostwriting.
+- **Eva Holland (Yukon), magazine writer.** Holland told J-Source she made a point of no longer chasing $100 stories that took as much effort as bigger ones, because "a small cheque took just as long to show up in the mailbox as a big one." She said it took her 10 years to reach close to a middle-class income.
+- **Renee Sylvestre-Williams, freelancer for over 10 years.** Also quoted by J-Source, she mixes editorial work with ghostwriting, marketing and branded copy, asks international clients to cover wire fees, and once waited 18 months for payment. Her line to new freelancers: "Freelancing is a business, not a hobby."
+- **Lisa Coxon, the J-Source reporter.** After a 2017 layoff, Coxon freelanced full time for nearly nine months, relying on EI and part-time technical editing, before taking a salaried job. She wrote that a couple of hundred dollars arriving every few weeks might have kept her freelancing.
 
-### Step 2: Write one sample in that niche
+The pattern: the writers who last specialize, chase business and ghostwriting work that pays well, and treat invoicing and cash flow as part of the job.
 
-Six hundred to nine hundred words, with a headline a client could publish. Use public information and say what you assumed. Do not invent a testimonial, a statistic, or a quote from a customer. The sample is proof you can finish, not proof the business said those things.
+## How AI changed the market
 
-### Step 3: Write a one-page agreement
+Freelance writing changed after November 2022. Researchers Xiang Hui, Oren Reshef and Luofeng Zhou studied an online freelance platform and found that freelancers in occupations most affected by ChatGPT, writing among them, saw a 2% drop in monthly jobs and a 5.2% drop in monthly earnings compared with less affected freelancers. They also found that top-rated freelancers were not protected. The peer-reviewed version appeared in *Organization Science* in 2024.
 
-Include the deliverable, the length, the number of revision rounds, the date, the price, how you get paid, and what happens if the client goes quiet. Add a line on copyright: who may publish the piece, and whether you may show it as a sample. The Canadian Intellectual Property Office explains [copyright](https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright) in plain language. Payment alone is a poor substitute for a sentence about ownership. This is not legal advice.
+In practice, that means:
 
-### Step 4: List fifteen real businesses
+- Cheap, generic blog posts are the most exposed work. A client who used to pay $50 for a 1,000-word "10 tips" post can now draft it in seconds.
+- Work that needs interviews, original reporting, subject expertise, a brand voice, accountability, or a writer who knows Canadian rules (tax, health, finance, law) holds up better.
+- Clients increasingly hire writers to edit, fact-check and shape AI drafts. Price this as editing or strategy, not as "cheap writing."
 
-Use businesses you can describe without a template. Local cleaners, tutors, shops, and clinics are enough. Note the page that is missing or thin. You are looking for a gap, not for a stranger to pity you.
+The full picture is in [AI side hustles: hype vs real](/side-hustles/ai-side-hustles-hype-vs-real-canada/).
 
-### Step 5: Send ten short notes
+## 18 freelance writing services you can sell
 
-Three to five sentences: the gap, the sample, the price range or a paid test, and a question. If the note is a commercial electronic message, Canada's anti-spam law applies. Read [Canada's anti-spam legislation](https://ised-isde.canada.ca/site/canada-anti-spam-legislation/en) before you buy a list or scrape addresses. A note to someone you know, or a public contact form the business invited, is a different posture from a purchased list.
+Pick one or two to start. Clients hire specialists, so "I write case studies for Canadian SaaS companies" lands better than "I write anything."
 
-### Step 6: Do one paid test with a cap
+1. **Blog posts for a niche you know** such as accounting, trades, health or software. Charge per piece, not per word, once you know your speed.
+2. **Website page copy** (home, about, service pages) for small local businesses.
+3. **Case studies** built from a customer interview. These need a phone call, which AI cannot do for the client.
+4. **Email newsletters** written monthly for a business. Newsletters are recurring work; the guideline range is $400 to $6,000 per issue. Pair it with our [newsletter guide](/side-hustles/newsletter-side-hustle-canada/).
+5. **LinkedIn ghostwriting** for founders and consultants.
+6. **Ghostwritten articles** under a client's name, usually priced at two to three times normal rates.
+7. **Product descriptions** for e-commerce stores, sold in batches.
+8. **Grant and funding application drafts** for non-profits and small firms (you write, they submit).
+9. **Press releases** for local events, openings and launches.
+10. **White papers and reports** for B2B companies; corporate writing guidelines go up to $12,000 per project.
+11. **Technical documentation** such as user guides, help articles and SOPs.
+12. **Speech writing** for weddings, retirements and executives.
+13. **Resume and LinkedIn profile writing** for job seekers.
+14. **Local-business content** such as Google Business Profile posts and service-area pages. This overlaps with [local SEO](/side-hustles/local-seo-side-hustle-canada/).
+15. **French–English bilingual copy**, if you are fluent in both. See the [freelance translation guide](/side-hustles/freelance-translation-side-hustle-canada/).
+16. **Magazine and trade publication articles**: lower pay, but bylines build credibility.
+17. **Editing and AI-draft cleanup**, priced hourly.
+18. **Book ghostwriting or memoir projects** once you have a track record. Carter reported up to $25,000 per project, and the guidelines list $10,000 to $50,000 flat fees.
 
-A single page, one revision, a date. Deliver early enough that the client can react. Send the invoice the day you deliver, not at the end of a vague month.
+If you want to own the content instead of selling it, see [SEO blogging](/side-hustles/seo-blogging-side-hustle-canada/), [ebook publishing](/side-hustles/ebook-publishing-side-hustle-canada/), [printables](/side-hustles/printables-side-hustle-canada/) or [Notion templates](/side-hustles/notion-templates-side-hustle-canada/). There's also a local, in-person version of this business in [ghostwriting for local clients](/side-hustles/ghostwriting-local-side-hustle-canada/), and more ideas in [side hustles for writers](/side-hustles/side-hustles-for-writers-canada/).
 
-### Step 7: Log the hours honestly
+## Tools you need (and what they cost)
 
-Include research, the call, the draft, and the revision. If the hourly sketch is below what you need, the next price changes or the scope shrinks. Do not hide the hours from yourself.
+You can start for $0. Buy tools only when a client or a recurring task justifies them.
 
-### Step 8: Ask for the next piece or a referral
+<ComparisonTable
+  caption="Writing and grammar checking: three common options"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Google Docs",
+      href: "https://docs.google.com/",
+      bestFor: "Drafting and sharing with clients who comment in suggestion mode",
+      pricing: "Free with a Google account",
+      canada: "Works the same in Canada; many clients expect a Docs link",
+      pros: ["Free", "Version history and suggestion mode", "Easy to share"],
+      cons: ["Basic grammar checking only"],
+    },
+    {
+      name: "Grammarly",
+      program: "grammarly",
+      bestFor: "Catching typos and tone issues before you send work",
+      pricing: "Free plan; Pro listed at US$12 on Grammarly's plans page",
+      pricingUrl: "https://www.grammarly.com/plans",
+      canada: "Web, desktop and browser-extension versions",
+      pros: ["Free tier covers spelling and grammar", "Pro adds rewrites and plagiarism checks"],
+      cons: ["Pro is billed in US dollars", "Suggestions can flatten your voice"],
+    },
+    {
+      name: "Hemingway Editor",
+      href: "https://hemingwayapp.com/",
+      bestFor: "Shortening long sentences and spotting passive voice",
+      pricing: "See current price",
+      pricingUrl: "https://hemingwayapp.com/",
+      canada: "Web-based, works anywhere",
+      pros: ["Highlights long, hard-to-read sentences", "Fast to use"],
+      cons: ["Readability scores are a guide, not a rule"],
+    },
+  ]}
+/>
 
-One sentence, after the client has the draft. A referral from a business that liked the page is worth more than a new profile on a site you do not control.
+For invoicing, Wave's Starter plan lets you create unlimited estimates and invoices, and its Pro plan is listed at $25 CAD a month. Wave's online card payments cost 2.9% + $0.60 per transaction on Starter. FreshBooks and QuickBooks are the other two common choices, compared in [FreshBooks vs Wave vs QuickBooks](/side-hustles/freshbooks-vs-wave-vs-quickbooks-canada/).
 
-### Step 9: Review after three paid pieces
+A headset matters once you start doing client calls and interviews. A basic <AffiliateLink program="amazon-ca" label="USB headset microphone" search="USB headset microphone" /> is enough for calls. You don't need a podcast mic.
 
-Keep the niche if the edits were about facts. Change the niche if every client wanted a different product. Raise the price on new clients when the log says the hours no longer fit. Honour the written price for the client who already agreed.
+## Your launch plan: the first 30 days
 
-## What should the first week of freelance writing in Canada include?
+This is the short version. The day-by-day plan is in the [30-day freelance writing plan](/side-hustles/freelance-writing-30-day-plan-canada/).
 
-The first week of freelance writing in Canada should produce a niche sentence, one sample, a one-page agreement, and ten notes. A paid project is a bonus, not the requirement for the week.
+### Week 1: pick a niche and build samples
 
-- **Day 1:** Write the niche sentence. List fifteen businesses with a visible gap.
-- **Day 2:** Draft the sample. Cut anything you cannot source.
-- **Day 3:** Write the one-page agreement, including ownership and revision rounds.
-- **Day 4:** Edit the sample once. Read it aloud.
-- **Day 5:** Send five notes. Keep a list of who received them.
-- **Day 6:** Send five more, or follow up if someone asked a question. Do not rewrite the offer for each silence.
-- **Day 7:** If someone says yes, book the date and send the agreement before you start. If nobody has replied, improve the sample, not the font.
+- Choose one industry you know and one or two services from the list above.
+- Write three samples aimed at that niche: one blog post of 800 to 1,200 words, one short case study or website page, and one newsletter or LinkedIn post.
+- Publish them somewhere you control, such as a free Google Docs link, a one-page portfolio site, or a LinkedIn article.
+- Set your floor rate using the formula in the pricing section below.
 
-## What freelance writing mistakes are common in Canada?
+### Week 2: set up the business side
 
-Common freelance writing mistakes in Canada are selling every format at once, inventing facts to sound expert, and doing extra rounds because saying no feels rude. One document type is enough until someone pays for a second.
+- Open a separate account for writing income. Options are compared in [KOHO vs Wealthsimple vs EQ Bank](/side-hustles/koho-vs-wealthsimple-vs-eq-bank-side-hustle-canada/).
+- Create a Wave or FreshBooks account and a basic invoice template.
+- Write a one-page contract with scope, revision limit, payment terms and rights (template below).
+- Build a list of 50 target businesses or editors in your niche.
 
-For the copyright, GST/HST, and tax mistakes writers make most, and how to fix them, see the [freelance writing mistakes guide](/side-hustles/freelance-writing-mistakes-canada/).
+### Week 3: pitch every weekday
 
-Invented statistics, fake reviews, and borrowed paragraphs are how a client gets a complaint and you get a bill for a rewrite. If a number is not in a source the client can open, leave it out or label it as the client's own figure.
+- Send 5 to 10 personalized pitches a day using the templates below. Keep each one under 150 words.
+- Apply to 3 to 5 relevant Upwork jobs a day if you're using a marketplace.
+- Track every pitch in a spreadsheet: name, date, offer, follow-up date, result.
 
-Working without a revision cap turns a $200 page into a weekend. The second round can be paid. Write that before the draft, not after the third round of "small tweaks."
+### Week 4: follow up and deliver
 
-A marketplace profile with no sample is a wish. The sample comes first. The profile, if you use one, repeats the same niche sentence.
+- Follow up once on every pitch after 5 to 7 business days.
+- If a client says yes, deliver early and ask for a testimonial and a referral.
+- Review: which pitch got replies? Double down on that niche and angle.
 
-## Which tax rules apply to freelance writing in Canada?
+### Days 31 to 90
 
-Freelance writing income in Canada is self-employment income, including a deposit, reported on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and self-employed people pay the whole [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contribution on the net. GST/HST for freelance writing follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html), not the [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) rule. Nova Scotia's HST is 14% as of 1 April 2025 on the CRA [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) table, and Quebec charges GST and QST.
+| Weeks | Focus | Target |
+|---|---|---|
+| 5–6 | Keep pitching; add one new sample from real client work (with permission) | 2 to 3 paid pieces total |
+| 7–8 | Offer a monthly package to your best client (for example, four posts a month) | First recurring client |
+| 9–10 | Raise your rate for every new client by 10% to 20% | Fewer, better clients |
+| 11–12 | Drop the lowest-paying work; set aside tax money monthly | Clear view of hourly earnings |
 
-This is not tax, legal, or insurance advice. Where the fees go on Form T2125, including the June 15 filing date and the April 30 payment date for the 2025 return, is in [how to report side hustle income to the CRA](/side-hustles/report-side-hustle-income-cra-canada/). A workspace at home has a separate limit in [home office expenses for side hustlers](/side-hustles/home-office-expenses-side-hustle-canada/).
+## Pitch templates you can copy
 
-Keep the agreements, the drafts you were paid for, and the e-transfers. Report writing on Form T2125 with the T1. An agency may send a T4A. Your own record still matters. The small-supplier test is worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Add tutoring, virtual-assistant, and other side-hustle revenue to the same pot. Under that test, registration is usually optional. Over it, you register on the timetable on the CRA's when-to-register page. Freelance writing is not ride-sharing, so the first-dollar rule on the taxi page does not apply unless you also carry passengers for a platform.
+Cold emailing businesses in Canada falls under Canada's anti-spam legislation (CASL). Commercial emails generally need consent, and there are limited exceptions. Read [cold email and CASL](/side-hustles/cold-email-lead-generation-casl-canada/) before you send bulk outreach. Always identify yourself, include contact information and offer a way to opt out.
 
-Once registered, charge the rate for the province where the supply is made. Some provinces use HST. Others add PST on top of GST. Confirm Quebec and every other province on the charge-and-collect table and with the [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html), and set the tax aside.
+**Pitch to a business (short email or LinkedIn message):**
 
-Copyright sits beside the invoice. CIPO's [copyright](https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/copyright) pages are the place to read how protection works in Canada, including the general term of protection. Put ownership in the contract so you and the client are not guessing after the piece is live. If you email prospects, keep [Canada's anti-spam legislation](https://ised-isde.canada.ca/site/canada-anti-spam-legislation/en) in the same folder as the pitch list. The version of that work you can sell, and the lists you should refuse, is [cold email and lead generation under CASL](/side-hustles/cold-email-lead-generation-casl-canada/).
+> Subject: Case study idea for [Company]
+>
+> Hi [Name],
+>
+> I noticed [Company] has [specific thing: a new service page, no customer stories, a blog last updated in 2024]. I write [service] for [niche] companies, and I'd like to turn one happy customer into a 1,000-word case study you can use on your site and in sales emails.
+>
+> Here's a sample: [link]. My rate for a case study, including one customer interview and two rounds of revisions, is $[X].
+>
+> Would a quick call next week make sense? If this isn't relevant, reply "no thanks" and I won't follow up.
+>
+> [Your name] · [City, province] · [email] · [portfolio link]
 
-## What should a freelance writing starter kit include?
+**Pitch to an editor (publication):**
 
-Start with what you already own and add the rest as paid work comes in. These are the tools and services worth comparing first.
+> Subject: Pitch: [Working headline]
+>
+> Hi [Editor name],
+>
+> [One-sentence hook with a fact or news peg.] I'd like to write a [word count]-word piece for [section] on [topic], drawing on interviews with [types of sources] and [data source].
+>
+> Why me: [one line on your expertise or access]. Recent work: [two links].
+>
+> Thanks for considering it,
+> [Your name]
+
+**Follow-up (5 to 7 business days later):**
+
+> Hi [Name], following up on my note from [day] about [offer]. Happy to send a shorter version or a different angle if that's more useful. Thanks, [Name]
+
+More scripts are in [how to land your first freelance writing client](/side-hustles/freelance-writing-first-client-canada/).
+
+## Your client workflow
+
+Use the same workflow for every job so nothing gets missed:
+
+1. **Discovery:** confirm the goal, audience, word count, deadline, sources, and who approves the final draft.
+2. **Quote and contract:** send a fixed price with scope, revision limit, deposit and rights.
+3. **Deposit:** ask new clients for 50% up front on anything over a few hundred dollars.
+4. **Outline:** send a short outline for approval before you draft. This prevents most rewrites.
+5. **Draft:** write in Google Docs and share with comment or suggestion access.
+6. **Revisions:** include two rounds; quote extra rounds hourly.
+7. **Invoice:** send it the day the client approves, with payment terms (for example, net 15).
+8. **Follow up:** ask for a testimonial and a referral, and add the piece to your portfolio if allowed.
+
+### Contract checklist
+
+- [ ] Scope: deliverable, word count range, number of interviews, sources
+- [ ] Deadline for first draft and for client feedback
+- [ ] Revisions: two rounds included, then $[X]/hour
+- [ ] Price, deposit, payment terms, late fee
+- [ ] Kill fee if the client cancels after work starts (for example, 50%)
+- [ ] Rights: what the client gets and when (usually on full payment)
+- [ ] Byline or ghostwritten, and portfolio permission
+- [ ] Who supplies images, and AI-use expectations
+
+On rights: under Canadian copyright law, the author of a work is generally its first owner unless the work is made in the course of employment, so as a freelancer you usually own what you write until you assign or license it. Spell out in writing what the client gets. The Canadian Intellectual Property Office has a plain-language overview.
+
+## Setting your rate: a worked example
+
+**Illustrative example.** Say you aim to earn the employee median of $36.81 an hour in take-home value, and you can bill 60% of your working hours (the rest goes to pitching, admin and invoicing; this percentage is an assumption, not a published figure).
+
+| Step | Calculation | Result |
+|---|---|---|
+| Target value per working hour | Job Bank median | $36.81 |
+| Add CPP gap: you pay both halves (11.9% vs 5.95%) | $36.81 × 1.0595 | $39.00 |
+| Adjust for 60% billable time | $39.00 ÷ 0.60 | $65.00 per billable hour |
+| If you use Upwork at a 10% fee | $65.00 ÷ 0.90 | $72.22 per hour billed |
+| If you sell on Fiverr (you keep 80%) | $65.00 ÷ 0.80 | $81.25 per hour of work priced in |
+
+That $65 an hour falls within the $60 to $100 an hour guideline for business website writing. Then convert hourly to per-piece prices. If a 1,000-word blog post takes you four hours from outline to final, your floor is about $260. Raise it if the client needs interviews, subject expertise or fast turnaround.
+
+**Illustrative side-hustle month.** If you sell eight posts a month at $260 each, that's $2,080 in revenue. On Upwork at a 10% fee, you'd keep $1,872 before income tax and CPP. Expenses like Grammarly Pro and a Wave Pro plan would reduce your taxable profit.
+
+Full pricing frameworks are in [how to price freelance writing](/side-hustles/freelance-writing-pricing-canada/), and the budget is in [freelance writing startup costs](/side-hustles/freelance-writing-startup-costs-canada/).
 
 <StarterKit
   label="Starter kit: freelance writing"
   items={[
-    { name: "Wave", use: "Invoicing and bookkeeping on a budget", cost: "Free plan available", program: "wave", linkLabel: "See Wave" },
-    { name: "FreshBooks", use: "Invoicing, expenses and time tracking", program: "freshbooks", linkLabel: "See FreshBooks" },
-    { name: "EQ Bank", use: "A separate account for your tax set-aside", program: "eq-bank", linkLabel: "See EQ Bank" },
-    { name: "Grammarly", use: "Proofreading before you deliver", program: "grammarly", linkLabel: "See Grammarly", optional: true },
+    { name: "Google Docs", use: "Drafting, comments and client sharing", cost: "Free", href: "https://docs.google.com/" },
+    { name: "Grammarly", use: "Spelling, grammar and tone checks", cost: "Free; Pro listed at US$12", costUrl: "https://www.grammarly.com/plans", program: "grammarly", linkLabel: "See Grammarly", optional: true },
+    { name: "Wave", use: "Unlimited invoices and estimates", cost: "Starter plan; Pro $25 CAD/month", costUrl: "https://www.waveapps.com/pricing", program: "wave", linkLabel: "See Wave" },
+    { name: "FreshBooks", use: "Invoicing, time tracking and expenses if you want more features", program: "freshbooks", linkLabel: "See FreshBooks", optional: true },
+    { name: "USB headset microphone", use: "Client calls and recorded interviews", program: "amazon-ca", linkLabel: "See USB headsets", search: "USB headset microphone", optional: true },
+    { name: "Separate account for writing income", use: "Keep client payments and tax savings apart", program: "koho", linkLabel: "See KOHO", optional: true },
   ]}
 />
 
-For side-by-side detail, see [FreshBooks vs Wave vs QuickBooks](/side-hustles/freshbooks-vs-wave-vs-quickbooks-canada/) and [KOHO vs Wealthsimple vs EQ Bank](/side-hustles/koho-vs-wealthsimple-vs-eq-bank-side-hustle-canada/).
+## Taxes for freelance writers in Canada
 
-## Which side hustles sit near freelance writing in Canada?
+Freelance writing income is self-employment income. The essentials, current to October 2026:
 
-Writing needs no travel at all, so it also appears in [side hustles without a car in Canada](/side-hustles/side-hustles-without-a-car-canada/) and [side hustles for introverts in Canada](/side-hustles/side-hustles-for-introverts-canada/).
+- **Income tax:** report revenue and expenses on [Form T2125](/side-hustles/report-side-hustle-income-cra-canada/). Platform payouts from Upwork or Fiverr count, even if paid in US dollars.
+- **CPP:** you pay both the employee and employer share, 11.9% of net self-employment earnings between $3,500 and $74,600 in 2026. Quebec residents pay into the QPP instead.
+- **GST/HST:** you're a small supplier until your worldwide taxable supplies pass $30,000 in a single calendar quarter or over four consecutive quarters. After that, you must register and charge GST/HST. Services supplied to clients outside Canada may qualify as zero-rated exports, so check CRA's rules before you invoice foreign clients.
+- **Rates depend on where your client is:** for example, 13% HST in Ontario, 14% HST in Nova Scotia since April 1, 2025, and 5% GST plus provincial sales tax rules in provinces like Manitoba and B.C. Use CRA's GST/HST calculator page for current rates.
+- **Deductions:** software subscriptions, a share of home office costs, internet, a portion of your phone, and platform fees. Rules and limits are explained in [home office expenses for side hustles](/side-hustles/home-office-expenses-side-hustle-canada/).
 
-Freelance writing in Canada sits next to other ways of selling an explanation. [Online tutoring](/side-hustles/online-tutoring-side-hustle-canada/) is the live version. [Virtual assistant work](/side-hustles/virtual-assistant-side-hustle-canada/) is the ongoing admin version. [Social media management](/side-hustles/social-media-manager-side-hustle-canada/) is the version with a posting calendar. Businesses that need their Google listing cleaned up, rather than a blog post, are a [local SEO](/side-hustles/local-seo-side-hustle-canada/) client. If you would rather sell a file than a draft, [Notion templates](/side-hustles/notion-templates-side-hustle-canada/) are a product, not a client. A page you own and publish on a schedule is an [SEO blog](/side-hustles/seo-blogging-side-hustle-canada/). The same subject as an email, sent only to people who opted in, is a [newsletter](/side-hustles/newsletter-side-hustle-canada/). The first paid page is a separate job from the setup: [how to get your first freelance writing client in Canada](/side-hustles/freelance-writing-first-client-canada/).
+Set money aside from every payment until you know your real tax bill; [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/) walks through the math.
 
-Rates, pricing models, and a labelled price sheet are in [how much to charge for freelance writing in Canada](/side-hustles/freelance-writing-pricing-canada/).
+## Provincial notes
 
-A one-page PDF is [printables](/side-hustles/printables-side-hustle-canada/), and a short public guide is an [ebook](/side-hustles/ebook-publishing-side-hustle-canada/). The picture on the page, sold to one business, is [graphic design freelancing](/side-hustles/graphic-design-side-hustle-canada/). Adult conversation lessons are [teaching English online](/side-hustles/teach-english-online-side-hustle-canada/).
+- **Quebec:** QPP replaces CPP, and you'll deal with Revenu Québec for QST once registered. French-language work is a real niche here.
+- **Ontario:** highest Job Bank median for writers ($40.38), and the largest concentration of agencies and head offices in Toronto.
+- **Alberta and B.C.:** medians of $38.56 and $36.44. Energy, tech and tourism companies hire B2B writers.
+- **Atlantic Canada:** Nova Scotia's median is $33.00. Most clients can be anywhere in Canada, so you aren't limited to local rates.
+- **The territories:** Yukon-based Eva Holland built a national print career, which shows location matters less than the client list.
 
-Considering a marketplace? Compare [Fiverr vs Upwork for Canadian freelancers](/side-hustles/fiverr-vs-upwork-canada/). The [Upwork review for Canadian freelancers](/side-hustles/upwork-review-canada/) covers fees and CAD payouts in detail.
+## What to watch out for
 
-Bilingual writers can also offer [freelance translation](/side-hustles/freelance-translation-side-hustle-canada/); writers who like audio can look at [podcast editing](/side-hustles/podcast-editing-side-hustle-canada/).
+Freelance writing has real downsides you should plan for.
 
-A speech, resume, or letter for someone in your city, with a deposit before the draft, is [local speech and resume writing](/side-hustles/ghostwriting-local-side-hustle-canada/).
+- **Late and slow payments.** J-Source found most Canadian outlets paid 30 to 90 days after sign-off. Ask for deposits, use clear payment terms and invoice the same day you deliver.
+- **Low-paying work crowds out better work.** Like Holland, set a floor rate and stop taking jobs below it.
+- **AI is shrinking the bottom of the market.** Generic content is the most exposed. Specialize, offer interviews or reporting, and sell editing and strategy.
+- **Platform dependence.** Upwork and Fiverr fees, rules and algorithms can change. Build direct clients and a referral base alongside any marketplace.
+- **Scope creep.** "One more round" turns a $260 post into a $20-an-hour job. Your contract's revision limit protects your rate.
+- **Currency swings.** US clients pay in US dollars and wire fees can eat into payments. Holland noted a $15 flat fee for wire transfers in 2018; check your own bank's current fees.
 
-To put these steps on a calendar, follow the [freelance writing 30-day launch plan](/side-hustles/freelance-writing-30-day-plan-canada/), which runs week by week and day by day.
+## Related guides
+
+- [Freelance writing startup costs](/side-hustles/freelance-writing-startup-costs-canada/)
+- [How to price freelance writing](/side-hustles/freelance-writing-pricing-canada/)
+- [Land your first freelance writing client](/side-hustles/freelance-writing-first-client-canada/)
+- [The 30-day freelance writing plan](/side-hustles/freelance-writing-30-day-plan-canada/)
+- [Freelance writing mistakes](/side-hustles/freelance-writing-mistakes-canada/)
+- [Virtual assistant side hustle](/side-hustles/virtual-assistant-side-hustle-canada/), [social media manager](/side-hustles/social-media-manager-side-hustle-canada/), [graphic design](/side-hustles/graphic-design-side-hustle-canada/), [podcast editing](/side-hustles/podcast-editing-side-hustle-canada/), [online tutoring](/side-hustles/online-tutoring-side-hustle-canada/) and [teaching English online](/side-hustles/teach-english-online-side-hustle-canada/), if you want to add a second skill
 
 <Faq
   items={[
     {
-      question: "Do I need a portfolio to start freelance writing in Canada?",
-      answer: "You need one finished sample in the niche you are selling. A long portfolio of unrelated posts is less useful than a single page a Canadian business could publish. Write the sample before you wait for a client to provide the first idea.",
+      question: "How much do freelance writers make in Canada?",
+      answer: "There is no current national survey of freelance writer income. Employed writers earn a median of $36.81 an hour (Job Bank, NOC 51111, updated November 2025). Canadian Freelance Guild rate guidelines put business website writing at $1 to $3 a word or $60 to $100 an hour, while small community newspapers pay $0.10 to $0.50 a word. Toronto ghostwriter Kern Carter reported $80,000 to $140,000 a year after 11 years.",
     },
     {
-      question: "Who owns a freelance article in Canada after the client pays?",
-      answer: "Put ownership in the contract. The Canadian Intellectual Property Office explains copyright, and payment alone is a weak substitute for a written line about who may publish the piece and whether you may show it as a sample. This is not legal advice.",
+      question: "Can I start freelance writing with no experience?",
+      answer: "Yes, but you need samples. Write three pieces aimed at the niche you want to work in, publish them where clients can see them, and pitch businesses directly. Subject knowledge from a previous job counts as experience to many clients.",
     },
     {
-      question: "Should Canadian freelance writers use a marketplace?",
-      answer: "A marketplace can introduce clients and will publish its own fee. Read that page. Direct notes to businesses whose sites you can actually describe are a cleaner first month, because you can see the gap you are offering to fill.",
+      question: "Is freelance writing still worth it with AI?",
+      answer: "It is harder at the low end. A peer-reviewed study found freelancers in the most affected occupations saw a 2% drop in monthly jobs and a 5.2% drop in monthly earnings after ChatGPT's release. Work that needs interviews, expertise, original reporting or editing holds up better than generic blog posts.",
     },
     {
-      question: "How many revisions should a writing project include?",
-      answer: "Write the number before the draft. One included round is enough for a small page. Further rounds can be a new line on the invoice. Unlimited tweaks turn a defined piece into an open-ended job.",
+      question: "Do freelance writers need to charge GST/HST?",
+      answer: "Only once you stop being a small supplier, meaning your worldwide taxable supplies pass $30,000 in a single calendar quarter or over four consecutive quarters. You can register voluntarily before that. Services to clients outside Canada may qualify as zero-rated exports.",
     },
     {
-      question: "When do freelance writing earnings in Canada trigger GST/HST?",
-      answer: "Freelance writing in Canada follows the CRA small-supplier test of $30,000 in worldwide taxable supplies in a quarter or over four consecutive quarters, including other side hustles. It is not the taxi and ride-sharing first-dollar rule. This is not tax advice.",
+      question: "What does Upwork or Fiverr take from Canadian writers?",
+      answer: "Upwork charges a Freelancer Service Fee of 0% to 15% per contract, shown before you accept and fixed for the contract. Fiverr pays sellers 80% of each order, including extras and tips.",
     },
   ]}
 />
