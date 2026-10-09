@@ -1,7 +1,9 @@
 ---
 title: "How to Price Print-on-Demand Products in Canada (2026 Pricing Guide)"
-description: "How to price print-on-demand products in Canada: Printful base prices and add-on fees, sales tax on Canadian orders, Etsy fees, and a labelled CAD margin sheet."
+description: "Print-on-demand pricing in Canada for 2026: Printful tee, hoodie and mug costs in CAD, Canada shipping rates, what Canadian brands charge, Etsy and Shopify fees, a price formula, worked examples and templates."
 pubDate: 2026-10-04
+updatedDate: 2026-10-09
+updateNote: "Upgraded with sourced local prices, worked quotes and templates"
 category: reselling-ecommerce
 tags: [online, ecommerce, print-on-demand, design, pricing]
 featured: false
@@ -10,12 +12,30 @@ sources:
   - title: "Printful pricing"
     url: "https://www.printful.com/pricing"
     publisher: "Printful"
+  - title: "Shipping speeds and pricing"
+    url: "https://www.printful.com/shipping"
+    publisher: "Printful"
+  - title: "Product catalogue: Unisex Staple T-Shirt, Bella + Canvas 3001"
+    url: "https://api.printful.com/products/71"
+    publisher: "Printful"
+  - title: "Product catalogue: Unisex Heavy Blend Hoodie, Gildan 18500"
+    url: "https://api.printful.com/products/146"
+    publisher: "Printful"
+  - title: "Product catalogue: White Glossy Mug"
+    url: "https://api.printful.com/products/19"
+    publisher: "Printful"
   - title: "Print on Demand Canada"
     url: "https://www.printful.com/print-on-demand-canada"
     publisher: "Printful"
   - title: "How does sales tax work for my Canadian orders?"
     url: "https://help.printful.com/hc/en-us/articles/360017039060-How-does-sales-tax-work-for-my-Canadian-orders"
     publisher: "Printful"
+  - title: "Printify pricing"
+    url: "https://printify.com/pricing/"
+    publisher: "Printify"
+  - title: "Shopify pricing (Canada)"
+    url: "https://www.shopify.com/ca/pricing"
+    publisher: "Shopify"
   - title: "What are the Fees and Taxes for Selling on Etsy?"
     url: "https://help.etsy.com/hc/en-us/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy"
     publisher: "Etsy"
@@ -25,6 +45,24 @@ sources:
   - title: "What is a Regulatory Operating Fee?"
     url: "https://help.etsy.com/hc/en-us/articles/1500011073202-What-is-a-Regulatory-Operating-Fee"
     publisher: "Etsy"
+  - title: "Winter Tracks T-Shirt"
+    url: "https://www.tentree.ca/products/winter-tracks-t-shirt-shadow-pale-oak"
+    publisher: "tentree"
+  - title: "Mountainscape Hoodie"
+    url: "https://www.tentree.ca/products/mountainscape-hoodie-cider-white-oak"
+    publisher: "tentree"
+  - title: "Canada Tee Red - Unisex"
+    url: "https://provinceofcanada.com/products/canada-tee-red-unisex"
+    publisher: "Province of Canada"
+  - title: "Merry Sweatshirt Red - Unisex"
+    url: "https://provinceofcanada.com/products/merry-sweatshirt-red-unisex"
+    publisher: "Province of Canada"
+  - title: "Essential Relaxed Tee"
+    url: "https://www.frankandoak.com/products/mens-knit-t-shirt-black-2mkt0031fe-bla"
+    publisher: "Frank And Oak"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
     publisher: "Canada Revenue Agency"
@@ -40,134 +78,219 @@ import AffiliateLink from '../../components/AffiliateLink.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 
+A print-on-demand price in Canada has to cover the provider's product price, shipping, the sales tax the provider charges you and your store's fees. On October 9, 2026, Printful's catalogue listed a Bella + Canvas 3001 tee at US$11.92 (about $16.97), and its shipping page charged C$11.29 to send one shirt within Canada. Add 13% HST in Ontario and the tee costs you $31.93 delivered before you've sold it. Canadian brands set the ceiling: Frank And Oak's tees were $39 and $45, tentree's graphic tees $45 and Province of Canada's Canada Tee $58. Sold at $45 on Shopify Basic, that Printful tee leaves $11.51; on Etsy, $8.04.
+
 <QuickAnswer>
 
-- **Short answer:** your retail price has to cover the print provider's product price, shipping, the sales tax the provider charges you, and your sales channel's fees, with a margin left over.
-- **Provider costs:** Printful's base price covers the blank, one print placement, and fulfilment; extra placements, labels, and embroidery digitization cost more, and shipping and tax are separate.
-- **Canada detail:** Printful charges Canadian sales tax on (product price + shipping) for orders fulfilled and shipped within Canada, at the destination province's rate.
-- **Next step:** design and setup are in the [print-on-demand side hustle guide](/side-hustles/print-on-demand-side-hustle-canada/).
+- **Printful costs (Oct 9, 2026):** tee US$11.92 (about $16.97), Gildan hoodie US$22.63 ($32.23), 11 oz mug US$6.75 ($9.61). Shipping in Canada: shirts C$11.29, hoodies C$13.99, 11 oz mugs C$10.29.
+- **Provider tax:** Printful charges Canadian sales tax on product + shipping at the destination province's rate.
+- **Formula:** price = (product + shipping + provider tax + fixed fees) ÷ (1 − channel % − target margin).
+- **Canadian anchors:** tees $39–$70, hoodies $88–$160 at Frank And Oak, tentree and Province of Canada.
+- **Rough result:** a Printful tee needs about $45 and a hoodie about $75 for a 25–32% margin on Shopify.
 
 </QuickAnswer>
 
-Pricing print-on-demand products in Canada means starting from what the print provider charges you per order (product, extras, shipping, and sales tax), adding your sales channel's fees, and then setting a retail price that leaves a margin you choose on purpose. You never hold inventory, so there is no stock to clear, but every order carries the full provider cost. This guide suits designers who will open the provider's catalogue and price one real product before they list ten.
-
 How to set up is in the [print-on-demand side hustle guide](/side-hustles/print-on-demand-side-hustle-canada/). Samples and software are in [print-on-demand startup costs](/side-hustles/print-on-demand-startup-costs-canada/). Getting the first order is in [your first print-on-demand sale](/side-hustles/print-on-demand-first-sale-canada/).
 
-## What does a print-on-demand provider charge in Canada?
+| Quick facts | Figure |
+| --- | --- |
+| Monthly fee | $0 on Printful's and Printify's free plans |
+| Cheapest tee in the examples | Bella + Canvas 3001, US$11.92 (S–XL) |
+| Shipping one shirt within Canada | C$11.29, +C$2.50 each extra (Printful) |
+| Etsy percentage fees | 10% of the order, plus CA$0.25 and US$0.20 |
+| Shopify Basic online card rate | 2.8% + 30¢ |
+| Exchange rate used | 1.4240 CAD per USD (Bank of Canada, Oct 8, 2026) |
 
-A print-on-demand provider charges a product price per item, extra fees for options such as additional print areas or labels, shipping, and sales tax. Printful is used as the example below because it publishes its pricing rules and has a Canadian fulfilment centre; other providers publish their own terms.
+## What does Printful charge for products in Canada?
 
-| Cost line | What Printful's pages say | Source |
-| --- | --- | --- |
-| Monthly fee | Free plan with no monthly fee; an optional paid Growth plan discounts product prices | [Printful pricing](https://www.printful.com/pricing) |
-| Product base price | Covers the blank product, one print or embroidery placement, and fulfilment; listed per product in the catalogue | [Printful pricing](https://www.printful.com/pricing) |
-| Add-ons | Inside label $0.99, outside label $2.49, embroidery digitization $2.95–$6.50 per design (one time), extra embroidery placement $2.95 | [Printful pricing](https://www.printful.com/pricing) |
-| Shipping | Depends on product, order size, and destination | [Printful pricing](https://www.printful.com/pricing) |
-| Canadian sales tax | Charged on (Printful price + shipping) at the destination province's rate for orders fulfilled and shipped within Canada | [Printful sales tax help](https://help.printful.com/hc/en-us/articles/360017039060-How-does-sales-tax-work-for-my-Canadian-orders) |
-| Customs | Printful says its Ontario fulfilment centre means no surprise customs or duty fees for orders fulfilled there | [Printful Canada](https://www.printful.com/print-on-demand-canada) |
+Printful's catalogue lists base prices in US dollars. These were the catalogue prices on October 9, 2026, converted at the Bank of Canada's [1.4240 rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) for October 8. The base price covers the blank, one print placement and fulfilment.
 
-Printful's pricing page does not state a currency beside every add-on fee. Check the currency your dashboard shows before you copy a number into a price sheet.
+| Product | Sizes | USD | About CAD |
+| --- | --- | --- | --- |
+| [Unisex Staple Tee, Bella + Canvas 3001](https://api.printful.com/products/71) | S–XL / 2XL / 3XL | $11.92 / $13.92 / $15.92 | $16.97 / $19.82 / $22.67 |
+| [Unisex Heavy Blend Hoodie, Gildan 18500](https://api.printful.com/products/146) | S–XL / 2XL | $22.63 / $24.63 | $32.23 / $35.07 |
+| Unisex Premium Pullover Hoodie, Cotton Heritage M2580 | S–XL | $27.84 | $39.64 |
+| [White Glossy Mug](https://api.printful.com/products/19) | 11 oz / 15 oz / 20 oz | $6.75 / $8.95 / $11.50 | $9.61 / $12.74 / $16.38 |
 
-## Which pricing approaches work for print-on-demand in Canada?
+Extras on [Printful's pricing page](https://www.printful.com/pricing): inside label $0.99, outside label $2.49, embroidery digitization $2.95 to $6.50 once per design, and $2.95 for an extra embroidery placement. The optional Growth plan is US$24.99 a month (about $35.59), free once you reach US$12,000 a year in sales, and takes up to 33% off products. Your dashboard shows the price for your account and region, so copy that into your sheet.
 
-Most print-on-demand sellers in Canada price from cost plus a target margin, then check the result against similar designs on the same platform. The sales channel matters because marketplace fees are a percentage of the whole order.
+[Printify](https://printify.com/pricing/) is free for up to 5 stores; Premium is US$39 a month, or US$24.99 billed yearly, for up to 20% off all products. Its pricing page example is a tee with an $8.77 fulfilment cost that "earns over $11" at $19.99, before shipping, taxes and store fees. Those three costs are why real Canadian margins are smaller. The [Printful vs Printify comparison](/side-hustles/printful-vs-printify-canada/) covers the two in more detail.
+
+## What does print-on-demand shipping cost in Canada?
+
+[Printful's shipping page](https://www.printful.com/shipping) listed these flat rates in Canadian dollars on October 9, 2026:
+
+| Category | Within Canada, first item | Each extra item | To the USA, first item |
+| --- | --- | --- | --- |
+| Shirts (tees, tanks, long sleeves) | C$11.29 | +C$2.50 | C$6.99 |
+| Hoodies, sweatshirts, joggers | C$13.99 | +C$3.00 | C$12.19 |
+| White or black mugs, 11 oz | C$10.29 | +C$6.00 | C$8.39 |
+| White or black mugs, 15 oz | C$11.09 | +C$6.60 | C$9.29 |
+
+Shipping a shirt within Canada costs more than shipping it to the US. Printful says its Ontario facility means [no surprise customs or duty fees](https://www.printful.com/print-on-demand-canada) for orders fulfilled there; check where each product is made before promising that.
+
+## What do Canadian brands charge for tees, hoodies and mugs?
+
+Your buyer compares a printed tee with Canadian brands. List prices on each brand's store, October 9, 2026:
+
+| Brand | Tees | Hoodies and sweatshirts | Other |
+| --- | --- | --- | --- |
+| [Frank And Oak](https://www.frankandoak.com/products/mens-knit-t-shirt-black-2mkt0031fe-bla) | $39 (Essential Slim), $45 (Essential Relaxed) | $105 (Quarter Zip Hoodie) | Free shipping over $99 |
+| [tentree](https://www.tentree.ca/products/winter-tracks-t-shirt-shadow-pale-oak) | $45 (graphic tees) | [$88](https://www.tentree.ca/products/mountainscape-hoodie-cider-white-oak) (Mountainscape), $98 (Howson) | Hats $45 |
+| [Province of Canada](https://provinceofcanada.com/products/canada-tee-red-unisex) | $46 (Monday), $58 (Canada Tee), $70 (CFL x The Tragically Hip) | [$134](https://provinceofcanada.com/products/merry-sweatshirt-red-unisex) (Merry Sweatshirt), $160 (CFL hoodie) | Free shipping over $100 |
+
+These brands make their own garments, so they're a guide to what Canadian shoppers will pay, not to your costs. A printed Gildan hoodie priced at $75 sits below tentree's $88; a tee at $45 matches tentree's graphic tees.
+
+## Which pricing approaches work for print-on-demand?
 
 | Approach | How it works | Works well for | Watch out for |
 | --- | --- | --- | --- |
-| Target margin | Price so a set share of the sale is left after all costs | Most products | Confusing margin with markup |
-| Free shipping built in | Shipping folded into the retail price | Apparel to Canadian buyers | Heavy items or far destinations |
+| Target margin | Price so a set share of the sale is left after all costs | Every product, as a floor | Confusing margin with markup |
+| Free shipping built in | Shipping folded into the price | Tees to Canadian buyers | Mugs: C$10.29 shipping on a $9.61 product |
 | Premium design tier | Higher price for detailed or limited designs | Artwork with a following | Same blank, same cost: the premium is the design |
-| Bundle | Two items, one shipment | Stickers, cards, mugs | Provider ships separately in some cases |
+| Bundle | Two items, one shipment | Mugs and tees (extra item ships for C$2.50–C$6.00) | Items from different facilities ship separately |
+| Size pricing | Higher price on 2XL and up | Tees and hoodies | Forgetting the US$2–$4 size upcharge |
 
-## How do you calculate a print-on-demand price in Canada?
+## How do you calculate a print-on-demand price?
 
-Calculate a print-on-demand price in Canada by adding the provider's product price, extras, shipping, and the tax it charges you, then dividing by one minus your channel's percentage fees and your target margin. Then round.
+```text
+Provider cost = product (USD × exchange rate) + shipping
+Provider tax  = provider cost × province rate (a cost if you're not registered)
+Delivered cost = provider cost + provider tax
+Price         = (delivered cost + fixed fees) ÷ (1 − channel % − target margin)
+```
 
-### Step 1: Price one real product in the catalogue
+1. **Price the real product** in your dashboard with the print areas you need.
+2. **Add shipping** to your main destination province.
+3. **Add the provider's sales tax.** Printful charges it on product plus shipping for orders fulfilled and shipped within Canada, per its [sales tax help page](https://help.printful.com/hc/en-us/articles/360017039060-How-does-sales-tax-work-for-my-Canadian-orders). If you're GST/HST registered you may claim [input tax credits](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html) on it.
+4. **Add channel fees.** Etsy charges a Canadian seller a [6.5% transaction fee](https://help.etsy.com/hc/en-us/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy), [3% + CA$0.25 processing](https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy) on Canadian and US orders, and a [0.50% Regulatory Operating fee](https://help.etsy.com/hc/en-us/articles/1500011073202-What-is-a-Regulatory-Operating-Fee): 10% plus $0.25 and a US$0.20 listing fee (about $0.28). [Shopify Basic](https://www.shopify.com/ca/pricing) charges 2.8% + 30¢ on online cards.
+5. **Solve for price,** round, and check it against the Canadian anchors.
 
-Open the product you will sell, choose the print areas you need, and note the price your dashboard shows.
+## What do worked print-on-demand examples look like?
 
-### Step 2: Add shipping and extras
+**Illustrative.** Provider prices, shipping, fees and the exchange rate are published (October 9, 2026); the retail prices and target margins are choices. Each example assumes you're not GST/HST registered, so the provider's tax is a cost.
 
-Add the shipping rate to your main destination province, plus labels or extra placements.
+### Example 1: Printful tee on Shopify to Ontario
 
-### Step 3: Account for the sales tax the provider charges
+- Product $16.97 + shipping $11.29 = $28.26. HST 13%: $3.67. Delivered cost **$31.93**.
+- Price $45, free shipping. Card fee 2.8% × $45 + $0.30 = $1.56.
+- Profit $45 − $31.93 − $1.56 = **$11.51**, a 25.6% margin.
 
-Printful charges Canadian sales tax on product plus shipping. If you are not GST/HST registered, that tax is a cost. If you are registered, you may be able to claim [input tax credits](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html) for the GST/HST portion.
+### Example 2: The same tee on Etsy
 
-### Step 4: Add your channel's fees
+- Delivered cost $31.93. Price $45.
+- Etsy fees: 10% × $45 = $4.50, plus $0.25 and $0.28 = $5.03.
+- Profit **$8.04** (17.9%). If the sale came through Offsite Ads at 15% ($6.75), you keep $1.29.
 
-On Etsy, a Canadian seller pays a [6.5% transaction fee](https://help.etsy.com/hc/en-us/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy), [3% + CA$0.25 processing](https://help.etsy.com/hc/en-us/articles/115015628847-What-are-Payment-Processing-Fees-for-Selling-on-Etsy) on domestic and US orders, and a [0.50% Regulatory Operating fee](https://help.etsy.com/hc/en-us/articles/1500011073202-What-is-a-Regulatory-Operating-Fee): 10% of the order, plus fixed amounts. Your own store has its own plan and card fees.
+### Example 3: Gildan hoodie on Shopify to Alberta, 30% margin
 
-### Step 5: Solve for price with a target margin
+- Product $32.23 + shipping $13.99 = $46.22. GST 5%: $2.31. Delivered cost **$48.53**.
+- Price = ($48.53 + $0.30) ÷ (1 − 0.028 − 0.30) = $48.83 ÷ 0.672 = $72.66. Round to $75.
+- At $75: card fee $2.40, profit **$24.07**, a 32.1% margin. tentree's Mountainscape Hoodie is $88.
 
-Price = total cost ÷ (1 − fee percentage − target margin). Margin is profit as a share of the price, not a markup on cost.
+### Example 4: Mugs on Etsy to Ontario, single and pair
 
-### Illustrative example
+- One 11 oz mug: $9.61 + $10.29 = $19.90, HST $2.59, delivered **$22.49**. At $32, Etsy fees $3.73, profit $5.78 (18.1%).
+- A second mug in the same order: $9.61 + $6.00 extra shipping = $15.61, HST $2.03. Pair delivered cost $40.13.
+- Sell the pair at $58: fees $5.80 + $0.53 = $6.33, profit **$11.54** (19.9%), double a single sale.
 
-This is a teaching sketch with assumed numbers, not a quote, average, or survey. Suppose a T-shirt's product price is $17.00 and shipping to Ontario is $6.00, a $23.00 provider subtotal. At Ontario's 13% HST, as listed on Printful's tax page, the tax charged to you is $2.99, so your provider cost is $25.99 if you are not registered.
+## What does a print-on-demand margin sheet look like?
 
-You sell on Etsy with free shipping and want a 25% margin. Price = ($25.99 + $0.25 + $0.28 listing) ÷ (1 − 0.10 − 0.25) = $26.52 ÷ 0.65 = $40.80, which you might round to $41.
+From the examples, not before ads, shown as **illustrative** (Ontario HST unless noted):
 
-Check at $41: Etsy percentage fees are 10% × $41 = $4.10, plus $0.25 and $0.28, so $4.63. You keep $41 − $4.63 − $25.99 = $10.38, about 25% of the price. If the sale came through Etsy Offsite Ads at 15%, another $6.15 comes off and you keep $4.23. This sketch ignores sales tax collected from the buyer.
+| Product | Channel | Delivered cost | Price | Fees | Profit | Margin |
+| --- | --- | --- | --- | --- | --- | --- |
+| Tee | Shopify Basic | $31.93 | $45 | $1.56 | $11.51 | 25.6% |
+| Tee | Etsy | $31.93 | $45 | $5.03 | $8.04 | 17.9% |
+| Hoodie (Alberta, 5% GST) | Shopify Basic | $48.53 | $75 | $2.40 | $24.07 | 32.1% |
+| Mug, single | Etsy | $22.49 | $32 | $3.73 | $5.78 | 18.1% |
+| Mug pair | Etsy | $40.13 | $58 | $6.33 | $11.54 | 19.9% |
 
-## What does a sample print-on-demand margin sheet look like in Canada?
+Hoodies earn the most per sale and single mugs the least, because the mug's shipping costs more than the mug.
 
-A print-on-demand margin sheet in Canada lists provider cost, retail price, channel fees, and profit per item. The table is an **illustrative example** with assumed provider prices, Ontario HST charged by the provider, Etsy fees, and free shipping, not a market average.
+## Which templates help price print-on-demand?
 
-| Product (illustrative) | Provider + shipping + tax | Retail price | Etsy fees | Profit | Margin |
-| --- | --- | --- | --- | --- | --- |
-| T-shirt | $25.99 | $41 | $4.63 | $10.38 | 25% |
-| Mug | $20.34 | $33 | $3.83 | $8.83 | 27% |
-| Hoodie | $45.20 | $69 | $7.43 | $16.37 | 24% |
+A per-product costing card:
 
-Rows assume product + shipping of $18.00 (mug) and $40.00 (hoodie), with 13% HST added. Swap in the numbers your dashboard shows.
+```text
+POD COSTING — [design] on [blank]               Updated: [date]
+Provider price (US$[11.92] × [1.4240]) ......... $[16.97]
+Extra print area / label ....................... $[0.00]
+Shipping to [ON], first item ................... $[11.29]
+Provider tax ([13]%) ........................... $[3.67]
+Delivered cost ................................. $[31.93]
+Channel fees at price ($[45]) .................. $[1.56]
+Profit / margin ................................ $[11.51] / [25.6]%
+2XL+ surcharge ................................. +$[2.85] per size step
+```
 
-## When should you raise print-on-demand prices in Canada?
+A quote for a custom group order, such as shirts for a club:
 
-Raise print-on-demand prices in Canada when the provider changes product or shipping prices, when you add a second print area, or when a channel's fees go up. Re-run the margin formula after any change to the provider's catalogue.
+```text
+CUSTOM PRINT QUOTE — [club]                      Date: [date]
+[20] × printed tee, front design ....... [20] × $[38.00] = $[760.00]
+Design setup ........................................ $[50.00]
+Shipping to one address ...................... included
+2XL and up ........................... +$[3.00] each
+Subtotal ............................................ $[810.00]
+GST/HST (registered only) ........................... $[ ]
+Payment in full before production. Delivery [x] business days after approval.
+```
 
-Raising prices on a design that sells steadily is usually safer than cutting them on one that does not. A design that does not sell at a fair margin may need new photos or a new audience, not a lower price.
+## How do you raise print-on-demand prices?
 
-## What print-on-demand pricing mistakes are common in Canada?
+1. **Re-run the sheet when the provider changes prices** or the US dollar moves. At 1.4240, each US$1 of product cost is $1.42.
+2. **Charge more for 2XL and up.** Printful's tee costs US$2 more at 2XL and US$4 more at 3XL.
+3. **Add a print area as a premium version** priced for the extra cost, not a free upgrade.
+4. **Use bundles** where the second item ships cheaply: +C$2.50 for a second shirt.
+5. **Consider Printful Growth** once sales near US$12,000 a year, when it becomes free.
+6. **Raise prices on designs that sell,** not on the whole catalogue at once. The wording for repeat buyers is in [how to raise side hustle rates](/side-hustles/how-to-raise-side-hustle-rates-canada/).
 
-Common print-on-demand pricing mistakes in Canada are forgetting the sales tax the provider charges, confusing markup with margin, and ignoring channel fees on shipping. Each one turns a sale into a near-zero payout.
+## What print-on-demand pricing mistakes are common?
 
-Do not price from a US calculator that skips Canadian tax. Do not assume every product ships from the Ontario facility; check where your product is fulfilled before promising delivery dates or no duties. Order a sample before you set a premium price. Use only artwork you own or licence; see the [print-on-demand guide](/side-hustles/print-on-demand-side-hustle-canada/).
+- **Forgetting the provider's sales tax.** It's $3.67 on a $45 tee in Ontario.
+- **Copying US calculators.** Printful shipping is C$11.29 within Canada but C$6.99 to the US.
+- **Free shipping on single mugs.** Shipping is more than the mug.
+- **Pricing on Etsy like Shopify.** The same $45 tee earns $3.47 less on Etsy.
+- **Selling artwork you don't own.** Use only designs you made or licensed; see the [print-on-demand guide](/side-hustles/print-on-demand-side-hustle-canada/).
 
-## How do GST/HST and income tax affect print-on-demand prices in Canada?
+## How do GST/HST and income tax affect print-on-demand prices?
 
-Print-on-demand income in Canada is self-employment income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html). GST/HST registration is required once taxable supplies pass the [$30,000 small-supplier threshold](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) in a calendar quarter or over four consecutive quarters, across all your businesses.
+Print-on-demand income is self-employment income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html). GST/HST registration is required once taxable supplies pass the [$30,000 small-supplier threshold](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) in a calendar quarter or over four consecutive quarters, across all your businesses.
 
-Once registered, Printful's help page says you can add your GST/HST number in its dashboard, and you may claim input tax credits on the GST/HST you paid. How tax is collected from buyers depends on the channel; on Etsy, see the [Etsy pricing guide](/side-hustles/etsy-shop-pricing-canada/). If you sell from your own site, <AffiliateLink program="printful" label="Printful" /> is one provider that connects to <AffiliateLink program="shopify" label="Shopify" />; compare at least two providers' catalogue prices before choosing.
+Once registered, Printful's help page says you can add your GST/HST number in its dashboard, and you may claim input tax credits on the GST/HST you paid, which turns the provider tax in the examples back into a credit. How tax is collected from buyers depends on the channel; on Etsy, see the [Etsy pricing guide](/side-hustles/etsy-shop-pricing-canada/). If you sell from your own site, <AffiliateLink program="printful" label="Printful" /> is one provider that connects to <AffiliateLink program="shopify" label="Shopify" />; compare at least two providers' catalogue prices before choosing.
 
 This is not tax, legal, or insurance advice.
 
-## Which guides sit next to print-on-demand pricing in Canada?
+## What should you keep in mind about these numbers?
 
-Print-on-demand pricing in Canada sits beside [Etsy shop pricing](/side-hustles/etsy-shop-pricing-canada/) for the marketplace fees, [Shopify store pricing](/side-hustles/shopify-store-pricing-canada/) for your own store, and [graphic design pricing](/side-hustles/graphic-design-pricing-canada/) if you also design for clients.
+Printful catalogue prices, shipping rates, Etsy and Shopify fees and the brand prices were on each company's page on October 9, 2026. Printful's catalogue prices are in US dollars and converted at the Bank of Canada's October 8 rate; your dashboard price can differ by plan and region. Printify's $8.77 example is Printify's own. Canadian brands' prices are retail list prices for their own garments, a guide to buyer expectations rather than to your costs. Retail prices, margins and the custom quotes are illustrative.
+
+## Which guides sit next to print-on-demand pricing?
+
+Print-on-demand pricing sits beside [Shopify store pricing](/side-hustles/shopify-store-pricing-canada/) for your own store, [Etsy shop pricing](/side-hustles/etsy-shop-pricing-canada/) for marketplace fees, [Printful vs Printify](/side-hustles/printful-vs-printify-canada/) for the provider choice, and [graphic design pricing](/side-hustles/graphic-design-pricing-canada/) if you also design for clients.
 
 <Faq
   items={[
     {
-      question: "How much should I charge for print-on-demand products in Canada?",
-      answer: "There is no set price. Add the provider's product price, extras, shipping, and the sales tax it charges you, then divide by one minus your channel's fees and your target margin. Check the result against similar designs on the same platform.",
+      question: "How much should I charge for a print-on-demand T-shirt in Canada?",
+      answer: "About $45 for a basic Printful tee. On October 9, 2026, a Bella + Canvas 3001 cost US$11.92 (about $16.97) plus C$11.29 shipping within Canada and 13% HST in Ontario, $31.93 delivered. At $45 on Shopify Basic you keep $11.51; Canadian brands like tentree sell graphic tees at $45.",
+    },
+    {
+      question: "How much does Printful charge to ship within Canada?",
+      answer: "Printful's shipping page listed C$11.29 for the first shirt and C$2.50 for each extra, C$13.99 for a hoodie plus C$3.00, and C$10.29 for an 11 oz mug plus C$6.00, on October 9, 2026.",
     },
     {
       question: "Does Printful charge sales tax on Canadian orders?",
-      answer: "Printful's help page says orders fulfilled and shipped within Canada are subject to Canadian sales tax, calculated on the Printful price plus shipping at the destination province's rate. GST/HST registrants can add their number in the Printful dashboard.",
+      answer: "Printful's help page says orders fulfilled and shipped within Canada are charged Canadian sales tax on the Printful price plus shipping at the destination province's rate. GST/HST registrants can add their number in the dashboard and may claim input tax credits.",
+    },
+    {
+      question: "Is print-on-demand more profitable on Etsy or Shopify?",
+      answer: "Per sale, Shopify keeps more: Etsy takes 10% plus $0.53 in fixed fees, against 2.8% plus 30 cents on Shopify Basic. A $45 tee leaves $8.04 on Etsy and $11.51 on Shopify, but Shopify has a monthly plan fee and you bring your own traffic.",
     },
     {
       question: "What is the difference between margin and markup?",
-      answer: "Margin is profit as a share of the selling price. Markup is profit as a share of cost. A $10 profit on a $40 price is a 25% margin but a 33% markup on a $30 cost.",
-    },
-    {
-      question: "Is print-on-demand duty-free in Canada?",
-      answer: "Printful says orders fulfilled at its Ontario centre avoid surprise customs or duty fees for customers. Products shipped into Canada from facilities elsewhere can carry duties, so check where each product is fulfilled.",
-    },
-    {
-      question: "Do I need to register for GST/HST to sell print-on-demand?",
-      answer: "Registration is required once taxable supplies pass $30,000 in a calendar quarter or over four consecutive quarters, across all your businesses. Below that you can register voluntarily. This is not tax advice.",
+      answer: "Margin is profit as a share of the selling price. Markup is profit as a share of cost. An $11.51 profit on a $45 tee is a 25.6% margin.",
     },
   ]}
 />
