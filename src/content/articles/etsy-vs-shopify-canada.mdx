@@ -2,6 +2,8 @@
 title: "Etsy vs Shopify in Canada: 2026 Fees Compared in CAD"
 description: "Etsy vs Shopify for Canadian sellers: 2026 listing, transaction and card fees, Shopify plan costs in CAD, a fee example, and who should pick which."
 pubDate: 2026-10-03
+updatedDate: 2026-10-09
+updateNote: "Upgraded with current fees and a side-by-side comparison"
 category: reselling-ecommerce
 tags: [online, ecommerce, handmade, shopify]
 featured: false
@@ -33,6 +35,7 @@ sources:
 import AffiliateLink from '../../components/AffiliateLink.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 
 <QuickAnswer>
 
@@ -49,7 +52,7 @@ The year-round Etsy set-up is in [how to start an Etsy shop in Canada](/side-hus
 
 ## How do Etsy and Shopify fees compare for Canadian sellers?
 
-Etsy charges Canadian sellers per listing and per sale, while Shopify charges a monthly plan plus card processing; every figure below is from the company's own pages on October 3, 2026. USD amounts are converted at the Bank of Canada's [daily rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) of 1.4246 CAD per USD for October 2, 2026, and are approximate.
+Etsy charges Canadian sellers per listing and per sale, while Shopify charges a monthly plan plus card processing; every figure below was rechecked on the company's own pages on October 9, 2026. USD amounts are converted at the Bank of Canada's [daily rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) of 1.4240 CAD per USD for October 8, 2026.
 
 | Cost | Etsy (bank account in Canada) | Shopify Basic (Canada) |
 | --- | --- | --- |
@@ -65,6 +68,35 @@ Etsy charges Canadian sellers per listing and per sale, while Shopify charges a 
 | Traffic | Etsy's marketplace search | Only what you bring |
 
 Etsy's processing fee is charged on the total sale including shipping and any sales tax, so the effective rate is a little higher than the headline. Shopify's Grow plan ($132 CAD monthly or $99 CAD a month yearly) lowers online card rates to 2.6% + 30¢.
+
+<ComparisonTable
+  caption="Etsy vs Shopify for a seller with a Canadian bank account"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Etsy",
+      program: "etsy",
+      linkLabel: "See Etsy",
+      bestFor: "Handmade, vintage and craft sellers with no audience yet, testing which products sell",
+      pricing: "No monthly fee. 0.20 USD per listing (about $0.28 CAD), 6.5% transaction fee, 3% + $0.25 CAD processing on Canadian and U.S. orders, 0.50% Canada regulatory operating fee. Works out to 10% of the order + about $0.53 CAD with no ads",
+      pricingUrl: "https://help.etsy.com/hc/en-gb/articles/115014483627-What-are-the-Fees-and-Taxes-for-Selling-on-Etsy",
+      canada: "Etsy Payments deposits to a Canadian bank account in CAD; international orders pay 4% + $0.25 CAD processing",
+      pros: ["Buyers already search the marketplace", "Pay per listing, not per month", "Shop live in an afternoon"],
+      cons: ["Offsite Ads take 15% of an attributed order under 10,000 USD in yearly sales", "Etsy's search and policies decide your visibility", "Customer relationship stays on Etsy"],
+    },
+    {
+      name: "Shopify Basic",
+      program: "shopify",
+      linkLabel: "See Shopify",
+      bestFor: "Sellers who bring their own traffic (social, email, markets) and want their own brand and domain",
+      pricing: "$49 CAD/month, or $37 CAD/month billed yearly. Online cards 2.8% + 30¢ CAD; in person 2.6%; Interac in person 15¢. 2% extra with a third-party processor",
+      pricingUrl: "https://www.shopify.com/ca/pricing",
+      canada: "Canadian pricing page in CAD; Shopify Payments and Shopify POS available in Canada",
+      pros: ["Lowest per-order fee once you have volume", "Your own domain, customer list and design", "Point of sale on every plan for markets"],
+      cons: ["No built-in shoppers", "Monthly fee whether or not you sell", "Themes and apps can add cost"],
+    },
+  ]}
+/>
 
 ## How do Etsy and Shopify differ beyond fees in Canada?
 
@@ -91,7 +123,34 @@ Suppose a seller in Canada sells a $40 CAD item with $10 CAD shipping to a Canad
 - **Difference per order:** $5.53 − $1.70 = $3.83.
 - **Orders to cover the $49 CAD monthly plan:** $49 ÷ $3.83 ≈ 12.8, so about 13 orders a month. On the $37 yearly-billed price: $37 ÷ $3.83 ≈ 9.7, so about 10.
 
-This is a teaching sketch with assumed prices, not a quote or a forecast, and it ignores the cost of bringing traffic to Shopify. If you need paid ads to get those orders, add that cost to the Shopify side before deciding. Etsy fees change, so recompute with the live pages.
+**Inputs:** the $40 item and $10 shipping are assumed; every fee is from the pages above. The order total is used for both platforms and sales tax is left out.
+
+### How does the break-even change with order size?
+
+Etsy's fees collapse to one formula for a Canadian seller with no ads: 6.5% + 3% + 0.50% = 10% of the order, plus $0.25 processing and about $0.28 for the listing, so **10% × order + $0.53**. Shopify Basic's online card fee is **2.8% × order + $0.30**.
+
+| Order total (item + shipping) | Etsy fees, no ads | Shopify Basic card fee | Etsy costs more by | Orders/month to cover $49 plan | Orders/month to cover $37 (yearly) |
+| --- | --- | --- | --- | --- | --- |
+| $20 | $2.53 | $0.86 | $1.67 | 30 | 23 |
+| $50 | $5.53 | $1.70 | $3.83 | 13 | 10 |
+| $100 | $10.53 | $3.10 | $7.43 | 7 | 5 |
+
+Below those order counts Etsy is cheaper in fees; above them Shopify Basic is, before you count what it costs to bring buyers to a Shopify store.
+
+### Illustrative example: one month of 20 orders at $50
+
+**Assumed inputs:** 20 orders a month at $50 each ($1,000 in sales), three of them attributed to Etsy Offsite Ads.
+
+- **Etsy, no ads:** 20 × $5.53 = **$110.60**
+- **Etsy with three Offsite Ads orders:** $110.60 + 3 × (15% × $50 = $7.50) = **$133.10**
+- **Shopify Basic, monthly billing:** $49 + 20 × $1.70 = **$83.00**
+- **Shopify Basic, yearly billing:** $37 + 20 × $1.70 = **$71.00**
+
+At this volume Shopify saves $27.60 to $62.10 a month in fees, but only if those 20 buyers find the store without paid ads. If you spend $40 a month on ads to get them, the monthly-billed Shopify store costs $123.00 and Etsy without Offsite Ads is cheaper.
+
+### When does Shopify Grow beat Basic?
+
+Grow costs $132 CAD a month ($99 billed yearly) and cuts online card rates from 2.8% to 2.6% + 30¢. The 0.2-point saving covers Grow's extra $83 a month only above **$41,500 a month** in online card sales ($83 ÷ 0.002), or $31,000 a month on yearly billing ($62 ÷ 0.002). A side-hustle store belongs on Basic.
 
 ## Who should pick Etsy or Shopify in Canada?
 
@@ -118,13 +177,15 @@ Canadian sellers most often compare only the headline percentages, leave Etsy's 
 - **Using a third-party processor on Shopify Basic** without counting the 2% third-party transaction fee.
 - **Pricing in USD by accident.** Etsy's fixed fees are in USD and a 2.5% conversion fee applies when currencies differ.
 
+## What could change these Etsy and Shopify numbers?
+
+Three inputs move the result more than anything else: whether Etsy's Offsite Ads attribute your orders (15% of the order under 10,000 USD in yearly Etsy sales, 12% above, capped at 100 USD per order), what you spend to drive traffic to a Shopify store, and the exchange rate, because Etsy's listing fee is set in USD and converted at the market rate when charged. Both companies change fees with notice; the figures here were read from their pages on October 9, 2026. This is not tax or legal advice.
+
 ## Which tax rules apply to Etsy and Shopify sellers in Canada?
 
 Sales on Etsy or Shopify are generally business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and platform fees are generally business expenses. Selling on both means adding both together for the GST/HST [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html).
 
 Keep each platform's monthly fee statement; the fees are deductible, as covered in [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/). Marketplaces can report seller information to the CRA, explained in [tax on reselling and gig apps](/side-hustles/tax-reselling-gig-apps-platform-income-canada/).
-
-This is not tax or legal advice.
 
 ## Which guides sit next to the Etsy vs Shopify comparison?
 
