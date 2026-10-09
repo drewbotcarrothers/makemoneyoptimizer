@@ -1,7 +1,9 @@
 ---
 title: "Casual Side Income or Sole Proprietorship? What Changes When a Side Hustle Grows in Canada"
-description: "Casual side income vs sole proprietorship in Canada: why casual isn't a tax category, what the CRA calls a business, and the steps that change as a side hustle grows."
+description: "Casual side income vs sole proprietorship in Canada: why casual isn't a tax category, $60 Ontario and $70 BC name registrations, 2026 CPP, the GST/HST $30,000 test and worked examples."
 pubDate: 2026-10-05
+updatedDate: 2026-10-09
+updateNote: "Upgraded with verified registration fees, 2026 CPP figures and worked examples"
 category: taxes-money
 tags: [self-employment, canada-tax, taxes, budget]
 featured: false
@@ -25,38 +27,117 @@ sources:
   - title: "Keeping records"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html"
     publisher: "Canada Revenue Agency"
+  - title: "Cost and time required to register, change or search for a business name, corporation or not-for-profit"
+    url: "https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit"
+    publisher: "Government of Ontario"
+  - title: "Register a sole proprietorship or general partnership"
+    url: "https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/proprietorships-partnerships"
+    publisher: "Government of British Columbia"
+  - title: "Contributions to the Canada Pension Plan"
+    url: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html"
+    publisher: "Government of Canada"
+  - title: "Form T2125, Statement of Business or Professional Activities"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
+    publisher: "Canada Revenue Agency"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 
 <QuickAnswer>
 
-- **"Casual" isn't a tax category.** If you carry on an activity for profit, the CRA treats it as a business and you're a sole proprietor by default.
-- **No filing creates a sole proprietorship.** You may need to register a trade name with your province, but your own legal name usually needs nothing.
-- **What actually changes as you grow:** GST/HST after $30,000 of taxable sales, CPP on self-employment earnings, instalments, licences and insurance.
-- **Selling your own used things now and then** is different from running a business, but repeated buying and selling for profit is business income.
+- **"Casual" isn't a tax category.** If you carry on an activity for profit, the CRA treats it as a business, you're a sole proprietor by default, and you report it on Form T2125 from the first dollar.
+- **No filing creates a sole proprietorship.** Trading under your own legal name usually needs no registration. A trade name costs $60 to register in Ontario and $70 in BC ($30 name request + $40 registration), checked October 9, 2026.
+- **CPP:** self-employed people pay 11.9% (both halves) on net earnings between $3,500 and $74,600 in 2026, up to $8,460.90.
+- **GST/HST:** register once taxable sales pass $30,000 in one calendar quarter or over four consecutive quarters, across all your businesses.
+- **Selling your own used things now and then** isn't a business. Buying things to resell for profit is.
 
 </QuickAnswer>
 
-In Canada, there is no separate "casual income" status for a side hustle. The CRA's business guide defines a business as an activity you intend to carry on for profit with evidence to support that intention ([CRA T4002](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html)). Once that's true, you're a sole proprietor, whether you earned $300 or $30,000, and you report the income on Form T2125. What changes as a side hustle grows isn't your legal form. It's the list of obligations that switch on at certain points: a business name, GST/HST, CPP, tax instalments, licences and insurance.
+In Canada, there is no separate "casual income" status for a side hustle. The CRA's business guide defines a business as an activity you intend to carry on for profit, with evidence to support that intention ([CRA T4002](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html)). Once that's true, you're a sole proprietor, whether you earned $300 or $30,000, and you report the income on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html). What changes as a side hustle grows isn't your legal form. It's the list of obligations that switch on at certain points: a business name, CPP, GST/HST, tax instalments, licences and insurance. All government pages below were checked on October 9, 2026.
 
-This guide maps those points. The step-by-step paperwork is in [registering a sole proprietorship](/side-hustles/register-sole-proprietorship-canada/) and [reporting side hustle income to the CRA](/side-hustles/report-side-hustle-income-cra-canada/). For the hobby-sale vs resale question on marketplaces, see [tax on reselling, gig apps and platform income](/side-hustles/tax-reselling-gig-apps-platform-income-canada/).
+The step-by-step paperwork is in [registering a sole proprietorship](/side-hustles/register-sole-proprietorship-canada/) and [reporting side hustle income to the CRA](/side-hustles/report-side-hustle-income-cra-canada/). For selling on marketplaces, see [tax on reselling, gig apps and platform income](/side-hustles/tax-reselling-gig-apps-platform-income-canada/).
+
+## What is the difference between casual side income and a sole proprietorship?
+
+There's no tax difference. "Casual" describes how often you work, not how the income is taxed. If you're earning for profit, you're already a sole proprietor. The real comparison is between personal sales that aren't a business, a sole proprietorship under your own name, and one with a registered trade name. Incorporation is shown for comparison.
+
+<ComparisonTable
+  caption="Personal sales vs sole proprietorship vs incorporation in Canada"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Personal sales (not a business)",
+      href: "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html",
+      bestFor: "Selling your own used belongings now and then, or a genuine pastime with no profit intent",
+      pricing: "$0; nothing to register",
+      canada: "Not business income, so no T2125. Buying items to resell for profit is a business",
+      pros: ["No registration or business records", "No CPP on the sales"],
+      cons: ["Doesn't cover services you charge for", "Repeated buying and selling for profit becomes business income"],
+    },
+    {
+      name: "Sole proprietor, own legal name",
+      href: "https://www.canada.ca/en/services/business/start/register-with-gov/register-sole-prop-partner.html",
+      bestFor: "Most side hustles: freelancing, tutoring, cleaning, dog walking, delivery",
+      pricing: "$0 to start in most provinces; self-employed CPP of 11.9% on net earnings over $3,500 (2026)",
+      pricingUrl: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html",
+      canada: "Report on Form T2125; filing due June 15, balance due April 30",
+      pros: ["Nothing to file to start", "Losses can offset other income if there's a real profit intent", "Simple bookkeeping"],
+      cons: ["You're personally liable for business debts and claims", "CPP and income tax aren't withheld"],
+    },
+    {
+      name: "Sole proprietor, registered trade name",
+      href: "https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit",
+      bestFor: "Side hustles that use a brand name such as \"Northside Dog Walking\"",
+      pricing: "Ontario $60 online, renewal $60; BC $30 name request + $40 registration",
+      pricingUrl: "https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit",
+      canada: "Registered with your province; doesn't register you with the CRA or for GST/HST",
+      pros: ["A brand name on invoices, signs and a website", "Changes and cancellation are free in Ontario"],
+      cons: ["Renewal fees in Ontario", "Same personal liability as using your own name"],
+    },
+    {
+      name: "Corporation (for comparison)",
+      href: "https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit",
+      bestFor: "Established businesses with higher profits or liability risk",
+      pricing: "Ontario incorporation $300 online",
+      pricingUrl: "https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit",
+      canada: "Separate legal entity with its own corporate tax return",
+      pros: ["Limits personal liability in many situations", "Profits can stay in the company"],
+      cons: ["Separate corporate tax return and records", "More set-up and yearly cost than a side hustle usually needs"],
+    },
+  ]}
+/>
 
 | Trigger | What switches on | Where to read more |
 | --- | --- | --- |
 | You start selling a service or product for profit | Report income and expenses on T2125 | [Report side hustle income](/side-hustles/report-side-hustle-income-cra-canada/) |
 | You use a name other than your own | Provincial business name registration in most provinces | [Register a sole proprietorship](/side-hustles/register-sole-proprietorship-canada/) |
-| Pensionable earnings above the $3,500 basic exemption | CPP contributions, both portions | [CRA CPP rates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html) |
-| Over $30,000 taxable sales in four quarters | GST/HST registration | [GST/HST for side hustles](/side-hustles/gst-hst-registration-side-hustle-canada/) |
+| Net self-employment earnings above the $3,500 basic exemption | CPP contributions, both portions | [CRA CPP rates](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html) |
+| Over $30,000 taxable sales in one quarter or four consecutive quarters | GST/HST registration | [GST/HST for side hustles](/side-hustles/gst-hst-registration-side-hustle-canada/) |
 | Large balance owing at tax time | CRA may ask for instalments | [Tax instalments](/side-hustles/cra-tax-instalments-side-hustle-canada/) |
 
 ## Is a Canadian side hustle a hobby, casual income or a business?
 
-The tax question is whether you're carrying on a business. T4002 says a business includes a profession, a calling, a trade, an undertaking of any kind and an adventure or concern in the nature of trade ([CRA T4002](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html)). Charging clients for dog walks, cleaning, design work or deliveries fits that easily.
+The tax question is whether you're carrying on a business. T4002 says a business includes a profession, a calling, a trade, an undertaking of any kind and an adventure or concern in the nature of trade ([CRA T4002](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html)). Charging clients for dog walks, cleaning, design work or deliveries fits easily.
 
-What sits outside it? Selling your own used belongings occasionally, or a genuine pastime with no commercial intent. The line for resale is covered in [tax on reselling and platform income](/side-hustles/tax-reselling-gig-apps-platform-income-canada/). One more check: if a single client controls when, where and how you work and supplies your tools, you may be an employee, not a business. The CRA's [RC4110](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110/employee-self-employed.html) looks at intent, control, tools and equipment, and the opportunity for profit.
+What sits outside it? Selling your own used belongings now and then, or a genuine pastime with no commercial intent. The line for resale is covered in [tax on reselling and platform income](/side-hustles/tax-reselling-gig-apps-platform-income-canada/).
+
+One more check: if a single client controls when, where and how you work and supplies your tools, you may be an employee, not a business. The CRA's [RC4110](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110/employee-self-employed.html) looks at intent, control, tools and equipment, and the chance of profit or risk of loss. The facts of the work decide your status, not the word "contract".
+
+## What does it cost to register a sole proprietorship in Canada?
+
+A sole proprietorship under your own legal name usually costs nothing to set up. Registering a trade name has a provincial fee. Two examples, checked October 9, 2026:
+
+| Province | What you pay | Notes |
+| --- | --- | --- |
+| Ontario | $60 online or by mail; renewal $60; changes or cancellation $0 | [Ontario's fee page](https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit). Online registration is immediate; mail takes 15 business days. Registrations expire after five years unless renewed |
+| British Columbia | $30 name request (priority $100), then $40 to register | [BC's proprietorship page](https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/proprietorships-partnerships). Register before the approved name expires, 56 days after approval |
+
+Other provinces set their own rules and fees. Check the [province-by-province hub](/side-hustles/side-hustle-rules-by-province-canada/) and the federal [registering a sole proprietorship](https://www.canada.ca/en/services/business/start/register-with-gov/register-sole-prop-partner.html) page, which links to each province.
+
+A provincial name registration doesn't register you with the CRA. A business number comes when you register for GST/HST or a payroll account. See [getting a CRA business number](/side-hustles/how-to-get-cra-business-number-canada/).
 
 ## What changes as your Canadian side hustle grows?
 
@@ -64,11 +145,11 @@ Think of it as a checklist that fills in over time rather than one big switch.
 
 ### Step 1: Start records on day one
 
-The CRA requires you to keep records that support your income and expenses ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html)). A simple spreadsheet and a folder of receipts is enough to begin; see [record-keeping for side hustles](/side-hustles/record-keeping-side-hustle-canada/).
+The CRA requires you to keep records that support your income and expenses ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/keeping-records.html)). A spreadsheet and a folder of receipts is enough to begin. See [record keeping for side hustles](/side-hustles/record-keeping-side-hustle-canada/).
 
 ### Step 2: Decide on a name
 
-Trading under your exact legal name usually needs no registration. A trade name like "Northside Dog Walking" usually does, with the provincial registry ([Government of Canada](https://www.canada.ca/en/services/business/start/register-with-gov/register-sole-prop-partner.html)).
+Trading under your exact legal name usually needs no registration. A trade name like "Northside Dog Walking" usually does, with the provincial registry: $60 in Ontario, $70 in BC.
 
 ### Step 3: Separate the money
 
@@ -76,19 +157,32 @@ A separate account isn't required for a sole proprietor, but it makes records an
 
 ### Step 4: Watch the GST/HST threshold
 
-Track taxable sales by calendar quarter. Once the total of the last four consecutive quarters passes $30,000, you must register; the count includes all your businesses ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html)). Ride-hail drivers register from the first fare.
+Track taxable sales by calendar quarter. The CRA's [when to register page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) sets two tests, counting all your businesses:
+
+- **Over $30,000 in a single calendar quarter:** you charge GST/HST on the sale that takes you over, and must register.
+- **Over $30,000 across four consecutive quarters** (but not in one): you stop being a small supplier at the end of the month after the quarter in which you went over, and must register within 29 days.
+
+Ride-hail drivers are the exception. They must register from their first fare.
 
 ### Step 5: Budget for CPP
 
-Self-employed people pay both the employee and employer CPP contributions. For 2026 the rate is 5.95% each on pensionable earnings between the $3,500 basic exemption and the $74,600 maximum, so up to $8,460.90 in total for self-employed people ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html)). If you also have a job, the basic exemption and the maximum are shared across both, and your employment contributions count toward the same maximum.
+Self-employed people pay both the employee and employer CPP contributions. The CRA's [2026 rates table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html) lists 5.95% each on pensionable earnings between the $3,500 basic exemption and the $74,600 maximum, so up to $8,460.90 in total for self-employed people. Earnings between $74,600 and $85,000 also attract a second additional contribution, at 8% for the self-employed ([CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html)). If you also have a job, the basic exemption and the maximum are shared across both, and your employment contributions count toward the same maximum.
 
 ### Step 6: Add licences and insurance as the work changes
 
 City licences and liability insurance depend on the work, not your income. See [side hustle insurance](/side-hustles/side-hustle-insurance-canada/).
 
-### Illustrative example
+## What does the change look like with real numbers?
 
-This is a teaching sketch with assumed numbers. Someone starts tutoring two students a week at $40 an hour under their own name. In year one they earn $3,200 and spend $400 on materials. They're already a sole proprietor: they report $3,200 of income and $400 of expenses on T2125. Tutoring is their only work, so their net of $2,800 is below the $3,500 CPP basic exemption, and they're nowhere near $30,000, so no GST/HST. In year two they take on six students and call the business "Bright Path Tutoring." Now they register the name with their province, open a separate account and start setting aside money for CPP and income tax.
+**Illustrative. The incomes, expenses and quarterly sales below are assumptions to show how the rules work, not typical results. Each example assumes a full calendar year in 2026. Verify the arithmetic for your own return.**
+
+**Example 1: a small first year.** You tutor two students a week under your own name and earn $3,200, spending $400 on materials. You're already a sole proprietor: you report $3,200 of income and $400 of expenses on T2125. Tutoring is your only work, so your net of $3,200 − $400 = $2,800 is below the $3,500 CPP basic exemption, and you owe no CPP. You're nowhere near $30,000, so no GST/HST.
+
+**Example 2: the same hustle, bigger.** In year two you call the business "Bright Path Tutoring", register the name in Ontario for $60, and earn $14,000 with $1,500 of expenses. Net is $12,500. CPP is ($12,500 − $3,500) × 11.9% = $1,071.00, on top of income tax.
+
+**Example 3: a side hustle beside a job.** You earn $40,000 from a job and $10,000 net from freelancing. Your job already used the $3,500 basic exemption, so CPP on the side income is $10,000 × 11.9% = $1,190.00. Your employer has withheld your employee CPP on the job, but nothing is withheld on the side income.
+
+**Example 4: crossing $30,000 over four quarters.** Your taxable sales are $6,000 (January to March), $7,500 (April to June), $8,000 (July to September) and $9,000 (October to December), for $30,500 across four quarters. No single quarter went over $30,000, so you stop being a small supplier at the end of January, the month after the quarter in which you went over. You must register and start charging GST/HST from your effective date of registration.
 
 ## What mistakes do people make with casual side income in Canada?
 
@@ -96,17 +190,22 @@ This is a teaching sketch with assumed numbers. Someone starts tutoring two stud
 - **Registering a name and thinking the tax side is done.** A provincial name registration doesn't register you for GST/HST or file anything with the CRA.
 - **Forgetting CPP.** It's calculated on your return, so it can surprise people who only budgeted for income tax.
 - **Counting only one hustle for GST/HST.** The $30,000 test covers all your businesses.
+- **Watching only the yearly total.** The $30,000 test runs over any four consecutive quarters, not the calendar year.
 - **Calling an employee relationship a contract.** The facts of the work decide status, not the label.
 
 ## How is a growing side hustle taxed in Canada?
 
-Your net profit from T2125 is added to your other income and taxed at your marginal rate, plus self-employed CPP. Nothing is withheld, so set aside a share of every payment; see [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/). Tax software such as <AffiliateLink program="wealthsimple-tax" label="Wealthsimple Tax" /> handles T2125 and CPP on self-employment earnings. If you run two different hustles, the CRA asks for a separate T2125 for each; see [tracking which side hustles pay](/side-hustles/track-which-side-hustles-pay-canada/).
+Your net profit from T2125 is added to your other income and taxed at your marginal rate, plus self-employed CPP. Nothing is withheld, so set aside a share of every payment. See [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/). Tax software such as <AffiliateLink program="wealthsimple-tax" label="Wealthsimple Tax" /> handles T2125 and CPP on self-employment earnings. If you run two different hustles, the CRA asks for a separate T2125 for each. See [tracking which side hustles pay](/side-hustles/track-which-side-hustles-pay-canada/).
 
-This is not tax, legal, or insurance advice.
+## What should you know before relying on this?
+
+This guide summarizes government pages as they read on October 9, 2026. CPP figures change every January, and provincial registration fees change from time to time. Whether an activity is a business depends on your facts. This is not tax, legal or insurance advice. Ask a professional if your situation is unclear.
 
 ## Which guides sit next to going from casual income to a sole proprietorship?
 
-[Getting a CRA business number](/side-hustles/how-to-get-cra-business-number-canada/) explains when you need one, [opening a business bank account](/side-hustles/business-bank-account-side-hustle-canada/) covers the banking side, and [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/) lists what you can claim. The short answers people mix up, including the $30,000 GST/HST figure and which form to use, are in the [side hustle tax FAQ](/side-hustles/side-hustle-tax-faq-canada/). When you're ready to grow, read [adding a second service](/side-hustles/add-second-service-side-hustle-canada/) and [raising your rates](/side-hustles/how-to-raise-side-hustle-rates-canada/). Check your province's registration and sales-tax rules in the [province-by-province hub](/side-hustles/side-hustle-rules-by-province-canada/), and sketch the next steps on a [one-page business plan](/side-hustles/side-hustle-business-plan-canada/).
+[Getting a CRA business number](/side-hustles/how-to-get-cra-business-number-canada/) explains when you need one, [opening a business bank account](/side-hustles/business-bank-account-side-hustle-canada/) covers the banking side, and [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/) lists what you can claim. Short answers to common mix-ups, including the $30,000 GST/HST figure and which form to use, are in the [side hustle tax FAQ](/side-hustles/side-hustle-tax-faq-canada/).
+
+When you're ready to grow, read [adding a second service](/side-hustles/add-second-service-side-hustle-canada/) and [raising your rates](/side-hustles/how-to-raise-side-hustle-rates-canada/). Check your province's registration and sales-tax rules in the [province-by-province hub](/side-hustles/side-hustle-rules-by-province-canada/), and sketch the next steps on a [one-page business plan](/side-hustles/side-hustle-business-plan-canada/).
 
 <Faq
   items={[
@@ -116,15 +215,19 @@ This is not tax, legal, or insurance advice.
     },
     {
       question: "Do I have to register a sole proprietorship to start a side hustle?",
-      answer: "No filing creates a sole proprietorship. If you trade under your exact legal name, most provinces require nothing. A different trade name usually has to be registered with the province.",
+      answer: "No filing creates a sole proprietorship. If you trade under your exact legal name, most provinces require nothing. A trade name usually has to be registered with the province: $60 in Ontario and $30 for a name request plus $40 to register in BC (checked October 9, 2026).",
     },
     {
       question: "When does a hobby become a business for tax purposes?",
-      answer: "The CRA defines a business as an activity you intend to carry on for profit with evidence to support that intention. Regularly charging customers for a service or buying items to resell points to a business.",
+      answer: "The CRA defines a business as an activity you intend to carry on for profit, with evidence to support that intention. Regularly charging customers for a service, or buying items to resell, points to a business. Selling your own used things now and then usually doesn't.",
     },
     {
       question: "Do I pay CPP on side hustle income?",
-      answer: "Yes, on net self-employment earnings. In 2026 self-employed people pay both CPP portions, 5.95% each, on earnings between $3,500 and $74,600, with contributions from a job counting toward the same maximum.",
+      answer: "Yes, on net self-employment earnings. In 2026 self-employed people pay both portions, 5.95% each (11.9% in total), on earnings between $3,500 and $74,600, up to $8,460.90. Contributions from a job count toward the same maximum.",
+    },
+    {
+      question: "When do I have to register for GST/HST?",
+      answer: "When your taxable sales, across all your businesses, go over $30,000 in a single calendar quarter or over four consecutive quarters. Ride-hail drivers must register from the first fare. This is not tax advice.",
     },
     {
       question: "Do I need a business number for a small side hustle?",
