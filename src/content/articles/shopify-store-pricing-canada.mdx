@@ -1,7 +1,9 @@
 ---
 title: "How to Price Products for a Shopify Store in Canada (2026 Pricing Guide)"
-description: "How to price products for a Shopify store in Canada: Shopify CA plans and card rates, margin vs markup, shipping and ad costs, and a labelled CAD margin sheet for owners."
+description: "How to price products for a Shopify store in Canada: October 2026 Shopify CA plans and card rates, what Canadian online brands charge, Chit Chats shipping costs, a price formula, worked examples and templates."
 pubDate: 2026-10-03
+updatedDate: 2026-10-09
+updateNote: "Upgraded with sourced local prices, worked quotes and templates"
 category: reselling-ecommerce
 tags: [ecommerce, shopify, online-store, margins, pricing]
 featured: false
@@ -10,6 +12,33 @@ sources:
   - title: "Shopify pricing (Canada)"
     url: "https://www.shopify.com/ca/pricing"
     publisher: "Shopify"
+  - title: "Chit Chats pricing"
+    url: "https://chitchats.com/pricing"
+    publisher: "Chit Chats"
+  - title: "Canada Tee Red - Unisex"
+    url: "https://provinceofcanada.com/products/canada-tee-red-unisex"
+    publisher: "Province of Canada"
+  - title: "Shipping policy"
+    url: "https://provinceofcanada.com/policies/shipping-policy"
+    publisher: "Province of Canada"
+  - title: "Winter Tracks T-Shirt"
+    url: "https://www.tentree.ca/products/winter-tracks-t-shirt-shadow-pale-oak"
+    publisher: "tentree"
+  - title: "Mountainscape Hoodie"
+    url: "https://www.tentree.ca/products/mountainscape-hoodie-cider-white-oak"
+    publisher: "tentree"
+  - title: "Essential Relaxed Tee"
+    url: "https://www.frankandoak.com/products/mens-knit-t-shirt-black-2mkt0031fe-bla"
+    publisher: "Frank And Oak"
+  - title: "Shipping policy"
+    url: "https://www.frankandoak.com/policies/shipping-policy"
+    publisher: "Frank And Oak"
+  - title: "Host City Tee - Toronto"
+    url: "https://www.duer.ca/products/host-city-tee-toronto"
+    publisher: "Duer"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
     publisher: "Canada Revenue Agency"
@@ -26,129 +55,251 @@ sources:
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
 
-Pricing products for a Shopify store in Canada means starting from your full cost per order, which is the product, packaging, shipping you absorb, card fees, and advertising, then choosing a price that leaves a target margin and still makes sense next to competitors. Shopify's Canadian pricing page lists the Basic plan at C$49 a month billed monthly, or C$37 a month billed yearly, with online card rates starting at 2.8% + 30¢. Grow and Advanced cost more but have lower card rates. Your plan is a fixed monthly cost, so a store has to sell enough orders to cover it before it earns anything. This guide suits store owners who will price from costs and margin rather than guessing.
+A Shopify product price in Canada has to cover the product, packaging, the shipping you absorb, the card fee and your ads, then leave a margin. On October 9, 2026, Shopify's Canadian Basic plan cost $49 a month (or $37 billed yearly) with online card rates from 2.8% + 30¢. Canadian brands selling online set the market you're compared with: Frank And Oak's Essential Slim Tee was $39, tentree's graphic tees $45, Province of Canada's Canada Tee $58 and Duer's Host City Tee $69. Shipping is the cost that sinks small orders: Chit Chats listed a 142 g T-shirt from Toronto to a Toronto address at $5.33, against $15.29 with a national carrier. A $39 tee costing $13 to make and pack leaves about $19 before ads on Basic.
+
+<QuickAnswer>
+
+- **Shopify Canada (Oct 9, 2026):** Basic $49/month or $37 yearly; Grow $132 or $99; Advanced $517 or $389. Online cards 2.8%, 2.6%, 2.4% + 30¢.
+- **Formula:** price = (product + packaging + shipping you absorb + ads + 30¢) ÷ (1 − card % − target margin).
+- **Canadian retail anchors:** tees $39 (Frank And Oak) to $69 (Duer); hoodies $88 (tentree) to $160 (Province of Canada).
+- **Free-shipping thresholds:** $99 at Frank And Oak ($10 shipping below it), $100 at Province of Canada.
+- **Grow beats Basic** only above about $31,000 a month in online card sales on yearly billing.
+
+</QuickAnswer>
 
 How to start is in the [Shopify store side hustle guide](/side-hustles/shopify-store-side-hustle-canada/). Plans, apps, and setup costs are in [Shopify store startup costs](/side-hustles/shopify-store-startup-costs-canada/). Getting the first order is in [your first Shopify sale](/side-hustles/shopify-store-first-sale-canada/). More selling guides sit in the [reselling and ecommerce hub](/side-hustles/category/reselling-ecommerce/).
 
+| Quick facts | Figure |
+| --- | --- |
+| Cheapest plan | Basic, $37/month billed yearly or $49 monthly |
+| Online card rate on Basic | 2.8% + 30¢ (Amex and international 3.5% + 30¢) |
+| Fee for using another payment provider | 2% on Basic, 1% Grow, 0.6% Advanced |
+| Published tee prices (Canadian brands) | $39 to $70 |
+| Cheapest published domestic shipping found | $3.83 for an 85 g parcel anywhere in Canada (Chit Chats) |
+| Exchange rate used | 1.4240 CAD per USD (Bank of Canada, Oct 8, 2026) |
+
 ## What do Shopify plans and card rates cost in Canada?
 
-Shopify plans in Canada start at C$49 a month for Basic billed monthly, according to [Shopify's Canadian pricing page](https://www.shopify.com/ca/pricing), with online card rates from 2.8% + 30¢ on Basic.
+[Shopify's Canadian pricing page](https://www.shopify.com/ca/pricing) listed these plans in Canadian dollars on October 9, 2026. New stores get a 3-day free trial, then $1 a month for the first 3 months.
 
-| Shopify plan (Canada) | Monthly billing | Yearly billing (per month) | Online card rate from |
+| Plan | Monthly billing | Yearly billing (per month) | Online card | Amex and international cards | In person | Third-party payment fee |
+| --- | --- | --- | --- | --- | --- | --- |
+| Basic | $49 | $37 | 2.8% + 30¢ | 3.5% + 30¢ | 2.6% | 2% |
+| Grow | $132 | $99 | 2.6% + 30¢ | 3.4% + 30¢ | 2.5% | 1% |
+| Advanced | $517 | $389 | 2.4% + 30¢ | 3.3% + 30¢ | 2.4% | 0.6% |
+
+In-person Interac payments are 15¢ each. The third-party fee applies when you take payments through a provider other than Shopify Payments, on top of that provider's own fee. Apps, a paid theme and a domain add to your fixed costs; those are priced in [Shopify store startup costs](/side-hustles/shopify-store-startup-costs-canada/).
+
+## What do Canadian online stores charge?
+
+Your buyer compares your price with stores they already know. These are list prices from Canadian brands' own Shopify stores, in Canadian dollars, checked on October 9, 2026:
+
+| Store | Product | Price | Free shipping |
 | --- | --- | --- | --- |
-| Basic | C$49 | C$37 | 2.8% + 30¢ |
-| Grow | C$132 | C$99 | 2.6% + 30¢ |
-| Advanced | C$517 | C$389 | 2.4% + 30¢ |
+| [Frank And Oak](https://www.frankandoak.com/products/mens-knit-t-shirt-black-2mkt0031fe-bla) | Essential Slim Tee / Essential Relaxed Tee | $39 / $45 | Over $99; $10 below ([policy](https://www.frankandoak.com/policies/shipping-policy)) |
+| [tentree](https://www.tentree.ca/products/winter-tracks-t-shirt-shadow-pale-oak) | Graphic tees (Winter Tracks, Sasquatch Sends It) | $45 | — |
+| [tentree](https://www.tentree.ca/products/mountainscape-hoodie-cider-white-oak) | Mountainscape Hoodie / Howson Hoodie | $88 / $98 | — |
+| [Province of Canada](https://provinceofcanada.com/products/canada-tee-red-unisex) | Monday Tee / Canada Tee / CFL x The Tragically Hip Tee | $46 / $58 / $70 | Over $100 ([policy](https://provinceofcanada.com/policies/shipping-policy)) |
+| Province of Canada | Merry Sweatshirt / candles / greeting cards | $134 / $48 / $7.00–$8.50 | Over $100 |
+| [Duer](https://www.duer.ca/products/host-city-tee-toronto) | PurePima tees / Host City Tee | $55 / $69 | — |
 
-These are standard online card rates with Shopify Payments. On Basic, the same page lists 3.5% + 30¢ for Amex and international cards, and a 2% third-party transaction fee if you use another payment provider. Apps, themes, and a domain add to your fixed costs.
+Three patterns stand out. Tees from known Canadian brands sit between $39 and $70, so a new store selling at $25 looks cheap rather than competitive. Free shipping starts around $99 to $100, which nudges a single $45 tee order toward a second item. Small items like $7.50 greeting cards only work in a basket with something else.
 
-## Which pricing approaches work for a Shopify store in Canada?
+## What does shipping cost a small Shopify store?
 
-Shopify store pricing approaches in Canada are cost-plus with a target margin, competitor-based pricing, value-based pricing for unique products, bundles to raise order value, and building shipping into the price for "free shipping".
+Shipping is often the largest cost after the product. [Chit Chats](https://chitchats.com/pricing) published these sample rates from Toronto on October 9, 2026, in Canadian dollars before tax and surcharges, next to the national carrier rate it compared against:
+
+| Parcel | Destination | Chit Chats | National carrier (as listed) |
+| --- | --- | --- | --- |
+| Necklace, 85 g | Anywhere in Canada | $3.83 | $15.29 |
+| T-shirt, 142 g | Toronto | $5.33 | $15.29 |
+| Mug, 425 g | Vancouver | $6.07 | $21.60 |
+| Necklace / T-shirt / mug | New York (CUSMA-approved) | $8.45 / $8.60 / $10.61 | — |
+
+Chit Chats is a drop-off service in a few cities. If you ship from elsewhere, price from your own carrier quote. The [Stallion Express vs Chit Chats vs Canada Post comparison](/side-hustles/stallion-express-vs-chit-chats-vs-canada-post-canada/) covers who can use which service.
+
+## Which pricing approaches work for a Shopify store?
+
+Price every product from cost first, then check it against the Canadian anchors above.
 
 | Approach | How it works | Works well for | Watch out for |
 | --- | --- | --- | --- |
-| Cost-plus to a target margin | Price = full cost per order ÷ (1 − card % − target margin), plus the fixed card fee | Every product, as a floor | Leaving out shipping or ads |
-| Competitor-based | Price near similar products in Canada | Common products | Matching a competitor with lower costs |
-| Value-based | Price on what the product is worth to the buyer | Unique, handmade, or branded goods | Needs strong photos and copy |
-| Bundles | Several items at a lower combined price | Raising order value | Bundles below your margin floor |
-| Free shipping built in | Shipping cost included in the product price | Light, consistent items | Heavy items that wreck the margin |
+| Cost-plus to a target margin | Price = (costs + 30¢) ÷ (1 − card % − target margin) | Every product, as a floor | Leaving out shipping or ads |
+| Competitor-based | Price near similar Canadian products | Tees, mugs, candles | Matching a brand with lower unit costs |
+| Value-based | Price on design, story or scarcity | Handmade or limited goods | Needs strong photos and copy |
+| Free shipping built in | Shipping folded into the product price | Light items under 500 g | Heavy items and far destinations |
+| Free-shipping threshold | Free over a basket size, flat fee under | Stores with several low-price items | Threshold set below your break-even |
+| Bundles | Two or three items at one price | Raising order value | Bundles below your margin floor |
 
-Know the difference between markup and margin. Markup is profit as a share of cost; margin is profit as a share of price. A C$12 product sold for C$24 has a 100% markup but a 50% gross margin before other costs.
+Markup and margin aren't the same. Markup is profit as a share of cost, margin is profit as a share of price. A $12 product sold for $24 has a 100% markup but a 50% gross margin.
 
-## How do you calculate a product price for a Shopify store in Canada?
+## How do you calculate a Shopify product price?
 
-Calculate a product price for a Shopify store in Canada by adding every cost per order, choosing a target margin, solving for the price that delivers it after card fees, and then checking how many orders cover your monthly plan and ads.
+Add every cost per order, choose a target margin and solve for price.
 
-### Step 1: Add costs per order
+```text
+Costs per order = product + packaging + shipping you absorb + ad cost per order
+Price           = (costs per order + $0.30) ÷ (1 − card rate − target margin)
+Profit          = price − costs per order − (card rate × price + $0.30)
+Orders to cover = monthly plan + apps ÷ profit per order
+```
 
-Product or materials, packaging, shipping you pay, and any per-order app fees.
+1. **Cost the product.** Use your supplier invoice or materials list, not a guess.
+2. **Add packaging and postage.** Weigh the packed parcel and price it with your carrier.
+3. **Add ad cost per order.** Ad spend for the month ÷ orders the ads brought in.
+4. **Pick a margin.** The examples below use about 50% before ads, which leaves room for ads, discounts and returns.
+5. **Check the anchors.** If the formula says $28 and Canadian brands sell the same thing at $45, you can charge more. If it says $80 against $45, change the product or the supplier.
 
-### Step 2: Choose a target margin
+**Illustrative:** a $12 tee, $1 mailer and $5.33 postage cost $18.33. For a 50% margin on Basic: ($18.33 + $0.30) ÷ (1 − 0.028 − 0.50) = $18.63 ÷ 0.472 = $39.47. Round to $39, Frank And Oak's slim tee price.
 
-Leave room for ads, returns, and discounts.
+## What do worked Shopify pricing examples look like?
 
-### Step 3: Solve for price
+**Illustrative.** Product and packaging costs and ad spend are assumed. Shopify rates, shipping rates and the market prices are published.
 
-Price = (costs + 30¢) ÷ (1 − card % − target margin).
+### Example 1: Hand-poured candle shipped to Vancouver
 
-### Step 4: Check fixed costs
+- Costs: wax, wick, jar and fragrance $9; box and padding $1.50; 425 g to Vancouver $6.07 (Chit Chats' mug rate). Total $16.57.
+- Price $38 with free shipping. Card fee 2.8% × $38 + $0.30 = $1.36.
+- Profit $38 − $16.57 − $1.36 = **$20.07**, a 52.8% margin.
+- Market check: Province of Canada's candles are $48, so $38 leaves room for a 10% launch discount.
 
-Monthly plan, apps, and domain ÷ profit per order = orders needed to break even each month.
+### Example 2: Printed tee to a Toronto customer, with ads
 
-### Step 5: Set aside tax
+- Costs: blank and printing $12; mailer $1; 142 g to Toronto $5.33. Total $18.33.
+- Price $39. Card fee $1.39. Profit before ads **$19.28**, a 49.4% margin.
+- With $8 of ad spend per order, profit falls to **$11.28**.
+- On Basic billed yearly ($37), 2 orders a month cover the plan before ads: $37 ÷ $19.28 = 1.92.
 
-Store profit is business income; see the [tax set-aside guide](/side-hustles/how-much-tax-set-aside-side-hustle-canada/).
+### Example 3: Same tee to a US customer paying by Amex
 
-### Illustrative example
+- Costs: $12 + $1 + $8.60 to New York (Chit Chats, CUSMA-approved) = $21.60.
+- Price $39 with free shipping. Card fee at the international rate: 3.5% × $39 + $0.30 = $1.67.
+- Profit **$15.73**, a 40.3% margin, $3.55 less than the Toronto order. Charge US shipping or set a higher US price if most orders go south.
 
-This is a teaching sketch with assumed numbers, not a forecast, average, or survey. Suppose you are on Basic with the 2.8% + 30¢ starting card rate. A product costs C$12, packaging C$1, and shipping you absorb C$8, so costs per order are C$21.
+### Example 4: When Grow pays for itself
 
-At a price of C$39, the card fee is 2.8% × C$39 + C$0.30 = C$1.39. Profit before ads is C$39 − C$21 − C$1.39 = C$16.61, a 42.6% margin. Basic at C$49 a month needs C$49 ÷ C$16.61 = 2.95, so 3 orders a month just to cover the plan. If ads cost you C$10 per order, profit falls to C$6.61.
+- Grow costs $132 a month versus $49 for Basic, $83 more, and saves 0.2 points on online card sales (2.6% versus 2.8%).
+- Break-even: $83 ÷ 0.002 = **$41,500 a month** in online card sales on monthly billing.
+- On yearly billing the gap is $99 − $37 = $62, so $62 ÷ 0.002 = **$31,000 a month**.
+- Below that, stay on Basic unless you need Grow's features.
 
-For a 50% margin, price = (C$21 + C$0.30) ÷ (1 − 0.028 − 0.50) = C$45.13, which you might round to C$45. At C$45 the card fee is C$1.56 and profit is C$22.44, a 49.9% margin.
+## What does a Shopify product margin sheet look like?
 
-## What does a sample Shopify product margin sheet look like in Canada?
+An **illustrative** sheet on Basic with $1 packaging on every order and free shipping built in. Product costs and the hoodie's $8 postage are assumed; the other postage is Chit Chats' published rates.
 
-A Shopify product margin sheet in Canada lists each product's price, costs, card fee, and margin. The table is an **illustrative example** using Shopify's Basic starting card rate, assumed product costs, C$1 packaging, and C$8 absorbed shipping, before ads, not a market average.
+| Product | Price | Product cost | Postage | Card fee | Profit before ads | Margin |
+| --- | --- | --- | --- | --- | --- | --- |
+| Greeting card set (85 g) | $24 | $6 | $3.83 | $0.97 | $12.20 | 50.8% |
+| Core tee (142 g) | $39 | $12 | $5.33 | $1.39 | $19.28 | 49.4% |
+| Candle (425 g) | $38 | $9 | $6.07 | $1.36 | $20.57 | 54.1% |
+| Hoodie | $88 | $30 | $8.00 | $2.76 | $46.24 | 52.5% |
 
-| Product (illustrative) | Price | Product cost | Card fee | Profit before ads | Margin |
-| --- | --- | --- | --- | --- | --- |
-| Small accessory | C$25 | C$8 | C$1.00 | C$7.00 | 28.0% |
-| Core product | C$39 | C$12 | C$1.39 | C$16.61 | 42.6% |
-| Premium product | C$59 | C$20 | C$1.95 | C$28.05 | 47.5% |
-| Gift bundle | C$89 | C$34 | C$2.79 | C$43.21 | 48.5% |
+Keep one row per product in a spreadsheet and update it whenever a supplier, carrier or Shopify rate changes.
 
-The small accessory shows how absorbed shipping hurts low prices: C$8 shipping is almost a third of a C$25 price. Recheck card rates on Shopify's page before relying on them.
+## Which pricing templates help?
 
-## When should you raise product prices on a Shopify store in Canada?
+A costing card for each product:
 
-Raise product prices on a Shopify store in Canada when your supplier or shipping costs rise, when ad costs per order climb, or when products sell out quickly at the current price. Test changes on one product at a time and compare profit per week, not just orders.
+```text
+PRODUCT COSTING — [product name]                 Updated: [date]
+Supplier cost per unit ......................... $[12.00]
+Packaging ...................................... $[1.00]
+Postage (weight [142] g, zone [ON]) ............ $[5.33]
+Ad cost per order (last 30 days) ............... $[8.00]
+Card fee at price ($0.028 × price + $0.30) ..... $[1.39]
+Price .......................................... $[39.00]
+Profit per order ............................... $[11.28]
+Margin ......................................... [28.9]%
+Anchor prices: [Frank And Oak $39, tentree $45]
+```
 
-Update the margin sheet every time a cost changes.
+A quote for a custom or bulk order, such as 30 team shirts:
 
-## What Shopify pricing mistakes are common in Canada?
+```text
+CUSTOM ORDER QUOTE — [client]                    Date: [date]
+30 × printed tee, 1 colour front ......... 30 × $[24.00] = $[720.00]
+Setup / artwork ............................ $[40.00]
+Shipping, one box to [city] ................ $[quoted]
+Subtotal ................................... $[760.00]
+GST/HST (registered only) .................. $[ ]
+50% deposit to start; balance before shipping.
+Quote valid 14 days. Sizes and colours confirmed in writing.
+```
 
-Common Shopify pricing mistakes in Canada are confusing markup with margin, offering free shipping without pricing it in, and ignoring ad costs per order. Each turns orders into losses.
+Invoice fields the CRA expects are in [how to invoice clients](/side-hustles/how-to-invoice-clients-canada/).
 
-Track cost per order including ads. Set a minimum order for free shipping if it helps. Price bundles above your margin floor.
+## How do you raise prices on a Shopify store?
 
-## How do GST/HST and income tax affect Shopify pricing in Canada?
+Raise prices when supplier or shipping costs rise, when ad cost per order climbs, or when a product sells out at its current price.
 
-Shopify store profit in Canada is business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and self-employed people pay both [CPP shares](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) on net income. GST/HST registration becomes required after you pass the [$30,000 small-supplier threshold](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) in a calendar quarter or over four consecutive quarters, across all your side hustles.
+1. **Re-run the costing card** every time a supplier, carrier or Shopify rate changes.
+2. **Change one product at a time** and compare profit per week, not order count.
+3. **Use the free-shipping threshold.** Set it just above your best-seller's price, as Frank And Oak does at $99 with $10 shipping below it.
+4. **Bundle instead of discounting.** Two tees at $72 in one parcel share a single postage charge, while 20% off one $39 tee cuts its $19.28 profit to $11.70.
+5. **Tell your email list first:**
 
-Once registered, you charge tax on top of your prices at the rate for where the customer is, per the CRA's [charge and collect page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html). Decide whether your displayed prices include tax before you register. The [GST/HST registration guide](/side-hustles/gst-hst-registration-side-hustle-canada/) covers registration.
+```text
+Subject: Prices change on [date]
+Hi [first name], on [date] our tees move from $[39] to $[42]
+because shipping and blank costs went up this year. Anything
+ordered before then ships at today's price. — [Your name]
+```
 
-<AffiliateLink program="shopify" label="Shopify" /> plans are listed above. For print-on-demand products, <AffiliateLink program="printful" label="Printful" /> is one supplier to compare; put its cost per item into the margin sheet.
+The [guide to raising side hustle rates](/side-hustles/how-to-raise-side-hustle-rates-canada/) covers timing and wording for repeat customers.
+
+## What Shopify pricing mistakes are common?
+
+- **Confusing markup with margin.** A 50% markup is a 33% margin.
+- **Free shipping on everything.** A $15.29 carrier rate erases most of the profit on a $25 item.
+- **Ignoring Amex and international orders.** They cost 0.7 points more on Basic.
+- **Upgrading too early.** Grow only saves money above about $31,000 a month in card sales.
+- **Pricing far below Canadian brands.** A $25 tee next to $39 to $70 anchors looks like lower quality, not a deal.
+
+## How do GST/HST and income tax affect Shopify pricing?
+
+Shopify store profit is business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and self-employed people pay both [CPP shares](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) on net income. GST/HST registration becomes required after you pass the [$30,000 small-supplier threshold](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) in a calendar quarter or over four consecutive quarters, across all your side hustles.
+
+Once registered, you charge tax at the rate for where the customer is, per the CRA's [charge and collect page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html). Decide before you register whether your displayed prices include tax. Set aside income tax as you go with the [tax set-aside guide](/side-hustles/how-much-tax-set-aside-side-hustle-canada/), and see the [GST/HST registration guide](/side-hustles/gst-hst-registration-side-hustle-canada/) before you pass the threshold.
+
+<AffiliateLink program="shopify" label="Shopify" /> plans are listed above. For print-on-demand products, <AffiliateLink program="printful" label="Printful" /> is one supplier to compare; put its cost per item into the costing card.
 
 This is not tax, legal, or accounting advice.
 
-## Which guides sit next to Shopify store pricing in Canada?
+## What should you keep in mind about these numbers?
 
-Shopify store pricing in Canada sits beside [reselling pricing](/side-hustles/reselling-pricing-canada/), [print on demand](/side-hustles/print-on-demand-side-hustle-canada/), and [no-code web design pricing](/side-hustles/no-code-web-design-pricing-canada/).
+Shopify rates, Chit Chats rates and brand prices were on each company's page on October 9, 2026. Brand prices are list prices and change with sales; the brands make their own products at volumes a side hustle won't match, so treat them as a ceiling for what buyers expect, not a cost benchmark. Chit Chats' national carrier comparisons are Chit Chats' own figures. Product costs, packaging, ad spend and the hoodie postage in the examples are illustrative.
+
+## Which guides sit next to Shopify store pricing?
+
+Shopify store pricing sits beside [print-on-demand pricing](/side-hustles/print-on-demand-pricing-canada/) for products you don't stock, [Etsy shop pricing](/side-hustles/etsy-shop-pricing-canada/) and [Etsy vs Shopify](/side-hustles/etsy-vs-shopify-canada/) for marketplace fees, and [Shopify vs Squarespace vs Wix](/side-hustles/shopify-vs-squarespace-vs-wix-canada/) for the platform choice.
 
 <Faq
   items={[
     {
       question: "How much does Shopify cost in Canada?",
-      answer: "Shopify's Canadian pricing page lists Basic at C$49 a month billed monthly or C$37 a month billed yearly, Grow at C$132 or C$99, and Advanced at C$517 or C$389, with online card rates from 2.8%, 2.6%, and 2.4% plus 30 cents.",
+      answer: "On October 9, 2026, Shopify's Canadian page listed Basic at $49 a month billed monthly or $37 billed yearly, Grow at $132 or $99, and Advanced at $517 or $389. Online card rates were 2.8%, 2.6% and 2.4% plus 30 cents.",
     },
     {
       question: "How do I price a product on Shopify?",
-      answer: "Add every cost per order, choose a target margin, and solve for the price that delivers it after card fees. Then check it against similar products.",
+      answer: "Add the product, packaging, shipping you absorb and ad cost per order, then divide costs plus 30 cents by one minus the card rate and your target margin. A $18.33 tee cost on Basic at a 50% margin works out to about $39.",
     },
     {
-      question: "What is the difference between markup and margin?",
-      answer: "Markup is profit divided by cost; margin is profit divided by price. A C$12 item sold for C$24 has a 100% markup but a 50% gross margin.",
+      question: "What do Canadian brands charge for a T-shirt online?",
+      answer: "On October 9, 2026, Frank And Oak listed tees at $39 and $45, tentree's graphic tees were $45, Province of Canada's tees $46 to $70 and Duer's $55 to $69.",
+    },
+    {
+      question: "Should I offer free shipping on Shopify?",
+      answer: "Build it into light items or set a threshold. Frank And Oak offers free shipping over $99 with $10 shipping below that, and Province of Canada over $100. Chit Chats listed a 142 g T-shirt from Toronto to Toronto at $5.33.",
+    },
+    {
+      question: "When is Shopify Grow worth it over Basic?",
+      answer: "On card fees alone, above about $31,000 a month in online card sales on yearly billing ($62 extra a month divided by 0.2 points), or $41,500 on monthly billing.",
     },
     {
       question: "Do I charge GST/HST on Shopify sales?",
       answer: "Only once registered. Registration is required after more than $30,000 of taxable supplies in a calendar quarter or over four consecutive quarters, across all side hustles. This is not tax advice.",
-    },
-    {
-      question: "How many orders do I need to cover my Shopify plan?",
-      answer: "Divide your monthly fixed costs by profit per order. In the illustrative example, C$49 ÷ C$16.61 is about 3 orders a month for the Basic plan alone.",
     },
   ]}
 />
