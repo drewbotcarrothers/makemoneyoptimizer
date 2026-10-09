@@ -26,6 +26,19 @@ RewriteRule ^side-hustles/etsy-shop-30-day-plan-canada/?$ /side-hustles/etsy-sho
 RewriteRule ^side-hustles/online-tutoring-30-day-plan-canada/?$ /side-hustles/online-tutoring-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/social-media-manager-30-day-plan-canada/?$ /side-hustles/social-media-manager-side-hustle-canada/ [R=301,L]
 
+# Depth wave 3: mistakes posts folded into pillar guides; snow gear toolkit folded into snow removal tools
+RewriteRule ^side-hustles/dog-walking-mistakes-canada/?$ /side-hustles/dog-walking-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/house-cleaning-mistakes-canada/?$ /side-hustles/house-cleaning-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/lawn-care-mistakes-canada/?$ /side-hustles/lawn-care-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/freelance-writing-mistakes-canada/?$ /side-hustles/freelance-writing-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/virtual-assistant-mistakes-canada/?$ /side-hustles/virtual-assistant-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/reselling-mistakes-canada/?$ /side-hustles/reselling-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/food-delivery-mistakes-canada/?$ /side-hustles/food-delivery-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/rideshare-driving-mistakes-canada/?$ /side-hustles/rideshare-driving-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/etsy-shop-mistakes-canada/?$ /side-hustles/etsy-shop-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/snow-removal-mistakes-canada/?$ /side-hustles/snow-removal-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/snow-removal-gear-toolkit-canada/?$ /side-hustles/snow-removal-tools-canada/ [R=301,L]
+
 # Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
 # RewriteCond %{HTTPS} !=on
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
