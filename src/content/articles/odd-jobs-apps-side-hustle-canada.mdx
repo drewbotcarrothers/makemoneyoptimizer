@@ -1,9 +1,9 @@
 ---
 title: "How to Start Odd-Job Apps in Canada (TaskRabbit and Similar)"
-description: "How to start TaskRabbit-style odd-job apps in Canada: confirm your city, pick one task, price travel, leave licensed trades, and plan tools and GST/HST."
+description: "How to start Taskrabbit-style odd-job apps in Canada: the $25 fee, how Taskers are paid, city rates, 20 task ideas, tools with prices, a 30-day plan and tax rules."
 pubDate: 2026-09-22
-updatedDate: 2026-09-30
-updateNote: "Restructured for clarity and added sources"
+updatedDate: 2026-10-09
+updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
 category: gig-apps
 tags: [gig-work, odd-jobs, local-services, offline]
 featured: false
@@ -33,241 +33,443 @@ sources:
   - title: "Pesticides and home lawns and gardens"
     url: "https://www.ontario.ca/page/pesticides-home-lawns-and-gardens"
     publisher: "Government of Ontario"
+  - title: "What's the Registration Fee?"
+    url: "https://support.taskrabbit.com/hc/en-ca/articles/46260480151579-What-s-the-Registration-Fee"
+    publisher: "Taskrabbit Support"
+  - title: "What's the Taskrabbit Service Fee?"
+    url: "https://support.taskrabbit.com/hc/en-ca/articles/46260411872155-What-s-the-Taskrabbit-Service-Fee"
+    publisher: "Taskrabbit Support"
+  - title: "Fees, Payments, and Cancellation Supplemental Terms"
+    url: "https://support.taskrabbit.com/hc/en-ca/articles/46260514951579-Fees-Payments-and-Cancellation-Supplemental-Terms"
+    publisher: "Taskrabbit Support"
+  - title: "How Pricing Works on Taskrabbit — and What It Means for Your Earnings (September 15, 2025)"
+    url: "https://www.taskrabbit.ca/blog/how-pricing-works-on-taskrabbit-and-what-it-means-for-your-earnings/"
+    publisher: "Taskrabbit"
+  - title: "Taskrabbit 2026 Tasker Update: Built from Your Feedback (February 11, 2026)"
+    url: "https://www.taskrabbit.ca/blog/taskrabbit-2026-tasker-update-built-from-your-feedback/"
+    publisher: "Taskrabbit"
+  - title: "Furniture assembly cost guide (updated October 1, 2026)"
+    url: "https://www.taskrabbit.ca/cost-guides/assemble-furniture"
+    publisher: "Taskrabbit"
+  - title: "Moving help cost guide (updated October 1, 2026)"
+    url: "https://www.taskrabbit.ca/cost-guides/help-moving"
+    publisher: "Taskrabbit"
+  - title: "Taskprotect Terms & Conditions"
+    url: "https://support.taskrabbit.com/hc/en-ca/articles/46260436180379-Taskprotect-Terms-Conditions"
+    publisher: "Taskrabbit Support"
+  - title: "What Kind of Insurance Does Taskrabbit Offer?"
+    url: "https://support.taskrabbit.com/hc/en-ca/articles/46260501460891-What-Kind-of-Insurance-Does-Taskrabbit-Offer"
+    publisher: "Taskrabbit Support"
+  - title: "Taskrabbit Launches Vehicle-Integrated Moving Category Across 90+ Cities in Canada (March 24, 2026)"
+    url: "https://financialpost.com/pmn/business-wire-news-releases-pmn/taskrabbit-launches-vehicle-integrated-moving-category-across-90-cities-in-canada"
+    publisher: "Financial Post / Business Wire"
+  - title: "Become a Jiffy Pro (February 7, 2025)"
+    url: "https://intercom.help/jiffy/en/articles/2176611-become-a-jiffy-pro"
+    publisher: "Jiffy Help Center"
+  - title: "Wages: Handyman/woman (NOC 73201)"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/14393/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "Wages: Furniture mover (NOC 75101)"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/16660/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "Taskrabbit profile: serhat a. (Toronto)"
+    url: "https://www.taskrabbit.ca/ca/en/profile/serhat-a"
+    publisher: "Taskrabbit (self-published profile)"
+  - title: "Taskrabbit profile: Brandon H. (Toronto)"
+    url: "https://www.taskrabbit.ca/ca/en/profile/brandon-h--33"
+    publisher: "Taskrabbit (self-published profile)"
+  - title: "Young entrepreneurs wrap up a successful summer with the 2026 Summer Company program"
+    url: "https://www.kawarthalakes.ca/news-and-notices/posts/young-entrepreneurs-wrap-up-a-successful-summer-with-the-2026-summer-company-program/"
+    publisher: "City of Kawartha Lakes"
+  - title: "Start a summer company (students)"
+    url: "https://www.ontario.ca/page/start-summer-company-students"
+    publisher: "Government of Ontario"
+  - title: "Toronto's newest moving company is powered by varsity athletes (April 18, 2026)"
+    url: "https://www.torontotoday.ca/local/business-economy/toronto-moving-company-student-athletes-12151938"
+    publisher: "TorontoToday"
+  - title: "Lifting - General"
+    url: "https://www.ccohs.ca/oshanswers/ergonomics/lifting-general.html"
+    publisher: "Canadian Centre for Occupational Health and Safety"
+  - title: "Amazon.ca search: cordless drill driver kit (prices read October 9, 2026)"
+    url: "https://www.amazon.ca/s?k=cordless+drill+driver+kit"
+    publisher: "Amazon.ca"
+  - title: "Amazon.ca search: stud finder (prices read October 9, 2026)"
+    url: "https://www.amazon.ca/s?k=stud+finder"
+    publisher: "Amazon.ca"
+  - title: "Amazon.ca search: Robertson bit set (prices read October 9, 2026)"
+    url: "https://www.amazon.ca/s?k=robertson+screwdriver+bit+set"
+    publisher: "Amazon.ca"
+  - title: "Amazon.ca search: disposable shoe covers (prices read October 9, 2026)"
+    url: "https://www.amazon.ca/s?k=disposable+shoe+covers+boot"
+    publisher: "Amazon.ca"
+  - title: "Amazon.ca search: tool bag (prices read October 9, 2026)"
+    url: "https://www.amazon.ca/s?k=tool+bag+16+inch"
+    publisher: "Amazon.ca"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
+import StarterKit from '../../components/StarterKit.astro';
+
+Odd-job apps like Taskrabbit let you sell your time for furniture assembly, TV mounting, moving help, yard work and errands to people near you. In Canada, Taskrabbit charges Taskers a one-time $25 registration fee, puts its service fee on the client's bill, and lets you keep 100% of the hourly rate you set plus tips. Your real earnings depend on three things the app doesn't control: whether your city has demand, how fast and tidy you work, and how much of each job disappears into travel.
+
+<QuickAnswer>
+- **Cost to join Taskrabbit in Canada:** a one-time, non-refundable $25 registration fee. Beyond that, Taskrabbit says all fees are charged to clients, not Taskers (Taskrabbit Support, checked October 9, 2026).
+- **What you keep:** 100% of your self-set hourly rate and 100% of tips in most categories. IKEA and partner tasks pay a fixed amount per task instead (Taskrabbit blog, September 15, 2025).
+- **Market rates:** Taskrabbit's Canadian cost guide (updated October 1, 2026) puts average furniture assembly rates at $31/hour in Toronto, $29 in Vancouver and $24 to $25 in Montreal, Calgary, Ottawa, Winnipeg and Halifax.
+- **Wage benchmark:** Job Bank lists handypersons at $16.55 low, $25.00 median and $38.46 high per hour in Canada (2023 to 2024 data, updated November 19, 2025).
+- **Tax:** app income is self-employment income on T2125, with both CPP shares on net profit and GST/HST registration once taxable supplies pass $30,000.
+</QuickAnswer>
+
+| Quick facts | |
+|---|---|
+| Startup cost | $25 Taskrabbit registration plus about $100 to $150 for a drill, bits, stud finder and shoe covers (Amazon.ca, October 9, 2026) |
+| Typical first categories | Furniture assembly, mounting, moving help, yard work, errands, waiting in line |
+| How you're paid | Hourly rate you set, or a fixed price on IKEA and partner tasks; payouts usually in 1 to 3 business days via Stripe |
+| Damage protection | Taskprotect: Taskrabbit may offer up to $1,000 at its discretion; it is not insurance |
+| Wage benchmark | $25.00/hour median for handypersons (Job Bank) |
+| Tax | T2125, CPP on net income, GST/HST past $30,000 |
+
+The app finds the customer. You still bring the skill, the tools, the punctuality and the judgment to decline. If you already know which trade you want to be known for, direct clients may fit better: [handyman work](/side-hustles/handyman-side-hustle-canada/), [house cleaning](/side-hustles/house-cleaning-side-hustle-canada/), [lawn care](/side-hustles/lawn-care-side-hustle-canada/), [snow removal](/side-hustles/snow-removal-side-hustle-canada/), [junk removal](/side-hustles/junk-removal-side-hustle-canada/) or [moving help](/side-hustles/moving-help-side-hustle-canada/).
+
+## Who are odd-job apps a good fit for?
+
+Odd-job apps suit people who are handy in a specific, honest way, live where the app has customers, and can show up on time with the right tools. You don't need a trade ticket for assembly, light moving or yard cleanup, but you do need to be careful in strangers' homes.
+
+Good fits:
+
+- **People who already assemble furniture for themselves and friends.** Assembly is the most common entry category.
+- **Students and shift workers** who want short jobs on their own schedule. Taskrabbit lets you set your availability and opt out of categories.
+- **Car owners**, because a vehicle widens your map and opens moving and hauling tasks.
+- **Retirees and tradespeople** with tools and judgment who want occasional work.
+- **Newcomers** building Canadian references, as long as the app is open in their city and their work permit allows self-employment.
+
+It's a poor fit if you live outside a served area, don't own a single tool, can't lift safely, or need guaranteed hours. A quiet first week is normal.
+
+## Which apps and platforms can you use in Canada?
+
+Taskrabbit is the main open-to-individuals odd-job app in Canada. Other options are either for established companies or are classifieds sites where you do your own marketing.
+
+<ComparisonTable
+  caption="Odd-job platforms in Canada"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Taskrabbit",
+      href: "https://www.taskrabbit.ca/",
+      bestFor: "Individuals offering assembly, mounting, moving help, yard work and errands",
+      pricing: "One-time $25 registration fee; service and Trust & Support fees are charged to clients",
+      pricingUrl: "https://support.taskrabbit.com/hc/en-ca/articles/46260480151579-What-s-the-Registration-Fee",
+      canada: "Owned by IKEA's parent Ingka Group; truck-assisted moving live in 90+ Canadian cities (March 2026)",
+      pros: ["You keep 100% of your self-set rate and tips", "IKEA and partner tasks bring demand"],
+      cons: ["Registration doesn't guarantee approval", "IKEA tasks pay a fixed price whether a job runs long or not"],
+    },
+    {
+      name: "Jiffy",
+      href: "https://jiffyondemand.com/",
+      bestFor: "Established home-service companies with licences and insurance",
+      pricing: "Free to join; a percentage of each job billed through the platform",
+      pricingUrl: "https://intercom.help/jiffy/en/articles/2176611-become-a-jiffy-pro",
+      canada: "Requires a tax ID, licences in your field and at least $2 million liability insurance",
+      pros: ["No subscription or per-lead fee", "Jobs come to you"],
+      cons: ["Not for beginners", "WSIB needed if you have employees"],
+    },
+    {
+      name: "Kijiji and Facebook Marketplace",
+      href: "https://www.kijiji.ca/",
+      bestFor: "Your own service ads for assembly, small moves and yard cleanups",
+      pricing: "Free to post in many categories; paid promotions optional",
+      canada: "Canadian classifieds plus local buy-and-sell and community groups",
+      pros: ["No platform cut", "Repeat clients are yours"],
+      cons: ["No built-in damage protection", "You screen clients and chase payment"],
+    },
+  ]}
+/>
+
+For a side-by-side of an app versus classifieds, see [TaskRabbit vs Kijiji vs Facebook for handyman work](/side-hustles/taskrabbit-vs-kijiji-facebook-handyman-canada/), and for a full platform review, the [Taskrabbit review for Canada](/side-hustles/taskrabbit-review-canada/).
+
+## Where does Taskrabbit operate in Canada?
+
+Taskrabbit's March 24, 2026 press release says its truck-assisted moving category is live in all active Canadian markets, more than 90 cities, including Toronto, Vancouver, Montreal and Calgary. Its February 11, 2026 Tasker update said the platform was expanding to new Canadian service areas. Its cost guides publish rates for Toronto, Montreal, Vancouver, Calgary, Winnipeg, Ottawa–Gatineau, Windsor–London, Halifax and Quebec City.
+
+Open taskrabbit.ca, enter your postal code and see whether Taskers are listed in the category you want before you buy tools. If your town is empty, Kijiji, Facebook Marketplace and community boards are the slower version of the same hustle.
+
+## How does Taskrabbit pay Taskers?
+
+Taskrabbit uses three earning structures, according to its September 15, 2025 Tasker blog post:
+
+| Structure | How it pays | Where you see it |
+|---|---|---|
+| Self-Set Hourly | You set an hourly rate per category and keep 100% of it plus 100% of tips | Most categories, including cleaning, moving and furniture assembly |
+| Task-Based | A fixed payment per task, shown up front | IKEA assembly and partner tasks |
+| Pre-Set Hourly | A pre-set hourly rate | Direct-hire jobs where a client picks you |
+
+A few rules matter for your math:
+
+- **Fees sit on the client's invoice.** Taskrabbit's support page says the client sees an hourly rate that includes your rate plus its percentage service fee, and a separate Trust & Support fee is added. So the rate a client sees on your profile is higher than what you set.
+- **No add-on charges for travel.** The February 2026 Tasker update introduced a Pricing Transparency Policy: your rate should account for gas, tolls, parking, stairs and vehicle costs, and charging those separately isn't allowed. Reimbursed expenses, such as hardware you buy at the client's request, go 100% to you.
+- **Payouts** usually arrive in 1 to 3 business days via Stripe.
+- **Opt out** of categories with a pricing structure you don't want under Skills & Rates in the Tasker app.
+- **Referrals:** the 2026 update offered a $25 payout when someone you refer invoices their first task.
 
-Start odd-job apps in Canada, including TaskRabbit and similar platforms, by confirming the app has customers in your city and by accepting one task you can finish tonight, such as furniture assembly, mounting you have practised, moving help, yard cleanup, or an errand. Odd-job apps suit people who can show up on time with tools and a written scope, and odd-job apps are a poor fit outside the service area or when the task is electrical, gas, plumbing, or structural work reserved for a licensed trade.
+## How much can you earn on odd-job apps?
 
-The app finds the customer. You still bring the skill, the tools, the punctuality, and the judgment to decline. If you already know which trade you want to be known for, direct clients may fit better: [handyman work](/side-hustles/handyman-side-hustle-canada/), [house cleaning](/side-hustles/house-cleaning-side-hustle-canada/), or [lawn care](/side-hustles/lawn-care-side-hustle-canada/). Odd-job apps are a way to meet the first customers.
+There's no official data on Tasker earnings. The useful Canadian benchmarks are Taskrabbit's own client-facing averages and Job Bank's wages for similar work.
 
-| Fact | Detail for odd-job apps in Canada |
-| --- | --- |
-| What the apps sell | Your time for assembly, mounting, moving help, yard work, and errands |
-| City check | Search your city on the app. A March 24, 2026 Taskrabbit release covers truck-assisted moving, not every category in every town |
-| Starter tools | Typical ranges to verify locally, in the table below |
-| Platform fee | The percentage changes. Read the current Tasker terms |
-| GST/HST | Small-supplier threshold of $30,000. [When to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
-| Nova Scotia rate | HST 14%. [Charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) |
-| Licensed trades | Electrical, gas, plumbing, and structural work are often reserved. The rule is provincial. Check the provincial trade authority |
+**Taskrabbit's average rates by city (cost guides updated October 1, 2026, client-facing):**
 
-## Where do odd-job apps operate in Canada?
+| City | Furniture assembly, avg hourly | Furniture assembly, typical job | Moving help, avg hourly | Moving help, avg invoice |
+|---|---|---|---|---|
+| Toronto | $31 | $97 | $34 | $91 |
+| Vancouver | $29 | $92 | $33 | $98 |
+| Montreal | $25 | $79 | $35 | $118 |
+| Calgary | $25 | $88 | $29 | $105 |
+| Winnipeg | $25 | $71 | $31 | $84 |
+| Ottawa–Gatineau | $24 | $75 | $31 | $89 |
+| Windsor–London | $28 | $54 | $29 | $82 |
+| Halifax | $25 | $78 | $24 | $52 |
+| Quebec City | $24 | $79 | $27 | $76 |
 
-Odd-job apps in Canada are not in every town. Taskrabbit’s press release of March 24, 2026 says truck-assisted moving is live across active Canadian markets, including Toronto, Vancouver, Montreal, and Calgary, described as 90+ cities ([Taskrabbit release](https://www.taskrabbit.ca/press/release/taskrabbit-launches-vehicle-integrated-moving-category-across-90-cities-in)).
+Taskrabbit says the figures come from market research and platform data. The same guides headline "starting at $39 per hour on average" for furniture assembly and "$50 per hour on average" for moving help nationally. Its item estimates for assembly: chair $45 to $80, bookshelf $60 to $110, desk $65 to $140, bed frame $80 to $150, dresser $90 to $220, wardrobe $150 to $300 and patio set $150 to $350.
 
-That release is about truck-assisted moving. Open taskrabbit.ca, enter your city, and see whether Taskers and categories exist before you buy tools. If the city is empty, Kijiji, Facebook Marketplace, and community boards are the older version of the same hustle. They are slower. They also do not take a platform fee.
+**Job Bank wages for comparable employees (updated November 19, 2025, 2023 to 2024 data):**
 
-## Who are odd-job apps a fit for in Canada?
+| Job Bank title (NOC) | Low | Median | High |
+|---|---|---|---|
+| [Handyman/woman (NOC 73201)](https://www.jobbank.gc.ca/marketreport/wages-occupation/14393/ca) | $16.55/hr | $25.00/hr | $38.46/hr |
+| [Furniture mover (NOC 75101)](https://www.jobbank.gc.ca/marketreport/wages-occupation/16660/ca) | $16.55/hr | $22.00/hr | $30.29/hr |
 
-Odd-job apps in Canada fit people who are handy in a specific, honest way — IKEA assembly, TV mounting they have practised, basic yard cleanup, or careful moving help — and who live where the app has customers. Odd-job apps are a poor fit outside the service area, without tools for one category, without a way to lift or reach a suburb, when the task is electrical, gas, or plumbing reserved for a licensed trade, or when a background check will outlast the week the money is needed.
+Provincial handyperson medians on the same page: Ontario $24.00, Quebec $25.00, Alberta $28.00 and British Columbia $29.00. If your profit per hour, after travel, is below these wages, a regular job would pay you more for the same hours.
 
-Photos, reviews, and a clear note about what the price includes matter more than a clever headline. The first five reviews will shape the next invitations.
+## What does the math look like?
 
-## What work do odd-job apps actually assign in Canada?
+These examples are **Illustrative**. The hourly rates, job lengths, tips and travel are assumptions; fuel uses an assumed $1.70 a litre and 9 L/100 km. Taskrabbit's service and Trust & Support fees are paid by the client, so they don't reduce these numbers.
 
-Odd-job apps in Canada are generally set up as self-employment: you set or accept a rate, you travel to a stranger’s home, and you do a defined task. The platform takes a fee, and the percentage changes, so read the current Tasker terms instead of a number from a review site.
+**Illustrative: a Saturday dresser and bed frame assembly in Toronto by transit.**
 
-Customers compare you on photos, reviews, and response time. Employment status can still depend on the platform’s terms and on provincial tests, so treat “self-employed” as the usual setup and confirm your own situation if a form or a contract says otherwise.
+| Line | Amount |
+|---|---|
+| Self-set rate (assumed) | $40.00/hour |
+| Time on site | 2.5 hours |
+| Task pay (2.5 × $40) | $100.00 |
+| Tip (assumed) | $10.00 |
+| Transit, round trip (assumed) | $7.00 |
+| **Profit before tax** | **$103.00** |
+| Total time including 1 hour of travel | 3.5 hours |
+| **Profit per hour** | **$29.43** |
 
-Categories that suit a careful beginner:
+**Illustrative: the same job by car, 30 km round trip.** Fuel is 30 × 0.09 L × $1.70 = $4.59, plus $6 of parking (assumed). Profit is $110.00 − $10.59 = $99.41 over 3.25 hours, about $30.59 an hour, before wear on the car.
 
-- Furniture assembly with the instructions and the right bits
-- Heavy lifting alongside another person, not a solo piano move
-- Yard cleanup that does not include pesticide application. In Ontario, read the province’s rules on [pesticides and home lawns and gardens](https://www.ontario.ca/page/pesticides-home-lawns-and-gardens) before you offer any spraying
-- Mounting only when you know how to find studs and what is inside the wall
-- Waiting or errands, if the hourly rate still works after transit
+**Illustrative: a fixed-price assembly that runs long.** A task-based job pays a set amount however long it takes. If one pays $60 (assumed) and you finish in 1.5 hours, that's $40 an hour; if a missing part stretches it to 3 hours with travel, it's $20 an hour. Track your times on fixed-price items so you know which ones to accept.
 
-Leave electrical panel work, gas appliances, refrigerant, structural changes, and anything a province reserves for a licensed trade. “The customer said it was fine” is not a licence. Check the provincial trade authority. The [handyman guide](/side-hustles/handyman-side-hustle-canada/) goes further on that line.
+**Illustrative: a monthly side income.** Six tasks a month at the first example's $103 profit each is $618 for about 21 hours, about $29.43 an hour. Subtract the one-time $25 registration fee and tools from the first month.
 
-| | Task booked inside the app | Direct client later |
-| --- | --- | --- |
-| Who finds the customer | The app | You |
-| Fee | A platform fee. Read the current terms. The percentage changes | No platform fee |
-| Insurance | Read the in-app policy and the exclusions | Your own liability quote |
-| Record | The app thread | Your invoice or a saved email |
+| Scenario (Illustrative) | Tasks per month | Profit per task | Monthly profit |
+|---|---|---|---|
+| Low | 3 | $70 | $210 |
+| Middle | 6 | $103 | $618 |
+| High | 12 | $120 | $1,440 |
 
-## What does the first odd-job kit cost in Canada?
+## What tasks can you offer? 20 ideas
 
-The first kit for odd-job apps in Canada should match one category, and the prices below are typical ranges to verify locally. A tool wall spends the first month’s earnings before the earnings exist. The itemized budget is in [odd-job app startup costs](/side-hustles/odd-jobs-apps-startup-costs-canada/).
+1. **Flat-pack furniture assembly:** the most common entry category, with steady demand from IKEA, Wayfair and Structube buyers.
+2. **Wardrobe and closet systems:** big, slow jobs that suit people who are patient and precise.
+3. **Bed frames and bunk beds:** frequent move-in requests.
+4. **Office chairs and desks:** quick wins for home-office setups.
+5. **Patio furniture and barbecues:** seasonal spring demand.
+6. **TV mounting on drywall:** only if you know how to find studs and choose anchors.
+7. **Shelves, mirrors and art hanging:** small, repeatable, good for reviews.
+8. **Curtain rods and blinds:** common for new renters.
+9. **Moving help (labour only):** loading and unloading a client's rental truck.
+10. **Heavy lifting:** moving a couch upstairs or a treadmill to the basement.
+11. **Packing and unpacking:** no lifting limit, good for careful organisers.
+12. **Furniture disassembly before a move:** pairs with moving help.
+13. **Yard cleanup and leaf raking:** no spraying; see the pesticide note below.
+14. **Snow shovelling:** winter demand in most Canadian cities.
+15. **Garage and basement decluttering:** often leads to a hauling job.
+16. **Errands and pickups:** Marketplace purchases, returns, store pickups.
+17. **Waiting in line:** passports, product drops, event tickets.
+18. **Smart-home device setup:** video doorbells and Wi-Fi cameras that don't need hard wiring.
+19. **Childproofing:** cabinet latches and furniture anchors.
+20. **Event setup and takedown:** chairs, tables and decor for parties.
 
-| Item | Typical CAD range | Notes |
-| --- | --- | --- |
-| Basic household tool kit (drill, bits, level, screwdriver set, stud finder) | $80–$200 | Enough for assembly and simple mounting. Not a renovation kit. |
-| Furniture dolly or moving straps | $25–$80 | Only if you accepted moving help. |
-| Work gloves and indoor shoe covers | $15–$35 | Shoe covers are cheap trust in a stranger’s hallway. |
-| Phone data you already have | $0–$20 extra | You need maps and the app on site. |
-| Transit or fuel to the job | Your real cost | A $70 assembly across the city can net poorly. |
-| Background check or registration fee | Check the app | Pay the platform’s process. Do not buy a random “certificate” from an ad. |
-| Liability insurance | Get a quote | A broken TV or a scuffed hardwood floor is your problem if you are uninsured. |
+Leave electrical panel work, hard-wired fixtures, gas appliances, refrigerant, structural changes and anything your province reserves for a licensed trade. "The customer said it was fine" isn't a licence. In Ontario, read the province's rules on [pesticides and home lawns and gardens](https://www.ontario.ca/page/pesticides-home-lawns-and-gardens) before offering any spraying.
 
-When you buy the first kit, buy the tools the category uses, not a 300-piece set you will not carry. A compact <AffiliateLink program="amazon-ca" label="household tool kit with a drill and a level" search="cordless drill driver kit" /> is enough to learn whether you like the work. Add a stud finder if the kit omits it. Mounting without one is how TVs meet drywall in the wrong place.
+## What gear do you need?
 
-For jobs you invoice yourself — off-app clients you meet later — a simple invoicing tool keeps deposits and HST straight once you are registered. <AffiliateLink program="freshbooks" label="FreshBooks" /> is built for that kind of small-service billing. You do not need FreshBooks to accept your first in-app task. You will want something like it when a neighbour asks to pay you directly.
+Buy for one category first. Prices below were read on Amazon.ca on October 9, 2026 and change often. The itemized budget is in [odd-job app startup costs](/side-hustles/odd-jobs-apps-startup-costs-canada/).
 
-Put app payouts in a separate account so tool receipts and bus fare do not disappear into groceries. <AffiliateLink program="koho" label="KOHO" /> is one Canadian account that can play that role.
+**Cordless drill/driver (assembly and mounting):**
 
-## How should you price the first tasks on odd-job apps in Canada?
+- <AffiliateLink program="amazon-ca" search="DEKOPRO 20V cordless drill driver kit" label="DEKOPRO 20V drill driver kit" />: $49.99, budget starter
+- <AffiliateLink program="amazon-ca" search="BLACK+DECKER 20V MAX drill LD120VA 30 piece" label="BLACK+DECKER 20V MAX LD120VA with 30 accessories" />: $69.98, drill plus a bit set in one box
+- <AffiliateLink program="amazon-ca" search="DEWALT 12V MAX drill driver kit DCD710S2" label="DEWALT 12V MAX DCD710S2" />: $169.00, compact and light for all-day assembly, two batteries
 
-Price odd-job apps in Canada from the payout you keep after the current platform fee, then subtract travel and any part you replace. Odd-job apps in Canada do not guarantee a number of tasks, and a quiet first week with one job is a normal start.
+**Robertson (square) bits.** Canadian screws often use a square drive; a Phillips-only kit stalls on a Canadian closet.
 
-Rates on these apps are visible before you commit.
+- <AffiliateLink program="amazon-ca" search="DEWALT FlexTorq square Robertson 2 inch bits 10 pack" label="DEWALT FlexTorq Square/Robertson bits, 10-pack" />: $9.98
+- <AffiliateLink program="amazon-ca" search="FlexTorq 3.5 inch square Robertson 10 pack" label="FlexTorq 3.5-inch Square bits, 10-pack" />: $14.99, for recessed screws
 
-Do not copy a rate from another city. Toronto assembly and a smaller city’s assembly are different markets. Look at what Taskers with a few reviews actually charge in your category, then sit slightly under them until you have photos of your own work. Raise the rate when your calendar is full.
+**Stud finder (mounting):**
 
-A task with a two-hour minimum that includes a 40-minute transit ride is a different hourly result from a job down the street. That comparison is an illustration, not a typical payout.
+- <AffiliateLink program="amazon-ca" search="CRAFTSMAN stud finder CMHT77633" label="CRAFTSMAN CMHT77633" />: $17.59, budget
+- <AffiliateLink program="amazon-ca" search="DEWALT stud finder DW0100" label="DEWALT DW0100" />: $29.95
+- <AffiliateLink program="amazon-ca" search="Franklin Sensors ProSensor M90 stud finder" label="Franklin Sensors ProSensor M90" />: $44.96, multi-sensor that shows the stud's width
 
-## What does an illustrative odd-job task look like in Canada?
+**Tool bag and shoe covers (professional look in a client's home):**
 
-An illustrative odd-job app task in Canada uses an assumed payout so travel and one missing anchor are easy to see. Those figures are not a typical Taskrabbit payout, a fee percentage, or an earnings claim.
+- <AffiliateLink program="amazon-ca" search="WORKPRO 16 inch wide mouth tool bag" label="WORKPRO 16-inch tool bag" />: $35.99
+- <AffiliateLink program="amazon-ca" search="TOPEX 16 inch wide mouth tool bag" label="TOPEX 16-inch tool bag" />: $34.99
+- <AffiliateLink program="amazon-ca" search="disposable shoe covers non slip 100 pack" label="Non-slip disposable shoe covers, 100-pack" />: $16.99
 
-**Illustrative example.** The sketch starts from the payout, not from a guessed platform-fee percentage.
+**For moving and heavy lifting:** a <AffiliateLink program="amazon-ca" search="VEVOR furniture dolly 1000 lb 2 pack" label="VEVOR furniture dolly 2-pack" /> was $55.90 and <AffiliateLink program="amazon-ca" search="Forearm Forklift lifting straps" label="Forearm Forklift lifting straps" /> were $37.75 on Amazon.ca on October 9, 2026. Buy them only after you've accepted moving tasks; the [moving help guide](/side-hustles/moving-help-side-hustle-canada/) covers that gear.
 
-Assume the payout that reaches you after the platform fee is $120. You did not assume a fee percentage. You used an assumed payout. Transit both ways costs $10. Hardware in the box covers the fasteners, and you spend $5 on one missing anchor. Amount left after travel and that anchor = $120 − $10 − $5 = $105. Time on site is 2 hours. Door to door is 3 hours. This sketch is $35 per door-to-door hour ($105 ÷ 3). The same sticker task down the street, with $4 of transit and 2.25 hours door to door, leaves $111, or about $49.33 per door-to-door hour ($111 ÷ 2.25). Read the current Tasker terms for the fee before you compare either sketch with a live task.
+A full starter set (DEKOPRO drill, DEWALT bits, CRAFTSMAN stud finder, shoe covers) came to $94.55 before tax on that date, plus a level, tape measure and hex keys you probably own.
 
-## How do you start odd-job apps in Canada?
+## How do you start? A 30-day plan
 
-Start odd-job apps in Canada by confirming the city, reading the fee and the insurance exclusions, and accepting one small task inside a category you could do tonight. Assembly is the usual honest start. Moving help is honest if you are strong and you will not move a fridge alone down icy steps.
+**Week 1: check demand and sign up.**
+- Enter your postal code on taskrabbit.ca and note which categories show local Taskers and what they charge.
+- Read the registration fee page, the [Fees, Payments, and Cancellation Supplemental Terms](https://support.taskrabbit.com/hc/en-ca/articles/46260514951579-Fees-Payments-and-Cancellation-Supplemental-Terms) and the Taskprotect terms.
+- Apply and pay the $25 fee. Paying doesn't guarantee approval.
+- Open a separate bank account for payouts. <AffiliateLink program="koho" label="KOHO" /> is one Canadian option.
 
-### 1. Confirm the city and pick one category
+**Week 2: build proof and set rates.**
+- Assemble one piece of furniture at home or for a friend. Photograph the tools, the finished piece and a square corner.
+- Write a 60-word bio naming what you do and what you don't (electrical, gas, plumbing).
+- Set your rate at or slightly below Taskers with a few reviews in your category. Remember the client sees your rate plus Taskrabbit's fees.
+- Pick neighbourhoods you can reach in under 30 minutes.
 
-Search your city on the app. If the app is live, choose the category you could do tonight without a panic search.
+**Week 3: take the first three tasks.**
+- Accept small jobs at times you won't rush: one bookshelf, one bed frame, one shelf hang.
+- Arrive five to ten minutes early, confirm scope at the door, wear shoe covers, and take away packaging if agreed.
+- Log hours, travel and payout for every task.
 
-### 2. Read the fee, the cancellation rule, and the insurance offer
+**Week 4: review and adjust.**
+- Calculate profit per hour, including travel, and compare it with Job Bank's $25.00 handyperson median.
+- Raise your rate if you're booked solid; shrink your map if travel eats the margin.
+- Decide whether to add a second category, such as mounting or moving help.
 
-Write down the platform fee, who pays it, and what happens if the customer cancels at the door. The percentage changes, so use the terms in your account. Some platforms offer a liability policy for tasks booked in the app and exclude tasks you take off-platform. Read the exclusions. Vehicles, certain trades, and an extra repair the customer added at the door are classic gaps. If the policy does not cover the work you will do, get your own quote before you accept the task.
+The day-by-day version is in [your first week on odd-job apps](/side-hustles/odd-jobs-apps-first-week-canada/), and per-category rates are in [how much to charge on odd-job apps in Canada](/side-hustles/odd-jobs-apps-pricing-canada/).
 
-### 3. Build a tiny proof gallery
+## Templates and checklists
 
-Assemble one piece of furniture in your own home, or help a friend, and take bright photos: before, tools, finished, and a close-up of a square corner. You need evidence you finish the job.
+**Profile bio:**
 
-### 4. Set a rate that includes travel
+> I assemble flat-pack furniture (IKEA, Wayfair, Structube), hang shelves and art, and help with small moves in [neighbourhoods]. I bring a drill, square and Phillips bits, a level, a stud finder and shoe covers, and I take away packaging on request. I don't do electrical, gas or plumbing work.
 
-Decide your minimum task size and the neighbourhoods you will serve. Publish a rate you can say out loud. If the app lets you add an explanation, say what you bring (tools, shoe covers) and what you do not do (electrical, gas, plumbing).
+**Reply to a task invite:**
 
-### 5. Buy only the tools that category needs
+> Hi [name], thanks for the invite. I can do this [day] at [time]. To confirm: [items] assembled, packaging removed, nothing wired or plumbed. Is there parking or an elevator I should know about? If any parts are missing I'll stop the clock and let you decide.
 
-Drill, bits including a Robertson — Canadian furniture and electrical cover plates still use a square drive — level, tape, stud finder, pencil, and a small hardware tin. A kit with only Phillips bits will stall on a Canadian closet.
+**Arrival checklist:**
 
-### 6. Accept a small first task
+- [ ] Shoe covers on at the door
+- [ ] Confirm the item list and the room
+- [ ] Check boxes for missing or damaged parts before starting
+- [ ] Ask what's behind the wall before drilling (pipes, wires, tile)
+- [ ] Lay a drop cloth or flattened box under the work
+- [ ] Photograph the finished job
 
-Say yes to a simple assembly or a short list, at a time you will not rush. Arrive ten minutes early, confirm the scope at the door, and do not expand into the breaker panel. That sentence is how unlicensed work starts.
+**Wrap-up message:**
 
-### 7. Close the job in writing
+> All done: [items] assembled and checked, packaging [removed/left by the door]. [Note any missing part or issue]. Thanks for booking. If you're happy with the work, a review helps a lot.
 
-In the app, note what you completed. If something could not be finished because parts were missing, say so before you leave, and record it. You will want that note when a review says the job was unfinished.
+**Task log columns:** date, category, client area, hours on site, travel time, kilometres or fares, payout, tip, expenses reimbursed, profit, profit per hour.
 
-### 8. Ask for the review, then wait
+## Real examples
 
-One calm sentence is enough. Do not offer a discount for stars. Do not argue with the first lukewarm review in public. Fix the process.
+Few Canadian Taskers have shared earnings with a publication. These are the public records available:
 
-### 9. Move repeat customers off the app only on purpose
+**Taskrabbit public profiles (Toronto).** Profiles are self-published and show client-facing rates, which include Taskrabbit's service fee. One Toronto furniture-assembly Tasker, "serhat a.", lists 654 tasks, 356 reviews at 5.0, Tasker since 2018 and a displayed rate of $56.50/hour ([profile](https://www.taskrabbit.ca/ca/en/profile/serhat-a), checked October 9, 2026). Another, "Brandon H.", Tasker since 2020, lists more than 20 skills, from moving help and snow removal to yard work, with a displayed furniture assembly rate of $96.05/hour ([profile](https://www.taskrabbit.ca/ca/en/profile/brandon-h--33)). The gap shows how widely rates vary in one city.
 
-If someone wants you back off-app, decide on purpose. You may keep more of the fee, and you may lose the platform’s insurance and the paper trail. Invoice properly, and keep the same scope limits. The [handyman guide](/side-hustles/handyman-side-hustle-canada/) is the next step when those requests become the business.
+**Teddy Haber, Haber Handyman and Hauling (Kawartha Lakes, Ont.).** Haber ran a handyman and hauling business for local residents as one of six participants in the 2026 Summer Company program, according to the City of Kawartha Lakes ([2026 wrap-up](https://www.kawarthalakes.ca/news-and-notices/posts/young-entrepreneurs-wrap-up-a-successful-summer-with-the-2026-summer-company-program/)). Ontario's [Summer Company](https://www.ontario.ca/page/start-summer-company-students) program offers students up to $3,000: up to $1,500 up front and up to $1,500 on completing the program. No revenue was published.
 
-## What does the first week on odd-job apps in Canada look like?
+**Hustle Moving Co. (Toronto).** A coach-run moving company staffed by varsity athletes pays movers up to $45 an hour as team leaders, and says the average move takes about four hours ([TorontoToday, April 18, 2026](https://www.torontotoday.ca/local/business-economy/toronto-moving-company-student-athletes-12151938)). It's an employer, not an app, but it shows what organised moving labour pays in Toronto.
 
-The first week on odd-job apps in Canada is a city check, one category, a short profile that names what you will not do, and a log of hours, travel, fee, and net. A second category is usually not earned yet.
+None of these are typical results or verified profits.
 
-### Day 1: Check the city and read the rules
+## What mistakes do new Taskers make?
 
-City check. Pick one category. Read fees and insurance exclusions.
+- **Selecting every category.** You'll be invited to jobs you can't do, and the first review will say so.
+- **Pricing travel at zero.** Under Taskrabbit's Pricing Transparency Policy you can't add travel charges later, so build it into your rate or shrink your map.
+- **Taking cash off-app for a task the platform booked.** It's against the rules and can cost you the account.
+- **Doing electrical or plumbing work once.** Provincial trade rules still apply, and Taskprotect may not help.
+- **No photos and no scope note.** Memory is a bad invoice.
+- **Ignoring old-building hardware.** Plaster, tile and concrete need different anchors from drywall; older homes also use Robertson screws.
 
-### Day 2: Photograph one practice assembly
+## What about damage, insurance and safety?
 
-Photos of one practice assembly. Write a 60-word profile that names what you will not do.
+Taskrabbit's support pages say it doesn't insure users. Under Taskprotect, Taskrabbit may, at its discretion, offer up to $1,000 for damage or injury arising from a task. Clients must claim against their own insurance first, and claims must be made within 30 days ([Taskprotect terms](https://support.taskrabbit.com/hc/en-ca/articles/46260436180379-Taskprotect-Terms-Conditions)). A dropped 75-inch TV can exceed that, and off-app jobs aren't covered at all. Get a quote for commercial general liability insurance before you mount expensive screens or work off-platform.
 
-### Day 3: Buy only the tools you lack
+Lift heavy items with a partner and a dolly; the Canadian Centre for Occupational Health and Safety's [lifting guidance](https://www.ccohs.ca/oshanswers/ergonomics/lifting-general.html) recommends planning the lift, keeping the load close, avoiding twisting and using carts.
 
-Tools you actually lack, and only those. Shoe covers. Separate bank account.
+## How do taxes and trade rules apply?
 
-### Day 4: Publish hours you can keep
+Income from odd-job apps is generally self-employment income, whether the app paid you or a client e-transferred you. Report it on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) even if no slip arrives, and pay both the employee and employer shares of [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contributions on net income. Deductible costs can include the registration fee, consumables, the business share of phone and vehicle costs, and parking; tools usually go through capital cost allowance. See [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/) and [how much tax to set aside for a side hustle in Canada](/side-hustles/how-much-tax-set-aside-side-hustle-canada/).
 
-Profile live. Set hours you can truly make, including transit.
+GST/HST follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html): worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Count all side-hustle revenue. Odd jobs aren't ride-sharing, so the first-dollar rule on the CRA's [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) page doesn't apply. Once registered, use the rate for the province where you supply the service; see the CRA's [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) and [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html) pages. For direct clients, <AffiliateLink program="freshbooks" label="FreshBooks" /> or <AffiliateLink program="wave" label="Wave" /> can produce invoices that show tax once you're registered.
 
-### Day 5: Reply to one specific task
+This is not tax, legal or insurance advice.
 
-Apply to tasks or wait for invitations. Reply quickly and specifically. “I can do this Thursday at 6, and the price includes assembly of one dresser, not mounting” is a useful reply.
+### Provincial notes
 
-### Day 6: Do the job and leave the space clean
+- **Ontario:** 13% HST once registered. Pesticide rules apply to yard work; check [Skilled Trades Ontario](https://www.skilledtradesontario.ca/) before any work that looks like a trade.
+- **Quebec:** QPP replaces CPP, and QST applies alongside GST once registered. Construction work in Quebec is regulated by the Commission de la construction du Québec; keep to assembly, moving help and errands unless you hold the right licence.
+- **British Columbia, Saskatchewan and Manitoba:** GST plus a separate PST; check whether PST applies to your services.
+- **Alberta:** 5% GST only once registered.
+- **Atlantic provinces:** HST; Nova Scotia's rate is 14% as of April 1, 2025 on the CRA table.
+- **Workers' compensation** is provincial. Renovation-type work can bring you into your province's board even as a sole proprietor, so check before you take it on.
 
-Leave the space cleaner than you found it.
+## What should an odd-job starter kit include?
 
-### Day 7: Log payout, travel, fee, and net
+A drill with square and Phillips bits, a stud finder, shoe covers and a bag that keeps it together. Moving gear waits until you accept moving tasks.
 
-Decide whether a second category is earned. Usually it is not, not yet.
+<StarterKit
+  label="Starter kit: odd-job apps"
+  items={[
+    { name: "Cordless drill/driver", use: "Furniture assembly and mounting", cost: "$49.99 (DEKOPRO 20V) / $69.98 (BLACK+DECKER LD120VA) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=cordless+drill+driver+kit", program: "amazon-ca", links: [{ label: "DEKOPRO 20V kit", search: "DEKOPRO 20V cordless drill driver kit" }, { label: "BLACK+DECKER LD120VA", search: "BLACK+DECKER 20V MAX drill LD120VA 30 piece" }] },
+    { name: "Robertson bits", use: "Canadian square-drive screws", cost: "$9.98 (DEWALT FlexTorq 10-pack) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=robertson+screwdriver+bit+set", program: "amazon-ca", links: [{ label: "DEWALT FlexTorq Square", search: "DEWALT FlexTorq square Robertson 2 inch bits 10 pack" }] },
+    { name: "Stud finder", use: "Safe TV and shelf mounting", cost: "$17.59 (CRAFTSMAN) / $29.95 (DEWALT DW0100) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=stud+finder", program: "amazon-ca", links: [{ label: "CRAFTSMAN CMHT77633", search: "CRAFTSMAN stud finder CMHT77633" }, { label: "DEWALT DW0100", search: "DEWALT stud finder DW0100" }] },
+    { name: "Shoe covers", use: "Protect clients' floors", cost: "$16.99 for 100 on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=disposable+shoe+covers+boot", program: "amazon-ca", links: [{ label: "Non-slip shoe covers", search: "disposable shoe covers non slip 100 pack" }] },
+    { name: "Tool bag", use: "Carry everything in one trip", cost: "$34.99 (TOPEX) / $35.99 (WORKPRO) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=tool+bag+16+inch", program: "amazon-ca", links: [{ label: "WORKPRO 16-inch", search: "WORKPRO 16 inch wide mouth tool bag" }], optional: true },
+    { name: "Wave", use: "Free bookkeeping for payouts, fares and kilometres", program: "wave", linkLabel: "See Wave" },
+  ]}
+/>
 
-## What is easy to miss on odd-job apps in Canada?
+## What should you keep in mind about these numbers?
 
-Hardware, parking, missing parts, and winter stairs change the real hourly result of odd-job apps in Canada. Shoe covers, a cloth, and a magnet for dropped screws are how a careful client books you again.
+Taskrabbit's city averages are client-facing estimates from its cost guides (updated October 1, 2026) and include fees you don't receive; your own payout depends on the rate you set and how many invites you win. Job Bank wages describe employees in 2023 to 2024, not app workers. Public profile rates are self-published and change. Fees, policies and Taskprotect limits are as of October 9, 2026, and Taskrabbit says it can change its fees at any time. Amazon.ca prices were read on October 9, 2026. Hourly rates, tips, travel and task counts in the worked examples are assumptions.
 
-Canadian hardware is mixed. IKEA uses its own fasteners. Older homes use Robertson screws. Drywall anchors that came with a TV mount are often the wrong ones for plaster or for a tiled wall. Look at the wall before you drill.
+## Which guides pair with odd-job apps?
 
-Parking in the core can cost more than the bit set. Ask about parking in the chat. A garage fee you cannot avoid belongs in the quote.
+Odd-job apps lead to [handyman work](/side-hustles/handyman-side-hustle-canada/) when you want direct repair clients and a tighter scope, and to [furniture assembly](/side-hustles/furniture-assembly-side-hustle-canada/) if that's the category you enjoy. Recurring indoor work is [house cleaning](/side-hustles/house-cleaning-side-hustle-canada/). Outdoor seasons are [lawn care](/side-hustles/lawn-care-side-hustle-canada/) and [snow removal](/side-hustles/snow-removal-side-hustle-canada/). Hauling is [junk removal](/side-hustles/junk-removal-side-hustle-canada/), and passenger apps are [rideshare driving](/side-hustles/rideshare-driving-side-hustle-canada/).
 
-“Quick mount” and “the bracket is somewhere” are different jobs. If parts are missing, the clock and the scope should pause while the customer decides. Do not donate an hour to a scavenger hunt unless the rate includes it.
-
-Winter changes moving help. Icy stairs, salt in the hallway, and a sofa that will not fit the turn are normal. Walk the path before you lift.
-
-## What mistakes do people make on odd-job apps in Canada?
-
-The common mistakes on odd-job apps in Canada are selecting every category, pricing the bus ride at zero, taking cash off-app for a task the platform booked, and doing electrical work once. Provincial trade rules still apply, and platform insurance may exclude the work. Check the provincial trade authority.
-
-Selecting every category so you look busy. You will be invited to jobs you cannot do, and the first review will say so.
-
-Underpricing to win, then resenting the bus ride. Price the trip or shrink the map.
-
-Taking cash off-app at the door for a task the platform booked, against that platform’s rules. You can lose the account. If you want direct clients, build them honestly later.
-
-No photos and no scope note. Memory is a bad invoice.
-
-## How do taxes and trade rules apply to odd-job apps in Canada?
-
-Income from odd-job apps in Canada is generally self-employment income, whether the app paid you or a client e-transferred you: keep records, report the income on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) even if a T4A never arrives, and budget for both shares of [Canada Pension Plan contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) on the net. GST/HST follows the small-supplier test of $30,000 or less of worldwide taxable supplies in a single calendar quarter and over the last four consecutive calendar quarters, including associates, which is separate from [GST/HST for taxi and ride-sharing drivers](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html). After registration, charge Nova Scotia’s 14% HST ([charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html)), add Quebec’s QST on top of GST, confirm other rates on the CRA [GST/HST calculator](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html), and check the provincial trade authority before electrical, gas, plumbing, or structural work.
-
-This guide is not tax, legal, or insurance advice.
-
-Read the CRA’s [when to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) page for the timing when you cross the threshold in one quarter versus over four quarters. The ride-sharing first-dollar rule is for passenger apps, explained in the [rideshare guide](/side-hustles/rideshare-driving-side-hustle-canada/). Put the tax you collect aside. Confirm the current QST rate before you add QST to a Quebec invoice.
-
-Trade rules are provincial. A task booked on an app does not replace a licence. Electrical, gas, plumbing, and structural work are often reserved for licensed trades. Check the provincial trade authority. If a job needs a permit or a ticket, decline it or partner with someone who holds the ticket, in the way the law allows. Some cities want a business licence before you advertise home services. Look up your municipality.
-
-Workers’ compensation is another provincial question, especially if the task looks like construction or renovation rather than assembling a bookcase. Check that province’s board before you price the job.
-
-In Ontario, pesticide application on a yard task is covered by the province’s rules for [pesticides and home lawns and gardens](https://www.ontario.ca/page/pesticides-home-lawns-and-gardens). Yard cleanup that stays off spraying avoids that question.
-
-## Which guides pair with odd-job apps in Canada?
-
-Odd-job apps in Canada lead to [handyman work](/side-hustles/handyman-side-hustle-canada/) when you want direct repair clients and a tighter scope. Recurring indoor work is [house cleaning](/side-hustles/house-cleaning-side-hustle-canada/). Outdoor seasons are [lawn care](/side-hustles/lawn-care-side-hustle-canada/) and [snow removal](/side-hustles/snow-removal-side-hustle-canada/). A full moving day is [moving help](/side-hustles/moving-help-side-hustle-canada/), and a pile that has to be tipped is [junk removal](/side-hustles/junk-removal-side-hustle-canada/). Signup, the registration fee, and the first practised task are in [your first week on odd-job apps in Canada](/side-hustles/odd-jobs-apps-first-week-canada/). The [TaskRabbit review for Canadian Taskers](/side-hustles/taskrabbit-review-canada/) covers its fees and payouts.
-
-Per-category hourly rates are in [how much to charge on odd-job apps in Canada](/side-hustles/odd-jobs-apps-pricing-canada/).
-
-Short shifts at weddings and festivals are covered in [event staffing](/side-hustles/event-staffing-side-hustle-canada/); app delivery by bicycle is in [bike and e-bike delivery](/side-hustles/bike-courier-side-hustle-canada/).
-
-For a side-by-side of an app versus classifieds, see [TaskRabbit vs Kijiji vs Facebook for handyman work](/side-hustles/taskrabbit-vs-kijiji-facebook-handyman-canada/).
-
-If you like short, flexible tasks, [mystery shopping](/side-hustles/mystery-shopping-side-hustle-canada/) and [flash staffing apps](/side-hustles/flash-staffing-apps-side-hustle-canada/) are two more ways to fill gaps in a week, with scam warnings and tax basics covered in each guide.
+Short shifts at weddings and festivals are covered in [event staffing](/side-hustles/event-staffing-side-hustle-canada/); app delivery by bicycle is in [bike and e-bike delivery](/side-hustles/bike-courier-side-hustle-canada/). If you like short, flexible tasks, [mystery shopping](/side-hustles/mystery-shopping-side-hustle-canada/) and [flash staffing apps](/side-hustles/flash-staffing-apps-side-hustle-canada/) are two more ways to fill gaps in a week.
 
 <Faq
   items={[
     {
-      question: "Is TaskRabbit available in my Canadian city?",
-      answer: "Not everywhere. Taskrabbit’s March 24, 2026 press release says truck-assisted moving is live across active Canadian markets, including Toronto, Vancouver, Montreal, and Calgary, described as 90+ cities. That release is about the moving category. Check taskrabbit.ca for your city and for the categories you want. If the city is not live, local classifieds are the fallback.",
+      question: "How much does it cost to become a Taskrabbit Tasker in Canada?",
+      answer: "Taskrabbit charges a one-time, non-refundable $25 registration fee, and says all other fees are charged to clients. Paying doesn't guarantee approval. Basic tools for assembly (drill, square bits, stud finder, shoe covers) cost about $95 on Amazon.ca on October 9, 2026.",
     },
     {
-      question: "Do I need a licence to assemble furniture?",
-      answer: "Furniture assembly is the usual starting category on odd-job apps in Canada. Electrical, gas, plumbing, and structural work are often reserved for licensed trades, and the rule is provincial. Decline work that needs a ticket you do not hold. Also check whether your city wants a general business licence.",
+      question: "Does Taskrabbit take a cut of my hourly rate?",
+      answer: "Not on self-set hourly tasks. Taskrabbit says Taskers keep 100% of the rate they set and 100% of tips; the service fee and Trust & Support fee are added to the client's bill. IKEA and partner tasks pay a fixed amount per task instead.",
     },
     {
-      question: "Who pays if I damage a TV?",
-      answer: "You might, personally, if you are uninsured or the damage is outside the platform policy. Read the task-protection exclusions before you mount anything expensive. Your own liability policy is worth a quote once you leave the app.",
+      question: "How much do Taskers charge in Canada?",
+      answer: "Taskrabbit's October 2026 cost guide lists client-facing furniture assembly averages of $31/hour in Toronto, $29 in Vancouver and $24 to $25 in Montreal, Calgary, Ottawa and Halifax. Job Bank's median wage for handypersons is $25.00 an hour, a useful bar for your own profit per hour.",
     },
     {
-      question: "How should I price my first tasks?",
-      answer: "Look at active Taskers in your city and category, include travel, and do not copy a rate from another province. Read the current platform fee in your account. A quiet first week is normal. Raise prices when you are booked, not before you have a review.",
+      question: "Who pays if I damage something during a task?",
+      answer: "You might. Taskrabbit says it doesn't insure users; under Taskprotect it may offer up to $1,000 at its discretion, after the client's own insurance, with claims due within 30 days. Off-app jobs aren't covered. Get a liability insurance quote before mounting expensive items.",
     },
     {
-      question: "When do I register for GST/HST?",
-      answer: "Generally when your worldwide taxable supplies exceed $30,000 in a calendar quarter or over four consecutive calendar quarters, using the CRA small-supplier test. Odd jobs are not the ride-sharing exception. Confirm your own numbers. This is not tax advice.",
+      question: "Do I pay tax on Taskrabbit income?",
+      answer: "Yes. Report it as self-employment income on T2125, pay both CPP shares on net income, and register for GST/HST once taxable supplies pass $30,000 in a quarter or over four quarters. The ride-sharing first-dollar rule doesn't apply. This is not tax advice.",
     },
   ]}
 />
