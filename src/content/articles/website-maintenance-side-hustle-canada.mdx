@@ -1,9 +1,9 @@
 ---
 title: "How to Start Website Maintenance in Canada (Step-by-Step)"
-description: "How to start website maintenance in Canada: a written care list, updates and backups, client-owned logins, privacy limits, and GST/HST."
+description: "How to start website maintenance in Canada: published care-plan prices, tool costs, worked math, 18 client types, a 30-day plan, templates, privacy rules and tax."
 pubDate: 2026-10-01
-updatedDate: 2026-10-07
-updateNote: "Added a starter kit and links to the new hosting, automation and bookkeeping comparisons and buying guides"
+updatedDate: 2026-10-09
+updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
 category: tech-ai
 tags: [online, websites, maintenance, freelancing]
 featured: false
@@ -42,201 +42,419 @@ sources:
   - title: "Google Search Essentials"
     url: "https://developers.google.com/search/docs/essentials"
     publisher: "Google Search Central"
+  - title: "Usage statistics and market share of WordPress (checked October 9, 2026)"
+    url: "https://w3techs.com/technologies/details/cm-wordpress"
+    publisher: "W3Techs"
+  - title: "State of WordPress Security in 2026"
+    url: "https://patchstack.com/whitepaper/state-of-wordpress-security-in-2026/"
+    publisher: "Patchstack"
+  - title: "Wages: Webmaster / web developer (NOC 21234)"
+    url: "https://www.jobbank.gc.ca/marketreport/wages-occupation/17890/ca"
+    publisher: "Job Bank, Government of Canada"
+  - title: "WordPress Developers on Upwork cost (checked October 9, 2026)"
+    url: "https://www.upwork.com/hire/wordpress-developers/cost/"
+    publisher: "Upwork"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
+  - title: "WordPress care plans (Vancouver), checked October 9, 2026"
+    url: "https://www.tiffanymark.com/care-plans/"
+    publisher: "Tiffany Mark (self-published)"
+  - title: "WordPress website maintenance plans, checked October 9, 2026"
+    url: "https://wpexpert.ca/wordpress-website-maintenance/"
+    publisher: "WP Expert (self-published)"
+  - title: "Website care plans Toronto, checked October 9, 2026"
+    url: "https://almawebpro.com/website-care-plans-toronto/"
+    publisher: "Alma Web Pro (self-published)"
+  - title: "ManageWP pricing"
+    url: "https://managewp.com/pricing"
+    publisher: "ManageWP"
+  - title: "MainWP pricing"
+    url: "https://mainwp.com/pricing/"
+    publisher: "MainWP"
+  - title: "WP Umbrella pricing"
+    url: "https://wp-umbrella.com/pricing/"
+    publisher: "WP Umbrella"
+  - title: "UptimeRobot pricing"
+    url: "https://uptimerobot.com/pricing/"
+    publisher: "UptimeRobot"
+  - title: "Bitwarden pricing"
+    url: "https://bitwarden.com/pricing/business/"
+    publisher: "Bitwarden"
+  - title: "How to make websites accessible"
+    url: "https://www.ontario.ca/page/how-make-websites-accessible"
+    publisher: "Government of Ontario"
+  - title: "Amazon.ca search: USB headset (prices read October 9, 2026)"
+    url: "https://www.amazon.ca/s?k=usb+headset+with+microphone"
+    publisher: "Amazon.ca"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
 import StarterKit from '../../components/StarterKit.astro';
 
-Website maintenance in Canada is a monthly care list for a site a client already has: updates, a backup you can name, a check that the contact form still sends, and a short note of what you changed. It suits people who can follow a checklist and who will not keep the client's domain in their own name. It is a poor fit if the offer is "I will stop all hackers," or if you need a new site to build before you have maintained one.
+Website maintenance is a monthly care plan for a site a client already has: updates, backups you can restore, security and uptime checks, small edits and a short report. Most small-business sites run on WordPress, and most WordPress security problems come from plugins, so a careful checklist is worth paying for. Canadian freelancers publish care plans from about $59 to $169 a month, and a dashboard tool to manage many sites costs from nothing to a few dollars per site.
 
-The Canadian Centre for Cyber Security's [Top 10 IT security actions](https://www.cyber.gc.ca/en/guidance/top-10-it-security-actions) include patching operating systems and applications. That is the practical core of a care plan for a small site: updates, not a slogan. This guide does not publish a national retainer. A figure from an agency's menu is not your invoice.
+<QuickAnswer>
+- **Demand:** W3Techs says WordPress runs 58.6% of websites whose content management system it can identify, or 40.1% of all websites (checked October 9, 2026).
+- **Why it matters:** Patchstack counted 11,334 new WordPress-ecosystem vulnerabilities in 2025, up 42% from 2024; 91% were in plugins, and the median time to mass exploitation for heavily exploited ones was 5 hours.
+- **Published prices:** Vancouver's Tiffany Mark lists care plans at $59, $89 and $169 a month, WP Expert lists an Essential plan at $97 CAD a month, and Toronto's Alma Web Pro starts at $149 a month (all checked October 9, 2026).
+- **Wage benchmark:** Job Bank lists web developers and webmasters at $21.48 low, $38.46 median and $57.16 high per hour (2023 to 2024 data, updated November 19, 2025).
+- **Tax:** report on T2125, pay both CPP shares on net income and register for GST/HST once taxable supplies pass $30,000.
+</QuickAnswer>
 
-| Fact | Detail for website maintenance in Canada |
-| --- | --- |
-| Useful first offer | Updates, one backup method, a monthly note, a cap on hours |
-| Who it suits | Careful editors who will write down access and then give it back |
-| Patching | One of the Cyber Centre's top actions. [Top 10](https://www.cyber.gc.ca/en/guidance/top-10-it-security-actions) |
-| Remote work | Update devices, avoid public Wi-Fi for admin, use a strong login. [ITSAP.10.116](https://www.cyber.gc.ca/en/guidance/cyber-security-tips-remote-work-itsap10116) |
-| Domain | The client should be the registrant. .ca has presence rules. [CIRA](https://www.cira.ca/en/legal-policy-and-compliance/canadian-presence-requirements/) |
-| Privacy | Customer data on the site is personal information in a commercial activity. [PIPEDA brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) |
-| Ranking | Not yours to sell. [Search Essentials](https://developers.google.com/search/docs/essentials) |
-| GST/HST | Small-supplier threshold of $30,000. [When to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+| Quick facts | |
+|---|---|
+| Startup cost | $0 to start: free tiers of ManageWP, MainWP, UptimeRobot and Bitwarden; a headset from $24.99 (Amazon.ca, October 9, 2026) |
+| Tool cost per site | Free core dashboards; paid add-ons about US$1 to US$2.49 per site a month (vendor pages, October 9, 2026) |
+| Published Canadian plans | $59 to $169/month for small sites; $149 to $750+ at a Toronto agency |
+| Wage benchmark | $38.46/hour median for web developers and webmasters (Job Bank) |
+| Biggest risks | Broken updates without a restorable backup, owning the client's logins, privacy and accessibility mistakes |
+| Tax | T2125, CPP on net income, GST/HST past $30,000 |
 
 Building the first page is [no-code web design](/side-hustles/no-code-web-design-side-hustle-canada/). The map listing is [local SEO](/side-hustles/local-seo-side-hustle-canada/). A repeated task between apps is [Zapier automation](/side-hustles/zapier-automation-side-hustle-canada/).
 
-A first monthly care client, with access rules and a 14-day plan, is in [how to get your first website maintenance client in Canada](/side-hustles/website-maintenance-first-client-canada/).
+## Who does website maintenance suit?
 
-## Who does website maintenance in Canada suit?
+It suits people who already know how a small site is edited (WordPress, a page builder or a shop admin) and who follow checklists reliably. Evenings are enough for a handful of clients, and most work can be scheduled.
 
-Website maintenance in Canada suits people who already know how a small site is edited: a page builder, WordPress, or a shop admin they have used on their own project. Evenings are enough for one client. The work is a poor fit if you panic when an update fails and you have no backup, if you want the hosting account in your name so the client cannot leave, or if you will promise a search ranking.
+Good fits:
 
-Google's [Search Essentials](https://developers.google.com/search/docs/essentials) say it does not cost money to be eligible to appear in Search, and that meeting the requirements does not mean a page will be shown. Maintenance keeps the site available and updated. It does not buy a position.
+- **Web designers** who want recurring income from sites they've already built.
+- **Developers with a day job** who can handle a broken plugin calmly. See [side hustles for software developers](/side-hustles/side-hustles-for-software-developers-canada/).
+- **Office and marketing staff** who've run a company WordPress site.
+- **Introverts** who'd rather send a monthly report than make sales calls; the work is mostly solo. See [side hustles for introverts](/side-hustles/side-hustles-for-introverts-canada/).
+- **Virtual assistants** adding a technical service for existing clients.
 
-## What does website maintenance cost to start in Canada?
+It's a poor fit if you've never restored a backup, want the client's domain or hosting in your name, or can't respond within a day when a site goes down.
 
-Website maintenance in Canada can start with a computer you have and a checklist. The client should pay for their own hosting. Your tool prices, if any, belong on the vendor's page. This guide does not state a live host price. The ranges below are typical Canadian retail prices to verify locally where they are gear.
+## What does a care plan include?
 
-| Item | Typical CAD range or rule | How to think about it |
-| --- | --- | --- |
-| Computer you have | $0 | The checklist is the product. |
-| Headset for the handoff call | $25–$80 | Screen share is easier with one. |
-| Password manager | Confirm the live price, or use a careful written handoff | Do not store the client's password in a chat thread. |
-| Backup location the client owns | Their host's backup, or an export they keep | A backup only you can open is a trap. |
-| Your own site, optional | Confirm hosting | So they can read the offer. Not a new theme shop. |
-| Insurance | A quote, if you want one | Ask whether a home policy covers client work. This is not insurance advice. |
+A care plan is a fixed list of monthly tasks with a cap on extra work. The published Canadian plans below share a common core.
 
-Write the checklist before you subscribe to anything. <AffiliateLink program="hostinger" label="Hostinger" /> is one host a Canadian client might already use, or might move to if they ask you to compare. The account should be in the client's name. Read the current price on that page. Do not mark up a plan you have not shown them.
+| Task | Typical frequency | Why it matters |
+|---|---|---|
+| Plugin, theme and core updates | Weekly or monthly | Patchstack found 91% of 2025's new WordPress vulnerabilities were in plugins |
+| Backups stored off the server | Daily or weekly | A backup you can't restore is not a backup |
+| Test restore | Quarterly | Proves the backup works |
+| Uptime and SSL monitoring | Every 1 to 5 minutes | The client hears from you before customers notice |
+| Security scan and firewall | Continuous or weekly | Patches can't arrive faster than attacks |
+| Contact form and checkout test | Monthly | Silent form failures cost leads |
+| Broken link and speed check | Monthly | Small fixes keep the site usable |
+| Small content edits | 30 to 60 minutes a month | The most-requested extra |
+| Monthly report | Monthly | Shows the client what they paid for |
 
-A walkthrough is easier with a <AffiliateLink program="amazon-ca" label="headset" search="USB headset microphone" />. It is not required to update a plugin on a site you can click through yourself.
+The Canadian Centre for Cyber Security's [Top 10 IT security actions](https://www.cyber.gc.ca/en/guidance/top-10-it-security-actions) include patching operating systems and applications. That's the practical core of a care plan.
 
-Invoice the month, not a vague "care." <AffiliateLink program="freshbooks" label="FreshBooks" /> fits once a second client would otherwise live in a text message. The first client can be a written note and an e-transfer if the scope is one page long.
+## How much can website maintenance earn?
 
-| | Monthly care list | "I will rebuild it" |
-| --- | --- | --- |
-| First job | Updates, backup check, a note | A new site. That is the web-design guide |
-| Access | Client owns the domain and the host | Same rule |
-| Promise | What you checked | Not a rank, and not zero risk |
+There's no official data on care-plan income in Canada. The useful benchmarks are published price lists, freelance marketplace rates and Job Bank wages.
 
-## How much can website maintenance earn in Canada?
+**Published Canadian care plans (self-published, checked October 9, 2026):**
 
-Website maintenance earnings in Canada cannot be promised as a monthly rate. What you keep depends on the list below. This guide does not publish a national retainer.
+| Provider | Entry plan | Middle plan | Top plan |
+|---|---|---|---|
+| [Tiffany Mark](https://www.tiffanymark.com/care-plans/) (Vancouver) | Nurture $59/mo: weekly backups, monthly updates | Protect $89/mo: adds uptime monitoring | Perform $169/mo: adds monthly reports |
+| [WP Expert](https://wpexpert.ca/wordpress-website-maintenance/) (prices in CAD) | Essential $97/mo | Professional: adds staging and 1 hour of updates | Enterprise: unlimited tasks |
+| [Alma Web Pro](https://almawebpro.com/website-care-plans-toronto/) (Toronto) | Care Plan from $149/mo | Growth Care from $399/mo | Priority Support (WooCommerce) from $750/mo |
 
-- How many hours the note includes, and what happens after the cap
-- Whether you also change copy, which is extra
-- Hosting you pay and bill back, shown as a separate line
-- A broken update you have to roll back
-- Months the client pauses
-- Other side-hustle revenue in the same GST/HST pot
+WP Expert also lists optional add-ons at $15 a month each, such as form spam protection and an analytics dashboard.
 
-A care plan that includes unlimited edits will be used that way. Cap the hours. A new page is a separate price.
+**Freelance marketplace rates.** Upwork's WordPress developer cost page puts median hourly rates at US$15 to US$28, based on historical contracts worldwide (checked October 9, 2026). At the Bank of Canada's October 8, 2026 rate of 1.4240, that's about C$21.36 to C$39.87. Global marketplaces set a low floor; local clients usually pay more for someone they can call.
 
-## What would an assumed maintenance month look like in Canada?
+**Employee benchmark.** Job Bank lists [web developers and webmasters (NOC 21234)](https://www.jobbank.gc.ca/marketreport/wages-occupation/17890/ca) at $21.48 low, $38.46 median and $57.16 high per hour in Canada (2023 to 2024 data, updated November 19, 2025). Provincial medians include $37.50 in British Columbia, $40.23 in Alberta and $31.25 in Manitoba.
 
-An assumed month in Canada, in the sketch below, uses a made-up fee and the low end of the headset range, charged once. It assumes the client already pays for hosting, so hosting is not your cost. The sketch is not a quote, a forecast, or a typical agency rate.
+## What does the math look like?
 
-**Illustrative example.** Suppose the note is $120 for up to 2 hours: updates, a backup check, and a short email of what changed. That fee is an assumption, not a market rate. Suppose a headset at $25 is bought for the first call and charged to this first month only. The sketch is $120 − $25 = $95 before your time and before any tax set-aside. If the work takes the full 2 hours, $95 ÷ 2 = $47.50 an hour before tax, inside these assumptions. A third hour is not included. If you spend it, the sketch no longer describes the job unless the note says how extra hours are billed. These totals are assumptions, not a quote, a forecast, or a typical result.
+These examples are **Illustrative**. Client counts, plan prices and hours are assumptions; tool costs are vendor list prices on October 9, 2026, converted at the Bank of Canada's October 8, 2026 rate of 1.4240.
 
-## How do you start website maintenance in Canada?
+**Illustrative: tool cost per site with WP Umbrella.**
 
-Starting website maintenance in Canada means writing a care list, practising it on a site you control, and taking client access only in the client's accounts. The steps below are that sequence.
+| Line | USD | CAD |
+|---|---|---|
+| WP Umbrella base, per site per month | $2.19 | $3.12 |
+| Security add-on, per site per month | $2.00 | $2.85 |
+| **Tools per site** | **$4.19** | **$5.97** |
 
-### Step 1: Write the care list
+**Illustrative: ten clients on a $89 plan.**
 
-Updates for the software the site runs. A backup you can point to. A check that the home page loads and the contact path works. A note to the owner. A cap on hours. Anything else is a second line: new pages, new products, ads.
+| Line | Amount |
+|---|---|
+| Revenue: 10 × $89 | $890.00 |
+| Tools: 10 × $5.97 | −$59.70 |
+| **Profit before tax** | **$830.30** |
+| Time: 1.5 hours per site per month (assumed) | 15 hours |
+| **Profit per hour** | **$55.35** |
 
-### Step 2: Practise on a site you own
+That's above Job Bank's $38.46 median, because tooling lets one person look after many sites. The first month per client takes longer: audit, access setup, first backup and a test restore.
 
-Update it. Take a backup or an export. Restore nothing unless you have to, but know where the file is. If you do not have a site, maintain a test install you created, not a stranger's.
+| Scenario (Illustrative) | Clients | Plan price | Monthly profit after tools |
+|---|---|---|---|
+| Low | 3 | $59 | $159.09 |
+| Middle | 10 | $89 | $830.30 |
+| High | 20 | $149 | $2,860.60 |
 
-### Step 3: Read the patching guidance
+**Illustrative: extra work.** If two clients a month each buy 2 hours of edits at $75 an hour (assumed), that's another $300. Published plans cap included edits for this reason.
 
-The Cyber Centre's [Top 10](https://www.cyber.gc.ca/en/guidance/top-10-it-security-actions) puts patching operating systems and applications near the top of the list. Its [remote-work tips](https://www.cyber.gc.ca/en/guidance/cyber-security-tips-remote-work-itsap10116) say to run updates, use a firewall and anti-virus, and avoid sending sensitive information over public Wi-Fi. Do admin from a network you trust. You are not selling the Cyber Centre's whole program to a cafe website. You are borrowing the patching habit.
+## Which tools do you need?
 
-### Step 4: Put access in the client's name
+You need a multi-site dashboard, a backup method that stores copies off the server, uptime monitoring and a password manager. Prices are from vendor pages on October 9, 2026, in US dollars unless noted.
 
-Domain, hosting, and the admin user. If the domain is .ca, CIRA's [presence requirements](https://www.cira.ca/en/legal-policy-and-compliance/canadian-presence-requirements/) say who may register it. The client, if they qualify, should be the registrant. Your login can be a user they can delete. Do not register their name in your personal account.
+<ComparisonTable
+  caption="Multi-site WordPress maintenance dashboards"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "ManageWP",
+      href: "https://managewp.com/",
+      bestFor: "Starting free with many sites, adding paid features per site",
+      pricing: "Free on unlimited sites with monthly backup; add-ons US$1 to US$2 per site a month (backups US$2, uptime US$1, client reports US$1)",
+      pricingUrl: "https://managewp.com/pricing",
+      canada: "Hosted service; usable from Canada",
+      pros: ["Free core dashboard", "White-label client reports add-on"],
+      cons: ["Safe updates need the premium backup add-on", "Costs grow per site"],
+    },
+    {
+      name: "MainWP",
+      href: "https://mainwp.com/",
+      bestFor: "Developers who want to self-host the dashboard",
+      pricing: "Free core; Pro US$29/month, US$199/year or US$599 lifetime, unlimited sites",
+      pricingUrl: "https://mainwp.com/pricing/",
+      canada: "Runs on a WordPress install you control",
+      pros: ["No per-site fees", "Data stays on your server"],
+      cons: ["You maintain the dashboard itself", "More setup"],
+    },
+    {
+      name: "WP Umbrella",
+      href: "https://wp-umbrella.com/",
+      bestFor: "Simple per-site pricing with optional security",
+      pricing: "US$2.19 per site a month; security add-on US$2; hourly backups US$2.49",
+      pricingUrl: "https://wp-umbrella.com/pricing/",
+      canada: "Hosted service; usable from Canada",
+      pros: ["No site minimums", "Security add-on includes virtual patching"],
+      cons: ["Per-site cost from the first site", "Paid in USD or EUR"],
+    },
+  ]}
+/>
 
-### Step 5: Limit what you look at
+**Backups (pick one off-server method):**
 
-A contact form stores personal information. The OPC's [PIPEDA brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) explains duties for personal information in commercial activity, and notes that Alberta, British Columbia, and Quebec have their own private-sector laws for activity inside those provinces. You do not need to read the inquiry mailbox to update a plugin. This is not legal advice. If a task needs customer records, say so and stop until the owner agrees in writing.
+- **UpdraftPlus:** a free WordPress backup plugin that can send copies to cloud storage the client owns.
+- **ManageWP Backups:** US$2 per site a month, including safe updates.
+- **WP Umbrella hourly backups:** US$2.49 per site a month for busy stores.
 
-### Step 6: Offer the list to five businesses that already have a site
+**Uptime monitoring:**
 
-A shop, a tutor, a trades page. Show the checklist. Name the hour cap and the fee. Do not offer a free month with unlimited edits.
+- **UptimeRobot Free:** 50 monitors at 5-minute intervals; UptimeRobot describes it as for hobby and non-profit projects.
+- **UptimeRobot Solo:** US$9 a month billed annually (US$10 monthly) for 60-second checks and status pages.
+- **ManageWP Uptime Monitor:** US$1 per site a month.
 
-### Step 7: Do the first month as a drill
+**Password manager (never store client passwords in chat or email):**
 
-Update. Confirm the backup. Load the site on a phone. Email what you changed and what you did not touch. Stay inside the hours.
+- **Bitwarden Free:** a free individual account to start.
+- **Bitwarden Premium:** US$19.80 a year.
+- **Bitwarden Teams:** US$4 per user a month when you share vaults with a client or helper.
 
-### Step 8: Invoice the same day
+**Headset for handoff calls** (Amazon.ca, October 9, 2026):
 
-Separate your fee from any hosting receipt you are passing through. If you are not registered for GST/HST, do not add a tax line.
+- <AffiliateLink program="amazon-ca" search="Logitech H390 USB headset" label="Logitech H390 USB headset" />: $24.99
+- <AffiliateLink program="amazon-ca" search="Jabra Evolve 10 USB stereo headset" label="Jabra Evolve 10 USB headset" />: $39.99
 
-### Step 9: After two months, keep or rewrite the list
+**Hosting.** The client should own and pay for their hosting. If a client asks for a recommendation, <AffiliateLink program="hostinger" label="Hostinger" /> is one host with managed WordPress plans; compare it with others in [Hostinger vs Namecheap vs WordPress.com](/side-hustles/hostinger-vs-namecheap-vs-wordpress-com-canada/). The itemized budget is in [website maintenance startup costs](/side-hustles/website-maintenance-startup-costs-canada/).
 
-If every month ran over because of new copy, the next note prices copy separately. Honour the cap you already sold, or bill the extra only if the note allowed it.
+## Who buys care plans? 18 client types
 
-## What should the first week of website maintenance in Canada include?
+1. **Dentists and clinics:** booking forms and privacy matter; they pay for reliability.
+2. **Law and accounting firms:** reputational risk from a hacked site.
+3. **Trades and contractors:** busy owners with a WordPress site and no time.
+4. **Restaurants and cafés:** menus and hours change often.
+5. **Realtors:** listing pages and lead forms.
+6. **Non-profits and charities:** volunteer-built sites that nobody updates.
+7. **Churches and community groups:** event calendars and donation forms.
+8. **Local retailers with WooCommerce:** checkouts need testing; higher plan prices.
+9. **Fitness studios and coaches:** booking plugins that break on updates.
+10. **Hair salons and spas:** booking widgets and gallery pages.
+11. **Photographers:** heavy image sites that need speed work.
+12. **Bed and breakfasts:** seasonal bookings; downtime costs revenue.
+13. **Daycares and tutoring centres:** forms that collect children's information.
+14. **Business improvement areas (BIAs):** member directories and event pages.
+15. **Authors and speakers:** simple sites, low-tier plans.
+16. **Marketing agencies:** white-label maintenance for their clients.
+17. **Web designers without a care plan:** subcontract their past clients.
+18. **Shopify or Squarespace sites:** platform updates are automatic, but content, apps and checks still need attention. See the [Shopify store guide](/side-hustles/shopify-store-side-hustle-canada/).
 
-The first week should produce a care list, one practice run, and five offers. A client is a bonus.
+## How do you start? A 30-day plan
 
-- **Day 1:** Write the list and the hour cap. Write what is not included.
-- **Day 2:** Read the Cyber Centre patching note. Update your own computer.
-- **Day 3:** Practise the list on a site you control. Save the backup location in the note.
-- **Day 4:** Draft the access rules: client owns the domain, you get a removable user, you do not work from a cafe Wi-Fi.
-- **Day 5:** Talk to five owners who already have a site.
-- **Day 6:** If someone is interested, confirm the registrant name before you log in.
-- **Day 7:** If nobody books, shorten the offer. Do not add "SEO guaranteed" to fill the silence.
+**Week 1: build your system.**
+- Write the care checklist and your plan tiers (see templates below).
+- Set up a free ManageWP or MainWP dashboard, an UptimeRobot account and Bitwarden.
+- Connect your own site or a test site. Run updates, take a backup and restore it to a staging copy.
 
-## What website maintenance mistakes are common in Canada?
+**Week 2: practise and price.**
+- Break and fix your test site on purpose: deactivate a plugin, restore from backup, roll back an update.
+- Compare published Canadian plans and set three tiers. A common pattern is updates and backups, then monitoring and security, then reports and edit time.
+- Write the agreement: what's included, edit-time cap, response times, hourly rate for extras.
 
-Common mistakes in Canada are holding the domain hostage, working from a public network, and promising that updates make the site unhackable. The Cyber Centre's remote-work note is plain about public Wi-Fi and updates. A care email that says "fully secure" is a claim you cannot keep. Say what you checked.
+**Week 3: find the first clients.**
+- Offer the plan to sites you already know: past design clients, your employer's partners, community groups.
+- Run a free audit for five local businesses: WordPress version, outdated plugins, SSL expiry, broken forms. Send each owner a one-page summary.
+- Use the pitch email below.
 
-Another mistake is mixing a new build into a maintenance price. Building the first site is a different job. If the client has no site, use the no-code guide and hand off maintenance after the page exists.
+**Week 4: onboard and report.**
+- Onboard the first client with the access checklist; the client keeps ownership of domain and hosting.
+- Take a full backup before touching anything, then run the first updates on staging if available.
+- Send the first monthly report and invoice the same day.
 
-Do not sell ranking. Search Essentials say eligibility is not a guarantee of being shown. A broken contact form is a maintenance bug. A desire to be first in the city is not.
+The step-by-step first-client process is in [how to get your first website maintenance client in Canada](/side-hustles/website-maintenance-first-client-canada/), and plan pricing is in [how much to charge for website maintenance in Canada](/side-hustles/website-maintenance-pricing-canada/).
 
-Another quiet mistake is updating a live shop during the hour the owner takes orders. Ask when the site can be touched. If an update fails, the backup you named in the care list is the way back, which is why the first month includes finding that backup before you change anything. A note that says "updated some plugins" without naming them is not a record the owner can use next year.
+## Templates and checklists
 
-## Which tax rules apply to website maintenance in Canada?
+**Monthly care checklist:**
 
-Website maintenance income in Canada is self-employment income, reported on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and self-employed people pay the whole [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contribution on the net. GST/HST on your taxable supplies follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html), not the [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) rule. Nova Scotia's HST is 14% as of 1 April 2025 on the CRA [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) table, and Quebec charges GST and QST.
+- [ ] Full backup taken and stored off the server
+- [ ] Core, theme and plugin updates applied (staging first for major versions)
+- [ ] Site checked after updates: home page, key pages, forms, checkout
+- [ ] Security scan clean; failed logins reviewed
+- [ ] Uptime and SSL expiry checked
+- [ ] Unused plugins and admin accounts removed
+- [ ] Test form submission received by the client
+- [ ] Edit requests completed and logged against the cap
+- [ ] Report sent and invoice issued
 
-This is not tax, legal, or insurance advice. Recheck the small-supplier threshold on the CRA page when you revisit prices.
+**Access and onboarding checklist:**
 
-Keep the monthly notes and the e-transfers. If you pay hosting and bill it back, keep that receipt separate so the markup is visible. Report the work on Form T2125 with the T1. The small-supplier test is worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Add design, writing, and other side-hustle revenue to the same pot. Under that test, registration is usually optional. Over it, you register on the timetable on the CRA's when-to-register page. Maintenance is not ride-sharing, so the first-dollar rule does not apply unless you also carry passengers for a platform.
+- [ ] Client is the registrant of the domain and the owner of the hosting account
+- [ ] You have your own named admin account, not the client's login
+- [ ] Credentials shared through a password manager, not email or text
+- [ ] Two-factor authentication on the WordPress admin and hosting
+- [ ] Backup destination owned by the client (their cloud storage or host)
+- [ ] Written list of what personal information the site collects
 
-Once registered, charge the rate for the province where the supply is made. Confirm the rate on the charge-and-collect table and with the [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html), and set the tax aside.
+**Pitch email:**
 
-Search your city for a business licence and use that city's fee if there is one. This guide does not state a licence fee from another city.
+> Subject: Quick check of [business] website
+>
+> Hi [name], I looked at [site] and noticed [specific: WordPress 2 versions behind / SSL expiring on (date) / the contact form returns an error]. I look after small-business WordPress sites in [city]: monthly updates, off-site backups, uptime monitoring and a short report, from $[price] a month. Happy to send a free one-page audit.
+>
+> [Your name], [phone]
+
+**Monthly report template:**
+
+```text
+[Client] website care report – [month year]
+Updates: WordPress [x.y], [n] plugins, [theme] updated; no issues / [issue fixed]
+Backups: [n] backups stored at [location]; test restore [date]
+Uptime: [99.9]% ; [n] outages, longest [x] minutes
+Security: scan clean / [action taken]
+Forms tested: [date], received by [email]
+Edits: [list], [x] of [y] included minutes used
+Recommendations: [one or two items]
+```
+
+**Plan menu template:**
+
+| | Basic | Standard | Plus |
+|---|---|---|---|
+| Updates | Monthly | Weekly | Weekly, staging first |
+| Backups | Weekly | Daily | Daily + test restore quarterly |
+| Uptime monitoring | – | Yes | Yes |
+| Security scan | Monthly | Weekly | Weekly + firewall |
+| Edit time | – | 30 min | 60 min |
+| Report | Short email | Monthly report | Monthly report + call |
+| Price | $[ ] | $[ ] | $[ ] |
+
+## Real Canadian providers
+
+These are published price lists rather than income reports, and they show how Canadian care plans are packaged.
+
+**Tiffany Mark (Vancouver).** Lists a Nurture plan at $59 a month for simple informational sites, with weekly backups and monthly core, theme and plugin updates; a Protect plan at $89 that adds uptime monitoring; and a Perform plan at $169 that adds monthly reports ([care plans page](https://www.tiffanymark.com/care-plans/), checked October 9, 2026).
+
+**WP Expert.** States that all its prices are in Canadian dollars. Its Essential plan is $97 CAD a month; the Professional plan adds a staging environment and an hour of site updates; the Enterprise plan includes unlimited tasks and a 20% discount on hourly work ([maintenance page](https://wpexpert.ca/wordpress-website-maintenance/)).
+
+**Alma Web Pro (Toronto).** Lists a Website Care Plan from $149 a month for small WordPress sites, a Growth Care plan from $399 and a Priority Support plan from $750 for WooCommerce and checkout-heavy sites ([care plans page](https://almawebpro.com/website-care-plans-toronto/)).
+
+Published prices aren't proof of client numbers or profit, but they show the price ladder a new provider competes on.
+
+## What mistakes do new providers make?
+
+- **Updating without a backup.** Take one first, every time, and test restores.
+- **Owning the client's domain or hosting.** It looks like help and becomes a hostage situation. The client should be the registrant; `.ca` domains also have [Canadian presence requirements](https://www.cira.ca/en/legal-policy-and-compliance/canadian-presence-requirements/).
+- **Unlimited edits.** Cap them in minutes and bill extras hourly.
+- **Promising rankings.** Google's [Search Essentials](https://developers.google.com/search/docs/essentials) say meeting its requirements doesn't guarantee a page will be shown. Maintenance keeps the site healthy; it doesn't buy a position.
+- **Reading customer data you don't need.** Form entries and orders are personal information.
+- **Admin work on public Wi-Fi.** The Cyber Centre's [remote work tips](https://www.cyber.gc.ca/en/guidance/cyber-security-tips-remote-work-itsap10116) recommend updated devices and secure connections.
+- **Relying on the host alone.** Patchstack's 2026 report describes hosting companies as largely powerless against WordPress vulnerability attacks.
+
+## What about privacy and accessibility?
+
+Customer data on a business site, such as contact form entries, orders and newsletter sign-ups, is personal information collected in commercial activity. The Office of the Privacy Commissioner's [PIPEDA brief](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/) explains the federal rules. Limit what you open, delete exports when you're done, and report suspected breaches to the client immediately.
+
+Ontario's AODA requires businesses and non-profits with 50 or more employees in Ontario to make public websites meet WCAG 2.0 Level AA (except live captions and pre-recorded audio descriptions), as of January 1, 2021 ([Ontario: How to make websites accessible](https://www.ontario.ca/page/how-make-websites-accessible)). Checking that new content keeps alt text, headings and form labels is a service you can add.
+
+## Which tax rules apply to website maintenance?
+
+Care-plan income is generally self-employment income. Report it on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) and pay both the employee and employer shares of [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contributions on net income. Tool subscriptions, the business share of internet and phone, and a headset can be deductible; a computer usually goes through capital cost allowance.
+
+GST/HST follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html): worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Website maintenance isn't ride-sharing, so the first-dollar rule on the CRA's [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) page doesn't apply. Twenty clients at $149 a month is $2,980 a month, or $35,760 a year, so the threshold can arrive sooner than you expect. Once registered, the rate generally depends on where your client is located; see the CRA's [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) and [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html) pages.
+
+Recurring invoices are easier with <AffiliateLink program="freshbooks" label="FreshBooks" /> or Wave; see [FreshBooks vs Wave vs QuickBooks](/side-hustles/freshbooks-vs-wave-vs-quickbooks-canada/). Several tools bill in US dollars, so record the CAD amount from your card statement.
+
+This is not tax, legal or insurance advice.
+
+### Provincial notes
+
+- **Ontario:** 13% HST once registered; AODA web accessibility rules apply to clients with 50 or more employees.
+- **Quebec:** QPP replaces CPP and QST applies alongside GST once registered. Quebec also has its own private-sector privacy law, enforced by the Commission d'accès à l'information, which matters for clients' forms and cookies.
+- **British Columbia, Saskatchewan and Manitoba:** GST plus a separate PST; check whether PST applies to software or services you resell, such as plugin licences.
+- **Alberta:** 5% GST only once registered.
+- **Atlantic provinces:** HST; Nova Scotia's rate is 14% as of April 1, 2025 on the CRA table.
 
 ## What should a website maintenance starter kit include?
 
-Start with what you already own and add the rest as paid work comes in. These are the tools and services worth comparing first.
+A dashboard, an off-site backup, monitoring, a password manager and invoicing. Most have free tiers.
 
 <StarterKit
   label="Starter kit: website maintenance"
   items={[
-    { name: "Hostinger", use: "Web hosting for your own or client sites", program: "hostinger", linkLabel: "See Hostinger" },
-    { name: "Zapier", use: "Automate repetitive admin between apps", cost: "Free plan available", program: "zapier", linkLabel: "See Zapier" },
-    { name: "FreshBooks", use: "Invoicing, expenses and time tracking", program: "freshbooks", linkLabel: "See FreshBooks" },
+    { name: "ManageWP", use: "Free multi-site dashboard with monthly backups", cost: "Free; add-ons US$1–US$2 per site a month (October 9, 2026)", costUrl: "https://managewp.com/pricing" },
+    { name: "UptimeRobot", use: "Uptime and SSL monitoring", cost: "Free tier; Solo US$9/month billed annually (October 9, 2026)", costUrl: "https://uptimerobot.com/pricing/" },
+    { name: "Bitwarden", use: "Store and share client credentials safely", cost: "Free; Premium US$19.80/year (October 9, 2026)", costUrl: "https://bitwarden.com/pricing/business/" },
+    { name: "USB headset", use: "Handoff calls and screen shares", cost: "$24.99 (Logitech H390) / $39.99 (Jabra Evolve 10) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=usb+headset+with+microphone", program: "amazon-ca", links: [{ label: "Logitech H390", search: "Logitech H390 USB headset" }, { label: "Jabra Evolve 10", search: "Jabra Evolve 10 USB stereo headset" }], optional: true },
+    { name: "FreshBooks", use: "Recurring monthly invoices", program: "freshbooks", linkLabel: "See FreshBooks" },
   ]}
 />
 
-For side-by-side detail, see [Hostinger vs Namecheap vs WordPress.com](/side-hustles/hostinger-vs-namecheap-vs-wordpress-com-canada/), [Zapier vs Make](/side-hustles/zapier-vs-make-canada/) and [FreshBooks vs Wave vs QuickBooks](/side-hustles/freshbooks-vs-wave-vs-quickbooks-canada/).
+## What should you keep in mind about these numbers?
 
-## Which side hustles sit near website maintenance in Canada?
+Published care-plan prices are self-published by each provider and were checked on October 9, 2026; they don't show how many clients each provider has. Upwork's rates are worldwide medians in US dollars. Job Bank wages describe employees in 2023 to 2024. Tool prices are US-dollar list prices on October 9, 2026, converted at the Bank of Canada's October 8, 2026 rate, and your card issuer's rate will differ. Patchstack's figures cover vulnerabilities found in 2025. Client counts, plan prices and hours in the worked examples are assumptions.
 
-Website maintenance in Canada sits next to the work that creates the site. [No-code web design](/side-hustles/no-code-web-design-side-hustle-canada/) is the first build. [Local SEO](/side-hustles/local-seo-side-hustle-canada/) is the map listing, which maintenance does not replace. [Zapier automation](/side-hustles/zapier-automation-side-hustle-canada/) is a repeated click between tools, not a plugin update. A one-task tool setup is [AI consulting](/side-hustles/ai-consulting-side-hustle-canada/). A shop with a cart is a [Shopify store](/side-hustles/shopify-store-side-hustle-canada/), and its care list is a different admin screen from a brochure site. If you code for a living, [side hustles for software developers](/side-hustles/side-hustles-for-software-developers-canada/) covers the engineer-title and IP rules.
+## Which side hustles sit near website maintenance?
 
-For how to price monthly care plans and extra hours, see the [website maintenance pricing guide](/side-hustles/website-maintenance-pricing-canada/).
-
-The CAD budget for website maintenance in Canada, one-time and monthly, is in [website maintenance startup costs](/side-hustles/website-maintenance-startup-costs-canada/).
-
-Clients care that their site works, not that you're chatty, so maintenance also features in [side hustles for introverts in Canada](/side-hustles/side-hustles-for-introverts-canada/).
+Building sites is [no-code web design](/side-hustles/no-code-web-design-side-hustle-canada/); store builds are the [Shopify store guide](/side-hustles/shopify-store-side-hustle-canada/). Google Business Profiles and map rankings are [local SEO](/side-hustles/local-seo-side-hustle-canada/). Automating forms and follow-ups is [Zapier automation](/side-hustles/zapier-automation-side-hustle-canada/), compared in [Zapier vs Make](/side-hustles/zapier-vs-make-canada/). Helping small businesses adopt AI tools is [AI consulting](/side-hustles/ai-consulting-side-hustle-canada/).
 
 <Faq
   items={[
     {
-      question: "What is included in a first maintenance offer?",
-      answer: "Updates, a backup you can point to, a check that the site and the contact path load, a short note, and an hour cap. New pages and ranking promises are separate, and the ranking is not something you can sell.",
+      question: "How much should I charge for WordPress maintenance in Canada?",
+      answer: "Published Canadian care plans checked on October 9, 2026 start around $59 to $97 a month for small sites (Tiffany Mark in Vancouver, WP Expert) and from $149 a month at Toronto's Alma Web Pro, with WooCommerce support from $750. Job Bank's median wage for web developers and webmasters is $38.46 an hour.",
     },
     {
-      question: "Should the domain be in my name?",
-      answer: "No. The client should be the registrant. CIRA's presence rules apply if the name is .ca. Your access should be a user they can remove.",
+      question: "What tools do I need to maintain client websites?",
+      answer: "A multi-site dashboard (ManageWP is free on unlimited sites; MainWP has a free self-hosted core; WP Umbrella is US$2.19 per site a month), off-site backups, uptime monitoring (UptimeRobot has a free tier) and a password manager such as Bitwarden. Prices as of October 9, 2026.",
     },
     {
-      question: "Can I promise the site will not be hacked?",
-      answer: "No. The Cyber Centre's guidance is to patch and to be careful with remote access. A care plan can say what you updated. It cannot promise zero incidents.",
+      question: "Is WordPress maintenance still in demand?",
+      answer: "Yes. W3Techs says WordPress runs 58.6% of websites with an identifiable content management system, and Patchstack counted 11,334 new WordPress-ecosystem vulnerabilities in 2025, 91% of them in plugins. Small businesses need someone to keep updates and backups current.",
     },
     {
-      question: "Do I need the customer's messages to update the site?",
-      answer: "Usually no. PIPEDA applies to personal information in commercial activity. Update the software without reading the inquiry mailbox unless the owner has asked for that specific task in writing.",
+      question: "Should I keep my clients' domains and hosting in my name?",
+      answer: "No. The client should be the domain registrant and hosting account owner, and you should use your own named admin account. Share credentials through a password manager and keep backups somewhere the client owns.",
     },
     {
-      question: "When do maintenance fees in Canada trigger GST/HST?",
-      answer: "They follow the CRA small-supplier test of $30,000 in worldwide taxable supplies, including other side hustles. This is not tax advice.",
+      question: "Do I charge GST/HST on care plans?",
+      answer: "Once your worldwide taxable supplies pass $30,000 in a calendar quarter or over four consecutive quarters, register and charge GST/HST at the rate for the client's location. Before that, the small-supplier rule generally applies. Report income on T2125 and pay both CPP shares. This is not tax advice.",
     },
   ]}
 />
