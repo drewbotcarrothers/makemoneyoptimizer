@@ -20,6 +20,10 @@ export interface ComparisonItem {
   program?: AffiliateProgram;
   /** Link text; defaults to `name`. */
   linkLabel?: string;
+  /** Amazon.ca: verified ASIN (amazon.ca/dp/<ASIN>?tag=...). */
+  asin?: string;
+  /** Amazon.ca: search keywords when there is no ASIN. */
+  search?: string;
   /** Plain external link used only when `program` is not set. */
   href?: string;
   bestFor: string;
@@ -63,7 +67,7 @@ if (!items || items.length < 2) {
         <tr>
           <th scope="row" data-label="Option" class="ct-name">
             {item.program ? (
-              <AffiliateLink program={item.program} label={item.linkLabel ?? item.name} />
+              <AffiliateLink program={item.program} label={item.linkLabel ?? item.name} asin={item.asin} search={item.search} />
             ) : item.href ? (
               <a href={item.href} rel="noopener noreferrer" target="_blank">{item.linkLabel ?? item.name}</a>
             ) : (

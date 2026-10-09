@@ -315,7 +315,8 @@ templates they can act on today, every one of them traceable to a page we opened
 
   ```mdx
   <AffiliateLink program="freshbooks" label="FreshBooks" />
-  <AffiliateLink program="amazon-ca" label="Shop tools on Amazon.ca" search="USB headset microphone" />
+  <AffiliateLink program="amazon-ca" label="BOYA BY-M1 lavalier" asin="B00MRMU2HU" />
+  <AffiliateLink program="amazon-ca" label="USB headset" search="USB headset microphone" />
   ```
 
   `program` must be a key in `src/lib/affiliate-placeholders.ts` (the build type-checks it). Original keys:
@@ -325,12 +326,27 @@ templates they can act on today, every one of them traceable to a page we opened
   `calendly` (no affiliate program — plain link forever), `acuity`, `kit`, `beehiiv`, `wix`, `squarespace`,
   `namecheap`, `thinkific`, `teachable`, `podia`, `kajabi`, `payhip`, `zapier`, `make`, `descript`, `riverside`,
   `chit-chats`, `stallion-express`, `printify`, `ownr`, `vistaprint`, `grammarly`. Open the file for the current list.
-  `search` is optional editorial context for Amazon.ca mentions; the live Amazon Associates entry link does not
-  use it. Approved programs (currently `amazon-ca`) use the tracking href with
+  **Amazon.ca deep links** (Associates store/tracking ID `makemoneyoptimizer-20`; see the Amazon section below).
+  Approved programs (currently `amazon-ca`) use the tracking href with
   `rel="sponsored nofollow noopener"` and `target="_blank"`. Unapproved programs render as ordinary merchant
   links (same label, no visible TODO marker, no sponsored attribute) — do not invent tracking URLs. When a
   program is approved, change the href and `approved` flag in `affiliate-placeholders.ts` only. Adding a new
   program means adding it there first.
+- **Amazon.ca: link to the product, not the homepage.** `AffiliateLink`, `StarterKit` and `ComparisonTable`
+  build the URL from two props:
+  - `asin="B0XXXXXXXX"` → `https://www.amazon.ca/dp/<ASIN>?tag=makemoneyoptimizer-20`. Use it whenever the copy
+    names a specific product or model (a table row, a StarterKit item, "the DJI Mic Mini").
+  - `search="usb headset microphone"` → `https://www.amazon.ca/s?k=usb+headset+microphone&tag=makemoneyoptimizer-20`.
+    Use it for generic categories ("a lavalier mic", "ice melt", "poly mailers"). One product per search, in the
+    words a shopper would type; don't stack several items into one query.
+  - Neither → the entry short link `https://link.amazon/B04lZw4kk` (Amazon homepage). Never ship that on purpose.
+  - **Verify every ASIN.** Open `https://www.amazon.ca/dp/<ASIN>` (with a normal browser User-Agent, or the
+    browser) and confirm the product title matches the named product, then list that page in `sources` if you
+    quote its price. Prefer ASINs already in the post's sources. **Never invent, guess, or copy an ASIN from
+    amazon.com or memory.** If Amazon blocks the fetch, use a `search` link instead.
+  - StarterKit rows that name two products ("BOYA BY-M1 or DJI Mic Mini") use `links: [{ label, asin }, …]`
+    so each product gets its own deep link. Never hand-write a raw `amazon.ca/...tag=` URL in MDX.
+  - No visible "affiliate"/"ad" labels next to links; the layout's bottom disclosure covers them.
 - **Placement:** 1–3 affiliate links per post, inside the step or cost row where the reader is choosing that tool,
   never in the opening answer or as a footer dump. Affiliate status never changes the recommendation; mention free
   options and "you may not need this" honestly.
@@ -379,6 +395,7 @@ import StarterKit from '../../components/StarterKit.astro';
   items={[
     { name: "Invoicing app", use: "Quotes, invoices with GST/HST, payment reminders", cost: "Free plan available", program: "wave", linkLabel: "Wave" },
     { name: "Label printer", use: "4×6 shipping labels", program: "amazon-ca", linkLabel: "Shop on Amazon.ca", search: "4x6 thermal label printer" },
+    { name: "Mic: BOYA BY-M1 or DJI Mic Mini", use: "Clear voice", program: "amazon-ca", links: [{ label: "See BOYA BY-M1", asin: "B00MRMU2HU" }, { label: "See DJI Mic Mini", asin: "B0DDLCLFFX" }] },
     { name: "Business cards", use: "Leave-behinds at markets", optional: true, program: "vistaprint", linkLabel: "Vistaprint" },
   ]}
 />
@@ -396,9 +413,9 @@ import StarterKit from '../../components/StarterKit.astro';
   and at least one has (or may get) an affiliate program. Slug: `<a>-vs-<b>[-vs-<c>]-canada` or
   `best-<tool-type>-<audience>-canada`. Check `ls src/content/articles | grep -- -vs-` and `rg -il "<tool>"
   src/content/articles` first so you extend an existing comparison instead of duplicating it.
-- **Write an Amazon.ca gear roundup** for physical gear (pressure washers, label printers, ring lights). Our Amazon
-  link is a single entry point (`https://link.amazon/B04lZw4kk`), not per-product, so write "what to look for +
-  model types/specs + one or two `amazon-ca` links". No star ratings, no "best overall" claims based on testing.
+- **Write an Amazon.ca gear roundup** for physical gear (pressure washers, label printers, ring lights). Name real
+  models with dated prices and link each with a verified `asin`; use a specific `search` for category rows
+  ("two stage snow blower"). No star ratings, no "best overall" claims based on testing.
 - **Add a StarterKit** to a hustle guide only when the reader genuinely needs to buy or sign up for something
   to start. Skip it for gig apps where the app is free and the gear is a phone, and for pure tax/admin posts.
   3–6 items; mark nice-to-haves `optional: true`; include free options ("Free plan available", "Use what you own").
@@ -411,7 +428,8 @@ import StarterKit from '../../components/StarterKit.astro';
    merchant homepage (no tracking parameters), and a `TODO-AFFILIATE` comment. Add it to the status tracker in
    [AFFILIATES.md](../AFFILIATES.md). Never invent or guess a tracking URL.
 3. A tool with no program (e.g. `calendly`) still gets a key so the table can link it; leave it `approved: false`.
-4. Physical gear uses `amazon-ca` with a descriptive `search` (editorial context only).
+4. Physical gear uses `amazon-ca`: a verified `asin` for a named product, otherwise a specific `search` keyword
+   (both produce tagged `makemoneyoptimizer-20` links).
 
 ### Pricing and fee sourcing
 
