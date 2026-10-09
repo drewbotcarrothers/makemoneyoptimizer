@@ -1,9 +1,9 @@
 ---
 title: "How to Start Package Courier Delivery in Canada (Spark and Similar)"
-description: "How to start package courier work in Canada with Spark or Amazon Flex: zones, cargo space, insurance, the GST/HST small-supplier test, and an assumed week."
+description: "How to start package courier work in Canada: Amazon Flex and Spark Driver pay, requirements and zones, Job Bank courier wages, Ontario and B.C. pay floors, worked block math, gear, a 30-day plan and tax."
 pubDate: 2026-09-23
-updatedDate: 2026-09-30
-updateNote: "Restructured for clarity and added sources"
+updatedDate: 2026-10-09
+updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
 category: gig-apps
 tags: [gig-work, delivery, courier, vehicles]
 featured: false
@@ -39,234 +39,383 @@ sources:
   - title: "GST/HST for taxi and ride-sharing drivers"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html"
     publisher: "Canada Revenue Agency"
+  - title: "Amazon Flex (earnings)"
+    url: "https://flex.amazon.ca/"
+    publisher: "Amazon"
+  - title: "Amazon Flex requirements"
+    url: "https://flex.amazon.ca/requirements"
+    publisher: "Amazon"
+  - title: "Amazon Flex Canada FAQ"
+    url: "https://flex.amazon.ca/faq"
+    publisher: "Amazon"
+  - title: "Spark Driver Canada FAQ"
+    url: "https://www.sparkdriverapp.ca/content/sparkdriverca/en_ca/faq.html"
+    publisher: "Walmart Canada"
+  - title: "Wages for Couriers and messengers (NOC 74102)"
+    url: "https://www.jobbank.gc.ca/wagereport/occupation/21691"
+    publisher: "Job Bank, Government of Canada"
+  - title: "Rights and protections for digital platform workers"
+    url: "https://www.ontario.ca/page/rights-and-protections-digital-platform-workers"
+    publisher: "Government of Ontario"
+  - title: "Minimum wage (online platform workers)"
+    url: "https://www2.gov.bc.ca/gov/content/employment-business/employment-standards-advice/employment-standards/wages/minimum-wage"
+    publisher: "Government of British Columbia"
+  - title: "Minimum wage (Your guide to the Employment Standards Act)"
+    url: "https://www.ontario.ca/document/your-guide-employment-standards-act-0/minimum-wage"
+    publisher: "Government of Ontario"
+  - title: "Monthly average retail prices for gasoline and fuel oil, by geography (Table 18-10-0001-01)"
+    url: "https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1810000101"
+    publisher: "Statistics Canada"
+  - title: "Government Announces the 2026 Automobile Deduction Limits and Expense Benefit Rates for Businesses"
+    url: "https://www.canada.ca/en/department-finance/news/2026/01/government-announces-the-2026-automobile-deduction-limits-and-expense-benefit-rates-for-businesses.html"
+    publisher: "Department of Finance Canada"
+  - title: "Moatassem Moatez, Founder of MyCourier: His Journey of Resilience and Reinvention"
+    url: "https://altitudeaccelerator.ca/mycourier-founder-moatez-logistics-startup-journey/"
+    publisher: "Altitude Accelerator"
+  - title: "After delivering over 10,000 Door Dash orders, Clarenville man launches own service"
+    url: "https://www.saltwire.com/newfoundland-labrador/baileys-delivery-clarenville-business"
+    publisher: "SaltWire"
+  - title: "Amazon.ca search: folding hand truck dolly"
+    url: "https://www.amazon.ca/s?k=folding+hand+truck+dolly"
+    publisher: "Amazon.ca"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
+import StarterKit from '../../components/StarterKit.astro';
 
-Start package courier work in Canada by delivering store orders and parcels that are already packed, through an app such as Spark Driver or Amazon Flex, only where that app actually operates. Package courier work suits people with a car, hatchback, or SUV that has a flat cargo area, who can lift boxes repeatedly and wait in a pickup queue.
+Package courier work in Canada means delivering parcels and store orders that someone else has packed, using your own car, through an app such as Amazon Flex or Walmart's Spark Driver, or for a local courier. Amazon says most Flex drivers earn $22 to $27 an hour before costs, Job Bank puts the median wage for couriers and messengers at $23.00 an hour, and Ontario and B.C. now set pay floors for app-based delivery work. What you keep depends on kilometres: fuel and wear can take a quarter or more of a block's pay.
 
-| Fact | Detail for package courier work in Canada |
-| --- | --- |
-| What package courier work is | Store orders and parcels you accept and deliver; you do not pack them |
-| Who package courier work suits | People who can lift, wait at the store, and fit the order in the cargo area |
-| Spark pay model | Independent contractors, paid for each completed delivery, choose which offers to accept. [Spark Driver Canada](https://www.sparkdriverapp.ca/content/sparkdriverca/en_ca.html) |
-| Spark signup | A car, a smartphone, vehicle insurance, and a background check. [Spark Driver Canada on Google Play](https://play.google.com/store/apps/details?id=com.walmart.sparkdriver.ca&hl=en_CA) |
-| Amazon Flex cities | Victoria, Vancouver, Calgary, Edmonton, Kitchener/Waterloo/Cambridge, London, Toronto (GTA), Hamilton, Halifax, Ottawa, and Windsor. [Amazon Flex locations in Canada](https://flex.amazon.ca/our-locations) |
-| GST/HST | Small-supplier test. Package delivery is not the ride-sharing first-fare rule. [When to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
-| Income record | [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) with the T1 |
-| CPP | Self-employed couriers pay the whole contribution on net income. [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) |
+<QuickAnswer>
+- **Pay (checked October 9, 2026):** Amazon says most Flex drivers earn $22–$27 an hour, paid by the 2–4 hour block. Spark pays per delivery, with the minimum shown on each offer, plus 100% of tips.
+- **Benchmark:** Job Bank's national median for couriers and messengers (NOC 74102) is $23.00 an hour, from $21.00 in Saskatchewan to $25.00 in Alberta.
+- **Pay floors:** Ontario requires at least the $17.95 general minimum wage for app work time (from October 1, 2026); B.C. requires $21.89 an hour of engaged time plus $0.35 per km for delivery (from June 1, 2026).
+- **Requirements:** Flex wants age 19+, a full Canadian licence and a 4-door mid-size sedan or larger; Spark wants age 18+, proof of auto insurance and a car (no bikes or scooters).
+- **Tax:** report income on T2125, pay both CPP shares, and register for GST/HST once taxable sales pass $30,000; the first-dollar rule for ride-sharing doesn't apply to parcels.
+</QuickAnswer>
 
-Hot food and short distances are [food delivery](/side-hustles/food-delivery-side-hustle-canada/). Choosing the groceries yourself is [grocery shopping apps](/side-hustles/grocery-shopping-side-hustle-canada/). The itemized budget is [package courier startup costs](/side-hustles/package-courier-startup-costs-canada/).
+The itemized budget is in [package courier startup costs](/side-hustles/package-courier-startup-costs-canada/), block-by-block earnings math is in [package courier earnings in Canada](/side-hustles/package-courier-pricing-canada/), and the zone check and first logged block are in [your first week of package courier work](/side-hustles/package-courier-first-week-canada/).
 
-## Who is package courier work a fit for in Canada?
+| Quick facts | |
+|---|---|
+| Startup cost | $0 beyond a suitable car and phone; a $60–$160 folding hand truck is the first useful buy |
+| Main apps | Amazon Flex (11 Canadian areas), Spark Driver (Walmart orders in 30+ areas), local couriers |
+| Advertised pay | Flex: "most drivers earn $22–$27 an hour"; Spark: minimum shown per offer |
+| Wage benchmark | $23.00/hour median for couriers and messengers (Job Bank, 2023–2024 data) |
+| Pay days | Flex weekly on Wednesday; Spark weekly on Tuesday |
+| Biggest cost | Kilometres: fuel at 170.3¢/L in Toronto in August 2026 (Statistics Canada) plus wear |
+| Insurance | Tell your insurer; B.C. Flex drivers need an ICBC delivery policy |
+| Tax | T2125, CPP on profit, GST/HST past $30,000 |
 
-Package courier work in Canada fits people who have a car, hatchback, or SUV with a flat cargo area, can lift boxes repeatedly, and are patient in a pickup queue. Package courier work is a poor fit if the only vehicle is a two-seat car already full of child seats, if a back injury is already the limit, or if you live outside the zones these apps serve.
+Hot food and short trips are [food delivery](/side-hustles/food-delivery-side-hustle-canada/). Choosing the groceries yourself is [grocery shopping apps](/side-hustles/grocery-shopping-side-hustle-canada/).
 
-Package courier work also fits people who like a route more than a conversation. Early mornings and evenings are common. A clean driving record and a car that starts in January matter more than a polished profile photo. Unpaid waiting is part of the job. Same-day pickup often means standing at a store while staff finish the order. Count that time when you judge the payout.
+## Who does package courier work suit?
 
-## Where does package courier work exist in Canada?
+It suits people with a mid-size or larger car, who can lift boxes over and over, who like driving more than talking, and who can work early mornings, evenings or weekends when blocks are offered. It suits less well if your only car is a small two-door, if your back is already the limit, or if you live outside the zones these apps serve.
 
-Package courier work in Canada is not nationwide and not one app: Spark Driver lists specific Walmart pickup areas, and Amazon Flex lists its own cities, and both lists can change. The app, and the official page, are the check. A quiet town that is missing from both lists is a waitlist or a local courier search, not a secret rollout.
+Good fits:
 
-[Spark Driver Canada](https://www.sparkdriverapp.ca/content/sparkdriverca/en_ca.html) says independent-contractor drivers are paid for each delivery they complete, and that they choose which offers to accept. The same page says you can currently receive offers from Walmart locations in the Peel Halton Region, London, GTA, Durham Region, Hamilton-Burlington Region, Niagara, St. Catharine's, Waterloo Region, Ottawa, Barrie, Edmonton, Calgary, Surrey, Vancouver, Burnaby, Halifax, Dartmouth, Fredericton, Bedford, Coquitlam, Maple Ridge, Moncton, St. John's, Windsor, Winnipeg, Thunder Bay, Bolton, Regina, Saskatoon, Guelph, and Abbotsford. That spelling, including St. Catharine's, is the page’s own. The list can change. If your town is missing, check the app.
+- **Parents and students** with free weekday mornings or evenings; Flex blocks are 2 to 4 hours.
+- **People between jobs** who want weekly pay without an interview process; Amazon says Flex isn't meant to be relied on as full-time income, since blocks vary week to week.
+- **Retirees** who enjoy driving and want a few blocks a week.
+- **Drivers who already do food delivery** and want daytime work; [Amazon Flex vs Uber Eats](/side-hustles/amazon-flex-vs-uber-eats-canada/) compares the two.
 
-[Spark Driver Canada on Google Play](https://play.google.com/store/apps/details?id=com.walmart.sparkdriver.ca&hl=en_CA) says you need a car, a smartphone, and vehicle insurance, that signup includes a background check, and that you are notified when your preferred zone has availability. The same listing says drivers keep 100% of confirmed customer tips. Confirm the current terms inside the app after signup. Apps edit terms.
+It's also good practice for a business of your own. Both of the Canadians profiled below started by delivering for someone else.
 
-[Amazon Flex locations in Canada](https://flex.amazon.ca/our-locations) lists Victoria, Vancouver, Calgary, Edmonton, Kitchener/Waterloo/Cambridge, London, Toronto (GTA), Hamilton, Halifax, Ottawa, and Windsor. That page is the source of truth for whether Amazon Flex is there, and the page can change. Requirements shown during Canadian signup are the ones to follow. A United States Flex checklist, including a Social Security number or American vehicle rules, does not belong on a Canadian application.
+## How does package courier work pay?
 
-| | Spark Driver Canada | Amazon Flex in Canada |
-| --- | --- | --- |
-| How pay is described | Paid for each completed delivery; you choose offers. No wage is published on the Spark page | Read the amount on the offer in the Canadian app. Do not import a U.S. block rate |
-| Where to check | The city list on the Spark page, then the app, because zones fill | The locations page, which can change |
-| What signup has asked for | Car, smartphone, vehicle insurance, background check, on the Canada Play listing | The checklist inside the Canadian signup |
+The two big apps pay in different ways, and both treat you as an independent contractor, so you pay for fuel, parking, tolls and tickets yourself.
 
-Other courier work is local: pharmacy delivery, auto-parts runs, and small courier companies that hire owner-drivers. Those are worth a search in your city if both Spark and Flex say no. They often want a more regular block of hours. Ask whether you are an employee or a contractor before you hear a rate.
+- **Amazon Flex** pays a set amount per block. You reserve a 2–4 hour block, collect packages at an Amazon delivery station and deliver the whole route. Amazon's Canadian site says most drivers earn $22–$27 an hour, and its FAQ says peak periods may offer higher rates. Pay is processed every Wednesday for the previous seven days.
+- **Spark Driver** pays per delivery. Each offer lists the minimum you'll receive, made up of trip earnings, possible surge pay for busy times or large orders, expense earnings, weekly "incidentals" for delays based on engaged time, and tips (you keep 100%). Earnings are processed every Tuesday for the previous Monday to Sunday.
+- **Local couriers** may hire you as an employee or a contractor, on a per-stop, per-route or hourly rate. Ask which before you hear the rate, because it changes your tax and expenses.
+
+### What do the pay laws say?
+
+Two provinces now set minimum pay for app-based delivery, whether or not you're classed as a contractor.
+
+| Province | Rule | Rate | What counts |
+|---|---|---|---|
+| Ontario | Digital Platform Workers' Rights Act, in force July 1, 2025 | At least the general minimum wage, $17.95 an hour from October 1, 2026 | Time from accepting an assignment to finishing it, including travel during it; not waiting for offers. Tips aren't counted toward the minimum |
+| British Columbia | Employment Standards rules for online platform workers | $21.89 an hour of engaged time from June 1, 2026, plus at least $0.35 per km for delivery by any means other than walking | Engaged time runs from accepting an order to completing or cancelling it |
+
+Ontario's law also gives you the right to see estimated pay and how it was calculated before you accept, and two weeks' written notice before most removals from a platform lasting 24 hours or more.
+
+## How much do couriers earn in Canada?
+
+Job Bank's wage report for couriers and messengers (NOC 74102), based on Statistics Canada's Labour Force Survey for 2023–2024, gives this benchmark for employed couriers:
+
+| Area | Low | Median | High |
+|---|---|---|---|
+| Canada | $17.50 | $23.00 | $35.00 |
+| Alberta | $16.00 | $25.00 | $41.67 |
+| Nova Scotia | $17.31 | $23.80 | $33.43 |
+| Ontario | $19.00 | $23.08 | $35.29 |
+| Toronto region | $19.00 | $23.00 | $42.00 |
+| Quebec | $18.70 | $22.41 | $33.20 |
+| British Columbia | $18.25 | $22.00 | $32.00 |
+| Manitoba | $16.40 | $21.50 | $33.48 |
+| Saskatchewan | $15.70 | $21.00 | $34.49 |
+
+Source: [Job Bank wage report](https://www.jobbank.gc.ca/wagereport/occupation/21691), checked October 9, 2026.
+
+Amazon's $22–$27 Flex figure sits right around that median, but it's gross. An employed courier usually drives a company vehicle; an app courier pays for fuel, wear and insurance out of the same hourly figure. That's the gap the worked math below shows.
+
+What moves your net pay most:
+
+- **Kilometres per block.** A dense apartment route can pay the same as a spread-out suburban one with half the driving.
+- **Fuel price where you live.** Statistics Canada's August 2026 regular gasoline average was 160.3¢/L in Edmonton, 170.3¢ in Toronto, 181.4¢ in Halifax and 206.7¢ in Vancouver.
+- **Waiting time.** Spark pickups can include unpaid minutes at the store; Flex station check-in takes time too.
+- **Peak periods.** Flex offers higher rates at busy times, and November–December is the parcel peak.
+- **Return trips.** Undelivered Flex packages must be returned to the station by 10 a.m. the next day.
+
+## What does the math look like on a block?
+
+**Worked example 1, a 3-hour Flex block in Toronto (illustrative).** Pay uses Amazon's $22–$27 an hour claim; fuel uses Statistics Canada's August 2026 Toronto price of 170.3¢/L. The 90 km per block, 9 L/100 km fuel use and $0.12/km wear set-aside are assumptions.
+
+- Fuel: 90 km × 0.09 L/km × $1.703 = $13.79
+- Wear set-aside: 90 km × $0.12 = $10.80
+- Driving costs: $24.59 per block
+
+| Scenario | Gross for 3 hours | After driving costs | Per hour |
+|---|---|---|---|
+| Low ($22/hour) | $66.00 | $41.41 | $13.80 |
+| Middle ($24/hour) | $72.00 | $47.41 | $15.80 |
+| High ($27/hour) | $81.00 | $56.41 | $18.80 |
+
+That's before insurance changes, phone data and income tax. For a fuller cost view, the federal limit for tax-free employer car allowances in 2026 is 73¢ per km for the first 5,000 km, a figure meant to cover ownership as well as running costs. At that rate, 90 km is $65.70, close to the whole low-scenario block. Shorter routes are how this work pays.
+
+**Worked example 2, a Spark offer in B.C. (illustrative).** Assume a Spark delivery takes 50 minutes of engaged time and 18 km.
+
+- B.C. minimum for that offer: (50 ÷ 60) × $21.89 = $18.24, plus 18 km × $0.35 = $6.30, so at least $24.54 before tips
+- Fuel at Vancouver's August 2026 average of 206.7¢/L and an assumed 9 L/100 km: 18 × 0.09 × $2.067 = $3.35
+
+The engaged time and distance are assumptions; B.C.'s rules count engaged time only, not time waiting between offers.
+
+**Worked example 3, a week of side income (illustrative).** Assume three Flex blocks a week at the middle scenario: 3 × $47.41 = $142.23 a week after driving costs, or about $7,400 over 52 weeks if blocks are available every week. That's well under the $30,000 GST/HST threshold, but it's all reportable on T2125 and subject to CPP.
+
+## Where can you do package courier work?
+
+Neither app covers the whole country, and both lists change.
+
+<ComparisonTable
+  caption="Package courier apps and options in Canada"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Amazon Flex",
+      href: "https://flex.amazon.ca/",
+      bestFor: "Scheduled 2–4 hour parcel routes from an Amazon delivery station",
+      pricing: "Amazon says most drivers earn $22–$27 an hour; paid by the block, weekly",
+      pricingUrl: "https://flex.amazon.ca/faq",
+      canada: "Calgary, Edmonton, Halifax, Hamilton, Kitchener-Waterloo-Cambridge, London, Ottawa, Toronto, Vancouver, Victoria, Windsor",
+      pros: ["Pay known before you accept a block", "Supplemental auto coverage in Ontario and Alberta"],
+      cons: ["Needs a 4-door mid-size car or larger", "Interest lists in many areas; blocks not guaranteed"],
+    },
+    {
+      name: "Spark Driver (Walmart)",
+      href: "https://www.sparkdriverapp.ca/content/sparkdriverca/en_ca.html",
+      bestFor: "Short Walmart grocery and general-merchandise deliveries, sometimes batched up to 3 orders",
+      pricing: "Minimum pay shown on each offer, plus surge, expenses, incidentals and 100% of tips",
+      pricingUrl: "https://www.sparkdriverapp.ca/content/sparkdriverca/en_ca/faq.html",
+      canada: "Walmart pickup areas in Ontario, the Prairies, B.C. and Atlantic Canada (31 listed)",
+      pros: ["Choose offer by offer", "Age 18+"],
+      cons: ["Waiting at store pickup", "Some orders need an insulated bag; you pay parking and tolls"],
+    },
+    {
+      name: "Local courier companies",
+      href: "https://www.jobbank.gc.ca/wagereport/occupation/21691",
+      bestFor: "Regular routes for pharmacies, auto parts, labs, law firms and retailers",
+      pricing: "Per stop, per route or hourly; median employee wage $23.00 an hour (Job Bank)",
+      canada: "Available in most cities and many towns",
+      pros: ["Steadier hours", "Can be an employee with source deductions"],
+      cons: ["Fixed schedules", "Contractor deals can hide unpaid waiting"],
+    },
+  ]}
+/>
+
+Spark's homepage lists the Peel Halton Region, London, GTA, Durham Region, Hamilton-Burlington, Niagara, St. Catharines, Waterloo Region, Ottawa, Barrie, Edmonton, Calgary, Surrey, Vancouver, Burnaby, Halifax, Dartmouth, Fredericton, Bedford, Coquitlam, Maple Ridge, Moncton, St. John's, Windsor, Winnipeg, Thunder Bay, Bolton, Regina, Saskatoon, Guelph and Abbotsford. If you're on an Amazon Flex interest list, Amazon says it will email you when spots open. For a full review of Flex blocks and insurance, see the [Amazon Flex review for Canadian drivers](/side-hustles/amazon-flex-review-canada/).
+
+### What each app asks for
+
+| Requirement | Amazon Flex | Spark Driver |
+|---|---|---|
+| Minimum age | 19 | 18 |
+| Licence | Full Canadian licence (no learner's, international or motorcycle-only) | Valid provincial licence (Ontario G or equivalent) |
+| Vehicle | 4-door mid-size sedan or larger; open-bed trucks not eligible | Any car that fits and secures the order; no bikes, scooters or motorcycles |
+| Insurance | Personal auto insurance; see provincial rules below | Proof of a valid auto policy in your name |
+| Phone | iOS 17+ or Android 14+, with a list of unsupported models | iOS 13+ or Android 6+, camera with flash, GPS; no prepaid devices |
+| Background check | Yes, usually 5–10 business days | Yes |
+| Other | SIN and a bank account | SIN, Canadian phone number; Walmart employees not eligible |
 
-## What does starter gear for package courier work cost in Canada?
+## Ideas: ways to earn as a package courier
 
-Starter gear for package courier work in Canada is what keeps parcels and shoulders intact: a dolly when offers are heavy, bins, blankets, gloves, a headlamp, and a phone mount, priced as ranges to verify locally. The expensive item is the vehicle you already own. A full CAD startup budget and break-even sketch are in [package courier startup costs](/side-hustles/package-courier-startup-costs-canada/).
+Apps are the fastest start, but they aren't the only route. These are courier niches that suit Canadians with a car, each with why it can work.
 
-| Item | Typical CAD range to verify locally | Notes |
-| --- | --- | --- |
-| Folding hand truck or dolly | $50–$140 | Stairs and cases of water. A shoulder is not a dolly. |
-| Cargo organizer or bins | $25–$70 | Stops boxes sliding into the bumper on a highway ramp. |
-| Moving blankets or a trunk liner | $20–$50 | Protects both the parcel and the car. |
-| Work gloves | $15–$30 | Cardboard edges and frozen winter latches. |
-| Headlamp | $15–$35 | Evening house numbers are a theme in this job. |
-| Phone mount and charger | $20–$45 | Route apps plus the courier app. |
-| Dolly straps or bungee cords | $10–$25 | One cord is how a bin becomes a projectile. |
-| Fuel and wear | Your per-km cost | Highway blocks cost more fuel than neighbourhood hops. |
-| Insurance | A real quote | Delivery of goods for pay is business use. |
+1. **Amazon Flex blocks.** Known pay per block and weekly deposits.
+2. **Spark Driver offers.** Short trips, batched orders, and you choose each one.
+3. **Holiday peak blocks (November–December).** Parcel volume and peak rates rise.
+4. **Pharmacy delivery for an independent pharmacy.** Regular routes to the same seniors and clinics.
+5. **Auto parts runs** between parts stores and garages. Daytime weekday work with repeat stops.
+6. **Florist delivery** around Valentine's Day and Mother's Day, when shops need extra drivers for a few days.
+7. **Bakery and cake delivery** for local bakers without a driver; see [home baking](/side-hustles/home-baking-side-hustle-canada/).
+8. **Same-day delivery for local online shops** selling on Shopify or Etsy in your city.
+9. **Facebook Marketplace pickups** for buyers who can't collect a large item themselves.
+10. **Document runs for law and accounting offices** that still need originals signed and delivered.
+11. **Print shop and sign deliveries** to businesses and events.
+12. **Catering drop-offs** for office lunches, often a fixed morning window.
+13. **Rural parcel runs** from a town depot to farms and cottages where couriers charge extra.
+14. **Restaurant delivery for places not on apps,** the route Steve Bailey took in Clarenville, N.L.
+15. **Moving-day small loads** of boxes, paired with [moving help](/side-hustles/moving-help-side-hustle-canada/).
+16. **Seasonal warehouse or store shifts,** if you'd rather be an employee; see [seasonal holiday jobs](/side-hustles/seasonal-holiday-jobs-canada/).
+17. **Odd-job delivery tasks** on task apps; see [odd-job apps](/side-hustles/odd-jobs-apps-side-hustle-canada/).
+18. **Bike or e-bike parcel runs** downtown, where parking eats car couriers' time; see [bike courier work](/side-hustles/bike-courier-side-hustle-canada/).
 
-Buy the dolly when you know the offers include heavy multi-box stops, not because a video said so. A compact <AffiliateLink program="amazon-ca" label="folding hand truck" search="folding hand truck dolly" /> and a <AffiliateLink program="amazon-ca" label="trunk cargo organizer" search="trunk cargo organizer bins" /> cover the first month for most cars. Leave the roof pod and the trailer for a later decision, after you have seen real offer sizes.
+## What gear do you need?
 
-Route the payouts into a separate account so fuel does not blend into household spending. <AffiliateLink program="koho" label="KOHO" /> is a simple Canadian option. Label the transfer “courier” in your own notes if the bank description is vague.
+The car is the big item, and you already own it. Beyond that, buy only what solves a problem you've hit on a route.
 
-## What can package courier work pay in Canada?
+| Need | Option 1 | Option 2 | Option 3 |
+|---|---|---|---|
+| Hand truck or dolly | JUXANOS folding hand truck (500 lb), $59.99 | MaxWorks 80876 foldable platform truck (330 lb), $68.49 | STANLEY 2-in-1 folding truck, $160.30 |
+| Who it suits | Cars with small trunks | Flat walkways and lobbies | Heavy cases and steps |
 
-Package courier work in Canada has no national wage on the Spark Driver Canada page: you are paid for each completed delivery you accept, and you pick the offers. Where Amazon Flex lists your city, read the amount and the time on the offer in the Canadian app before you accept, because a dense apartment route can run long. Tips, where the app allows them, are extra and uneven.
+Prices from an [Amazon.ca search](https://www.amazon.ca/s?k=folding+hand+truck+dolly) on October 9, 2026. Amazon's Flex FAQ suggests a cart or dolly for heavy packages, plus a phone charger or power bank, a flashlight, gloves and a rain poncho. Spark says some grocery orders need a clean insulated bag that closes. Flex requires a safety vest and closed-heel-and-toe shoes at its delivery stations, and vests are free on site.
 
-[Spark Driver Canada on Google Play](https://play.google.com/store/apps/details?id=com.walmart.sparkdriver.ca&hl=en_CA) says drivers keep 100% of confirmed customer tips. Confirm that inside your own terms after signup. Apps edit terms.
+## How do you start? A 30-day plan
 
-Your net for package courier work moves with:
+### Week 1: Check zones and the car
 
-- How long you waited at the store before the order existed
-- How many stops, stairs, and gate codes are on the route
-- Distance back to the store or home with an empty car
-- Failed deliveries and the drive to return the parcel
-- Fuel, and the afternoon you spent because a downtown loading zone was fiction
-- Vehicle size: a larger cargo area can mean fewer damaged rejects and fewer second trips
+- Download Amazon Flex and check whether your area has spots or an interest list. Check the Spark city list and enrol if your area is on it.
+- Measure your cargo space with the seats up and down. Flex turns away drivers who arrive without enough room or with large personal items in the car.
+- Check your phone against each app's minimums.
 
-Log hours from arrival at the pickup, not from the moment you tapped “complete” on the last stop. The queue is part of the shift.
+### Week 2: Insurance and paperwork
 
-## What does an assumed week of package courier work in Canada look like?
+- Call your insurer, say you'll deliver parcels for pay, name the app, and get the answer in writing. In B.C., ask about ICBC's delivery rate class.
+- Gather your licence, SIN, bank details and, for Alberta Flex, a 5-year driver's abstract.
+- Open a separate account for deposits and fuel; <AffiliateLink program="koho" label="KOHO" /> is one Canadian option.
 
-An assumed week of package courier work in Canada puts the store wait and the drive back inside two small offers. The figures are assumptions, not a market wage and not a Spark or Flex quote.
+### Week 3: First blocks
 
-**Illustrative example.** Assumed week, not a market wage for package courier work in Canada. Fuel use, the fuel price, and the wear set-aside are assumptions, not CRA vehicle rates.
+- Take one short block or two small Spark offers. Log arrival time, end time, kilometres, gross pay and fuel.
+- Practise the failed-delivery and return flow before you need it.
 
-Assume two small offers that already fit in the cargo area. Offer one pays $40, 25 km including the drive back, 1.5 hours from arrival at the store, including a 20-minute wait. Offer two pays $55, 40 km including the drive back, 2 hours from arrival, including a 25-minute wait. Combined pay $95, 65 km, 3.5 hours. At an assumed 8.5 L/100 km and an assumed $1.55/L, fuel is 65 × 0.085 × 1.55 = $8.56 (the product $8.56375 rounds to $8.56). An assumed wear set-aside of $0.12/km is $7.80. Variable cost = $16.36. Amount left = $95 − $16.36 = $78.64, or about $22 per hour in this sketch before insurance, with the wait included. A third offer that pays the same and doubles the kilometres can fail this arithmetic. Replace every input with your own log.
+### Week 4: Review
 
-## How do you start package courier work in Canada?
+- Work out your pay per hour after fuel and a wear set-aside for each block.
+- Keep the blocks, stores and times that beat your target; drop the rest.
+- Buy a dolly or bins only if a route showed you needed them.
 
-Start package courier work in Canada by checking the zone, measuring the cargo area, telling the insurer you will deliver goods for pay, and logging one short offer before you buy a van. A waitlist is a no for this month.
+## Templates and checklists you can copy
 
-### 1. Check the zone before you buy a dolly
+### Block log (one line per block)
 
-Open Spark if the [Spark Driver Canada](https://www.sparkdriverapp.ca/content/sparkdriverca/en_ca.html) list includes your region, and Amazon Flex if your city is on the [Canada locations page](https://flex.amazon.ca/our-locations). If both are waitlists, write down the date and look at local courier ads. Leave commercial shelving off a waitlist.
+```
+Date | App | Station/store | Start | End | Hours | Stops | Km | Gross $ | Tips $ | Fuel $ | Net $ | Net/hr
+```
 
-### 2. Measure the cargo area
+### Before every block
 
-Know how many standard boxes fit with the seats up. Take a photo. Offers that do not fit are declines. A hatchback can do many grocery-sized Spark orders. A hatchback cannot do a route of flat-screen televisions. Believe the measuring tape.
+- [ ] Phone charged, power bank packed, app updated
+- [ ] Trunk and back seat empty
+- [ ] Vest, closed-toe shoes, gloves, flashlight
+- [ ] Insulated bag (Spark grocery orders)
+- [ ] Dolly in the car if the route has heavy stops
+- [ ] Odometer reading written down
 
-### 3. Call the insurer
+### Loading routine
 
-Tell the insurer you will deliver store parcels for pay, name the app, and ask what part of the trip the policy covers. Personal policies that exclude carrying goods for compensation stay excluded when the customer prepaid shipping. Platform insurance, if the app provides it, usually sits on top of an active block and still requires you to disclose the work. The longer version of this conversation is in the [food delivery guide](/side-hustles/food-delivery-side-hustle-canada/). Package courier work is the same category of risk: business use of a private car. The rule is the one for the province where the car is plated.
+1. Heavy boxes low and against the seatbacks.
+2. Load in reverse stop order where the app allows it.
+3. Fragile items wedged or on the front seat.
+4. Nothing loose on the rear shelf.
 
-### 4. Apply and wait for the background check
+### Insurer call script
 
-Have licence, insurance, registration, and banking ready. Names must match. The Play listing says the background check is part of Spark signup, and that you are notified when the preferred zone has availability. A waitlisted zone is a no for this month. Use the month.
+> I'm planning to deliver parcels for [Amazon Flex / Spark Driver] as an independent contractor, about [X] hours a week, in [city/province]. Does my current policy cover that use? If not, what endorsement or policy do I need, and what will it cost? Please confirm in writing.
 
-### 5. Set a loading routine
+### Local courier pitch (for your own clients)
 
-Heavy items low and against the seatbacks. Fragile up high and wedged. Liquids in a bin. Nothing loose on the rear shelf that becomes a projectile. You are not a moving company, and you should leave parcels closed.
+> Hi [Name], I'm a local driver in [town] offering same-day delivery for [pharmacies / parts / bakeries]. I can do a [morning/afternoon] run within [area] for $[price] per stop, with photo proof of delivery. Could I do a trial run next week?
 
-### 6. Take one short offer first
+## Real Canadians who built on delivery work
 
-Choose a small number of stops near the store. Time the pickup queue separately from the drive. Practise the failed-delivery flow in the app before you need it: gate code missing, customer not home, business closed.
+These are reported cases, chosen because their numbers are public. They aren't typical, and they aren't promises.
 
-### 7. Learn the building problem
+**Steve Bailey, Clarenville, Newfoundland and Labrador.** SaltWire reported on February 18, 2025 that Bailey completed more than 10,000 DoorDash food deliveries over two years between Clarenville and St. John's, averaging 30 to 100 deliveries a day depending on weather and season. He then launched Bailey's Delivery, picking up from any Clarenville-area restaurant for a $5 fee, with $5 extra past a set point in town. In his first week he made more than 50 deliveries and drove more than 300 km. He kept driving for DoorDash part-time while the business got going, and planned to add groceries and other items.
 
-Buzzers, ice, and “leave in the lobby” notes that building managers forbid are ordinary in Canadian deliveries. Follow the app and the note. If those conflict, use the in-app help. A returned parcel is better than a lost one.
+**Moatassem Moatez, MyCourier, Greater Toronto Area.** Altitude Accelerator reported on August 28, 2025 that Moatez, who came to Canada after 15 years in corporate roles in Dubai, started delivering himself in 2020 to learn the industry, working whatever shifts were available and saying his tips often exceeded his driver pay. He knocked on doors at plazas to find retail clients, signed an agreement with Amazon for deliveries in downtown Toronto by the end of 2020, and grew MyCourier into a company of about 200 people handling parcels and furniture, with its own operations software.
 
-### 8. Add equipment only after you feel the gap
+What the two share: they learned routes and customer habits by driving for someone else first, then sold the same skill directly to local businesses.
 
-If every heavy stop hurt, buy the dolly before the next block. If boxes slid, buy bins. If the work was fine, leave the cargo van payment for later. A van changes insurance again. Price that on purpose.
+## What mistakes do new couriers make?
 
-### 9. Stack package courier work with other driving only if the rules allow
+- **Judging pay by the gross.** Subtract fuel and a wear set-aside before deciding a block was good.
+- **Skipping the insurance call.** Delivery for pay is business use, and the rules differ by province.
+- **Accepting blocks far from home.** The drive home is unpaid.
+- **Arriving with a full car.** Flex can turn you away and record it.
+- **Not returning undelivered parcels.** Flex expects returns by 10 a.m. the next day.
+- **Buying a van in month one.** Log a few weeks of real routes first.
+- **Ignoring the pay floors.** In Ontario and B.C., check your weekly statements against the provincial minimums.
 
-Some people run food delivery between package blocks. The insurer has to know about all of it. A 7 a.m. warehouse block plus a 6 p.m. dinner shift is a long day of decision-making. Fatigue is how parcels get left at the wrong door.
+## Which tax and insurance rules apply?
 
-## What does the first week of package courier work in Canada look like?
+Package courier income is generally self-employment income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) with your T1 return. Self-employed people pay both the employee and employer [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contributions on net income. Amazon's FAQ says it typically doesn't issue tax slips to Flex drivers resident in Canada, so your own log and the app's earnings screen are your records. Keep fuel receipts and a kilometre log: the business-use share of fuel, insurance, maintenance and [capital cost allowance](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance.html) on the car depend on it. A dolly, gloves and an insulated bag are ordinary expenses.
 
-The first week of package courier work in Canada is a zone check, an insurer’s answer, one small offer, and a log that includes queue time. Leave the app if the queue ate the pay.
+GST/HST follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html): worldwide taxable supplies of $30,000 or less in a calendar quarter and over the last four consecutive quarters, counting all your businesses. Parcel delivery isn't covered by the first-dollar registration rule for [taxi and ride-sharing drivers](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html), which applies to carrying passengers; see [rideshare driving](/side-hustles/rideshare-driving-side-hustle-canada/). If you register, Spark lets you add your business details so GST/HST shows in your earnings, and Flex's tax interview accepts GST/HST, QST and provincial sales tax numbers. Rates by province are in the CRA's [charge and collect table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) and [GST/HST calculator](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html).
 
-### Day 1: Check Spark and Flex, then measure the trunk
+If a local courier hires you as an employee, the employer deducts tax and CPP at source and most vehicle expenses stop being yours to claim. Ask which you are before you start.
 
-If you are outside both networks, search “courier driver” locally and ask employee versus contractor.
+This is not tax, legal or insurance advice.
 
-### Day 2: Call the insurer
+### Provincial notes
 
-Stop if the insurer will not cover goods delivery in the province where the car is plated.
+- **Ontario:** the Digital Platform Workers' Rights Act sets a minimum of $17.95 an hour for app work time from October 1, 2026. Amazon says Flex drivers with personal auto insurance may be covered by its supplemental policy while delivering, but not if you live in Quebec and deliver in Ontario. Flex drivers in Ontario must also complete accessibility (AODA) training.
+- **British Columbia:** $21.89 an hour of engaged time plus $0.35 per km for delivery. Amazon says it can't get delivery coverage for B.C. Flex drivers, so you need an ICBC delivery policy (rate class 013), and some B.C. municipalities require a business licence.
+- **Alberta:** Flex's supplemental coverage applies as in Ontario, and Alberta applicants upload a 5-year driver's abstract. Alberta has the highest provincial courier median in Job Bank's data, $25.00 an hour.
+- **Quebec:** neither Flex nor Spark lists a Quebec area as of October 2026; local couriers are the route. QPP replaces CPP, and QST applies alongside GST once registered.
+- **Atlantic Canada:** Flex runs in Halifax; Spark lists Halifax, Dartmouth, Bedford, Fredericton, Moncton and St. John's. HST is 14% in Nova Scotia and 15% in New Brunswick and Newfoundland and Labrador, per the CRA table.
 
-### Day 3: Apply
+## What should a package courier starter kit include?
 
-Clear the trunk of personal items so you are not unloading hockey bags at a store.
+A way to move heavy boxes, keep the phone alive and log every kilometre.
 
-### Day 4: Drive the neighbourhood while you wait
+<StarterKit
+  label="Starter kit: package courier"
+  items={[
+    { name: "Folding hand truck", use: "Heavy cases, water and multi-box stops", cost: "$59.99 (JUXANOS) to $160.30 (STANLEY 2-in-1) on Amazon.ca, October 9, 2026", costUrl: "https://www.amazon.ca/s?k=folding+hand+truck+dolly", program: "amazon-ca", links: [{ label: "JUXANOS folding hand trucks", search: "juxanos folding hand truck 500 lbs" }, { label: "MaxWorks foldable platform trucks", search: "maxworks 80876 foldable platform truck" }, { label: "STANLEY 2-in-1 hand trucks", search: "stanley 2-in-1 folding hand truck" }] },
+    { name: "Trunk organizer or bins", use: "Stops boxes sliding and keeps stops in order", program: "amazon-ca", links: [{ label: "Collapsible trunk organizers", search: "collapsible trunk organizer" }, { label: "Stackable storage bins", search: "stackable collapsible storage bins car" }] },
+    { name: "Insulated delivery bag", use: "Spark grocery orders that need temperature control", program: "amazon-ca", links: [{ label: "Insulated grocery delivery bags", search: "insulated grocery delivery bag large" }] },
+    { name: "Phone mount and power bank", use: "Navigation and scanning all block", program: "amazon-ca", links: [{ label: "Vent and dash phone mounts", search: "car phone mount dashboard" }, { label: "10000mAh power banks", search: "power bank 10000mah usb c" }] },
+    { name: "Headlamp and work gloves", use: "Evening house numbers and cardboard edges", program: "amazon-ca", links: [{ label: "Rechargeable headlamps", search: "rechargeable headlamp" }, { label: "Grip work gloves", search: "nitrile coated work gloves" }], optional: true },
+    { name: "Wave", use: "Free bookkeeping for income, fuel and kilometres", program: "wave", linkLabel: "See Wave" },
+  ]}
+/>
 
-Drive at the hour you would deliver. Note schools, construction, and one-way streets.
+The full budget, including insurance questions and a break-even sketch, is in [package courier startup costs](/side-hustles/package-courier-startup-costs-canada/).
 
-### Day 5: Take the first small offer
+## What should you keep in mind about these numbers?
 
-Log queue time, drive time, stops, kilometres, gross pay, and fuel.
+Amazon's $22–$27 an hour is its own gross figure for "most drivers", not a guarantee, and Flex says blocks vary week to week. Spark doesn't publish an hourly figure. Job Bank's courier wages are 2023–2024 employee data. Fuel prices are Statistics Canada's August 2026 city averages and change monthly; the kilometres, fuel economy and wear set-aside in the worked examples are assumptions. Pay floors are Ontario's and B.C.'s rules as published on October 9, 2026. App zones, requirements and insurance arrangements were read from each company's pages the same day and can change. The two Canadians profiled were chosen because their stories were published, and both went on to build businesses most drivers don't.
 
-### Day 6: Repeat a similar offer
+## Which side hustles sit near package courier work?
 
-Compare. One long route is not a pattern.
-
-### Day 7: Decide whether the queue was tolerable
-
-If you spent more time standing than driving and the pay did not cover it, decline that store next time or leave the app.
-
-## What is easy to miss in package courier work in Canada?
-
-The return trip is the silent half of a package courier route in Canada: an offer that ends 40 minutes from home is a longer shift than the app’s estimate. Include the drive home in the hourly math, or line up the end of the route near home on purpose.
-
-Photograph the drop-off the way the app asks, with the house number if you can do it without photographing people. Those photos settle “I never got it” disputes. A photo of only a blurry porch does not settle the dispute.
-
-Winter sidewalks and uncleared steps are a falling hazard. Use boots with grip. A dolly is useless on ice unless you can control it. Carry one heavy box by hand on ice or a narrow stair rather than ride a sliding stack.
-
-Separate pharmacy and age-restricted offers. ID rules are provincial. If the app’s prompt and your judgment disagree, leave the handoff incomplete.
-
-Secure the load. A sudden stop should leave the crate out of the front seat.
-
-## What mistakes do new package couriers make in Canada?
-
-The expensive mistakes in package courier work in Canada are accepting a high per-stop figure that hides twelve stops in three suburbs, showing up in a car that cannot hold the order, and buying a van in week two. Decline earlier. The data you have after one weather pattern and one store is not a vehicle decision, and the insurance answer still has to come from the province where the car is plated.
-
-Leaving parcels with a neighbour because it was convenient is the next mistake. Do only what the app and the customer authorized.
-
-Skipping insurance because the bag says Walmart is the same mistake. Paid delivery of goods is business use. The insurer cares about the use. The logo on the bag does not change the policy.
-
-## How do taxes and insurance apply to package courier work in Canada?
-
-Package courier income in Canada is generally self-employment income, and GST/HST follows the small-supplier test, which is a different rule from commercial ride-sharing. This guide is not tax, legal, or insurance advice. Insurance for delivering goods is the rule in the province where the car is plated.
-
-Keep offer summaries, fuel receipts, and a kilometre log. Report the income even if a T4A is late, on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) with the T1. Plan for the whole [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contribution on net self-employment income. A kilometre log supports the business-use percentage of the vehicle. [Capital cost allowance](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance.html) spreads a lasting vehicle or trailer over time on that business portion. Bins and gloves are ordinary expenses.
-
-The CRA treats you as a small supplier when worldwide taxable supplies, including associates, are $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Above that, you register. The timing is on the CRA’s [when to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) page. Package delivery is not the ride-sharing first-dollar rule. Passenger ride-sharing is different from the first fare: see [rideshare driving](/side-hustles/rideshare-driving-side-hustle-canada/) and the CRA’s [taxi and ride-sharing page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html).
-
-The rate depends on the province of the supply. HST, GST plus PST, and Quebec’s GST plus QST are different systems. Confirm the current QST rate with Revenu Québec before you add QST. Nova Scotia’s HST is 14% as of 1 April 2025 ([Charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html)). Use that table or the CRA [GST/HST calculator](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html).
-
-Vehicle documents you may be asked to carry: licence, registration, and insurance. Some cities add commercial parking rules and loading-zone limits. A ticket for stopping in a bus lane belongs in the log. Look up the fee on the city’s page rather than budgeting a number you have not seen.
-
-If a local courier hires you as an employee, the tax story changes: the employer may deduct at source, and the same expense claims may not be available. Ask before you start. The word “contractor” on a poster is not always how the CRA will see the relationship.
-
-Refresh the Spark city list, the Flex locations page, and the GST/HST rates when you next update package courier work, because those pages change.
-
-## Which guides pair with package courier work in Canada?
-
-Package courier work in Canada pairs with [food delivery](/side-hustles/food-delivery-side-hustle-canada/) for hot food and shorter trips, and with [grocery apps](/side-hustles/grocery-shopping-side-hustle-canada/) when you shop the list yourself. A seasonal employee shift in a store or warehouse, as opposed to a gig offer, is covered in [seasonal holiday jobs](/side-hustles/seasonal-holiday-jobs-canada/). Heavier household jobs without a delivery quota are [odd-job apps](/side-hustles/odd-jobs-apps-side-hustle-canada/) and [handyman work](/side-hustles/handyman-side-hustle-canada/). The zone check, the waitlist, and the first logged block are in [your first week of package courier work in Canada](/side-hustles/package-courier-first-week-canada/). The [Amazon Flex review for Canadian drivers](/side-hustles/amazon-flex-review-canada/) covers its blocks, pay and insurance.
-
-Per-block earnings and the math after costs are in [package courier earnings in Canada](/side-hustles/package-courier-pricing-canada/).
-
-For short urban runs on two wheels, see [bike and e-bike delivery in Canada](/side-hustles/bike-courier-side-hustle-canada/).
-
-If you are choosing between parcel blocks and meal delivery, see [Amazon Flex vs Uber Eats](/side-hustles/amazon-flex-vs-uber-eats-canada/).
+- [Food delivery](/side-hustles/food-delivery-side-hustle-canada/) for hot food and shorter trips.
+- [Grocery shopping apps](/side-hustles/grocery-shopping-side-hustle-canada/) when you shop the order yourself.
+- [Rideshare driving](/side-hustles/rideshare-driving-side-hustle-canada/) for passengers, with different GST/HST rules.
+- [Bike and e-bike delivery](/side-hustles/bike-courier-side-hustle-canada/) for short urban runs.
+- [Odd-job apps](/side-hustles/odd-jobs-apps-side-hustle-canada/) and [handyman work](/side-hustles/handyman-side-hustle-canada/) for heavier household jobs without a delivery quota.
+- [Seasonal holiday jobs](/side-hustles/seasonal-holiday-jobs-canada/) for employee shifts in stores and warehouses.
 
 <Faq
   items={[
-    {
-      question: "Is Spark Driver available everywhere in Canada?",
-      answer: "No. The Spark Driver Canada page lists specific pickup areas, including the Peel Halton Region, GTA, Vancouver, Calgary, Edmonton, Winnipeg, Ottawa, and Halifax, and smaller listed places such as Moncton, Fredericton, Regina, and Saskatoon. The page’s spelling includes St. Catharine's. The list can change. If yours is missing, check the app for a waitlist.",
-    },
-    {
-      question: "Where does Amazon Flex operate in Canada?",
-      answer: "Amazon Flex’s Canada locations page lists Victoria, Vancouver, Calgary, Edmonton, Kitchener/Waterloo/Cambridge, London, Toronto (GTA), Hamilton, Halifax, Ottawa, and Windsor. That page is the source of truth and can change. Confirm the live page and the in-app requirements. A United States Flex checklist does not match Canadian signup.",
-    },
-    {
-      question: "Do I need commercial auto insurance for package courier work in Canada?",
-      answer: "You need a policy that allows paid delivery of goods in the province where the car is plated. That may be an endorsement or a commercial policy, depending on the insurer and the province. Ask before the first block. A personal commute policy is a different use.",
-    },
-    {
-      question: "How heavy are package courier orders in Canada?",
-      answer: "Orders vary from a few grocery bags to bulky general merchandise. If you cannot lift an order safely, decline it. A folding dolly helps on flat ground and does not solve ice or a narrow stairwell.",
-    },
-    {
-      question: "Is package courier pay in Canada guaranteed?",
-      answer: "No. Spark pays for completed deliveries you accept, and offers depend on customer orders and how many drivers are online. The Spark page does not publish a wage. Waiting at the store can be unpaid. Track a full week before you judge the work.",
-    },
+    { question: "How much does Amazon Flex pay in Canada?", answer: "Amazon's Canadian Flex site says most drivers earn $22 to $27 an hour, paid per 2–4 hour block, with higher rates at peak times. That's before fuel and wear: on an assumed 90 km, 3-hour block in Toronto, driving costs of about $24.59 bring the middle case to roughly $15.80 an hour." },
+    { question: "Where is Amazon Flex available in Canada?", answer: "Amazon lists Calgary, Edmonton, Halifax, Hamilton, Kitchener-Waterloo-Cambridge, London, Ottawa, Toronto, Vancouver, Victoria and Windsor. Elsewhere, the app puts you on an interest list and emails you if spots open." },
+    { question: "How does Spark Driver pay in Canada?", answer: "Spark pays per completed delivery. Each offer shows the minimum you'll receive, which can include surge pay, expense earnings and tips (drivers keep 100%), and weekly incidentals for delays. Earnings are processed every Tuesday for the previous week." },
+    { question: "Is there a minimum wage for delivery app drivers?", answer: "In Ontario, apps must pay at least the general minimum wage, $17.95 an hour from October 1, 2026, for time spent on assignments. In B.C., delivery workers get at least $21.89 an hour of engaged time from June 1, 2026, plus $0.35 per km. Waiting between offers isn't counted in either province." },
+    { question: "Do I need special insurance for package delivery?", answer: "Tell your insurer, because delivering for pay is business use. In Ontario and Alberta, Amazon says Flex drivers with personal policies may get supplemental coverage while delivering; in B.C., Flex drivers need an ICBC delivery policy. Report income on T2125 and pay both CPP shares." },
   ]}
 />
