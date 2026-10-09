@@ -104,7 +104,6 @@ const PATTERNS: [RegExp, SeriesRole][] = [
 export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[]> = {
   'youtube-first-1000-subscribers-canada': [{ series: 'youtube', role: 'first' }],
   'snow-removal-tools-canada': [{ series: 'snow-removal', role: 'guide' }],
-  'snow-removal-gear-toolkit-canada': [{ series: 'snow-removal', role: 'guide' }],
   'snow-removal-contract-checklist-canada': [{ series: 'snow-removal', role: 'guide' }],
   'uber-eats-vs-doordash-vs-skip-canada': [{ series: 'food-delivery', role: 'compare' }],
   'uber-vs-lyft-drivers-canada': [{ series: 'rideshare-driving', role: 'compare' }],
