@@ -1,7 +1,9 @@
 ---
 title: "Printful vs Printify for Canadian Sellers (2026)"
-description: "Printful vs Printify for Canadian print-on-demand sellers: free and paid plans, product discounts, Canadian fulfilment, sales tax on orders, and which fits."
+description: "Printful vs Printify for Canadian sellers: October 2026 plan prices, a Bella + Canvas tee cost in CAD, Canadian shipping rates, plan break-even and who should pick which."
 pubDate: 2026-10-04
+updatedDate: 2026-10-09
+updateNote: "Upgraded with current fees and a side-by-side comparison"
 category: reselling-ecommerce
 tags: [ecommerce, print-on-demand, online]
 featured: false
@@ -28,87 +30,137 @@ sources:
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
     publisher: "Canada Revenue Agency"
+  - title: "Shipping rates"
+    url: "https://www.printful.com/shipping"
+    publisher: "Printful"
+  - title: "Catalog: Unisex Staple T-Shirt, Bella + Canvas 3001"
+    url: "https://api.printful.com/products/71"
+    publisher: "Printful"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 
 <QuickAnswer>
 
-- **Short answer:** Printful prints in its own Ontario facility, which keeps Canadian orders free of customs and duty; Printify connects you to a network of print providers, including Canada-based ones, and its premium plan discounts every product.
-- **Plans:** both are free to start. Printful Growth is 24.99 USD a month and free once you reach 12,000 USD a year in sales; Printify Premium is from 39 USD a month, or 24.99 USD billed yearly.
-- **Sales tax:** Printful charges Canadian sales tax on orders it fulfils in Canada, and you can add your GST/HST number in its dashboard.
+- **Short answer:** pick Printful if you want one company printing Canadian orders in its own Ontario facility with published Canadian shipping rates; pick Printify if you want cheaper base products and a choice of print providers, including Canada-based ones.
+- **Base cost, October 9, 2026:** Printful's Bella + Canvas 3001 tee is 11.92 USD (about $16.97 CAD) for sizes XS–XL, plus $11.29 CAD shipping to a Canadian address. Printify's own pricing example uses a tee with an 8.77 USD (about $12.49 CAD) fulfilment cost.
+- **Plans:** both are free to start. Printful Growth is 24.99 USD a month and free once you reach 12,000 USD a year in sales; Printify Premium is 39 USD a month, or 24.99 USD a month billed yearly.
 - **Next steps:** [print-on-demand startup costs](/side-hustles/print-on-demand-startup-costs-canada/) and [your first print-on-demand sale](/side-hustles/print-on-demand-first-sale-canada/).
 
 </QuickAnswer>
 
-For Canadian print-on-demand sellers, the main difference is who prints. Printful runs its own fulfilment centre in Ontario, so domestic orders ship without customs or duty fees, in about 2 days to Ontario and 4 days to most other provinces. Printify is a marketplace of independent print providers, including Canada-based ones, so price and speed depend on the provider you pick. Both are free to start; Printful Growth (24.99 USD a month, free at 12,000 USD a year in sales) cuts product prices by up to 33%, and Printify Premium (from 39 USD a month, or 24.99 USD a month billed yearly) gives up to 20% off all products. Choose Printful for consistency from one Canadian facility, and Printify for provider choice and price shopping.
+For Canadian print-on-demand sellers, the difference is who prints and what that does to your cost per order. Printful runs its own fulfilment centre in Ontario, so domestic orders ship without customs or duty, in about 2 days to Ontario and 4 days to most other provinces. Printify is a marketplace of independent print providers, so the base price, shipping rate and speed depend on the provider you choose for each product.
 
 For the full business, see the [print-on-demand side hustle guide](/side-hustles/print-on-demand-side-hustle-canada/), [Shopify vs Squarespace vs Wix](/side-hustles/shopify-vs-squarespace-vs-wix-canada/), and [Etsy vs Shopify](/side-hustles/etsy-vs-shopify-canada/).
 
 ## How do Printful and Printify compare for Canadian sellers?
 
-Printful is one company printing in its own facilities; Printify routes orders to partner print providers. Prices loaded in USD on October 4, 2026, and are converted at the Bank of Canada [daily rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) of 1.4246 CAD per USD for October 2, 2026; conversions are approximate.
+Every figure below was read from Printful's and Printify's own pages on October 9, 2026. Both price products in USD; conversions use the Bank of Canada [daily rate](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) of 1.4240 CAD per USD for October 8, 2026.
+
+<ComparisonTable
+  caption="Printful vs Printify for a seller in Canada"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Printful",
+      program: "printful",
+      linkLabel: "See Printful",
+      bestFor: "Sellers who want consistent quality from one printer and fast, customs-free delivery inside Canada",
+      pricing: "Free plan. Growth 24.99 USD/month (about $35.59 CAD), free at 12,000 USD/year in sales, up to 33% off products, 14-day trial. Bella + Canvas 3001 tee 11.92 USD (XS–XL)",
+      pricingUrl: "https://www.printful.com/pricing",
+      canada: "Own fulfilment facility in Ontario; shirts ship to Canadian addresses for $11.29 CAD, +$2.50 per extra shirt",
+      pros: ["One facility, one quality standard", "Published Canadian shipping rates in CAD", "Applies Canadian sales tax to Canadian orders"],
+      cons: ["Higher base prices than many Printify providers", "Growth discount varies by product (up to 33%)", "Branding extras cost per item"],
+    },
+    {
+      name: "Printify",
+      program: "printify",
+      linkLabel: "See Printify",
+      bestFor: "Price-sensitive sellers and multi-store sellers who will compare providers per product",
+      pricing: "Free plan with 5 stores. Premium 39 USD/month (about $55.54 CAD), or 24.99 USD/month billed yearly; up to 20% off all products and up to 33% off new products",
+      pricingUrl: "https://printify.com/pricing/",
+      canada: "Canada-based print providers available; cards charged in USD, EUR, CAD, GBP or AUD",
+      pros: ["Lower base costs (8.77 USD tee in Printify's own example)", "Choice of provider per product", "Pay in CAD"],
+      cons: ["Quality and speed vary by provider", "Shipping depends on the provider you choose"],
+    },
+  ]}
+/>
 
 | Factor | Printful | Printify |
 | --- | --- | --- |
-| Free plan | Free, no monthly fee ([pricing](https://www.printful.com/pricing)) | Free, 5 stores per account ([pricing](https://printify.com/pricing/)) |
-| Paid plan | Growth: 24.99 USD/mo (about $35.60 CAD), free at 12,000 USD/yr in sales; 14-day trial | Premium: from 39 USD/mo (about $55.56 CAD), or from 24.99 USD/mo billed yearly |
-| Paid-plan discount | Up to 33% off product pricing | Up to 20% off all products; up to 33% on new products |
-| Who prints | Printful's own Ontario (Toronto) facility for Canadian orders ([Canada](https://www.printful.com/print-on-demand-canada)) | Partner print providers, including Canada-based ones ([Canada](https://printify.com/print-on-demand/canada/)) |
-| Customs on domestic orders | None for orders fulfilled in Ontario | Avoided when you choose a Canada-based provider |
-| Delivery inside Canada | About 2 days to Ontario, 4 days to most other provinces | Depends on the provider |
-| Branding extras | Inside labels 0.99 USD, outside labels 2.49 USD | Up to 33% off custom branding on Premium |
-| Billing currency | Shown at checkout | Cards charged in USD, EUR, CAD, GBP, or AUD |
+| Monthly plan | Free; Growth 24.99 USD, free at 12,000 USD/yr in sales | Free; Premium 39 USD, or 24.99 USD billed yearly |
+| Paid-plan discount | Up to 33% off product pricing | Up to 20% off all products, up to 33% on new products |
+| Example tee | Bella + Canvas 3001: 11.92 USD XS–XL, 13.92 USD 2XL, 15.92 USD 3XL | 8.77 USD fulfilment cost in Printify's pricing example |
+| Shirt shipping to Canada | $11.29 CAD first item, +$2.50 CAD each additional ([shipping](https://www.printful.com/shipping)) | Set by each provider |
+| Who prints | Printful's Ontario facility ([Canada](https://www.printful.com/print-on-demand-canada)) | Partner providers, including Canada-based ones ([Canada](https://printify.com/print-on-demand/canada/)) |
+| Branding | Inside labels 0.99 USD, outside labels 2.49 USD; embroidery digitization 2.95–6.50 USD per design | Up to 33% off custom branding on Premium |
 
-## What does each platform cost per order?
+The Printful tee price comes from Printful's public [catalog for the Bella + Canvas 3001](https://api.printful.com/products/71). Printify shows each provider's tee price in its catalog once you pick a provider, so the 8.77 USD figure is the example Printify publishes on its pricing page, not a specific provider's quote.
 
-On both platforms you pay the product cost and shipping when a customer orders, and your margin is your retail price minus those costs. Paid plans only make sense once the discount outweighs the monthly fee.
+## What does a Canadian order cost on each platform?
 
-- **Printful:** product price includes the item and one print design; extras such as additional placements, labels, and premium images cost more. Growth becomes free at 12,000 USD in yearly sales.
-- **Printify:** product prices vary by provider. Premium's 20% discount applies across products.
-- **Shipping:** Printful's Canadian page highlights domestic shipping from Ontario; with Printify, compare providers' shipping rates and locations.
+You pay product cost plus shipping when a customer orders; your margin is retail price minus those, minus your storefront's fees.
 
-### Illustrative example
+### Illustrative example: one tee to a Canadian buyer on Printful
 
-Assume a t-shirt with a 15 USD product cost and 30 monthly orders. The product cost and order count are assumptions; actual prices vary by product and provider.
+**Assumed input:** you sell the tee for $35 CAD with free shipping. **Sourced inputs:** 11.92 USD product, $11.29 CAD shipping, 1.4240 exchange rate.
 
-- **No paid plan:** 30 × 15 = 450 USD in product costs.
-- **Printful Growth at a 20% discount on this product (within its "up to 33%"):** 450 × 0.80 = 360 USD, plus 24.99 USD = 384.99 USD, saving about 65 USD (about $92.60 CAD) a month.
-- **Printify Premium yearly at a 20% discount:** 360 + 24.99 = 384.99 USD; on monthly billing at 39 USD the total is 399 USD.
+- Product: 11.92 × 1.4240 = **$16.97 CAD**
+- Shipping: **$11.29 CAD**
+- Left before storefront fees and tax: $35 − $16.97 − $11.29 = **$6.74 CAD**
 
-At 5 orders a month, 20% of 75 USD is 15 USD, less than either plan's fee, so the free tiers win.
+A second shirt in the same order ships for $2.50 more, not $11.29, so bundles and "two for" offers carry most of the profit. Printful also charges Canadian sales tax on the product price plus shipping, based on the destination province ([sales tax help](https://help.printful.com/hc/en-us/articles/50264769445905-How-does-sales-tax-work-for-my-Canadian-orders)); a GST/HST registrant can enter their number under Billing.
+
+### When does a paid plan pay for itself?
+
+**Assumed input:** a 20% discount on the tee (Printful says "up to 33%", and the exact Growth discount varies by product; Printify Premium's figure is "up to 20%").
+
+| Plan | Fee (USD/month) | Saving per tee | Tees/month to break even |
+| --- | --- | --- | --- |
+| Printful Growth | 24.99 | 20% × 11.92 = 2.38 | 24.99 ÷ 2.38 = 10.5, so 11 |
+| Printify Premium, yearly billing | 24.99 | 20% × 8.77 = 1.75 | 24.99 ÷ 1.75 = 14.2, so 15 |
+| Printify Premium, monthly billing | 39.00 | 1.75 | 39 ÷ 1.75 = 22.2, so 23 |
+
+### Illustrative example: 30 tees a month
+
+**Assumed inputs:** 30 tees a month and the same 20% discount.
+
+- **Printful, free plan:** 30 × 11.92 = 357.60 USD. **With Growth:** 30 × 9.54 + 24.99 = 311.07 USD, a 46.53 USD (about $66.26 CAD) monthly saving.
+- **Printify, free plan:** 30 × 8.77 = 263.10 USD. **With Premium yearly:** 30 × 7.02 + 24.99 = 235.47 USD, a 27.63 USD saving. **With Premium monthly:** 249.48 USD.
+
+Printify's lower base price wins on product cost at every volume in this example; Printful's case rests on its published Canadian shipping, its single facility and its Growth plan becoming free at 12,000 USD a year in sales.
 
 ## Which platform should a Canadian print-on-demand seller choose?
-
-Choose on how much you value one facility versus provider choice. This is a decision rule from the published features, not a ranking.
 
 | If you… | Lean toward | Why |
 | --- | --- | --- |
 | Want the same printer for every Canadian order | Printful | Its own Ontario facility |
-| Want to compare prices between providers | Printify | Multiple print providers per product |
+| Want the lowest base price on basics | Printify | Lower provider prices (8.77 USD tee example vs 11.92 USD) |
 | Sell mostly in Canada and want fast domestic delivery | Printful, or Printify with a Canadian provider | No customs on domestic orders |
 | Run several small stores | Printify | Free plan includes 5 stores |
-| Want branded inside labels | Printful | Per-label pricing listed |
+| Sell embroidered or labelled products | Printful | Per-label and digitization prices are published |
+| Sell under 11 tees a month | Either on the free plan | Neither paid plan breaks even yet |
 
-If you choose Printful, you can sign up through <AffiliateLink program="printful" label="Printful" />. Mockups and designs can be made in <AffiliateLink program="canva" label="Canva" />, subject to its licence terms; see [Canva vs Adobe Express](/side-hustles/canva-vs-adobe-express-canada/).
+Sign up through <AffiliateLink program="printful" label="Printful" /> or <AffiliateLink program="printify" label="Printify" />. Mockups can be made in <AffiliateLink program="canva" label="Canva" />, subject to its licence terms; see [Canva vs Adobe Express](/side-hustles/canva-vs-adobe-express-canada/).
 
 ## What mistakes do Canadian print-on-demand sellers make?
 
-The common mistakes are ignoring currency, customs, and sales tax on fulfilment orders.
+- **Pricing in CAD from USD costs without converting.** An 11.92 USD tee is $16.97 CAD, before shipping.
+- **Forgetting shipping in the margin.** $11.29 CAD to ship one Printful shirt inside Canada is two-thirds of the product cost.
+- **Choosing a US provider for Canadian buyers on Printify.** Cross-border orders can add delays and customs.
+- **Paying for a plan too early.** At a 20% discount, Printful Growth needs 11 tees a month to pay for itself.
+- **Skipping samples.** Printful takes 20% off samples on the free plan and 25% on Growth; order one before you list.
 
-- **Choosing a US provider for Canadian buyers.** Cross-border orders can add delays and customs; pick Canadian fulfilment where possible.
-- **Pricing in CAD from USD costs without converting.** Convert product and shipping costs before setting retail prices.
-- **Paying for a plan too early.** The discount must exceed the monthly fee.
-- **Forgetting the tax on your fulfilment bill.** Printful charges sales tax on (Printful price + shipping) based on the destination province ([sales tax help](https://help.printful.com/hc/en-us/articles/50264769445905-How-does-sales-tax-work-for-my-Canadian-orders)).
-- **Not adding your GST/HST number.** If you are registered, add it in Printful's dashboard under Billing.
+## What could change these Printful and Printify numbers?
+
+The exchange rate moves every USD price: at 1.40 CAD per USD the Printful tee is $16.69, at 1.45 it is $17.28. Plan discounts vary by product, and Printify prices vary by provider, so the per-tee savings above use an assumed 20%. Shipping and product prices are from October 9, 2026. This is not tax or legal advice.
 
 ## Which tax rules apply to print-on-demand income in Canada?
 
-Print-on-demand profit is generally business income, and product, shipping, and plan costs are generally deductible. Once your taxable sales pass $30,000 over four consecutive calendar quarters, you generally must [register for GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) and charge it to customers; see [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/). For where to keep store payouts, see [Wealthsimple vs a bank business account](/side-hustles/wealthsimple-vs-bank-business-account-side-hustle-canada/).
-
-This is not tax or legal advice.
+Print-on-demand profit is generally business income, and product, shipping and plan costs are generally deductible. Once your taxable sales pass $30,000 in a calendar quarter or over four consecutive calendar quarters, you must [register for GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) and charge it to customers; see [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/).
 
 ## Which guides sit next to Printful vs Printify?
 
@@ -118,23 +170,23 @@ This comparison sits beside [print-on-demand startup costs](/side-hustles/print-
   items={[
     {
       question: "Is Printful or Printify better for Canadian sellers?",
-      answer: "Printful prints Canadian orders in its own Ontario facility, which avoids customs and duty on domestic orders. Printify offers a network of print providers, including Canada-based ones, and more price choice. Both are free to start.",
+      answer: "Printful prints Canadian orders in its own Ontario facility and publishes Canadian shipping rates, such as $11.29 CAD for a first shirt. Printify has lower base prices through its provider network, including Canada-based providers. Pick Printful for consistency and Printify for price.",
     },
     {
-      question: "Does Printful have a Canadian fulfilment centre?",
-      answer: "Yes. Printful's Canada page says it fulfils Canadian orders from its facility in Ontario, with no customs or duty fees on domestic orders and delivery in about 2 days to Ontario and 4 days to most other provinces.",
+      question: "How much does a Printful t-shirt cost in Canada?",
+      answer: "On October 9, 2026, Printful's Bella + Canvas 3001 tee was 11.92 USD for sizes XS to XL, about $16.97 CAD, plus $11.29 CAD to ship one shirt to a Canadian address and $2.50 CAD for each additional shirt.",
     },
     {
       question: "How much does Printify Premium cost?",
-      answer: "Printify's pricing page lists Premium from 39 USD a month, or from 24.99 USD a month billed yearly, with up to 20% off all products.",
+      answer: "Printify's pricing page lists Premium at 39 USD a month, or 24.99 USD a month billed yearly, with up to 20% off all products and up to 33% off new products. At a 20% saving on an 8.77 USD tee, the yearly plan needs about 15 tees a month to pay for itself.",
     },
     {
       question: "Does Printful charge sales tax on Canadian orders?",
-      answer: "Yes. Printful's help centre says orders fulfilled and shipped within Canada are subject to Canadian sales tax, calculated as the Printful price plus shipping times the destination province's rate. Registered sellers can add their GST/HST number in the dashboard.",
+      answer: "Yes. Printful's help centre says orders fulfilled and shipped within Canada are subject to Canadian sales tax on the Printful price plus shipping, at the destination province's rate. Registered sellers can add their GST/HST number in the dashboard.",
     },
     {
       question: "Do I need a GST/HST number for print on demand in Canada?",
-      answer: "Generally only once taxable sales pass $30,000 over four consecutive calendar quarters, though you can register voluntarily. This is not tax advice.",
+      answer: "Only once your taxable sales pass $30,000 in a calendar quarter or over four consecutive calendar quarters, though you can register voluntarily. This is not tax advice.",
     },
   ]}
 />
