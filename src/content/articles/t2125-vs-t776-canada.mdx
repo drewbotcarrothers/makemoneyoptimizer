@@ -1,7 +1,9 @@
 ---
 title: "T2125 vs T776: Which CRA Form Does Your Side Income Go On?"
-description: "T2125 versus T776 for Canadian side income: business and professional income versus real-estate rental, basic services versus extra services, and the lines on the T1."
+description: "T2125 vs T776 for Canadian side income: which CRA form fits, the T1 lines, CPP at 11.9% on business income only, filing deadlines, short-term rental rules and worked examples (checked October 9, 2026)."
 pubDate: 2026-10-06
+updatedDate: 2026-10-09
+updateNote: "Upgraded with verified CRA rules, a side-by-side table and worked examples"
 category: taxes-money
 tags: [taxes, canada-tax, self-employment]
 featured: false
@@ -34,102 +36,191 @@ sources:
   - title: "Lines 13499 to 14300 – Self-employment income"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html"
     publisher: "Canada Revenue Agency"
+  - title: "Contributions to the Canada Pension Plan"
+    url: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html"
+    publisher: "Government of Canada"
+  - title: "Due dates and payment dates: personal income tax"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html"
+    publisher: "Canada Revenue Agency"
+  - title: "Required tax instalments for individuals"
+    url: "https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments.html"
+    publisher: "Canada Revenue Agency"
+  - title: "GST/HST Memorandum 19.2.2, Residential Real Property: Rentals"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/19-2-2/residential-real-property-rentals.html"
+    publisher: "Canada Revenue Agency"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 import TaxChecklistCta from '../../components/TaxChecklistCta.astro';
 
 <QuickAnswer>
 
-- **T2125** is the CRA form for business or professional income. Gross and net amounts then go to the self-employment lines on the T1, including lines 13499 and 13500 for a business.
-- **T776** is the form for real-estate rental income. The CRA's [rental or business](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/you-have-rental-income-business-income.html) page says renting space and providing only basic services is usually income from property.
-- **The split:** extra services such as cleaning, security, or meals can make the rental a business. The CRA's sharing-economy examples put that income on T2125.
-- **Not tax advice.** Confirm the form before you file. The walkthrough for T2125 is [how to report side hustle income](/side-hustles/report-side-hustle-income-cra-canada/).
+- **T2125** is the CRA form for business or professional income: freelancing, delivery, reselling, services. Gross income goes on line 13499 of the return and net income on line 13500.
+- **T776** is the form for rental income from real estate when you rent space and provide only basic services such as heat, light, parking and laundry. Gross rent goes on line 12599 and net rent on line 12600.
+- **Extra services change the form.** Cleaning, security and meals can make a rental a business. The CRA's own examples put an Airbnb with meals and cleaning on T2125 and one with only heat, hydro and parking on T776.
+- **CPP is the big difference.** Self-employed people pay 11.9% CPP on net business income between $3,500 and $74,600 in 2026. Rental income from property isn't subject to CPP.
+- **Deadlines differ too.** Rental-only filers file by April 30. If you or your spouse are self-employed, filing is due June 15, but any balance is still due April 30.
 
 </QuickAnswer>
 
-T2125 and T776 in Canada are different CRA forms because business income and rental income from real estate are different kinds of income. [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), Statement of Business or Professional Activities, is the form for a side hustle you carry on as a business. [Form T776](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/completing-form-t776-statement-real-estate-rentals.html), Statement of Real Estate Rentals, is the form for rental income from real estate when that income is from property. Using the wrong one puts the rent, or the business, on the wrong lines of the return.
+T2125 and T776 are different CRA forms because business income and rental income from property are taxed differently. [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), Statement of Business or Professional Activities, is for a side hustle you carry on as a business. [Form T776](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/completing-form-t776-statement-real-estate-rentals.html), Statement of Real Estate Rentals, is for rental income from real estate that counts as income from property. Using the wrong one puts income on the wrong lines and can get your CPP wrong. All CRA pages below were checked on October 9, 2026.
 
-This is general information, not tax advice. [Guide T4002](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html) is the book for T2125. [Guide T4036](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4036/rental-income.html) is the book for T776. Reporting a service hustle is [how to report side hustle income](/side-hustles/report-side-hustle-income-cra-canada/). The short answers to the other common mix-ups are in the [side hustle tax FAQ](/side-hustles/side-hustle-tax-faq-canada/).
+This is general information, not tax advice. [Guide T4002](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html) goes with T2125, and [Guide T4036](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4036/rental-income.html) goes with T776. For a step-by-step on T2125, see [how to report side hustle income](/side-hustles/report-side-hustle-income-cra-canada/). Other common mix-ups are in the [side hustle tax FAQ](/side-hustles/side-hustle-tax-faq-canada/).
 
 <TaxChecklistCta />
 
+## What is the difference between T2125 and T776?
+
+T2125 reports business income, which is subject to self-employed CPP and gets the June 15 filing deadline. T776 reports rental income from real estate, which isn't subject to CPP and has CCA limits that stop you creating a rental loss. The deciding question is how many services you provide with the space.
+
+<ComparisonTable
+  caption="T2125 vs T776 for Canadian side income"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Form T2125",
+      href: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html",
+      bestFor: "Freelancing, gig work, reselling, services, and rentals that come with extra services such as cleaning or meals",
+      pricing: "Free CRA form; self-employed CPP of 11.9% on net business income between $3,500 and $74,600 (2026), maximum $8,460.90",
+      pricingUrl: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html",
+      canada: "Gross on line 13499, net on line 13500; one T2125 per business; filing due June 15 if you or your spouse are self-employed, balance due April 30",
+      pros: ["Business expenses in Guide T4002, including business-use-of-home", "CPP contributions build your CPP pension", "One form per business keeps each side hustle separate"],
+      cons: ["CPP adds 11.9% on net income above $3,500", "Services income may count toward the $30,000 GST/HST registration test", "Records needed for every expense"],
+    },
+    {
+      name: "Form T776",
+      href: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/completing-form-t776-statement-real-estate-rentals.html",
+      bestFor: "Renting a room, suite, unit or parking space with basic services only: heat, light, parking, laundry",
+      pricing: "Free CRA form; no CPP on rental income from property",
+      pricingUrl: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html",
+      canada: "Gross rents line 8141, other income line 8230, total line 8299 to line 12599; net on line 12600; filing due April 30 unless you or your spouse are self-employed",
+      pros: ["No CPP on the net rent", "A real rental loss can be deducted against other income", "Long-term residential rent is generally exempt from GST/HST"],
+      cons: ["CCA can't create or increase a rental loss", "Non-compliant short-term rental expenses can't be deducted", "CCA on your own home can affect the principal residence exemption"],
+    },
+  ]}
+/>
+
+| What you earn | Usual form | T1 lines |
+| --- | --- | --- |
+| Freelance, gig or service side hustle | T2125 | Gross 13499, net 13500 |
+| Room, suite or parking rent with basic services only | T776 | Gross 12599, net 12600 |
+| Short-term rental priced with meals, cleaning or tour bookings | T2125 for the services part | 13499 and 13500 |
+| Personal belongings sold for less than you paid | Usually neither | See [is selling on Kijiji taxable](/side-hustles/is-selling-on-kijiji-taxable-canada/) |
+
 ## Which side income goes on Form T2125 in Canada?
 
-Side income goes on Form T2125 in Canada when it is business or professional income. The CRA's [completing Form T2125](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html) page says you use the form for that income, and that you complete a separate T2125 for each business. Gross business income from line 8299 of the form is reported on line 13499 of the return. Net business income goes on line 13500. The CRA groups these as [lines 13499 to 14300](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html). Professional, commission, farming, and fishing income use their own lines in that group.
+Side income goes on T2125 when it is business or professional income. The CRA's [self-employment income page](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/self-employment-income-lines-13499-14299-gross-income-lines-13500-14300-net-income.html) says business income generally includes income from any activity you carry out for profit or with a reasonable expectation of profit. The CRA's [completing Form T2125](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125.html) page says to fill in a separate T2125 for each business. Gross business income from line 8299 of the form goes on line 13499, and net business income on line 13500. Professional, commission, farming and fishing income use their own lines in the same group.
 
-Freelance work, delivery, reselling inventory you bought to sell, and other activities you carry on for profit are the T2125 pattern on this site. A closet clean-out is not automatically a business. That distinction is [is selling on Kijiji taxable](/side-hustles/is-selling-on-kijiji-taxable-canada/). Self-employed Canada Pension Plan contributions are calculated on net business income, which [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/) explains. T776 rental income is not the same CPP calculation. Do not assume the two forms produce the same payroll result.
+Freelancing, delivery, reselling items you bought to resell, and services you sell for profit all follow the T2125 pattern. Clearing out your own closet usually isn't a business. That's covered in [is selling on Kijiji taxable](/side-hustles/is-selling-on-kijiji-taxable-canada/).
+
+**CPP applies on T2125 income.** The government's [CPP contributions page](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) says self-employed people pay the full 11.9% on pensionable earnings, based on net business income after expenses, and don't contribute on other income such as investment earnings. For 2026 the earnings ceiling is $74,600, the basic exemption is $3,500, and the self-employed maximum is $8,460.90. Earnings between $74,600 and $85,000 also attract the second additional contribution, at 8% for the self-employed. [How much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/) covers this in more detail.
 
 ## Which side income goes on Form T776 in Canada?
 
-Side income goes on Form T776 in Canada when it is rental income from real estate and the CRA treats it as income from property. The [rental income or business income](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/you-have-rental-income-business-income.html) page says you look at the number and types of services you provide. In most cases you are earning income from property if you rent space and provide basic services only. Basic services on that page include heat, light, parking, and laundry facilities. [Guide T4036](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4036/rental-income.html) says the same, and it says to use T4002 instead if the rental operation is a business.
+Side income goes on T776 when it's rental income from real estate and counts as income from property. The CRA's [rental income or business income](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/you-have-rental-income-business-income.html) page says to look at the number and types of services you provide. In most cases, renting space with basic services only is income from property. Basic services are heat, light, parking and laundry facilities. Guide T4036 is only for rental income from property. If the rental is a business, it sends you to Guide T4002 and T2125.
 
-The [completing T776](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/completing-form-t776-statement-real-estate-rentals.html) page says you list the addresses and the number of units, including short-term rentals. Gross rents go on line 8141. Other income, including the fair market value of rent paid in goods or services, goes on line 8230. Total gross rental income is line 8299, and that gross amount is entered on line 12599 of the return. Net rental income is reported on line 12600. The page says that if you are a co-owner, or in a partnership that does not issue a T5013, you enter the gross rental income for the entire property on line 12599. You do not split that gross figure by your ownership share. Your share is handled in the net calculation. Read the form instructions before you split anything.
+The CRA's [completing T776](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/rental-income/completing-form-t776-statement-real-estate-rentals.html) page sets out the lines:
 
-T776 is a real-estate form. Renting a car, tools, or other movable property is not what this form is for. If that activity is a business, it belongs on T2125 and in Guide T4002. This guide does not pick a form for a particular car-sharing platform.
+- **Line 8141, gross rents** for all units, including short-term rentals.
+- **Line 8230, other income**, including the fair market value of rent paid in goods or services. The CRA's example is a tenant who pays part of the rent by clearing snow.
+- **Line 8299, total gross rental income**, which goes on line 12599 of the return. Net rental income goes on line 12600.
+- **Co-owners** enter the gross rental income for the whole property on line 12599, not their share. Your share comes in later, in the net calculation.
 
-| What you earn | Usual form | T1 lines the CRA pages name |
-| --- | --- | --- |
-| Business or professional side hustle | T2125 | Gross business income on line 13499; net on line 13500 |
-| Real-estate rent with basic services only | T776 | Gross on line 12599; net on line 12600 |
-| Rent plus services such as meals or cleaning | Often T2125 for the business portion | Sharing-economy page examples below |
-| Personal belongings you used, then sold | Neither, unless there is a capital gain or a business | [Kijiji and Marketplace tax](/side-hustles/is-selling-on-kijiji-taxable-canada/) |
+T776 is only for real estate. Renting out a car, tools or other movable property isn't what it's for. If that activity is a business, it goes on T2125.
 
-## When do extra services move a rental from T776 to T2125 in Canada?
+## When do extra services move a rental from T776 to T2125?
 
-Extra services move a rental toward T2125 in Canada when they go past basic services and the operation looks like a business. The rental-or-business page says that if you provide additional services such as cleaning, security, and meals, you may be carrying on a business. The more services you provide, the greater the chance that the rental operation is a business. If you decide it is a business, that page sends you to T2125 and Guide T4002, not to T4036.
+Extra services move a rental to T2125 when they go beyond basic services and the operation starts to look like a business. The rental-or-business page says that if you provide additional services such as cleaning, security and meals, you may be carrying on a business, and the more services you provide, the greater the chance.
 
-The CRA's [sharing economy](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/platform-economy/sharing-economy.html) page uses two examples. Charles rents a property on a short-term platform and the price includes meals, cleaning, and reservation services for tour packages. The page says those additional fees are generally a business, so he reports self-employment on lines 13499 and 13500 and files Form T2125. Renée rents a property and the price covers basic services such as heat, hydro, parking, and similar occupancy services. The page says she is generally earning rental income from property, reports it as rental income, and files Form T776.
+The CRA's [sharing economy](https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/compliance/platform-economy/sharing-economy.html) page gives two examples:
 
-If you provide both, the sharing-economy page says the portion that is other services is self-employment income on T2125, and the accommodation portion can remain rental income on T776. Do not put the same dollars on both forms.
+- **Charles** rents his property on Airbnb, and the price includes meals, cleaning and reservation services for tour packages. Those extras are generally a business, so he reports self-employment income on lines 13499 and 13500 and files T2125.
+- **Renée** also rents on Airbnb, but her price covers only accommodation, with heat, hydro, parking and similar services. She is generally earning rental income from property and files T776.
 
-The T2125 [expenses page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/expenses-section-form-t2125.html) also says that if you incurred expenses to earn business income from a short-term rental, you cannot deduct the non-compliant amount of those expenses, including capital cost allowance related to that rental. It points to Guide T4036 for the non-compliant calculation. "Non-compliant" on that page is about the short-term rental not meeting the registration, licensing, or permit rules that apply to it. Read T4036 before you deduct short-term rental costs. This guide does not restate the formula.
+The same page says that if you provide other services to tenants, that portion of your income is self-employment income on T2125. Don't report the same dollars on both forms.
 
-### Illustrative example
+## What rules apply only to T776 rental income?
 
-**Illustrative example.** Two assumed situations, not CRA examples and not local rents.
+Three T776 rules catch side-income renters out: CCA can't create a rental loss, short-term rental expenses can be cut off if the rental isn't compliant, and CCA on your own home can cost you part of the principal residence exemption.
 
-Suppose you rent a single parking stall on your property for $100 a month and you provide no service beyond the space. Twelve months is $1,200. The rental-or-business page lists parking as a basic service when you are renting space. The sketch is the T776 pattern: gross rent toward line 12599, expenses only as T4036 allows, net toward line 12600. The $100 is an assumption, not a rate in any city.
+**CCA can't create or increase a rental loss.** [Guide T4036](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4036/rental-income.html) says this directly. In its own example, Salvador has an overall net rental loss of $500 across three properties, so he can't claim any CCA on the buildings or appliances. Most buildings bought after 1987 are Class 1, at 4%.
 
-Suppose instead you rent a room and the price includes daily cleaning and breakfast. Those are the kinds of additional services the sharing-economy page treats as a business in the Charles example. The sketch does not put that combined price on T776 by default. It is the T2125 pattern unless a tax professional splits accommodation from services. Do not copy $100 or the breakfast into a return.
+**Rental losses have limits.** T4036 says you can deduct a rental loss against other income if you incurred the expenses to earn income. You can't claim a loss if you rent to someone you know for less than you'd charge a stranger, or if the arrangement is cost-sharing rather than a business aiming at profit.
 
-## What should you not claim on either form without reading the guide?
+**Non-compliant short-term rentals.** T4036 defines a short-term rental as residential property rented, or offered for rent, for less than 90 consecutive days. If the province or municipality doesn't allow short-term rentals at that location, or requires registration, a licence or a permit you don't have, the non-compliant share of expenses isn't deductible. The formula is A × B ÷ C: deductible short-term rental expenses, times non-compliant days, divided by short-term rental days. The same rule applies on T2125. The CRA's [T2125 expenses page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/completing-form-t2125/expenses-section-form-t2125.html) says you can't deduct the non-compliant amount, including CCA.
 
-Do not claim the personal portion of a cost on either form, and do not claim capital cost allowance on a home you live in without reading the principal-residence effect. Guide T4036 is where rental expenses and capital cost allowance are set out. The [home office guide](/side-hustles/home-office-expenses-side-hustle-canada/) explains why many people claim operating costs on a workspace and leave capital cost allowance on the house at zero. That choice is yours to make with the CRA pages, not a default this guide orders.
+**Your own home.** T4036 has a chapter on the principal residence and changes in use. The [home office guide](/side-hustles/home-office-expenses-side-hustle-canada/) explains why many people renting part of their home claim operating costs and leave CCA on the house at zero. Read the guide or ask a professional before claiming CCA on a home you live in.
 
-GST/HST is a separate question from T2125 versus T776. Whether rent is a taxable supply depends on the kind of rent. The $30,000 figure is a registration test for taxable supplies, not a reason to skip the income form. See [the $30,000 GST/HST myth](/side-hustles/gst-hst-30000-threshold-myth-canada/) and [when to register](/side-hustles/gst-hst-registration-side-hustle-canada/).
+## How do deadlines, instalments and GST/HST differ?
 
-<AffiliateLink program="freshbooks" label="FreshBooks" /> can keep rent receipts and service invoices in separate lists so a later T776 and a later T2125 are not one blended total. It does not choose the form. <AffiliateLink program="turbotax-canada" label="TurboTax Canada" /> and <AffiliateLink program="wealthsimple-tax" label="Wealthsimple Tax" /> can carry the form you select into the T1. Check the current price. Software is not an accountant.
+**Filing deadlines.** The CRA's [due dates page](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/important-dates-individuals.html) lists April 30 as the filing deadline for most people and June 15 if you or your spouse or common-law partner are self-employed. Any balance owing is due April 30 either way. A T776-only filer doesn't get the June date.
+
+**Instalments.** The CRA's [instalments page](https://www.canada.ca/en/revenue-agency/services/payments/payments-cra/individual-payments/income-tax-instalments.html) says you may have to pay instalments if your net tax owing is more than $3,000 ($1,800 in Quebec) for 2026 and in either 2025 or 2024. That applies to both forms, because neither business nor rental income has tax withheld. Instalments are due March 15, June 15, September 15 and December 15.
+
+**GST/HST.** This is a separate question from which income form to use. Under the CRA's [GST/HST memorandum on residential rentals](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/19-2-2/residential-real-property-rentals.html), renting residential accommodation to the same person for a month or more is generally exempt. Short-term accommodation of less than a month is taxable if you're a registrant, unless it costs $20 a day or less. See [the $30,000 GST/HST myth](/side-hustles/gst-hst-30000-threshold-myth-canada/) and [when to register](/side-hustles/gst-hst-registration-side-hustle-canada/).
+
+## What do T2125 and T776 look like with real numbers?
+
+**Illustrative. The rents, incomes and expenses below are assumptions to show how the rules work. They aren't CRA examples, local rents or typical results. Verify the arithmetic, and get advice for your own return.**
+
+**Example 1: a basement suite with basic services (T776).** You rent a suite for an assumed $1,200 a month, including heat, light and laundry, to the same tenant all year. Gross rent is 12 × $1,200 = $14,400, on line 8141 and then line 12599. Expenses allowed by T4036 come off to give net rent on line 12600. There's no CPP on the net rent. The rent is a long-term residential rental, so it's generally exempt from GST/HST.
+
+**Example 2: freelance writing (T2125).** You earn an assumed $10,000 net from freelance writing after expenses. CPP is ($10,000 − $3,500) × 11.9% = $773.50, on top of income tax. Filing is due June 15, and any balance is due April 30.
+
+**Example 3: the same $12,000 net on each form.** On T776, CPP is $0. On T2125, CPP is ($12,000 − $3,500) × 11.9% = $1,011.50. The form you use depends on the facts, not on which result is cheaper, but the difference shows why the choice matters.
+
+**Example 4: a short-term rental that isn't compliant.** An assumed $6,000 of deductible short-term rental expenses, 200 days rented short-term, and 50 of those days without a required municipal licence. The non-compliant amount is $6,000 × 50 ÷ 200 = $1,500, which you can't deduct. If the price also included daily cleaning and breakfast, the services part would go on T2125, and the same rule would apply there.
+
+## Which mistakes should you avoid with T2125 and T776?
+
+- **Putting a rental with meals and cleaning on T776** because it's "Airbnb income". The CRA's Charles example puts it on T2125.
+- **Splitting gross rent by ownership share.** Co-owners enter the whole property's gross rent on line 12599.
+- **Claiming CCA to create a rental loss.** T4036 doesn't allow it.
+- **Deducting short-term rental expenses for days you didn't have a required licence.**
+- **Assuming no CPP because the income is small.** CPP applies to net business income over $3,500.
+- **Filing a rental-only return on June 15.** That date applies only if you or your spouse are self-employed.
+- **Claiming the personal part of shared costs** on either form.
+
+## What should you know before relying on this?
+
+This guide summarizes CRA and Government of Canada pages as they read on October 9, 2026, including 2026 CPP figures. Whether a particular rental is a business depends on all the facts, and the CRA points to Interpretation Bulletin IT-434 for the details. Tax rules and amounts change every year. This is not tax advice. If your situation is borderline, ask a tax professional before you file.
+
+<AffiliateLink program="freshbooks" label="FreshBooks" /> can keep rent receipts and service invoices in separate lists so your T776 and T2125 totals aren't mixed together. It doesn't choose the form. <AffiliateLink program="turbotax-canada" label="TurboTax Canada" /> and <AffiliateLink program="wealthsimple-tax" label="Wealthsimple Tax" /> can carry whichever form you select into your T1. Check the current price. Software isn't an accountant.
 
 ## Which guides sit next to T2125 and T776 in Canada?
 
-Business reporting is [how to report side hustle income](/side-hustles/report-side-hustle-income-cra-canada/). Deductible costs are [side hustle expenses](/side-hustles/side-hustle-expense-deductions-canada/). A workspace in the same home is [home office expenses](/side-hustles/home-office-expenses-side-hustle-canada/). Records for either form follow [record keeping](/side-hustles/record-keeping-side-hustle-canada/). The rest of the common questions are in the [side hustle tax FAQ](/side-hustles/side-hustle-tax-faq-canada/).
+Business reporting is [how to report side hustle income](/side-hustles/report-side-hustle-income-cra-canada/). Deductible costs are in [side hustle expenses](/side-hustles/side-hustle-expense-deductions-canada/). A workspace in your home is [home office expenses](/side-hustles/home-office-expenses-side-hustle-canada/). Records for either form are in [record keeping](/side-hustles/record-keeping-side-hustle-canada/). Other common questions are in the [side hustle tax FAQ](/side-hustles/side-hustle-tax-faq-canada/).
 
-A basement or a room, including capital cost allowance and the principal residence, is [basement suite rental income and taxes](/side-hustles/basement-suite-rental-income-tax-canada/). How the suite is legalized is [renting out a room or basement suite](/side-hustles/rent-out-room-basement-suite-canada/). A stall with no one living there is [renting out a parking space](/side-hustles/rent-out-parking-space-canada/). Nightly rentals and the non-compliant short-term rental expense rule are in [Airbnb arbitrage red flags](/side-hustles/airbnb-arbitrage-red-flags-canada/).
+Renting a basement or a room, including CCA and the principal residence, is [basement suite rental income and taxes](/side-hustles/basement-suite-rental-income-tax-canada/). Legalizing the suite is [renting out a room or basement suite](/side-hustles/rent-out-room-basement-suite-canada/). A parking stall is [renting out a parking space](/side-hustles/rent-out-parking-space-canada/). Nightly rentals and the non-compliant short-term rental rule are in [Airbnb arbitrage red flags](/side-hustles/airbnb-arbitrage-red-flags-canada/).
 
 <Faq
   items={[
     {
-      question: "Do I file both a T2125 and a T776 for the same rent in Canada?",
-      answer: "Only if part of the money is rental income from property and part is business income from extra services. The CRA sharing-economy page says other services are self-employment on T2125, and basic accommodation can stay on T776. Do not report the same dollars twice. This is not tax advice.",
+      question: "Do I file both a T2125 and a T776 for the same rental?",
+      answer: "Only if part of the money is rental income from property and part is business income from extra services. The CRA's sharing-economy page says the services portion is self-employment income on T2125, and basic accommodation can stay on T776. Don't report the same dollars twice. This is not tax advice.",
     },
     {
-      question: "Is a room I rent with heat and laundry included a T2125 business?",
-      answer: "The CRA rental-or-business page says renting space and providing only basic services, including heat, light, parking, and laundry, is usually income from property, which is the T776 pattern. Cleaning, security, and meals are the examples that can make it a business. The more services you add, the greater that chance.",
+      question: "Is a room I rent with heat and laundry included a business?",
+      answer: "Usually not. The CRA's rental-or-business page says renting space with only basic services, including heat, light, parking and laundry, is usually income from property, reported on T776. Cleaning, security and meals are the examples that can make it a business.",
     },
     {
-      question: "Does renting my car go on Form T776?",
-      answer: "Form T776 is the statement of real estate rentals. A vehicle is not real estate. If renting it out is a business, the CRA points business income to Form T2125 and Guide T4002. Confirm the form for your facts.",
+      question: "Do I pay CPP on rental income in Canada?",
+      answer: "Not on rental income from property reported on T776. Self-employed CPP is based on net business income: 11.9% on earnings between $3,500 and $74,600 in 2026, up to $8,460.90. If your rental is a business and goes on T2125, CPP applies to its net income.",
     },
     {
-      question: "Where does gross rent go on the T1 if I use T776?",
-      answer: "The CRA completing-T776 page says total gross rental income goes on line 12599. Net rental income goes on line 12600. Co-owners enter the gross income of the whole property on line 12599, not only their share. Read the form before you split the gross.",
+      question: "When is my return due if I only have rental income?",
+      answer: "April 30. The June 15 filing deadline applies only if you or your spouse or common-law partner are self-employed, and even then any balance owing is due April 30.",
+    },
+    {
+      question: "Can I claim CCA to create a loss on my rental?",
+      answer: "No. Guide T4036 says you can't use CCA to create or increase a rental loss. A rental loss from other expenses can be deducted against other income if you incurred the expenses to earn income, but not when you rent below market to someone you know. This is not tax advice.",
     },
     {
       question: "Can I deduct all of my short-term rental expenses?",
-      answer: "The CRA T2125 expenses page says you cannot deduct the non-compliant amount of expenses, including capital cost allowance, when a short-term rental does not meet the applicable registration or licensing rules. Guide T4036 explains that calculation. This is not tax advice.",
+      answer: "Not if the rental isn't compliant. If the province or municipality doesn't allow it, or requires a registration, licence or permit you don't have, the non-compliant share of expenses, including CCA, isn't deductible. The formula in Guide T4036 is expenses × non-compliant days ÷ short-term rental days.",
     },
   ]}
 />
