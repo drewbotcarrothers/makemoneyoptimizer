@@ -1,7 +1,9 @@
 ---
 title: "How to Start a Newsletter Side Hustle in Canada (Step-by-Step)"
-description: "How to start a newsletter in Canada: CASL consent, Substack's published 10% fee, a free issue first, and GST/HST without subscriber promises."
+description: "How to start a newsletter in Canada: 2026 Substack, beehiiv and Kit costs, Stripe fees, real Canadian subscriber numbers, CASL rules, a 30-day plan, templates and tax."
 pubDate: 2026-10-01
+updatedDate: 2026-10-09
+updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
 category: content-creation
 tags: [online, newsletter, content, writing]
 featured: false
@@ -40,197 +42,363 @@ sources:
   - title: "How much does Substack cost?"
     url: "https://support.substack.com/hc/en-us/articles/360037607131-How-much-does-Substack-cost"
     publisher: "Substack"
+  - title: "Subscriber report: Now we are 3"
+    url: "https://paulwells.substack.com/p/subscriber-report-now-we-are-3"
+    publisher: "Paul Wells"
+  - title: "Subscriber update: Honourable work"
+    url: "https://paulwells.substack.com/p/subscriber-update-honourable-work"
+    publisher: "Paul Wells"
+  - title: "Annual update: 2025"
+    url: "https://thejnicholas.substack.com/p/annual-update-2025"
+    publisher: "The J. Nicholas"
+  - title: "beehiiv pricing"
+    url: "https://www.beehiiv.com/pricing"
+    publisher: "beehiiv"
+  - title: "Kit pricing"
+    url: "https://kit.com/pricing"
+    publisher: "Kit"
+  - title: "Stripe pricing (Canada)"
+    url: "https://stripe.com/en-ca/pricing"
+    publisher: "Stripe"
+  - title: "Daily exchange rates (USD/CAD)"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
 ---
-
 import AffiliateLink from '../../components/AffiliateLink.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
+import StarterKit from '../../components/StarterKit.astro';
+
+A newsletter side hustle in Canada is a regular email on one subject that earns from paid subscriptions, sponsorships, affiliate links or your own products. You can start free on Substack, beehiiv or Kit, Substack keeps 10% of paid subscriptions, and Canada's anti-spam law (CASL) requires opt-in consent before you send. Ottawa journalist Paul Wells says his $8-a-month Substack now covers two salaries; a smaller stock-analysis newsletter reported 18 paid subscribers and $1,982.83 CAD for 2025.
+
+<QuickAnswer>
+- **Platform costs (checked October 9, 2026):** Substack is free to publish and keeps 10% of paid subscriptions, plus Stripe fees. beehiiv has a free plan, then Lite at US$49 and Pro at US$95 a month billed yearly, with a 0% take on paid subscriptions. Kit is free up to 10,000 subscribers, and Creator is US$33 a month billed yearly.
+- **Payment fees:** Stripe Canada charges 2.9% + CA$0.30 per domestic card payment, and Substack's page lists a 0.7% Stripe Billing fee on recurring payments.
+- **Real numbers:** Paul Wells reported 39,054 total subscribers in April 2025, with paid up 30% year on year. A year later he had 40,446 total, with paid down 10%.
+- **Law:** CASL requires consent, sender identification and a working unsubscribe in every commercial email.
+- **Tax:** report income on T2125. GST/HST registration is required once you pass $30,000, and digital subscriptions sold to Canadians are generally taxable.
+</QuickAnswer>
+
+Compare the main tools in [Substack vs beehiiv vs Kit](/side-hustles/substack-vs-beehiiv-vs-kit-canada/), price a paid tier with [newsletter pricing](/side-hustles/newsletter-pricing-canada/), and budget with [newsletter startup costs](/side-hustles/newsletter-startup-costs-canada/).
+
+| Quick facts | |
+|---|---|
+| Startup cost | $0 on a free plan; optional domain |
+| Main income | Paid subscriptions, sponsorships, affiliate links, own products |
+| Substack fee | 10% of subscription revenue + Stripe |
+| Free plan limits | Kit free to 10,000 subscribers; beehiiv and Substack free plans available |
+| Time | 3–6 hours per weekly issue, typically |
+| Legal | CASL consent, ID and unsubscribe |
+| Tax | T2125, CPP, GST/HST past $30,000 |
+
+## Who does a newsletter suit?
+
+A newsletter suits people who can explain one subject well, week after week, and are patient enough to build a list over months. It fits around a day job because you choose the schedule.
+
+It suits:
+
+- **Professionals with niche knowledge:** trades, HR, real estate, nursing, software, policy.
+- **Local experts:** a city's food scene, events, municipal politics or real estate.
+- **Hobbyists with real depth:** fishing spots, board games, gardening zones, cycling routes.
+- **Writers and journalists**; see [side hustles for writers](/side-hustles/side-hustles-for-writers-canada/).
+- **Creators** who want an audience no algorithm controls, alongside [YouTube](/side-hustles/youtube-side-hustle-canada/) or [TikTok and Reels](/side-hustles/tiktok-reels-side-hustle-canada/).
+
+It doesn't suit anyone who needs income in the first few months or can't commit to a regular send. If you'd rather write for clients, see [freelance writing](/side-hustles/freelance-writing-side-hustle-canada/) or [email marketing](/side-hustles/email-marketing-side-hustle-canada/) for businesses.
+
+## How do newsletters make money?
+
+| Model | How it pays | Best for | Typical starting point |
+|---|---|---|---|
+| Paid subscriptions | Readers pay monthly or yearly | Analysis, insider or local news, expertise | Free issues first, paid tier once there's an archive |
+| Sponsorships | Brands pay per placement | Focused audiences brands want | A few thousand engaged subscribers |
+| Ad networks | Platform sells ads into your issues | beehiiv users who want hands-off ads | Varies by platform and audience |
+| Affiliate links | Commission on sales | Product-heavy niches (tools, gear, finance) | Any size, with disclosure |
+| Own products | Templates, guides, courses, ebooks | Practical niches | A small engaged list |
+| Services | Consulting, coaching, freelance work | Professional niches | The newsletter is the lead source |
+
+Most successful small newsletters stack two or three models. Paid subscriptions give predictable income; sponsorships and products add spikes.
+
+## What does a newsletter cost to run?
+
+<ComparisonTable
+  caption="Newsletter platforms for Canadian writers"
+  checked="October 9, 2026"
+  items={[
+    {
+      name: "Substack",
+      href: "https://substack.com/",
+      bestFor: "Paid subscriptions and discovery through the Substack network",
+      pricing: "Free to publish; 10% of paid subscription revenue + Stripe fees; optional $50 custom domain",
+      pricingUrl: "https://support.substack.com/hc/en-us/articles/360037607131-How-much-does-Substack-cost",
+      canada: "Available in Canada; payouts via Stripe",
+      pros: ["Nothing to pay until you earn", "Built-in recommendations and app"],
+      cons: ["10% of revenue forever", "Limited design and automation"],
+    },
+    {
+      name: "beehiiv",
+      program: "beehiiv",
+      bestFor: "Growth tools, ad monetization and keeping 100% of subscriptions",
+      pricing: "Free plan; Lite US$49/mo and Pro US$95/mo billed yearly; 0% take on paid subscriptions",
+      pricingUrl: "https://www.beehiiv.com/pricing",
+      canada: "Available in Canada; billed in USD",
+      pros: ["No revenue share on subscriptions", "Referral program and ad tools"],
+      cons: ["Monthly cost on paid plans"],
+    },
+    {
+      name: "Kit",
+      program: "kit",
+      bestFor: "Creators who sell products and want automations",
+      pricing: "Free up to 10,000 subscribers; Creator US$33/mo billed yearly",
+      pricingUrl: "https://kit.com/pricing",
+      canada: "Available in Canada; billed in USD",
+      pros: ["Large free tier", "Strong automations and product sales"],
+      cons: ["Paid plans priced by list size"],
+    },
+  ]}
+/>
+
+**Other costs**
+
+- **Domain:** optional at the start; Substack charges a one-time $50 to connect one.
+- **Payment processing:** Stripe Canada charges 2.9% + CA$0.30 per domestic card payment, plus the 0.7% Billing fee Substack lists for recurring payments.
+- **Design:** <AffiliateLink program="canva" label="Canva" /> for header images and social graphics.
+- **Audio:** only if you add a podcast version; see [podcast editing](/side-hustles/podcast-editing-side-hustle-canada/). A USB microphone such as the <AffiliateLink program="amazon-ca" label="Audio-Technica ATR2100x or similar" search="USB microphone podcast" /> covers it.
+
+## Real Canadian newsletter numbers
+
+These are publicly documented. Their results aren't typical.
 
-A newsletter side hustle in Canada is a written email, on a schedule you can keep, sent only to people who are allowed to receive it, about one subject you can explain without inventing numbers. A newsletter suits people who can finish a page on the same day each week and who will not buy a list of addresses. It is a poor fit if the plan is to email strangers, or if the only idea is "personal finance" with no narrower question.
+**Paul Wells (Ottawa political journalist, Substack).** In his April 19, 2025 subscriber report, three years after his first post, Wells reported 39,054 subscribers (paid and free combined), up 69% in a year, with paid subscriptions up 30% year on year. He charged $8 a month or $80 a year, kept about half his work free, offered a "Next-Level Support" tier at up to $250 a year, and wrote that paid subscriptions covered two salaries, travel and equipment, and some commissioned freelance work. In his April 17, 2026 update he reported 40,446 total subscribers, up about 4%, with paid subscribers down 10% year on year. **Lesson:** growth can plateau even for a well-known writer, so add products (he added a podcast) and keep the free tier strong.
 
-The money, when a newsletter pays, comes from readers who choose a paid tier, or from a related product you already made. This guide does not publish a typical subscriber count or a typical income. Substack's own cost page is the fee source used below. Other tools publish their own prices. Read the live page before you subtract a cut.
+**The J. Nicholas (stock analysis, Substack, revenue in CAD).** In a January 1, 2026 annual update, writer Jacob B reported 1,508 subscribers, 18 paid subscribers and **$1,982.83 CAD** in 2025 revenue after shifting from sponsorships to a paid-subscription model. A related book brought in about $300 more. **Lesson:** a small, specific list can earn real money, but early paid conversion is a small percentage of the list.
 
-| Fact | Detail for a newsletter in Canada |
-| --- | --- |
-| Useful first issue | One free email on one narrow Canadian topic |
-| Who it suits | People who can write on a set day and keep a consent record |
-| Consent | CASL requires consent, identification, and an unsubscribe. [CRTC FAQ](https://crtc.gc.ca/eng/com500/faq500.htm) |
-| Platform fee example | Substack: publishing is free; paid subscriptions, Substack keeps 10%. [Cost page](https://support.substack.com/hc/en-us/articles/360037607131-How-much-does-Substack-cost) |
-| Card processing | Stripe's fee depends on the account country. The 2.9% plus $0.30 line on that page is labelled for US cards |
-| GST/HST | Small-supplier threshold of $30,000. [When to register](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) |
+## Worked math: what does a newsletter earn?
 
-A page a client owns is [freelance writing](/side-hustles/freelance-writing-side-hustle-canada/). A public video of the same lesson is [YouTube](/side-hustles/youtube-side-hustle-canada/). A longer file you sell once is an [ebook](/side-hustles/ebook-publishing-side-hustle-canada/).
+**Paid subscriptions on Substack**
 
-A first paid subscriber or sponsor is covered in [how to make your first newsletter sale in Canada](/side-hustles/newsletter-first-sale-canada/).
+Formula: paid subscribers × price − Substack 10% − Stripe fees.
 
-## Who does a newsletter side hustle in Canada suit?
+**Illustrative.** Subscriber counts and the conversion rate are assumptions; the $8 price matches Wells's published price and the fees are Substack's and Stripe Canada's published rates.
 
-A newsletter in Canada suits people who already explain one subject clearly: a trade, a hobby with real steps, a local scene, or a tool you use at work and can describe without confidential material. Evenings and a quiet hour on the same weekday are enough. A newsletter is a poor fit if you need rent from the first send, if you will not write when nobody replies, or if the address list would come from a spreadsheet you did not build yourself.
+| List size | Paid (assumed 3%) | Gross at $8/mo | Substack 10% | Stripe (2.9% + $0.30 + 0.7%) | Net per month |
+|---|---|---|---|---|---|
+| 500 | 15 | $120 | $12.00 | $8.82 | **$99.18** |
+| 2,000 | 60 | $480 | $48.00 | $35.28 | **$396.72** |
+| 10,000 | 300 | $2,400 | $240.00 | $176.40 | **$1,983.60** |
 
-Free and paid are different products. The free issue is the proof you can finish. The paid tier is a second product after several free issues exist. A paid button on an empty archive is a price with nothing behind it.
+Stripe is calculated per payment: each $8 charge costs $8 × 3.6% + $0.30 = $0.588. Annual plans reduce the per-payment $0.30.
 
-## What does Canada's anti-spam law require before a newsletter email?
+**The same 2,000-subscriber list on beehiiv Lite.** No revenue share, so $480 − $35.28 Stripe = $444.72, minus the plan's US$49 × 1.4240 (Bank of Canada rate, October 8, 2026) = about $69.78 → **about $375 a month**. At this size Substack and beehiiv come out close; the gap widens in beehiiv's favour as paid revenue grows.
 
-Canada's anti-spam law, CASL, applies when a commercial electronic message is sent to an electronic address. The CRTC's [FAQ](https://crtc.gc.ca/eng/com500/faq500.htm) says the three requirements are consent, identification information, and an unsubscribe mechanism. [Section 6](https://laws-lois.justice.gc.ca/eng/acts/E-1.6/section-6.html) of the Act prohibits sending the message unless the person consented and the message identifies the sender, gives contact information, and includes an unsubscribe. The sender must keep that contact information valid for at least 60 days after the send.
+**Sponsorship (Illustrative).** If a sponsor pays an assumed $30 per 1,000 subscribers for one placement, a 5,000-subscriber weekly newsletter selling two placements a month earns 5 × $30 × 2 = $300 a month. Sponsors look at open and click rates, not just list size, so track both.
 
-Express consent is opt-in. The CRTC says the person must take a positive action, such as checking a box, and that the sender has to be able to prove consent. A message that only asks for consent is itself a commercial electronic message, so it is not a lawful way to collect that consent. Innovation, Science and Economic Development Canada's [consent page](https://www.ised-isde.canada.ca/site/canada-anti-spam-legislation/en/getting-consent-send-email) says implied consent exists only in limited cases, such as an existing business relationship inside the time limits in the Act, and that implied consent is generally time-limited. Buying a list is not one of those cases.
+## How should you price a paid tier?
 
-This is not legal advice. Read the FAQ and the Act before the first send, including the exemptions, which this paragraph does not list in full.
+Substack's help page says readers pay "the monthly, annual, or founding member price the writer sets", and most platforms support the same three levels. Wells's published structure is a useful Canadian reference point: $8 a month, $80 a year (two months free), and a higher supporter tier of up to $250 a year.
 
-## What does a newsletter cost to start in Canada?
+| Tier | What it's for | Pricing approach |
+|---|---|---|
+| Free | Growth, trust, sponsors' reach | Keep your best evergreen pieces here |
+| Monthly | Low-commitment trial | Your headline price |
+| Annual | Better retention and fewer payment fees | About 10 × the monthly price |
+| Founding or supporter | Superfans and businesses | 2–3 × the annual price |
+| Group or team | Workplaces that expense subscriptions | Discount for 4+ seats |
 
-A newsletter in Canada can start with a computer you already have and a tool that sends only to people who opted in. Platform prices change. The figures below that come from Substack are from its cost page on the date this guide was checked. Confirm that page before you turn on payments. The other rows are typical Canadian retail prices to verify locally, not quotes.
+What paid subscribers get should be obvious in one line: an extra weekly issue, full archive access, data tables, a community thread, or local listings. Avoid putting everything behind the paywall; free issues are your marketing.
 
-| Item | Typical CAD range or published fee | How to think about it |
-| --- | --- | --- |
-| Computer and internet you have | $0 | The product is the issue, not a new desk. |
-| Substack publishing | $0 to publish | [Substack's cost page](https://support.substack.com/hc/en-us/articles/360037607131-How-much-does-Substack-cost) says publishing is free regardless of subscriber count. |
-| Substack fee on paid subscriptions | 10% of each subscription payment | Same page. Readers pay the price you set. Web payments do not add a Substack fee on top of that price. |
-| Stripe processing | Confirm for your account country | The same page labels 2.9% plus $0.30 per payment as Stripe card processing for US cards, plus a 0.7% Stripe Billing fee for recurring payments as of July 2024. It also says other methods depend on the country where the Stripe account is registered. Do not copy the US card line onto a Canadian account. |
-| Optional custom domain | Listed as a one-time $50 on that page | Confirm the currency and the live amount. A domain is not week one. |
-| Headset or USB microphone | $25–$80 | Only if an issue includes audio. Text does not need it. |
-| Separate account for payouts | $0 to open | A subscription deposit is not grocery money. |
+## How do you grow a newsletter list?
 
-Write three issues in a document before you buy gear. A <AffiliateLink program="amazon-ca" label="USB microphone" search="USB microphone podcast" /> matters only after a test recording shows the room is the problem. The first issues can be text.
+| Channel | How it works | Effort |
+|---|---|---|
+| Your existing network | Personal messages asking people to subscribe themselves | Low, one-time |
+| Social clips | Short posts or videos that link to the signup | Ongoing |
+| Recommendations and swaps | Newsletters of a similar size recommend each other | Low per swap |
+| Referral rewards | Readers earn a perk for referring friends | Setup once |
+| Guest issues and podcasts | Appear in front of another audience | Medium |
+| Lead magnet | A free checklist, template or local guide for signing up | One-time build |
+| Search | Publish issues on the web so they rank for specific questions | Long-term |
+| Local partners | Coffee shops, gyms and community groups share your signup | Medium |
 
-Once a paid tier exists, the payouts and the fee lines need a record that is not a camera roll. <AffiliateLink program="freshbooks" label="FreshBooks" /> can hold the invoice if you also sell a related service. A notes file can hold a handful of reader payments while you are still on the free tier.
+Pick two channels and do them every week rather than trying all eight at once.
 
-Put reader money in an account you will not spend as household cash. <AffiliateLink program="koho" label="KOHO" /> is one Canadian account that can keep newsletter payouts visible until a tax set-aside is real.
+## What should you measure?
 
-| | Free issue only | Paid tier on |
-| --- | --- | --- |
-| Platform cut | Often none, if you are not charging | Substack's published 10%, plus the processor |
-| What you must have | Consent, your name, an unsubscribe | The same, plus a price you can explain |
-| Main risk | Emailing people who did not opt in | Turning on pay before the archive exists |
+| Metric | What it tells you | What to do with it |
+|---|---|---|
+| Subscribers added per week | Whether growth channels work | Double down on the channel that adds the most |
+| Open rate | Subject lines and trust; inflated by some mail apps' privacy features | Compare against your own average, not others' |
+| Click rate | Whether readers act; sponsors care about this most | Put one clear link near the top |
+| Replies | Engagement and content ideas | Ask one question per issue |
+| Paid conversion | Share of the list paying | Test what's behind the paywall before changing price |
+| Churn | Paid subscribers who cancel each month | Survey cancellations; improve the paid-only issue |
 
-## How much can a newsletter earn in Canada?
+Platform dashboards in Substack, beehiiv and Kit show all of these. Write your numbers in a simple spreadsheet each month so you can see trends.
 
-Newsletter earnings in Canada cannot be promised as a rate per subscriber, because ten readers who pay and ten readers who only open are different results. What you keep depends on the list below. This guide does not publish a national newsletter income.
+## 20 newsletter niches that suit Canadians
 
-- Whether anyone is asked to pay, and the price you set
-- How many people opted in, which you count from your own list, not from a screenshot online
-- The platform percentage and the processor fee for your account country
-- Refunds and failed payments
-- Hours to research, write, and answer replies
-- A related product, such as a template, only if that file exists
-- Other side-hustle revenue in the same GST/HST pot
+1. **Canadian personal finance:** TFSA/RRSP/FHSA explainers, rate roundups.
+2. **Local news and events** for a mid-size city without much coverage.
+3. **Municipal politics** in one city or region.
+4. **Real estate data** for one market (sales, listings, rents).
+5. **Canadian job market** for a profession (nursing, tech, trades).
+6. **Small-business tax deadlines and tips** for sole proprietors.
+7. **Newcomer guide** to one province.
+8. **French-language niche newsletters** for Quebec or francophone readers.
+9. **Outdoor recreation:** trails, fishing, paddling in one region.
+10. **Restaurant openings** and food deals in a city.
+11. **Canadian stocks and dividend investing** (education, not individual advice).
+12. **Grocery deals and meal planning.**
+13. **Parenting and school-board news** for one province.
+14. **Indie games, books or music** from Canadian creators.
+15. **Farm and agriculture markets.**
+16. **Policy and public sector** analysis for Ottawa or provincial capitals.
+17. **Tech and startup news** for a Canadian city's ecosystem.
+18. **Home renovation** for Canadian climates and permits.
+19. **Hockey analytics** or a single team.
+20. **Remote-work and side-hustle opportunities** in Canada.
 
-A price copied from a famous writer is not your price. Compare the issue you can actually send with the time it takes you, and read the fee page before you call the remainder profit.
+## How to start: a 30-day plan
 
-## What would an assumed paid newsletter look like in Canada?
+### Week 1: Define and set up
 
-An assumed paid newsletter in Canada, in the sketch below, uses a price you invent for the arithmetic and Substack's published 10% only. It leaves Stripe out, because the US card line is not a Canadian rate. The sketch is not a quote, a forecast, or a typical result.
+- **Day 1:** Write one sentence: "A weekly email for [reader] about [subject] so they can [outcome]."
+- **Day 2:** Pick a platform (Substack for zero cost and discovery; beehiiv or Kit for growth tools and products).
+- **Day 3:** Write the welcome email and an "About" page that says who it's for and how often you send.
+- **Days 4–7:** Write three issues before you announce anything.
 
-**Illustrative example.** Suppose the paid price is $8 a month, which is an assumption, not a market rate, and suppose 10 people pay for one month: 10 × $8 = $80. Substack's cost page says it keeps 10% of each subscription payment, so 0.10 × $80 = $8, and $72 remains before the payment processor and before any tax set-aside. Suppose instead that 3 people pay: 3 × $8 = $24, and 10% is $2.40, leaving $21.60 on the same basis. A USB microphone at the low end of the $25–$80 line, charged against the first month only, is larger than the 3-reader remainder. These totals are assumptions drawn from a made-up price and from Substack's published percentage. They are not a quote, a forecast, or a typical result. Open the Stripe transaction in your own dashboard before you treat $72 as cash you can spend.
+### Week 2: Launch to people who opted in
 
-## How do you start a newsletter in Canada?
+- Email or message friends and colleagues asking them to subscribe themselves (don't import contacts who didn't opt in).
+- Post the first issue on LinkedIn and one community you belong to, following its rules.
+- Add a signup link to your email signature and social bios.
 
-Starting a newsletter in Canada means picking one subject, writing issues before you ask for money, and collecting addresses only from people who opt in. The steps below are that sequence.
+### Week 3: Find the growth loop
 
-### Step 1: Name the subject in one sentence
+- Ask every new subscriber one question in the welcome email ("What's your biggest question about X?").
+- Turn the answers into issues.
+- Swap recommendations with one newsletter of a similar size.
 
-"Notes on opening a service business in one Canadian city" is a subject. "Money" is not. If you cannot say who the issue helps, you do not have a list to invite yet.
+### Week 4: Review
 
-### Step 2: Write three issues offline
+- Check open and click rates on four issues.
+- Keep the formats people click and reply to.
+- Decide your first monetization test: an affiliate link, a $10 product or a paid tier after 12 free issues.
 
-Finish them in a document. Each one should answer a question a reader could have asked. If the third issue is hard, the schedule is already too wide. Narrow the subject before you open a tool.
+### Days 31–90
 
-### Step 3: Read the CASL pages
+- **Weeks 5–8:** Send on the same day and time every week. Add a referral reward if your platform supports it.
+- **Weeks 9–10:** Launch the paid tier or a small product; see [your first newsletter sale](/side-hustles/newsletter-first-sale-canada/).
+- **Weeks 11–12:** Build a one-page sponsor kit (audience, open rate, rates) and pitch three relevant Canadian businesses.
 
-Use the CRTC FAQ and the ISED consent page. Decide how you will store proof of opt-in. Do not export a personal address book and call it a launch.
+## Workflow and templates
 
-### Step 4: Open one sending tool and leave payments off
+**Weekly issue workflow**
 
-Substack is one tool whose fee page is linked above. Other tools exist. Pick one. Confirm its live price. Do not turn on a paid tier in the same hour you create the account.
+1. Collect ideas all week in one note.
+2. Outline on day 1 (30 minutes): one main point, three supporting items, one call to action.
+3. Draft on day 2 (2 hours).
+4. Edit, add links and a subject line on day 3 (1 hour).
+5. Schedule for the same time each week.
+6. Share a snippet on one social platform.
 
-### Step 5: Put your name, a way to reach you, and an unsubscribe on the issue
+**Issue template**
 
-The Act requires identification and an unsubscribe on a commercial message. Use your name. A brand with no person behind it makes the identification line harder. Keep the contact path working for at least 60 days after a send.
+```
+Subject: [Specific result or question] – [Newsletter name] #[N]
 
-### Step 6: Invite people who already talk to you, one at a time
+Hi [first name],
+[One-paragraph hook: what changed this week and why it matters to you.]
 
-A colleague, a group chat you belong to, a note under something you already published. The invite should point to a signup form. Do not paste their address into the tool yourself unless they asked you to.
+1. The main thing: [300–600 words]
+2. Quick hits: [3 links with one line each]
+3. One question: [ask readers to reply]
 
-### Step 7: Send the first free issue on the day you named
+[Sponsor or product mention, clearly labelled]
+[Your name, mailing address, unsubscribe link]
+```
 
-One send. Then stop and read what was confusing. Fix the next issue. Do not send a second email the same day to "boost" the open.
+**Sponsor pitch**
 
-### Step 8: After four free issues, decide whether a paid tier has a reason
+> Subject: Reaching [audience] in [city/province]
+> Hi [name], I write [newsletter], a weekly email for [audience]. [X] subscribers, [Y]% average open rate, [Z]% in [province]. I'd like to offer [brand] a sponsored spot in [month]: one 80-word placement with a link, clearly labelled as sponsored. Rate: $[ ]. Recent issues: [link].
 
-A paid tier needs something the free issue does not: a worked example, a template, a deeper note. If you cannot name that extra, stay free. Read the fee page again before you set a price.
+**One-page sponsor kit outline**
 
-### Step 9: Record the payout, including a month that is zero
+```
+[Newsletter name]: a weekly email for [audience] in [region]
+Subscribers: [X] | Average open rate: [Y]% | Average click rate: [Z]%
+Readers: [top 3 job titles or interests], [share in Canada / your province]
+Placements: Primary (top, 80–100 words + logo) $[ ] | Classified (bottom, 30 words) $[ ]
+Package: 4 issues for the price of 3
+Policy: all sponsored content is labelled "Sponsored"; we only accept products relevant to readers
+Contact: [email] | Recent issues: [link]
+```
 
-A quiet month is still a record. When money arrives, note the gross, the platform cut, and the processor cut from the dashboard, not from this sketch.
+**CASL checklist**
 
-## What should the first week of a newsletter in Canada include?
+- [ ] Every subscriber opted in themselves (checkbox or signup form, not pre-checked)
+- [ ] You can prove when and how each person consented
+- [ ] Every email shows your name and a mailing address
+- [ ] Unsubscribe link works and is processed within 10 business days
+- [ ] Sponsored content is labelled
 
-The first week of a newsletter in Canada should produce three drafted issues, a consent plan, and one free send or a clear reason you are not ready to send. A paid subscriber is not the goal of the week.
+## What does CASL require?
 
-- **Day 1:** Write the one-sentence subject. List five questions that subject can answer.
-- **Day 2:** Draft issue one. Cut anything you cannot source.
-- **Day 3:** Draft issues two and three. Read the CRTC FAQ.
-- **Day 4:** Open one tool. Add your name and check that an unsubscribe exists. Leave payments off.
-- **Day 5:** Ask five people, in a conversation, whether the subject is useful. Point them at a form if they want it.
-- **Day 6:** Send issue one only to people who opted in. If the list is empty, the form is the work, not a purchased list.
-- **Day 7:** Note what took longest. That hour is the schedule, not a slogan about consistency.
+Canada's Anti-Spam Legislation applies to commercial electronic messages, which covers most newsletters that sell, promote or include ads. The CRTC's [CASL FAQ](https://crtc.gc.ca/eng/com500/faq500.htm) sums up the three requirements: **consent**, **identification** of the sender, and an **unsubscribe mechanism**. Express consent means the person took a positive action, such as checking an empty box or submitting a signup form, and the sender must be able to prove it. Asking for consent by email is itself a commercial message, so you can't email a bought or scraped list to "ask permission". ISED's [guidance on getting consent](https://www.ised-isde.canada.ca/site/canada-anti-spam-legislation/en/getting-consent-send-email) and [section 6 of the Act](https://laws-lois.justice.gc.ca/eng/acts/E-1.6/section-6.html) set out the details. Unsubscribe requests must be honoured within 10 business days.
 
-## What newsletter mistakes are common in Canada?
+This is not legal advice.
 
-Common newsletter mistakes in Canada are emailing people who did not opt in, turning on payments before an archive exists, and treating a US card-processing example as a Canadian fee. CASL puts the proof of consent on the sender. A checkout link is not that proof.
+## Which tax rules apply to newsletter income?
 
-Copying another writer's issue, or filling a send with unsourced income claims, creates a trust problem and can create a copyright problem. Write what you can check. Link the page the number came from.
+Subscription, sponsorship, affiliate and product income is business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and you pay both halves of [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) on net profit (QPP in Quebec).
 
-A custom domain and a microphone are optional on Substack's cost page and in the gear table. They are not the product. Four honest issues teach you the hours. A paid button on a blank page teaches you nothing about whether anyone wanted the writing.
+This is not tax advice.
 
-## Which tax rules apply to a newsletter side hustle in Canada?
+- **GST/HST:** registration is required once worldwide taxable supplies pass **$30,000** in a calendar quarter or over four consecutive quarters ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html)); the [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) first-dollar rule doesn't apply.
+- **Digital subscriptions:** once registered, subscriptions sold to Canadian readers are generally charged at the rate for the reader's province (13% HST in Ontario, 14% in Nova Scotia since April 1, 2025, 15% in New Brunswick, Newfoundland and Labrador and P.E.I., 5% GST elsewhere plus QST in Quebec). See the CRA's [rate table](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html), [calculator](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html) and [digital economy](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy.html) pages.
+- **USD income:** convert platform payouts and USD sponsorships to Canadian dollars using the Bank of Canada rate.
+- **Deductions:** platform fees, Stripe fees, software, design tools and a share of home office and internet.
 
-Newsletter income in Canada, including a paid subscription, is self-employment income when you are carrying on that activity, reported on [Form T2125, Statement of Business or Professional Activities](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and self-employed people pay the whole [Canada Pension Plan](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) contribution on the net. GST/HST on your own taxable supplies follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html), not the [taxi and ride-sharing](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html) rule. Nova Scotia's HST is 14% as of 1 April 2025 on the CRA [charge and collect the GST/HST](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate.html) table, and Quebec charges GST and QST.
+## Starter kit
 
-This is not tax, legal, or insurance advice. Fee figures on platform pages should be rechecked when those pages change.
+<StarterKit
+  label="Starter kit: newsletter"
+  items={[
+    { name: "beehiiv", use: "Growth tools with no take on paid subscriptions", cost: "Free plan; Lite US$49/mo billed yearly", costUrl: "https://www.beehiiv.com/pricing", program: "beehiiv", linkLabel: "See beehiiv" },
+    { name: "Kit", use: "Free to 10,000 subscribers, automations and product sales", cost: "Free; Creator US$33/mo billed yearly", costUrl: "https://kit.com/pricing", program: "kit", linkLabel: "See Kit" },
+    { name: "Canva", use: "Headers, social snippets and a sponsor kit", program: "canva", linkLabel: "See Canva" },
+    { name: "USB microphone", use: "Optional audio version of each issue", program: "amazon-ca", linkLabel: "See options", search: "USB microphone podcast", optional: true },
+  ]}
+/>
 
-Keep the platform reports and the opt-in record. Report the newsletter on Form T2125 with the T1. The small-supplier test is worldwide taxable supplies, yours and your associates', of $30,000 or less in a single calendar quarter and over the last four consecutive calendar quarters. Add other side-hustle revenue to the same pot. Under that test, registration is usually optional. Over it, you register on the timetable on the CRA's when-to-register page. A newsletter is not ride-sharing, so the first-dollar rule on the taxi page does not apply unless you also carry passengers for a platform.
+## Common newsletter mistakes
 
-Once registered, charge the rate for the province where the supply is made. Some provinces use HST. Others add PST on top of GST. Confirm Quebec and every other province on the charge-and-collect table and with the [GST/HST calculator (and rates)](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-which-rate/calculator.html), and set the tax aside. Substack's cost page says some writers add sales tax or VAT on top of their price. A platform toggle is not a legal opinion. Check it against the CRA table.
+- **Importing contacts who didn't opt in.** That's a CASL problem and hurts deliverability.
+- **Launching paid on an empty archive.** Readers need proof first.
+- **Irregular sending.** Consistency builds open rates.
+- **Too broad a topic.** "Money tips" competes with everyone; "money for Alberta trades apprentices" doesn't.
+- **Ignoring replies.** Reader questions are your best content source.
+- **Hiding sponsors.** Label paid placements clearly.
 
-Digital products and platforms that sell to people in Canada add complexity. The CRA's [digital-economy overview](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/digital-economy.html) describes rules, in effect since 1 July 2021, for certain non-resident suppliers and distribution platform operators. A checkout tax line is not your whole registration answer.
+## Related side hustles
 
-Search your city for a business licence and use that city's fee if there is one. This guide does not state a licence fee from another city.
+- [Freelance writing](/side-hustles/freelance-writing-side-hustle-canada/) for client work.
+- [Email marketing](/side-hustles/email-marketing-side-hustle-canada/) running newsletters for businesses.
+- [Ebook publishing](/side-hustles/ebook-publishing-side-hustle-canada/) to package your best issues.
+- [YouTube](/side-hustles/youtube-side-hustle-canada/) and [TikTok and Reels](/side-hustles/tiktok-reels-side-hustle-canada/) to grow the list.
+- [Podcast editing](/side-hustles/podcast-editing-side-hustle-canada/) if you add audio.
 
-## Which side hustles sit near a newsletter in Canada?
+## What should you keep in mind about these numbers?
 
-A newsletter in Canada sits next to other ways of explaining the same subject. [Freelance writing](/side-hustles/freelance-writing-side-hustle-canada/) sells the page to one client. [YouTube](/side-hustles/youtube-side-hustle-canada/) is the public video, with its own eligibility rules for ads. An [ebook](/side-hustles/ebook-publishing-side-hustle-canada/) is the longer file, sold once, rather than an email on a Thursday. A short public post on a phone is a different schedule: [TikTok and Reels](/side-hustles/tiktok-reels-side-hustle-canada/). See [side hustles for writers](/side-hustles/side-hustles-for-writers-canada/) for other writing work and the anti-spam basics.
-
-For how to price paid subscriptions and sponsor slots, see the [newsletter pricing guide](/side-hustles/newsletter-pricing-canada/).
-
-The CAD budget for a newsletter in Canada, one-time and monthly, is in [newsletter startup costs](/side-hustles/newsletter-startup-costs-canada/).
-
-Newsletter writers who also run a show can outsource audio to a [podcast editor](/side-hustles/podcast-editing-side-hustle-canada/).
-
-To choose a platform, see [Substack vs beehiiv vs Kit](/side-hustles/substack-vs-beehiiv-vs-kit-canada/).
-
-Running a newsletter teaches skills businesses pay for. [Email marketing freelancing](/side-hustles/email-marketing-side-hustle-canada/) covers client work, CASL consent rules, and pricing.
+Platform plans and fees were checked on October 9, 2026 and change often; beehiiv and Kit bill in U.S. dollars. The two newsletters profiled reported their own numbers, and Wells's audience comes from a long national journalism career, so his figures aren't typical. The conversion rates and sponsorship rate in the worked math are assumptions to help you reason about your own list. Most newsletters take many months to earn meaningful money.
 
 <Faq
   items={[
-    {
-      question: "Can I email my contacts to launch a newsletter in Canada?",
-      answer: "Only if you already have consent that CASL recognizes. The CRTC says express consent is opt-in, and a message that merely asks for consent is itself a commercial electronic message. Buying a list is not a shortcut. This is not legal advice.",
-    },
-    {
-      question: "What does Substack charge a Canadian writer?",
-      answer: "Substack's cost page says publishing is free, and that on paid subscriptions Substack keeps 10% of each subscription payment. Stripe charges its own processing fee. The 2.9% plus $0.30 figure on that page is labelled for US cards. Confirm the fee in your own Stripe dashboard.",
-    },
-    {
-      question: "Should I charge for the first issue?",
-      answer: "No. Write and send free issues until you can name what a paid reader gets that a free reader does not. A price on an empty archive is not a business.",
-    },
-    {
-      question: "Do I need a microphone to start a newsletter in Canada?",
-      answer: "No. Text is enough. A USB microphone in the $25–$80 range to verify locally is for audio you have already decided to include.",
-    },
-    {
-      question: "When do newsletter earnings in Canada trigger GST/HST?",
-      answer: "Paid subscriptions and other taxable supplies follow the CRA small-supplier test of $30,000 in a quarter or over four consecutive quarters, including other side hustles. A newsletter is not the taxi first-dollar rule. This is not tax advice.",
-    },
+    { question: "How much does Substack take in Canada?", answer: "Substack's help page (updated September 29, 2026) says publishing is free and Substack keeps 10% of paid subscription revenue, with Stripe's processing fees on top. Stripe Canada lists 2.9% + CA$0.30 per domestic card payment, and Substack lists a 0.7% Stripe Billing fee on recurring payments." },
+    { question: "Is beehiiv or Kit cheaper than Substack?", answer: "It depends on revenue. beehiiv's paid plans (Lite US$49/month billed yearly) take 0% of subscriptions, and Kit is free up to 10,000 subscribers. Substack costs nothing until you earn, then takes 10%. At a few hundred dollars a month of paid revenue they cost about the same; above that, a flat-fee platform usually costs less." },
+    { question: "How much can a Canadian newsletter make?", answer: "It varies widely. Paul Wells reported that his $8-a-month Substack covered two salaries with 39,054 total subscribers in April 2025. A smaller stock-analysis newsletter reported 18 paid subscribers and $1,982.83 CAD in revenue for 2025." },
+    { question: "Do I need consent to email subscribers in Canada?", answer: "Yes. CASL requires consent, sender identification and an unsubscribe mechanism in commercial emails. People must opt in themselves, and you must be able to prove it." },
+    { question: "Do I charge GST/HST on paid subscriptions?", answer: "Once you're registered. Registration is required after taxable supplies pass $30,000 in a calendar quarter or over four consecutive quarters, and then subscriptions to Canadian readers are generally charged at the reader's provincial rate." },
   ]}
 />
