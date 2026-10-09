@@ -7,10 +7,18 @@
  * rel). Source comments may still say TODO-AFFILIATE for editors — never invent
  * tracking URLs.
  *
- * Amazon.ca Associates uses a single entry-point link (not per-ASIN URLs).
- * The optional `search` prop on AffiliateLink is kept for copy context but is
- * not appended to the approved Amazon href.
+ * Amazon.ca Associates deep links (store/tracking ID `makemoneyoptimizer-20`):
+ * - `asin`   -> https://www.amazon.ca/dp/<ASIN>?tag=makemoneyoptimizer-20
+ *               Use only ASINs you fetched on amazon.ca and matched to the
+ *               named product. Never invent or guess an ASIN.
+ * - `search` -> https://www.amazon.ca/s?k=<keywords>&tag=makemoneyoptimizer-20
+ *               For generic categories ("a lavalier mic", "ice melt").
+ * - neither  -> the entry-point short link (homepage). Avoid this.
  */
+export const AMAZON_CA_TAG = 'makemoneyoptimizer-20';
+const AMAZON_CA_BASE = 'https://www.amazon.ca';
+const ASIN_RE = /^[A-Z0-9]{10}$/;
+
 export const AFFILIATE_PROGRAMS = {
   'amazon-ca': {
     name: 'Amazon Associates (Canada)',
@@ -295,6 +303,36 @@ export function isAffiliateApproved(program: AffiliateProgram): boolean {
   return AFFILIATE_PROGRAMS[program].approved === true;
 }
 
-export function affiliateHref(program: AffiliateProgram, _search?: string): string {
+export interface AffiliateTarget {
+  /** Amazon.ca ASIN (10 characters), verified on amazon.ca/dp/<ASIN>. */
+  asin?: string;
+  /** Amazon.ca search keywords, used when there is no ASIN. */
+  search?: string;
+}
+
+/** Amazon.ca product page with the Associates tag. */
+export function amazonCaProductHref(asin: string): string {
+  const clean = asin.trim().toUpperCase();
+  if (!ASIN_RE.test(clean)) {
+    throw new Error(`Invalid Amazon ASIN "${asin}" (expected 10 letters/digits).`);
+  }
+  return `${AMAZON_CA_BASE}/dp/${clean}?tag=${AMAZON_CA_TAG}`;
+}
+
+/** Amazon.ca search results page with the Associates tag. */
+export function amazonCaSearchHref(keywords: string): string {
+  const q = encodeURIComponent(keywords.trim().replace(/\s+/g, ' ')).replace(/%20/g, '+');
+  return `${AMAZON_CA_BASE}/s?k=${q}&tag=${AMAZON_CA_TAG}`;
+}
+
+export function affiliateHref(
+  program: AffiliateProgram,
+  target: AffiliateTarget | string = {},
+): string {
+  const { asin, search } = typeof target === 'string' ? { asin: undefined, search: target } : target;
+  if (program === 'amazon-ca') {
+    if (asin && asin.trim()) return amazonCaProductHref(asin);
+    if (search && search.trim()) return amazonCaSearchHref(search);
+  }
   return AFFILIATE_PROGRAMS[program].href;
 }

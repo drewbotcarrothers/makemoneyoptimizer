@@ -9,14 +9,19 @@ interface Props {
   program: AffiliateProgram;
   label: string;
   /**
-   * Optional product keywords for Amazon.ca mentions. Kept for editorial
-   * context; the approved Amazon Associates entry link does not use them.
+   * Amazon.ca only: verified ASIN of the named product. Links to
+   * amazon.ca/dp/<ASIN>?tag=makemoneyoptimizer-20. Never guess an ASIN.
+   */
+  asin?: string;
+  /**
+   * Amazon.ca only: search keywords for generic categories. Used when there is
+   * no `asin`; links to amazon.ca/s?k=<keywords>&tag=makemoneyoptimizer-20.
    */
   search?: string;
 }
 
-const { program, label, search } = Astro.props;
-const href = affiliateHref(program, search);
+const { program, label, asin, search } = Astro.props;
+const href = affiliateHref(program, { asin, search });
 const approved = isAffiliateApproved(program);
 ---
 

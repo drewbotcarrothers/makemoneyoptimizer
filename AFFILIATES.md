@@ -24,7 +24,7 @@ Priority: **A** apply now · **B** after the related comparison/roundup posts ar
 
 | Program | Key in `affiliate-placeholders.ts` | Apply URL | Network | Priority | Status | Notes |
 |---|---|---|---|---|---|---|
-| Amazon.ca Associates | `amazon-ca` | https://affiliate-program.amazon.ca/ | In-house (Amazon Associates) | A | **Approved** 2026-10-05 | Only approved program. Use one entry link per Amazon policy setup in affiliate-placeholders.ts. Biggest lever: add gear roundups for local-services (127 posts). |
+| Amazon.ca Associates | `amazon-ca` | https://affiliate-program.amazon.ca/ | In-house (Amazon Associates) | A | **Approved** 2026-10-05 | Only approved program. Store/tracking ID `makemoneyoptimizer-20`. Deep links via `asin` (amazon.ca/dp/<ASIN>?tag=…) or `search` (amazon.ca/s?k=…&tag=…); see "Amazon.ca deep links" below. Biggest lever: add gear roundups for local-services (127 posts). |
 | Fiverr Affiliates | `fiverr` | https://www.fiverr.com/partnerships/affiliates | In-house (Fiverr Partnerships) | A | Not applied | Pays on buyers, not on sellers joining — frame as 'outsource' content. |
 | FreshBooks | `freshbooks` | https://www.freshbooks.com/affiliate-program | PartnerStack | A | Not applied | Fastest payback: most-linked placeholder on the site. Trial bounty means earnings even before paid conversion. |
 | H&R Block Canada | `hr-block` | https://www.hrblock.ca/partner-with-us (→ Affiliate Program on impact.com); codes: https://www.hrblock.ca/affiliate/ | Impact (per hrblock.ca 'Partner with us' page) | A | Not applied | Official partner page confirms an Impact affiliate program (previously unclear). |
@@ -184,7 +184,7 @@ Honest guides on starting an online store, product research, and Canadian seller
 **Topics:** Side hustles, tools & gear, books, home-office and reselling supplies for Canadians  
 **How you’ll link:** Contextual product recommendations inside guides (e.g. shipping supplies, cameras for tutoring setups, notebooks) — not sitewide link spam.  
 **Traffic:** Organic search + direct; Canada-focused.  
-**Associates Store ID / branding:** Use a clear ID like `makemoneyopt-20` if available (Amazon may assign or suggest).
+**Associates Store ID:** `makemoneyoptimizer-20` (live; confirmed from the entry short link's redirect).
 
 After approval: enable **Canada** store, add the standard Associates disclosure (already drafted on `/affiliate-disclosure`).
 
@@ -348,11 +348,34 @@ See **Suggested order to apply** under the status tracker (updated 2026-10-07).
 
 ---
 
+## Amazon.ca deep links
+
+All Amazon.ca links go through `<AffiliateLink program="amazon-ca" …>` (also used by `StarterKit` and
+`ComparisonTable`). The URL is built in `src/lib/affiliate-placeholders.ts`:
+
+| Prop | URL | Use for |
+|---|---|---|
+| `asin="B00MRMU2HU"` | `https://www.amazon.ca/dp/B00MRMU2HU?tag=makemoneyoptimizer-20` | A named product or model |
+| `search="ice melt"` | `https://www.amazon.ca/s?k=ice+melt&tag=makemoneyoptimizer-20` | A generic category |
+| neither | `https://link.amazon/B04lZw4kk` (homepage) | Avoid; fallback only |
+
+Rules:
+
+- **Verify every ASIN** by opening `https://www.amazon.ca/dp/<ASIN>` and checking the product title matches the
+  product named in the copy. Prefer ASINs already cited in the post's `sources`.
+- **Never invent or guess an ASIN** (and don't reuse amazon.com ASINs without checking amazon.ca). If Amazon blocks
+  the fetch, use a `search` link instead.
+- Keep `search` to one product in shopper words ("two stage snow blower", not "snow blower gas can ear muffs").
+- Links keep `rel="sponsored nofollow noopener"` and `target="_blank"`. No visible labels next to links; the
+  disclosure is the layout's bottom-of-post block only.
+- StarterKit rows naming two products use `links: [{ label, asin }, …]`.
+
 ## Decision log
 
 | Date | Event |
 |------|--------|
 | 2026-09-13 | Disclosure page expanded; application kit created |
 | 2026-10-05 | Amazon.ca Associates entry link wired (`https://link.amazon/B04lZw4kk`); article disclosure bottom-only |
+| 2026-10-09 | Amazon.ca deep links: `asin` → amazon.ca/dp/<ASIN>?tag=makemoneyoptimizer-20, `search` → amazon.ca/s?k=…&tag=makemoneyoptimizer-20; YouTube guide uses verified ASINs; all other amazon-ca links use specific search keywords |
 | 2026-10-07 | Status tracker expanded to ~60 programs (apply URL, network, priority, verified flag); per-program blurbs; new placeholder keys added for comparison posts and starter kits |
 | 2026-10-07 | Tracker re-synced from the master list Google Sheet (85 programs); all statuses Not applied except Amazon (Approved); H&R Block (Impact), Jobber (CJ, verify), Zensurance (Fintel) updated; Wealthsimple disclosure goes in the bottom AffiliateDisclosure only after approval; Freecash not promoted |

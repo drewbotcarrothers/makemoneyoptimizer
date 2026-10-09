@@ -4,8 +4,10 @@
  *
  * - One row per tool or item: name, what it's for, approximate cost, link.
  * - `program` links through <AffiliateLink> (keys in src/lib/affiliate-placeholders.ts).
- *   Unapproved programs render as plain merchant links. Amazon.ca is a single
- *   entry-point link, so `search` is editorial context only.
+ *   Unapproved programs render as plain merchant links. For Amazon.ca, set
+ *   `asin` (verified product page) or `search` (category keywords).
+ * - `links` renders several links in one row (e.g. "BOYA BY-M1 or DJI Mic Mini"),
+ *   each with its own label and `asin`/`search`.
  * - `href` is a plain (non-affiliate) link used only when there is no `program`.
  * - `cost` must be sourced (add `costUrl` and list it in `sources`) or say
  *   "See current price" / "Free plan available" — never a guessed number.
@@ -16,6 +18,13 @@
 import AffiliateLink from './AffiliateLink.astro';
 import type { AffiliateProgram } from '../lib/affiliate-placeholders';
 
+export interface StarterKitLink {
+  label: string;
+  program?: AffiliateProgram;
+  asin?: string;
+  search?: string;
+}
+
 export interface StarterKitItem {
   name: string;
   use: string;
@@ -24,8 +33,12 @@ export interface StarterKitItem {
   program?: AffiliateProgram;
   /** Link text; defaults to "See options". */
   linkLabel?: string;
-  /** Amazon.ca keyword context (not appended to the link). */
+  /** Amazon.ca: verified ASIN for a named product (amazon.ca/dp/<ASIN>). */
+  asin?: string;
+  /** Amazon.ca: search keywords when there is no ASIN. */
   search?: string;
+  /** Several links for one row (uses `program` unless a link sets its own). */
+  links?: StarterKitLink[];
   href?: string;
   /** Mark nice-to-have items. */
   optional?: boolean;
@@ -63,9 +76,15 @@ if (!items || items.length < 2) {
               </>
             )}
           </span>
-          {item.program ? (
+          {item.links && item.links.length > 0 ? (
+            item.links.map((l) => (
+              <span class="sk-link">
+                <AffiliateLink program={(l.program ?? item.program)!} label={l.label} asin={l.asin} search={l.search} />
+              </span>
+            ))
+          ) : item.program ? (
             <span class="sk-link">
-              <AffiliateLink program={item.program} label={item.linkLabel ?? 'See options'} search={item.search} />
+              <AffiliateLink program={item.program} label={item.linkLabel ?? 'See options'} asin={item.asin} search={item.search} />
             </span>
           ) : item.href ? (
             <span class="sk-link">
