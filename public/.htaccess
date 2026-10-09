@@ -14,6 +14,18 @@ RewriteRule ^side-hustles/online-tutoring-canada/?$ /side-hustles/online-tutorin
 RewriteRule ^side-hustles/freelance-writing-canada/?$ /side-hustles/freelance-writing-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/reselling-marketplace-canada/?$ /side-hustles/reselling-side-hustle-canada/ [R=301,L]
 
+# Depth wave 3: 30-day launch plans folded into pillar guides
+RewriteRule ^side-hustles/dog-walking-30-day-plan-canada/?$ /side-hustles/dog-walking-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/house-cleaning-30-day-plan-canada/?$ /side-hustles/house-cleaning-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/snow-removal-30-day-plan-canada/?$ /side-hustles/snow-removal-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/lawn-care-30-day-plan-canada/?$ /side-hustles/lawn-care-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/freelance-writing-30-day-plan-canada/?$ /side-hustles/freelance-writing-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/virtual-assistant-30-day-plan-canada/?$ /side-hustles/virtual-assistant-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/reselling-30-day-plan-canada/?$ /side-hustles/reselling-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/etsy-shop-30-day-plan-canada/?$ /side-hustles/etsy-shop-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/online-tutoring-30-day-plan-canada/?$ /side-hustles/online-tutoring-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/social-media-manager-30-day-plan-canada/?$ /side-hustles/social-media-manager-side-hustle-canada/ [R=301,L]
+
 # Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
 # RewriteCond %{HTTPS} !=on
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

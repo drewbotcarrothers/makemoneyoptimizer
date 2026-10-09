@@ -158,20 +158,6 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
   'snow-removal-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
 };
 
-// T13 30-day launch plans (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
-Object.assign(EXTRA_MEMBERS, {
-  'dog-walking-30-day-plan-canada': [{ series: 'dog-walking', role: 'plan' }],
-  'house-cleaning-30-day-plan-canada': [{ series: 'house-cleaning', role: 'plan' }],
-  'snow-removal-30-day-plan-canada': [{ series: 'snow-removal', role: 'plan' }],
-  'lawn-care-30-day-plan-canada': [{ series: 'lawn-care', role: 'plan' }],
-  'freelance-writing-30-day-plan-canada': [{ series: 'freelance-writing', role: 'plan' }],
-  'virtual-assistant-30-day-plan-canada': [{ series: 'virtual-assistant', role: 'plan' }],
-  'reselling-30-day-plan-canada': [{ series: 'reselling', role: 'plan' }],
-  'etsy-shop-30-day-plan-canada': [{ series: 'etsy-shop', role: 'plan' }],
-  'online-tutoring-30-day-plan-canada': [{ series: 'online-tutoring', role: 'plan' }],
-  'social-media-manager-30-day-plan-canada': [{ series: 'social-media-manager', role: 'plan' }],
-});
-
 // Set C comparisons (Oct 2026), mapped by hand. Kept as a separate block to limit merge conflicts.
 Object.assign(EXTRA_MEMBERS, {
   'amazon-flex-vs-uber-eats-canada': [
