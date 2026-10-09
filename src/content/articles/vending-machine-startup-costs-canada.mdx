@@ -1,12 +1,47 @@
 ---
 title: "How Much Does It Cost to Start a Vending Machine Business in Canada?"
-description: "Vending machine startup costs in Canada: machine quotes, card readers, inventory, location commissions, and a labelled break-even sketch with assumed numbers."
+description: "Vending machine startup costs in Canada with dated dealer prices: a $2,299 refurbished combo, a $4,999 new combo, $550 card readers at $9.95 a month plus 5.95%, a first fill from $318.83, insurance, HST rules and vends to break even."
 pubDate: 2026-10-06
+updatedDate: 2026-10-09
+updateNote: "Upgraded with dated CAD prices, kit totals and break-even math"
 category: local-services
 tags: [local-services, offline, budget]
 featured: false
 sample: false
 sources:
+  - title: "APEX 3 Combo Vending Machine"
+    url: "https://apexvending.ca/product/apex-3-combo-vending-machine/"
+    publisher: "Apex Vending Canada"
+  - title: "Nayax VPOS Touch Card Reader"
+    url: "https://apexvending.ca/product/nayax-vpos-touch-card-reader/"
+    publisher: "Apex Vending Canada"
+  - title: "Cantaloupe ePort G11 card reader"
+    url: "https://apexvending.ca/product/cantaloupe-eport-g11-4g-lte-credit-debit-card-reader/"
+    publisher: "Apex Vending Canada"
+  - title: "Dixie Narco BevMax DN-5800 (Refurbished)"
+    url: "https://apexvending.ca/product/dixie-narco-bevmax-beverage-vending-machine-refurbished/"
+    publisher: "Apex Vending Canada"
+  - title: "Combo vending machines"
+    url: "https://apexvending.ca/combo-vending-machines/"
+    publisher: "Apex Vending Canada"
+  - title: "Sales policy"
+    url: "https://apexvending.ca/sales-policy/"
+    publisher: "Apex Vending Canada"
+  - title: "Vending machines for sale"
+    url: "https://vendingtech.ca/"
+    publisher: "Vendtech Canada"
+  - title: "3 Wide Combo Vending Machine (Refurbished)"
+    url: "https://snackphoria.com/product/healthy-vending-combo/"
+    publisher: "Snackphoria"
+  - title: "VCM Healthy Max Combo"
+    url: "https://imxvending.ca/product/vcm-healthy-max-combo/"
+    publisher: "IMX Vending"
+  - title: "Vending machine insurance"
+    url: "https://www.zensurance.com/restaurant-insurance/vending-machine"
+    publisher: "Zensurance"
+  - title: "Vending machine insurance in Canada: coverage, costs and do you need it?"
+    url: "https://feelgoodsnacks.ca/blog/vending-machine-insurance-in-canada/"
+    publisher: "Feel Good Snacks"
   - title: "Business regulations, licences and permits"
     url: "https://www.toronto.ca/business-economy/new-businesses-startups/business-regulations/"
     publisher: "City of Toronto"
@@ -16,6 +51,15 @@ sources:
   - title: "BizPaL"
     url: "https://bizpal-perle.ca/"
     publisher: "Government of Canada"
+  - title: "Cost and time required to register a business name"
+    url: "https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit"
+    publisher: "Government of Ontario"
+  - title: "GST/HST Memorandum 4.3, Basic Groceries"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/4-3/basic-groceries.html"
+    publisher: "Canada Revenue Agency"
+  - title: "GST/HST Info Sheet GI-022, Application of the GST/HST to Sales of Water"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-022/application-gst-hst-sales-water.html"
+    publisher: "Canada Revenue Agency"
   - title: "Form T2125, Statement of Business or Professional Activities"
     url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
     publisher: "Canada Revenue Agency"
@@ -25,113 +69,242 @@ sources:
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
     publisher: "Canada Revenue Agency"
+  - title: "Input tax credits"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html"
+    publisher: "Canada Revenue Agency"
   - title: "Contributions to the Canada Pension Plan"
     url: "https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html"
     publisher: "Government of Canada"
+  - title: "JUXANOS folding hand truck, 500 lb"
+    url: "https://www.amazon.ca/dp/B0BRXM59WY"
+    publisher: "Amazon.ca"
+  - title: "Merangue Quicksilver Deluxe coin sorter"
+    url: "https://www.amazon.ca/dp/B0B2KWCDSD"
+    publisher: "Amazon.ca"
+  - title: "Coca-Cola 330 ml cans, 24"
+    url: "https://www.amazon.ca/dp/B00GS9FD9K"
+    publisher: "Amazon.ca"
+  - title: "Frito Lay Classic Mix variety pack, 50"
+    url: "https://www.amazon.ca/dp/B0BFBTWCZX"
+    publisher: "Amazon.ca"
+  - title: "Cadbury Caramilk 50 g, 24"
+    url: "https://www.amazon.ca/dp/B079VBBJ9G"
+    publisher: "Amazon.ca"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
 import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
+import StarterKit from '../../components/StarterKit.astro';
 
-Starting a vending machine business in Canada costs whatever a written quote says for the machine, plus a card reader if you add one, the first inventory, delivery, and any permit or insurance the location requires. This guide does not publish a national price for a new or refurbished machine. Dealers change prices, and a "route for sale" often bundles locations you have not verified. Get two quotes. Then decide if the location is real.
+<QuickAnswer>
+A lean vending start in Canada costs **$3,059.83 with 13% HST**: a refurbished, coin-only Crane combo listed at $2,299 by Vendtech Canada, a hand truck, a coin sorter and a $318.83 first fill bought on Amazon.ca (prices checked 9 October 2026). A standard start is a new APEX 3 combo ($4,999) with a $550 card reader, for **$6,698.44**. A two-machine start adds a refurbished Dixie Narco drink machine ($3,999) and a second reader, for **$12,121.19**. Freight, installation, reader activation and insurance (a vending supplier's planning range is $300 to $600 a year for one to three machines) come on top. In the illustrative $2.50-a-vend example below, that is about 3,641, 9,644 and 16,987 vends to recover the start.
+</QuickAnswer>
 
-Whether the work fits you is [is a vending machine side hustle worth it](/side-hustles/vending-machine-side-hustle-canada/). Cash machines are a different device in [ATM side hustle costs and rules](/side-hustles/atm-machine-side-hustle-canada/).
+A vending machine business is a machine, the stock inside it, and a signed spot in someone else's building. This page is the cash: what dealers listed on 9 October 2026, three kits with tax, what the card reader takes from each sale, the HST rule that is different for vending, and how many sales pay the machine back. Whether the work suits you is [is a vending machine side hustle worth it](/side-hustles/vending-machine-side-hustle-canada/). Cash machines are a different device in [ATM side hustle costs and rules](/side-hustles/atm-machine-side-hustle-canada/).
 
 ## How much does a vending machine business cost to start in Canada?
 
-It costs the quote for one machine you have seen work, the product to fill it, and the cost of getting it into a building that has agreed in writing. A lean start is one used machine at a site you already know, such as a workplace that invited you. A larger start is several machines, a reader on each, and a vehicle that can carry them. Neither has a standard Canadian sticker price.
+A vending machine business costs $3,059.83 to $12,121.19 to start in Canada with 13% HST, depending on whether you buy one refurbished coin-only combo, one new combo with a card reader, or two machines. Freight to your site, installation and insurance are extra in every case.
 
-| Piece | How to price it | What not to do |
+| Kit | Machines and readers | Tools | First fill | Before tax | With 13% HST |
+| --- | --- | --- | --- | --- | --- |
+| Lean | Refurbished Crane combo, coin only, $2,299 | $89.98 | $318.83 | $2,707.81 | $3,059.83 |
+| Standard | New APEX 3 combo $4,999 + card reader $550 | $59.99 | $318.83 | $5,927.82 | $6,698.44 |
+| Two machines | Standard + refurbished Dixie Narco BevMax $3,999 + second reader $550 | $59.99 | $568.73 | $10,726.72 | $12,121.19 |
+
+Dealers list these prices before tax. Apex Vending Canada's [sales policy](https://apexvending.ca/sales-policy/) says its prices exclude taxes, freight, liftgate service, installation and card-reader activation fees, and that sales are final with non-refundable deposits. Snackphoria lists its machines "+ HST". Vendtech's page does not say, so the table adds 13% to every line. With 5% GST only, the totals are $2,843.20, $6,224.21 and $11,263.06.
+
+Lines left out on purpose:
+
+- **Freight.** Apex says shipping is calculated by postal code and is not in the machine price. The APEX 3 weighs 490 lb and the BevMax 764 lb. Get the delivery quote, including whether the truck has a liftgate and whether anyone will take the machine through the door, before you pay a deposit.
+- **Insurance.** $300 to $600 a year for liability on one to three machines is a planning range, covered below.
+- **Location payment.** Commission or rent is in the agreement you sign, so it is a monthly cost, not a startup cost.
+- **A business name.** Selling under your own legal name needs no registration in most provinces. A trade name in Ontario is $60 to register online, per [Ontario's fee page](https://www.ontario.ca/page/cost-time-required-to-register-change-search-for-business-name-corporation-not-for-profit).
+
+## What do vending machines cost in Canada right now?
+
+Refurbished combo machines were listed from $2,299 and new combos from about $3,900 to $6,195 at Canadian dealers on 9 October 2026. These are list prices on dealer websites, not quotes, and stock changes weekly.
+
+| Machine | Dealer | Condition | Listed price | Notes |
+| --- | --- | --- | --- | --- |
+| Crane Refreshtron combo, 4-wide | [Vendtech Canada](https://vendingtech.ca/), Scarborough | Refurbished | $2,299 (was $2,499) | Coin only, original coin mechanism |
+| Crane 474 combo | Vendtech Canada | Refurbished | $2,499 (was $2,699) | Coin only |
+| 3-wide combo | [Snackphoria](https://snackphoria.com/product/healthy-vending-combo/), Brampton | Refurbished | $3,200 + HST | Delivery and installation quoted per site; card reader on request |
+| Combo with card reader | Snackphoria | New | $3,900 + HST | Listed as a similar machine on the same page |
+| VCM Healthy Max combo | [IMX Vending](https://imxvending.ca/product/vcm-healthy-max-combo/) | Refurbished | $4,499 | |
+| APEX 3 combo | [Apex Vending Canada](https://apexvending.ca/product/apex-3-combo-vending-machine/), Milton | New | $4,999 (was $5,500) | 220 to 240 items, 1-year manufacturer warranty, payment systems extra |
+| APEX 5 combo | [Apex Vending Canada](https://apexvending.ca/combo-vending-machines/) | New | $6,195 | |
+| Dixie Narco BevMax DN-5800 | [Apex Vending Canada](https://apexvending.ca/product/dixie-narco-bevmax-beverage-vending-machine-refurbished/) | Refurbished | $3,999 (was $4,899) | Drinks only, 45 selections, 90-day parts warranty |
+
+Apex's two refurbished combos, an AMS at $3,750 and a VCM 3000 at $3,250, were listed as sold out. Its home page says most machines in Canada cost $5,000 to $8,000. That is a seller's range for new equipment; the refurbished rows above show the floor is lower.
+
+The APEX 3 holds 108 drinks, 48 bags of chips and 84 to 96 chocolate bars or candy in its standard layout, and Apex offers financing "from just $265/month (OAC)". Financing does not change the break-even math below; it spreads it out and adds interest.
+
+### New or refurbished?
+
+A new machine buys a longer warranty and current payment hardware. Apex's new combo carries a 1-year manufacturer's parts warranty; its refurbished BevMax carries 90 days, and its warranty page excludes labour and technician time on both. A refurbished coin-only machine is the cheapest entry, but every sale needs exact change or a bill validator, and many people no longer carry coins. Budget the $550 reader for any refurbished machine you plan to keep. See the refurbished unit vend and cool before you pay, and ask who repairs that brand in your city.
+
+## What does a card reader cost for a vending machine?
+
+A vending card reader costs $550 to buy at Apex Vending Canada, plus $9.95 a month per device and 5.95% of each card sale. That applies to both the [Nayax VPOS Touch](https://apexvending.ca/product/nayax-vpos-touch-card-reader/) and the [Cantaloupe ePort G11](https://apexvending.ca/product/cantaloupe-eport-g11-4g-lte-credit-debit-card-reader/), which Apex lists at the same price and service fees, with a two-tier pricing option on inquiry. A bill validator and a coin mechanism are $399 each.
+
+At a $2.50 vend, 5.95% is about 15¢ a sale. On $500 of card sales in a month, the processor keeps $29.75 plus the $9.95 service fee, $39.70 in all. A card reader usually earns its fee by catching sales from people with no coins, but put the percentage into your margin rather than treating cards as free.
+
+## What does the first fill cost?
+
+A first fill for a combo machine costs $318.83 before tax ($360.28 with HST) at Amazon.ca prices on 9 October 2026: five 24-can cases of Coca-Cola, a 50-bag Frito Lay variety box and four 24-bar boxes of Cadbury Caramilk. That roughly matches the APEX 3's 108 drinks, 48 chips and up to 96 bars.
+
+| Item | Pack | Price | Per unit before tax | Per unit with HST |
+| --- | --- | --- | --- | --- |
+| [Coca-Cola 330 ml cans](https://www.amazon.ca/dp/B00GS9FD9K) | 24 | $24.99 | $1.04 | $1.18 |
+| [Frito Lay Classic Mix variety](https://www.amazon.ca/dp/B0BFBTWCZX) | 50 | $64.28 | $1.29 | $1.45 |
+| [Cadbury Caramilk 50 g](https://www.amazon.ca/dp/B079VBBJ9G) | 24 | $32.40 | $1.35 | $1.53 |
+
+Five cases of cans ($124.95), one chip box ($64.28) and four candy boxes ($129.60) add up to $318.83. The two-machine kit adds ten more cases of cans ($249.90) toward the BevMax, which holds up to 405 cans. Pop, chips and chocolate are taxable when you buy them, so the HST column is what you pay if you are not registered.
+
+These are online retail prices, used because they can be checked on a dated page. A wholesale club or a distributor account may be cheaper; use your own invoice once you have one. Match products to the site: an office, a gym and a warehouse buy different things.
+
+## What else is in each vending kit?
+
+Each kit below lists named items with the price shown on 9 October 2026.
+
+### Lean kit: $2,707.81 before tax ($3,059.83 with HST)
+
+| Item | Price | Why |
 | --- | --- | --- |
-| Machine, new or refurbished | Two written quotes from sellers who will show the unit powered on | A single "package" price that hides the locations |
-| Card reader and monthly service | The processor's current fee schedule | Assuming coins are enough |
-| First inventory | The wholesale invoice for a full machine | Retail grocery prices as your cost forever |
-| Delivery and install | The quote to move it through the door, including elevators | Assuming you can carry a drink machine alone |
-| Location payment | The commission or flat fee in the signed agreement | A verbal "we'll take 10 percent" |
-| Permits and insurance | [BizPaL](https://bizpal-perle.ca/) plus the location's certificate request | Copying another city's fee |
-| Vehicle and a hand truck | What you already drive, plus a truck if cases are heavy | A trailer before the first machine earns |
+| Crane Refreshtron combo, refurbished, coin only ([Vendtech Canada](https://vendingtech.ca/)) | $2,299 | The lowest listed entry price for a refrigerated combo |
+| [JUXANOS folding hand truck, 500 lb](https://www.amazon.ca/dp/B0BRXM59WY) | $59.99 | Moving cases from the car to the machine |
+| [Merangue Quicksilver Deluxe coin sorter](https://www.amazon.ca/dp/B0B2KWCDSD) | $29.99 | Rolling coins from a cash-only machine |
+| First fill | $318.83 | See the table above |
 
-A <AffiliateLink program="amazon-ca" label="folding hand truck" search="folding hand truck" /> is a fair small purchase. The machine itself should come from a vending dealer you can visit, not from a random listing with no service history.
+The lean kit suits a location you already have, such as a workplace that asked for a machine. It gives up card sales until you add a reader.
 
-## What is the difference between a new machine and a refurbished one?
+### Standard kit: $5,927.82 before tax ($6,698.44 with HST)
 
-A new machine has a warranty you can read and a higher quote. A refurbished machine can be the right first unit if you see it refrigerate or vend, and if the seller will say what was replaced. Age matters less than whether the compressor, the validator, and the card kit work. Ask who repairs it in your city. A cheap machine with no technician within a day's drive is an expensive ornament.
+| Item | Price | Why |
+| --- | --- | --- |
+| [APEX 3 combo, new](https://apexvending.ca/product/apex-3-combo-vending-machine/) | $4,999 | Snacks and cold drinks in one cabinet, 1-year warranty |
+| Card reader, Nayax VPOS Touch or Cantaloupe ePort G11 | $550 | Tap, chip and mobile wallets; $9.95 a month plus 5.95% per card sale |
+| JUXANOS folding hand truck | $59.99 | Restocking |
+| First fill | $318.83 | |
 
-## What ongoing costs sit under vending sales?
+No coin sorter here: a card-first machine at a workplace can run without coins, or you add the $399 coin mechanism later.
 
-**Product.** You replace what sold and you throw out what expired. Spoilage is a cost even when the machine looked full.
+### Two-machine kit: $10,726.72 before tax ($12,121.19 with HST)
 
-**Location commission or rent.** Whatever the agreement says. Renegotiate in writing. A percentage of sales and a flat monthly fee are both common structures. This page does not pick a "normal" percentage.
+| Item | Price | Why |
+| --- | --- | --- |
+| Everything in standard | $5,927.82 | |
+| [Dixie Narco BevMax DN-5800, refurbished](https://apexvending.ca/product/dixie-narco-bevmax-beverage-vending-machine-refurbished/) | $3,999 | High-capacity drink machine for a second site or a busy one |
+| Second card reader | $550 | Another $9.95 a month |
+| Ten 24-can cases | $249.90 | Toward the drink machine's 405-can capacity |
 
-**Card fees.** The reader company takes a schedule you signed. Cash still needs counting and a bank deposit.
+Two machines at one busy site share one restocking trip. Two machines at two sites double the driving. Choose the second location before the second machine.
 
-**Power.** Some locations ask you to pay a share of electricity. Put that in the agreement.
+<StarterKit
+  items={[
+    { name: "Crane Refreshtron combo, refurbished", use: "Coin-only entry machine", cost: "$2,299", costUrl: "https://vendingtech.ca/", href: "https://vendingtech.ca/", linkLabel: "Vendtech Canada" },
+    { name: "APEX 3 combo, new", use: "Snack and drink combo with warranty", cost: "$4,999", costUrl: "https://apexvending.ca/product/apex-3-combo-vending-machine/", href: "https://apexvending.ca/product/apex-3-combo-vending-machine/", linkLabel: "Apex Vending Canada" },
+    { name: "Card reader (Nayax or Cantaloupe)", use: "Card and mobile-wallet sales", cost: "$550 + $9.95/mo + 5.95%", costUrl: "https://apexvending.ca/product/nayax-vpos-touch-card-reader/", href: "https://apexvending.ca/product/nayax-vpos-touch-card-reader/", linkLabel: "Apex Vending Canada" },
+    { name: "JUXANOS folding hand truck", use: "Moving cases to the machine", cost: "$59.99", costUrl: "https://www.amazon.ca/dp/B0BRXM59WY", program: "amazon-ca", linkLabel: "See on Amazon.ca", asin: "B0BRXM59WY" },
+    { name: "Merangue Quicksilver coin sorter", use: "Rolling coins from a cash machine", cost: "$29.99", costUrl: "https://www.amazon.ca/dp/B0B2KWCDSD", program: "amazon-ca", linkLabel: "See on Amazon.ca", asin: "B0B2KWCDSD", optional: true },
+    { name: "Coca-Cola 330 ml, 24 cans", use: "First fill, drinks", cost: "$24.99", costUrl: "https://www.amazon.ca/dp/B00GS9FD9K", program: "amazon-ca", linkLabel: "See on Amazon.ca", asin: "B00GS9FD9K" },
+    { name: "Frito Lay Classic Mix, 50 bags", use: "First fill, chips", cost: "$64.28", costUrl: "https://www.amazon.ca/dp/B0BFBTWCZX", program: "amazon-ca", linkLabel: "See on Amazon.ca", asin: "B0BFBTWCZX" },
+    { name: "Cadbury Caramilk, 24 bars", use: "First fill, chocolate", cost: "$32.40", costUrl: "https://www.amazon.ca/dp/B079VBBJ9G", program: "amazon-ca", linkLabel: "See on Amazon.ca", asin: "B079VBBJ9G" },
+    { name: "Zensurance", use: "Vending liability quotes", program: "zensurance", linkLabel: "Get a quote" },
+  ]}
+/>
 
-**Repairs and downtime.** A dark machine sells nothing and still occupies the spot. Budget a repair call as a real invoice, not as zero.
+## What does vending machine insurance cost in Canada?
 
-**Your kilometres.** The trip from home to the site is part of the margin. Log them if you will claim vehicle expenses later.
+Liability insurance for one to three vending machines is about $300 to $600 a year as a planning figure, and $500 to $1,200 with equipment cover for a small route, according to a [September 2026 guide](https://feelgoodsnacks.ca/blog/vending-machine-insurance-in-canada/) from Feel Good Snacks, a Canadian vending supplier. The guide calls these planning estimates, not quotes. It says no law requires the insurance, but most good locations ask for a certificate, often at a $2 million limit and naming them as an additional insured.
 
-## How do you sketch break-even for one vending machine?
+[Zensurance's vending page](https://www.zensurance.com/restaurant-insurance/vending-machine) does not publish a price. It lists the parts of a vending policy: general and product liability, equipment breakdown for compressor and electrical failure, property cover for stock and machines, and commercial auto. It also warns that a personal car policy does not cover a vehicle used for business, which matters if you restock several sites a week. Ask the location what limit it requires before you get a quote. More on matching cover to the work is in [side hustle insurance in Canada](/side-hustles/side-hustle-insurance-canada/).
 
-### Step 1: Write the cash you need before the first sale
+## Do you need a licence or permit for a vending machine?
 
-Machine quote, reader, delivery, first fill, permit, and insurance deposit. Use invoices.
+Most cities do not issue a vending-machine licence for packaged snacks and drinks, but zoning, business registration and HST still apply. Toronto's [business regulations table](https://www.toronto.ca/business-economy/new-businesses-startups/business-regulations/) lists four requirements for coin-operated vending machines: zoning, sign permits, business registration and HST. It shows no municipal operating licence for that row. Check your own municipality with [BizPaL](https://bizpal-perle.ca/), because rules differ city by city.
 
-### Step 2: Write the monthly costs that exist even in a slow month
+Food is different. Ontario's [Food Premises Regulation](https://www.ontario.ca/laws/regulation/170493) is the provincial starting point, and the local public health unit applies it. Ask the health unit before you buy a fresh-food or refrigerated meal machine.
 
-Any location rent that is flat, reader subscription, insurance monthly share, and the fuel for one visit.
+## How many vends does it take to break even?
 
-### Step 3: Write product cost as a share of sales from your invoice
+A vending machine breaks even after about 3,641 vends on the lean kit, 9,644 on the standard kit and 16,987 across the two-machine kit, in an illustrative example where each $2.50 vend keeps $0.72 to $0.87. At 300 vends a month, the standard machine takes about 34 months to pay back.
 
-If a case costs you half of what the machine charges, say so. Do not use a margin you hope for.
+**Illustrative. The $2.50 price, the 10% location commission, an even mix of drinks, chips and chocolate, and $450 for a year of insurance are assumptions, not a typical result.**
 
-### Step 4: Subtract commission
+| Per vend | Lean (coins only) | Standard and two-machine (cards) |
+| --- | --- | --- |
+| Price | $2.50 | $2.50 |
+| Product, average of the three items with HST | −$1.38 | −$1.38 |
+| Location commission, 10% | −$0.25 | −$0.25 |
+| Card fee, 5.95% | — | −$0.15 |
+| Left per vend | $0.87 | $0.72 |
 
-Apply the signed percentage to sales, not to profit.
+| Kit | Amount to recover in year one | Vends to break even | Vends a day over 12 months |
+| --- | --- | --- | --- |
+| Lean | $3,149.55 | 3,641 | 10 |
+| Standard | $6,907.56 | 9,644 | 26 |
+| Two machines | $12,167.33 | 16,987 | 47 across both |
 
-### Illustrative example
+The amount to recover is the equipment with HST plus $450 of insurance plus a year of reader fees ($119.40 per reader). The first fill is not in it, because each item's cost is already subtracted when it sells. Standard: $6,338.16 + $450 + $119.40 = $6,907.56, and $6,907.56 ÷ $0.7163 = 9,643.3, so 9,644 vends. Lean: $2,699.55 + $450 = $3,149.55, and $3,149.55 ÷ $0.8651 = 3,640.9.
 
-Assumed numbers. Not a quote and not a survey.
+Two dealer claims are worth testing with the same numbers. Apex's home page says machines can make $300 to $1,500 or more a month and "pay for themselves within 6 to 18 months".
 
-Suppose the machine quote is $2,500, the reader is $300, and the first fill is $200. Cash to start is $3,000. Suppose a month of sales is $400, product cost is $200, and commission is 20 percent of sales, which is $80. Amount left before your time, fuel, and repairs is $400 − $200 − $80 = $120. At $120 a month, recovering the $3,000 takes $3,000 ÷ $120 = 25 months, and that ignores spoilage, a repair, and the hours you drove. If sales are $200, product is $100, and commission is $40, the amount left is $60, and the recovery stretches further. Change the quote and you change the months. If a seller will not let you plug your own sales guess into this sketch, walk away.
+- **$300 of sales a month** is 120 vends. The standard machine keeps 120 × $0.7163 − $9.95 = $76.01, so payback takes about 91 months.
+- **$1,500 a month** is 600 vends, which keeps $419.83 and pays back in about 16.5 months.
+- **Six months** would need about 1,621 vends a month, roughly $4,053 in sales.
 
-## What startup mistakes show up in vending budgets?
+The low end of the dealer's range does not pay a new machine back in 18 months at these margins. The high end does. Your location decides which one you get.
 
-- **Paying for locations you have not visited.** The machine is the smaller risk. An empty hallway is the larger one. See [is vending worth it](/side-hustles/vending-machine-side-hustle-canada/).
-- **Forgetting commission.** Gross sales are not your sales.
-- **Buying a food machine before the health unit answers.** Ontario's [Food Premises Regulation](https://www.ontario.ca/laws/regulation/170493) is the provincial starting point. Your health unit applies it locally.
-- **One machine, three cities.** Fuel will erase a thin margin.
-- **Treating the purchase as a same-year tax write-off.** A machine that lasts for years is usually [capital cost allowance](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance.html).
+If you register for GST/HST, the posted price includes the tax. A $2.50 vend is $2.21 after 13% HST, product cost drops to about $1.23 because you claim the purchase tax back as [input tax credits](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/calculate-prepare-report/input-tax-credit.html), and the card machine keeps about $0.59 a vend. Raise prices, or pick lower-cost products, before you cross the $30,000 threshold.
+
+## Where can vending startup spending be lower, and where should it not be cut?
+
+Spending is lowest with one refurbished machine at a site that invited you, bought from a dealer who will show it running and service it locally. Fill only the best-selling columns at first rather than buying a case of everything. Put a reader on as soon as card sales justify the $9.95 a month.
+
+Do not cut the delivery quote, the signed location agreement, or insurance the location asks for. Do not pay for a "route" or a list of locations you have not visited and confirmed in writing. Several dealers advertise locations for sale. An empty hallway is the most expensive mistake in vending, and the machine is still yours after the location falls through.
+
+## What should you know before relying on these numbers?
+
+Every machine price on this page is a dealer list price read on 9 October 2026, and every product price is a dated Amazon.ca snapshot from the same day. Dealer stock and sale prices change weekly, and Amazon prices change daily. HST is added at Ontario's 13%. The $2.50 vend price, the 10% commission, the product mix and the $450 insurance figure are assumptions for the illustration. Your commission is whatever your agreement says, and your sales depend on traffic you cannot see in advance. This is not tax, legal or insurance advice.
 
 ## Which tax rules apply to vending startup costs in Canada?
 
-Sales are business income on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html). Inventory you still hold at year-end is not all an expense of the year you bought it. Follow the CRA inventory rules in the business guide rather than deducting every case on the shelf. Equipment is capital cost allowance on the business portion. Self-employed net income draws both shares of [CPP](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html). GST/HST registration follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html) on taxable supplies. Toronto's business table mentions HST beside coin-operated machines, and the CRA page is the test that matters. This is not tax, legal, or insurance advice.
+Vending profit is business income on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html). A machine that lasts for years is usually [capital cost allowance](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/report-business-income-expenses/claiming-capital-cost-allowance.html), not a same-year deduction, and stock still in the machine or your garage at year-end goes through cost of goods sold. Self-employed net income draws both shares of [CPP](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html).
+
+GST/HST registration follows the [$30,000 small-supplier test](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html). Vending has its own rule for what is taxable. The CRA's [Memorandum 4.3](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/4-3/basic-groceries.html) says food and beverages sold through a vending machine are taxable, even items that are zero-rated in a grocery store, such as a single serving of white milk or an apple. The exception is an item sold for a single coin of 25 cents or less. [Info Sheet GI-022](https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/gi-022/application-gst-hst-sales-water.html) adds that all bottled water sold from a vending machine is taxable. Once you are registered, every vend carries HST. More on the threshold is in [GST/HST registration for side hustles](/side-hustles/gst-hst-registration-side-hustle-canada/).
 
 ## Which guides sit next to vending startup costs in Canada?
 
-The work and the location risks are [is a vending machine side hustle worth it](/side-hustles/vending-machine-side-hustle-canada/). A cash machine's fee stack is [an ATM side hustle](/side-hustles/atm-machine-side-hustle-canada/). Expense versus capital purchases in general are [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/).
+The work and the location risks are [is a vending machine side hustle worth it](/side-hustles/vending-machine-side-hustle-canada/). A cash machine's fee stack is [an ATM side hustle](/side-hustles/atm-machine-side-hustle-canada/). Expense versus capital purchases in general are [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/). Choosing a liability policy is [APOLLO vs Zensurance](/side-hustles/apollo-vs-zensurance-side-hustle-insurance-canada/).
 
 <Faq
   items={[
     {
       question: "How much does a vending machine cost in Canada?",
-      answer: "There is no single price. Ask two sellers for written quotes on a machine you have seen working, and add the reader, delivery, and first inventory. A package that will not separate the machine from the locations is a reason to pause.",
+      answer: "On 9 October 2026, Canadian dealers listed a refurbished coin-only Crane combo at $2,299 (Vendtech Canada), a refurbished 3-wide combo at $3,200 plus HST (Snackphoria), and a new APEX 3 combo at $4,999 (Apex Vending Canada). Card readers, freight and installation are usually extra.",
     },
     {
-      question: "Is a refurbished vending machine cheaper to start with?",
-      answer: "The quote is often lower. It is only cheaper if the cooling, validator, and card kit work and someone in your city will repair them. See the unit run before you pay.",
+      question: "How much does it cost to start a vending machine business in Canada?",
+      answer: "About $3,059.83 with 13% HST for a refurbished coin-only combo, tools and a first fill; $6,698.44 for a new combo with a $550 card reader; or $12,121.19 for two machines. Freight, installation and insurance come on top.",
     },
     {
-      question: "What monthly costs continue after I buy the machine?",
-      answer: "Product, spoilage, the location commission or rent you signed, card-reader fees, power if the site charges it, repairs, and the fuel to restock. Those lines decide whether sales are worth the route.",
+      question: "What do vending card readers cost in Canada?",
+      answer: "Apex Vending Canada lists the Nayax VPOS Touch and Cantaloupe ePort G11 at $550 each, with a $9.95 monthly service fee per device and 5.95% of each card transaction. A two-tier pricing option is available on inquiry.",
     },
     {
-      question: "Can I deduct the whole machine in the year I buy it?",
-      answer: "Usually no. A machine that lasts for years is capital cost allowance under the CRA rules, not a full current expense. Inventory still on hand is not all deducted in the purchase year either. This is not tax advice.",
+      question: "How much is vending machine insurance in Canada?",
+      answer: "A Canadian vending supplier's planning range is about $300 to $600 a year for liability on one to three machines, and $500 to $1,200 with equipment cover. These are estimates, not quotes. Locations often ask for a $2 million certificate naming them as additional insured.",
     },
     {
-      question: "Do I need a Toronto licence before I buy a snack machine?",
-      answer: "Check Toronto's business regulations table and BizPaL before you operate. The coin-operated vending row lists zoning, business registration, and HST. Food machines also need the public health unit. Buying the machine is not the permit.",
+      question: "Do I charge HST on vending machine sales?",
+      answer: "If you are registered, yes, on almost everything. The CRA treats food and beverages sold through a vending machine as taxable, including items that are zero-rated in a grocery store, unless the item sells for a single coin of 25 cents or less. Registration follows the $30,000 small-supplier test. This is not tax advice.",
+    },
+    {
+      question: "How long does a vending machine take to pay for itself?",
+      answer: "It depends on sales. In this page's illustration, a new $4,999 combo with a reader keeps about $0.72 per $2.50 vend and takes about 91 months to pay back at $300 of monthly sales, or about 16.5 months at $1,500.",
     },
   ]}
 />
