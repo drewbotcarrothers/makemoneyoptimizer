@@ -1,7 +1,9 @@
 ---
 title: "Thinkific vs Kajabi vs Podia: Course Platforms Compared for Canadians"
-description: "Thinkific vs Kajabi vs Podia for Canadian course creators: 2026 plan prices, transaction fees, free trials, payment processing and which platform fits a first course."
+description: "Thinkific vs Kajabi vs Podia for Canadian course creators: 2026 plan prices converted to CAD, transaction fees, costs at 3 sales levels, who should pick which and a break-even example (checked October 14, 2026)."
 pubDate: 2026-10-07
+updatedDate: 2026-10-14
+updateNote: "Expanded with CAD conversions at the Bank of Canada rate, monthly vs annual prices, total costs at three sales levels, a who-should-pick table and a Podia fee break-even example"
 category: digital-products
 tags: [online-courses, digital-products, tools, platforms]
 featured: false
@@ -16,8 +18,17 @@ sources:
   - title: "Podia pricing"
     url: "https://www.podia.com/pricing"
     publisher: "Podia"
+  - title: "Stripe pricing (Canada)"
+    url: "https://stripe.com/en-ca/pricing"
+    publisher: "Stripe"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
+    publisher: "Canada Revenue Agency"
+  - title: "Form T2125, Statement of Business or Professional Activities"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
     publisher: "Canada Revenue Agency"
 ---
 
@@ -28,115 +39,160 @@ import QuickAnswer from '../../components/QuickAnswer.astro';
 
 <QuickAnswer>
 
-- **Short answer:** Podia is the cheapest way to launch a first course with email built in; Thinkific is the Canadian-founded middle option with a 30-day trial; Kajabi is the premium all-in-one for creators who already make money.
-- **Podia:** Mover $42/month billed yearly with 5% transaction fees; Shaker $84 with no Podia fees.
-- **Thinkific:** Basic $40/month billed yearly ($54 monthly); no free plan, 30-day free trial.
-- **Kajabi:** Basic $143/month billed yearly ($179 monthly); 14-day trial.
+- **Short answer:** Thinkific Basic is the cheapest full course platform for a first paid course; Podia Mover is cheap only while sales are low because of its 5% fee; Kajabi costs the most but replaces your email tool, website and funnels in one subscription.
+- **Thinkific (October 14, 2026):** Basic $40 a month billed annually (about C$56.89), $54 month to month. 25% off for annual billing.
+- **Kajabi:** Basic $143 a month billed annually (about C$203.37), $179 month to month. 0% revenue share; 14-day trial.
+- **Podia:** Mover $42 a month billed yearly (about C$59.73) plus 5% transaction fees; Shaker $84 (about C$119.46) with no Podia fees.
 
 </QuickAnswer>
 
-Thinkific, Kajabi and Podia all host your course videos, take payment and deliver lessons, so the choice is mostly about monthly cost versus transaction fees, and how much marketing (email, websites, communities) you want in the same login. Prices below are as listed on each pricing page on October 7, 2026, in the dollar figures shown there. None of the three pages states a currency next to the plan price, so confirm the currency at checkout.
+Thinkific, Kajabi and Podia are the three hosted course platforms Canadian creators compare most often once a free tool such as Gumroad or Payhip stops being enough. All three host video lessons, take payment and run a community. They differ on price, on whether they take a cut of each sale, and on how much of your marketing stack they replace.
 
-If you have not built a course yet, start with [the online course side hustle guide](/side-hustles/online-course-side-hustle-canada/) and [the reality of digital products](/side-hustles/digital-products-reality-canada/). Lower-cost ways to sell files are in [Teachable vs Gumroad vs Payhip](/side-hustles/teachable-vs-gumroad-vs-payhip-canada/).
+Prices below are from each pricing page on October 14, 2026. The pages show prices with a bare "$"; this comparison treats them as US dollars, which is how these platforms bill most accounts, and converts at the Bank of Canada rate of 1.4222 CAD per USD for October 13, 2026. See the caveat section before budgeting.
+
+Background: [starting an online course in Canada](/side-hustles/online-course-side-hustle-canada/), [the realities of digital products](/side-hustles/digital-products-reality-canada/), and the lighter-weight [Teachable vs Gumroad vs Payhip](/side-hustles/teachable-vs-gumroad-vs-payhip-canada/).
 
 ## How do Thinkific, Kajabi and Podia compare?
 
-Podia is cheapest, Thinkific balances price and course features, and Kajabi costs the most but bundles the most marketing tools.
+Thinkific is course-first with a low entry price, Kajabi is an all-in-one business platform at a premium price, and Podia is a simple creator storefront whose cheapest plan charges a percentage of sales.
 
 <ComparisonTable
   caption="Thinkific vs Kajabi vs Podia"
-  checked="October 7, 2026"
+  checked="October 14, 2026"
   items={[
     {
       name: "Thinkific",
       program: "thinkific",
-      bestFor: "A serious first course with quizzes, certificates and cohorts",
-      pricing: "Basic $40/mo yearly ($54 monthly); Start $82 ($109); Grow $164 ($219)",
+      bestFor: "A first paid course with room to add cohorts and memberships",
+      pricing: "Basic $40/mo annual ($54 monthly); Start $82 ($109); Grow $164 ($219)",
       pricingUrl: "https://www.thinkific.com/pricing/",
-      canada: "Founded in Vancouver; Thinkific Payments listed at 2.9% processing",
-      pros: ["Unlimited courses on every plan", "30-day free trial"],
-      cons: ["No free plan", "Certificates, payment plans and bundles start at Start"],
+      canada: "Founded in Vancouver; prices treated as USD here",
+      pros: ["Unlimited courses on Basic", "Abandoned-cart emails and custom domain from Basic"],
+      cons: ["Memberships, payment plans and certificates need Start", "Thinkific branding until Grow"],
     },
     {
       name: "Kajabi",
       program: "kajabi",
-      bestFor: "Established creators who want courses, email, site and community in one",
-      pricing: "Basic $143/mo yearly ($179 monthly); Growth $199 ($249); Pro $399 ($499)",
+      bestFor: "Creators who want course, email, website and funnels in one bill",
+      pricing: "Basic $143/mo annual ($179 monthly); Growth $199 ($249); Pro $399 ($499)",
       pricingUrl: "https://kajabi.com/pricing",
-      canada: "Sells to Canadian creators; currency not stated beside the price",
-      pros: ["States no revenue sharing on its plans", "Basic includes 5 products, 2,500 contacts, a website and a community"],
-      cons: ["Most expensive entry price here", "Basic caps you at 5 products"],
+      canada: "Processing fees vary by country; see Kajabi's fee page",
+      pros: ["0% revenue share and unlimited email sends", "2,500 contacts on Basic; no per-seat pricing"],
+      cons: ["Highest entry price", "Affiliate program and cohort courses need Growth"],
     },
     {
       name: "Podia",
       program: "podia",
-      bestFor: "Low-cost launch of a course plus downloads and email",
-      pricing: "Mover $42/mo ($504/yr) + 5% fees; Shaker $84 ($1,008/yr); Earthquaker $150 ($1,800/yr)",
+      bestFor: "Low-volume creators selling a few downloads and a course",
+      pricing: "Mover $42/mo yearly + 5% fees; Shaker $84; Earthquaker $150",
       pricingUrl: "https://www.podia.com/pricing",
-      canada: "Sells to Canadian creators; processor fees are separate",
-      pros: ["Lowest entry price here", "Email included (100 subscribers on Mover, 500 on Shaker)"],
-      cons: ["5% transaction fee on Mover", "Small included email lists"],
+      canada: "Sales tax handling for 230 countries and 20+ currencies",
+      pros: ["Courses, downloads, coaching and community on every plan", "14-day trial with no credit card"],
+      cons: ["5% fee on Mover", "Email capped at 100 / 500 / 1,000 subscribers by plan"],
     },
   ]}
 />
 
-## Which course platform is cheapest for a first course?
+## What does each plan cost in Canadian dollars?
 
-Podia's Mover plan has the lowest sticker price at $42 a month billed yearly, but it adds a 5% transaction fee. Thinkific Basic is $40 a month billed yearly and Thinkific says sellers using its built-in Thinkific Payments (listed at 2.9% processing) avoid the extra third-party gateway fee. Kajabi's cheapest plan is $143 a month billed yearly.
+| Plan | Annual billing ($/mo) | ≈ CAD/mo annual | Month to month ($) | ≈ CAD/mo monthly |
+| --- | --- | --- | --- | --- |
+| Thinkific Basic | $40 | $56.89 | $54 | $76.80 |
+| Thinkific Start | $82 | $116.62 | $109 | $155.02 |
+| Thinkific Grow | $164 | $233.24 | $219 | $311.46 |
+| Kajabi Basic | $143 | $203.37 | $179 | $254.57 |
+| Kajabi Growth | $199 | $283.02 | $249 | $354.13 |
+| Kajabi Pro | $399 | $567.46 | $499 | $709.68 |
+| Podia Mover | $42 | $59.73 | not shown | — |
+| Podia Shaker | $84 | $119.46 | not shown | — |
+| Podia Earthquaker | $150 | $213.33 | not shown | — |
 
-### Illustrative example: when do Podia's 5% fees outgrow Shaker?
+Annual prices are as displayed on each page on October 14, 2026. Thinkific and Kajabi monthly prices are derived from each page's stated annual saving (for example, Thinkific Basic "save $173 by billing annually": $40 + $173 ÷ 12 ≈ $54; Kajabi Basic "save $432/year": $143 + $36 = $179). Podia's page showed yearly billing only. CAD = USD × 1.4222 ([Bank of Canada](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/), October 13, 2026).
 
-Assumed numbers, not a quote: compare Podia Mover and Shaker for a creator selling a $100 course.
+### What sits on each plan
 
-- Mover vs Shaker price gap: $84 − $42 = $42 a month (yearly billing).
-- Mover's 5% fee on one $100 sale: $5.
-- Break-even: $42 ÷ $5 = 8.4, so at roughly 9 or more $100 sales a month, Shaker costs less.
+- **Thinkific Basic:** unlimited courses, one community, up to five digital products, checkout with order bumps and coupons, abandoned-cart emails, custom domain. **Start** adds live cohorts and coaching, certificates, assignments, bundles, payment plans and memberships. **Grow** removes Thinkific branding and adds API access, invoicing and phone support.
+- **Kajabi Basic:** courses, coaching, memberships, website, community, unlimited emails, landing pages and funnels, 2,500 contacts. **Growth** adds cohort courses, advanced automations, an affiliate program, 25,000 contacts and a discounted Kajabi Payments rate. **Pro** adds a branded app and 100,000 contacts. Extra contacts cost $125 a month per 25,000.
+- **Podia Mover:** 50 products, 500 videos, 25 spaces, 100 email subscribers and a 5% transaction fee. **Shaker** removes the fee and raises limits to 150 products and 500 subscribers, adding affiliates, upsells, PayPal and Zapier. **Earthquaker** is unlimited products with 1,000 subscribers.
 
-Payment processor fees apply on both plans. The course price is an assumption for the arithmetic.
+## What do transaction and processing fees add?
+
+Two layers of fees apply to every sale:
+
+1. **Platform fee.** Podia Mover takes 5%. Thinkific and Kajabi state no revenue share; Kajabi notes an extra processing fee if you use a third-party processor where Kajabi Payments is offered.
+2. **Card processing.** Podia's FAQ cites 2.9% + 30¢ through Stripe or PayPal. Stripe's standard Canadian rate is 2.9% + C$0.30. Thinkific and Kajabi run their own payments products whose rates vary by country.
+
+For a like-for-like comparison, the examples below apply 2.9% + C$0.30 to every platform. On a C$100 course that is **C$3.20** per sale, plus **C$5.00** on Podia Mover.
+
+## What would each cost at three sales levels?
+
+**Illustrative example.** Assumed: a C$100 course, all sales processed at 2.9% + C$0.30, annual billing, and the cheapest plan that fits. Sourced: plan prices and Podia's 5% fee. The heavy level moves Thinkific to Start for payment plans and keeps Podia on Shaker, which caps email at 500 subscribers.
+
+| Level | Sales/month (revenue) | Thinkific | Kajabi | Podia |
+| --- | --- | --- | --- | --- |
+| Light | 5 (C$500) | Basic $56.89 + $16.00 = **$72.89** | Basic $203.37 + $16.00 = **$219.37** | Mover $59.73 + $16.00 + $25.00 = **$100.73** |
+| Medium | 30 (C$3,000) | Basic $56.89 + $96.00 = **$152.89** | Basic $203.37 + $96.00 = **$299.37** | Shaker $119.46 + $96.00 = **$215.46** |
+| Heavy | 150 (C$15,000) | Start $116.62 + $480.00 = **$596.62** | Basic $203.37 + $480.00 = **$683.37** | Shaker $119.46 + $480.00 = **$599.46** |
+
+Math: processing = sales × $3.20 (5 × 3.20 = 16; 30 × 3.20 = 96; 150 × 3.20 = 480). At the medium level, Podia Mover would have cost $59.73 + $96 + $150 = $305.73, so Shaker is cheaper. At the heavy level, Kajabi's gap narrows to about $87 a month, and it also replaces a separate email tool, which the other two only partly do.
+
+### Break-even: when does Podia Shaker beat Mover?
+
+The plan gap is $119.46 − $59.73 = $59.73 a month in CAD. Mover's 5% on a C$100 sale is $5. So $59.73 ÷ $5 ≈ 11.9: at 12 or more C$100 sales a month, Shaker costs less. For a C$50 product the break-even doubles to about 24 sales.
 
 ## Who should pick Thinkific, Kajabi or Podia?
 
 | If you… | Lean toward | Why |
 | --- | --- | --- |
-| Are testing a first course on a tight budget | <AffiliateLink program="podia" label="Podia" /> | Lowest monthly price, email included |
-| Want quizzes, certificates and live cohorts | <AffiliateLink program="thinkific" label="Thinkific" /> | Course features are the core product |
-| Already earn from courses and want one tool for site, email and community | <AffiliateLink program="kajabi" label="Kajabi" /> | Bundles marketing tools |
-| Only sell PDFs or templates | See [Teachable vs Gumroad vs Payhip](/side-hustles/teachable-vs-gumroad-vs-payhip-canada/) | Cheaper for files |
-| Sell many products at modest volume | Podia Shaker or Thinkific Start | No platform transaction fee |
+| Are launching your first paid course | <AffiliateLink program="thinkific" label="Thinkific Basic" /> | Lowest full-platform price, unlimited courses |
+| Want courses, email, website and funnels in one place | <AffiliateLink program="kajabi" label="Kajabi" /> | Replaces several tools, unlimited email sends |
+| Sell a handful of downloads and one small course | <AffiliateLink program="podia" label="Podia Mover" /> | Low base price while sales are few |
+| Sell more than about 12 C$100 products a month on Podia | Podia Shaker | Removes the 5% fee |
+| Plan memberships or payment plans | Thinkific Start or Kajabi | Both include them; Thinkific Basic does not |
+| Sell seats to companies | Thinkific Grow | Group orders, B2B sales and invoicing |
+| Want to run an affiliate program | Kajabi Growth or Podia Shaker | Both list affiliate marketing |
 
-## What should Canadian course creators check before choosing?
+## Common mistakes when choosing a course platform
 
-- **Total cost, not the headline.** Add monthly price, platform fees and processor fees.
-- **Currency.** If the platform bills in USD, your monthly cost in CAD moves with the exchange rate.
-- **GST/HST on digital sales.** Once you pass the $30,000 small supplier threshold you generally need to register; see [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/) and the [CRA's registration page](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html).
-- **Migration.** Moving students later is work; pick a platform you can live with for a year.
-- **Trial timing.** Build the course outline before you start a 14- or 30-day trial.
+- **Paying for Kajabi before validating the course.** Pre-sell on a cheaper plan first; see [course funnel red flags](/side-hustles/course-funnel-red-flags-canada/).
+- **Ignoring the 5% fee.** It looks small until sales pick up.
+- **Forgetting the email tool.** Thinkific and Podia have limited email; budget for a separate tool if your list grows past Podia's caps.
+- **Paying monthly by default.** Annual billing saves 25% on Thinkific and 20% on Kajabi.
+- **Locking content in.** Keep source videos and worksheets in your own storage so you can migrate.
 
-## Which guides help you build and sell the course?
+## The caveat: currency and fast-changing plans
 
-Read [course funnel red flags](/side-hustles/course-funnel-red-flags-canada/) before buying anyone's launch program, and [ebook publishing](/side-hustles/ebook-publishing-side-hustle-canada/) or [Notion templates](/side-hustles/notion-templates-side-hustle-canada/) for smaller first products. For recording lessons, see [Descript vs Riverside](/side-hustles/descript-vs-riverside-canada/).
+None of the three pricing pages showed a currency label when checked from Canada; this comparison assumes US dollars and converts at 1.4222. If your account bills in Canadian dollars, use the listed figure directly. Your card may also add a foreign-transaction fee. Plan names, limits and prices change frequently (Kajabi was running a time-limited launch offer on October 14, 2026), so confirm on the live page before you buy.
+
+## How are course sales taxed in Canada?
+
+Course revenue is generally business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and platform subscriptions and processing fees are generally deductible; record USD charges in CAD at the rate on the payment date. Once your worldwide taxable sales pass $30,000 in four consecutive calendar quarters, you generally must register for and charge GST/HST ([CRA guidance](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html)). Sales to non-residents can be zero-rated under specific rules. See [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/). This is general information, not tax advice.
+
+## Related guides
+
+Compare [Teachable vs Gumroad vs Payhip](/side-hustles/teachable-vs-gumroad-vs-payhip-canada/), and see [Notion templates](/side-hustles/notion-templates-side-hustle-canada/) and [ebook publishing](/side-hustles/ebook-publishing-side-hustle-canada/) for other digital products. Recording lessons? Read [Descript vs Riverside](/side-hustles/descript-vs-riverside-canada/).
 
 <Faq
   items={[
     {
       question: "Does Thinkific have a free plan?",
-      answer: "No. Thinkific's pricing FAQ says it has no free plan and offers a 30-day free trial instead. Basic was listed at $40 a month billed yearly or $54 monthly on October 7, 2026.",
+      answer: "No paid-course free plan was listed on October 14, 2026. Thinkific Basic was $40 a month billed annually, about C$56.89 at the Bank of Canada rate, or about $54 month to month, and the page offers a free trial.",
     },
     {
-      question: "Does Podia charge transaction fees?",
-      answer: "Podia charges a 5% transaction fee on the Mover plan and no Podia fees on Shaker or Earthquaker, according to its pricing page. Payment processor fees are separate on every plan.",
+      question: "How much does Kajabi cost in Canada?",
+      answer: "Kajabi listed Basic at $143 a month billed annually ($1,716 a year), Growth at $199 and Pro at $399 on October 14, 2026. Treated as US dollars at 1.4222, Basic is about C$203.37 a month. Monthly billing is $179, $249 and $499.",
     },
     {
-      question: "How much does Kajabi cost?",
-      answer: "Kajabi's pricing page listed Basic at $143 a month billed yearly ($179 monthly), Growth at $199 ($249) and Pro at $399 ($499) on October 7, 2026, with a 14-day trial.",
+      question: "Does Podia take a cut of sales?",
+      answer: "On the Mover plan Podia charges a 5% transaction fee; Shaker and Earthquaker have no Podia fees. Stripe or PayPal processing, cited by Podia as 2.9% + 30 cents, applies on every plan.",
     },
     {
-      question: "Is Thinkific a Canadian company?",
-      answer: "Yes. Thinkific Labs Inc. was founded in 2012 in Vancouver, British Columbia, and is listed on the Toronto Stock Exchange, according to its own site.",
+      question: "Which course platform is cheapest for a first course?",
+      answer: "In the illustrative example with five C$100 sales a month, Thinkific Basic totals about C$72.89 with processing, Podia Mover about C$100.73 and Kajabi Basic about C$219.37. Thinkific Basic is cheapest at low volume.",
     },
     {
-      question: "Do I charge GST/HST on online course sales?",
-      answer: "Once your worldwide taxable sales pass $30,000 in four consecutive quarters you generally must register and charge GST/HST on taxable supplies. Rules for sales to non-residents differ. This is general information, not tax advice.",
+      question: "Do I need to charge GST/HST on online courses?",
+      answer: "Once your worldwide taxable sales pass $30,000 in four consecutive calendar quarters you generally must register and charge GST/HST on taxable supplies. Rules for sales to non-residents differ. This is general information, not tax advice.",
     },
   ]}
 />
