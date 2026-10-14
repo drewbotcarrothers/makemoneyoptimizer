@@ -1,7 +1,9 @@
 ---
 title: "Calendly vs Square Appointments vs Acuity for Tutors and Coaches in Canada"
-description: "Booking tools for Canadian tutors, coaches and trainers: Calendly vs Square Appointments vs Acuity Scheduling on free plans, 2026 prices, payments and CAD vs USD."
+description: "Booking tools for Canadian tutors, coaches and trainers: Calendly vs Square Appointments vs Acuity Scheduling with USD prices converted to CAD, card fees, costs at 3 session volumes and who should pick which (checked October 14, 2026)."
 pubDate: 2026-10-07
+updatedDate: 2026-10-14
+updateNote: "Expanded with CAD conversions at the Bank of Canada rate, payment fees for each tool, monthly costs at three session volumes, a feature table and a client-booking example"
 category: online-freelancing
 tags: [tutoring, tools, freelancing, clients]
 featured: false
@@ -16,9 +18,15 @@ sources:
   - title: "Acuity Scheduling pricing"
     url: "https://acuityscheduling.com/pricing"
     publisher: "Acuity Scheduling (Squarespace)"
-  - title: "Square fees in Canada"
-    url: "https://squareup.com/ca/en/payments/our-fees"
-    publisher: "Square"
+  - title: "Stripe pricing (Canada)"
+    url: "https://stripe.com/en-ca/pricing"
+    publisher: "Stripe"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
+  - title: "Form T2125, Statement of Business or Professional Activities"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
+    publisher: "Canada Revenue Agency"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
@@ -28,119 +36,184 @@ import QuickAnswer from '../../components/QuickAnswer.astro';
 
 <QuickAnswer>
 
-- **Short answer:** Calendly's free plan is enough to stop email back-and-forth for one type of session; Square Appointments' free plan adds card payments in CAD; Acuity suits tutors who sell packages, intake forms and paid sessions and are fine paying in USD.
-- **Calendly:** Free (one event type); Standard $10 per seat a month billed yearly; USD only.
-- **Square Appointments (Canada):** Free for one location; Plus $35 and Premium $85 a month.
-- **Acuity:** Starter $16 USD a month billed yearly ($20 monthly); 7-day trial.
+- **Short answer:** Calendly Free is enough if you offer one kind of session and take e-Transfers; Square Appointments Free is the cheapest way to take card payment at booking in Canadian dollars; Acuity suits tutors and coaches who sell packages, use intake forms and are fine paying in US dollars.
+- **Calendly (October 14, 2026):** Free with one event type. Standard US$10 per seat a month billed yearly (about C$14.22); Teams US$16 (about C$22.76). Enterprise is listed as USD only.
+- **Square Appointments (Canada):** Free for one location; Plus C$35 and Premium C$85 a month per location. Online booking payments cost 2.8% + 30¢.
+- **Acuity Scheduling:** Starter US$16 a month billed annually (about C$22.76), Standard US$27 (about C$38.40), Premium US$49 (about C$69.69). 7-day trial, no free plan.
 
 </QuickAnswer>
 
-Calendly, Square Appointments and Acuity Scheduling are the three booking tools Canadian tutors, music teachers, coaches and personal trainers compare most often. All three give clients a link to pick a time; they differ on whether you can take payment at booking, how many session types you can offer for free, and whether you pay in CAD or USD. Prices are from each pricing page on October 7, 2026.
+Calendly, Square Appointments and Acuity Scheduling are the three booking tools Canadian tutors, music teachers, coaches and personal trainers compare most often. All three give clients a link to pick a time. They differ on whether you can take payment at booking, how many session types you get for free, what happens on a no-show, and whether you pay in Canadian or US dollars.
 
-This builds on [starting online tutoring](/side-hustles/online-tutoring-side-hustle-canada/), [in-person tutoring](/side-hustles/in-person-tutoring-side-hustle-canada/), and [personal training](/side-hustles/personal-training-side-hustle-canada/). Gear for online sessions is in [online tutoring gear](/side-hustles/online-tutoring-gear-canada/).
+Every price below comes from the vendor's pricing page on October 14, 2026. US-dollar prices are converted at the Bank of Canada rate of 1.4222 CAD per USD published for October 13, 2026. Your card issuer will add its own foreign-exchange margin on USD subscriptions, so the real charge is usually a little higher.
+
+This builds on [starting online tutoring](/side-hustles/online-tutoring-side-hustle-canada/), [in-person tutoring](/side-hustles/in-person-tutoring-side-hustle-canada/) and [personal training](/side-hustles/personal-training-side-hustle-canada/). Gear for online sessions is in [online tutoring gear](/side-hustles/online-tutoring-gear-canada/).
 
 ## How do Calendly, Square Appointments and Acuity compare?
 
-Calendly is the simplest scheduler, Square Appointments bundles card payments in CAD, and Acuity has the most tutor-friendly extras such as packages and intake forms.
+Calendly is the simplest scheduler, Square Appointments bundles card payments and no-show fees in CAD, and Acuity has the most tutor-friendly extras such as packages, memberships and intake forms.
 
 <ComparisonTable
-  caption="Calendly vs Square Appointments vs Acuity for tutors"
-  checked="October 7, 2026"
+  caption="Calendly vs Square Appointments vs Acuity for tutors and coaches"
+  checked="October 14, 2026"
   items={[
     {
       name: "Calendly",
       program: "calendly",
-      bestFor: "Tutors who just need clients to pick a time",
-      pricing: "Free (1 event type, 1 calendar); Standard $10/seat/mo billed yearly; Teams $16",
+      bestFor: "Tutors and coaches who just need clients to pick a time",
+      pricing: "Free (1 event type, 1 calendar); Standard US$10/seat/mo billed yearly (≈ C$14.22); Teams US$16 (≈ C$22.76)",
       pricingUrl: "https://calendly.com/pricing",
-      canada: "Available in USD only, per its pricing page",
-      pros: ["Free plan with a customizable booking page", "Standard adds reminders and Stripe/PayPal payments"],
-      cons: ["Free plan allows one event type", "USD billing"],
+      canada: "Billed in US dollars",
+      pros: ["Free plan with a customizable booking page", "Standard adds unlimited event types, reminders and Stripe/PayPal payments"],
+      cons: ["Free plan allows one event type and no payments", "USD billing"],
     },
     {
       name: "Square Appointments",
       program: "square",
       bestFor: "Tutors and trainers who want booking plus card payments in CAD",
-      pricing: "Free $0 (one location); Plus $35/mo; Premium $85/mo",
+      pricing: "Free C$0 (one location); Plus C$35/mo per location; Premium C$85/mo per location",
       pricingUrl: "https://squareup.com/ca/en/appointments/pricing",
-      canada: "Canadian pricing; Square's Canadian card rates (2.5% in person, 2.8% + 30¢ online)",
-      pros: ["Free plan with payments built in", "Works with a Square reader for in-person lessons"],
-      cons: ["Card fees on every paid booking", "More retail-style than tutoring-style"],
+      canada: "Canadian plan prices and Canadian processing rates",
+      pros: ["Free plan includes text and email reminders and online booking", "Works with a Square reader for in-person lessons"],
+      cons: ["Card fees on every paid booking", "Cancellation fees, waitlist, classes and Google Calendar sync need Plus"],
     },
     {
       name: "Acuity Scheduling",
       program: "acuity",
       bestFor: "Tutors who sell packages, use intake forms and take prepayment",
-      pricing: "Starter $16/mo yearly ($20 monthly); Standard $27 ($34); Premium $49 ($61)",
+      pricing: "Starter US$16/mo annual (≈ C$22.76); Standard US$27 (≈ C$38.40); Premium US$49 (≈ C$69.69)",
       pricingUrl: "https://acuityscheduling.com/pricing",
-      canada: "Prices in USD, excluding taxes",
-      pros: ["Intake forms; packages and memberships from Standard", "Payments via Stripe, Square or PayPal; automatic time-zone conversion"],
-      cons: ["No free plan (7-day trial)", "USD billing"],
+      canada: "All prices in USD, excluding taxes",
+      pros: ["Custom intake forms on every plan", "Packages, memberships and gift certificates from Standard"],
+      cons: ["No free plan (7-day trial, no card needed)", "Text reminders only from Standard"],
     },
   ]}
 />
 
-## Which booking tool is cheapest for a Canadian tutor?
+## What does each plan cost in Canadian dollars?
 
-Calendly Free and Square Appointments Free both cost $0; the difference is that Square's plan lets clients pay by card at booking (you pay Square's processing fee), while Calendly's free plan schedules but does not collect payment. Acuity starts at $16 USD a month on yearly billing.
+Calendly and Acuity both offer a discount for paying yearly: Calendly says yearly billing saves up to 20%, and Acuity says annual billing saves 20%. The table uses the yearly-billing monthly price each page displayed.
 
-### Illustrative example
+| Plan | Listed price (Oct 14, 2026) | ≈ CAD per month | ≈ CAD per year |
+| --- | --- | --- | --- |
+| Calendly Free | $0 | $0 | $0 |
+| Calendly Standard | US$10/seat/mo, billed yearly | $14.22 | $170.66 |
+| Calendly Teams | US$16/seat/mo, billed yearly | $22.76 | $273.06 |
+| Square Appointments Free | C$0 (one location) | $0 | $0 |
+| Square Appointments Plus | C$35/mo per location | $35.00 | $420.00 |
+| Square Appointments Premium | C$85/mo per location | $85.00 | $1,020.00 |
+| Acuity Starter | US$16/mo, billed annually | $22.76 | $273.06 |
+| Acuity Standard | US$27/mo, billed annually | $38.40 | $460.79 |
+| Acuity Premium | US$49/mo, billed annually | $69.69 | $836.25 |
 
-Assumed numbers, not a quote: a tutor charges $50 a session, collected online at booking through Square, for 30 sessions a month.
+CAD = USD × 1.4222 ([Bank of Canada](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/), October 13, 2026). Square's prices are already in Canadian dollars. Acuity notes its prices exclude applicable taxes.
 
-- Fee per session at 2.8% + $0.30: $50 × 2.8% + $0.30 = $1.70.
-- Monthly fees: 30 × $1.70 = $51.00.
-- Collecting by Interac e-Transfer instead avoids card fees but takes more admin.
+## What do payments cost on each tool?
 
-The session price and volume are assumptions for the arithmetic; check Square's live rates.
+The subscription is only half the bill once clients pay at booking. Each tool routes payments differently:
+
+| Payment type | Square Appointments (Canada) | Calendly Standard or Acuity via Stripe (Canada) |
+| --- | --- | --- |
+| Online prepayment at booking | 2.8% + 30¢ | 2.9% + C$0.30 |
+| No-show or late-cancel fee charged to card | 2.8% + 30¢ (Plus and Premium) | Depends on the tool's settings and Stripe |
+| In-person credit (tap, dip, swipe) | 2.5% | Not a Calendly or Acuity feature |
+| In-person debit (chip and PIN or tap) | 0.75% + 7¢ | Not a Calendly or Acuity feature |
+| Manually keyed or card on file | 3.3% + 15¢ | Stripe's rates apply |
+
+Square rates are from [Square Appointments' Canadian pricing page](https://squareup.com/ca/en/appointments/pricing) and are the same on all three plans; Stripe's standard Canadian card rate is from [Stripe's Canadian pricing page](https://stripe.com/en-ca/pricing), which also lists extra charges for international cards. Calendly Standard connects Stripe or PayPal; Acuity lists Stripe, Square, PayPal and Venmo, so an Acuity user could also route through Square.
+
+On a C$50 session paid online, Square takes $50 × 2.8% + $0.30 = **$1.70** and Stripe takes $50 × 2.9% + $0.30 = **$1.75**.
+
+## What would each cost at three session volumes?
+
+**Illustrative example.** Assumed: one tutor charging C$50 a session, every session prepaid online by card, and Calendly and Acuity payments going through Stripe. Sourced: plan prices and processing rates above. Light uses free plans where they work; heavy assumes the tutor sells packages and wants no-show fees, which moves Square to Plus and Acuity to Standard.
+
+| Volume | Sessions per month | Calendly | Square Appointments | Acuity |
+| --- | --- | --- | --- | --- |
+| Light | 8 | Standard $14.22 + fees $14.00 = **$28.22** (or Free + e-Transfer = $0) | Free + fees $13.60 = **$13.60** | Starter $22.76 + fees $14.00 = **$36.76** |
+| Medium | 40 | Standard $14.22 + fees $70.00 = **$84.22** | Free + fees $68.00 = **$68.00** | Starter $22.76 + fees $70.00 = **$92.76** |
+| Heavy | 120 | Standard $14.22 + fees $210.00 = **$224.22** | Plus $35.00 + fees $204.00 = **$239.00** | Standard $38.40 + fees $210.00 = **$248.40** |
+
+Math: fees = sessions × per-session fee ($1.70 Square, $1.75 Stripe). At 120 sessions, 120 × $1.70 = $204.00 and 120 × $1.75 = $210.00. Across all three tools, card fees outweigh the subscription once volume grows, so the cheapest tool depends mostly on whether you need Square Plus features. Collecting by Interac e-Transfer avoids card fees entirely but means chasing payments yourself.
+
+## Which features matter most for tutors and coaches?
+
+| Feature | Calendly Free | Calendly Standard | Square Free | Square Plus | Acuity Starter | Acuity Standard |
+| --- | --- | --- | --- | --- | --- | --- |
+| Session types | 1 | Unlimited | Multiple services | Multiple services | Unlimited | Unlimited |
+| Calendars connected | 1 | 6 | Unlimited staff calendars | + Google Calendar sync | 1 | 6 |
+| Payment at booking | No | Stripe, PayPal | Yes | Yes | Yes | Yes |
+| Reminders | No | Automated | Text and email | Text and email + confirmations | Email | Email + text |
+| Cancellation or no-show fees | No | No built-in fee | No | Yes | Deposits | Deposits |
+| Group classes | No | Multi-person event types | No | Class booking | Check Acuity's plan grid | Check Acuity's plan grid |
+| Packages and memberships | No | No | No | No | No | Yes |
+| Intake forms | No | No | No | No | Yes | Yes |
+
+Features are summarised from each pricing page on October 14, 2026; Calendly's comparison grid lists multi-person meeting types from Standard and reminders only on paid plans. Check the vendor's own grid before you rely on a single feature.
 
 ## Who should pick Calendly, Square Appointments or Acuity?
 
 | If you… | Lean toward | Why |
 | --- | --- | --- |
 | Offer one type of session and take e-Transfers | <AffiliateLink program="calendly" label="Calendly Free" /> | $0 and simple |
-| Want card payment at booking in CAD | <AffiliateLink program="square" label="Square Appointments" /> | Free plan with payments built in |
-| Sell 10-lesson packages and need intake forms | <AffiliateLink program="acuity" label="Acuity Scheduling" /> | Intake forms, prepayment, and packages on Standard |
-| Teach students across time zones | Acuity or Calendly | Automatic time-zone handling |
-| Teach mostly in person at the client's home | Square Appointments | Pairs with a card reader |
+| Want card payment at booking in CAD | <AffiliateLink program="square" label="Square Appointments" /> | Free plan with payments and reminders built in |
+| Lose income to no-shows | Square Appointments Plus | Card on file and cancellation fees |
+| Sell 10-lesson packages and need intake forms | <AffiliateLink program="acuity" label="Acuity Scheduling" /> | Intake forms on Starter, packages on Standard |
+| Teach students across time zones | Acuity or Calendly | Automatic time-zone conversion for clients |
+| Teach mostly in person at the client's home | Square Appointments | Pairs with a card reader at 2.5% credit or 0.75% + 7¢ debit |
+| Run group classes (music, fitness, test prep) | Square Plus | One-time and recurring class booking |
 
-## What mistakes do tutors make with booking tools?
+### Worked example: a coach picking a tool
 
-- **No cancellation policy in the booking page.** Put your 24-hour rule where clients agree to it.
-- **Taking card payments without pricing in fees.** Build the fee into the rate or use e-Transfer.
-- **Too many session types.** Start with one or two.
-- **Forgetting buffers.** Add travel or reset time between sessions.
-- **Sharing a personal calendar.** Connect a separate calendar for tutoring.
+**Illustrative example.** Assumed: a career coach sells single 60-minute calls at C$120 and a three-call bundle, and about a quarter of new clients book from the United States.
 
-## Which tax rules apply to tutoring income and booking tools?
+1. **Packages rule out Calendly and Square Free.** Acuity Standard (≈ C$38.40 a month billed annually) is the first plan in this comparison that sells packages.
+2. **Time zones favour Acuity or Calendly.** Both convert times automatically for clients.
+3. **Fees.** One C$120 call through Stripe costs $120 × 2.9% + $0.30 = $3.78; Stripe's page lists added charges for international cards, so US clients cost more to process.
+4. **Result.** Acuity Standard fits, at about $38.40 a month plus processing. A coach who drops the bundle could use Calendly Standard at about $14.22.
 
-Tutoring income is generally business income on Form T2125, and booking software and processing fees are deductible business expenses. Some tutoring and educational services have specific GST/HST treatment; see [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/) and confirm your situation. This is not tax advice.
+## Common mistakes with booking tools
+
+- **No cancellation policy on the booking page.** Put your 24-hour rule where clients agree to it before they book.
+- **Taking card payments without pricing in fees.** Build roughly 3% into the rate or offer e-Transfer.
+- **Too many session types.** Start with one or two so clients do not stall.
+- **No buffers.** Add travel or reset time between sessions.
+- **Sharing a personal calendar.** Connect a separate calendar for tutoring or coaching.
+- **Paying monthly when you'll stay a year.** Both USD tools discount yearly billing.
+
+## The caveat: USD prices and plan changes
+
+Calendly and Acuity bill in US dollars, so the Canadian cost moves with the exchange rate and your card's foreign-transaction fee, typically a few percent on top of the Bank of Canada conversion used here. All three vendors also change plan names, limits and feature placement often. The tables above reflect the pricing pages on October 14, 2026; recheck the live page before you commit, particularly for features (such as text reminders) that depend on your country.
+
+## How are booking tools and tutoring income taxed?
+
+Tutoring and coaching income is generally business income reported on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html). Subscriptions to booking software and card-processing fees used for the business are generally deductible expenses, and a USD subscription is recorded in Canadian dollars at the rate on the day you paid. Once your taxable revenue passes $30,000 in four consecutive calendar quarters you generally need to register for GST/HST, although some tutoring and instruction is exempt; see [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/). Foreign vendors like Calendly and Acuity may also charge you GST/HST on the subscription. This is general information, not tax advice.
 
 ## Which guides sit next to this comparison?
 
-Read [online tutoring pricing](/side-hustles/online-tutoring-pricing-canada/), [your first online tutoring client](/side-hustles/online-tutoring-first-client-canada/) and [teaching English online](/side-hustles/teach-english-online-side-hustle-canada/). Home-service operators should compare [Jobber vs Housecall Pro vs Square Appointments](/side-hustles/jobber-vs-housecall-pro-vs-square-appointments-canada/).
+Read [online tutoring pricing](/side-hustles/online-tutoring-pricing-canada/), [your first online tutoring client](/side-hustles/online-tutoring-first-client-canada/) and [teaching English online](/side-hustles/teach-english-online-side-hustle-canada/). Home-service operators should compare [Jobber vs Housecall Pro vs Square Appointments](/side-hustles/jobber-vs-housecall-pro-vs-square-appointments-canada/), and anyone automating reminders and intake can read [Zapier vs Make](/side-hustles/zapier-vs-make-canada/).
 
 <Faq
   items={[
     {
       question: "Is Calendly free for tutors?",
-      answer: "Calendly's Free plan, listed on October 7, 2026, includes one event type, one calendar connection, one-on-one scheduling and a customizable booking page. Payments through Stripe or PayPal and reminders come with paid plans, which are billed in USD.",
+      answer: "Calendly's Free plan, checked October 14, 2026, includes one event type, one calendar connection, one-on-one scheduling and a customizable booking page. Payments through Stripe or PayPal and automated reminders need Standard, US$10 per seat a month billed yearly (about C$14.22).",
     },
     {
       question: "Can Square Appointments take payment when a student books?",
-      answer: "Yes. Square Appointments works with Square payments, and its Canadian pricing page lists a Free plan for a single location. Square charges its standard Canadian processing fees, such as 2.8% + 30 cents for online payments.",
+      answer: "Yes. Square Appointments' Free plan for a single location takes prepayment through the Square Online booking site at 2.8% + 30 cents per online payment in Canada. Charging no-show or late-cancellation fees needs Plus at C$35 a month.",
     },
     {
-      question: "How much does Acuity Scheduling cost?",
-      answer: "Acuity's pricing page listed Starter at $16 USD a month billed yearly or $20 monthly, Standard at $27 or $34, and Premium at $49 or $61 on October 7, 2026, with a 7-day free trial.",
+      question: "How much does Acuity Scheduling cost in Canadian dollars?",
+      answer: "Acuity listed Starter at US$16, Standard at US$27 and Premium at US$49 a month billed annually on October 14, 2026, which is about C$22.76, C$38.40 and C$69.69 at the Bank of Canada rate of 1.4222. There is a 7-day free trial and no free plan.",
     },
     {
       question: "Which booking tool is best for in-person tutoring?",
-      answer: "Square Appointments suits in-person lessons because it pairs with a Square card reader and has a free plan in CAD. Calendly or Acuity work well if students mostly pay by e-Transfer or prepay online.",
+      answer: "Square Appointments suits in-person lessons because it pairs with a Square card reader, charging 2.5% on in-person credit and 0.75% + 7 cents on debit, and its free plan is priced in CAD. Calendly or Acuity work well if students mostly prepay online or by e-Transfer.",
     },
     {
       question: "Are booking app fees tax deductible?",
-      answer: "Software and payment processing fees used for your tutoring business are generally deductible on Form T2125. This is general information, not tax advice.",
+      answer: "Booking software subscriptions and card-processing fees used for your tutoring or coaching business are generally deductible on Form T2125. Record USD charges in Canadian dollars at the rate on the payment date. This is general information, not tax advice.",
     },
   ]}
 />
