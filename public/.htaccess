@@ -38,6 +38,7 @@ RewriteRule ^side-hustles/rideshare-driving-mistakes-canada/?$ /side-hustles/rid
 RewriteRule ^side-hustles/etsy-shop-mistakes-canada/?$ /side-hustles/etsy-shop-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/snow-removal-mistakes-canada/?$ /side-hustles/snow-removal-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/snow-removal-gear-toolkit-canada/?$ /side-hustles/snow-removal-tools-canada/ [R=301,L]
+RewriteRule ^side-hustles/side-hustles-for-retired-professionals-canada/?$ /side-hustles/side-hustles-for-retirees-canada/ [R=301,L]
 
 # Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
 # RewriteCond %{HTTPS} !=on
