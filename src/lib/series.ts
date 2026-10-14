@@ -385,9 +385,7 @@ Object.assign(EXTRA_MEMBERS, {
   'side-hustles-for-nurses-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-accountants-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-tradespeople-canada': [{ series: 'by-skill', role: 'start' }],
-  'side-hustles-for-graphic-designers-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-software-developers-canada': [{ series: 'by-skill', role: 'start' }],
-  'side-hustles-for-writers-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-bilingual-french-english-speakers-canada': [{ series: 'by-skill', role: 'start' }],
 });
 
