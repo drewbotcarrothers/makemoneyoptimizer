@@ -275,9 +275,7 @@ Object.assign(EXTRA_MEMBERS, {
   'side-hustle-casual-vs-sole-proprietorship-canada': [{ series: 'growth', role: 'start' }],
   'how-to-raise-side-hustle-rates-canada': [{ series: 'growth', role: 'pricing' }],
   'first-year-side-hustle-price-review-canada': [{ series: 'growth', role: 'pricing' }],
-  'track-which-side-hustles-pay-canada': [{ series: 'growth', role: 'guide' }],
   'when-to-quit-a-gig-app-canada': [{ series: 'growth', role: 'guide' }],
-  'side-hustle-waitlist-canada': [{ series: 'growth', role: 'guide' }],
   'add-second-service-side-hustle-canada': [{ series: 'growth', role: 'guide' }],
   'hiring-help-side-hustle-canada': [{ series: 'growth', role: 'guide' }],
 });
@@ -365,11 +363,9 @@ Object.assign(EXTRA_MEMBERS, {
 Object.assign(SERIES_NAMES, { 'starter-kit': 'Side hustle starter kit' });
 Object.assign(EXTRA_MEMBERS, {
   'side-hustle-business-plan-canada': [{ series: 'starter-kit', role: 'start' }],
-  'side-hustle-client-acquisition-system-canada': [{ series: 'starter-kit', role: 'first' }],
   'side-hustle-pricing-worksheet-canada': [{ series: 'starter-kit', role: 'pricing' }],
   'first-year-side-hustle-money-mistakes-canada': [{ series: 'starter-kit', role: 'mistakes' }],
   'side-hustle-admin-tools-checklist-canada': [{ series: 'starter-kit', role: 'guide' }],
-  'quarterly-side-hustle-money-check-in-canada': [{ series: 'starter-kit', role: 'tax' }],
 });
 // Starter-kit posts in taxes-money that are planning or tools, not tax, stay out of the 'taxes' series.
 NOT_TAX_SERIES.add('side-hustle-business-plan-canada');
