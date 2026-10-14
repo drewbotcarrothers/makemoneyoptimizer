@@ -692,7 +692,6 @@ Object.assign(EXTRA_MEMBERS, {
     { series: 'online-course', role: 'guide' },
     { series: 'reality-checks', role: 'guide' },
   ],
-  'report-side-hustle-scam-canada': [{ series: 'reality-checks', role: 'guide' }],
   'notary-commissioner-side-hustle-canada': [{ series: 'by-province', role: 'guide' }],
   'dividend-income-reality-canada': [{ series: 'reality-checks', role: 'guide' }],
   'skipthedishes-courier-review-canada': [
