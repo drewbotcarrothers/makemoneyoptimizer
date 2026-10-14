@@ -250,7 +250,6 @@ Object.assign(EXTRA_MEMBERS, {
   'register-sole-proprietorship-canada': [{ series: 'business-admin', role: 'start' }],
   'how-to-get-cra-business-number-canada': [{ series: 'business-admin', role: 'guide' }],
   'business-bank-account-side-hustle-canada': [{ series: 'business-admin', role: 'guide' }],
-  'separate-business-personal-money-canada': [{ series: 'business-admin', role: 'guide' }],
   'how-to-invoice-clients-canada': [{ series: 'business-admin', role: 'guide' }],
   'freelance-contract-canada': [{ series: 'business-admin', role: 'guide' }],
   'side-hustle-insurance-canada': [{ series: 'business-admin', role: 'guide' }],
@@ -264,7 +263,6 @@ Object.assign(EXTRA_MEMBERS, {
 const NOT_TAX_SERIES = new Set([
   'register-sole-proprietorship-canada',
   'business-bank-account-side-hustle-canada',
-  'separate-business-personal-money-canada',
   'how-to-invoice-clients-canada',
   'freelance-contract-canada',
   'side-hustle-insurance-canada',
