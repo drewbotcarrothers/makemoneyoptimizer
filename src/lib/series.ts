@@ -588,7 +588,6 @@ Object.assign(EXTRA_MEMBERS, {
     { series: 'platform-reviews', role: 'guide' },
   ],
   'paid-focus-groups-canada': [{ series: 'beermoney', role: 'guide' }],
-  'ai-training-assessment-tips-canada': [{ series: 'ai-training', role: 'mistakes' }],
   'ai-training-vs-studies-vs-freelancing-canada': [
     { series: 'ai-training', role: 'compare' },
     { series: 'freelance-writing', role: 'compare' },
