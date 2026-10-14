@@ -596,7 +596,6 @@ Object.assign(EXTRA_MEMBERS, {
     { series: 'freelance-writing', role: 'compare' },
   ],
   'tiktok-creator-rewards-canada': [{ series: 'tiktok-reels', role: 'guide' }],
-  'mystery-shopping-companies-canada': [{ series: 'mystery-shopping', role: 'guide' }],
   'phone-side-hustles-canada': [
     { series: 'beermoney', role: 'guide' },
     { series: 'by-situation', role: 'guide' },
