@@ -1,7 +1,9 @@
 ---
 title: "Zapier vs Make for Canadian Freelancers and Automation Side Hustles"
-description: "Zapier vs Make for Canadian freelancers, VAs and automation consultants: free plans, 2026 starting prices, how tasks and credits work, and which one clients expect."
+description: "Zapier vs Make for Canadian freelancers, VAs and automation consultants: Zapier's USD task tiers converted to CAD, Make's credit model, costs at 3 usage levels, and who should pick which (checked October 14, 2026)."
 pubDate: 2026-10-07
+updatedDate: 2026-10-14
+updateNote: "Expanded with Zapier's full task-tier pricing in CAD, Make's credit rules, costs at three usage levels, a who-should-pick table and a client pricing example"
 category: tech-ai
 tags: [automation, zapier, tools, freelancing, virtual-assistant]
 featured: false
@@ -13,6 +15,15 @@ sources:
   - title: "Make pricing"
     url: "https://www.make.com/en/pricing"
     publisher: "Make"
+  - title: "Daily exchange rates"
+    url: "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"
+    publisher: "Bank of Canada"
+  - title: "Form T2125, Statement of Business or Professional Activities"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
+    publisher: "Canada Revenue Agency"
+  - title: "PIPEDA in brief"
+    url: "https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/"
+    publisher: "Office of the Privacy Commissioner of Canada"
 ---
 
 import AffiliateLink from '../../components/AffiliateLink.astro';
@@ -22,105 +33,187 @@ import QuickAnswer from '../../components/QuickAnswer.astro';
 
 <QuickAnswer>
 
-- **Short answer:** learn Zapier first if you want to sell automation to small-business clients, because it is the tool many of them already pay for; learn Make when you need branching, multi-step scenarios on a tighter budget.
-- **Zapier:** Free plan with 100 tasks a month and two-step Zaps; Professional starting from $19.99 a month; Team from $69.
-- **Make:** Free plan with 1,000 credits a month, 2 active scenarios and a 15-minute minimum interval; see Make's site for paid prices.
-- **Canada:** Zapier's pricing page lets you switch the display to CAD.
+- **Short answer:** learn Zapier first if you want to sell automation to small-business clients, because it is the tool many of them already pay for; learn Make when you need branching, multi-step scenarios and want more free runs to practise on.
+- **Zapier (October 14, 2026):** Free with 100 tasks a month and two-step Zaps. Professional from US$19.99 a month billed annually (750 tasks), about C$28.43, or US$29.99 billed monthly (about C$42.65). Team from US$69 a month annually (2,000 tasks).
+- **Make:** Free with 1,000 credits a month. Paid plans are Core, Pro, Teams and Enterprise, priced by credit volume on Make's pricing page.
+- **Canada:** Zapier bills in CAD on request, converting its USD price at the exchange rate on the day you pay.
 
 </QuickAnswer>
 
-Zapier and Make connect apps so that one event (a form submission, a paid invoice, a new email) triggers actions elsewhere. Canadian freelancers use them for their own admin, and a growing number sell automation setups to clients. Prices are as listed on October 7, 2026.
+Zapier and Make connect apps so that one event (a form submission, a paid invoice, a new email) triggers actions somewhere else. Canadian freelancers use them for their own admin, and a growing number sell automation setups and monthly care plans to clients. Every price below is from the vendor's pricing page on October 14, 2026, and US dollars are converted at the Bank of Canada rate of 1.4222 CAD per USD published for October 13, 2026.
 
-This builds on [the Zapier automation side hustle](/side-hustles/zapier-automation-side-hustle-canada/), [Zapier automation pricing](/side-hustles/zapier-automation-pricing-canada/) and [Apps Script automation](/side-hustles/apps-script-automation-side-hustle-canada/).
+This comparison sits beside [the Zapier automation side hustle](/side-hustles/zapier-automation-side-hustle-canada/), [Zapier automation pricing](/side-hustles/zapier-automation-pricing-canada/) and [Apps Script automation](/side-hustles/apps-script-automation-side-hustle-canada/).
 
 ## How do Zapier and Make compare?
 
-Zapier is simpler and more widely used by small businesses; Make gives more room on its free plan and a visual builder for complex flows.
+Zapier is simpler and more widely known among small businesses; Make gives more room on its free plan and a visual canvas for complex flows.
 
 <ComparisonTable
   caption="Zapier vs Make"
-  checked="October 7, 2026"
+  checked="October 14, 2026"
   items={[
     {
       name: "Zapier",
       program: "zapier",
       bestFor: "Selling simple, reliable automations to small-business clients",
-      pricing: "Free (100 tasks/mo); Professional from $19.99/mo; Team from $69/mo",
+      pricing: "Free (100 tasks/mo); Professional from US$19.99/mo annual (750 tasks); Team from US$69/mo annual (2,000 tasks)",
       pricingUrl: "https://zapier.com/pricing",
-      canada: "Pricing page offers a CAD currency display",
-      pros: ["Unlimited Zaps, Tables and Forms on Free", "Webhooks and premium apps on Professional"],
-      cons: ["Free plan limited to two-step Zaps", "Costs rise with task volume"],
+      canada: "Can be billed in CAD, converted from USD at the payment-day rate",
+      pros: ["Unlimited Zaps, Tables and Forms on Free", "Triggers, filters, paths and Formatter steps do not use tasks", "14-day Professional trial with no credit card"],
+      cons: ["Free plan limited to two-step Zaps and 15-minute polling", "Monthly billing costs 50% more than annual"],
     },
     {
       name: "Make",
       program: "make",
-      bestFor: "Multi-step, branching workflows on a budget",
-      pricing: "Free (1,000 credits/mo, 2 active scenarios); paid plans: see current price",
+      bestFor: "Multi-step, branching workflows and learning on a $0 budget",
+      pricing: "Free (1,000 credits/mo); Core, Pro and Teams priced by credit volume",
       pricingUrl: "https://www.make.com/en/pricing",
-      canada: "Available to Canadian users; check checkout currency",
-      pros: ["Generous free credits for testing", "Visual scenario builder for complex logic"],
-      cons: ["Free plan runs at most every 15 minutes", "Steeper learning curve for clients"],
+      canada: "Available to Canadian users; card, ACH and Google Pay accepted on paid plans",
+      pros: ["Ten times the free monthly runs of Zapier", "Router and error-handler modules use no credits"],
+      cons: ["Scenarios stop when credits run out", "Unused credits expire at the end of the term"],
     },
   ]}
 />
 
-## Is Zapier or Make cheaper?
+### How the billing units differ
 
-On the free tier, Make gives more room: 1,000 credits a month against Zapier's 100 tasks. Paid plans depend on volume. Zapier Professional starts from $19.99 a month at its lowest task tier, and Make's paid prices are on its pricing page. Model your expected monthly runs before choosing.
+- **Zapier task:** one successful action step. Triggers, polling and Zapier's built-in tools (Formatter, Filter, Paths, Delay, Looping, Digest, Storage, Tables, Forms) cost nothing. Failed steps are not counted.
+- **Make credit:** one module action, including reads, searches and built-in transformations. Most actions use 1 credit; some AI features use more. Routers and error handlers are free.
 
-### Illustrative example: pricing an automation for a client
+So a "new form entry → add to CRM → send Slack message → create invoice draft" flow uses **3 tasks** on Zapier (the trigger is free) and roughly **4 credits** on Make (the trigger module reads data). Count your flows this way before comparing price tags.
 
-Assumed numbers, not a quote: you build a lead-intake automation for a local business.
+## What does Zapier cost in Canadian dollars?
 
-- Setup: 4 hours × $75 an hour = $300.
-- Monthly care plan: 1 hour × $75 = $75, plus the client pays their own Zapier or Make plan.
-- Keeping the subscription in the client's name avoids you carrying their software cost.
+Zapier sells each plan as a plan level plus a monthly task tier. Annual billing is 33% off monthly, and the task allowance still resets monthly.
 
-Rates are assumptions; see [Zapier automation pricing](/side-hustles/zapier-automation-pricing-canada/) for how Canadian freelancers set them.
+| Tasks per month | Pro annual (USD/mo) | Pro annual (≈ CAD/mo) | Pro monthly (USD) | Pro monthly (≈ CAD) | Team annual (USD/mo) |
+| --- | --- | --- | --- | --- | --- |
+| 100 | Free | Free | Free | Free | — |
+| 750 | $19.99 | $28.43 | $29.99 | $42.65 | — |
+| 1,500 | $39.00 | $55.47 | $58.50 | $83.20 | — |
+| 2,000 | $49.00 | $69.69 | $73.50 | $104.53 | $69.00 |
+| 5,000 | $89.00 | $126.58 | $133.50 | $189.86 | $119.00 |
+| 10,000 | $129.00 | $183.46 | $193.50 | $275.20 | $169.00 |
+| 20,000 | $189.00 | $268.80 | $283.50 | $403.19 | $249.00 |
+
+USD prices from [Zapier's pricing page](https://zapier.com/pricing), October 14, 2026; CAD = USD × 1.4222 ([Bank of Canada](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/), October 13, 2026). Your actual CAD charge moves with the exchange rate at each billing date.
+
+**Overage rules:** with pay-per-task turned on, extra tasks bill at 1.25× your base task rate on annual plans and 2.5× on monthly plans, and everything pauses at 3× your allowance. With it turned off, Zaps stop until the next cycle.
+
+## What does Make cost?
+
+Make's pricing page (October 14, 2026) confirms a **Free plan with 1,000 credits a month**, 1 MB of data storage and one data store. Paid plans are **Core, Pro and Teams**, plus Enterprise. Their prices scale with the credit volume you pick and were not shown in the page text when checked; the live figures are on [Make's pricing page](https://www.make.com/en/pricing). Rules that are published there:
+
+- Extra credits are sold in bundles of 1,000 or 10,000 at a price set by your plan, and Core, Pro and Teams can auto-buy 10,000 credits before you run out.
+- Credits expire at the end of the term (monthly or annual).
+- Annual prepayment is cheaper than monthly.
+- Organisations under 20 employees can apply for a Start-up Plan at 50% off Business.
+- If you run out, scenarios stop; incoming webhooks queue up to your storage limit and run once credits are added.
+
+## What would each cost at three usage levels?
+
+**Illustrative example.** Assumed: each automation run uses 3 Zapier tasks or 4 Make credits (the CRM flow above). Sourced: Zapier tier prices and the Make Free allowance.
+
+| Usage level | Runs per month | Zapier tasks needed | Cheapest Zapier fit (annual) | Make credits needed | Make fit |
+| --- | --- | --- | --- | --- | --- |
+| Light (your own admin) | 30 | 90 | Free (but two-step only) or Pro 750 at ≈ C$28.43/mo | 120 | Free |
+| Medium (one small client) | 200 | 600 | Pro 750 at ≈ C$28.43/mo | 800 | Free, if it fits 1,000 credits and the free limits |
+| Heavy (agency, several clients) | 1,500 | 4,500 | Pro 5,000 at ≈ C$126.58/mo | 6,000 | Paid Core or Pro tier; check the 10,000-credit price |
+
+Math: runs × steps = units. 200 × 3 = 600 tasks (fits 750); 1,500 × 3 = 4,500 tasks (fits 5,000). Zapier's Free tier would cover 90 tasks, but this flow has three actions, and Free allows only one trigger and one action, so a light user with multi-step needs still lands on Pro or on Make Free.
 
 ## Who should pick Zapier or Make?
 
 | If you… | Lean toward | Why |
 | --- | --- | --- |
-| Are a VA automating client admin | <AffiliateLink program="zapier" label="Zapier" /> | Clients often already have it |
-| Build complex, branching flows | <AffiliateLink program="make" label="Make" /> | Visual builder, generous free credits |
-| Need instant triggers on a free plan | Test both | Make Free has a 15-minute minimum interval |
-| Want to learn on $0 | Make Free | More monthly credits to experiment |
+| Are a VA automating client admin | <AffiliateLink program="zapier" label="Zapier" /> | Clients often already pay for it, and handover is easier |
+| Build complex, branching flows | <AffiliateLink program="make" label="Make" /> | Visual canvas; routers cost no credits |
+| Want to learn on $0 | Make Free | 1,000 credits a month against Zapier's 100 tasks |
+| Need multi-step flows for one small client | Zapier Pro 750 or Make Free | Compare your step count with each allowance |
+| Use lots of filters and formatting | Zapier | Filter, Paths and Formatter steps use no tasks |
 | Sell maintenance retainers | Whichever the client already pays for | Less migration risk |
+| Need a 14-day full-feature trial for a demo | Zapier | Professional trial with no credit card |
+
+### Ten automations Canadian freelancers sell
+
+1. Website form → CRM → welcome email (lead intake).
+2. Paid invoice in Stripe or Square → receipt → bookkeeping row.
+3. Calendly or Square booking → reminder text and email.
+4. New Google review → Slack alert (for a local business).
+5. Shopify order → Google Sheet → low-stock alert.
+6. Job application form → applicant tracker → interview booking link.
+7. Newsletter sign-up → tag in the email tool → onboarding sequence.
+8. Contract signed → project board card → kickoff email.
+9. Expense receipt email → cloud folder → bookkeeping app.
+10. Weekly digest of sales or leads → owner's inbox every Monday.
+
+## How do you price an automation for a client?
+
+**Illustrative example.** Assumed numbers, not a quote: you build a lead-intake automation for a local business.
+
+- Setup: 4 hours × $75 an hour = $300.
+- Monthly care plan: 1 hour × $75 = $75.
+- The client pays their own Zapier Pro 750 plan (≈ C$28.43 a month billed annually, October 14, 2026) or Make Free.
+- Your first-year revenue: $300 + (12 × $75) = $1,200. Your software cost: $0, because the subscription is in the client's name.
+
+Rates are assumptions; [Zapier automation pricing](/side-hustles/zapier-automation-pricing-canada/) covers how Canadian freelancers set them.
+
+### A copyable discovery checklist
+
+```text
+1. Which tools do you already pay for (CRM, email, invoicing, calendar)?
+2. Which task do you repeat more than 5 times a week?
+3. How many times a month does it happen? (sets the task/credit tier)
+4. Who should get an alert when something fails?
+5. What personal information moves between tools?
+6. Whose account will own the automation and the subscription?
+```
 
 ## What automation mistakes do freelancers make?
 
-- **Building in your own account.** Build in the client's account so they own it.
-- **No error alerts.** Turn on failure notifications.
-- **Ignoring task or credit burn.** A loop can use a month's allowance quickly.
-- **Moving personal data carelessly.** Know what client data flows where; Canadian privacy law (PIPEDA) applies to many businesses.
+- **Building in your own account.** Build in the client's account so they own the work and the bill.
+- **No error alerts.** Set failure notifications; Zapier's paid plans add autoreplay and per-Zap error settings.
+- **Ignoring task or credit burn.** A loop can eat a month's allowance; Make scenarios stop when credits run out.
+- **Paying monthly by default.** Zapier's monthly prices are 50% higher than annual ones for the same tier.
+- **Moving personal data carelessly.** Many Canadian businesses fall under [PIPEDA](https://www.priv.gc.ca/en/privacy-topics/privacy-laws-in-canada/the-personal-information-protection-and-electronic-documents-act-pipeda/pipeda_brief/); know what client data flows where.
 - **No documentation.** Leave a one-page map of every automation.
+
+## What should you keep in mind before choosing?
+
+Prices are what each vendor showed on October 14, 2026, and CAD figures are conversions, not Zapier's CAD checkout price. Make's paid tier prices were not shown in the page text when checked, so open its pricing page and enter your credit volume for a live quote.
+
+## How are automation tools and income taxed in Canada?
+
+Software you use to earn business income is generally a deductible expense on [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html), and fees billed in US dollars are converted to Canadian dollars for your records. Income from setup and care plans is self-employment income; see [how to report side hustle income to CRA](/side-hustles/report-side-hustle-income-cra-canada/), [GST/HST registration](/side-hustles/gst-hst-registration-side-hustle-canada/) and [USD platform income](/side-hustles/usd-platform-income-tax-canada/).
+
+This is not tax, legal or insurance advice.
 
 ## Which guides sit next to this comparison?
 
-Read [your first Zapier automation client](/side-hustles/zapier-automation-first-client-canada/), [Zapier automation startup costs](/side-hustles/zapier-automation-startup-costs-canada/), [virtual assistant side hustle](/side-hustles/virtual-assistant-side-hustle-canada/) and [AI consulting](/side-hustles/ai-consulting-side-hustle-canada/).
+Read [your first Zapier automation client](/side-hustles/zapier-automation-first-client-canada/), [Zapier automation startup costs](/side-hustles/zapier-automation-startup-costs-canada/), [the virtual assistant side hustle](/side-hustles/virtual-assistant-side-hustle-canada/) and [AI consulting](/side-hustles/ai-consulting-side-hustle-canada/).
 
 <Faq
   items={[
     {
       question: "Is Zapier free?",
-      answer: "Zapier has a Free plan listed at $0 a month with 100 tasks a month, two-step Zaps, and unlimited Zaps, Tables and Forms as of October 7, 2026. Professional started from $19.99 a month and Team from $69.",
+      answer: "Yes. Zapier's Free plan includes 100 tasks a month, two-step Zaps, 15-minute polling and unlimited Zaps, Tables and Forms (October 14, 2026). Professional starts at US$19.99 a month billed annually for 750 tasks, about C$28.43.",
     },
     {
       question: "What does Make's free plan include?",
-      answer: "Make's pricing page listed a Free plan with 1,000 credits a month, up to 2 active scenarios and a 15-minute minimum interval between runs on October 7, 2026.",
+      answer: "Make's Free plan includes 1,000 credits a month, 1 MB of data storage and one data store, according to its pricing page on October 14, 2026. Most module actions use 1 credit.",
     },
     {
-      question: "Can I see Zapier prices in Canadian dollars?",
-      answer: "Yes. Zapier's pricing page has a currency selector that includes CAD alongside USD and other currencies.",
+      question: "Can I pay for Zapier in Canadian dollars?",
+      answer: "Yes. Zapier bills in 19 currencies including CAD. It converts the USD price at the exchange rate on the payment date, so the CAD amount can change between invoices.",
+    },
+    {
+      question: "Which is cheaper, Zapier or Make?",
+      answer: "For learning and light use, Make Free gives 1,000 credits a month against Zapier's 100 tasks. For a flow with three actions run 200 times a month, Zapier Pro 750 costs about C$28.43 a month billed annually, while Make Free may cover it at 800 credits.",
     },
     {
       question: "Should automation subscriptions be in my name or the client's?",
-      answer: "Usually the client's. They own the account and pay the subscription, and you bill for setup and maintenance. That keeps access and data with the business.",
-    },
-    {
-      question: "Are Zapier and Make subscriptions tax deductible?",
-      answer: "Software you use to earn business income is generally deductible on Form T2125. This is general information, not tax advice.",
+      answer: "Usually the client's. They own the account and pay the subscription, and you bill for setup and maintenance, which keeps access and data with the business.",
     },
   ]}
 />
+
