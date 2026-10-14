@@ -388,7 +388,6 @@ Object.assign(EXTRA_MEMBERS, {
   'side-hustles-for-graphic-designers-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-software-developers-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-writers-canada': [{ series: 'by-skill', role: 'start' }],
-  'side-hustles-for-parents-with-admin-experience-canada': [{ series: 'by-skill', role: 'start' }],
   'side-hustles-for-bilingual-french-english-speakers-canada': [{ series: 'by-skill', role: 'start' }],
 });
 
@@ -673,10 +672,6 @@ Object.assign(EXTRA_MEMBERS, {
   'group-fitness-instructor-side-hustle-canada': [{ series: 'personal-training', role: 'guide' }],
   'paid-house-sitting-canada': [{ series: 'dog-walking', role: 'guide' }],
   'party-rental-side-hustle-canada': [{ series: 'event-staffing', role: 'guide' }],
-  'pet-waste-spring-cleanup-canada': [
-    { series: 'pet-waste-removal', role: 'seasonal' },
-    { series: 'spring', role: 'seasonal' },
-  ],
   'best-spring-side-hustles-canada': [{ series: 'spring', role: 'start' }],
   'micro-saas-side-hustle-canada': [{ series: 'by-skill', role: 'guide' }],
   'apps-script-automation-side-hustle-canada': [{ series: 'zapier-automation', role: 'guide' }],
