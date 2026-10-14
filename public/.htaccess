@@ -40,6 +40,7 @@ RewriteRule ^side-hustles/snow-removal-mistakes-canada/?$ /side-hustles/snow-rem
 RewriteRule ^side-hustles/snow-removal-gear-toolkit-canada/?$ /side-hustles/snow-removal-tools-canada/ [R=301,L]
 RewriteRule ^side-hustles/side-hustles-for-graphic-designers-canada/?$ /side-hustles/graphic-design-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/side-hustles-for-writers-canada/?$ /side-hustles/freelance-writing-side-hustle-canada/ [R=301,L]
+RewriteRule ^side-hustles/ai-training-assessment-tips-canada/?$ /side-hustles/ai-data-annotation-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/side-hustles-for-retired-professionals-canada/?$ /side-hustles/side-hustles-for-retirees-canada/ [R=301,L]
 RewriteRule ^side-hustles/side-hustles-for-parents-with-admin-experience-canada/?$ /side-hustles/side-hustles-for-stay-at-home-parents-canada/ [R=301,L]
 RewriteRule ^side-hustles/pet-waste-spring-cleanup-canada/?$ /side-hustles/pet-waste-removal-side-hustle-canada/ [R=301,L]
