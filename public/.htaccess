@@ -8,6 +8,31 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.makemoneyoptimizer\.com$ [NC]
 RewriteRule ^(.*)$ https://makemoneyoptimizer.com/$1 [R=301,L]
 
+# Duplicate /index.html URLs -> clean directory URL (THE_REQUEST so the internal DirectoryIndex lookup does not loop)
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html[\s?] [NC]
+RewriteRule ^(.*/)?index\.html$ /$1 [R=301,L,NC]
+
+# Legacy WordPress-era URLs (Google still lists some as indexed; checked 2026-10-19 via URL Inspection + Wayback CDX)
+# Old posts -> closest current guide
+RewriteRule ^best-wordpress-themes-for-a-new-blog/?$ /side-hustles/seo-blogging-startup-costs-canada/ [R=301,L,NC]
+RewriteRule ^choosing-the-perfect-niche-for-your-new-blog/?$ /side-hustles/seo-blogging-side-hustle-canada/ [R=301,L,NC]
+RewriteRule ^how-to-start-a-blog-step-by-step/?$ /side-hustles/seo-blogging-side-hustle-canada/ [R=301,L,NC]
+RewriteRule ^10-common-blogging-mistakes-beginners-make-and-how-to-avoid-them/?$ /side-hustles/seo-blogging-side-hustle-canada/ [R=301,L,NC]
+RewriteRule ^shared-vs-managed-hosting-for-a-new-wordpress-blog/?$ /side-hustles/hostinger-vs-namecheap-vs-wordpress-com-canada/ [R=301,L,NC]
+# Old archives and pages
+RewriteRule ^category/blogging/?$ /side-hustles/category/content-creation/ [R=301,L,NC]
+RewriteRule ^category/.*$ /side-hustles/categories/ [R=301,L,NC]
+RewriteRule ^tag/.*$ /side-hustles/ [R=301,L,NC]
+RewriteRule ^author/.*$ /about/andrew/ [R=301,L,NC]
+RewriteRule ^blog(/.*)?$ /side-hustles/ [R=301,L,NC]
+RewriteRule ^contacts/?$ /contact/ [R=301,L,NC]
+RewriteRule ^feed/?$ /rss.xml [R=301,L,NC]
+# Old WordPress / Rank Math sitemaps -> current sitemap index
+RewriteRule ^(sitemap|sitemap_index|post-sitemap|page-sitemap|category-sitemap|post_tag-sitemap|author-sitemap|wp-sitemap[a-z0-9-]*)\.xml$ /sitemap-index.xml [R=301,L,NC]
+# WordPress system paths and old uploads are gone for good
+RewriteRule ^(wp-admin|wp-includes|wp-content|wp-json)(/.*)?$ - [G,L,NC]
+RewriteRule ^(wp-login|xmlrpc|wp-cron|wp-signup|wp-trackback)\.php$ - [G,L,NC]
+
 # Retired v1 sample posts -> permanent redirects
 RewriteRule ^side-hustles/task-scams-canada/?$ /side-hustles/side-hustle-scams-canada/ [R=301,L]
 RewriteRule ^side-hustles/fake-cheque-overpayment-scams-canada/?$ /side-hustles/side-hustle-scams-canada/ [R=301,L]
