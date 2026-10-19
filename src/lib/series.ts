@@ -147,6 +147,7 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
   ],
   'best-winter-side-hustles-canada': [{ series: 'fall-winter', role: 'start' }],
   'learn-to-skate-coach-side-hustle-canada': [{ series: 'fall-winter', role: 'guide' }],
+  'skate-sharpening-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
   'browser-extension-mobile-app-side-hustle-canada': [{ series: 'by-skill', role: 'guide' }],
   'clothing-alterations-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
   'mobile-tire-swap-side-hustle-canada': [
