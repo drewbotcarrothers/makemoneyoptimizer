@@ -146,6 +146,11 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
     { series: 'fall-winter', role: 'seasonal' },
   ],
   'best-winter-side-hustles-canada': [{ series: 'fall-winter', role: 'start' }],
+  'holiday-photo-booth-rental-side-hustle-canada': [
+    { series: 'fall-winter', role: 'seasonal' },
+    { series: 'event-photography', role: 'guide' },
+  ],
+  'firewood-delivery-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
   'christmas-light-installation-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
   'holiday-gift-wrapping-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
   'halloween-side-hustles-canada': [{ series: 'fall-winter', role: 'seasonal' }],
