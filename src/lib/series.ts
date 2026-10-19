@@ -146,6 +146,11 @@ export const EXTRA_MEMBERS: Record<string, { series: string; role: SeriesRole }[
     { series: 'fall-winter', role: 'seasonal' },
   ],
   'best-winter-side-hustles-canada': [{ series: 'fall-winter', role: 'start' }],
+  'ski-snowboard-instructor-side-hustle-canada': [{ series: 'fall-winter', role: 'seasonal' }],
+  'professional-organizer-side-hustle-canada': [
+    { series: 'fall-winter', role: 'seasonal' },
+    { series: 'house-cleaning', role: 'guide' },
+  ],
   'holiday-photo-booth-rental-side-hustle-canada': [
     { series: 'fall-winter', role: 'seasonal' },
     { series: 'event-photography', role: 'guide' },
