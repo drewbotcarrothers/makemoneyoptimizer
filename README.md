@@ -62,7 +62,7 @@ Start with **[docs/WRITING-A-POST.md](docs/WRITING-A-POST.md)**, the authoritati
    - `/side-hustles`, article URLs, `/guides`, legal pages
    - `/robots.txt` and `/sitemap-index.xml`
    - `/rss.xml`
-6. `public/.htaccess` permanently redirects `www.makemoneyoptimizer.com` → `https://makemoneyoptimizer.com/` (matches `astro.config.mjs` `site`) and 301s any request that still arrives as HTTP to `https://%{HTTP_HOST}%{REQUEST_URI}`. Confirm Force HTTPS in the Hostinger panel as well if the CDN bypasses `.htaccess`.
+6. `public/.htaccess` permanently redirects `www.makemoneyoptimizer.com` → `https://makemoneyoptimizer.com/` (matches `astro.config.mjs` `site`). Confirm HTTPS and the same rule in the Hostinger panel if the CDN bypasses `.htaccess`.
 
 ### Notes for Hostinger
 
