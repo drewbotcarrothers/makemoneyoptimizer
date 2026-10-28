@@ -78,7 +78,8 @@ All marked `sample: true` in frontmatter:
 - **robots.txt:** allow all + sitemap URL.
 - **JSON-LD:** Organization + WebSite on all pages; Article on article pages; CollectionPage on hubs.
 - **RSS:** `/rss.xml` for content discovery.
-- **Internal linking:** articles cross-link; hubs link to each other; related/next-read blocks on articles.
+- **Internal linking:** articles cross-link; hubs link to each other; related/next-read blocks on articles. Indexed hubs and seasonal winners should link into guides and category clusters that Search Console has only discovered from the sitemap.
+- **Publishing pace (standing rule, 2026-10-28):** The 2026-10-28 Search Console review found about 468 sitemap URLs and most inspected pages still "Discovered - currently not indexed" or unknown. Until that crawl backlog clears, deepen existing indexed or near-indexed posts instead of publishing large batches of new thin guides.
 - **URLs:** clean slugs under `/side-hustles/[slug]/`; `trailingSlash: 'always'` (Apache serves directory-format pages at the slash URL, so every canonical, sitemap entry and internal link must end in `/`). Internal MDX links use the slash form, e.g. `[guide](/side-hustles/slug/)`.
 - **CWV-friendly:** minimal JS (mobile nav only), single CSS file with tokens, SVG icons/images with intrinsic dimensions, static HTML output.
 

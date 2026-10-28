@@ -85,6 +85,8 @@ const situations: Situation[] = [
       { slug: 'winter-pet-sitting-house-sitting-canada', why: 'Holiday travel creates pet and house sitting demand.' },
       { slug: 'seasonal-holiday-jobs-canada', why: 'Prefer a paycheque? Temporary retail, warehouse, and delivery roles.' },
       { slug: 'black-friday-boxing-day-reselling-canada', why: 'Resell sale deals only if the math works after fees.' },
+      { slug: 'snow-blower-buying-guide-canada', why: 'Buy a blower only after a shovel route is too slow.' },
+      { slug: 'backyard-rink-flooding-side-hustle-canada', why: 'Clearing and floods for neighbours who already own a rink.' },
     ],
   },
   {
@@ -282,7 +284,9 @@ const pageJsonLd = {
       ))}
 
       <h2 id="categories">Which side hustle categories can you browse?</h2>
-      <p>Each category hub lists every guide in that group, starting with the most popular beginner guides.</p>
+      <p>
+        Each category hub lists every guide in that group, starting with the most popular beginner guides. The full map is <a href="/side-hustles/categories/">all categories</a>, and the how-to landing page is <a href="/guides/">Guides</a>.
+      </p>
       <ul>
         {CATEGORIES.map((c) => (
           <li>
@@ -293,12 +297,7 @@ const pageJsonLd = {
 
       <h2 id="taxes">What tax basics apply to every side hustle in Canada?</h2>
       <p>
-        Side hustle income in Canada is generally taxable. Self-employment income is usually reported on
-        <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html">Form T2125</a>
-        with your return, and the
-        <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html">GST/HST small supplier test</a>
-        decides when you must register (rideshare drivers register from the first fare). These guides explain the
-        rest:
+        Side hustle income in Canada is generally taxable. Self-employment income is usually reported on <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html">Form T2125</a> with your return, and the <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html">GST/HST small supplier test</a> decides when you must register (rideshare drivers register from the first fare). A business that pays you fees, or a delivery app, may also send a slip or a platform report. Read <a href="/side-hustles/t4a-t5018-platform-slips-side-hustle-canada/">T4A, T5018 and platform slips</a> before you assume a missing slip means the income is optional. Filing tools are compared in <a href="/side-hustles/wealthsimple-tax-vs-turbotax-vs-hr-block-canada/">Wealthsimple Tax vs TurboTax vs H&amp;R Block</a>. These guides explain the rest:
       </p>
       <ul>
         {taxGuides.map((a) => (
@@ -316,6 +315,9 @@ const pageJsonLd = {
           <li><a href={a.href}>{a.title}</a></li>
         ))}
       </ul>
+      <p>
+        A pitch that asks you to pay for a job, a route, or a training kit is in <a href="/side-hustles/side-hustle-scams-canada/">side hustle scams</a>. Buying a machine before the first client is a separate decision: the <a href="/side-hustles/3d-printer-laser-engraver-buying-guide-canada/">3D printer and laser engraver buying guide</a> and the <a href="/side-hustles/snow-blower-buying-guide-canada/">snow blower buying guide</a> are the pages to read first. A blog’s hosting choice is <a href="/side-hustles/hostinger-vs-namecheap-vs-wordpress-com-canada/">Hostinger vs Namecheap vs WordPress.com</a>. Who writes these pages is <a href="/about/andrew/">Andrew</a>. The site overview is <a href="/about/">about</a>, and questions go to <a href="/contact/">contact</a>.
+      </p>
       <p>This is not tax, legal, or insurance advice.</p>
     </div>
   </section>

@@ -80,6 +80,11 @@ const collectionJsonLd = {
       <p class="eyebrow"><span aria-hidden="true">{category.emoji}</span> Category</p>
       <h1>{category.name}</h1>
       <p class="lead">{category.intro}</p>
+      {category.slug === 'gig-apps' && (
+        <p class="lead">
+          After you pick an app, read <a href="/side-hustles/uber-eats-vs-doordash-vs-skip-canada/">Uber Eats vs DoorDash vs Skip</a> and <a href="/side-hustles/t4a-t5018-platform-slips-side-hustle-canada/">T4A, T5018 and platform slips</a> before you file. The printable record list is the <a href="/free-side-hustle-tax-checklist/">free side hustle tax checklist</a>. Any onboarding message that asks you to pay for a route or a bag deposit outside the app is covered in <a href="/side-hustles/side-hustle-scams-canada/">side hustle scams</a>. The money rules live in <a href="/side-hustles/category/taxes-money/">Taxes &amp; Money</a>.
+        </p>
+      )}
       <p class="post-count">{countLabel} in this category</p>
     </div>
   </header>

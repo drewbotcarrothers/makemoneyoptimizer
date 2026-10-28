@@ -79,9 +79,10 @@ RewriteRule ^side-hustles/side-hustles-for-parents-with-admin-experience-canada/
 RewriteRule ^side-hustles/pet-waste-spring-cleanup-canada/?$ /side-hustles/pet-waste-removal-side-hustle-canada/ [R=301,L]
 RewriteRule ^side-hustles/mystery-shopping-companies-canada/?$ /side-hustles/mystery-shopping-side-hustle-canada/ [R=301,L]
 
-# Force HTTPS if available (Hostinger often handles this in panel; keep harmless)
-# RewriteCond %{HTTPS} !=on
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS if the request reaches Apache. Hostinger panel Force HTTPS is separate.
+# Clean 301 only; leave every other rewrite rule above and below unchanged.
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # If request has no extension and isn't a directory, try .html
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -5,6 +5,8 @@
 `src/components/*`, `astro.config.mjs`) and from the existing posts in `src/content/articles/`. If this file and
 the code disagree, the code wins, and this file should be fixed in the same PR.
 
+**Publishing pace (standing rule, 2026-10-28).** The 2026-10-28 Search Console review found about 468 sitemap URLs and most inspected pages still "Discovered - currently not indexed" or unknown to Google. Until that crawl backlog clears, deepen existing indexed or near-indexed posts instead of publishing large batches of new thin guides. Set `updatedDate` when the edit is material.
+
 Related docs: [CONTENT.md](../CONTENT.md) (tone, SEO, editorial checklist),
 [CONTENT-GENERATOR.md](./CONTENT-GENERATOR.md) (pillars × templates, what to write next),
 [AFFILIATE-PROGRAMS.md](./AFFILIATE-PROGRAMS.md) and [AFFILIATES.md](../AFFILIATES.md) (program status),
@@ -153,10 +155,11 @@ Only import `AffiliateLink` if you use it. (MDX allows unused imports, and all e
 4. AI-assistance note linking `/how-we-create-content/`.
 5. Tag chips.
 6. Ad slot (article top) → **your MDX body** → **Guide series box(es)** (see below) → **Sources** section (from `sources`) → **full `AffiliateDisclosure` block** (`id="affiliate-disclosure"`) at the **bottom of the article** (before the author box) → **Author box** → ad slot (article mid) → newsletter → **3 related posts** (same category scored first, then shared tags) with a "More in <Category>" link to the hub → trust note callout.
-7. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD. When `youtubeId` is set, the layout also adds a `VideoObject` (name and description from the post, `thumbnailUrl`, `uploadDate`, `duration`, `embedUrl`, `contentUrl`). `<YouTubeEmbed>` does not emit schema.
+7. JSON-LD: `BlogPosting` (author Andrew, dates, keywords from `tags`, section from category, `sameAs` from `authorSameAs` in `src/lib/site.ts`) and `BreadcrumbList`. The `Faq` component adds `FAQPage` JSON-LD. `<HowTo>` (`src/components/HowTo.astro`) adds `HowTo` JSON-LD **and** a visible "Steps at a glance" list. Use it only on a real procedure (3–8 steps whose text restates instructions already in the post). Do not put it on a roundup or listicle. When `youtubeId` is set, the layout also adds a `VideoObject` (name and description from the post, `thumbnailUrl`, `uploadDate`, `duration`, `embedUrl`, `contentUrl`). `<YouTubeEmbed>` does not emit schema. The author `sameAs` list includes the sister sites and `https://www.youtube.com/@MakeMoneyOptimizer`. The visible name stays "Andrew".
 
 So **do not** add in the body: an H1, a byline, dates, a "Sources" heading/list, an author bio, a "Related posts" block, a
-guide-series list, an affiliate disclosure, ad slots, or JSON-LD.
+guide-series list, an affiliate disclosure, ad slots, or hand-written JSON-LD. `<Faq>` and `<HowTo>` are the exceptions:
+they render visible content and emit their own schema.
 
 ### Guide series box (automatic)
 
