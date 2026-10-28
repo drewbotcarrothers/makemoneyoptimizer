@@ -26,8 +26,8 @@ export const AUTHOR = {
     { name: 'Canadian Optimizer', href: 'https://canadianoptimizer.com/' },
   ],
   youtube: {
-    name: 'Saving Optimizer on YouTube',
-    href: 'https://www.youtube.com/@SavingOptimizer',
+    name: 'Make Money Optimizer on YouTube',
+    href: 'https://www.youtube.com/@MakeMoneyOptimizer',
   },
 } as const;
 

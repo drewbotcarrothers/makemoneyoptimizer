@@ -321,6 +321,7 @@ Formula for Idea ID: `P{pillar:02d}-{template}` (use `P{pillar:03d}` once IDs ex
 
 - Don’t invent 2,000 unique “ideas” by hand.
 - Don’t publish Low-priority × Low-intent combos early.
+- **Don’t bulk-publish thin guides while the crawl backlog is open (standing rule, 2026-10-28).** The 2026-10-28 Search Console review found about 468 sitemap URLs, with most inspected pages still "Discovered - currently not indexed" or unknown to Google. Until that clears, deepen indexed or near-indexed posts (links, CRA notes, tables, Q&A, `updatedDate`) instead of shipping large new batches. Shallow listicles still do not count.
 - Don’t force Canada into posts where it’s fake — say “remote / global” and move on.
 - Don’t put affiliates only in a footer dump — place them where the reader is choosing a tool.
 - Don’t treat platforms (Fiverr, Upwork) as pillars — they are `{platform}` tokens inside templates.
