@@ -2,7 +2,8 @@
 title: "Square vs SumUp vs Shopify POS in Canada"
 description: "Choosing a card reader for markets, craft fairs or mobile services in Canada: Square vs SumUp vs Shopify POS reader prices, in-person card and Interac fees."
 pubDate: 2026-10-07
-updatedDate: 2026-10-22
+updatedDate: 2026-10-30
+updateNote: "Rechecked Square, SumUp and Shopify POS Canadian pricing on October 30, 2026 (Square instant transfers now 1.95%), and added a keep-per-$40-sale table and the Square vs SumUp debit break-even"
 category: reselling-ecommerce
 tags: [ecommerce, handmade, tools, local]
 featured: false
@@ -42,13 +43,14 @@ import QuickAnswer from '../../components/QuickAnswer.astro';
 <QuickAnswer>
 
 - **Short answer:** Square is the simplest low-cost start for most market sellers; SumUp's Go is a standalone terminal with a built-in data connection; Shopify POS makes sense if you already sell online on Shopify.
-- **In-person credit cards:** Square 2.5%; SumUp 2.50%; Shopify Basic 2.6% (as listed October 7, 2026).
+- **In-person credit cards:** Square 2.5%; SumUp 2.50%; Shopify Basic 2.6% (rechecked on each Canadian pricing page October 30, 2026).
 - **Interac debit:** Square 0.75% + 7¢; SumUp 0.90%.
 - **Hardware:** Square Reader $69; SumUp Go $125 (sale price, regularly $249); Shopify readers priced in its hardware store.
+- **Debit tie-break:** below about a $46.67 sale, SumUp's 0.90% debit fee is cheaper than Square's 0.75% + 7¢; above it, Square is cheaper (our arithmetic from the listed rates).
 
 </QuickAnswer>
 
-Square, SumUp and Shopify POS are the three card readers Canadian market vendors compare most, and for a weekend craft fair any of them will take tap, chip, Apple Pay and Google Pay. The differences that matter are the reader price, the fee on Interac debit (which many Canadian shoppers tap), whether you need a phone, and whether your online shop is already on Shopify. All prices below are CAD from each company's Canadian pages on October 7, 2026.
+Square, SumUp and Shopify POS are the three card readers Canadian market vendors compare most, and for a weekend craft fair any of them will take tap, chip, Apple Pay and Google Pay. The differences that matter are the reader price, the fee on Interac debit (which many Canadian shoppers tap), whether you need a phone, and whether your online shop is already on Shopify. All prices below are CAD from each company's Canadian pages, first checked October 7, 2026 and rechecked October 30, 2026 (Square's instant-transfer fee is now listed at 1.95%; the other rates were unchanged).
 
 For the selling side, see the [holiday market vendor guide](/side-hustles/holiday-market-vendor-guide-canada/), [a holiday Etsy or craft-market shop](/side-hustles/holiday-etsy-craft-market-shop-canada/) and [starting an Etsy shop](/side-hustles/etsy-shop-side-hustle-canada/). Booth gear is covered in [craft market booth gear](/side-hustles/craft-market-booth-gear-canada/).
 
@@ -58,7 +60,7 @@ The in-person credit card rates are close; Interac debit pricing, hardware cost,
 
 <ComparisonTable
   caption="Square vs SumUp vs Shopify POS for in-person sales"
-  checked="October 7, 2026"
+  checked="October 30, 2026"
   items={[
     {
       name: "Square",
@@ -68,7 +70,7 @@ The in-person credit card rates are close; Interac debit pricing, hardware cost,
       pricingUrl: "https://squareup.com/ca/en/payments/our-fees",
       canada: "Canadian rates; +1.5% on cards issued outside Canada; next-business-day deposits included",
       pros: ["Low hardware cost", "Same account handles invoices (2.8% + 30¢ online) and appointments"],
-      cons: ["Reader pairs with a phone or tablet", "Instant transfers cost 1.5%"],
+      cons: ["Reader pairs with a phone or tablet", "Instant transfers cost 1.95%"],
     },
     {
       name: "SumUp",
@@ -107,9 +109,25 @@ Assumed numbers for one market day with no tax, to show the arithmetic using the
 
 On these assumptions the per-day fees are within a few cents of each other, so the hardware price, the monthly plan and how you like to work decide it. This is a teaching sketch, not a quote.
 
+## How much of a $40 sale do you actually keep?
+
+On a $40 in-person sale you keep about $39 on credit with any of the three, and a little more on Interac debit. The arithmetic below uses only the listed Canadian rates (rechecked October 30, 2026); it ignores GST/HST and any monthly plan.
+
+| $40 sale, in person | Square | SumUp | Shopify POS Basic |
+| --- | --- | --- | --- |
+| Credit card fee | $40 × 2.5% = $1.00 | $40 × 2.50% = $1.00 | $40 × 2.6% = $1.04 |
+| You keep (credit) | $39.00 | $39.00 | $38.96 |
+| Interac debit fee | $40 × 0.75% + $0.07 = $0.37 | $40 × 0.90% = $0.36 | Not shown on the pricing page |
+| You keep (debit) | $39.63 | $39.64 | Check Shopify's rate |
+| Card issued outside Canada | $40 × (2.5% + 1.5%) = $1.60, keep $38.40 | Check SumUp's terms | Check Shopify's terms |
+
+### When is Square's debit fee cheaper than SumUp's?
+
+Square's debit fee has a fixed 7¢, so it costs more on small sales and less on big ones. The two fees are equal when 0.75% × sale + $0.07 = 0.90% × sale, which works out to a sale of about **$46.67**. Below that, SumUp's debit fee is lower; above it, Square's is lower. On a $10 debit sale, Square charges about 14.5¢ and SumUp 9¢, so SumUp saves about 5.5¢ a sale. At that gap it would take roughly 1,000 small debit sales to earn back the $56 difference in reader price (illustrative arithmetic, not a forecast).
+
 ## What would each cost in the first year?
 
-Fees per sale are close, so the first-year total is decided by hardware and any monthly plan. The rates below were rechecked on each company's Canadian page on October 14, 2026: Square's reader at $69 with 2.5% on credit and 0.75% + 7¢ on Interac ([Square reader](https://squareup.com/ca/en/hardware/contactless-chip-reader)); SumUp's Go at $125 (listed down from $249) with $0 monthly, 2.50% credit and 0.90% debit ([SumUp pricing](https://www.sumup.com/en-ca/payment-processing-pricing/)); Shopify POS Basic at $49 CAD a month with 2.6% in person, and an offer of $1/month for the first three months ([Shopify POS pricing](https://www.shopify.com/ca/pos/pricing)).
+Fees per sale are close, so the first-year total is decided by hardware and any monthly plan. The rates below were rechecked on each company's Canadian page on October 30, 2026: Square's reader at $69 with 2.5% on credit and 0.75% + 7¢ on Interac ([Square reader](https://squareup.com/ca/en/hardware/contactless-chip-reader)); SumUp's Go at $125 (listed down from $249) with $0 monthly, 2.50% credit and 0.90% debit ([SumUp pricing](https://www.sumup.com/en-ca/payment-processing-pricing/)); Shopify POS Basic at $49 CAD a month with 2.6% in person, and an offer of a 3-day free trial, then $1/month for three months ([Shopify POS pricing](https://www.shopify.com/ca/pos/pricing)).
 
 ### Illustrative example: $2,000 a month in card sales
 
@@ -143,7 +161,7 @@ Before the market, check SumUp's and Shopify POS's own help pages for their offl
 
 ## The caveat: hardware sale prices and intro offers expire
 
-SumUp's $125 reader price was shown as a sale against $249, and Shopify's $1/month offer is an introductory promotion; both can end without notice. Square says it may offer custom pricing to businesses processing $250K+ in credit card sales, which most market sellers won't reach. Recheck each page before buying.
+SumUp's $125 reader price was still shown as a sale against $249 on October 30, 2026, and Shopify's $1/month offer is an introductory promotion; both can end without notice. Square says it may offer custom pricing to businesses processing $250K+ in credit card sales, which most market sellers won't reach. Recheck each page before buying.
 
 ## Who should pick Square, SumUp or Shopify POS?
 
@@ -176,7 +194,7 @@ Read the [holiday market vendor guide](/side-hustles/holiday-market-vendor-guide
   items={[
     {
       question: "How much does Square charge per transaction in Canada?",
-      answer: "Square's Canadian fee page listed 2.5% for in-person credit cards, 0.75% + 7 cents for Interac debit, 3.3% + 15 cents for manually keyed cards and 2.8% + 30 cents for online and invoice payments on October 7, 2026, with an extra 1.5% on cards issued outside Canada.",
+      answer: "Square's Canadian fee page listed 2.5% for in-person credit cards, 0.75% + 7 cents for Interac debit, 3.3% + 15 cents for manually keyed cards and 2.8% + 30 cents for online and invoice payments on October 7, 2026, with an extra 1.5% on cards issued outside Canada. Instant transfers were listed at 1.95% on October 30, 2026.",
     },
     {
       question: "What does SumUp cost in Canada?",
@@ -185,6 +203,10 @@ Read the [holiday market vendor guide](/side-hustles/holiday-market-vendor-guide
     {
       question: "Do I need Shopify to use Shopify POS?",
       answer: "Yes. Shopify POS runs on a Shopify plan. Basic was listed at $49 CAD a month with in-person card rates from 2.6%, and POS Pro is an extra $119 CAD a month per location.",
+    },
+    {
+      question: "Is Square or SumUp cheaper for Interac debit?",
+      answer: "It depends on the sale size. Square's listed debit fee is 0.75% + 7 cents and SumUp's is 0.90%, so they match at about a $46.67 sale. SumUp is cheaper on smaller debit sales and Square on larger ones (arithmetic from rates listed October 30, 2026).",
     },
     {
       question: "Which card reader works without a phone?",
