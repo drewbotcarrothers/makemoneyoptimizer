@@ -11,6 +11,17 @@ sample: false
 youtubeId: "-s4hGLKje5I"
 youtubeUploadDate: "2026-10-19T20:37:00-04:00"
 youtubeDuration: PT6M26S
+youtubeChapters:
+  - { start: 0, title: "The in-app hour" }
+  - { start: 34, title: "Who this is for" }
+  - { start: 56, title: "The quick answer" }
+  - { start: 75, title: "Vehicle and licence rules" }
+  - { start: 123, title: "Insurance comes first" }
+  - { start: 163, title: "What it really pays" }
+  - { start: 220, title: "Worked math: two shifts" }
+  - { start: 264, title: "GST/HST and income tax" }
+  - { start: 306, title: "Your first 30 days" }
+  - { start: 343, title: "Mistakes and recap" }
 sources:
   - title: "Uber vehicle requirements in Canada"
     url: "https://www.uber.com/ca/en/drive/requirements/vehicle-requirements/"
@@ -91,6 +102,7 @@ import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 import StarterKit from '../../components/StarterKit.astro';
+import NextReads from '../../components/NextReads.astro';
 
 <QuickAnswer>
 
@@ -469,6 +481,8 @@ Per-trip earnings and the math after costs are in [rideshare earnings in Canada]
 ## What are the limits of rideshare driving as a side hustle?
 
 Public data shows thin margins once costs and waiting time are counted. The City of Toronto study found a 2024 median of $5.97 per in-app hour after expenses. Minimums in B.C. and Ontario cover engaged time only, and other provinces have none. Insurance, vehicle-age and licence rules vary by city and change often. The worked math above is illustrative, and the drivers quoted are documented cases, not typical outcomes. B.C. and Ontario minimum rates were rechecked against the provincial pages on October 19, 2026. Recheck the platform's requirement pages, your insurer and the CRA before you start.
+
+<NextReads same={["uber-vs-lyft-drivers-canada", "uber-eats-vs-doordash-vs-skip-canada"]} tax="gst-hst-registration-side-hustle-canada" />
 
 ## Which guides sit next to rideshare driving?
 

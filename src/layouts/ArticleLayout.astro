@@ -8,6 +8,7 @@ import AuthorBox from '../components/AuthorBox.astro';
 import AffiliateDisclosure from '../components/AffiliateDisclosure.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import GuideSeries from '../components/GuideSeries.astro';
+import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import { AUTHOR, SITE, authorSameAs, authorUrl } from '../lib/site';
 import { getPublishedArticles, relatedArticles } from '../lib/articles';
 import { breadcrumbJsonLd, categoryHref, getCategory } from '../lib/categories';
@@ -34,6 +35,7 @@ interface Props {
   youtubeId?: string;
   youtubeUploadDate?: string;
   youtubeDuration?: string;
+  youtubeChapters?: { start: number; title: string }[];
 }
 
 const {
@@ -51,6 +53,7 @@ const {
   youtubeId,
   youtubeUploadDate,
   youtubeDuration,
+  youtubeChapters = [],
 } = Astro.props;
 
 if (youtubeId) {
@@ -114,6 +117,12 @@ const articleJsonLd = {
   isAccessibleForFree: true,
 };
 
+function durationSeconds(iso?: string) {
+  const m = iso?.match(/^PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$/);
+  if (!m) return undefined;
+  return Number(m[1] || 0) * 3600 + Number(m[2] || 0) * 60 + Number(m[3] || 0);
+}
+
 const videoJsonLd = youtubeId
   ? {
       '@context': 'https://schema.org',
@@ -128,6 +137,20 @@ const videoJsonLd = youtubeId
       duration: youtubeDuration,
       embedUrl: `https://www.youtube-nocookie.com/embed/${youtubeId}`,
       contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
+      ...(youtubeChapters.length > 0
+        ? {
+            hasPart: youtubeChapters.map((c, i) => {
+              const next = youtubeChapters[i + 1]?.start ?? durationSeconds(youtubeDuration);
+              return {
+                '@type': 'Clip',
+                name: c.title,
+                startOffset: c.start,
+                ...(next ? { endOffset: next } : {}),
+                url: `https://www.youtube.com/watch?v=${youtubeId}&t=${c.start}s`,
+              };
+            }),
+          }
+        : {}),
     }
   : null;
 
@@ -189,6 +212,14 @@ if (videoJsonLd) pageJsonLd.push(videoJsonLd);
 
   <article class="section" style="padding-top:var(--space-8);">
     <div class="container-narrow prose">
+      {youtubeId && (
+        <YouTubeEmbed
+          id={youtubeId}
+          title={title}
+          caption="Prefer to watch? The video version of this guide is below; the full written guide, sources and tables follow."
+          chapters={youtubeChapters}
+        />
+      )}
       <slot />
       <GuideSeries groups={seriesGroups} currentSlug={slug} />
       <Sources sources={sources} />

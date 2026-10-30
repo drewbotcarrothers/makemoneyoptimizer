@@ -1,0 +1,32 @@
+---
+/**
+ * Fixed internal-link pattern for posts paired with a video:
+ * two same-category guides plus one tax companion. Slugs are checked at build time.
+ */
+import { getPublishedArticles } from '../lib/articles';
+
+interface Props {
+  same: [string, string];
+  tax: string;
+}
+const { same, tax } = Astro.props;
+const all = await getPublishedArticles();
+const find = (slug: string) => {
+  const a = all.find((x) => x.slug === slug);
+  if (!a) throw new Error(`NextReads: no published article "${slug}"`);
+  return a;
+};
+const items = [
+  ...same.map((s) => ({ a: find(s), label: 'Same category' })),
+  { a: find(tax), label: 'Tax companion' },
+];
+---
+<aside class="next-reads" aria-labelledby="next-reads-heading">
+  <h2 id="next-reads-heading">Read next</h2>
+  <ul>
+    {items.map(({ a, label }) => (
+      <li><strong>{label}:</strong> <a href={`/side-hustles/${a.slug}/`}>{a.data.title}</a></li>
+    ))}
+    <li><strong>Compare take-home:</strong> <a href="/side-hustles/take-home-ticket/">the Take-Home Ticket hub</a></li>
+  </ul>
+</aside>
