@@ -34,6 +34,10 @@ const articles = defineCollection({
     youtubeUploadDate: z.string().optional(),
     /** ISO 8601 duration, e.g. PT8M16S. */
     youtubeDuration: z.string().optional(),
+    /** Optional chapters for the paired video (start in seconds). Shown under the top embed and emitted as Clip parts. */
+    youtubeChapters: z
+      .array(z.object({ start: z.number().int().nonnegative(), title: z.string() }))
+      .default([]),
   }),
 });
 

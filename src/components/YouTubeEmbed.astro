@@ -9,13 +9,23 @@ interface Props {
   id: string;
   title: string;
   caption?: string;
+  /** Optional chapters, start in seconds. Rendered as timestamp links under the player. */
+  chapters?: { start: number; title: string }[];
 }
 
 const {
   id,
   title,
   caption = "Prefer to watch? Here's the video version of this guide.",
+  chapters = [],
 } = Astro.props;
+
+const stamp = (sec: number) => {
+  const h = Math.floor(sec / 3600);
+  const m = Math.floor((sec % 3600) / 60);
+  const s = String(sec % 60).padStart(2, '0');
+  return h ? `${h}:${String(m).padStart(2, '0')}:${s}` : `${m}:${s}`;
+};
 
 if (!/^[A-Za-z0-9_-]{11}$/.test(id)) {
   throw new Error(`YouTubeEmbed: expected an 11-character video id, got "${id}".`);
@@ -53,6 +63,18 @@ const watchUrl = `https://www.youtube.com/watch?v=${id}`;
     </button>
   </div>
   {caption && <figcaption class="youtube-embed-caption">{caption}</figcaption>}
+  {chapters.length > 0 && (
+    <details class="youtube-embed-chapters">
+      <summary>Video chapters</summary>
+      <ol>
+        {chapters.map((c) => (
+          <li>
+            <a href={`${watchUrl}&t=${c.start}s`} rel="noopener noreferrer">{stamp(c.start)}</a> {c.title}
+          </li>
+        ))}
+      </ol>
+    </details>
+  )}
   <noscript>
     <p class="youtube-embed-fallback">
       <a href={watchUrl} rel="noopener noreferrer">Watch on YouTube</a>

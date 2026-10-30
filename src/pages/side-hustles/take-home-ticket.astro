@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { getPublishedArticles } from '../../lib/articles';
+import { breadcrumbJsonLd, getCategory } from '../../lib/categories';
+import { SITE } from '../../lib/site';
+
+/**
+ * Take-Home Ticket hub. Every figure below is copied from the linked guide's own worked
+ * example or cited source; change the guide first, then this table.
+ */
+type Ticket = {
+  slug: string;
+  hustle: string;
+  perHour: string;
+  sortValue: number;
+  basis: string;
+  kind: 'Illustrative' | 'Reported';
+  anchor?: string;
+};
+const tickets: Ticket[] = [
+  { slug: 'snow-removal-pricing-canada', hustle: 'Snow removal, 10 seasonal driveways', perHour: 'about $48', sortValue: 48, basis: '$400 seasonal price, 20 visits of 25 minutes; before gear, salt and tax', kind: 'Illustrative', anchor: 'what-a-10-client-route-earns' },
+  { slug: 'online-tutoring-pricing-canada', hustle: 'Online tutoring (working-hour target)', perHour: 'about $39', sortValue: 39.05, basis: 'Rate needed to cover the guide\u2019s target pay, CPP and costs; a pricing target, not observed earnings', kind: 'Illustrative' },
+  { slug: 'grocery-shopping-side-hustle-canada', hustle: 'Instacart shopper, one Toronto hour', perHour: '$8.90 to $30.27', sortValue: 18.72, basis: 'Low / middle / high batch scenarios after fuel and wear; before tax (middle $18.72)', kind: 'Illustrative' },
+  { slug: 'facebook-marketplace-flipping-side-hustle-canada', hustle: 'Facebook Marketplace flipping', perHour: 'about $4.85 (beginner) to $14.77 (drill flip)', sortValue: 9.8, basis: 'Tracked 20-hour Toronto beginner test reported by Moose Money; drill flip is the guide\u2019s worked example', kind: 'Reported' },
+  { slug: 'seo-blogging-side-hustle-canada', hustle: 'SEO blog, 10,000 pageviews, ads only', perHour: 'about $9.20', sortValue: 9.2, basis: 'After hosting and a 30% tax set-aside, about 35 hours a month (assumed)', kind: 'Illustrative' },
+  { slug: 'rideshare-driving-side-hustle-canada', hustle: 'Rideshare driving, Toronto', perHour: '$6.37 to $10.60', sortValue: 8.5, basis: 'After expenses, from a Ridefair report cited by CBC in February 2024', kind: 'Reported' },
+];
+
+const all = await getPublishedArticles();
+const bySlug = new Map(all.map((a) => [a.slug, a]));
+for (const t of tickets) {
+  if (!bySlug.has(t.slug)) throw new Error(`take-home-ticket: missing article ${t.slug}`);
+}
+const ranked = [...tickets].sort((a, b) => b.sortValue - a.sortValue);
+const withVideo = all
+  .filter((a) => a.data.youtubeId)
+  .sort((a, b) => a.data.category.localeCompare(b.data.category) || a.data.title.localeCompare(b.data.title));
+
+const title = 'Take-Home Ticket: Canadian Side Hustles Compared';
+const description =
+  'What Canadian side hustles leave you per hour after costs, from the worked examples in our guides. Illustrative and reported figures are labelled.';
+const url = `${SITE.url}/side-hustles/take-home-ticket/`;
+const crumbs = [
+  { name: 'Home', href: '/' },
+  { name: 'Side Hustles', href: '/side-hustles/' },
+  { name: 'Take-Home Ticket', href: '/side-hustles/take-home-ticket/' },
+];
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title, description, url },
+  breadcrumbJsonLd(crumbs, SITE.url),
+];
+---
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <header class="page-hero">
+    <div class="container">
+      <Breadcrumbs crumbs={crumbs.slice(0, -1)} lastIsCurrent={false} />
+      <p class="eyebrow">Compare</p>
+      <h1>The Take-Home Ticket</h1>
+      <p class="lead">
+        Gross pay is not what you keep. Each of our video guides runs one hustle through the same ticket:
+        gross, then costs and fees, then a tax set-aside, then take-home per hour. This page puts those tickets side by side.
+      </p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container-narrow prose">
+      <h2>Side hustles ranked by take-home per hour</h2>
+      <p>
+        <strong>Read the label on every row.</strong> "Illustrative" means the guide's own worked example with stated assumptions;
+        "Reported" means a figure published by a named outside source. None of these is a promise of what you will earn, and
+        the rows use different assumptions, so treat the ranking as a starting point. Ranked by the middle of each range.
+      </p>
+      <div class="table-wrap">
+        <table class="ticket-table">
+          <thead>
+            <tr><th>#</th><th>Hustle</th><th>Per hour</th><th>Basis</th><th>Label</th></tr>
+          </thead>
+          <tbody>
+            {ranked.map((t, i) => (
+              <tr>
+                <td>{i + 1}</td>
+                <td><a href={`/side-hustles/${t.slug}/${t.anchor ? `#${t.anchor}` : ''}`}>{t.hustle}</a></td>
+                <td>{t.perHour}</td>
+                <td>{t.basis}</td>
+                <td>{t.kind}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Size your own set-aside with <a href="/side-hustles/how-much-tax-set-aside-side-hustle-canada/">how much tax to set aside</a>,
+        check the <a href="/side-hustles/gst-hst-registration-side-hustle-canada/">GST/HST registration rules</a>, and subtract
+        what you can claim with <a href="/side-hustles/side-hustle-expense-deductions-canada/">side hustle expense deductions</a>.
+      </p>
+
+      <h2>Every guide with a video</h2>
+      <p>Each guide below opens with its video. Start with the one closest to the work you want.</p>
+      <ul>
+        {withVideo.map((a) => (
+          <li>
+            <a href={`/side-hustles/${a.slug}/`}>{a.data.title}</a>
+            {' '}<span class="muted">({getCategory(a.data.category).name})</span>
+          </li>
+        ))}
+      </ul>
+      <p>
+        Browse by topic in the <a href="/side-hustles/categories/">category hubs</a>.
+        Education only. Not financial or tax advice.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
