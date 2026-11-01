@@ -2,8 +2,8 @@
 title: "How to Start Website Maintenance in Canada (Step-by-Step)"
 description: "How to start website maintenance in Canada: published care-plan prices, tool costs, worked math, 18 client types, a 30-day plan, templates, privacy rules."
 pubDate: 2026-10-01
-updatedDate: 2026-10-09
-updateNote: "Rewritten with sourced data, specific tools, a launch plan and real examples"
+updatedDate: 2026-11-01
+updateNote: "Re-checked care-plan and tool prices (November 1, 2026) and added a take-home-per-hour model after CPP and an income-tax set-aside"
 category: tech-ai
 tags: [online, websites, maintenance, freelancing]
 featured: false
@@ -94,14 +94,16 @@ import ComparisonTable from '../../components/ComparisonTable.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 import StarterKit from '../../components/StarterKit.astro';
+import NextReads from '../../components/NextReads.astro';
 
 Website maintenance is a monthly care plan for a site a client already has: updates, backups you can restore, security and uptime checks, small edits and a short report. Most small-business sites run on WordPress, and most WordPress security problems come from plugins, so a careful checklist is worth paying for. Canadian freelancers publish care plans from about $59 to $169 a month, and a dashboard tool to manage many sites costs from nothing to a few dollars per site.
 
 <QuickAnswer>
 - **Demand:** W3Techs says WordPress runs 58.6% of websites whose content management system it can identify, or 40.1% of all websites (checked October 9, 2026).
 - **Why it matters:** Patchstack counted 11,334 new WordPress-ecosystem vulnerabilities in 2025, up 42% from 2024; 91% were in plugins, and the median time to mass exploitation for heavily exploited ones was 5 hours.
-- **Published prices:** Vancouver's Tiffany Mark lists care plans at $59, $89 and $169 a month, WP Expert lists an Essential plan at $97 CAD a month, and Toronto's Alma Web Pro starts at $149 a month (all checked October 9, 2026).
+- **Published prices:** Vancouver's Tiffany Mark lists care plans at $59, $89 and $169 a month (re-checked November 1, 2026), WP Expert lists an Essential plan at $97 CAD a month, and Toronto's Alma Web Pro starts at $149 a month (checked October 9, 2026).
 - **Wage benchmark:** Job Bank lists web developers and webmasters at $21.48 low, $38.46 median and $57.16 high per hour (2023 to 2024 data, updated November 19, 2025).
+- **Take-home:** in our illustrative ten-client model, an $89 plan keeps about $42.78 an hour after tools, CPP and a 15% tax set-aside.
 - **Tax:** report on T2125, pay both CPP shares on net income and register for GST/HST once taxable supplies pass $30,000.
 </QuickAnswer>
 
@@ -189,6 +191,23 @@ These examples are **Illustrative**. Client counts, plan prices and hours are as
 | **Profit per hour** | **$55.35** |
 
 That's above Job Bank's $38.46 median, because tooling lets one person look after many sites. The first month per client takes longer: audit, access setup, first backup and a test restore.
+
+### What do you keep per hour after CPP and tax?
+
+Profit before tax isn't take-home. Here's the same **Illustrative** ten-client model over a full year, with self-employed CPP and an assumed income-tax set-aside. Outside Quebec; your real tax rate depends on your other income.
+
+| Line (per year, Illustrative) | Amount |
+|---|---|
+| Revenue: 10 clients × $89 × 12 | $10,680.00 |
+| Tools: 10 × $5.97 × 12 | −$716.40 |
+| Net self-employment income (T2125) | $9,963.60 |
+| CPP, both shares: 11.9% × ($9,963.60 − $3,500) | −$769.17 |
+| Income-tax set-aside (15%, assumed) | −$1,494.54 |
+| **Take-home** | **$7,699.89** |
+| Hours: 15 a month × 12 | 180 |
+| **Take-home per hour** | **≈ $42.78** |
+
+So the plan bills about $59 an hour of work, and keeps about $43 in this model. That's still above Job Bank's $38.46 median wage, which is before tax. The 11.9% combined CPP rate on net self-employment earnings above the $3,500 basic exemption is from the Government of Canada's [CPP contributions](https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html) page; how much to hold back for income tax is covered in [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/).
 
 | Scenario (Illustrative) | Clients | Plan price | Monthly profit after tools |
 |---|---|---|---|
@@ -465,3 +484,5 @@ Building sites is [no-code web design](/side-hustles/no-code-web-design-side-hus
     },
   ]}
 />
+
+<NextReads same={["no-code-web-design-side-hustle-canada", "zapier-automation-side-hustle-canada"]} tax="how-much-tax-set-aside-side-hustle-canada" />
