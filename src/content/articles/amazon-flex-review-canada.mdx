@@ -2,8 +2,8 @@
 title: "Amazon Flex Review for Canadian Drivers (2026)"
 description: "An honest Amazon Flex Canada review: requirements, delivery blocks, Amazon's pay claim, weekly deposits, provincial insurance differences, taxes, and fit."
 pubDate: 2026-10-04
-updatedDate: 2026-10-15
-updateNote: "Added real-world tips and common pitfalls"
+updatedDate: 2026-11-02
+updateNote: "Added a take-home-per-hour model after vehicle costs, CPP and a tax set-aside"
 category: gig-apps
 tags: [gig-work, delivery, courier, vehicles, offline]
 featured: false
@@ -21,6 +21,9 @@ sources:
   - title: "When to register for and start charging the GST/HST"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html"
     publisher: "Canada Revenue Agency"
+  - title: "CPP contribution rates, maximums and exemptions"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html"
+    publisher: "Canada Revenue Agency"
   - title: "Motor vehicle records"
     url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/business-expenses/motor-vehicle-expenses/motor-vehicle-records.html"
     publisher: "Canada Revenue Agency"
@@ -29,12 +32,14 @@ sources:
 import AffiliateLink from '../../components/AffiliateLink.astro';
 import Faq from '../../components/Faq.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
+import NextReads from '../../components/NextReads.astro';
 
 <QuickAnswer>
 
 - **Where:** Calgary, Edmonton, Halifax, Hamilton, Kitchener-Waterloo-Cambridge, London, Ottawa, Toronto, Vancouver, Victoria and Windsor.
 - **Requirements:** 19 or older, a 4-door midsize sedan or larger, a full Canadian licence, SIN, bank account, smartphone and a background check.
 - **Pay:** by delivery block (typically 2 to 4 hours), processed Wednesdays for the prior seven days; no reimbursement for mileage, parking or tolls.
+- **Take-home (illustrative model):** an assumed $80, 3-hour, 90 km block works out to about $26.67 an hour gross but about $15.40 an hour kept after $0.25/km vehicle costs, CPP and a 15% tax set-aside.
 - **Insurance differs by province:** Amazon's supplemental policy applies in Ontario and Alberta; in B.C. you need ICBC delivery coverage (rate class 013).
 
 </QuickAnswer>
@@ -81,6 +86,35 @@ Assumed numbers, not Amazon figures: a driver is offered an assumed $80 for a 3-
 - Per block hour: $57.50 ÷ 3 ≈ $19.17
 
 Your real costs depend on your car, fuel prices, and route, so run this with your own numbers.
+
+## How much of Amazon Flex pay do you actually keep?
+
+In this illustrative model, about $15.40 an hour, not the $26.67 an hour the block appears to pay. The model stretches the block example above across a year, then subtracts the costs Amazon leaves to you as an independent contractor.
+
+| Line (illustrative model, not Amazon figures) | Amount |
+| --- | --- |
+| 100 blocks a year (2 a week for 50 weeks) at an assumed $80 | $8,000.00 gross |
+| Vehicle cost: 9,000 km × an assumed $0.25/km | −$2,250.00 |
+| Net self-employment income | $5,750.00 |
+| CPP: 11.9% on net above the $3,500 basic exemption | −$267.75 |
+| Tax set-aside: an assumed 15% of net | −$862.50 |
+| **Take-home** | **$4,619.75** |
+| **Per block hour (300 hours)** | **about $15.40** |
+
+Self-employed Canadians pay both halves of CPP, 11.9% on net earnings above the $3,500 basic exemption ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html)). The 15% set-aside is a placeholder; size yours with [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/). The model also ignores unpaid time waiting for blocks and the drive home if it falls outside the block.
+
+### What moves the number most?
+
+Change one assumption at a time and the take-home per hour moves like this (same method, all illustrative):
+
+| Change | Take-home per block hour |
+| --- | --- |
+| Base model above | about $15.40 |
+| 60 km per block instead of 90 (station close to home) | about $17.23 |
+| $100 peak block instead of $80 | about $20.27 |
+| $0.40/km vehicle cost instead of $0.25 (thirstier SUV or truck) | about $12.11 |
+
+Kilometres and your vehicle's cost per kilometre matter as much as the block price, which is why a minimum pay-per-kilometre rule beats grabbing whatever block is open. The same ticket for other gigs is on our [Take-Home Ticket](/side-hustles/take-home-ticket/) page.
 
 ## What insurance do you need for Amazon Flex in Canada?
 
@@ -165,3 +199,5 @@ This guide cannot confirm what Amazon Flex will pay you, how often work is offer
     },
   ]}
 />
+
+<NextReads same={["amazon-flex-vs-uber-eats-canada", "package-courier-side-hustle-canada"]} tax="mileage-log-cra-side-hustle-canada" />
