@@ -35,6 +35,8 @@ const articles = defineCollection({
     /** ISO 8601 duration, e.g. PT8M16S. */
     youtubeDuration: z.string().optional(),
     /** Optional chapters for the paired video (start in seconds). Shown under the top embed and emitted as Clip parts. */
+    /** Short excerpt (120-200 words) drawn only from the paired video's transcript. Rendered under the embed as "From the video". */
+    videoExcerpt: z.string().optional(),
     youtubeChapters: z
       .array(z.object({ start: z.number().int().nonnegative(), title: z.string() }))
       .default([]),
