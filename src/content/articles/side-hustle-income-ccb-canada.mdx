@@ -1,0 +1,202 @@
+---
+title: "Does Side Hustle Income Reduce the Canada Child Benefit? (2026 Math)"
+description: "How side hustle income affects the Canada child benefit: the AFNI thresholds for July 2026 to June 2027, the 7% to 23% reduction rates, worked examples, and fixes."
+pubDate: 2026-11-03
+category: taxes-money
+tags: [taxes, cra, side-hustle-money, self-employment]
+featured: false
+sample: false
+sources:
+  - title: "How much you can get - Canada child benefit (CCB)"
+    url: "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html"
+    publisher: "Canada Revenue Agency"
+  - title: "CPP contribution rates, maximums and exemptions"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html"
+    publisher: "Canada Revenue Agency"
+  - title: "Line 22200 - Deduction for CPP or QPP contributions on self-employment income and other earnings"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22200-deduction-cpp-qpp-contributions-on-self-employment-other-earnings.html"
+    publisher: "Canada Revenue Agency"
+  - title: "Pension and savings plans deductions and credits (lines 20800 RRSP, 20805 FHSA)"
+    url: "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/pension-savings-plans-deductions-credits.html"
+    publisher: "Canada Revenue Agency"
+  - title: "Form T2125, Statement of Business or Professional Activities"
+    url: "https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html"
+    publisher: "Canada Revenue Agency"
+  - title: "Using an app or website to earn income? Reporting Rules for Digital Platform Operators"
+    url: "https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2024/using-app-website-earn-income.html"
+    publisher: "Canada Revenue Agency"
+---
+
+import AffiliateLink from '../../components/AffiliateLink.astro';
+import Faq from '../../components/Faq.astro';
+import QuickAnswer from '../../components/QuickAnswer.astro';
+import NextReads from '../../components/NextReads.astro';
+
+<QuickAnswer>
+
+- **Yes, net side hustle profit counts.** It raises your family net income (line 23600), which is what the CRA uses to set the Canada child benefit.
+- **The thresholds (July 2026 to June 2027, based on 2025 income):** no reduction below $38,237 of adjusted family net income; a phase-out between $38,237 and $82,847; a slower phase-out above that.
+- **The reduction rates:** 7% (1 child), 13.5% (2), 19% (3) or 23% (4+) of income in the middle band; 3.2% to 9.5% plus a fixed amount above $82,847.
+- **The lag:** 2026 side income changes the payments that start in July 2027, not this year's.
+- **What lowers the hit:** claiming every legitimate business expense, the CPP deduction on line 22200, and RRSP or FHSA deductions.
+
+</QuickAnswer>
+
+Side hustle income can reduce the Canada child benefit (CCB), because the CRA sets your monthly CCB from your adjusted family net income (AFNI), and net self-employment profit is part of that income ([CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html)). For a two-child family earning between $38,237 and $82,847, every extra $1,000 of net family income trims $135 a year from the CCB, on top of CPP and income tax. That does not make side income a bad idea; it changes how much of each dollar you keep, and it makes deductions worth more than usual. Figures below are from the CRA's CCB page for the July 2026 to June 2027 benefit year, checked November 3, 2026.
+
+This guide is part of our "what you keep" series. Read it with [CPP on side hustle income](/side-hustles/cpp-on-side-hustle-income-canada/), [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/), and [side hustles for stay-at-home parents](/side-hustles/side-hustles-for-stay-at-home-parents-canada/).
+
+| CCB figure (July 2026 to June 2027) | Amount | Source |
+| --- | --- | --- |
+| Maximum per child under 6 | $8,157 a year ($679.75 a month) | [CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html) |
+| Maximum per child 6 to 17 | $6,883 a year ($573.58 a month) | [CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html) |
+| No reduction below (AFNI) | $38,237 | [CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html) |
+| Second threshold | $82,847 | [CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html) |
+| Income year used | 2025 | [CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html) |
+
+## Does side hustle income count for the Canada child benefit?
+
+Yes. AFNI starts from line 23600 (net income) on your return plus your spouse's or common-law partner's, with small adjustments for UCCB and RDSP amounts ([CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html)). Net self-employment income from [Form T2125](https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t2125.html) flows into line 23600, so a side hustle by either parent counts.
+
+Three things follow:
+
+- **It is net profit that counts, not sales.** Expenses you deduct on T2125 lower AFNI.
+- **Unreported income is not a loophole.** Platforms like DoorDash, Etsy and Airbnb now report seller earnings to the CRA under the digital platform reporting rules ([CRA](https://www.canada.ca/en/revenue-agency/news/newsroom/tax-tips/tax-tips-2024/using-app-website-earn-income.html)), and a reassessment can recalculate past CCB too.
+- **CCB itself is not taxable** and isn't reported on your return.
+
+## How much does side hustle income reduce the CCB in 2026?
+
+It depends on your AFNI and how many children you have. Between $38,237 and $82,847, the CRA reduces the total benefit by a flat percentage of income above $38,237. Above $82,847, it is a fixed amount plus a smaller percentage of income above $82,847 ([CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html)).
+
+| Children | Reduction rate, AFNI $38,237 to $82,847 | Above $82,847 | CCB lost per extra $1,000 of net income (middle band) | Above $82,847 |
+| --- | --- | --- | --- | --- |
+| 1 | 7% | $3,123 + 3.2% | $70 | $32 |
+| 2 | 13.5% | $6,022 + 5.7% | $135 | $57 |
+| 3 | 19% | $8,476 + 8% | $190 | $80 |
+| 4 or more | 23% | $10,260 + 9.5% | $230 | $95 |
+
+The "per $1,000" columns are just the CRA rate times $1,000. Below $38,237 of AFNI, extra income doesn't reduce the CCB at all, until it pushes the family over that line.
+
+### The formula
+
+```text
+If $38,237 < AFNI ≤ $82,847:
+  CCB = (sum of each child's maximum) − rate × (AFNI − $38,237)
+
+If AFNI > $82,847:
+  CCB = (sum of maximums) − [fixed amount + rate × (AFNI − $82,847)]
+```
+
+The CRA's own example: two children under 6 and AFNI of $60,000 gives $16,314 − 13.5% × $21,763 = $13,376 a year ([CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html)).
+
+## When does side hustle income change your CCB payments?
+
+With a lag of up to 18 months. The CRA recalculates CCB every July from the previous year's AFNI, so July 2026 to June 2027 payments use 2025 income, and 2026 side income will change payments from July 2027 ([CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html)). The CCB is indexed to inflation, so the thresholds for July 2027 will be a little higher than today's; the CRA hadn't published them when this was written.
+
+The lag catches people out. A strong first year of side income feels free in 2026 and shows up as a smaller CCB deposit in summer 2027, often when the business has slowed.
+
+## How much of a side hustle dollar do parents keep?
+
+Less than people without kids, while the family is in the phase-out band. Here is the full picture.
+
+### Illustrative example: two children, one parent's new side hustle
+
+**Assumed:** Parent A earns a $50,000 salary. Parent B has no job and starts a side hustle with $10,000 of net profit (after expenses). Two children under 6. The family is otherwise in the middle CCB band. Income tax is an assumed 15% placeholder.
+
+| Line | Amount |
+| --- | --- |
+| Net side profit (T2125) | $10,000.00 |
+| CPP: 11.9% × ($10,000 − $3,500) | −$773.50 |
+| CPP deduction on line 22200 (lowers net income) | $451.75 |
+| Increase in AFNI: $10,000 − $451.75 | $9,548.25 |
+| CCB reduction: 13.5% × $9,548.25 (from July of the next year) | −$1,289.01 |
+| Income tax set-aside: an assumed 15% of profit | −$1,500.00 |
+| **Kept over the full cycle** | **$6,437.49** |
+
+About 64 cents of each dollar stays in the family, versus about 77 cents for the same parent with no kids (dropping the CCB line). The CPP and line 22200 amounts come from [CPP on side hustle income](/side-hustles/cpp-on-side-hustle-income-canada/), and the 15% set-aside is a placeholder; size yours with [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/).
+
+### What moves the number
+
+| Change (same family, illustrative) | CCB reduction on $10,000 profit |
+| --- | --- |
+| 1 child instead of 2 (7%) | about $668 |
+| 3 children (19%) | about $1,814 |
+| Family AFNI already above $82,847 (2 kids, 5.7%) | about $544 |
+| Family AFNI below $38,237 even after the side profit | $0 |
+
+Each row is the CRA rate times $9,548.25 (the AFNI increase after the CPP deduction).
+
+## How can you reduce the CCB impact of side hustle income legally?
+
+By lowering net income in ways the tax rules already allow. Not by hiding income: the CRA gets platform data directly.
+
+### Step 1: Claim every legitimate business expense
+
+Supplies, a share of your phone and internet, business-use vehicle kilometres, a home workspace if you qualify. Every dollar of expense lowers T2125 profit, CPP, income tax and AFNI at once. Start with [side hustle expense deductions](/side-hustles/side-hustle-expense-deductions-canada/) and [home office expenses](/side-hustles/home-office-expenses-side-hustle-canada/).
+
+### Step 2: Don't forget the CPP deduction
+
+Tax software usually fills line 22200 automatically from Schedule 8 ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22200-deduction-cpp-qpp-contributions-on-self-employment-other-earnings.html)), but check it is there.
+
+### Step 3: Use RRSP or FHSA room
+
+RRSP (line 20800) and FHSA (line 20805) deductions reduce net income ([CRA](https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/pension-savings-plans-deductions-credits.html)), so they lower AFNI too. For a two-child family in the middle band, a $1,000 deduction restores $135 of CCB on top of the income-tax saving. See [RRSP season money tips for side hustlers](/side-hustles/rrsp-season-side-hustle-money-tips-canada/) and [what to do with side hustle profits](/side-hustles/what-to-do-with-side-hustle-profits-canada/). Accounts like <AffiliateLink program="wealthsimple" label="Wealthsimple" /> offer both RRSPs and FHSAs; any bank or brokerage works.
+
+### Step 4: Plan for next July's payment, not this month's
+
+Save a CCB buffer alongside your tax and CPP set-asides. For a two-child family in the middle band, 13.5% of net profit is a reasonable starting estimate.
+
+```text
+Parent side hustle set-aside (fill in yours)
+- CPP:              ____% (11.9% if no job; see CPP guide)
+- Income tax:       ____%
+- CCB buffer:       ____% (7 / 13.5 / 19 / 23% by number of kids, middle band)
+- Total to move with every deposit: ____%
+```
+
+### Step 5: Keep filing on time, both of you
+
+The CRA works out CCB each year when you file your return ([CRA](https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html)), and AFNI includes your spouse's or partner's net income. A late return can delay benefit payments, which hurts more than the reduction itself.
+
+## What mistakes do parents make with side hustle income and the CCB?
+
+- **Thinking cash or app income is invisible.** Platform reporting means the CRA sees it.
+- **Spending the whole first-year profit.** The CCB drop arrives the following July.
+- **Using gross sales in their estimate.** Only net profit counts toward AFNI.
+- **Skipping RRSP or FHSA contributions.** In the phase-out band, these deductions are worth extra.
+- **Assuming a small side hustle can't matter.** Below $38,237 AFNI it doesn't, until it tips the family over.
+
+## What should you keep in mind about these CCB numbers?
+
+Thresholds, maximums and rates are from the CRA's page for July 2026 to June 2027 (2025 income), checked November 3, 2026. CCB is indexed every July, so the 2027 thresholds will differ. Shared custody halves the amount each parent receives. Provincial child benefits and the child disability benefit, which the CRA often pays with the CCB, have their own rules and aren't modelled here. The tax set-aside is a placeholder. This is not tax, legal, or insurance advice.
+
+## Which guides sit next to side hustle income and the CCB?
+
+[CPP on side hustle income](/side-hustles/cpp-on-side-hustle-income-canada/), [how much tax to set aside](/side-hustles/how-much-tax-set-aside-side-hustle-canada/), [side hustle income on EI](/side-hustles/side-income-on-ei-canada/), and [side hustles for stay-at-home parents](/side-hustles/side-hustles-for-stay-at-home-parents-canada/). To file it properly, read [report side hustle income to the CRA](/side-hustles/report-side-hustle-income-cra-canada/).
+
+<Faq
+  items={[
+    {
+      question: "Does side hustle income affect the Canada child benefit?",
+      answer: "Yes. Net self-employment profit is part of your net income on line 23600, which feeds the adjusted family net income the CRA uses to calculate the CCB.",
+    },
+    {
+      question: "At what income does the CCB start to go down?",
+      answer: "For July 2026 to June 2027, the CCB starts to drop when adjusted family net income from 2025 is above $38,237, and drops more slowly above $82,847.",
+    },
+    {
+      question: "How much CCB do I lose for each $1,000 of side income?",
+      answer: "In the middle band ($38,237 to $82,847), $70 with one child, $135 with two, $190 with three, and $230 with four or more. Above $82,847 it is $32, $57, $80 or $95.",
+    },
+    {
+      question: "When will my side hustle income change my CCB payments?",
+      answer: "The CRA recalculates CCB every July from the previous year's income, so 2026 side income affects payments from July 2027 to June 2028.",
+    },
+    {
+      question: "Do RRSP contributions increase the CCB?",
+      answer: "They can. RRSP and FHSA deductions lower net income, which lowers adjusted family net income. In the middle band with two children, a $1,000 deduction restores about $135 of CCB.",
+    },
+  ]}
+/>
+
+<NextReads same={["cpp-on-side-hustle-income-canada", "how-much-tax-set-aside-side-hustle-canada"]} tax="rrsp-season-side-hustle-money-tips-canada" />
