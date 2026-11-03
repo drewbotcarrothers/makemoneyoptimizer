@@ -786,3 +786,19 @@ Object.assign(EXTRA_MEMBERS, {
     { series: 'fall-winter', role: 'seasonal' },
   ],
 });
+
+// New posts, 2026-11-03 batch (new-content plan). Separate block to limit merge conflicts.
+Object.assign(EXTRA_MEMBERS, {
+  'doordash-dasher-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'food-delivery', role: 'guide' },
+  ],
+  'ebay-review-canada': [
+    { series: 'platform-reviews', role: 'guide' },
+    { series: 'reselling', role: 'guide' },
+  ],
+  'sidewalk-salting-ice-control-canada': [
+    { series: 'snow-removal', role: 'guide' },
+    { series: 'fall-winter', role: 'seasonal' },
+  ],
+});
