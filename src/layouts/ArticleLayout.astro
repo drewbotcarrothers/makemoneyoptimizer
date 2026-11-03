@@ -36,6 +36,7 @@ interface Props {
   youtubeUploadDate?: string;
   youtubeDuration?: string;
   youtubeChapters?: { start: number; title: string }[];
+  videoExcerpt?: string;
 }
 
 const {
@@ -54,6 +55,7 @@ const {
   youtubeUploadDate,
   youtubeDuration,
   youtubeChapters = [],
+  videoExcerpt,
 } = Astro.props;
 
 if (youtubeId) {
@@ -219,6 +221,12 @@ if (videoJsonLd) pageJsonLd.push(videoJsonLd);
           caption="Prefer to watch? The video version of this guide is below; the full written guide, sources and tables follow."
           chapters={youtubeChapters}
         />
+      )}
+      {youtubeId && videoExcerpt && (
+        <section class="video-excerpt" aria-labelledby="from-the-video">
+          <h2 id="from-the-video">From the video</h2>
+          <p>{videoExcerpt}</p>
+        </section>
       )}
       <slot />
       <GuideSeries groups={seriesGroups} currentSlug={slug} />
