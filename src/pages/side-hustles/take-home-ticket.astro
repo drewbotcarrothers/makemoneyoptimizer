@@ -23,9 +23,11 @@ const tickets: Ticket[] = [
   { slug: 'online-tutoring-pricing-canada', hustle: 'Online tutoring (working-hour target)', perHour: 'about $39', sortValue: 39.05, basis: 'Rate needed to cover the guide\u2019s target pay, CPP and costs; a pricing target, not observed earnings', kind: 'Illustrative' },
   { slug: 'grocery-shopping-side-hustle-canada', hustle: 'Instacart shopper, one Toronto hour', perHour: '$8.90 to $30.27', sortValue: 18.72, basis: 'Low / middle / high batch scenarios after fuel and wear; before tax (middle $18.72)', kind: 'Illustrative' },
   { slug: 'amazon-flex-review-canada', hustle: 'Amazon Flex, 2 blocks a week', perHour: 'about $15.40', sortValue: 15.4, basis: 'Assumed $80, 3-hour, 90 km blocks; after $0.25/km vehicle cost, CPP and a 15% tax set-aside', kind: 'Illustrative', anchor: 'how-much-of-amazon-flex-pay-do-you-actually-keep' },
+  { slug: 'gig-app-real-hourly-rate-canada', hustle: 'Food delivery evening, Ontario', perHour: 'about $14.87', sortValue: 14.87, basis: 'Assumed $55 including tips, 3 hours logged in, 40 km; after $0.26/km CAA operating cost (Ex.1). Band $8.60–$16.73 by car-cost choice', kind: 'Illustrative', anchor: 'example-1-an-ontario-delivery-evening' },
+  { slug: 'doordash-dasher-review-canada', hustle: 'DoorDash Dasher model', perHour: 'about $13.49', sortValue: 13.49, basis: 'Assumed $90, 4-hour, 80 km dash; after $0.25/km vehicle cost, CPP and a 15% tax set-aside', kind: 'Illustrative' },
   { slug: 'facebook-marketplace-flipping-side-hustle-canada', hustle: 'Facebook Marketplace flipping', perHour: 'about $4.85 (beginner) to $14.77 (drill flip)', sortValue: 9.8, basis: 'Tracked 20-hour Toronto beginner test reported by Moose Money; drill flip is the guide\u2019s worked example', kind: 'Reported' },
   { slug: 'seo-blogging-side-hustle-canada', hustle: 'SEO blog, 10,000 pageviews, ads only', perHour: 'about $9.20', sortValue: 9.2, basis: 'After hosting and a 30% tax set-aside, about 35 hours a month (assumed)', kind: 'Illustrative' },
-  { slug: 'rideshare-driving-side-hustle-canada', hustle: 'Rideshare driving, Toronto', perHour: '$6.37 to $10.60', sortValue: 8.5, basis: 'After expenses, from a Ridefair report cited by CBC in February 2024', kind: 'Reported' },
+  { slug: 'rideshare-driving-side-hustle-canada', hustle: 'Rideshare driving, Toronto', perHour: '$6.37 to $10.60 (middle about $8.49)', sortValue: 8.49, basis: 'After expenses, from a Ridefair report cited by CBC in February 2024; middle of range', kind: 'Reported' },
 ];
 
 const all = await getPublishedArticles();
