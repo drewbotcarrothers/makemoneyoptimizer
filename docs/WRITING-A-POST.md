@@ -5,6 +5,8 @@
 `src/components/*`, `astro.config.mjs`) and from the existing posts in `src/content/articles/`. If this file and
 the code disagree, the code wins, and this file should be fixed in the same PR.
 
+**Brand positioning (Andrew, 2026-11-09).** Primary job of a post: help a Canadian **make money with a specific side hustle** — how it works, need-to-know to start, best practices, and tips. Take-home pay and tax are a **secondary** focus: keep a short CRA pointer and optional "what you keep" note on income-producing hustles; full tax deep-dives belong in `taxes-money` posts. Do not lead every article with CPP/GST tables.
+
 **Publishing pace (standing rule, 2026-10-28).** The 2026-10-28 Search Console review found about 468 sitemap URLs and most inspected pages still "Discovered - currently not indexed" or unknown to Google. Until that crawl backlog clears, deepen existing indexed or near-indexed posts instead of publishing large batches of new thin guides. Set `updatedDate` when the edit is material.
 
 Related docs: [CONTENT.md](../CONTENT.md) (tone, SEO, editorial checklist),
@@ -188,7 +190,8 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
    inside the tags so the bullets render as Markdown. Every fact in it must already be in the body with its source;
    no new numbers. It can link 1–2 sibling posts.
 1. **Answer first.** The first one or two sentences answer the title's question, name Canada, define the hustle,
-   give the CAD range where relevant, and say who it suits. No "In this guide you'll learn…" openers.
+   give the CAD range or start requirements where relevant, and say who it suits. Prefer a how-to or tips
+   payoff over a tax payoff unless the title is a tax question. No "In this guide you'll learn…" openers.
 2. **Sibling links right away.** A short paragraph pointing to the related beginner / cost / first-client post.
 3. **Quick-facts table** (Markdown table) where useful, with a link beside every official number or rule.
 4. **Question H2s.** Every `##` is a reader question that names the hustle and Canada (e.g. "Who does automation
@@ -202,8 +205,10 @@ Follow the shape of the recent posts (e.g. `zapier-automation-side-hustle-canada
    say which inputs are assumed and which are sourced, and show the formula and the arithmetic (section 4a).
 7. **Comparison table** where two real options differ (lean vs equipped kit, per visit vs seasonal).
 8. **Common mistakes** section.
-9. **Canada tax section** for income-producing hustles (T2125, CPP, GST/HST small supplier, ITCs, provincial rates),
-   each claim linked to CRA, plus "This is not tax, legal, or insurance advice."
+9. **Canada tax pointer** (supporting) for income-producing hustles: a short section or link-out covering
+   T2125, CPP, GST/HST small supplier (and ITCs / provincial rates only when central to the hustle),
+   each claim linked to CRA, plus "This is not tax, legal, or insurance advice." Lead the post with how-to
+   and tips; do not make tax the H1 arc unless `category` is `taxes-money`.
 10. **"Which guides sit next to …?"** H2 with 3–4 internal links.
 11. **FAQ** via `<Faq items={[...]} />` as the last element. The component **throws (build fails) unless there are
     4–6 items**, renders its own H2 ("What are the common questions?"), and emits FAQPage JSON-LD. Answers are

@@ -5,8 +5,8 @@ export const SITE = {
   url: 'https://makemoneyoptimizer.com',
   locale: 'en-CA',
   description:
-    'Practical side hustle and extra-income guides for Canadians. Clear, ethical advice for online and offline ways to earn more — no fake earnings, no guarantees.',
-  tagline: 'Smarter side income for Canadians',
+    'How-to guides for Canadian side hustles: need-to-know details, best practices, and tips for specific apps and local services. Take-home pay and tax notes are secondary. No fake earnings, no guarantees.',
+  tagline: 'How to start side hustles in Canada',
   email: 'contact@makemoneyoptimizer.com',
   twitter: '@makemoneyopt',
 } as const;

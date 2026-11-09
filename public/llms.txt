@@ -1,11 +1,12 @@
 # Make Money Optimizer
 
-> Practical side hustle and extra-income guidance for Canadians — online and offline. No guaranteed-income claims.
+> How-to guides for Canadian side hustles: need-to-know details, best practices, and tips for specific apps and local services. Take-home pay and tax notes are secondary. No guaranteed-income claims.
 
 Site: https://makemoneyoptimizer.com/
-Audience: Canadians exploring ethical side hustles
+Audience: Canadians who want to start and run specific side hustles
 Language: en-CA
-Primary formats: guides and side-hustle explainers (MDX)
+Primary formats: how-to guides and side-hustle explainers (MDX)
+Positioning: primary = named hustle playbooks (how it works, start steps, tips); supporting = take-home pay and CRA/tax
 
 ## Key pages
 
