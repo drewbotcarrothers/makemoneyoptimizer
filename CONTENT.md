@@ -4,33 +4,31 @@
 
 ## Audience
 
-Canadians earning (or exploring) extra income through **online and offline side hustles**.
+Canadians who want to **start and run specific side hustles** (online and offline) — need-to-know details, best practices, and tips. Take-home pay and tax are a secondary focus.
 
 ## Tone
 
-- Practical, clear, trustworthy
+- Practical, clear, trustworthy; how-to first
 - No fake earnings, no “guaranteed income,” no scammy gold-rush vibes
-- Canadian-friendly: CRA/admin pointers at a high level, local marketplaces, CAD mindset
+- Canadian-friendly: named platforms, local marketplaces, CAD mindset; CRA/admin as supporting notes
 - Disclose affiliates; separate education from promotion
+- Public byline uses **Andrew** only (never full name). No “we tested,” no Reddit, no casino/sportsbook content
 
 ## Content categories
 
 ### 1. Side Hustles (primary collection)
 
-Idea-focused articles: what the hustle is, who it fits, costs, risks, starter plan.
+Hustle playbooks: how the work runs in Canada, what you need to start, best practices, tips, costs, and risks.
 
-Examples (v1 samples):
+Examples:
 
-- Freelance writing
-- Marketplace reselling
-- Gig / delivery work
-- Online tutoring (also tagged as guide)
-
-Future ideas: virtual assistance, photography for local businesses, snow/lawn seasonal work, craft fairs, pet sitting, bilingual customer support.
+- Gig / delivery apps (Uber, DoorDash, Flex, Instacart)
+- Local services (snow, cleaning, dog walking)
+- Marketplace reselling and freelancing
 
 ### 2. Guides
 
-Process and decision frameworks: how to evaluate an idea, track costs, set boundaries, package services.
+Process frameworks and **supporting** tax/money explainers (CRA, GST/HST, CPP, set-asides) that sit beside hustle playbooks.
 
 ### 3. Trust / policy pages
 
